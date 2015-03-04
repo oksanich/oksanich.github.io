@@ -1,0 +1,118 @@
+/* ---About Page--- */
+
+.mainTeam{
+  overflow: hidden;
+  border-bottom: 1px dotted darken($borderColor, 10%);
+  margin-bottom: 2.375em;
+}
+
+.teamPerson{
+  margin-bottom: 2.5em;
+}
+
+.personPreview {
+  margin: 0 2.5em 1.5em;
+  border-bottom: 1px dotted darken($borderColor, 10%);
+}
+
+.personPhoto{
+  margin-bottom: 2.375em;
+  img{
+    width: 100%;
+    max-width: 365px;
+    max-height: 365px;
+    border-radius: 50%;
+  }
+}
+
+.personName{
+  color: $colorFont_1;
+  font-size: 2.05em;
+  font-weight: 400;
+  margin-bottom: .3em;
+}
+
+.personJobTitle{
+  color:  $colorFont_2;
+  font-weight: 400;
+  font-size: 1.561em;
+  margin-bottom: 1em;
+}
+
+.personAbout{
+  color:  $colorFont_1;
+  font-size: 1.561em;
+}
+
+.mainSkills{
+  overflow: hidden;
+  margin-bottom: 5.625em;
+}
+
+.skill{
+  margin-bottom: 2.5em;
+}
+
+.skillChart{
+  overflow: hidden;
+  margin-bottom: 2.5em;
+}
+
+.skillName{
+  font-size: 2.375em;
+  margin-bottom: 1em;
+}
+
+.skillAbout{
+  font-size: 1.876em;
+  line-height: 1.25em;
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+
+  .personPhoto{
+    margin-bottom: 2.375em;
+    img{
+      max-width: 200px;
+      max-height: 200px;
+      border-radius: 50%;
+    }
+  }
+
+  .personName{
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-bottom: .3em;
+  }
+
+  .personJobTitle{
+    font-size: 0.875em;
+  }
+
+  .personAbout{
+    font-size: 0.875em;
+  }
+
+  .skillName{
+    font-size: 1.125em;
+    margin-bottom: 1em;
+  }
+
+  .skillAbout{
+    font-size: 0.875em;
+    line-height: 1.5em;
+  }
+}

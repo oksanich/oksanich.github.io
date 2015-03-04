@@ -1,0 +1,255 @@
+/* ---Header--- */
+
+.mainHeader{
+  background: $bgHeader;
+  margin-bottom: 2em;
+  border-bottom: 1px solid $borderColor;
+}
+
+.header{
+  position: relative;
+
+}
+
+.logo{
+  display: block;
+  float: left;
+  margin: 1.25em 0 1.25em 1.875em;
+}
+
+.mobileMenu{
+  margin-right: 30px;
+  float: right;
+}
+
+%mobileMenuButton{
+  width: 35px;
+  height: 28px;
+  float: right;
+  margin: 1.25em 0;
+}
+
+.sandwichOpen{
+  @extend %mobileMenuButton;
+  width: 35px;
+  height: 35px;
+}
+
+.swTopper {
+  position: relative;
+  top: 0;
+  width: 35px;
+  height: 7px;
+  background: #444;
+  border: none;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-transition: -webkit-transform 0.5s, top 0.2s;
+  -moz-transition: -moz-transform 0.5s, top 0.2s;
+  -o-transition: -o-transform 0.5s, top 0.2s;
+  -ms-transition: -ms-transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s;
+  /* transition-delay: 0.2s, 0s; */
+}
+.swBottom {
+  position: relative;
+  width: 35px;
+  height: 7px;
+  top: 7px;
+  background: #444;
+  border: none;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-transition: -webkit-transform 0.5s, top 0.2s;
+  -moz-transition: -moz-transform 0.5s, top 0.2s;
+  -o-transition: -o-transform 0.5s, top 0.2s;
+  -ms-transition: -ms-transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s;
+  -webkit-transition-delay: 0.2s, 0s;
+  -moz-transition-delay: 0.2s, 0s;
+  -o-transition-delay: 0.2s, 0s;
+  -ms-transition-delay: 0.2s, 0s;
+  transition-delay: 0.2s, 0s;
+}
+.swFooter {
+  position: relative;
+  width: 35px;
+  height: 7px;
+  top: 14px;
+  background: #444;
+  border: none;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -ms-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.sandwichOpen.sandwichClose .swTopper {
+  top: 14px;
+  -webkit-transform: rotate(140deg);
+  -moz-transform: rotate(140deg);
+  -o-transform: rotate(140deg);
+  -ms-transform: rotate(140deg);
+  transform: rotate(140deg);
+}
+.sandwichOpen.sandwichClose .swBottom {
+  top: 7px;
+  -webkit-transform: rotate(-140deg);
+  -moz-transform: rotate(-140deg);
+  -o-transform: rotate(-140deg);
+  -ms-transform: rotate(-140deg);
+  transform: rotate(-140deg);
+}
+.sandwichOpen.sandwichClose .swFooter {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  top: 0;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.headerNavItem{
+  border-bottom: 1px solid $borderColor;
+
+  &:first-child{
+    border-top: 1px solid $borderColor;
+  }
+}
+
+.headerNavLink{
+  display: block;
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+  font-size: 1.25em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $colorFont_1;
+  background: $bgMobileMenu;
+
+  &:hover{
+    font-weight: 700;
+    color: $colorFont_3;
+  }
+}
+
+._active{
+  font-weight: 700;
+  color: $colorFont_3;
+}
+
+.socialHeader{
+  display: none;
+  position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+
+  .wrapHeaderNav {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 70px;
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .header{
+    max-width: 1060px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    *zoom: 1
+  }
+
+  .logo {
+    margin: 1.25em 0 1.063em;
+  }
+
+  .mobileMenu{
+    position: absolute;
+  }
+
+  %mobileMenuButton{
+    display: none;
+  }
+
+  .wrapHeaderNav{
+    float: right;
+    display: block !important;
+  }
+  
+  .headerNav {
+    float: left;
+  }
+
+  .headerNavItem{
+    float: left;
+    margin-left: 0.375em;
+    border-bottom: none;
+
+    &:first-child{
+      border-top: none;
+      margin-left: 0;
+    }
+  }
+
+  .headerNavLink{
+    padding: 1.875em 0.625em 1.688em;
+    font-size: 0.875em;
+    background: none;
+    border-bottom: 3px solid $bgHeaderOpacity;
+    &:hover{
+      border-bottom: 3px solid $colorFont_3;
+    }
+
+    &:after {
+      display:block;
+      content:attr(title);
+      font-weight:bold;
+      height:1px;
+      color:transparent;
+      overflow:hidden;
+      visibility:hidden;
+    }
+  }
+
+  ._active{
+    border-bottom: 3px solid $colorFont_3;
+  }
+
+  .socialHeader{
+    display: block;
+    position: static;
+    float: left;
+  }
+
+  .socialHeaderList{
+    overflow: hidden;
+  }
+
+  .socialHeaderItem{
+    float: left;
+    margin-left: 0.575em;
+    margin-top: 1em;
+  }
+
+  .socialHeaderLink{
+    color: $colorFont_2;
+    font-size: 2em;
+  }
+}

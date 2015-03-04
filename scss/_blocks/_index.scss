@@ -1,0 +1,64 @@
+/* ---Home Page--- */
+
+.quote {
+  display: block;
+  margin: 1em 0;
+  font-size: 1.5em;
+  padding: 1em;
+  background: darken($bgHeader, 25%);
+  &:before{
+    content: "\201C";
+    margin-right: .5em;
+  }
+  &:after{
+    content: "\201D";
+    margin-left: .5em;
+  }
+}
+
+.founderMinInfo{
+  overflow: hidden;
+}
+
+.founderAvatar{
+  img{
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+  }
+}
+
+.founderBlock{
+  margin-bottom: 1.5em;
+//  padding-bottom: 1.5em;
+
+}
+
+.founderTitle{
+  font-size: 2em;
+  color: $colorFont_1;
+  margin-bottom: 1em;
+//  padding-bottom: 1em;
+//  border-bottom: 1px dotted darken($borderColor, 10%);
+}
+
+.founderInfoItem,
+.founderWorkItem,
+.founderEducationItem{
+  margin-bottom: .75em;
+}
+
+.founderInfoItemSkill{
+  background: lighten($colorFont_3, 35%);
+  padding: 0.25em;
+  margin-bottom: 0.25em;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+
+  .founderTitle{
+    font-size: 1.563em;
+  }
+}

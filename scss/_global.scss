@@ -1,0 +1,58 @@
+/* ---Global--- */
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: $colorFont_1;
+  background: url("../images/background.jpg") $bgBody;
+}
+
+a{
+  color: $colorFont_3;
+  &:hover, &:focus{
+    color: $colorFont_3;
+  }
+}
+
+b{
+  font-weight: 700;
+}
+
+.pageTitle{
+  font-size: 1.125em;
+  color: $colorFont_1;
+  font-weight: 400;
+  position: relative;
+  padding: 1em 0;
+  margin-bottom: 2em;
+}
+
+.pageTitle:before,
+.pageTitle:after{
+  content: '';
+  background: url("../images/icons/borderDot.png") repeat-x;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+}
+
+.pageTitle:before{
+  top: 0;
+}
+
+.pageTitle:after{
+  bottom: 0;
+  left: 0;
+}
+
+.visibleMOnly {
+  @media (min-width: 768px) and (max-width: 1024px){
+    display: block!important;
+  }
+}
+
+.visibleLOnly {
+  @media (min-width: 1025px) {
+    display: block!important;
+  }
+}

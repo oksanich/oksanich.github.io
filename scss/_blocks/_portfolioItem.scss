@@ -1,0 +1,72 @@
+/* ---Portfolio Item (Portfolio page)--- */
+
+.portfolioItem{
+  background: $bgPortfolioItem;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  border-bottom: 2px solid $borderColor;
+  margin-bottom: 2em;
+  &:hover img{
+    opacity: 1;
+  }
+}
+
+.portfolioItemImg{
+  margin-bottom: 1em;
+  img{
+    width: 100%;
+    height: 100%;
+    max-height: 413px;
+    opacity: .7;
+  }
+}
+
+.portfolioItemTitleLink{
+  display: inline-block;
+  color: $colorFont_1;
+}
+
+.portfolioItemTitle{
+  font-size: 1.563em;
+  font-weight: 700;
+  color:  $colorFont_1;
+  margin-bottom: 0.313em;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.portfolioItemInfo{
+  padding: 0.750em;
+}
+
+.portfolioItemLink{
+  font-size: 1.25em;
+  font-weight: 400;
+  margin-bottom: 0.625em;
+  display: block;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.portfolioItemTags{
+  font-size: 1.125em;
+  font-weight: 400;
+  color: $colorFont_2;
+  padding-top: 0.625em;
+  border-top: 1px dotted darken($borderColor, 10%);
+}
+
+
+@media (min-width: 768px) {
+  .portfolioItemTitle,
+  .portfolioItemLink, {
+    font-size: 0.875em;
+  }
+
+  .portfolioItemTags{
+    font-size: 0.75em;
+  }
+}
