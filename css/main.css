@@ -5566,11 +5566,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   opacity: .7;
 }
 
-.portfolioItemTitleLink {
-  display: inline-block;
-  color: #444444;
-}
-
 .portfolioItemTitle {
   font-size: 1.563em;
   font-weight: 700;
