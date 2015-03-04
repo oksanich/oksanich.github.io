@@ -4920,10 +4920,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* ---Font Icons Social--- */
 @font-face {
   font-family: 'Grands';
-  src: url("../fonts/fontsIcons/Grands.eot");
-  src: url("../fonts/fontsIcons/Grands.eot?#iefix") format("embedded-opentype"), url("../fonts/fontsIcons/Grands.svg#Grands") format("svg"), url("../fonts/fontsIcons/Grands.woff") format("woff"), url("../fonts/fontsIcons/Grands.ttf") format("truetype");
+  src: url("../fonts/fontsIconsSocial/Grands.eot");
+  src: url("../fonts/fontsIconsSocial/Grands.eot?#iefix") format("embedded-opentype"), url("../fonts/fontsIconsSocial/Grands.svg#Grands") format("svg"), url("../fonts/fontsIconsSocial/Grands.woff") format("woff"), url("../fonts/fontsIconsSocial/Grands.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -5103,6 +5104,48 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 .icon-YouTube-play:before {
   content: "\e027";
+}
+
+/* ---Font Icons--- */
+@font-face {
+  font-family: 'typicons';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/fontsTypIcons/typicons.eot");
+  src: url("../fonts/fontsTypIcons/typicons.eot?#iefix") format("embedded-opentype"), url("../fonts/fontsTypIcons/typicons.woff") format("woff"), url("../fonts/fontsTypIcons/typicons.ttf") format("truetype"), url("../fonts/fontsTypIcons/typicons.svg#typicons") format("svg");
+}
+/* :before psuedo-selector inserts and styles icon */
+.typcn:before {
+  font-family: 'typicons';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  font-size: 3em;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  position: absolute;
+  left: -1.2em;
+  top: -.1em;
+}
+
+.typcn-briefcase:before {
+  content: '\e034';
+}
+
+.typcn-pencil:before {
+  content: '\e0c3';
+}
+
+.typcn-mortar-board:before {
+  content: '\e0be';
+}
+
+.typcn-business-card:before {
+  content: '\e036';
 }
 
 /* ---Variables--- */
@@ -5431,6 +5474,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 /* ---Home Page--- */
+.mainFounder {
+  margin-bottom: 5.625em;
+}
+
 .quote {
   display: block;
   margin: 1em 0;
@@ -5456,6 +5503,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-width: 300px;
   max-height: 300px;
   border-radius: 50%;
+  margin-bottom: 1em;
 }
 
 .founderBlock {
@@ -5468,10 +5516,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 1em;
 }
 
-.founderInfoItem,
+.founderInfoItem {
+  margin-bottom: 1.5em;
+}
+
 .founderWorkItem,
 .founderEducationItem {
-  margin-bottom: .75em;
+  margin-bottom: 1.5em;
+  position: relative;
+  margin-left: 3.5em;
 }
 
 .founderInfoItemSkill {
@@ -5482,6 +5535,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @media (min-width: 768px) {
+  .founderAvatar img {
+    margin-bottom: 0;
+  }
+
   .founderTitle {
     font-size: 1.563em;
   }
