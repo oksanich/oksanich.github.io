@@ -1498,27 +1498,6 @@ table {
     border-left: none;
   }
 }
-@font-face {
-  font-weight: normal;
-  font-style: normal;
-  font-family: "Proxima Nova";
-  src: url("../../../../../../../res/Content/Common/fonts/Proxima-Nova/proxima-nova.eot?v=1423700892");
-  src: url("../../../../../../../res/Content/Common/fonts/Proxima-Nova/proxima-nova.eot?v=1423700892#iefix") format("embedded-opentype"), url("../../../../../../../res/Content/Common/fonts/Proxima-Nova/proxima-nova.woff?v=1423700892") format("woff"), url("../../../../../../../res/Content/Common/fonts/Proxima-Nova/proxima-nova.ttf?v=1423700892") format("truetype"), url("../../../../../../../res/Content/Common/fonts/Proxima-Nova/proxima-nova.svg#proxima-nova?v=1423700892") format("svg");
-}
-@font-face {
-  font-weight: bold;
-  font-style: normal;
-  font-family: "Proxima Nova";
-  src: url("../../../../../../../res/Content/Common/fonts/Proxima-Nova/proxima-nova-bold.eot?v=1423700892");
-  src: url("../../../../../../../res/Content/Common/fonts/Proxima-Nova/proxima-nova-bold.eot?v=1423700892#iefix") format("embedded-opentype"), url("../../../../../../../res/Content/Common/fonts/Proxima-Nova/proxima-nova-bold.woff?v=1423700892") format("woff"), url("../../../../../../../res/Content/Common/fonts/Proxima-Nova/proxima-nova-bold.ttf?v=1423700892") format("truetype"), url("../../../../../../../res/Content/Common/fonts/Proxima-Nova/proxima-nova-bold.svg#proxima-nova-bold?v=1423700892") format("svg");
-}
-@font-face {
-  font-weight: normal;
-  font-style: normal;
-  font-family: "Icons";
-  src: url("../../../../../../../res/Content/Common/fonts/Icons/icons.eot?v=1423700892");
-  src: url("../../../../../../../res/Content/Common/fonts/Icons/icons.eot?v=1423700892#iefix") format("embedded-opentype"), url("../../../../../../../res/Content/Common/fonts/Icons/icons.woff?v=1423700892") format("woff"), url("../../../../../../../res/Content/Common/fonts/Icons/icons.ttf?v=1423700892") format("truetype"), url("../../../../../../../res/Content/Common/fonts/Icons/icons.svg#icons?v=1423700892") format("svg");
-}
 ::selection {
   color: #fff;
   background-color: #2b79ec;
@@ -1536,7 +1515,6 @@ html {
 
 body {
   color: #646c6c;
-  font-family: "Proxima Nova", Arial, sans-serif;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1600,7 +1578,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   color: #969696;
   font-weight: normal;
-  font-family: "Proxima Nova", Arial, sans-serif;
   line-height: 1.2;
 }
 
@@ -2016,7 +1993,6 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus, textarea:-webkit-aut
 }
 
 label, input, button, select, textarea {
-  font-family: "Proxima Nova", Arial, sans-serif;
   line-height: normal;
 }
 
@@ -3844,7 +3820,6 @@ a.alertRed:hover {
   color: #646c6c;
   text-align: left;
   text-decoration: none;
-  font-family: "Proxima Nova", Arial, sans-serif;
   cursor: pointer;
   position: relative;
   padding-right: 18px;
@@ -5167,7 +5142,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 .mobileMenu {
-  margin-right: 30px;
+  margin-right: 2em;
   float: right;
 }
 
