@@ -5356,6 +5356,15 @@ iframe {
     display: none;
   }
 }
+@media screen and (max-width: 480px) {
+  .homeLink_M {
+    padding: 1.1em .75em 1.16em .75em;
+  }
+
+  .nav_M {
+    padding: 1.2em .75em 1.08em .75em;
+  }
+}
 @media screen and (min-width: 768px) {
   .searchTop_M {
     display: none;
