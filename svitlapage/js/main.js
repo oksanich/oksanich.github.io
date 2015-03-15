@@ -21,8 +21,8 @@ $(document).ready(function(){
     /* ---Show section item details--- */
 
     $('._infoItemDetails').click(function(){
-        $('.infoItem').toggleClass('open');
-        $('.detailsItem').slideToggle('fast');
+        var $this = $(this);
+        $this.parent($('.infoItem')).toggleClass('open').parent($('.itemGroup')).find($('.detailsItem')).slideToggle(0);
     });
 
     /* ---Header desktop change search--- */
@@ -30,6 +30,21 @@ $(document).ready(function(){
     $('._dropdown').click(function(){
         $('._searchTopDropdownWrap').toggleClass('open');
         $('._dropdownList').slideToggle('slow');
+    });
+
+    $('._dropdownList').on('click', 'li', function () {
+        var $this = $(this);
+
+        // выключили один, появился другой
+        $('.hidden').removeClass('hidden');
+        $this.addClass('hidden');
+
+        // передаем значение вверх
+        $('._dropdown').text($this.children('a').text());
+
+        $('._searchTopDropdownWrap').toggleClass('open');
+        $('._dropdownList').slideToggle('slow');
+
     });
 });
 
