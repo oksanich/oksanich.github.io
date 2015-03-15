@@ -1,0 +1,11 @@
+%sectionItem{
+  @include box-shadow(2px 2px 0 $borderShadowColor);
+  @include border-radius($borderRadius);
+  border: 1px solid $borderColor_1;
+  background: $primeSecondBackgroundColor;
+  margin-bottom: 0.6em;
+  display: table;
+  padding: 1.04em 0.88em 1.12em;
+  width: 100%;
+  position: relative;
+}

@@ -1,15 +1,7 @@
 /*----- Item Section -----*/
 
 .infoItem{
-  @include box-shadow(2px 2px 0 $borderShadowColor);
-  @include border-radius($borderRadius);
-  border: 1px solid $borderColor_1;
-  background: $primeSecondBackgroundColor;
-  margin-bottom: 0.6em;
-  display: table;
-  padding: 1.04em 0.88em 1.12em;
-  width: 100%;
-  position: relative;
+  @extend %sectionItem;
 }
 
 .open{
@@ -19,20 +11,16 @@
 }
 
 .detailsItem{
-  @include box-shadow(2px 2px 0 $borderShadowColor);
+  @extend %sectionItem;
   @include border-radius(0 0 $borderRadius $borderRadius);
-  border: 1px solid $borderColor_1;
   border-top: none;
-  background: $primeSecondBackgroundColor;
-  margin-bottom: 0.6em;
-  padding: 1.04em 0.88em 1.12em;
-  width: 100%;
-  position: relative;
-  top: -2px;
+  top: -5px;
+  padding: 0em 2em 1.12em;
   display: none;
 }
 
 .details{
+  @include border-radius($borderRadius);
   @include box-shadow(2px 2px 0 $borderShadowColor);
 }
 
