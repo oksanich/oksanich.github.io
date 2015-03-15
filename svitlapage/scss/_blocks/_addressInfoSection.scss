@@ -1,0 +1,176 @@
+/*----- Address Info Section -----*/
+
+span.icon-blue-directions {
+  font-size: 2.7em;
+}
+
+.infoItemIcon{
+  color: $primeColor;
+  width: 8%;
+}
+
+
+
+.pseudoTd{
+  display: block;
+  padding: 0.667em 1.333em 0.667em 0;
+  vertical-align: top
+}
+
+.infoItemAddressStatus{
+  text-transform: uppercase;
+}
+
+.infoItemAddressStatusCurrent{
+  color: $buttonColor;
+}
+
+.infoItemAddressStatusPrior{
+  color: $fontColor_2;
+}
+
+.addressInfoContent .infoItemAddress{
+  color: $primeColor;
+}
+
+@media screen and (max-width: 767px) {
+
+  .infoItemIcon {
+    float: left;
+    margin-left: 0;
+    padding: 0 !important;
+  }
+
+  .addressInfoContent .infoItemAddress{
+    margin-right: 1.4em;
+    margin-left: 3em;
+    line-height: 1.167;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto;
+    font-size: 1.2em;
+  }
+
+  .infoItemAddressStatus{
+    margin-right: 2.4em;
+    margin-left: 4.5em;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto;
+    font-size: 0.8em;
+  }
+
+  span.icon-blue-directions {
+    position: absolute;
+    top: 50%;
+    margin-top: -.5em;
+  }
+
+  span.icon-button-arrow{
+    position: absolute;
+    right: .5em;
+    top: 50%;
+    margin-top: -.5em;
+    font-size: 1.7em;
+    color: $fontColor_5;
+    cursor: pointer;
+    &:hover{
+      color: lighten($primeColor, 15%);
+    }
+  }
+
+  .pseudoTd:last-child{
+    padding: 0;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .infoItemIcon{
+    width: 8%;
+  }
+
+  .infoItemAddressStatus{
+    width: 20%;
+  }
+
+  .viewDetails {
+    width: 100%;
+  }
+
+  .pseudoTd:first-child{
+    padding: 0 1.333em 0 0;
+  }
+
+  .pseudoTd {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .infoItem{
+    padding: 1em 1em 1em 2em;
+  }
+
+  .addressInfoContent .infoItemAddress{
+    color: $primeColor;
+    font-size: 1.25em;
+    line-height: 1.5;
+    font-family: $sans-bold;
+    width: 60%;
+  }
+
+  .viewDetails{
+    color: $primeColor;
+    font-size: 0.813em;
+    position: relative;
+    cursor: pointer;
+    &:after {
+      position: absolute;
+      top: 50%;
+      margin-top: -.2em;
+      width: 0;
+      height: 0;
+      content: "";
+      border-width: 0.533em 0.333em 0 0.333em;
+      border-color: $primeColor transparent transparent transparent;
+      border-style: solid;
+      right: -.5em;
+    }
+    &:hover{
+      color: lighten($primeColor, 15%);
+    }
+  }
+
+  .open .viewDetails{
+    display: none !important;
+  }
+
+  .viewClose{
+    display: none !important;
+  }
+
+  .open .viewClose{
+    display: block !important;
+    color: $primeColor;
+    font-size: 0.813em;
+    position: relative;
+    cursor: pointer;
+    &:after {
+      position: absolute;
+      top: 50%;
+      margin-top: -.2em;
+      width: 0;
+      height: 0;
+      content: "";
+      border-width: 0 0.333em 0.533em 0.333em;
+      border-color: transparent transparent $primeColor transparent;
+      border-style: solid;
+      right: -.5em;
+    }
+    &:hover{
+      color: lighten($primeColor, 15%);
+    }
+  }
+
+}

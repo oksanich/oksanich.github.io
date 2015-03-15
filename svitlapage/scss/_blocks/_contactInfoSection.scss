@@ -1,0 +1,127 @@
+/*----- Contact Info Section -----*/
+
+.topInfo{
+  margin-bottom: 1.2em;
+}
+
+.topInfoAvatar{
+  float: left;
+}
+
+.topInfoContent{
+  margin-left: 4.5em;
+}
+
+
+
+.topInfoContentName{
+  font-family: $sans-bold;
+  font-size: 1.6em;
+  margin-top: -.25em;
+}
+
+.topInfoContentAge,
+.topInfoContentBoth{
+  font-family: $sans-reg;
+  font-size: 0.96em;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+.infoItemImage{
+  display: table-cell;
+  width: 1.3em;
+  vertical-align: middle;
+  font-size: 2.200em;
+  color: $primeColor;
+}
+
+.infoItemContent{
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 1.2em;
+}
+
+.infoItemContentTitle{
+  text-transform: uppercase;
+  margin-bottom: .4em;
+  font-family: $sans-reg;
+  font-size: 0.8em;
+}
+
+.infoItemContentNumber,
+.infoItemContentAddress,
+.infoItemContentEmail{
+  color: $primeColor;
+  font-family: $sans-reg;
+  font-size: 1.04em;
+}
+
+@media screen and (max-width: 480px) {
+
+  .topInfoContent{
+    margin-left: 7.5em;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .infoItemContent{
+    padding-left: .75em;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .topInfo{
+    margin-bottom: 2em;
+  }
+
+  .topInfoContent{
+    margin-left: 6.5em;
+  }
+
+  .topInfoContentName{
+    font-family: $sans-bold;
+    font-size: 2.188em;
+    margin-bottom: .25em;
+    margin-top: -.25em;
+  }
+
+  .topInfoContentAge,
+  .topInfoContentBoth{
+    font-family: $sans-reg;
+    font-size: 1.125em;
+    line-height: 1.389em;
+  }
+
+  .infoItemImage{
+    width: 1.7em;
+    font-size: 2.5em;
+  }
+
+  .infoItem{
+    padding: 1em 1em 1em 2em;
+    margin-bottom: 1em;
+  }
+
+  .infoItemContent{
+    line-height: 1.786em;
+  }
+
+  .infoItemContentTitle{
+    font-size: 0.875em;
+    color: $fontColor_2;
+  }
+
+  .infoItemContentNumber{
+    font-size: 1.563em;
+  }
+
+  .infoItemContentAddress,
+  .infoItemContentEmail{
+    font-size: 1.25em;
+  }
+}

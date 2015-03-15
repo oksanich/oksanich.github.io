@@ -1,0 +1,57 @@
+/*----- Item Section -----*/
+
+.infoItem{
+  @include box-shadow(2px 2px 0 $borderShadowColor);
+  @include border-radius($borderRadius);
+  border: 1px solid $borderColor_1;
+  background: $primeSecondBackgroundColor;
+  margin-bottom: 0.6em;
+  display: table;
+  padding: 1.04em 0.88em 1.12em;
+  width: 100%;
+  position: relative;
+}
+
+.open{
+  @include border-radius($borderRadius $borderRadius 0 0);
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.detailsItem{
+  @include box-shadow(2px 2px 0 $borderShadowColor);
+  @include border-radius(0 0 $borderRadius $borderRadius);
+  border: 1px solid $borderColor_1;
+  border-top: none;
+  background: $primeSecondBackgroundColor;
+  margin-bottom: 0.6em;
+  padding: 1.04em 0.88em 1.12em;
+  width: 100%;
+  position: relative;
+  top: -2px;
+  display: none;
+}
+
+.details{
+  @include box-shadow(2px 2px 0 $borderShadowColor);
+}
+
+@media screen and (min-width: 768px) {
+
+  .pseudoTd:first-child{
+    padding: 0 1.333em 0 0;
+  }
+
+  .pseudoTd {
+    display: table-cell;
+  }
+
+  .infoItem{
+    padding: 1em 1em 1em 2em;
+  }
+
+  span.icon-blue-directions {
+    font-size: 2.7em;
+  }
+
+}

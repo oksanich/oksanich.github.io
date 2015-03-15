@@ -1,0 +1,52 @@
+/*----- Main Section -----*/
+
+.wrapInfoTitle{
+  @include box-shadow(2px 0 $primeColor,-1px 0 $primeColor);
+  background: $primeColor;
+  padding: 0.867em 1.2em 0.933em;
+}
+
+.wrapInfoContent{
+  @include box-shadow(2px 2px $borderColor_1,2px 0 $borderColor_1,-1px 2px $borderColor_1,-1px 0 $borderColor_1);
+  background: $primeBackgroundColor;
+  border: 1px solid $borderColor_1;
+  padding: 2em 2em 1.5em;
+}
+
+.subTitle{
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 1.2em;
+  position: relative;
+  span{
+    right: 0;
+    top: .25em;
+    position: absolute;
+    font-size: .8em;
+    cursor: pointer;
+  }
+}
+
+.linkViewMore{
+  margin-top: 1em;
+  display: inline-block;
+  font-size: 0.96em;
+  font-family: $sans-bold;
+}
+
+@media screen and (min-width: 768px) {
+
+  .contactInfoTitle{
+    padding: 0.867em 2em 0.933em;
+  }
+
+  .subTitle{
+    font-size: 1.5em;
+  }
+
+  .linkViewMore {
+    font-size: 1.063em;
+    font-family: $sans-reg;
+  }
+
+}

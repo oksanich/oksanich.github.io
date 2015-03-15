@@ -1,0 +1,63 @@
+/*----- Criminal Section -----*/
+
+.criminalInfoContent{
+  @include box-shadow(2px 2px $primeSecondColor,2px 0 $primeSecondColor,-1px 2px $primeSecondColor,-1px 0 $primeSecondColor);
+  background: $primeSecondColor;
+  padding: 4em 2em;
+  color: $fontColor_3;
+}
+
+.criminalInfoTitle{
+  font-family: $sans-extrabold;
+  font-size: 1.6em;
+  margin-bottom: 1.333em;
+  line-height: 1.129em;
+}
+
+.criminalInfoText{
+  margin-bottom: 2.438em;
+  font-family: $sans-reg;
+}
+
+@media screen and (max-width: 768px) {
+
+  .criminalInfoButton{
+    text-align: center;
+    a{
+      font-family: $sans-bold;
+      font-size: 1.4em;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .criminalInfoContent{
+    padding: 4em;
+    padding-right: 0.667em;
+  }
+
+  .criminalInfoTitle{
+    font-size: 1.938em;
+  }
+
+  .criminalInfoButton{
+    position: relative;
+  }
+
+  .criminalInfoButton span {
+    left: 9em;
+    top: .4em;
+    position: absolute;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .criminalImage{
+    width: 100%;
+    max-width: 242px;
+    margin: 0 auto;
+  }
+
+}

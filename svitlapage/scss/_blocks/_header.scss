@@ -1,0 +1,170 @@
+/*----- Header -----*/
+
+.header {
+  border-bottom: 1px solid $borderColor_2;
+  background-color: $menuBackgroundColor;
+}
+
+.searchTop {
+  position: relative;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  clear: both;
+}
+
+.searchTopDropdownWrap {
+  position: relative;
+  float: left;
+  width: 20.2%;
+}
+
+.searchTopDropdownWrap .dropdown {
+  display: block;
+  padding: 0.765em 1.176em 0.529em 1.176em;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1.133em;
+}
+
+.searchTop .searchSubmitWrap {
+  float: right;
+  width: 6.7%;
+}
+
+.searchTop .btnSearch {
+  padding: 0.8em 0 0;
+  width: 100%;
+  height: 3.133em;
+}
+
+.searchTop .headerFormWrap {
+  margin-right: 7.7%;
+  margin-bottom: 0;
+  margin-left: 21.2%;
+}
+
+.searchTop .pseudoInput {
+  padding: 0.824em 1.176em 0.647em;
+  background-color: $primeSecondBackgroundColor;
+  font-size: 1.133em;
+}
+
+.searchTop .btnSearch .icon-search-1 {
+  font-size: 1.6em;
+}
+
+.open .dropdown{
+  &:after {
+    @include transform(rotate(180deg));
+    @include transition(all .5s linear);
+  }
+}
+
+@media screen and (max-width: 767px){
+
+  .searchTop_M {
+    margin-right: 3.92em;
+    margin-left: 3.88em;
+    padding-top: 0.44em;
+    text-align: center;
+  }
+
+  .searchTop_M .formEl {
+    padding-top: 0.667em;
+    padding-bottom: 0.567em;
+    height: auto;
+    font-size: 1.2em;
+  }
+
+  .homeLink_M {
+    float: left;
+    padding: 1.1em 1em 1.16em 1.2em;
+    line-height: 1;
+  }
+
+  .nav_M {
+    float: right;
+    padding: 1.2em 1.2em 1.08em 1.2em;
+  }
+
+  .searchTop_M .icon-search-1 {
+    position: absolute;
+    top: 50%;
+    right: .5em;
+    margin-top: -.5em;
+    font-size: 1.44em;
+    color: #ebebeb;
+  }
+
+  .searchTop_M .formIconHolder {
+    position: relative;
+  }
+
+  .homeLink_M .icon-home{
+    font-size: 1.44em;
+  }
+
+  .nav_M .icon-menu{
+    font-size: 1.25em;
+  }
+
+  .searchTop_M .btnSearch {
+    width: 100%;
+    padding: 0;
+    height: 2.242em;
+    line-height: 2.242em;
+    font-weight: bold;
+    font-size: 1.32em;
+  }
+
+  .searchTop_M .icon-back{
+    color: $fontColor_2;
+    font-size: 1em;
+    margin: 1em 0.75em;
+    &:hover{
+      color: lighten($primeColor, 10%);
+    }
+  }
+
+  .headerSearch .navList_M {
+    border-top: 1px solid #d6d9db;
+  }
+
+  .navList_M .navListItem {
+    display: block;
+    border-bottom: 1px solid #d6d9db;
+    text-align: center;
+  }
+
+  .navList_M .navListLink {
+    display: block;
+    padding-top: 1.286em;
+    padding-bottom: 1em;
+    font-size: 1.4em;
+    font-weight: 100;
+  }
+
+  .navList_M {
+    display: none;
+  }
+
+  .searchTopWrap {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .searchTop_M {
+    display: none;
+  }
+
+  .homeLink_M, .nav_M {
+    display: none;
+  }
+
+  .navList_M {
+    display: none;
+  }
+}

@@ -1,0 +1,108 @@
+/*----- Footer -----*/
+
+.mainFooter{
+  background: $footerBackgroundColor;
+  border-bottom: 1px solid $borderColor_1;
+  border-top: 1px solid $borderColor_1;
+}
+
+.peopleDirectory{
+  border-bottom: 1px solid $borderColor_1;
+  padding: 4em 0 2.25em;
+}
+
+.peopleDirectoryTitle{
+  font-size: 0.938em;
+  line-height: 1.667;
+  font-family: $sans-bold;
+  color: $fontColor_4;
+  margin-right: .25em;
+}
+
+.peopleDirectoryAlphabet{
+  font-size: 1.063em;
+  margin: 0 2em;
+  line-height: 1.471;
+  color: $primeColor;
+  text-transform: uppercase;
+  a{
+    margin: 0 .5em 0 0 ;
+  }
+}
+
+.footerMenuItem{
+  font-size: 0.938em;
+  line-height: 1.667;
+}
+
+.footerMenu{
+  padding: 2.25em 0;
+  border-bottom: 1px solid $borderColor_1;
+}
+
+.footerText{
+  padding: 2.25em 10%;
+  border-bottom: 1px solid $borderColor_1;
+}
+
+.footerProtection{
+  padding: 2.25em 0;
+  a{
+    margin-left: 2.25em;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+}
+
+.copyright{
+  padding: 0 0 1em;
+  color:  #a7a7a7;
+  font-size: 0.813em;
+  line-height: 1.923;
+  font-family: $sans-bold;
+}
+
+@media screen and (max-width: 560px) {
+
+  .footerProtection{
+    a{
+      margin: 0 0 1em 0;
+      display: block;
+      &:last-child{
+        margin: 0;
+      }
+    }
+  }
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .peopleDirectoryTitle{
+    display: inline-block;
+  }
+
+  .peopleDirectoryAlphabet{
+    display: inline-block;
+    margin: 0;
+  }
+
+  .footerMenuItem{
+    display: inline-block;
+
+      &:after{
+        content: '•';
+        margin-left: .25em;
+        color: #a7a7a7;
+      }
+      &:last-child{
+        &:after{
+          content: '';
+        }
+      }
+
+  }
+
+}

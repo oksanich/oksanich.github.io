@@ -1,0 +1,24 @@
+/*----- Report Top -----*/
+
+.reportTop{
+  overflow: hidden;
+}
+
+.reportTopRightList{
+  float: right;
+}
+
+.reportTopRightItem{
+  margin-left: 0.864em;
+  padding: 0.273em 0;
+  font-size: 1.467em;
+  cursor: pointer;
+  float: left;
+}
+
+.reportTopRightLink{
+  color: $fontColor_5;
+  &:hover{
+    color: $primeColor;
+  }
+}

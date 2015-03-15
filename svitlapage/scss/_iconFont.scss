@@ -1,0 +1,96 @@
+/*----- Icon Font -----*/
+
+@font-face {
+  font-family: 'SvitlaPage';
+  src:url('../fonts/iconsFont/SvitlaPage.eot');
+  src:url('../fonts/iconsFont/SvitlaPage.eot') format('embedded-opentype'),
+  url('../fonts/iconsFont/SvitlaPage.woff') format('woff'),
+  url('../fonts/iconsFont/SvitlaPage.ttf') format('truetype'),
+  url('../fonts/iconsFont/SvitlaPage.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'SvitlaPage';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-back:before {
+  content: "\e610";
+}
+
+.icon-person:before {
+  content: "\e611";
+}
+
+.icon-blue-directions:before {
+  content: "\e612";
+}
+
+.icon-email:before {
+  content: "\e613";
+}
+
+.icon-phone:before {
+  content: "\e614";
+}
+
+.icon-pointer:before {
+  content: "\e615";
+}
+
+.icon-button-arrow:before {
+  content: "\e60f";
+}
+
+.icon-library:before {
+  content: "\e600";
+}
+
+.icon-question:before {
+  content: "\e604";
+}
+
+.icon-search-1:before {
+  content: "\e605";
+}
+
+.icon-search-2:before {
+  content: "\e607";
+}
+
+.icon-home:before {
+  content: "\e60d";
+}
+
+.icon-menu:before {
+  content: "\e60e";
+}
+
+.icon-download:before {
+  content: "\e608";
+}
+
+.icon-envelope:before {
+  content: "\e609";
+}
+
+.icon-folder:before {
+  content: "\e60a";
+}
+
+.icon-printing:before {
+  content: "\e60b";
+}
+

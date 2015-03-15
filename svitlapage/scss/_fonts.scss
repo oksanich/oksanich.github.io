@@ -1,0 +1,8 @@
+/*----- Font -----*/
+
+@include font-face('ProximaNova-Semibold', font-files('proximaNova/ProximaNova-Semibold-webfont.woff2', 'proximaNova/ProximaNova-Semibold-webfont.woff', 'proximaNova/ProximaNova-Semibold-webfont.ttf', 'proximaNova/ProximaNova-Semibold-webfont.svg'),'proximaNova/ProximaNova-Semibold-webfont.eot');
+@include font-face('ProximaNova-Bold', font-files('proximaNova/ProximaNova-Bold-webfont.woff2', 'proximaNova/ProximaNova-Bold-webfont.woff', 'proximaNova/ProximaNova-Bold-webfont.ttf', 'proximaNova/ProximaNova-Bold-webfont.svg'),'proximaNova/ProximaNova-Bold-webfont.eot');
+@include font-face('ProximaNova-Extrabold', font-files('proximaNova/ProximaNova-Extrabold-webfont.woff2', 'proximaNova/ProximaNova-Extrabold-webfont.woff', 'proximaNova/ProximaNova-Extrabold-webfont.ttf', 'proximaNova/ProximaNova-Extrabold-webfont.svg'),'proximaNova/ProximaNova-Extrabold-webfont.eot');
+@include font-face('ProximaNova-Light', font-files('proximaNova/ProximaNova-Light-webfont.woff2', 'proximaNova/ProximaNova-Light-webfont.woff', 'proximaNova/ProximaNova-Light-webfont.ttf', 'proximaNova/ProximaNova-Light-webfont.svg'),'proximaNova/ProximaNova-Light-webfont.eot');
+@include font-face('ProximaNova-Regular', font-files('proximaNova/proxima-nova-regular.woff', 'proximaNova/proxima-nova-regular.ttf', 'proximaNova/proxima-nova-regular.svg'),'proximaNova/proxima-nova-regular.eot');
+

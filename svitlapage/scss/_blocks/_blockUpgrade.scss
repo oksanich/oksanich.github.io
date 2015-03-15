@@ -1,0 +1,46 @@
+/*----- Block Upgrade -----*/
+
+.blockUpgrade{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.fullBackground,
+.additionalRecords{
+  @include border-radius($borderRadius);
+  background: $primeColor;
+  padding: 3.750em 3.125em;
+}
+
+.additionalRecords{
+  background: $primeSecondColor;
+}
+
+.fullBackgroundTitle{
+  color: $fontColor_3;
+  font-size: 1.875em;
+  line-height: 1.167em;
+  font-family: $sans-bold;
+  margin-bottom: 1em;
+}
+
+.fullBackgroundText{
+  color: $fontColor_3;
+  font-size: 1.125em;
+  line-height: 1.333em;
+  font-family: $sans-light;
+  margin-bottom: 2em;
+}
+
+@media screen and (max-width: 767px) {
+
+  .fullBackground,
+  .additionalRecords{
+    @include border-radius(0);
+  }
+
+  .blockUpgrade{
+    margin-bottom: 3.750em;
+  }
+
+}
