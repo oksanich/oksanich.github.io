@@ -5967,7 +5967,7 @@ span.icon-person {
     vertical-align: middle;
     border-bottom: 1px solid #e1e4e6;
     border-top: 1px solid #e1e4e6;
-    box-shadow: 2px 2px 0 #ebebeb;
+    box-shadow: 0 2px 0 #ebebeb;
   }
 }
 /*----- Block Upgrade -----*/

@@ -31,15 +31,6 @@ span.icon-person {
 .blockTableRowItem{
 
   @extend %sectionItem;
-//  @include box-shadow(2px 2px 0 $borderShadowColor);
-//  @include border-radius($borderRadius);
-//  border: 1px solid $borderColor_1;
-//  background: $primeSecondBackgroundColor;
-//  margin-bottom: 0.6em;
-//  display: table;
-//  padding: 1.04em 0.88em 1.12em;
-//  width: 100%;
-//  position: relative;
 }
 
 .blockTableRowItem{
@@ -136,7 +127,7 @@ span.icon-person {
     vertical-align: middle;
     border-bottom: 1px solid $borderColor_1;
     border-top: 1px solid $borderColor_1;
-    box-shadow: 2px 2px 0 $borderShadowColor;
+    box-shadow: 0 2px 0 $borderShadowColor;
   }
 
 }
