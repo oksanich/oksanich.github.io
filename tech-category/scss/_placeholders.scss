@@ -1,0 +1,80 @@
+%block{
+  position: relative;
+}
+
+%titlePost{
+  font-size: 1.125em;
+  font-family: RobotoSlab-bold;
+}
+
+%popularTitleLink{
+  color: $whiteColor;
+  font-family: RobotoSlab-bold;
+  line-height: 1.2em;
+  &:hover{
+    text-decoration: none;
+    color: $footerMenuItemColor;
+  }
+}
+
+%categoryTitle{
+  font-size: 1.875em;
+  font-family: HelveticaNeueCyr-bold;
+  margin-bottom: 15px;
+}
+
+%btn{
+  border: 1px solid $borderColor;
+  background: #f0f0f0;
+  font-family: HelveticaNeueCyr-bold;
+  color: $thirdMainColor;
+  display: inline-block;
+  &:hover{
+    border-color: darken($borderColor, 10%);
+    background: darken(#f0f0f0, 10%);
+    color: darken($thirdMainColor, 10%);
+  }
+}
+
+%category_1{
+  color: $electronicsTitleColor;
+}
+
+%category_2{
+  color: $internetTitleColor;
+}
+
+%category_3{
+  color: $entertainmentTitleColor;
+}
+
+%category_4{
+  color: $innovationTitleColor;
+}
+
+%readMore{
+  border-radius: 50%;
+  padding: 6px 6px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+%readMoreWhite{
+  border: 2px solid $whiteColor;
+}
+
+
+%readMoreGrey{
+  border: 2px solid $thirdMainColor;
+}
+%arrow{
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-left-color: transparent;
+  border-right-width: 4px;
+  border-right-style: solid;
+  border-right-color: transparent;
+  display: inline-block;
+  vertical-align: middle;
+}

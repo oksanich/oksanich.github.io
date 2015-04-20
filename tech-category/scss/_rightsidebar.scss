@@ -1,0 +1,140 @@
+/*----- Right Sidebar -----*/
+
+.sidebarBlock{
+  margin-bottom: 45px;
+  display: inline-block;
+  width: 49%;
+  margin-left: -4px;
+  margin-right: 1%;
+  vertical-align: top;
+  &:nth-child(even){
+    margin-right: 0;
+  }
+}
+
+.sidebarTitle{
+  color: $mainTitleColor;
+  text-align: center;
+  border-top: 2px solid $mainTitleColor;
+  font-family: RobotoSlab-bold;
+  font-size: 1.25em;
+  padding: 10px 0;
+  text-transform: capitalize;
+  margin-left: 22px;
+  margin-right: 30px;
+}
+
+/*----- Right Sidebar Single Page -----*/
+
+.sidebarSinglePage{
+  margin-bottom: 50px;
+}
+
+.sidebarSinglePage .sidebarBlock{
+  width: 100%;
+}
+
+.sidebarSinglePage{
+
+  .sidebarBlockContent{
+    border-bottom: 1px solid $borderColor;
+    border-top: 1px solid $borderColor;
+    padding: 25px 0;
+    margin-left: 4px;
+  }
+
+  .sidebarTitle{
+    margin-left: 4px;
+    margin-right: 0px;
+  }
+}
+
+.relatedArticles{
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.relatedArticlesImage{
+  float: left;
+  img{
+    max-width: 135px;
+    max-height: 95px;
+    margin-right: 10px;
+  }
+}
+
+.relatedArticlesTitleLink{
+  font-family: RobotoSlab-bold;
+  font-size: 0.875em;
+  color: $mainColor;
+}
+
+.relatedArticlesReadMore{
+  font-family: Helvetica-regular;
+  color: $thirdMainColor;
+  font-size: 0.875em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.btnLoadMore{
+  @extend %btn;
+  font-size: .875em;
+  padding: 25px 20px;
+}
+
+@media (min-width: 768px) {
+  .mainSidebar,
+  .sidebarSinglePage{
+    margin-left: -15px;
+  }
+
+  .sidebarBlock {
+    display: inline-block;
+    width: 49%;
+    margin-left: -4px;
+    margin-right: 1%;
+    &:nth-child(even){
+      margin-right: 0;
+    }
+  }
+
+  .sidebarSinglePage{
+
+    .sidebarBlockContent{
+      margin-left: 15px;
+    }
+
+    .sidebarTitle{
+      margin-left: 16px;
+      margin-right: 0px;
+    }
+  }
+
+
+}
+
+@media (min-width: 992px){
+  .mainSidebar{
+    border-bottom: 1px solid $borderColor;
+  }
+  
+  .sidebarBlock {
+    width: 100%;
+    margin: 0 0 45px;
+  }
+
+  .sidebarSinglePage{
+
+    .sidebarBlockContent{
+      margin-left: 0;
+    }
+
+    .sidebarTitle{
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

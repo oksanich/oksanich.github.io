@@ -1,0 +1,6 @@
+/*----- Font -----*/
+
+@include font-face('Helvetica-regular', font-files('helvetica/Helvetica_Regular.woff2', 'helvetica/Helvetica_Regular.woff', 'helvetica/Helvetica_Regular.ttf', 'helvetica/Helvetica_Regular.svg'),'helvetica/Helvetica_Regular.eot');
+@include font-face('HelveticaNeueCyr-bold', font-files('helvetica_neue_cyr/HelveticaNeueCyr_Bold.woff2', 'helvetica_neue_cyr/HelveticaNeueCyr_Bold.woff', 'helvetica_neue_cyr/HelveticaNeueCyr_Bold.ttf', 'helvetica_neue_cyr/HelveticaNeueCyr_Bold.svg'),'helvetica_neue_cyr/HelveticaNeueCyr_Bold.eot');
+@include font-face('HelveticaNeueCyr-thin', font-files('helvetica_neue_cyr/HelveticaNeueCyr_Thin.woff2', 'helvetica_neue_cyr/HelveticaNeueCyr_Thin.woff', 'helvetica_neue_cyr/HelveticaNeueCyr_Thin.ttf', 'helvetica_neue_cyr/HelveticaNeueCyr_Thin.svg'),'helvetica_neue_cyr/HelveticaNeueCyr_Thin.eot');
+@include font-face('RobotoSlab-bold', font-files('robotoslab/RobotoSlab_Bold.woff2', 'robotoslab/RobotoSlab_Bold.woff', 'robotoslab/RobotoSlab_Bold.ttf', 'robotoslab/RobotoSlab_Bold.svg'),'robotoslab/RobotoSlab_Bold.eot');

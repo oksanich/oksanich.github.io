@@ -1,0 +1,181 @@
+/*----- Content Category Page -----*/
+
+.blockLatestPosts{
+  margin-bottom: 25px;
+}
+
+.latestPostsTitle{
+  text-align: center;
+  border-top: 2px solid;
+  font-family: RobotoSlab-bold;
+  font-size: 1.25em;
+  padding: 10px 0;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+//-----colorElectronics
+
+._colorElectronics {
+  .sidebarTitle,
+  .latestPostsTitle {
+    color: $electronicsTitleColor;
+    border-color: $electronicsTitleColor;
+  }
+
+  .blockLatestPosts .lastPostReadMoreLink,
+  .topStoryReadMoreLink{
+    color: $electronicsTitleColor;
+    &:hover {
+      .readMoreIcon {
+        color: $footerMenuItemColor;
+        border-color: $footerMenuItemColor;
+      }
+    }
+  }
+
+  .topStoryCategoryTitle,
+  .rightSidebarTitle{
+    background: $electronicsTitleColor url("../images/electronics.png") 15px 0 no-repeat;
+  }
+
+  .breadCrumbsCategoryLink,
+  .readMoreGrey,
+  .footerTopTitle{
+    color: $electronicsTitleColor;
+  }
+
+}
+
+//-----colorInternet
+
+._colorInternet {
+  .sidebarTitle,
+  .latestPostsTitle {
+    color: $internetTitleColor;
+    border-color: $internetTitleColor;
+  }
+
+  .blockLatestPosts .readMoreIcon,
+  .topStoryReadMoreLink {
+    color: $internetTitleColor;
+    &:hover {
+      color: $footerMenuItemColor;
+      border-color: $footerMenuItemColor;
+    }
+  }
+
+  .topStoryCategoryTitle,
+  .rightSidebarTitle{
+    background: $internetTitleColor url("../images/internet.png") 15px 0 no-repeat;
+  }
+
+  .breadCrumbsCategoryLink,
+  .readMoreGrey,
+  .footerTopTitle{
+    color: $internetTitleColor;
+  }
+}
+
+//-----colorEntertainment
+
+._colorEntertainment {
+  .sidebarTitle,
+  .latestPostsTitle {
+    color: $entertainmentTitleColor;
+  }
+
+  .blockLatestPosts .readMoreIcon,
+  .topStoryReadMoreLink {
+    color: $entertainmentTitleColor;
+    &:hover {
+      color: $footerMenuItemColor;
+      border-color: $footerMenuItemColor;
+    }
+  }
+
+  .topStoryCategoryTitle,
+  .rightSidebarTitle{
+    background: $entertainmentTitleColor url("../images/entertaiment.png") 15px 0 no-repeat;
+  }
+
+  .breadCrumbsCategoryLink,
+  .readMoreGrey,
+  .footerTopTitle{
+    color: $entertainmentTitleColor;
+  }
+
+}
+
+//-----colorInnovation
+
+._colorInnovation {
+  .sidebarTitle,
+  .latestPostsTitle {
+    color: $innovationTitleColor;
+    border-color: $innovationTitleColor;
+  }
+
+  .blockLatestPosts .readMoreIcon,
+  .topStoryReadMoreLink {
+    color: $innovationTitleColor;
+    &:hover {
+      color: $footerMenuItemColor;
+      border-color: $footerMenuItemColor;
+    }
+  }
+
+  .topStoryCategoryTitle,
+  .rightSidebarTitle{
+    background: $innovationTitleColor url("../images/innovation.png") 15px 0 no-repeat;
+  }
+
+  .breadCrumbsCategoryLink,
+  .readMoreGrey,
+  .footerTopTitle{
+    color: $innovationTitleColor;
+  }
+
+}
+
+.categoryLastPosts{
+  overflow: hidden;
+}
+
+.categoryContentBtn{
+  margin: 50px 0;
+}
+
+@media (min-width: 768px) {
+  .categoryLastPosts{
+    .lastPost {
+      width: 49%;
+      max-width: 272px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .singlePostContent,
+  .singlePostTitle,
+  .singlePostComments{
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: 1199px) {
+  .latestPostsTitle {
+  margin-right: 40px;
+  }
+
+  .categoryLastPosts{
+    .lastPost {
+      &:nth-child(even){
+        margin-left: 2%;
+      }
+      &:nth-child(odd){
+        margin-left: 0;
+      }
+    }
+  }
+}

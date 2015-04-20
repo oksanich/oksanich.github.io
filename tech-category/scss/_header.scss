@@ -1,0 +1,474 @@
+/*----- Header -----*/
+
+.mainHeader{
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.mainNav{
+  position: relative;
+}
+
+.headerBottom{
+  background: $mainTitleColor;
+  position: relative;
+}
+
+.logo{
+  font-size: 3.750em;
+  margin: -10px 0 -10px;
+}
+
+.logoLink{
+  color: $whiteColor;
+  &:hover{
+    text-decoration: none;
+    color: $whiteColor;
+  }
+}
+
+.headerSearch{
+  overflow: hidden;
+}
+
+.headerSearch input{
+  width: 85%;
+  max-width: 360px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  float: left;
+  overflow: hidden;
+  padding: 0 15px;
+  border-radius: $borderRadius 0 0 $borderRadius;
+}
+
+.headerSearch button{
+  width: 100%;
+  height: 36px;
+  background: $whiteColor;
+  border: none;
+  border-left: 1px solid $borderColor;
+  box-sizing: border-box;
+}
+
+.headerSearchBtn{
+  float: left;
+  width: 15%;
+  max-width: 50px;
+  padding: 2px 0;
+  background: $whiteColor;
+  border-radius: 0 $borderRadius $borderRadius 0;
+  .icon-search{
+    font-size: 1.3em;
+    color: $thirdMainColor;
+  }
+}
+
+.headerSocial{
+  overflow: hidden;
+  p{
+    float: left;
+    margin: 15px 10px 0 0;
+    color: $whiteColor;
+    font-size: 0.75em;
+  }
+}
+
+.headerSocialList{
+  float: left;
+  margin: 5px 0;
+}
+
+.headerSocialItem{
+  display: inline-block;
+}
+
+.headerSocialLink{
+  width: 2.1em;
+  height: 2.1em;
+  display: block;
+  background: $whiteColor;
+  border: 1px solid $whiteColor;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.1em;
+
+  .icon-facebook{
+    color: $facebookColor;
+  }
+  .icon-twitter{
+    color: $twitterColor;
+  }
+  .icon-instagram{
+    color: $instagramColor;
+  }
+  .icon-googleplus{
+    color: $googleplusColor;
+  }
+
+  &-facebook:hover{
+    background: $facebookColor;
+  }
+
+  &-twitter:hover{
+    background: $twitterColor;
+  }
+
+  &-instagram:hover{
+    background: $instagramColor;
+  }
+
+  &-googleplus:hover{
+    background: $googleplusColor;
+  }
+
+  &:hover{
+    text-decoration: none;
+
+    .icon-facebook{
+      color: $whiteColor;
+    }
+    .icon-twitter{
+      color: $whiteColor;
+    }
+    .icon-instagram{
+      color: $whiteColor;
+    }
+    .icon-googleplus{
+      color: $whiteColor;
+    }
+  }
+}
+
+
+.headerBtnMobile{
+  float: right;
+  margin-right: -15px;
+}
+
+.headerSearchBtnMobile,
+.headerMenuBtnMobile{
+  float: left;
+  font-size: 1.2em;
+  text-align: center;
+  width: 40px;
+  color: $whiteColor;
+  border-left: 2px solid $whiteColor;
+  cursor: pointer;
+  opacity: .8;
+}
+
+.headerBtnMobile span[class^="icon"]{
+  display: block;
+  height: 44px;
+  line-height: 2.2em;
+}
+
+@media (min-width: 768px) {
+  .siteNameTop{
+    float: left;
+    width: 25%;
+  }
+
+  .topMenu{
+    float: left;
+    width: 75%;
+  }
+
+  .headerSearchBtnMobile{
+    display: none;
+  }
+
+  .logo{
+    font-size: 5.250em;
+    line-height: 0;
+    margin: 7px 0 11px;
+  }
+
+  .headerSearch{
+    margin: 30px 0 0;
+  }
+
+  .headerSocial {
+    margin: 5px 0 0;
+  }
+
+  .headerMenuBtnMobile{
+    display: none;
+  }
+
+  .mainNav{
+
+  }
+
+  .topMenuItem{
+    float: left;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  .siteNameTopLink{
+    font-family: Helvetica-regular;
+    font-size: 0.625em;
+    color: $secondMainColor;
+  }
+
+  .topMenuLink{
+    font-family: Helvetica-regular;
+    font-size: 0.625em;
+    color: $secondMainColor;
+    height: 36px;
+    display: inline-block;
+    line-height: 36px;
+    padding: 0 10px;
+  }
+
+  .siteNameTopLink{
+    height: 36px;
+    display: inline-block;
+    line-height: 36px;
+  }
+
+  .topMenuListDropdown {
+    position: absolute;
+    z-index: 2;
+    display: none;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .topMenuDropdownLink{
+    color: $whiteColor;
+    font-family: Helvetica-regular;
+    font-size: 0.875em;
+    line-height: 1.857em;
+  }
+
+  .topMenuPosts{
+    .lastPost{
+      width: 100%;
+      background: $whiteColor;
+      position: relative;
+      min-height: 230px;
+      border: 2px solid $borderColor;
+      box-sizing: border-box;
+    }
+
+    .lastPostTitleLink{
+      font-size: 0.875em;
+    }
+
+    .lastPostReview{
+      padding: 15px;
+    }
+
+    .lastPostReadMoreLink{
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+    }
+
+    .lastPostImg{
+      margin-bottom: 0;
+    }
+  }
+
+  //-----colorElectronics
+
+  ._colorElectronics.topMenuItem{
+      &:hover{
+        background: $electronicsTitleColor;
+
+        .topMenuLink{
+          color: $whiteColor;
+          text-decoration: none;
+        }
+
+        .topMenuListDropdown {
+          display: block;
+        }
+      }
+  }
+
+  ._colorElectronics{
+    .topMenuListDropdown {
+      background: $electronicsTitleColor;
+    }
+  }
+
+  //-----colorInternet
+
+  ._colorInternet.topMenuItem{
+    &:hover{
+      background: $internetTitleColor;
+
+      .topMenuLink{
+        color: $whiteColor;
+        text-decoration: none;
+      }
+
+      .topMenuListDropdown {
+        display: block;
+      }
+    }
+  }
+
+  ._colorInternet{
+    .topMenuListDropdown {
+      background: $internetTitleColor;
+    }
+  }
+
+  //-----colorEntertainment
+
+  ._colorEntertainment.topMenuItem{
+    &:hover{
+      background: $entertainmentTitleColor;
+
+      .topMenuLink{
+        color: $whiteColor;
+        text-decoration: none;
+      }
+
+      .topMenuListDropdown {
+        display: block;
+      }
+    }
+  }
+
+  ._colorEntertainment{
+    .topMenuListDropdown {
+      background: $entertainmentTitleColor;
+    }
+  }
+
+  //-----colorInnovation
+
+  ._colorInnovation.topMenuItem{
+    &:hover{
+      background: $innovationTitleColor;
+
+      .topMenuLink{
+        color: $whiteColor;
+        text-decoration: none;
+      }
+
+      .topMenuListDropdown {
+        display: block;
+      }
+    }
+  }
+
+  ._colorInnovation{
+    .topMenuListDropdown {
+      background: $innovationTitleColor;
+    }
+  }
+}
+
+@media (min-width: 992px){
+  .logo{
+    font-size: 6.250em;
+  }
+
+  .headerSearch {
+    margin: 35px 0 0;
+  }
+
+  .headerSocial {
+    margin: 30px 0 0;
+  }
+
+}
+
+@media (min-width: 1199px){
+  .topMenuPosts {
+    .lastPost {
+      min-height: 260px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .headerSearchWrap {
+    position: absolute;
+    top: 44px;
+    background: $mainTitleColor;
+    margin-left: -15px;
+    width: 100%;
+    border-top: 1px solid $whiteColor;
+    padding: 1px 0;
+    z-index: 2;
+  }
+
+  .headerSearch {
+    width: 100%;
+    max-width: 425px;
+    margin: 0 auto;
+  }
+
+  .headerSearch input{
+    width: 80%;
+    margin-left: 15px;
+  }
+
+  .topMenuList{
+    background: $whiteColor;
+  }
+
+  .topMenuLink{
+    display: block;
+    height: 40px;
+    text-transform: lowercase;
+    line-height: 40px;
+    border-bottom: 1px solid $borderColor;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  .topMenu{
+    position: absolute;
+    z-index: 2;
+    max-width: 735px;
+    width: 100%;
+    top: 45px;
+    display: none;
+  }
+
+  //-----colorElectronics
+
+  ._colorElectronics{
+    .topMenuLink {
+      color: $electronicsTitleColor;
+    }
+  }
+
+  //-----colorInternet
+
+  ._colorInternet{
+    .topMenuLink {
+      color: $internetTitleColor;
+    }
+  }
+
+  //-----colorEntertainment
+
+  ._colorEntertainment{
+    .topMenuLink {
+      color: $entertainmentTitleColor;
+    }
+  }
+
+  //-----colorInnovation
+
+  ._colorInnovation{
+    .topMenuLink {
+      color: $entertainmentTitleColor;
+    }
+  }
+}

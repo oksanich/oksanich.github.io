@@ -1,0 +1,52 @@
+/*----- Left Sidebar -----*/
+
+.rightSidebar{
+  margin-bottom: 25px;
+}
+
+.rightSidebarLists{
+  border: 2px solid $borderColor;
+  border-top: none;
+  box-sizing: border-box;
+  padding:15px 15px 20px;
+}
+
+.rightSidebarTitle{
+  height: 60px;
+}
+
+.wrapRightSidebarListTitle{
+  font-family: RobotoSlab-bold;
+  font-size: 1.125em;
+  line-height: 2;
+  cursor: pointer;
+}
+
+.rightSidebarItem{
+  margin-bottom: 15px;
+}
+
+.rightSidebarLink{
+  color: $secondMainColor;
+  font-family: Helvetica-regular;
+  font-size: 0.875em;
+  line-height: 1.357em;
+}
+
+.arrow-down{
+  @extend %arrow;
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-top-color: #656565;
+}
+
+.arrow-up{
+  @extend %arrow;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: #656565;
+}
+
+._rightSidebarListDropdown{
+  display: none;
+}

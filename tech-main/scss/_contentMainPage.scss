@@ -1,0 +1,266 @@
+/*----- Content Main Page -----*/
+
+.aside{
+  height: 1000px;
+  width: 100%;
+  background: #000000;
+}
+
+.blockPopular{
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+
+.popularBig{
+  @extend %block;
+  float: left;
+  margin: 0 1% 5px 0;
+  overflow: hidden;
+  width: 100%;
+  max-height: 250px;
+}
+
+.popularSmall{
+  @extend %block;
+  max-height: 250px;
+  margin: 0 2% 5px 0;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.popularReview{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  bottom: 0;
+}
+
+.popularBig .popularReview{
+  height: 60%;
+  padding: 10px;
+  width: 100%;
+}
+
+.popularBigTitle,
+.popularSmallTitle{
+  width: 80%;
+}
+
+.popularReadMoreLink{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-family: Helvetica-regular;
+  font-size: 0.875em;
+  color: $whiteColor;
+  &:hover{
+    text-decoration: none;
+    color: $footerMenuItemColor;
+  }
+
+  &:hover .readMoreWhite{
+    border-color: $footerMenuItemColor;
+  }
+}
+
+.popularReadMore{
+  display: inline-block;
+}
+
+.readMoreWhite {
+  @extend %readMore;
+  @extend %readMoreWhite;
+}
+
+.readMoreGrey{
+  @extend %readMore;
+  @extend %readMoreGrey;
+}
+
+.popularSmall .popularReview{
+  height: 60%;
+  padding: 10px;
+  width: 100%;
+}
+
+.popularBigTitleLink {
+  @extend %popularTitleLink;
+  font-size: 1.125em;
+}
+
+.popularSmallTitleLink{
+  @extend %popularTitleLink;
+  font-size: 1.125em;
+}
+
+.blockElectronics,
+.blockInternet,
+.blockEntertainment,
+.blockInnovation{
+  margin-bottom: 25px;
+}
+
+.titleElectronics{
+  @extend %categoryTitle;
+  @extend %category_1;
+}
+
+.titleInternet{
+  @extend %categoryTitle;
+  @extend %category_2;
+}
+
+.titleEntertainment{
+  @extend %categoryTitle;
+  @extend %category_3;
+}
+
+.titleInnovation{
+  @extend %categoryTitle;
+  @extend %category_4;
+}
+
+.seeAll{
+  font-family: Helvetica-regular;
+  font-size: 0.4em;
+  display: inline-block;
+  margin-left: 15px;
+  color: $thirdMainColor;
+}
+
+.blockLink{
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.lastPosts{
+  overflow: hidden;
+}
+
+.lastPost{
+  margin-bottom: 15px;
+}
+
+.lastPostImg{
+  margin-bottom: 1.25em;
+  max-height: 250px;
+  max-width: 350px;
+}
+
+.lastPostTitle {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.lastPostReview{
+  text-align: right;
+}
+
+.lastPostTitleLink{
+  font-family: RobotoSlab-bold;
+  font-size: 1.125em;
+  color: $mainColor;
+  line-height: 1.2em;
+}
+
+.lastPostReadMoreLink{
+  font-family: Helvetica-regular;
+  font-size: 0.875em;
+  margin-right: 1px;
+  color: $secondMainColor;
+  &:hover{
+    color: $footerMenuItemColor;
+    text-decoration: none;
+    .readMoreGrey{
+      color: $footerMenuItemColor;
+      border-color: $footerMenuItemColor;
+    }
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .popularBig{
+    max-height: 385px;
+  }
+
+  .popularBig .popularReview{
+    height: 40%;
+    padding: 20px 25px;
+  }
+
+  .popularSmall{
+    width: 49%;
+    max-height: 190px;
+  }
+
+  .popularBigTitleLink {
+    font-size: 1.875em;
+  }
+
+  .lastPost{
+    width: 32%;
+    max-width: 240px;
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: -4px;
+    vertical-align: top;
+    margin-bottom: 0;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+
+  .categoryLastPosts {
+    .lastPost {
+      margin-bottom: 15px;
+      &:nth-child(odd) {
+        margin-left: 0;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 992px){
+
+
+}
+
+@media (min-width: 1200px) {
+  .popularBig{
+    max-width: 600px;
+  }
+
+  .popularSmall {
+    max-width: 197px;
+  }
+
+  .lastPost{
+    margin-left: 5%;
+  }
+
+  .blockPopularCategory{
+    .popularSmall {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .popularBig {
+    max-height: 260px;
+  }
+}
+
+@media (max-width: 991px) {
+  .popularSmall{
+    max-height: 260px;
+  }
+}

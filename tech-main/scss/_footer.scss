@@ -1,0 +1,249 @@
+/*----- Footer -----*/
+
+.mainFooter {
+  margin-bottom: 50px;
+}
+
+.footerTop{
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 41px;
+}
+
+.footerTopTitle{
+  display: inline-block;
+  color: #003378;
+  font-family: RobotoSlab-bold;
+  font-size: 1.25em;
+  position: relative;
+  padding: 0 10px;
+  &:before{
+    content: '';
+    background: $borderColor;
+    width: 2000px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+  }
+  &:after{
+    content: '';
+    background: $borderColor;
+    width: 2000px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+  }
+}
+
+.footerSocial {
+  text-align: center;
+}
+
+.footerSocialList{
+  overflow: hidden;
+  display: inline-block;
+}
+
+.footerLists {
+  margin: 0 10%;
+  margin-bottom: 30px;
+}
+
+.footerList{
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -4px;
+  margin-bottom: 15px;
+}
+
+.footerListTitle{
+  color: $thirdMainColor;
+  font-family: RobotoSlab-bold;
+  font-size: .875em;
+  line-height: 1.857em;
+}
+
+.footerCategoriesLink{
+  color: $footerMenuItemColor;
+  font-family: Helvetica-regular;
+  font-size: 0.875em;
+  line-height: 1.857em;
+}
+
+.footerSearchWrap {
+  margin-top: 25px;
+}
+
+.footerSearch{
+  overflow: hidden;
+}
+
+.footerSearch input{
+  width: 85%;
+  max-width: 360px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid $thirdMainColor;
+  border-right: none;
+  float: left;
+  overflow: hidden;
+  padding: 0 15px;
+  border-radius: $borderRadius 0 0 $borderRadius;
+}
+
+.footerSearch button{
+  width: 100%;
+  height: 34px;
+  background: $whiteColor;
+  border: none;
+  border-left: 1px solid $thirdMainColor;
+  box-sizing: border-box;
+}
+
+.footerSearchBtn{
+  float: left;
+  width: 15%;
+  max-width: 50px;
+  padding: 2px 0;
+  background: $whiteColor;
+  border-radius: 0 $borderRadius $borderRadius 0;
+  border: 1px solid $thirdMainColor;
+  border-left: none;
+  .icon-search{
+    font-size: 1.3em;
+    color: $thirdMainColor;
+  }
+}
+
+.footerSocial p{
+  color: $mainColor;
+  font-family: Helvetica-regular;
+  font-size: .875em;
+  margin-bottom: 15px;
+}
+
+.footerSocialItem{
+  float: left;
+  margin-right: 5px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.footerSocialLink{
+  color: $whiteColor;
+  width: 2.1em;
+  height: 2.1em;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.2em;
+  &:hover{
+    text-decoration: none;
+  }
+  &-facebook{
+    background: $facebookColor;
+    &:hover{
+      background: darken($facebookColor, 7%);
+    }
+  }
+  &-twitter{
+    background: $twitterColor;
+    &:hover{
+      background: darken($twitterColor, 7%);
+    }
+  }
+  &-googleplus{
+    background: $googleplusColor;
+    &:hover{
+      background: darken($googleplusColor, 7%);
+    }
+  }
+  &-instagram{
+    background: $instagramColor;
+    &:hover{
+      background: darken($instagramColor, 7%);
+    }
+  }
+}
+
+.logoFooter{
+  text-align: center;
+  margin: 25px 0;
+}
+
+.copyright{
+  text-align: center;
+  padding-left: 15px;
+}
+
+.logoFooter .logoLink{
+  display: inline-block;
+  color: $mainTitleColor;
+  font-size: 3.250em;
+}
+
+.copyrightLink{
+  font-family: HelveticaNeueCyr-thin;
+  font-size: .875em;
+  color: $mainColor;
+}
+
+@media (min-width: 440px) {
+  .footerList{
+    width: 45%;
+    margin-right: 10%;
+    &:nth-child(even){
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footerSocial {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .footerSearchWrap {
+    margin-top: 35px;
+  }
+
+  .copyright{
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px){
+  .logoFooter .logoLink{
+    font-size: 6.250em;
+    margin: 0;
+  }
+
+  .footerList{
+    width: 22%;
+    margin-right: 4%;
+    &:nth-child(even){
+      margin-right: 4%;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  .logoFooter{
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerSearchWrap {
+    max-width: 400px;
+    margin: 25px auto 25px;
+  }
+}
