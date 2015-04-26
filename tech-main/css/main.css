@@ -1528,7 +1528,10 @@ img {
 /*----- Header -----*/
 .mainHeader {
   margin-bottom: 30px;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
 }
 
 .mainNav {
@@ -1925,8 +1928,16 @@ img {
   ._colorInnovation .topMenuLink {
     color: #003399;
   }
+
+  .headerBottom .col-xs-5 {
+    overflow: hidden;
+  }
 }
 /*----- Content Main Page -----*/
+.mainContent {
+  margin-top: 80px;
+}
+
 .aside {
   height: 1000px;
   width: 100%;
@@ -2110,6 +2121,10 @@ img {
   }
   .categoryLastPosts .lastPost:nth-child(odd) {
     margin-left: 0;
+  }
+
+  .mainContent {
+    margin-top: 165px;
   }
 }
 @media (min-width: 1200px) {
@@ -2467,6 +2482,7 @@ img {
 
 .topStoryReadMoreLink:hover .readMoreGrey {
   border-color: #0099cc;
+  color: #0099cc;
 }
 
 .mainBottomBreadCrumbs {
@@ -2576,6 +2592,12 @@ img {
 @media (min-width: 1199px) {
   .singlePostCommentsBottom textarea {
     width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .topStory {
+    max-width: 400px;
+    margin: 0 auto 15px;
   }
 }
 /*----- Right Sidebar -----*/

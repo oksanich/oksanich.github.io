@@ -2,7 +2,10 @@
 
 .mainHeader{
   margin-bottom: 30px;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
 }
 
 .mainNav{
@@ -469,6 +472,12 @@
   ._colorInnovation{
     .topMenuLink {
       color: $entertainmentTitleColor;
+    }
+  }
+
+  .headerBottom{
+    .col-xs-5{
+      overflow: hidden;
     }
   }
 }

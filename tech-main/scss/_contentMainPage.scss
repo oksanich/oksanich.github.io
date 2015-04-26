@@ -1,5 +1,9 @@
 /*----- Content Main Page -----*/
 
+.mainContent{
+  margin-top: 80px;
+}
+
 .aside{
   height: 1000px;
   width: 100%;
@@ -224,6 +228,10 @@
         margin-left: 0;
       }
     }
+  }
+
+  .mainContent {
+    margin-top: 165px;
   }
 
 }

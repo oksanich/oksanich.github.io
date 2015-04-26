@@ -187,6 +187,7 @@
 .topStoryReadMoreLink{
   &:hover .readMoreGrey{
     border-color: $footerMenuItemColor;
+    color: $footerMenuItemColor;
   }
 }
 
@@ -309,5 +310,13 @@
     textarea {
       width: 100%;
     }
+  }
+}
+
+
+@media(max-width: 767px){
+  .topStory{
+    max-width: 400px;
+    margin: 0 auto 15px;
   }
 }
