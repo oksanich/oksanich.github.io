@@ -1,0 +1,80 @@
+/*----- New Goods and You Saw -----*/
+
+.newGoodsTop{
+  background: $primeColor;
+  overflow: hidden;
+  margin-bottom: em(25px);
+  padding: 0 10px;
+}
+
+.newGoodsTitle{
+  text-transform: uppercase;
+  color: $whiteColor;
+  font-size: em(25px);
+  float: left;
+  font-weight: 400;
+  line-height: em(20px);
+}
+
+.youSawTop{
+  margin-bottom: em(25px);
+}
+
+.youSawTitleTop{
+  text-transform: uppercase;
+  font-size: em(25px);
+}
+
+.newGoodsAll{
+  @extend %link;
+  float: right;
+  line-height: em(35px);
+}
+
+.newGood,
+.youSaw{
+  text-align: center;
+}
+
+.blockNewGoodImg,
+.blockYouSawImg{
+  border: 1px solid $greyLightColor;
+  overflow: hidden;
+  margin-bottom: em(15px);
+  display: block;
+  &:hover{
+    border-color: $greyDarkColor;
+  }
+}
+
+.newGoodImg,
+.youSawImg{
+  max-width: 220px;
+}
+
+.newGoodTitle,
+.youSawTitle{
+  font-size: em(18px);
+  font-weight: 400;
+  color: $primeColor;
+  margin-bottom: em(5px);
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.newGoodCod,
+.youSawCod{
+  color: $greyDarkColor;
+  font-size: em(14px);
+  margin-bottom: em(15px);
+}
+
+.newGoodPrice,
+.youSawPrice{
+  font-family: Roboto-bold, sans-serif;
+  font-size: em(18px);
+  color: $primeColorSecond;
+  margin-bottom: em(15px);
+}

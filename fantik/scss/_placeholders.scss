@@ -1,0 +1,22 @@
+
+%link{
+  color: $primeColorSecond;
+  &:hover{
+    color: darken($primeColorSecond, 5%);
+    text-decoration: underline;
+  }
+}
+
+%btn{
+  color: $whiteColor;
+  background: $primeColorSecond;
+  @include border-radius($borderRadius);
+  &:hover {
+    color: $greyLightColor;
+    background: darken($primeColorSecond, 5%);
+  }
+}
+
+%titleUpper{
+  text-transform: uppercase;
+}

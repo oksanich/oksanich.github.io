@@ -1,0 +1,6 @@
+/*----- Font -----*/
+
+@include font-face('Roboto-regular', font-files('roboto/Roboto-Regular-webfont.woff', 'roboto/Roboto-Regular-webfont.ttf', 'roboto/Roboto-Regular-webfont.svg'),'roboto/Roboto-Regular-webfont.eot');
+@include font-face('Roboto-thin', font-files('roboto/Roboto-Thin-webfont.woff', 'roboto/Roboto-Thin-webfont.ttf', 'roboto/Roboto-Thin-webfont.svg'),'roboto/Roboto-Thin-webfont.eot');
+@include font-face('Roboto-mediun', font-files('roboto/Roboto-Medium-webfont.woff', 'roboto/Roboto-Medium-webfont.ttf', 'roboto/Roboto-Medium-webfont.svg'),'roboto/Roboto-Medium-webfont.eot');
+@include font-face('Roboto-bold', font-files('roboto/Roboto-Bold-webfont.woff', 'roboto/Roboto-Bold-webfont.ttf', 'roboto/Roboto-Bold-webfont.svg'),'roboto/Roboto-Bold-webfont.eot');

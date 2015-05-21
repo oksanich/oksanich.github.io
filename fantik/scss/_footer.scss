@@ -1,0 +1,88 @@
+/*----- Footer -----*/
+
+.mainFooter{
+  background: $primeColor;
+  min-height: em(160px);
+  overflow: hidden;
+}
+
+.footer{
+  margin: em(23px) 0;
+  position: relative;
+}
+
+.copyRight{
+  color: $whiteColor;
+  position: absolute;
+  top: em(50px);
+}
+
+.footerSocialTitle,
+.footerSignUpTitle{
+  color: $primeColorSecond;
+  margin-bottom: em(18px);
+  text-transform: uppercase;
+}
+
+.footerSocialItem{
+  display: inline-block;
+  margin-right: em(10px);
+}
+
+.footerSocialLink{
+  @include border-radius(em(27px,14px));
+  text-decoration: none;
+  width: em(27px, 14px);
+  height: em(27px, 14px);
+  background: $whiteColor;
+  display: block;
+  text-align: center;
+  line-height: em(30px, 14px);
+  font-size: em(25px);
+  color: $primeColor;
+  &:hover{
+    background: lighten($primeColorSecond, 5%);
+    text-decoration: none;
+  }
+}
+
+.footerSignUpInput{
+  border: none;
+  padding: em(10px) em(15px);
+  @include border-radius($borderRadius);
+  font-size: em(12px);
+  line-height: em(18px);
+  width: em(300px);
+  margin-bottom: em(22px);
+  font-family: Roboto-thin, sans-serif;
+}
+
+.footerSignUpBtn{
+  @extend %btn;
+  border: none;
+  padding: em(12px) em(13px);
+  font-size: em(13px);
+}
+
+@media (max-width: 768px) {
+  .footer{
+    text-align: center;
+  }
+
+  .copyRight{
+    position: initial;
+  }
+
+  .footerLogo,
+  .footerSocial,
+  .footerSignUp{
+    margin-bottom: em(30px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .footerSignUp{
+    margin-top: em(30px);
+  }
+}

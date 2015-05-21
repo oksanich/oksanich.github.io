@@ -1,0 +1,77 @@
+/*----- Global -----*/
+
+body{
+  color: $primeColor;
+  font-family: Roboto-regular, sans-serif;
+  font-size: em(14px);
+}
+
+a{
+  text-decoration: none;
+}
+
+input,
+textarea{
+  outline: none;
+}
+
+.textLink{
+  @extend %link;
+}
+
+::-webkit-input-placeholder {
+  color: $primeColor;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: $primeColor;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: $primeColor;
+}
+
+:-ms-input-placeholder {
+  color: $primeColor;
+}
+
+
+.collageImg{
+  width: 100%;
+  margin-bottom: em(20px);
+}
+
+.advantages{
+  text-align: center;
+  margin-bottom: em(50px);
+  overflow: hidden;
+}
+
+.advantageImg{
+  width: 100%;
+  max-width: 360px;
+}
+
+.blockPageReview{
+  padding: em(50px) 0;
+  border-top: 1px solid $greyDarkColor;
+}
+
+.pageReviewTitle{
+  text-transform: uppercase;
+  margin-bottom: em(35px);
+}
+
+.pageReviewText{
+  margin-bottom: em(35px);
+  text-align: justify;
+  &:last-child{
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .advantageImg{
+    margin-bottom: em(15px);
+  }
+}
