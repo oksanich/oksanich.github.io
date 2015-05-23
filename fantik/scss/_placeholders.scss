@@ -14,6 +14,7 @@
   &:hover {
     color: $greyLightColor;
     background: darken($primeColorSecond, 5%);
+    text-decoration: none;
   }
 }
 

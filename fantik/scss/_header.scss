@@ -1,2 +1,317 @@
 /*----- Header -----*/
 
+.headerContact{
+  margin: em(10px) 0;
+  overflow: hidden;
+}
+
+.headerPhones{
+  display: inline-block;
+  span{
+    color: $primeColorSecond;
+    display: none;
+  }
+}
+
+.phoneOne{
+  color: $whiteColor;
+  font-size: em(10px);
+  display: block;
+  margin-bottom: em(9px);
+  &:last-child{
+    margin-bottom: 0;
+  }
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.feedback{
+  display: inline-block;
+  vertical-align: top;
+  margin: em(4px) 0 0 em(5px);
+}
+
+.feedbackBtn{
+  @extend %btn;
+  padding: em(7px);
+  display: inline-block;
+  font-size: em(10px);
+  line-height: em(13px);
+}
+
+.topHeader{
+  background: $primeColor;
+  overflow: hidden;
+  position: relative;
+}
+
+.headerMobileBtn{
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+.mobileBtn{
+  box-sizing: border-box;
+  color: $whiteColor;
+  display: inline-block;
+  font-size: em(20px);
+  border-right: 2px dotted $whiteColor;
+  height: 35px;
+  width: 43px;
+  cursor: pointer;
+  span{
+    display: inline-block;
+    margin-top: 5px;
+  }
+  &:first-child{
+    border-left: 2px dotted $whiteColor;
+    margin-right: -4px;
+
+    span{
+      margin-left: 3px;
+    }
+  }
+
+  &.mobileMenuBtn span{
+    padding-left: 7px;
+  }
+}
+
+.headerSearchWrap{
+  margin: em(10px) 0;
+}
+
+.search {
+  width: 290px;
+  @include border-radius($borderRadius);
+  background: $whiteColor;
+  margin: 0 auto;
+}
+
+.searchInput {
+  @include border-radius($borderRadius 0 0 $borderRadius);
+  border: none;
+  -webkit-appearance: none;
+  width: 220px;
+  vertical-align: middle;
+  line-height: em(18px);
+  padding: em(10px) em(15px);
+  font-family: Roboto-thin, sans-serif;
+  font-size: em(12px);
+}
+
+.searchBtn {
+  @include border-radius(0 $borderRadius $borderRadius 0);
+  width: 35px;
+  height: 40px;
+  border: none;
+  background: none;
+  line-height: em(20px);
+  color: $primeColorSecond;
+}
+
+.middleHeader {
+  border-bottom: 1px solid $primeColorSecond;
+}
+
+.headerLogo {
+  margin-top: em(7px);
+  text-align: left;
+}
+
+.headerLogoLink{
+  display: inline-block;
+  img{
+    width: 100%;
+    max-width: 100px;
+  }
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.headerLogoLinkText{
+  color: $primeColor;
+  font-size: em(12px);
+}
+
+.headerCart{
+  font-size: em(45px);
+  color: $primeColorSecond;
+  text-align: right;
+  position: relative;
+}
+
+.headerCartNumber {
+  position: absolute;
+  top: 25px;
+  right: 21px;
+  font-size: em(4px);
+  color: $whiteColor;
+}
+
+.bottomHeader{
+  position: relative;
+}
+
+.mainMenu{
+  display: none;
+}
+
+.menuItemLink {
+  display: block;
+  text-align: center;
+  font-family: Roboto-mediun, sans-serif;
+  padding: em(15px) 0;
+  color: $primeColor;
+  border-bottom: 1px solid $primeColor;
+  &:hover{
+    text-decoration: none;
+    color: $primeColorSecond;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  .headerMobileBtn{
+    display: none;
+  }
+
+  .headerPhones{
+    float: left;
+    margin-top: em(10px);
+  }
+
+  .feedback{
+    float: right;
+    margin: 0;
+  }
+
+  .feedbackBtn{
+    font-size: em(18px);
+  }
+
+  .headerPhones{
+    span{
+      display: inline-block;
+    }
+  }
+
+  .phoneOne{
+    font-size: em(14px);
+    display: inline-block;
+    margin-left: em(5px);
+  }
+
+  .headerSearchWrap{
+    float: left;
+  }
+
+  .buyUkrainian{
+    float: right;
+    margin-top: em(13px);
+  }
+
+  .middleHeader {
+    padding: em(20px);
+    border: none;
+  }
+
+  .headerLogo {
+    margin-top: 0;
+  }
+
+  .headerLogoLink{
+    img{
+      max-width: 200px;
+      margin-bottom: em(10px);
+    }
+  }
+
+  .headerLogoLinkText{
+    font-size: em(16px);
+  }
+
+  .headerCart{
+    font-size: em(60px);
+    margin-top: em(2px);
+  }
+
+  .headerCartNumber {
+    top: 34px;
+    right: 29px;
+  }
+
+  .bottomHeader{
+    border-top: 1px solid $primeColorSecond;
+    border-bottom: 1px solid $primeColorSecond;
+  }
+
+  .mainMenu{
+    display: table;
+    width: 100%;
+  }
+
+  .menuList{
+    display: table-row;
+  }
+
+  .menuItem{
+    display: table-cell;
+    float: none;
+    text-align: center;
+  }
+
+  .menuItemLink{
+    display: block;
+    border: none;
+    &:hover{
+      text-decoration: none;
+      color: $primeColorSecond;
+    }
+  }
+
+  .selected{
+    .menuItemLink{
+      color: $primeColorSecond;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+
+  .headerLogo {
+    text-align: center;
+  }
+
+  .headerSearchWrap{
+    margin-left: 50px;
+  }
+
+  .headerLogoLink{
+    img{
+      max-width: 270px;
+    }
+  }
+
+  .headerLogoLinkText{
+    font-size: em(18px);
+  }
+
+  .menuItemLink{
+    font-size: em(18px);
+  }
+
+  .headerCart{
+    margin-top: em(4px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .menuItemLink{
+    font-size: em(20px);
+  }
+}

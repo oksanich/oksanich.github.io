@@ -15,6 +15,10 @@ textarea{
   outline: none;
 }
 
+button:focus {
+  outline: none;
+}
+
 .textLink{
   @extend %link;
 }

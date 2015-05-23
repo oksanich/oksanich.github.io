@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Головна</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css"/>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,31 +17,81 @@
     <!--START header-->
     <header class="mainHeader">
         <div class="topHeader">
+
+            <div class="headerMobileBtn">
+                <div class="mobileBtn mobileSearchBtn _mobileSearchBtn">
+                    <span class="icon-search"></span>
+                </div>
+                <div class="mobileBtn mobileMenuBtn _mobileMenuBtn">
+                    <span class="icon-menu"></span>
+                </div>
+            </div>
+
             <div class="container">
                 <div class="row">
-                    <div class="col"></div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="headerContact">
+                            <div class="headerPhones">
+                                <span class="icon-phone"></span>
+                                <a class="phoneOne" href="tel:+380661656265">(066)165-62-65</a>
+                                <a class="phoneOne" href="tel:+380973706983">(097)370-69-83</a>
+                            </div>
+                            <div class="feedback">
+                                <a class="feedbackBtn" href="#">Зворотній зв'язок</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="headerSearchWrap hidden-xs _headerSearchWrap">
+                            <form class="headerSearch" action="">
+                                <div class="search">
+                                    <input class="searchInput" type="search" placeholder="Пошук">
+                                    <button class="searchBtn" type="submit">
+                                        <span class="icon-search"></span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="buyUkrainian hidden-xs">
+                            <img src="images/buy-ukrainian.png" alt=""/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="middleHeader">
             <div class="container">
                 <div class="row">
-
+                    <div class="col-xs-9 col-sm-10">
+                        <div class="headerLogo">
+                            <a class="headerLogoLink" href="">
+                                <img src="images/header-logo.png" alt="Фантік"/>
+                                <div class="headerLogoLinkText">Взуття оптом</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-3 col-sm-2">
+                        <div class="headerCart icon-cart">
+                            <span class="headerCartNumber">0</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!--START menu-->
         <div class="bottomHeader">
-            <nav class="mainMenu">
-                <ul class="menuList">
-                    <li class="menuItem"><a class="menuItemLink" href="#">Головна</a></li>
-                    <li class="menuItem"><a class="menuItemLink" href="#">Кталог взуття</a></li>
-                    <li class="menuItem"><a class="menuItemLink" href="#">Оплата</a></li>
-                    <li class="menuItem"><a class="menuItemLink" href="#">Доставка</a></li>
-                    <li class="menuItem"><a class="menuItemLink" href="#">О нас</a></li>
-                    <li class="menuItem"><a class="menuItemLink" href="#">Контакты</a></li>
-                </ul>
-            </nav>
+            <div class="container">
+                <nav class="mainMenu">
+                    <ul class="menuList _menuList">
+                        <li class="menuItem"><a class="menuItemLink" href="#">Головна</a></li>
+                        <li class="menuItem"><a class="menuItemLink" href="#">Кталог взуття</a></li>
+                        <li class="menuItem"><a class="menuItemLink" href="#">Оплата</a></li>
+                        <li class="menuItem"><a class="menuItemLink" href="#">Доставка</a></li>
+                        <li class="menuItem"><a class="menuItemLink" href="#">О нас</a></li>
+                        <li class="menuItem"><a class="menuItemLink" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <!--END menu-->
     </header>
@@ -268,6 +319,9 @@
     <!--END footer-->
 
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
