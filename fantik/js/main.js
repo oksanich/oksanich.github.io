@@ -4,4 +4,8 @@ $(document).ready(function(){
         $('._headerSearchWrap').toggleClass('hidden-xs');
     });
 
+    $('._mobileMenuBtn').click(function(){
+        $('._mainMenu').slideToggle('fast');
+    });
+
 });
