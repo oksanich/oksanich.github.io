@@ -110,7 +110,9 @@ label[for='contactFormCopy']{
 }
 
 #contactFormCopy:checked + label > .contactFormCopy{
-  background: $primeColorSecond;
+  @include transition-duration(.5s);
+  background: lighten($primeColorSecond, 5%);
+  border-radius: 15px;
 }
 
 .contactFormSend{

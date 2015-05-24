@@ -1,0 +1,178 @@
+/*----- Product single -----*/
+
+.blockProduct{
+  margin-bottom: em(25px);
+}
+
+.productTitle{
+  color: $primeColorSecond;
+  font-size: em(24px);
+  font-family: Roboto-mediun, sans-serif;
+  margin-bottom: em(10px);
+}
+
+.previewPictureBig{
+  border: 1px solid $greyLightColor;
+  margin-bottom: em(10px);
+  text-align: center;
+  img{
+    width: 100%;
+    max-width: 460px;
+  }
+}
+
+.previewPicturesSmall{
+  text-align: center;
+  img{
+    border: 1px solid $greyLightColor;
+    margin-right: em(15px);
+    width: 100%;
+    max-width: 140px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+.productRightFormTop,
+.productRightFormBottom{
+  margin-bottom: em(30px);
+}
+
+.rightFormSizes{
+  margin-bottom: em(10px);
+}
+
+.productRightTitle{
+  font-size: em(24px);
+  margin-bottom: em(10px);
+}
+
+.rightFormSizesItem{
+  display: inline-block;
+  text-align: center;
+  margin: 0 em(7px) em(7px) 0;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.rightFormSizesItem input[type='checkbox']{
+  display: none;
+}
+
+.rightFormSize{
+  display: block;
+  font-size: em(14px);
+  margin-bottom: em(7px);
+}
+
+.rightFormSizePseudoCheckbox{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid $contactPlaceholder ;
+  box-sizing: border-box;
+}
+
+.rightFormSizesItem input[type='checkbox']:checked + label > .rightFormSizePseudoCheckbox{
+  @include transition-duration(.5s);
+  background: lighten($primeColorSecond, 5%);
+  border-radius: 15px;
+}
+
+.rightFormPrise{
+  font-size: em(24px);
+  font-family: Roboto-bold, sans-serif;
+  color: $primeColorSecond;
+  margin-bottom: em(3px);
+}
+
+.rightFormPriseReview{
+  font-size: em(14px);
+  color: $greyDarkColor;
+}
+
+.rightFormBottomPrise{
+  margin-bottom: em(35px);
+}
+
+.productRightFormAmount{
+  margin-bottom: em(15px);
+}
+
+.productAmount{
+  margin-bottom: em(7px);
+  display: inline-block;
+}
+
+.productAmountNumber{
+  color: $greyDarkColor;
+}
+
+#productAmount {
+  display: block;
+  max-width: 60px;
+  border: 2px solid $greyLightColor;
+  padding: 0 0 0 em(5px);
+}
+
+.productRightFormBtn{
+  @extend %btn;
+  border: none;
+  text-transform: uppercase;
+  font-size: em(30px);
+  font-family: Roboto-bold, sans-serif;
+  padding: em(7px) em(20px);
+  border-radius: 0;
+}
+
+.formProductPropertiesItem{
+  overflow: hidden;
+  border-bottom: 1px solid $greyLightColor;
+  padding: em(7px) 0;
+  &:last-child{
+    border-bottom: none;
+  }
+}
+
+.formProductPropertiesKey,
+.formProductPropertiesValue{
+  display: block;
+  width: 50%;
+  float: left;
+  font-size: em(18px);
+}
+
+.formProductPropertiesKey{
+  font-family: Roboto-thin, sans-serif;
+
+}
+
+.formProductPropertiesValue{
+
+}
+
+@media (max-width: 768px) {
+
+  .formProductPropertiesKey,
+  .formProductPropertiesValue{
+    font-size: em(14px);
+  }
+
+  .productRightFormBtn{
+    font-size: em(20px);
+  }
+}
+
+@media (min-width: 768px) {
+  .previewPicturesSmall {
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .previewPicturesSmall img {
+    max-width: 110px;
+  }
+}

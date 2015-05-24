@@ -51,9 +51,18 @@ button:focus {
   overflow: hidden;
 }
 
+.advantageLink{
+  display: block;
+  border: 2px solid $greyDarkColor;
+  max-width: 360px;
+  margin: 0 auto em(15px);
+  &:hover{
+    border-color: $primeColorSecond;
+  }
+}
+
 .advantageImg{
   width: 100%;
-  max-width: 360px;
 }
 
 .blockPageReview{
@@ -74,8 +83,8 @@ button:focus {
   }
 }
 
-@media (max-width: 768px) {
-  .advantageImg{
-    margin-bottom: em(15px);
+@media (min-width: 768px) {
+  .advantageLink {
+    margin-bottom: 0;
   }
 }
