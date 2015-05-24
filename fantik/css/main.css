@@ -54,6 +54,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+.textLink, .newGoodsAll {
+  color: #01b179;
+}
+.textLink:hover, .newGoodsAll:hover {
+  color: #019868;
+  text-decoration: underline;
+}
+
+.feedbackBtn, .contactFormSend, .footerSignUpBtn {
+  color: #fff;
+  background: #01b179;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+.feedbackBtn:hover, .contactFormSend:hover, .footerSignUpBtn:hover {
+  color: #e9eaea;
+  background: #019868;
+  text-decoration: none;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1514,28 +1535,11 @@ button:focus {
     margin-bottom: 1.07143em;
   }
 }
-.textLink, .newGoodsAll {
-  color: #01b179;
-}
-.textLink:hover, .newGoodsAll:hover {
-  color: #019868;
-  text-decoration: underline;
-}
-
-.feedbackBtn, .footerSignUpBtn {
-  color: #fff;
-  background: #01b179;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-}
-.feedbackBtn:hover, .footerSignUpBtn:hover {
-  color: #e9eaea;
-  background: #019868;
-  text-decoration: none;
-}
-
 /*----- Header -----*/
+.mainHeader {
+  margin-bottom: 1.78571em;
+}
+
 .headerContact {
   margin: 0.71429em 0;
   overflow: hidden;
@@ -1840,6 +1844,157 @@ button:focus {
 @media (min-width: 1200px) {
   .menuItemLink {
     font-size: 1.42857em;
+  }
+}
+/*----- Bread Crumbs -----*/
+.mainBreadCrumbs {
+  background: #505d65;
+  margin-bottom: 3.57143em;
+}
+
+.breadCrumbsItem {
+  display: inline-block;
+  color: #fff;
+  padding: 0.35714em 0;
+}
+.breadCrumbsItem:after {
+  content: '/';
+}
+.breadCrumbsItem:last-child:after {
+  content: '';
+}
+
+.breadCrumbsLink,
+.breadCrumbsText {
+  font-size: 0.85714em;
+  color: #fff;
+}
+
+/*----- Contact -----*/
+.mainContact {
+  margin-bottom: 3.57143em;
+}
+
+.contactWrap {
+  margin-bottom: 1.78571em;
+}
+
+.contactTitle {
+  color: #01b179;
+  font-size: 1.71429em;
+  margin-bottom: 1.42857em;
+}
+
+.contactInfoPhones,
+.contactInfoMails {
+  margin-bottom: 1.78571em;
+}
+
+.contactInfoPhone {
+  color: #505d65;
+  font-size: 1.42857em;
+  display: block;
+  margin-bottom: 0.35714em;
+}
+.contactInfoPhone:hover {
+  text-decoration: none;
+}
+
+.scheduleMain div {
+  margin-bottom: 0.35714em;
+}
+
+.contactInfoMail {
+  color: #01b179;
+  font-size: 1.14286em;
+}
+.contactInfoMail:hover {
+  text-decoration: none;
+}
+
+.scheduleTitle {
+  color: #a2aaaf;
+  font-size: 1.14286em;
+  margin-bottom: 0.35714em;
+}
+
+.contactFormInput,
+.contactFormText {
+  display: block;
+  width: 100%;
+  border: 1px solid #505d65;
+  margin-bottom: 1.07143em;
+  vertical-align: middle;
+  font-size: 0.85714em;
+  line-height: 1.28571em;
+  padding: 0.78571em 1.14286em;
+}
+
+.contactFormText {
+  height: 140px;
+  resize: vertical;
+}
+
+.contactFormInput::-webkit-input-placeholder,
+.contactFormText::-webkit-input-placeholder {
+  color: #a2aaaf;
+}
+
+.contactFormInput:-moz-placeholder,
+.contactFormText::-moz-placeholder {
+  /* Firefox 18- */
+  color: #a2aaaf;
+}
+
+.contactFormInput::-moz-placeholder,
+.contactFormText::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #a2aaaf;
+}
+
+.contactFormInput:-ms-input-placeholder,
+.contactFormText:-ms-input-placeholder {
+  color: #a2aaaf;
+}
+
+#contactFormCopy {
+  display: none;
+}
+
+label[for='contactFormCopy'] {
+  vertical-align: top;
+}
+
+.contactFormCopyWrap {
+  margin: 0 0 10px 30px;
+}
+
+.contactFormCopy {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-style: solid none none solid;
+  border-color: #838383;
+  border-width: 1px;
+  background: #e9eaea;
+  margin: 0 10px 5px -30px;
+}
+
+#contactFormCopy:checked + label > .contactFormCopy {
+  background: #01b179;
+}
+
+.contactFormSend {
+  border: none;
+  width: 100%;
+  border-radius: 0;
+  font-size: 1.71429em;
+  padding: 0.35714em 0;
+}
+
+@media (min-width: 768px) {
+  .contactWrap {
+    margin-bottom: 0;
   }
 }
 /*----- New Goods and You Saw -----*/

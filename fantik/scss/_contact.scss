@@ -1,0 +1,129 @@
+/*----- Contact -----*/
+
+.mainContact{
+  margin-bottom: em(50px);
+}
+
+.contactWrap{
+  margin-bottom: em(25px);
+}
+
+.contactTitle{
+  color: $primeColorSecond;
+  font-size: em(24px);
+  margin-bottom: em(20px);
+}
+
+.contactInfoPhones,
+.contactInfoMails{
+  margin-bottom: em(25px);
+}
+
+.contactInfoPhone{
+  color: $primeColor;
+  font-size: em(20px);
+  display: block;
+  margin-bottom: em(5px);
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.scheduleMain{
+  div {
+    margin-bottom: em(5px);
+  }
+}
+
+.contactInfoMail{
+  color: $primeColorSecond;
+  font-size: em(16px);
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.scheduleTitle{
+  color: $contactPlaceholder;
+  font-size: em(16px);
+  margin-bottom: em(5px);
+}
+
+.contactFormInput,
+.contactFormText{
+  display: block;
+  width: 100%;
+  border: 1px solid $primeColor;
+  margin-bottom: em(15px) ;
+  vertical-align: middle;
+  font-size: em(12px);
+  line-height: em(18px);
+  padding: em(11px) em(16px);
+}
+
+.contactFormText{
+  height: 140px;
+  resize: vertical;
+}
+
+.contactFormInput::-webkit-input-placeholder,
+.contactFormText::-webkit-input-placeholder{
+  color: $contactPlaceholder;
+}
+
+.contactFormInput:-moz-placeholder,
+.contactFormText::-moz-placeholder { /* Firefox 18- */
+  color: $contactPlaceholder;
+}
+
+.contactFormInput::-moz-placeholder,
+.contactFormText::-moz-placeholder {  /* Firefox 19+ */
+  color: $contactPlaceholder;
+}
+
+.contactFormInput:-ms-input-placeholder,
+.contactFormText:-ms-input-placeholder {
+  color: $contactPlaceholder;
+}
+
+#contactFormCopy{
+  display: none;
+}
+
+label[for='contactFormCopy']{
+  vertical-align: top;
+}
+
+.contactFormCopyWrap {
+  margin: 0 0 10px 30px;
+}
+
+.contactFormCopy{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-style: solid none none solid;
+  border-color: $greyDarkColor;
+  border-width: 1px;
+  background: $greyLightColor;
+  margin: 0 10px 5px -30px;
+}
+
+#contactFormCopy:checked + label > .contactFormCopy{
+  background: $primeColorSecond;
+}
+
+.contactFormSend{
+  @extend %btn;
+  border: none;
+  width: 100%;
+  border-radius: 0;
+  font-size: em(24px);
+  padding: em(5px) 0;
+}
+
+@media (min-width: 768px) {
+  .contactWrap {
+    margin-bottom: 0;
+  }
+}

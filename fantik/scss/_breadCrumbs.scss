@@ -1,0 +1,26 @@
+/*----- Bread Crumbs -----*/
+
+.mainBreadCrumbs{
+  background: $primeColor;
+  margin-bottom: em(50px);
+}
+
+.breadCrumbsItem{
+  display: inline-block;
+  color: $whiteColor;
+  padding: em(5px) 0;
+  &:after{
+    content: '/';
+  }
+  &:last-child{
+    &:after{
+      content: '';
+    }
+  }
+}
+
+.breadCrumbsLink,
+.breadCrumbsText{
+  font-size: em(12px);
+  color: $whiteColor;
+}
