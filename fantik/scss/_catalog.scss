@@ -1,0 +1,265 @@
+/*----- Catalog -----*/
+
+.mainCatalog{
+  margin-bottom: em(50px);
+}
+
+.catalogTitle{
+  @extend %title;
+  margin: 0 em(15px, 24px) em(20px, 24px);
+}
+
+.catalogFilters{
+  margin-bottom: em(35px);
+}
+
+.filterTittleWrap{
+  overflow: hidden;
+  margin-bottom: em(10px);
+  span[class^="icon"]{
+    float: right;
+  }
+}
+
+.filterTittle{
+  float: left;
+  font-size: em(18px);
+}
+
+.filterWrap{
+  padding: em(16px) em(12px);
+  background: $greyLightColor;
+  margin-bottom: em(20px);
+}
+
+.filterSizeList{
+  text-align: center;
+  overflow: hidden;
+}
+
+.filterSizesList{
+  overflow: hidden;
+}
+
+.filterSizeItem{
+  display: inline-block;
+  margin: 0 3px 7px 0;
+}
+
+.filterSizesItem{
+  display: inline-block;
+  margin: 0 2px 5px 0;
+}
+
+.formFilterSize,
+.formFilterSizes{
+  input[type="checkbox"]{
+    display: none;
+  }
+  input[type="checkbox"]:checked + .filterSize{
+    background: $primeColorSecond;
+  }
+}
+
+.filterSize{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: $primeColor;
+  color: $whiteColor;
+  display: block;
+  font-size: em(18px);
+  &:hover{
+    background: lighten($primeColor, 15%);
+  }
+}
+
+.filterSizes{
+  @extend .filterSize;
+  width: 65px;
+  height: 40px;
+}
+
+.filterGroup{
+  margin-bottom: em(25px);
+}
+
+.filterAgeGroupItem,
+.filterSeasonItem{
+  margin-bottom: em(14px);
+  input[type="checkbox"]{
+    display: none;
+  }
+}
+
+.ageGroupPseudoCheckbox,
+.seasonGroupPseudoCheckbox{
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border-style: solid none none solid;
+  border-color: $greyDarkColor;
+  border-width: 1px;
+  background: $whiteColor;
+  margin-right: 10px;
+}
+
+.filterAgeGroupItem input[type="checkbox"]:checked + .filterAgeLabel > .ageGroupPseudoCheckbox,
+.filterSeasonItem input[type="checkbox"]:checked + .seasonLabel > .seasonGroupPseudoCheckbox{
+  @include transition-duration(.5s);
+  background: lighten($primeColorSecond, 5%);
+  border-radius: 15px;
+}
+
+.filterAgeLabel{
+  vertical-align: top;
+}
+
+.filterResetBtn{
+  @extend %btn;
+  border: none;
+  width: 100%;
+  border-radius: 0;
+  font-size: em(24px);
+  padding: em(5px) 0;
+}
+
+.catalogProductsSort{
+  margin-bottom: em(20px);
+}
+
+.catalogSortText{
+  display: inline-block;
+  vertical-align: top;
+  font-size: em(18px);
+  line-height: em(26px);
+  margin-right: em(20px, 26px);
+}
+
+.catalogSort{
+  display: inline-block;
+  border: 1px solid $greyDarkColor;
+  padding-right: em(10px);
+  span[class^="icon"]{
+    color: $primeColorSecond;
+    vertical-align: middle;
+  }
+}
+
+.catalogSortList{
+  display: inline-block;
+}
+
+.catalogSortItem{
+  padding: em(10px) em(60px) em(10px) em(10px);
+}
+
+.catalogProductToCartBtn{
+  @extend %btn;
+  border-radius: 0;
+  width: 135px;
+  font-size: em(18px);
+  padding: em(10px, 18px);
+  margin: 0 auto;
+  display: block;
+}
+
+.catalogProductWrap{
+  margin-bottom: em(20px);
+}
+
+@media (min-width: 768px) {
+
+  .catalogFilters{
+    margin-bottom: 0;
+  }
+
+  .filterSizeList{
+    text-align: left;
+  }
+
+  .filterSizeItem{
+    &:nth-child(4n){
+      margin-right: 0;
+    }
+  }
+
+  .filterSizesItem{
+    margin: 0 -2px 2px 0;
+    &:nth-child(3n){
+      margin-right: 0;
+    }
+  }
+
+  .filterSizes{
+    width: 59px;
+  }
+
+  .catalogProductWrap{
+    margin-bottom: em(40px);
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+
+  .filterSizeItem{
+    margin: 0 1px 5px 0;
+  }
+
+  .filterSizes {
+    width: 57px;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .catalogProductToCartBtn{
+    display: none;
+  }
+
+  .catalogProductWrap{
+    &:hover{
+      @include box-shadow($primeColorSecond 0 0 10px);
+      padding: em(15px);
+      border: 1px solid $primeColorSecond;
+      position: absolute;
+      z-index: 1;
+      background: $whiteColor;
+      width: 270px;
+      .catalogProductToCartBtn{
+        display: block;
+      }
+      .catalogProductPrice {
+        visibility: hidden;
+      }
+    }
+
+  }
+}
+
+@media (min-width: 1200px){
+
+  .filterSizeItem{
+    margin: 0 18px 20px 0;
+  }
+
+  .filterSizeItem{
+    &:nth-child(4n){
+      margin-right: 0px;
+    }
+  }
+
+  .filterSizesItem {
+    margin: 0 21px 20px 0;
+  }
+
+  .catalogProductWrap{
+    &:hover{
+      width: 300px;
+    }
+
+  }
+}

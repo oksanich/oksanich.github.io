@@ -9,8 +9,7 @@
 }
 
 .contactTitle{
-  color: $primeColorSecond;
-  font-size: em(24px);
+  @extend %title;
   margin-bottom: em(20px);
 }
 
