@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="catalog.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="catalog.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fantik/catalog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.666666" vertical-offset="7946" max-vertical-offset="9975">
-              <caret line="574" column="38" selection-start-line="574" selection-start-column="38" selection-end-line="574" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.6757925" vertical-offset="7556" max-vertical-offset="10065">
+              <caret line="535" column="45" selection-start-line="535" selection-start-column="45" selection-end-line="535" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -45,11 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_catalog.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_catalog.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fantik/scss/_catalog.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8354232" vertical-offset="2452" max-vertical-offset="4065">
+            <state vertical-scroll-proportion="-6.6625" vertical-offset="2452" max-vertical-offset="4065">
               <caret line="199" column="23" selection-start-line="199" selection-start-column="23" selection-end-line="199" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_grid.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fantik/scss/_grid.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.352941" vertical-offset="13803" max-vertical-offset="15570">
+              <caret line="935" column="9" selection-start-line="935" selection-start-column="1" selection-end-line="935" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -130,8 +140,8 @@
         <option value="$PROJECT_DIR$/fantik/scss/_product.scss" />
         <option value="$PROJECT_DIR$/fantik/singlePage.html" />
         <option value="$PROJECT_DIR$/fantik/scss/_newGoodsAndSaw.scss" />
-        <option value="$PROJECT_DIR$/fantik/catalog.html" />
         <option value="$PROJECT_DIR$/fantik/scss/_catalog.scss" />
+        <option value="$PROJECT_DIR$/fantik/catalog.html" />
       </list>
     </option>
   </component>
@@ -650,13 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fantik/scss/_grid.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5799701" vertical-offset="287" max-vertical-offset="15570">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fantik/config.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15107913" vertical-offset="0" max-vertical-offset="695">
@@ -792,18 +795,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fantik/catalog.html">
+    <entry file="file://$PROJECT_DIR$/fantik/scss/_catalog.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.666666" vertical-offset="7946" max-vertical-offset="9975">
-          <caret line="574" column="38" selection-start-line="574" selection-start-column="38" selection-end-line="574" selection-end-column="38" />
+        <state vertical-scroll-proportion="-6.6625" vertical-offset="2452" max-vertical-offset="4065">
+          <caret line="199" column="23" selection-start-line="199" selection-start-column="23" selection-end-line="199" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fantik/scss/_catalog.scss">
+    <entry file="file://$PROJECT_DIR$/fantik/scss/_grid.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8354232" vertical-offset="2452" max-vertical-offset="4065">
-          <caret line="199" column="23" selection-start-line="199" selection-start-column="23" selection-end-line="199" selection-end-column="23" />
+        <state vertical-scroll-proportion="-4.352941" vertical-offset="13803" max-vertical-offset="15570">
+          <caret line="935" column="9" selection-start-line="935" selection-start-column="1" selection-end-line="935" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fantik/catalog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6757925" vertical-offset="7556" max-vertical-offset="10065">
+          <caret line="535" column="45" selection-start-line="535" selection-start-column="45" selection-end-line="535" selection-end-column="45" />
           <folding />
         </state>
       </provider>
