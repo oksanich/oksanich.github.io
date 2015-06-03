@@ -75,7 +75,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-decoration: none;
 }
 
-.contactTitle, .catalogTitle, .productTitle {
+.contactTitle, .catalogTitle, .productTitle, .callbackTitle {
   color: #01b179;
   font-size: 1.71429em;
   font-family: Roboto-mediun, sans-serif;
@@ -1838,6 +1838,7 @@ button:focus {
 @media (min-width: 992px) {
   .headerLogo {
     text-align: center;
+    margin-left: 150px;
   }
 
   .headerSearchWrap {
@@ -2252,6 +2253,10 @@ label[for='contactFormCopy'] {
   .catalogProductWrap:hover .catalogProductPrice {
     visibility: hidden;
   }
+
+  .catalogProducts .col-md-4 {
+    height: 260px;
+  }
 }
 @media (min-width: 1200px) {
   .filterSizeItem {
@@ -2444,6 +2449,40 @@ label[for='contactFormCopy'] {
 @media (min-width: 992px) {
   .previewPicturesSmall img {
     max-width: 140px;
+  }
+}
+/*----- Call back -----*/
+.mainCallback {
+  margin-bottom: 3.57143em;
+}
+
+.callbackTitle {
+  margin: 0 0 1.25em;
+}
+
+.callbackDescription {
+  font-size: 1.28571em;
+  line-height: 1.33333em;
+  margin-bottom: 2.22222em;
+}
+
+.callbackForm {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .callbackTitle {
+    margin: 2.08333em 0 1.25em;
+  }
+}
+@media (min-width: 992px) {
+  .callbackForm {
+    overflow: hidden;
+    max-width: 600px;
+  }
+  .callbackForm .contactFormSend {
+    width: 30%;
+    float: right;
   }
 }
 /*----- New Goods and You Saw -----*/

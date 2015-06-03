@@ -1,0 +1,40 @@
+/*----- Call back -----*/
+
+.mainCallback{
+  margin-bottom: em(50px);
+}
+
+.callbackTitle{
+  @extend %title;
+  margin: 0 0 em(30px, 24px);
+}
+
+.callbackDescription{
+  font-size: em(18px);
+  line-height: em(24px, 18px);
+  margin-bottom: em(40px, 18px);
+}
+
+.callbackForm{
+  overflow: hidden;
+
+}
+
+@media (min-width: 768px){
+  .callbackTitle{
+    margin: em(50px, 24px) 0 em(30px, 24px);
+  }
+}
+
+@media (min-width: 992px){
+
+  .callbackForm{
+    overflow: hidden;
+    max-width: 600px;
+
+    .contactFormSend{
+      width: 30%;
+      float: right;
+    }
+  }
+}
