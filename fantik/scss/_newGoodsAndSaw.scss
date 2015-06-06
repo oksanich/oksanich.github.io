@@ -39,7 +39,8 @@
 
 .blockNewGoodImg,
 .blockYouSawImg,
-.blockCatalogProductImg{
+.blockCatalogProductImg,
+.blockCartProductImg{
   border: 1px solid $greyLightColor;
   overflow: hidden;
   margin-bottom: em(15px);
@@ -51,13 +52,15 @@
 
 .newGoodImg,
 .youSawImg,
-.catalogProductImg{
+.catalogProductImg,
+.cartProductImg{
   max-width: 220px;
 }
 
 .newGoodTitle,
 .youSawTitle,
-.catalogProductTitle{
+.catalogProductTitle,
+.cartProductTitle{
   font-size: em(18px);
   font-weight: 400;
   color: $primeColor;

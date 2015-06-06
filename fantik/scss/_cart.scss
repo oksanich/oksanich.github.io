@@ -1,0 +1,148 @@
+/*----- Cart -----*/
+
+.cartProducts{
+  margin-bottom: em(60px);
+}
+
+.cartProductsTitle{
+  @extend %title;
+  margin-bottom: em(22px, 24px);
+}
+
+.cartProduct{
+  margin-bottom: em(20px);
+  > .row{
+    border-bottom: 1px solid $primeColorSecond;
+  }
+}
+
+.blockCartProductImg{
+  text-align: center;
+}
+
+.cartPseudoTable{
+  display: table;
+  width: 100%;
+  border-spacing: 0 em(10px);
+  .icon-x-pointer{
+    font-size: 14px;
+    color: lighten($greyDarkColor, 10%);
+  }
+  .icon-sum-pointer{
+    color: lighten($greyDarkColor, 10%);
+  }
+}
+
+.cartPseudoTh,
+.cartPseudoTr{
+  display: table-row;
+  text-align: center;
+}
+
+.cartPseudoTd{
+  display: table-cell;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.cartProductTitle{
+  margin-bottom: em(5px, 18px);
+  display: inline-block;
+}
+
+.consignmentNumber{
+  width: em(30px);
+  height: em(20px);
+  font-size: em(14px);
+  border-style: solid none none solid;
+  border-color: $greyDarkColor;
+  border-width: 1px;
+  background: $greyLightColor;
+  display: inline-block;
+  padding: 0 0 0 em(5px, 18px);
+  text-align: center;
+}
+
+.cartProductClose{
+  &:hover{
+    text-decoration: none;
+    .icon-close{
+      color: darken(#d53232, 10%);
+    }
+  }
+  .icon-close{
+    color: #d53232;
+    font-size: em(10px);
+  }
+}
+
+.globalAllPrice{
+  text-align: right;
+  margin: em(25px, 24px) 0 em(75px, 24px);
+  span{
+    font-size: em(24px);
+  }
+  .globalAllPriceText{
+    font-family: Roboto-mediun, sans-serif;
+    color: $primeColorSecond;
+    margin-right: em(35px, 24px);
+  }
+  .globalAllPriceNumber{
+    font-family: Roboto-bold, sans-serif;
+  }
+}
+
+.cartProductButtons{
+  overflow: hidden;
+  text-align: center;
+}
+
+.buttonBackToShop,
+.buttonCount,
+.buttonСheckout{
+  @extend %btn;
+  display: inline-block;
+  border-radius: 0;
+  font-family: Roboto-bold, sans-serif;
+  font-size: em(18px);
+  padding: em(10px, 18px) em(15px, 18px);
+  border: none;
+  margin-bottom: em(10px);
+}
+
+.buttonBackToShop{
+  background: $primeColor;
+  &:hover{
+    background: lighten($primeColor, 10%);
+  }
+}
+
+@media (min-width: 768px) {
+  .cartPseudoTr{
+    font-family: Roboto-bold, sans-serif;
+    font-size: em(18px);
+  }
+
+}
+
+@media (min-width: 992px) {
+  .cartProductButtonsRight{
+    text-align: right;
+  }
+
+  .cartProductButtonsLeft{
+    text-align: left;
+  }
+
+  .buttonBackToShop,
+  .buttonCount,
+  .buttonСheckout{
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .buttonCount{
+    margin-right: em(30px, 18px);
+  }
+}

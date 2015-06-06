@@ -23,47 +23,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-x-pointer:before {
+  content: "\e60a";
+}
+.icon-close:before {
+  content: "\e60b";
+}
 .icon-vkontakte:before {
   content: "\e600";
 }
-
 .icon-down:before {
   content: "\e601";
 }
-
 .icon-up:before {
   content: "\e602";
 }
-
 .icon-next:before {
   content: "\e605";
 }
-
 .icon-cart:before {
   content: "\e606";
 }
-
 .icon-phone:before {
   content: "\e608";
 }
-
 .icon-odnoklassniki:before {
   content: "\e609";
 }
-
 .icon-facebook:before {
   content: "\e603";
 }
-
 .icon-twitter:before {
   content: "\e604";
 }
-
 .icon-search:before {
   content: "\e607";
 }
-
 .icon-menu:before {
   content: "\e60e";
 }
-

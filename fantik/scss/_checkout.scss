@@ -1,0 +1,119 @@
+/*----- Checkout -----*/
+
+.mainCheckout{
+  overflow: hidden;
+}
+
+.checkoutTitle{
+  font-family: Roboto-bold, sans-serif;
+  font-size: em(18px);
+  margin-bottom: em(25px);
+  &:first-child{
+    margin-bottom: 0;
+  }
+}
+
+.pseudoCheckoutTable{
+  display: table;
+  border-spacing: em(10px) em(30px);
+}
+
+.pseudoCheckoutTableDeliveryMethod{
+  margin-left: em(-8px);
+}
+
+.pseudoCheckoutTableCustomerInfo{
+  margin-left: em(-20px);
+  width: 100%;
+}
+
+.pseudoCheckoutTr{
+  display: table-row;
+}
+
+.pseudoCheckoutTd{
+  display: table-cell;
+  vertical-align: top;
+}
+
+.deliveryMethodReview,
+.customerInfoReview{
+  font-size: em(18px);
+  line-height: em(24px, 18px);
+  margin-bottom: em(5px, 18px);
+}
+
+.deliveryMethodReviewSmall{
+  font-size: em(14px);
+  color: $greyDarkColor;
+}
+
+.deliveryMethodName{
+  font-family: Roboto-bold, sans-serif;
+  font-size: em(18px);
+}
+
+.mainCheckout{
+  input[type="radio"]{
+    display: none;
+  }
+
+  input[type="radio"]:checked + .deliveryMethodRadio,
+  input[type="radio"]:checked + .customerInfoRadio{
+    @include transition-duration(.5s);
+    background: $primeColorSecond;
+  }
+}
+
+.deliveryMethodRadio,
+.customerInfoRadio{
+  @include border-radius(50%);
+  width: 18px;
+  height: 18px;
+  border-style: solid none none solid;
+  border-color: $greyDarkColor;
+  border-width: 1px;
+  background: $greyLightColor;
+  display: inline-block;
+  margin-top: em(5px);
+}
+
+.customerInfoReviewText{
+  color: $greyDarkColor;
+  .textLink{
+    font-size: em(18px);
+  }
+}
+
+.customerInfoFormFields{
+  margin-left: em(-10px);
+}
+
+.contactFormPay{
+  text-transform: uppercase;
+  font-family: Roboto-bold, sans-serif;
+  display: inline-block;
+}
+
+.contactFormCart{
+  text-transform: uppercase;
+  font-family: Roboto-bold, sans-serif;
+  background: $primeColor;
+  display: inline-block;
+  margin-bottom: em(10px);
+  &:hover{
+    background: lighten($primeColor, 10%);
+  }
+}
+
+@media (min-width: 768px) {
+  .contactFormPay{
+    float: right;
+    max-width: 220px;
+  }
+
+  .contactFormCart {
+    float: left;
+    max-width: 220px;
+  }
+}
