@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расширенный поиск</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cuprum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- [if lt IE 9]
+    <script src="http://oss.maxcdn.com/libs/respond.js/0.4.2/respond.min.js"></script>
+    [endif] -->
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="header_main">
+        <div class="header">
+            <a href="/" class="logo"></a>
+
+            <div class="header_logo_tit_and_desc">
+                <p class="title">Электронная онлайн - <span> библиотека кота Чешира</span></p>
+                <p class="description">У нас вы можете <span>читать книги online и скачивать без регистрации</span></p>
+            </div>
+
+            <div class="header_button">
+                <a href="" class="button add_book"><span>добавить книгу</span></a>
+                <div class="wrap_sign_in">
+                    <a class="button sign_in"><span>войти на сайт</span></a>
+                    <div class="field_sign_in">
+                        <form action="">
+                            <input type="text" placeholder="Логин...">
+                            <input type="text" placeholder="Пароль...">
+                            <a href="#">Забыли пароль?</a>
+                            <input type="checkbox" id="c1" name="cc" />
+                            <label for="c1"><span></span>Чужой компьютер</label>
+                        </form>
+                        <input type="submit" class="button sign_in" value="войти на сайт">
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="#">главная</a></li>
+                    <li class="nav_category">
+                        <a href="#">каталог книг</a>
+                        <div class="nav_category_list">
+                            <ul>
+                                <li><a href="#">Бестселлеры</a></li>
+                                <li><a href="#">Бизнес</a></li>
+                                <li><a href="#">Детективы и триллеры</a></li>
+                                <li><a href="#">Детская литература</a></li>
+                                <li><a href="#">Зарубежная литература</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Исторические романы</a></li>
+                                <li><a href="#">История, биография</a></li>
+                                <li><a href="#">Красота и здоровье</a></li>
+                                <li><a href="#">Компьютеры</a></li>
+                                <li><a href="#">Кулинария</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Любовные романы</a></li>
+                                <li><a href="#">Поэзия</a></li>
+                                <li><a href="#">Приключения, путешествия</a></li>
+                                <li><a href="#">Психология, НЛП</a></li>
+                                <li><a href="#">Публицистика</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Современная проза</a></li>
+                                <li><a href="#">Ужасы и мистика</a></li>
+                                <li><a href="#">Фантастика, фентези</a></li>
+                                <li><a href="#">Эзотерика</a></li>
+                                <li><a href="#">Эротика</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">правила</a></li>
+                    <li><a href="#">контакты</a></li>
+                </ul>
+
+                <form action="">
+                    <input type="search" placeholder="Найти книгу...">
+                    <input type="submit" value="поиск">
+                </form>
+            </div>
+
+            <div class="bread_crumbs"><a href="#">Электронная библиотека кота Чешира</a> &#187; <span>Красота и Здоровья</span> </div>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="board_filters_main">
+            <div class="board_filters">
+                <div class="board_filters_nav">
+                    <ul class="board_filters_nav_list">
+                        <li class="board_filters_nav_item">
+                            <a class="board_filters_nav_link" href="#">Все категории</a>
+                        </li>
+                        <li class="board_filters_nav_item">
+                            <a class="board_filters_nav_link" href="#">Расширенный поиск</a>
+                        </li>
+                        <li class="board_filters_nav_item">
+                            <a class="board_filters_nav_link" href="#">Добавить объявление</a>
+                        </li>
+                        <li class="board_filters_nav_item">
+                            <a class="board_filters_nav_link" href="#">Все мои объявления</a>
+                        </li>
+                        <li class="board_filters_nav_item">
+                            <a class="board_filters_nav_link" href="#">Мой блокнот</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="category_review_main">
+            <div class="category_review category_review_book">
+                <div class="wrap_h2"><h2 class="h2_left">Расширенный поиск</h2></div>
+            </div>
+        </div>
+
+        <div class="category_books_main">
+            <div class="category_books">
+                <form class="board_books_search_form" action="">
+                    <div class="board_books_search">
+                        <div class="board_books_search_tr">
+                            <div class="board_books_search_td">Название:</div>
+                            <div class="board_books_search_td"><input type="text"/></div>
+                        </div>
+                        <div class="board_books_search_tr">
+                            <div class="board_books_search_td">Содержание текста:</div>
+                            <div class="board_books_search_td">
+                                <textarea name="" id=""></textarea>
+                            </div>
+                        </div>
+                        <div class="board_books_search_tr">
+                            <div class="board_books_search_td">Дата:</div>
+                            <div class="board_books_search_td">
+                                <label for="" class="pointer">
+                                    <select id="" name="">
+                                        <option value="">Без разницы</option>
+                                        <option value="">За сегодня</option>
+                                        <option value="">За неделю</option>
+                                        <option value="">За месяц</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="board_books_search_tr">
+                            <div class="board_books_search_td">Регион:</div>
+                            <div class="board_books_search_td">
+                                <label for="" class="pointer">
+                                    <select id="" name="">
+                                        <option value="">Город</option>
+                                    </select>
+                                </label>
+                                <label for="" class="pointer">
+                                    <select id="" name="">
+                                        <option value="">Страна</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="board_books_search_tr">
+                            <div class="board_books_search_td">Тип предложения:</div>
+                            <div class="board_books_search_td">
+                                <label for="" class="pointer">
+                                    <select id="" name="">
+                                        <option value="">Поменяю</option>
+                                        <option value="">Отдам</option>
+                                        <option value="">Приму в дар</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="board_books_search_tr">
+                            <div class="board_books_search_td">Стоимость:</div>
+                            <div class="board_books_search_td">
+                                <label>от<input type="number"/></label>
+                                <label>до<input type="number"/></label>
+                            </div>
+                        </div>
+                        <div class="board_books_search_tr">
+                            <div class="board_books_search_td">На страницу:</div>
+                            <div class="board_books_search_td">
+                                <label><input type="number"/>объявлений</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search_site_button">
+                        <button class="button reset"><span>сбросить</span></button>
+                        <button class="button start_search"><span>начать поиск</span></button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="side_bar_categoty">
+                <div class="side_bar_box">
+                    <img src="images/sidebarImage.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sorting_main">
+        <div class="sorting">
+            <div class="wrap_h2"><h2 class="h2_left">Сортировка по алфавиту</h2></div>
+            <div class="sorting_title">
+                <p>Сортировка по названию:</p>
+                <div class="letters_rus">
+                    <span><a href="#">а</a></span>
+                    <span><a href="#">б</a></span>
+                    <span><a href="#">в</a></span>
+                    <span><a href="#">г</a></span>
+                    <span><a href="#">д</a></span>
+                    <span><a href="#">е</a></span>
+                    <span><a href="#">ж</a></span>
+                    <span><a href="#">з</a></span>
+                    <span><a href="#">и</a></span>
+                    <span><a href="#">к</a></span>
+                    <span><a href="#">л</a></span>
+                    <span><a href="#">м</a></span>
+                    <span><a href="#">н</a></span>
+                    <span><a href="#">о</a></span>
+                    <span><a href="#">п</a></span>
+                    <span><a href="#">р</a></span>
+                    <span><a href="#">с</a></span>
+                    <span><a href="#">т</a></span>
+                    <span><a href="#">у</a></span>
+                    <span><a href="#">ф</a></span>
+                    <span><a href="#">х</a></span>
+                    <span><a href="#">ц</a></span>
+                    <span><a href="#">ч</a></span>
+                    <span><a href="#">ш</a></span>
+                    <span><a href="#">щ</a></span>
+                    <span><a href="#">э</a></span>
+                    <span><a href="#">ю</a></span>
+                    <span><a href="#">я</a></span>
+                    &#124;
+                </div>
+                <div class="letters_eng">
+                    <span><a href="#">a</a></span>
+                    <span><a href="#">b</a></span>
+                    <span><a href="#">c</a></span>
+                    <span><a href="#">d</a></span>
+                    <span><a href="#">e</a></span>
+                    <span><a href="#">f</a></span>
+                    <span><a href="#">g</a></span>
+                    <span><a href="#">h</a></span>
+                    <span><a href="#">i</a></span>
+                    <span><a href="#">j</a></span>
+                    <span><a href="#">k</a></span>
+                    <span><a href="#">l</a></span>
+                    <span><a href="#">m</a></span>
+                    <span><a href="#">n</a></span>
+                    <span><a href="#">o</a></span>
+                    <span><a href="#">p</a></span>
+                    <span><a href="#">q</a></span>
+                    <span><a href="#">r</a></span>
+                    <span><a href="#">s</a></span>
+                    <span><a href="#">t</a></span>
+                    <span><a href="#">u</a></span>
+                    <span><a href="#">v</a></span>
+                    <span><a href="#">w</a></span>
+                    <span><a href="#">x</a></span>
+                    <span><a href="#">u</a></span>
+                    <span><a href="#">z</a></span>
+                    &#124;
+                </div>
+                <div class="numbers">
+                    <span><a href="#">1</a></span>
+                    <span><a href="#">2</a></span>
+                    <span><a href="#">3</a></span>
+                    <span><a href="#">4</a></span>
+                    <span><a href="#">5</a></span>
+                    <span><a href="#">6</a></span>
+                    <span><a href="#">7</a></span>
+                    <span><a href="#">8</a></span>
+                    <span><a href="#">9</a></span>
+                    <span><a href="#">0</a></span>
+                </div>
+            </div>
+            <div class="sorting_author">
+                <p>Сортировка по автору:</p>
+                <div class="letters_rus">
+                    <span><a href="#">а</a></span>
+                    <span><a href="#">б</a></span>
+                    <span><a href="#">в</a></span>
+                    <span><a href="#">г</a></span>
+                    <span><a href="#">д</a></span>
+                    <span><a href="#">е</a></span>
+                    <span><a href="#">ж</a></span>
+                    <span><a href="#">з</a></span>
+                    <span><a href="#">и</a></span>
+                    <span><a href="#">к</a></span>
+                    <span><a href="#">л</a></span>
+                    <span><a href="#">м</a></span>
+                    <span><a href="#">н</a></span>
+                    <span><a href="#">о</a></span>
+                    <span><a href="#">п</a></span>
+                    <span><a href="#">р</a></span>
+                    <span><a href="#">с</a></span>
+                    <span><a href="#">т</a></span>
+                    <span><a href="#">у</a></span>
+                    <span><a href="#">ф</a></span>
+                    <span><a href="#">х</a></span>
+                    <span><a href="#">ц</a></span>
+                    <span><a href="#">ч</a></span>
+                    <span><a href="#">ш</a></span>
+                    <span><a href="#">щ</a></span>
+                    <span><a href="#">э</a></span>
+                    <span><a href="#">ю</a></span>
+                    <span><a href="#">я</a></span>
+                    &#124;
+                </div>
+                <div class="letters_eng">
+                    <span><a href="#">a</a></span>
+                    <span><a href="#">b</a></span>
+                    <span><a href="#">c</a></span>
+                    <span><a href="#">d</a></span>
+                    <span><a href="#">e</a></span>
+                    <span><a href="#">f</a></span>
+                    <span><a href="#">g</a></span>
+                    <span><a href="#">h</a></span>
+                    <span><a href="#">i</a></span>
+                    <span><a href="#">j</a></span>
+                    <span><a href="#">k</a></span>
+                    <span><a href="#">l</a></span>
+                    <span><a href="#">m</a></span>
+                    <span><a href="#">n</a></span>
+                    <span><a href="#">o</a></span>
+                    <span><a href="#">p</a></span>
+                    <span><a href="#">q</a></span>
+                    <span><a href="#">r</a></span>
+                    <span><a href="#">s</a></span>
+                    <span><a href="#">t</a></span>
+                    <span><a href="#">u</a></span>
+                    <span><a href="#">v</a></span>
+                    <span><a href="#">w</a></span>
+                    <span><a href="#">x</a></span>
+                    <span><a href="#">u</a></span>
+                    <span><a href="#">z</a></span>
+                    &#124;
+                </div>
+                <div class="numbers">
+                    <span><a href="#">1</a></span>
+                    <span><a href="#">2</a></span>
+                    <span><a href="#">3</a></span>
+                    <span><a href="#">4</a></span>
+                    <span><a href="#">5</a></span>
+                    <span><a href="#">6</a></span>
+                    <span><a href="#">7</a></span>
+                    <span><a href="#">8</a></span>
+                    <span><a href="#">9</a></span>
+                    <span><a href="#">0</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_main">
+        <div class="footer">
+            <div class="footer_logo_wrap">
+                <a href="/" class="footer_logo"></a>
+                <p class="footer_title">Электронная онлайн - <span> библиотека кота Чешира</span></p>
+            </div>
+
+            <form action="">
+                <input type="search" placeholder="Найти книгу...">
+                <input type="submit" value="поиск">
+            </form>
+
+            <div class="footer_nav">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог книг</a></li>
+                    <li><a href="#">Правила</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Регистрация</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Бестселлеры</a></li>
+                    <li><a href="#">Бизнес</a></li>
+                    <li><a href="#">Детективы и триллеры</a></li>
+                    <li><a href="#">Детская литература</a></li>
+                    <li><a href="#">Зарубежная литература</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Исторические романы</a></li>
+                    <li><a href="#">История, биография</a></li>
+                    <li><a href="#">Красота и здоровье</a></li>
+                    <li><a href="#">Компьютеры</a></li>
+                    <li><a href="#">Кулинария</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Любовные романы</a></li>
+                    <li><a href="#">Поэзия</a></li>
+                    <li><a href="#">Приключения, путешествия</a></li>
+                    <li><a href="#">Психология, НЛП</a></li>
+                    <li><a href="#">Публицистика</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Современная проза</a></li>
+                    <li><a href="#">Ужасы и мистика</a></li>
+                    <li><a href="#">Фантастика, фентези</a></li>
+                    <li><a href="#">Эзотерика</a></li>
+                    <li><a href="#">Эротика</a></li>
+                </ul>
+            </div>
+
+            <div class="button_up"></div>
+        </div>
+
+        <div class="copiriht_main">
+            <div class="copiright">
+                <a href="#" class="vk">
+                    <span>Мы в Вконтакте</span>
+                </a>
+
+                <div class="copi">
+                    <p>Охраняеться котом Чеширом. &copy;2014 <a href="">cheshir.com.ua</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

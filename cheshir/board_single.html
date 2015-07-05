@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маркет страница</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cuprum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- [if lt IE 9]
+    <script src="http://oss.maxcdn.com/libs/respond.js/0.4.2/respond.min.js"></script>
+    [endif] -->
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="header_main">
+        <div class="header">
+            <a href="/" class="logo"></a>
+
+            <div class="header_logo_tit_and_desc">
+                <p class="title">Электронная онлайн - <span> библиотека кота Чешира</span></p>
+                <p class="description">У нас вы можете <span>читать книги online и скачивать без регистрации</span></p>
+            </div>
+
+            <div class="header_button">
+                <a href="" class="button add_book"><span>добавить книгу</span></a>
+                <div class="wrap_sign_in">
+                    <a class="button sign_in"><span>войти на сайт</span></a>
+                    <div class="field_sign_in">
+                        <form action="">
+                            <input type="text" placeholder="Логин...">
+                            <input type="text" placeholder="Пароль...">
+                            <a href="#">Забыли пароль?</a>
+                            <input type="checkbox" id="c1" name="cc" />
+                            <label for="c1"><span></span>Чужой компьютер</label>
+                        </form>
+                        <input type="submit" class="button sign_in" value="войти на сайт">
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="#">главная</a></li>
+                    <li class="nav_category">
+                        <a href="#">каталог книг</a>
+                        <div class="nav_category_list">
+                            <ul>
+                                <li><a href="#">Бестселлеры</a></li>
+                                <li><a href="#">Бизнес</a></li>
+                                <li><a href="#">Детективы и триллеры</a></li>
+                                <li><a href="#">Детская литература</a></li>
+                                <li><a href="#">Зарубежная литература</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Исторические романы</a></li>
+                                <li><a href="#">История, биография</a></li>
+                                <li><a href="#">Красота и здоровье</a></li>
+                                <li><a href="#">Компьютеры</a></li>
+                                <li><a href="#">Кулинария</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Любовные романы</a></li>
+                                <li><a href="#">Поэзия</a></li>
+                                <li><a href="#">Приключения, путешествия</a></li>
+                                <li><a href="#">Психология, НЛП</a></li>
+                                <li><a href="#">Публицистика</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Современная проза</a></li>
+                                <li><a href="#">Ужасы и мистика</a></li>
+                                <li><a href="#">Фантастика, фентези</a></li>
+                                <li><a href="#">Эзотерика</a></li>
+                                <li><a href="#">Эротика</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">правила</a></li>
+                    <li><a href="#">контакты</a></li>
+                </ul>
+
+                <form action="">
+                    <input type="search" placeholder="Найти книгу...">
+                    <input type="submit" value="поиск">
+                </form>
+            </div>
+
+            <div class="bread_crumbs"><a href="#">Электронная библиотека кота Чешира</a> &#187; <span>Красота и Здоровья</span> </div>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="board_filters_main">
+            <div class="board_filters">
+                <form class="board_filters_form" action="">
+                    <label for="search_in_articles" class="pointer">
+                        <select id="search_in_articles" name="search_in_articles">
+                            <option value="">Поменяю</option>
+                            <option value="">Отдам</option>
+                            <option value="">Приму в дар</option>
+                        </select>
+                    </label>
+                    <input type="search" placeholder="Введите запрос...">
+                    <input type="submit" value="поиск">
+                </form>
+                <div class="board_filters_nav">
+                    <ul class="board_filters_nav_list">
+                        <li class="board_filters_nav_item">
+                            <a class="board_filters_nav_link" href="#">Все категории</a>
+                        </li>
+                        <li class="board_filters_nav_item">
+                            <a class="board_filters_nav_link" href="#">Расширенный поиск</a>
+                        </li>
+                        <li class="board_filters_nav_item">
+                            <a class="board_filters_nav_link" href="#">Добавить объявление</a>
+                        </li>
+                        <li class="board_filters_nav_item">
+                            <a class="board_filters_nav_link" href="#">Все мои объявления</a>
+                        </li>
+                        <li class="board_filters_nav_item">
+                            <a class="board_filters_nav_link" href="#">Мой блокнот</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="category_review_main">
+            <div class="category_review category_review_book">
+                <div class="wrap_h2"><h2 class="h2_left">Страница на горизонте</h2></div>
+            </div>
+        </div>
+
+        <div class="category_books_main">
+            <div class="category_books">
+                <div class="board_book_single">
+                    <div class="board_book_single_img">
+                        <img src="images/board_single.jpg" alt=""/>
+                    </div>
+                    <div class="board_book_single_review">
+                        <div class="board_book_single_review_top">
+                            <p class="review_top_type"><span>Тип обьявления: </span>Поменяю</p>
+                            <p class="review_top_city"><span>Город: </span>СПБ</p>
+                            <p class="review_top_genre"><span>Жанр книги: </span>Личная встрече</p>
+                        </div>
+                        <div class="board_book_single_review_bottom">
+                            <p class="review_bottom_title">Контакты</p>
+                            <p class="review_bottom_name"><span>Ф.И.О.: </span>Иванов Иван</p>
+                            <p class="review_bottom_social"><span>Ссылка на соц сети: </span> vk.com</p>
+                            <p class="review_bottom_phone"><span>Контактный телефот: </span>1234567</p>
+                        </div>
+                        <p class="text">Великолепный писатель Эриха Марии Ремарка, автор таких мировых бестселлеров, как "Три товарища", "Триумфальная арка", "Земля обетованная" и многих других, подарил миру ещё один чудеснейший роман "Станция на горизонте".  Действия проходят на гоночной автостраде Европы в 20-е года ХХ века. Главные герои - молодые люди, которые ищут экстремальные происшествия дабы вернуть жизни потерянный вкус. Вас ждут любовь, романтика, переживания и, конечно же, красивые машины.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side_bar_categoty">
+                <div class="side_bar_box">
+                    <img src="images/sidebarImage.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="block_coments_main">
+            <div class="block_coments">
+                <div class="block_coments_head">
+                    <h2>Коментарии</h2>
+                </div>
+
+                <p class="comment">
+                    Комментариев нет...
+                </p>
+            </div>
+
+            <div class="add_comments">
+                <h2 class="add_comments_title">Добавить комментарий</h2>
+                <form class="add_comments_form" action="">
+                    <img src="images/comments.jpg" alt=""/>
+                    <input type="submit" value="отправить">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="footer_main">
+        <div class="footer">
+            <div class="footer_logo_wrap">
+                <a href="/" class="footer_logo"></a>
+                <p class="footer_title">Электронная онлайн - <span> библиотека кота Чешира</span></p>
+            </div>
+
+            <form action="">
+                <input type="search" placeholder="Найти книгу...">
+                <input type="submit" value="поиск">
+            </form>
+
+            <div class="footer_nav">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог книг</a></li>
+                    <li><a href="#">Правила</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Регистрация</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Бестселлеры</a></li>
+                    <li><a href="#">Бизнес</a></li>
+                    <li><a href="#">Детективы и триллеры</a></li>
+                    <li><a href="#">Детская литература</a></li>
+                    <li><a href="#">Зарубежная литература</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Исторические романы</a></li>
+                    <li><a href="#">История, биография</a></li>
+                    <li><a href="#">Красота и здоровье</a></li>
+                    <li><a href="#">Компьютеры</a></li>
+                    <li><a href="#">Кулинария</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Любовные романы</a></li>
+                    <li><a href="#">Поэзия</a></li>
+                    <li><a href="#">Приключения, путешествия</a></li>
+                    <li><a href="#">Психология, НЛП</a></li>
+                    <li><a href="#">Публицистика</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Современная проза</a></li>
+                    <li><a href="#">Ужасы и мистика</a></li>
+                    <li><a href="#">Фантастика, фентези</a></li>
+                    <li><a href="#">Эзотерика</a></li>
+                    <li><a href="#">Эротика</a></li>
+                </ul>
+            </div>
+
+            <div class="button_up"></div>
+        </div>
+
+        <div class="copiriht_main">
+            <div class="copiright">
+                <a href="#" class="vk">
+                    <span>Мы в Вконтакте</span>
+                </a>
+
+                <div class="copi">
+                    <p>Охраняеться котом Чеширом. &copy;2014 <a href="">cheshir.com.ua</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

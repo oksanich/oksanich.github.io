@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Книга</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Cuprum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+	<!-- [if lt IE 9]
+	<script src="http://oss.maxcdn.com/libs/respond.js/0.4.2/respond.min.js"></script>
+	[endif] -->
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header_main">
+			<div class="header">
+				<a href="/" class="logo"></a>
+
+				<div class="header_logo_tit_and_desc">
+					<p class="title">Электронная онлайн - <span> библиотека кота Чешира</span></p>
+					<p class="description">У нас вы можете <span>читать книги online и скачивать без регистрации</span></p>
+				</div>	
+
+				<div class="header_button">
+					<a href="" class="button add_book"><span>добавить книгу</span></a>
+					<div class="wrap_sign_in">
+						<a href="" class="button sign_in"><span>войти на сайт</span></a>
+						<div class="field_sign_in">
+							<form action="">
+								<input type="text" placeholder="Логин...">
+								<input type="text" placeholder="Пароль...">
+								<a href="#">Забыли пароль?</a>
+								<input type="checkbox" id="c1" name="cc" />
+								<label for="c1"><span></span>Чужой компьютер</label>
+							</form>
+							<input type="submit" class="button sign_in" value="войти на сайт">
+						</div>
+					</div>
+				</div>
+
+				<div class="nav">
+					<ul>
+						<li><a href="#">главная</a></li>
+						<li class="nav_category">
+							<a href="#">каталог книг</a>
+							<div class="nav_category_list">
+								<ul>
+									<li><a href="#">Бестселлеры</a></li>
+									<li><a href="#">Бизнес</a></li>
+									<li><a href="#">Детективы и триллеры</a></li>
+									<li><a href="#">Детская литература</a></li>
+									<li><a href="#">Зарубежная литература</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Исторические романы</a></li>
+									<li><a href="#">История, биография</a></li>
+									<li><a href="#">Красота и здоровье</a></li>
+									<li><a href="#">Компьютеры</a></li>
+									<li><a href="#">Кулинария</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Любовные романы</a></li>
+									<li><a href="#">Поэзия</a></li>
+									<li><a href="#">Приключения, путешествия</a></li>
+									<li><a href="#">Психология, НЛП</a></li>
+									<li><a href="#">Публицистика</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Современная проза</a></li>
+									<li><a href="#">Ужасы и мистика</a></li>
+									<li><a href="#">Фантастика, фентези</a></li>
+									<li><a href="#">Эзотерика</a></li>
+									<li><a href="#">Эротика</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">правила</a></li>
+						<li><a href="#">контакты</a></li>
+					</ul>
+
+					<form action="">
+						<input type="search" placeholder="Найти книгу...">
+						<input type="submit" value="поиск">
+					</form>
+				</div>
+
+				<div class="bread_crumbs"><a href="#">Электронная библиотека кота Чешира</a> &#187; <a href="#">Красота и Здоровья</a> &#187; <span>Как любовь формирует мозг ребенка?</span> </div>
+			</div>
+		</div>
+		
+		<div class="content">
+			 <div class="block_book_main">
+				<div class="wrap_block_book">
+					<div class="block_book">
+					<h2>Как любовь формирует мозг ребенка?</h2>
+					<div class="decor"></div>
+					<div class="number_of_pages">Всего страниц в книге: 
+					<span>550</span>
+					</div>
+				
+					<div class="block_book_navigation">
+						<div class="color_scheme">
+							<p>Цветовая схема:</p>
+							<a href="#" class="activ color_scheme_book">Книга</a>
+							<a href="#" class="color_scheme_day">День</a>
+							<a href="#" class="color_scheme_night">Ночь</a>
+						</div>
+						<div class="change_the_font">
+							<p>Изменене шрифта:</p>
+							<a href="#" class="activ change_the_font_small">A</a>
+							<a href="#" class="change_the_font_medium">A</a>
+							<a href="#" class="change_the_font_large">A</a>
+						</div>
+						<div class="select_page">
+							<p>Выбрать страницу:</p>
+							<label for="select_page" class="pointer">
+								<select id="select_page" name="select_page">
+									<option value="">1 - 2</option>
+								</select>
+							</label>
+						</div>
+					</div>
+
+					<div class="book_text">
+						<div class="decor_book_text">
+							<span class="figure"></span>
+						</div>
+						
+						<h2>Благодарности</h2>
+						<p>Многие участвовали в создании этой книги, некоторые — сами того не зная. Я бы особенно хотела поблагодарить своих пациентов, посещавших меня все эти годы, за то, что они многому меня научили.
+						Я бы хотела поблагодарить своих друзей, которые уделили время прочтению рукописи и снабдили меня неоценимыми отзывами: Джейн Хенрике, Пола Гер- хардта, Диану Гудман, Пола Хэрриса, Молли Кеньон-Джонс, Джона Миллера, Джона Фиббса, Паскаля Тор- расинта и Эндрю Веста.
+						Я бы также хотела поблагодарить Фиону Даксбери, Джона Эджингтона, Мортен Крингсльбах и Аллана Шора за полезные комментарии к отдельным главам.
+						В моей профессиональной деятельности я бы хотела поблагодарить Дафну Бриггс за вдохновляющее представление результатов наблюдения за младе</p>
+
+						<h3>Страница 1</h3>
+
+						<p>которого все и началось. Я бы также хотела поблагодарить Пенни Джейкс за ее неизменную поддержку в моей борьбе за возможность работать с родителями и детьми, а также всех моих коллег по Оксфордскому проекту для родителей и младенцев, особенно Джоанну Такер. А также Жана Нокса и других коллег по Международной сети привязанности, которые также расширили мои представления о привязанности.
+						Также я хотела бы поблагодарить всех моих друзей за их поддержку, в особенности Джейн Хенрике, Энджи Кэй и Найджела Барлоу, за мозговые штурмы и за стимулирование моих детей, за то, что мирились со всем этим, Джона Фиббса за его поддержку на последних этапах написания книги. Самую большую благодарность я должна выразить Полу Герхардту, который все это время был моим надежным тылом и без которого</p>
+
+						<h3>Страница 1</h3>
+
+						<div class="decor_book_text">
+							<span class="figure"></span>
+						</div>
+					</div>
+
+					<div class="block_book_buttons">
+						<a href="" class="button button_previus_page">&#171;<span> предыдущая</span></a>
+						<a href="" class="button button_next_page"><span>следующая </span>&#187;</a>
+					</div>
+				</div>
+
+				<div class="side_bar_book">
+					<div class="about_book">
+						<div class="book_img">
+							<img src="images/book.jpg" alt="">
+						</div>
+						<div class="about_book_category"><span>Категория: </span><a href="#">Красота и Здоровье</a>, <a href="#">Психология, НЛП</a></div>
+						<div class="about_book_author"><span>Автор: </span><a href="#">Сью Герхард</a></div>
+						<div class="about_book_view"><span>Просмотров: </span>123</div>
+						<div class="about_book_id"><span>ID: </span>123456</div>
+						<div class="about_book_viewing"><span>Сейчас смотрят: </span>1 <br>(всего просмотров 64)</div>
+						<div class="about_book_downloaded"><span>Скачало: </span>100</div>
+						<a href="" class="button download_book"><span>скачать книгу</span></a>
+
+						<div class="social_links">
+							<a href="#" class="vk"></a>
+							<a href="#" class="twitter"></a>
+							<a href="#" class="facebook"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="book_preview_main">
+				<div class="wrap_book_preview">
+					<div class="book_preview">
+						<h2>Как любовь формирует мозг ребенка?</h2>
+						<p>Всё то, что Вы хотели знать о развитии ребёнка и даже больше! Эта книга содержит в себе все современные исследования в области неврологии, физиологии, психоанализа. Раскрывается воздействие эмоциональной связи между ребёнком и родителями в первые годы жизни. Рассматривается развитие мозга и его влияние на эмоциональное состояние. Книга великолепно подойдёт для тех, кто работает в области ухода за детьми, а так же является прекрасным пособием для молодых родителей.</p>
+					</div>
+					<div class="book_preview_author"><span>Добавил: </span>Yermi от 2014-08-11 16:07:08</div>
+				</div>
+			</div>
+
+			<div class="block_coments_main">
+				<div class="block_coments">
+					<div class="block_coments_head">
+						<h2>Коментарии</h2>
+					</div>
+
+					<div class="block_coments_notice">
+						Уважаемый посетитель, Вы зашли на сайт как незарегистрированный пользователь.
+						Мы рекомендуем Вам <a href="#">зарегистрироваться</a> либо <a href="#">войти</a> на сайт под своим именем.
+					</div>
+				</div>
+			</div>	
+		</div>
+
+			<div class="footer_main">
+				<div class="footer">
+					<div class="footer_logo_wrap">
+						<a href="/" class="footer_logo"></a>
+						<p class="footer_title">Электронная онлайн - <span> библиотека кота Чешира</span></p>
+					</div>
+
+					<form action="">
+						<input type="search" placeholder="Найти книгу...">
+						<input type="submit" value="поиск">
+					</form>
+
+					<div class="footer_nav">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Каталог книг</a></li>
+							<li><a href="#">Правила</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Регистрация</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Бестселлеры</a></li>
+							<li><a href="#">Бизнес</a></li>
+							<li><a href="#">Детективы и триллеры</a></li>
+							<li><a href="#">Детская литература</a></li>
+							<li><a href="#">Зарубежная литература</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Исторические романы</a></li>
+							<li><a href="#">История, биография</a></li>
+							<li><a href="#">Красота и здоровье</a></li>
+							<li><a href="#">Компьютеры</a></li>
+							<li><a href="#">Кулинария</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Любовные романы</a></li>
+							<li><a href="#">Поэзия</a></li>
+							<li><a href="#">Приключения, путешествия</a></li>
+							<li><a href="#">Психология, НЛП</a></li>
+							<li><a href="#">Публицистика</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Современная проза</a></li>
+							<li><a href="#">Ужасы и мистика</a></li>
+							<li><a href="#">Фантастика, фентези</a></li>
+							<li><a href="#">Эзотерика</a></li>
+							<li><a href="#">Эротика</a></li>
+						</ul>
+					</div>
+
+					<div class="button_up"></div>
+				</div>
+				
+				<div class="copiriht_main">
+					<div class="copiright">
+						<a href="#" class="vk">
+							<span>Мы в Вконтакте</span>
+						</a>
+
+						 <div class="copi">
+						 	<p>Охраняеться котом Чеширом. &copy;2014 <a href="">cheshir.com.ua</a></p>
+						 </div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>	
+</body>
+</html>
