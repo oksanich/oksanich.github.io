@@ -2552,7 +2552,8 @@ a.filters_map_city_link{
     margin-bottom: 30px;
 }
 
-.board_books_search {
+.board_books_search,
+.board_books_advert{
     border: 1px solid #d7d0c7;
     background: #F5F2E9;
     padding: 10px 15px;
@@ -2560,7 +2561,12 @@ a.filters_map_city_link{
     margin-bottom: 30px;
 }
 
-.board_books_search_tr{
+/*.board_books_advert{*/
+    /*background: #fffef9;*/
+/*}*/
+
+.board_books_search_tr,
+.board_books_advert_tr{
     margin-bottom: 10px;
 }
 
@@ -2585,7 +2591,8 @@ a.filters_map_city_link{
 }
 
 .board_books_search_td input,
-.board_books_search_td textarea{
+.board_books_search_td textarea,
+.board_books_advert_td input{
     background: #fffef9;
     border: 1px solid #d7d0c7;
     border-radius: 3px;
@@ -2593,7 +2600,8 @@ a.filters_map_city_link{
 }
 
 .board_books_search_td textarea,
-.board_books_search_td input[type='text']{
+.board_books_search_td input[type='text'],
+.board_books_advert_td input{
     width: 98%;
 }
 
@@ -2603,6 +2611,88 @@ a.filters_map_city_link{
 
 .board_books_search_td input[type="number"]{
     margin: 0 5px;
+}
+
+.board_books_advert_td label:nth-of-type(n){
+    margin-left: 10px;
+}
+
+.board_books_advert_td label:first-of-type{
+    margin-left: 0;
+}
+
+.advert_download_img{
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.advert_download_img_text{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.download_img_picture_text{
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #a9a9a9;
+}
+
+.advert_download_img_picture{
+    display: inline-block;
+}
+
+.download_img{
+    background: #fffef9;
+    color: #60514a;
+    border: 1px solid #d7d0c7;
+    padding: 2px 20px;
+    border-radius: 3px;
+    font: 0.875em 'Cuprum', sans-serif;
+}
+
+.button.add_advert,
+.button.abort{
+    height: 33px;
+    width: 150px;
+    margin-right: 2%;
+    background-color: #3c98d5;
+    border: none;
+    border-bottom: 3px #467692 solid;
+    border-radius: 3px;
+    line-height: 28px;
+    position: relative;
+    font-family: Cuprum;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button.add_advert:hover{
+    background: #49a7de;
+}
+
+button.add_advert span {
+    margin-right: 20px;
+}
+
+.button.add_advert span:after {
+    content: '';
+    background: url(images/sprite.png) no-repeat -5px -32px;
+    width: 15px;
+    height: 14px;
+    position: absolute;
+    top: 8px;
+    right: 9px;
+}
+
+.button.abort{
+    background-color: #8e7b72;
+    border-bottom: 3px #6d5d55 solid;
+}
+
+.button.abort:hover{
+    background-color: #9B8A82;
 }
 
 .footer_main{
@@ -2661,7 +2751,8 @@ a.filters_map_city_link{
         margin: 0 2% 10px 0;
     }
 
-    .board_books_search{
+    .board_books_search,
+    .board_books_advert{
         display: table;
         width: 100%;
         box-sizing: border-box;
@@ -2669,12 +2760,20 @@ a.filters_map_city_link{
         border-spacing: 0 10px;
     }
 
-    .board_books_search_tr{
+    .board_books_search_tr,
+    .board_books_advert_tr{
         display: table-row;
     }
 
-    .board_books_search_td{
+    .board_books_search_td,
+    .board_books_advert_td{
         display: table-cell;
+        vertical-align: top;
+    }
+
+    .board_books_search_tr .board_books_search_tr:first-child,
+    .board_books_advert_tr .board_books_advert_td:first-child{
+        width: 30%;
     }
 
     .board_books_search_td .pointer,
@@ -2684,6 +2783,10 @@ a.filters_map_city_link{
 
     .board_books_search_form .search_site_button{
         text-align: left;
+    }
+
+    .advert_download_img_picture{
+        margin-left: 100px;
     }
 
 }
