@@ -2887,19 +2887,19 @@ button.add_advert span {
     }
 }
 
-/*@media screen and (-webkit-min-device-pixel-ratio:0) {*/
-    /*select:focus,*/
-    /*textarea:focus,*/
-    /*input:focus {*/
-        /*font-size: 16px;*/
-        /*background: #eee;*/
-    /*}*/
-/*}*/
-
-@media only screen and (max-device-width:568px) {
-    input[type="text"]:focus,
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select,
     textarea:focus,
-    select:focus {
-        font-size:16px;
+    input:focus {
+        font-size: 16px;
+        background: #eee;
     }
 }
+
+/*@media only screen and (max-device-width:568px) {*/
+    /*input[type="text"]:focus,*/
+    /*textarea:focus,*/
+    /*select:focus {*/
+        /*font-size:16px;*/
+    /*}*/
+/*}*/
