@@ -23,10 +23,23 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+@font-face {
+    font-family: 'cuprum';
+    src: url('font/cuprum-regular.eot');
+    src: url('font/cuprum-regular.eot?#iefix') format('embedded-opentype'),
+    url('font/cuprum-regular.woff2') format('woff2'),
+    url('font/cuprum-regular.woff') format('woff'),
+    url('font/cuprum-regular.ttf') format('truetype'),
+    url('font/cuprum-regular.svg#cuprumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
 	background: #fff;
 	color: #60514b;
-	font: 1em/1.4 'Cuprum', sans-serif;
+	font: 1em/1.4 'cuprum', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -2878,28 +2891,146 @@ button.add_advert span {
 
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    select:focus,
-    textarea:focus,
-    input:focus {
-        font-size: 16px;
-        background: #eee;
-    }
+
+/*==========  User Pages  ==========*/
+
+.user_block_wrap{
+    text-align: left;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    select,
-    textarea:focus,
-    input:focus {
-        font-size: 16px;
-        background: #eee;
-    }
+.user_block_title{
+    margin-bottom: 20px;
 }
 
-/*@media only screen and (max-device-width:568px) {*/
-    /*input[type="text"]:focus,*/
-    /*textarea:focus,*/
-    /*select:focus {*/
-        /*font-size:16px;*/
-    /*}*/
-/*}*/
+.user_block{
+    background: #F5F2E9;
+    border: 1px solid #d7d0c7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    padding: 15px;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+.user_block_top{
+    overflow: hidden;
+}
+
+.user_block_img{
+    margin-bottom: 20px;
+}
+
+.user_img{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 3px;
+    border: 2px solid #d7d0c7;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.user_link{
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    max-width: 100px;
+}
+
+.user_block_img > .user_link{
+    text-align: center;
+}
+
+.user_link:last-child{
+    margin-bottom: 0;
+}
+
+.user_block_info p{
+    color: #8e7b72;
+    margin-bottom: 5px;
+}
+
+.user_block_info span{
+    color: #4aa7de;
+}
+
+.user_info_about{
+    clear: both;
+}
+
+.user_block_statistic{
+    clear: both;
+    text-align: right;
+    margin: 30px 0;
+    color: #4aa7de;
+}
+
+.user_block_statistic div{
+    margin-bottom: 5px;
+}
+
+.user_block_button a.add_book,
+.user_block_button a.change_book{
+    height: 30px;
+    width: 149px;
+    background-color: #3c98d5;
+    border-bottom: 3px #467692 solid;
+    border-radius: 3px;
+    line-height: 33px;
+    position: relative;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.user_block_button a.add_book span,
+.header_button a.sign_in span{
+    margin-right: 20px;
+}
+
+.user_block_button a.add_book span:after{
+    content: '';
+    background: url(images/sprite.png) no-repeat -5px -32px;
+    width: 15px;
+    height: 14px;
+    position: absolute;
+    top: 8px;
+    right: 9px;
+}
+
+.user_block_button a.add_book:hover{
+    background-color: #8e7b72;
+    border-bottom: 3px #6d5d55 solid;
+}
+
+
+.user_block_button a.change_book{
+    background-color: #8e7b72;
+    border-bottom: 3px #6d5d55 solid;
+}
+
+.user_block_button a.change_book:hover{
+    background-color: #3c98d5;
+    border-bottom: 3px #467692 solid;
+}
+
+@media only screen and (min-width : 768px) {
+    .user_block_img{
+        float: left;
+        margin-bottom: 0;
+    }
+    
+    .user_block_info{
+        float: right;
+        width: calc(100% - 115px);
+    }
+
+    .user_info_left{
+        float: left;
+    }
+
+    .user_info_right{
+        float: right;
+        text-align: right;
+    }
+}
