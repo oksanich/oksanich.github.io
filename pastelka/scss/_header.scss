@@ -73,6 +73,87 @@ $burger--thickness: 4px;
 
 /*------------------ Header-top ------------------*/
 
+.wrapMobileMenu{
+  display: none;
+}
+
+.wrapHeaderTop{
+  background: $purple1 url("../image/bgPurple.png") repeat-x;
+}
+
+.topMenuList{
+  overflow: hidden;
+}
+
+.topMenuItem{
+  float: left;
+  &:first-child .topMenuLink{
+    padding-left: 0;
+  }
+}
+
+.topMenuLink{
+  color: $white;
+  padding: em(15px, 16px) em(5px, 16px);
+  display: inline-block;
+}
+
+.enterToSite{
+  [class^="icon-"]{
+    font-size: em(25px, 16px);
+    line-height: em(30px, 16px);
+    color: $green2;
+    margin-right: em(10px,16px);
+    &:hover{
+      color: darken($green2, 10%);
+    }
+  }
+}
+
+.logIn,
+.singUp{
+  display: inline-block;
+}
+
 /*------------------ Header-middle ------------------*/
+
+.middleContact{
+  margin-left: em(10px, 16px);
+  margin-bottom: em(15px, 16px);
+}
+
+.middleContactIcon{
+  [class^="icon-"]{
+    font-size: em(45px, 16px);
+    color: $purple1;
+    margin-left: em(-10px, 45px);
+    line-height: em(32px, 16px);
+  }
+}
+
+.middleContactPhone{
+  display: block;
+  color: $gray1;
+  font-size: em(24px, 16px);
+  margin-bottom: em(5px, 24px);
+  &:hover{
+    color: $gray1;
+  }
+}
+
+.middleContactPhoneCode{
+  color: $purple1;
+  font-size: em(18px, 24px);
+}
+
+.feedbackBtn{
+  @extend %btnFull;
+  padding: em(10px, 16px) em(20px, 16px);
+  font-size: em(18px, 16px);
+}
+
+.headerLogo{
+  text-align: center;
+}
 
 /*------------------ Header-bottom ------------------*/

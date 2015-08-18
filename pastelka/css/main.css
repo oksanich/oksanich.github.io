@@ -56,7 +56,50 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /*------------------ Bootstrap-skin ------------------*/
 /*------------------ Breadcrumbs ------------------*/
+.feedbackBtn {
+  color: #ffffff;
+  background: #a9ca54;
+  display: inline-block;
+}
+.feedbackBtn:hover {
+  color: #e6e6e6;
+  background: #9fc441;
+}
+
 /*------------------ Fonts ------------------*/
+/*------- font-roboto -------*/
+@font-face {
+  font-family: "Roboto-regular";
+  src: url('../fonts/roboto/Roboto-Regular-webfont.eot?1438474560');
+  src: url('../fonts/roboto/Roboto-Regular-webfont.eot?&1438474560#iefix') format('embedded-opentype'), url('../fonts/roboto/Roboto-Regular-webfont.ttf?1438474560') format('truetype'), url('../fonts/roboto/Roboto-Regular-webfont.ttf?1438474560') format('truetype'), url('../fonts/roboto/Roboto-Regular-webfont.svg?1438474560') format('svg');
+}
+@font-face {
+  font-family: "Roboto-thin";
+  src: url('../fonts/roboto/Roboto-Thin-webfont.eot?1438474560');
+  src: url('../fonts/roboto/Roboto-Thin-webfont.eot?&1438474560#iefix') format('embedded-opentype'), url('../fonts/roboto/Roboto-Thin-webfont.woff?1438474560') format('woff'), url('../fonts/roboto/Roboto-Thin-webfont.ttf?1438474560') format('truetype'), url('../fonts/roboto/Roboto-Thin-webfont.svg?1438474560') format('svg');
+}
+@font-face {
+  font-family: "Roboto-mediun";
+  src: url('../fonts/roboto/Roboto-Medium-webfont.eot?1438474560');
+  src: url('../fonts/roboto/Roboto-Medium-webfont.eot?&1438474560#iefix') format('embedded-opentype'), url('../fonts/roboto/Roboto-Medium-webfont.woff?1438474560') format('woff'), url('../fonts/roboto/Roboto-Medium-webfont.ttf?1438474560') format('truetype'), url('../fonts/roboto/Roboto-Medium-webfont.svg?1438474560') format('svg');
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url('../fonts/roboto/Roboto-Bold-webfont.eot?1438474560');
+  src: url('../fonts/roboto/Roboto-Bold-webfont.eot?&1438474560#iefix') format('embedded-opentype'), url('../fonts/roboto/Roboto-Bold-webfont.woff?1438474560') format('woff'), url('../fonts/roboto/Roboto-Bold-webfont.ttf?1438474560') format('truetype'), url('../fonts/roboto/Roboto-Bold-webfont.svg?1438474560') format('svg');
+}
+/*------- myriad-pro -------*/
+@font-face {
+  font-family: "Myriadpro-regular";
+  src: url('../fonts/myriadpro/myriadpro-regular.eot?1357797998');
+  src: url('../fonts/myriadpro/myriadpro-regular.eot?&1357797998#iefix') format('embedded-opentype'), url('../fonts/myriadpro/myriadpro-regular.ttf?1357797998') format('truetype'), url('../fonts/myriadpro/myriadpro-regular.ttf?1357797998') format('truetype'), url('../fonts/myriadpro/myriadpro-regular.svg?1357797998') format('svg');
+}
+@font-face {
+  font-family: "Myriadpro-semibold";
+  src: url('../fonts/myriadpro/myriadpro-semibold.eot?1357797998');
+  src: url('../fonts/myriadpro/myriadpro-semibold.eot?&1357797998#iefix') format('embedded-opentype'), url('../fonts/myriadpro/myriadpro-semibold.woff?1357797998') format('woff'), url('../fonts/myriadpro/myriadpro-semibold.ttf?1357797998') format('truetype'), url('../fonts/myriadpro/myriadpro-semibold.svg?1357797998') format('svg');
+}
+/*------- icon-moon -------*/
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/iconMenu/icomoon.eot");
@@ -64,7 +107,291 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   font-style: normal;
 }
+/*------- icon-font -------*/
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/iconFont/Font-icon.eot?2ox34p");
+  src: url("../fonts/iconFont/Font-icon.eot?#iefix2ox34p") format("embedded-opentype"), url("../fonts/iconFont/Font-icon.woff?2ox34p") format("woff"), url("../fonts/iconFont/Font-icon.ttf?2ox34p") format("truetype"), url("../fonts/iconFont/Font-icon.svg?2ox34p#Font-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-discount .path1:before {
+  content: "\e62b";
+  color: #444444;
+}
+
+.icon-discount .path2:before {
+  content: "\e62c";
+  margin-left: -1em;
+  color: #444444;
+}
+
+.icon-discount .path3:before {
+  content: "\e62d";
+  margin-left: -1em;
+  color: #fdf2f4;
+}
+
+.icon-discount .path4:before {
+  content: "\e62e";
+  margin-left: -1em;
+  color: #fdf2f4;
+}
+
+.icon-discount .path5:before {
+  content: "\e62f";
+  margin-left: -1em;
+  color: #fdf2f4;
+}
+
+.icon-circle:before {
+  content: "\e630";
+}
+
+.icon-down-slim:before {
+  content: "\e631";
+}
+
+.icon-down:before {
+  content: "\e632";
+}
+
+.icon-up-slim:before {
+  content: "\e633";
+}
+
+.icon-up:before {
+  content: "\e634";
+}
+
+.icon-bedclothes-L:before {
+  content: "\e635";
+}
+
+.icon-bedclothes-M:before {
+  content: "\e636";
+}
+
+.icon-bedclothes-XL:before {
+  content: "\e637";
+}
+
+.icon-bedclothes-S:before {
+  content: "\e638";
+}
+
+.icon-letter:before {
+  content: "\e639";
+}
+
+.icon-th:before {
+  content: "\e600";
+}
+
+.icon-th-line:before {
+  content: "\e605";
+}
+
+.icon-next-full:before {
+  content: "\e608";
+}
+
+.icon-previous:before {
+  content: "\e60a";
+}
+
+.icon-next:before {
+  content: "\e60b";
+}
+
+.icon-down-full:before {
+  content: "\e60c";
+}
+
+.icon-revers:before {
+  content: "\e60d";
+}
+
+.icon-bag-full:before {
+  content: "\e60f";
+}
+
+.icon-printer:before {
+  content: "\e610";
+}
+
+.icon-chat-full:before {
+  content: "\e611";
+}
+
+.icon-car:before {
+  content: "\e612";
+}
+
+.icon-wallet:before {
+  content: "\e613";
+}
+
+.icon-discount-label:before {
+  content: "\e614";
+}
+
+.icon-achive:before {
+  content: "\e615";
+}
+
+.icon-calendar:before {
+  content: "\e616";
+}
+
+.icon-basket:before {
+  content: "\e617";
+}
+
+.icon-close:before {
+  content: "\e618";
+}
+
+.icon-handshake:before {
+  content: "\e619";
+}
+
+.icon-boomerang:before {
+  content: "\e61a";
+}
+
+.icon-chat:before {
+  content: "\e61b";
+}
+
+.icon-search:before {
+  content: "\e61c";
+}
+
+.icon-enter:before {
+  content: "\e61d";
+}
+
+.icon-key:before {
+  content: "\e61e";
+}
+
+.icon-mushroom:before {
+  content: "\e61f";
+}
+
+.icon-horse:before {
+  content: "\e620";
+}
+
+.icon-closes:before {
+  content: "\e621";
+}
+
+.icon-children-bed:before {
+  content: "\e622";
+}
+
+.icon-teapot:before {
+  content: "\e623";
+}
+
+.icon-bed:before {
+  content: "\e624";
+}
+
+.icon-bathub:before {
+  content: "\e625";
+}
+
+.icon-blinds:before {
+  content: "\e626";
+}
+
+.icon-lingerie:before {
+  content: "\e627";
+}
+
+.icon-phone:before {
+  content: "\e628";
+}
+
+.icon-price:before {
+  content: "\e629";
+}
+
+.icon-bag:before {
+  content: "\e62a";
+}
+
+.icon-vkontakte:before {
+  content: "\e601";
+}
+
+.icon-odnoklassniki:before {
+  content: "\e609";
+}
+
+.icon-googleplus:before {
+  content: "\e602";
+}
+
+.icon-facebook:before {
+  content: "\e603";
+}
+
+.icon-twitter:before {
+  content: "\e604";
+}
+
+.icon-instagram:before {
+  content: "\e607";
+}
+
+.icon-person:before {
+  content: "\e606";
+}
+
+.icon-menu:before {
+  content: "\e60e";
+}
+
 /*------------------ Global ------------------*/
+body {
+  font-family: Roboto-regular, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #ffffff;
+}
+a:hover {
+  color: #e6e6e6;
+  text-decoration: none;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: inherit;
+}
+
 /*------------------ Header ------------------*/
 /*------------------ Mobile-menu ------------------*/
 /* Common styles of menus */
@@ -883,7 +1210,86 @@ All this is done for any sub-level being entered.
 }
 
 /*------------------ Header-top ------------------*/
+.wrapMobileMenu {
+  display: none;
+}
+
+.wrapHeaderTop {
+  background: #9951bd url("../image/bgPurple.png") repeat-x;
+}
+
+.topMenuList {
+  overflow: hidden;
+}
+
+.topMenuItem {
+  float: left;
+}
+.topMenuItem:first-child .topMenuLink {
+  padding-left: 0;
+}
+
+.topMenuLink {
+  color: #ffffff;
+  padding: 0.9375em 0.3125em;
+  display: inline-block;
+}
+
+.enterToSite [class^="icon-"] {
+  font-size: 1.5625em;
+  line-height: 1.875em;
+  color: #a9ca54;
+  margin-right: 0.625em;
+}
+.enterToSite [class^="icon-"]:hover {
+  color: #91b338;
+}
+
+.logIn,
+.singUp {
+  display: inline-block;
+}
+
 /*------------------ Header-middle ------------------*/
+.middleContact {
+  margin-left: 0.625em;
+  margin-bottom: 0.9375em;
+}
+
+.middleContactIcon [class^="icon-"] {
+  font-size: 2.8125em;
+  color: #9951bd;
+  margin-left: -0.22222em;
+  line-height: 2em;
+}
+
+.middleContactPhone {
+  display: block;
+  color: #444444;
+  font-size: 1.5em;
+  margin-bottom: 0.20833em;
+}
+.middleContactPhone:hover {
+  color: #444444;
+}
+
+.middleContactPhoneCode {
+  color: #9951bd;
+  font-size: 0.75em;
+}
+
+.feedbackBtn {
+  padding: 0.625em 1.25em;
+  font-size: 1.125em;
+}
+
+.headerLogo {
+  text-align: center;
+}
+
 /*------------------ Header-bottom ------------------*/
+.headerCategorySubList {
+  display: none;
+}
 
 /*# sourceMappingURL=main.css.map */

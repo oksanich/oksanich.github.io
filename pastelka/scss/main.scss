@@ -2,6 +2,12 @@
 @import "compass/css3";
 @import "bootstrap-skin";
 @import "variables";
+@import "placeholders";
+@import "mixins";
 @import "fonts";
 @import "global";
 @import "header";
+
+.headerCategorySubList{
+  display: none;
+}

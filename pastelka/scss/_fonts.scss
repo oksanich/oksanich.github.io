@@ -1,5 +1,19 @@
 /*------------------ Fonts ------------------*/
 
+/*------- font-roboto -------*/
+
+@include font-face('Roboto-regular', font-files('roboto/Roboto-Regular-webfont.ttf', 'roboto/Roboto-Regular-webfont.ttf', 'roboto/Roboto-Regular-webfont.svg'),'roboto/Roboto-Regular-webfont.eot');
+@include font-face('Roboto-thin', font-files('roboto/Roboto-Thin-webfont.woff', 'roboto/Roboto-Thin-webfont.ttf', 'roboto/Roboto-Thin-webfont.svg'),'roboto/Roboto-Thin-webfont.eot');
+@include font-face('Roboto-mediun', font-files('roboto/Roboto-Medium-webfont.woff', 'roboto/Roboto-Medium-webfont.ttf', 'roboto/Roboto-Medium-webfont.svg'),'roboto/Roboto-Medium-webfont.eot');
+@include font-face('Roboto-bold', font-files('roboto/Roboto-Bold-webfont.woff', 'roboto/Roboto-Bold-webfont.ttf', 'roboto/Roboto-Bold-webfont.svg'),'roboto/Roboto-Bold-webfont.eot');
+
+/*------- myriad-pro -------*/
+
+@include font-face('Myriadpro-regular', font-files('myriadpro/myriadpro-regular.ttf', 'myriadpro/myriadpro-regular.ttf', 'myriadpro/myriadpro-regular.svg'),'myriadpro/myriadpro-regular.eot');
+@include font-face('Myriadpro-semibold', font-files('myriadpro/myriadpro-semibold.woff', 'myriadpro/myriadpro-semibold.ttf', 'myriadpro/myriadpro-semibold.svg'),'myriadpro/myriadpro-semibold.eot');
+
+/*------- icon-moon -------*/
+
 @font-face {
   font-family: 'icomoon';
   src:url('../fonts/iconMenu/icomoon.eot');
@@ -9,4 +23,215 @@
   url('../fonts/iconMenu/icomoon.svg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+
+/*------- icon-font -------*/
+
+@font-face {
+  font-family: 'iconfont';
+  src:url('../fonts/iconFont/Font-icon.eot?2ox34p');
+  src:url('../fonts/iconFont/Font-icon.eot?#iefix2ox34p') format('embedded-opentype'),
+  url('../fonts/iconFont/Font-icon.woff?2ox34p') format('woff'),
+  url('../fonts/iconFont/Font-icon.ttf?2ox34p') format('truetype'),
+  url('../fonts/iconFont/Font-icon.svg?2ox34p#Font-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-discount .path1:before {
+  content: "\e62b";
+  color: rgb(68,68,68);
+}
+.icon-discount .path2:before {
+  content: "\e62c";
+  margin-left: -1em;
+  color: rgb(68,68,68);
+}
+.icon-discount .path3:before {
+  content: "\e62d";
+  margin-left: -1em;
+  color: rgb(253,242,244);
+}
+.icon-discount .path4:before {
+  content: "\e62e";
+  margin-left: -1em;
+  color: rgb(253,242,244);
+}
+.icon-discount .path5:before {
+  content: "\e62f";
+  margin-left: -1em;
+  color: rgb(253,242,244);
+}
+.icon-circle:before {
+  content: "\e630";
+}
+.icon-down-slim:before {
+  content: "\e631";
+}
+.icon-down:before {
+  content: "\e632";
+}
+.icon-up-slim:before {
+  content: "\e633";
+}
+.icon-up:before {
+  content: "\e634";
+}
+.icon-bedclothes-L:before {
+  content: "\e635";
+}
+.icon-bedclothes-M:before {
+  content: "\e636";
+}
+.icon-bedclothes-XL:before {
+  content: "\e637";
+}
+.icon-bedclothes-S:before {
+  content: "\e638";
+}
+.icon-letter:before {
+  content: "\e639";
+}
+.icon-th:before {
+  content: "\e600";
+}
+.icon-th-line:before {
+  content: "\e605";
+}
+.icon-next-full:before {
+  content: "\e608";
+}
+.icon-previous:before {
+  content: "\e60a";
+}
+.icon-next:before {
+  content: "\e60b";
+}
+.icon-down-full:before {
+  content: "\e60c";
+}
+.icon-revers:before {
+  content: "\e60d";
+}
+.icon-bag-full:before {
+  content: "\e60f";
+}
+.icon-printer:before {
+  content: "\e610";
+}
+.icon-chat-full:before {
+  content: "\e611";
+}
+.icon-car:before {
+  content: "\e612";
+}
+.icon-wallet:before {
+  content: "\e613";
+}
+.icon-discount-label:before {
+  content: "\e614";
+}
+.icon-achive:before {
+  content: "\e615";
+}
+.icon-calendar:before {
+  content: "\e616";
+}
+.icon-basket:before {
+  content: "\e617";
+}
+.icon-close:before {
+  content: "\e618";
+}
+.icon-handshake:before {
+  content: "\e619";
+}
+.icon-boomerang:before {
+  content: "\e61a";
+}
+.icon-chat:before {
+  content: "\e61b";
+}
+.icon-search:before {
+  content: "\e61c";
+}
+.icon-enter:before {
+  content: "\e61d";
+}
+.icon-key:before {
+  content: "\e61e";
+}
+.icon-mushroom:before {
+  content: "\e61f";
+}
+.icon-horse:before {
+  content: "\e620";
+}
+.icon-closes:before {
+  content: "\e621";
+}
+.icon-children-bed:before {
+  content: "\e622";
+}
+.icon-teapot:before {
+  content: "\e623";
+}
+.icon-bed:before {
+  content: "\e624";
+}
+.icon-bathub:before {
+  content: "\e625";
+}
+.icon-blinds:before {
+  content: "\e626";
+}
+.icon-lingerie:before {
+  content: "\e627";
+}
+.icon-phone:before {
+  content: "\e628";
+}
+.icon-price:before {
+  content: "\e629";
+}
+.icon-bag:before {
+  content: "\e62a";
+}
+.icon-vkontakte:before {
+  content: "\e601";
+}
+.icon-odnoklassniki:before {
+  content: "\e609";
+}
+.icon-googleplus:before {
+  content: "\e602";
+}
+.icon-facebook:before {
+  content: "\e603";
+}
+.icon-twitter:before {
+  content: "\e604";
+}
+.icon-instagram:before {
+  content: "\e607";
+}
+.icon-person:before {
+  content: "\e606";
+}
+.icon-menu:before {
+  content: "\e60e";
 }

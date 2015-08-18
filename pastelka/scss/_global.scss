@@ -1,5 +1,22 @@
 /*------------------ Global ------------------*/
 
+body{
+  font-family: $RobotoRegular;
+  font-size: 16px;
+}
 
+a{
+  color: $white;
+  &:hover{
+    color: darken($white, 10%);
+    text-decoration: none;
+    @include transition-duration(1s)
+  }
+}
+
+input:focus,
+textarea:focus{
+  border-color: inherit;
+}
 
 
