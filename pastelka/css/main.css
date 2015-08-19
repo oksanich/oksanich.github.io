@@ -1235,6 +1235,9 @@ All this is done for any sub-level being entered.
   display: inline-block;
 }
 
+.enterToSite {
+  text-align: right;
+}
 .enterToSite [class^="icon-"] {
   font-size: 1.5625em;
   line-height: 1.875em;
@@ -1250,7 +1253,15 @@ All this is done for any sub-level being entered.
   display: inline-block;
 }
 
+.singUp [class^="icon-"] {
+  margin-right: 0;
+}
+
 /*------------------ Header-middle ------------------*/
+.headerMiddle {
+  margin-bottom: 0.9375em;
+}
+
 .middleContact {
   margin-left: 0.625em;
   margin-bottom: 0.9375em;
@@ -1258,9 +1269,9 @@ All this is done for any sub-level being entered.
 
 .middleContactIcon [class^="icon-"] {
   font-size: 2.8125em;
-  color: #9951bd;
+  color: #debcf8;
   margin-left: -0.22222em;
-  line-height: 2em;
+  line-height: 2.25em;
 }
 
 .middleContactPhone {
@@ -1283,13 +1294,266 @@ All this is done for any sub-level being entered.
   font-size: 1.125em;
 }
 
+.middleContentRightTop {
+  overflow: hidden;
+  padding: 0.625em 0 0.9375em;
+}
+
 .headerLogo {
-  text-align: center;
+  text-align: right;
+  margin-top: 1.5625em;
+}
+
+.headerUser {
+  text-align: right;
+  color: #757575;
+  margin-bottom: 0.625em;
+}
+
+.headerUserLink {
+  color: #b6258f;
+}
+.headerUserLink:hover {
+  color: #8c1c6e;
+}
+
+.headerInfoCart {
+  text-align: right;
+}
+
+.infoCartIcon {
+  margin-bottom: 1.25em;
+}
+.infoCartIcon [class^="icon-"] {
+  font-size: 2.5em;
+  color: #debcf8;
+}
+
+.infoCartTitle {
+  color: #b6258f;
+  font-size: 1em;
+  margin-bottom: 0.27778em;
+}
+
+.infoCart {
+  color: #9951bd;
+  font-size: 1.125em;
+  margin-bottom: 0.27778em;
+}
+
+.infoCartNumber {
+  color: #505050;
+  font-size: 1.33333em;
+}
+
+.headerSearch .form-control {
+  border: 0;
+  height: 2.75em;
+  line-height: 1.375em;
+}
+.headerSearch .input-group {
+  border: 3px solid #9a008d;
+}
+.headerSearch .form-control::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-size: 1.125em;
+  color: #444444;
+  font-family: Roboto-thin, sans-serif;
+}
+.headerSearch .form-control::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #444444;
+  font-family: Roboto-thin, sans-serif;
+}
+.headerSearch .form-control:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #444444;
+  font-family: Roboto-thin, sans-serif;
+}
+.headerSearch .form-control:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #444444;
+  font-family: Roboto-thin, sans-serif;
+}
+.headerSearch .form-control:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.headerSearch .form-control:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.headerSearch .form-control:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.headerSearch .form-control:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.headerSearch .btn-default {
+  border: none;
+}
+.headerSearch .btn-default:hover {
+  background: none;
+}
+.headerSearch .btn-default:focus {
+  background: none;
+  outline: none;
+}
+.headerSearch .btn-default:active {
+  background: none;
+}
+.headerSearch .input-group-btn [class^="icon-"] {
+  font-size: 1.625em;
+  color: #a9ca54;
+}
+.headerSearch .input-group-btn [class^="icon-"]:hover {
+  color: #91b338;
 }
 
 /*------------------ Header-bottom ------------------*/
+.wrapHeaderBottom {
+  background: #debcf8 url("../image/bgPink.png") repeat-x;
+}
+
+.headerCategoryItem {
+  width: 10%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+.headerCategoryLink {
+  display: inline-block;
+  padding: 0.9375em 0;
+  width: 100%;
+  min-height: 8.75em;
+}
+.headerCategoryLink span {
+  display: block;
+}
+.headerCategoryLink [class^="icon-"] {
+  font-size: 4em;
+  margin-bottom: 0.15625em;
+}
+.headerCategoryLink:hover {
+  background: #b6258f;
+  color: #ffffff;
+}
+.headerCategoryLink:hover .headerCategoryLinkTitle {
+  color: #ffffff;
+}
+.headerCategoryLink .headerCategoryLinkTitle {
+  margin: 0 0.3125em;
+  color: #b6258f;
+  line-height: 1.22222em;
+}
+@media (min-width: 1200px) {
+  .headerCategoryLink .headerCategoryLinkTitle {
+    margin: 0 1.125em;
+  }
+}
+
 .headerCategorySubList {
   display: none;
+}
+
+.headerCategoryItem:nth-child(n+6) .headerCategorySubList {
+  right: 0;
+}
+.headerCategoryItem:hover > .headerCategorySubList {
+  display: block;
+}
+
+.headerCategorySubList {
+  width: 30.55556em;
+  text-align: left;
+  padding: 1.11111em;
+  border: 1px solid #b6258f;
+  box-sizing: border-box;
+  background: #ffffff;
+  position: absolute;
+  -moz-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  -webkit-transition-duration: 2s;
+  transition-duration: 2s;
+  z-index: 10;
+}
+
+.headerCategorySubListLeft {
+  width: 50%;
+  float: left;
+}
+
+.headerCategorySubListRight {
+  width: 50%;
+}
+
+.headerCategorySubItem {
+  margin-bottom: 0.625em;
+}
+
+.headerCategorySubLink {
+  font-size: 1.125em;
+  padding: 0 0.27778em;
+  color: #444444;
+}
+.headerCategorySubLink:hover {
+  background: #debcf8;
+  color: #444444;
+}
+
+.headerCategoryItem1 .headerCategorySubList {
+  background: #ffffff url("../image/categoryBg/bedroom.png") right no-repeat;
+}
+
+.headerCategoryItem2 .headerCategorySubList {
+  background: #ffffff url("../image/categoryBg/kitchen.png") right no-repeat;
+}
+
+.headerCategoryItem3 .headerCategorySubList {
+  background: #ffffff url("../image/categoryBg/bathroom.png") right no-repeat;
+}
+
+.headerCategoryItem4 .headerCategorySubList {
+  background: #ffffff url("../image/categoryBg/kidsroom.png") right no-repeat;
+}
+
+.headerCategoryItem5 .headerCategorySubList {
+  background: #ffffff url("../image/categoryBg/closes.png") right no-repeat;
+}
+
+.headerCategoryItem6 .headerCategorySubList {
+  background: #ffffff url("../image/categoryBg/childworld.png") right no-repeat;
+}
+
+.headerCategoryItem7 .headerCategorySubList {
+  background: #ffffff url("../image/categoryBg/home.png") right no-repeat;
+}
+
+.headerCategoryItem8 .headerCategorySubList {
+  background: #ffffff url("../image/categoryBg/underwear.png") right no-repeat;
+}
+
+.headerCategoryItem9 .headerCategorySubList {
+  background: #ffffff url("../image/categoryBg/rest.png") right no-repeat;
+}
+
+.headerCategoryItem10 .headerCategorySubList {
+  background: #ffffff url("../image/categoryBg/forhotel.png") right no-repeat;
+}
+
+.headerCategoryItem1 .headerCategorySubList {
+  background: #ffffff url("../image/categoryBg/bedroom.png") right no-repeat;
+}
+
+.headerCategoryItem1 .headerCategorySubList {
+  background: #ffffff url("../image/categoryBg/bedroom.png") right no-repeat;
 }
 
 /*# sourceMappingURL=main.css.map */

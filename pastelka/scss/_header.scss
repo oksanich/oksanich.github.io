@@ -99,6 +99,7 @@ $burger--thickness: 4px;
 }
 
 .enterToSite{
+  text-align: right;
   [class^="icon-"]{
     font-size: em(25px, 16px);
     line-height: em(30px, 16px);
@@ -115,7 +116,17 @@ $burger--thickness: 4px;
   display: inline-block;
 }
 
+.singUp{
+  [class^="icon-"] {
+    margin-right: 0;
+  }
+}
+
 /*------------------ Header-middle ------------------*/
+
+.headerMiddle{
+  margin-bottom: em(15px, 16px);
+}
 
 .middleContact{
   margin-left: em(10px, 16px);
@@ -125,9 +136,9 @@ $burger--thickness: 4px;
 .middleContactIcon{
   [class^="icon-"]{
     font-size: em(45px, 16px);
-    color: $purple1;
+    color: $pink3;
     margin-left: em(-10px, 45px);
-    line-height: em(32px, 16px);
+    line-height: em(36px, 16px);
   }
 }
 
@@ -152,8 +163,313 @@ $burger--thickness: 4px;
   font-size: em(18px, 16px);
 }
 
+.middleContentRightTop{
+  overflow: hidden;
+  padding: em(10px, 16px) 0 em(15px, 16px);
+}
+
 .headerLogo{
-  text-align: center;
+  text-align: right;
+  margin-top: em(25px, 16px);
+}
+
+.headerUser{
+  text-align: right;
+  color: $gray3;
+  margin-bottom: em(10px, 16px);
+}
+
+.headerUserLink{
+  color: $primeColor;
+  &:hover{
+    color: darken($primeColor, 10%);
+  }
+}
+
+.headerInfoCart{
+  text-align: right;
+}
+
+.infoCartIcon{
+  [class^="icon-"] {
+    font-size: em(40px, 16px);
+    color: $pink3;
+  }
+  margin-bottom: em(20px, 16px);
+}
+
+.infoCartTitle{
+  color: $primeColor;
+  font-size: em(16px, 16px);
+  margin-bottom: em(5px, 18px);
+}
+
+.infoCart{
+  color: $purple1;
+  font-size: em(18px, 16px);
+  margin-bottom: em(5px, 18px);
+}
+
+.infoCartNumber{
+  color: $gray2;
+  font-size: em(24px, 18px);
+}
+
+.headerSearch{
+  .form-control{
+    border: 0;
+    height: em(44px, 16px);
+    line-height: em(22px, 16px);
+  }
+
+  .input-group{
+    border: 3px solid $primeDark;
+  }
+
+  .form-control::-webkit-input-placeholder{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    font-size: em(18px, 16px);
+    color: $gray1;
+    font-family: $RobotoThin;
+  }
+
+  .form-control::-moz-placeholder{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    color: $gray1;
+    font-family: $RobotoThin;
+  }
+
+  .form-control:-moz-placeholder{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    color: $gray1;
+    font-family: $RobotoThin;
+  }
+
+  .form-control:-ms-input-placeholder{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    color: $gray1;
+    font-family: $RobotoThin;
+  }
+  .form-control:focus::-webkit-input-placeholder{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .form-control:focus::-moz-placeholder{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .form-control:focus:-moz-placeholder{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .form-control:focus:-ms-input-placeholder{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .btn-default{
+    border: none;
+    &:hover{
+      background: none;
+    }
+    &:focus{
+      background: none;
+      outline: none;
+    }
+    &:active{
+      background: none;
+    }
+  }
+
+  .input-group-btn{
+    [class^="icon-"]{
+      font-size: em(26px, 16px);
+      color: $green2;
+      &:hover{
+        color: darken($green2, 10%);
+      }
+    }
+  }
 }
 
 /*------------------ Header-bottom ------------------*/
+
+.wrapHeaderBottom{
+  background: $pink3 url("../image/bgPink.png") repeat-x;
+}
+
+.headerCategoryList{
+
+}
+
+.headerCategoryItem{
+  width: 10%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+.headerCategoryLink{
+  display: inline-block;
+  padding: em(15px, 16px) 0;
+  width: 100%;
+  min-height: em(140px, 16px);
+
+  span{
+    display: block;
+  }
+
+  [class^="icon-"]{
+    font-size: em(64px, 16px);
+    margin-bottom: em(10px, 64px);
+  }
+
+  &:hover{
+    background: $primeColor;
+    color: $white;
+
+    .headerCategoryLinkTitle{
+      color: $white;
+    }
+  }
+
+  .headerCategoryLinkTitle{
+    margin: 0 em(5px, 16px);
+    color: $primeColor;
+    line-height: em(22px, 18px);
+    @media (min-width: 1200px) {
+      margin: 0 em(18px, 16px);
+    }
+  }
+}
+
+.headerCategorySubList{
+  display: none;
+}
+
+.headerCategoryItem{
+  &:nth-child(n+6){
+    .headerCategorySubList {
+      right: 0;
+    }
+  }
+  &:hover{
+    > .headerCategorySubList{
+      display: block;
+    }
+  }
+}
+
+.headerCategorySubList{
+  width: em(550px, 18px);
+  text-align: left;
+  padding: em(20px, 18px);
+  border: 1px solid $primeColor;
+  box-sizing: border-box;
+  background: $white;
+  position: absolute;
+  @include transition-duration(2s);
+  z-index: 10;
+}
+
+.headerCategorySubListLeft{
+  width: 50%;
+  float: left;
+}
+
+.headerCategorySubListRight{
+  width: 50%;
+}
+
+.headerCategorySubItem{
+  margin-bottom: em(10px, 16px);
+}
+
+.headerCategorySubLink{
+  font-size: em(18px, 16px);
+  padding: 0 em(5px,18px);
+  color: $gray1;
+  &:hover {
+    background: $pink3;
+    color: $gray1;
+  }
+}
+
+.headerCategoryItem1{
+  .headerCategorySubList{
+    background: $white url("../image/categoryBg/bedroom.png") right no-repeat;
+  }
+}
+
+.headerCategoryItem2{
+  .headerCategorySubList{
+    background: $white url("../image/categoryBg/kitchen.png") right no-repeat;
+  }
+}
+
+.headerCategoryItem3{
+  .headerCategorySubList{
+    background: $white url("../image/categoryBg/bathroom.png") right no-repeat;
+  }
+}
+
+.headerCategoryItem4{
+  .headerCategorySubList{
+    background: $white url("../image/categoryBg/kidsroom.png") right no-repeat;
+  }
+}
+
+.headerCategoryItem5{
+  .headerCategorySubList{
+    background: $white url("../image/categoryBg/closes.png") right no-repeat;
+  }
+}
+
+.headerCategoryItem6{
+  .headerCategorySubList{
+    background: $white url("../image/categoryBg/childworld.png") right no-repeat;
+  }
+}
+
+.headerCategoryItem7{
+  .headerCategorySubList{
+    background: $white url("../image/categoryBg/home.png") right no-repeat;
+  }
+}
+
+.headerCategoryItem8{
+  .headerCategorySubList{
+    background: $white url("../image/categoryBg/underwear.png") right no-repeat;
+  }
+}
+
+.headerCategoryItem9{
+  .headerCategorySubList{
+    background: $white url("../image/categoryBg/rest.png") right no-repeat;
+  }
+}
+
+.headerCategoryItem10{
+  .headerCategorySubList{
+    background: $white url("../image/categoryBg/forhotel.png") right no-repeat;
+  }
+}
+
+.headerCategoryItem1{
+  .headerCategorySubList{
+    background: $white url("../image/categoryBg/bedroom.png") right no-repeat;
+  }
+}
+
+.headerCategoryItem1{
+  .headerCategorySubList{
+    background: $white url("../image/categoryBg/bedroom.png") right no-repeat;
+  }
+}
