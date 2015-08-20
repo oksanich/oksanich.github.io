@@ -12,11 +12,18 @@ a{
     text-decoration: none;
     @include transition-duration(1s)
   }
+  &:focus{
+    text-decoration: none;
+  }
 }
 
 input:focus,
 textarea:focus{
   border-color: inherit;
+}
+
+img{
+  width: 100%;
 }
 
 

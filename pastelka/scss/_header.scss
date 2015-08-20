@@ -71,10 +71,32 @@ $burger--thickness: 4px;
   }
 }
 
+.dl-menuwrapper button {
+  position: absolute;
+}
+
+
+.dl-menuwrapper {
+  .dl-menu {
+    min-width: 290px;
+    margin-top: 50px;
+  }
+  &:first-child {
+    margin-right: 0;
+    position: relative;
+    z-index: 100;
+  }
+}
+
+
 /*------------------ Header-top ------------------*/
 
-.wrapMobileMenu{
-  display: none;
+.mainHeader {
+  border-bottom: 1px solid #9A008D;
+  margin-bottom: em(15px, 16px);
+  @media (min-width: 992px) {
+    border-bottom: none;
+  }
 }
 
 .wrapHeaderTop{
@@ -173,6 +195,10 @@ $burger--thickness: 4px;
   margin-top: em(25px, 16px);
 }
 
+.headerLogoImage {
+  max-width: 330px;
+}
+
 .headerUser{
   text-align: right;
   color: $gray3;
@@ -216,6 +242,8 @@ $burger--thickness: 4px;
 }
 
 .headerSearch{
+  position: relative;
+
   .form-control{
     border: 0;
     height: em(44px, 16px);
@@ -299,14 +327,109 @@ $burger--thickness: 4px;
   }
 }
 
+.headerSearchResult{
+  position: absolute;
+  display: none;
+  z-index: 100;
+  width: 100%;
+  background: $white;
+  border: 3px solid $gray4;
+  box-sizing: border-box;
+  padding: em(15px, 16px);
+
+}
+
+.headerSearch{
+  &:hover{
+    .headerSearchResult{
+      display: block;
+    }
+  }
+}
+
+.closeIcon{
+  text-align: right;
+  margin-bottom: em(5px, 16px);
+  [class^="icon-"] {
+    color: $gray4;
+    cursor: pointer;
+    &:hover{
+      color: darken($gray4, 10%);
+      @include transition-duration(1s)
+    }
+  }
+}
+
+.wrapSearchResultImage{
+  float: left;
+  height: em(95px, 16px);
+  width: 23%;
+  margin-right: 2%;
+  .searchResultImage{
+    max-width: em(160px, 16px);
+    width: 100%;
+    height: em(95px, 16px);
+  }
+}
+
+.searchResult{
+  overflow: hidden;
+  border-bottom: 1px solid $pink3;
+  display: block;
+  padding: em(10px, 16px);
+  &:hover{
+    background: $gray5;
+  }
+}
+
+.resultImageInfoTitle{
+  color: $gray2;
+  font-size: em(16px, 16px);
+  margin-bottom: em(5px, 16px);
+}
+
+.searchResultImageInfo{
+  float: left;
+  width: 75%;
+}
+
+.resultImageInfoArticle{
+  color: $gray3;
+  font-size: em(12px, 16px);
+}
+
+.resultImageInfoPrice{
+  color: $purple1;
+  font-size: em(14px, 16px);
+  margin-top: em(20px, 14px);
+}
+
+.wrapSearchResultBtn{
+  text-align: center;
+  padding-top: em(10px, 16px);
+}
+
+.searchResultBtn{
+  color: $primeColor;
+  padding: em(10px, 16px);
+  font-size: em(18px, 16px);
+  background: $gray6;
+  display: inline-block;
+  &:hover{
+    background: darken($gray6, 10%);
+    color: $primeColor;
+  }
+  [class^="icon-"] {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+  }
+}
+
 /*------------------ Header-bottom ------------------*/
 
 .wrapHeaderBottom{
   background: $pink3 url("../image/bgPink.png") repeat-x;
-}
-
-.headerCategoryList{
-
 }
 
 .headerCategoryItem{

@@ -386,10 +386,17 @@ a:hover {
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
 }
+a:focus {
+  text-decoration: none;
+}
 
 input:focus,
 textarea:focus {
   border-color: inherit;
+}
+
+img {
+  width: 100%;
 }
 
 /*------------------ Header ------------------*/
@@ -1209,9 +1216,29 @@ All this is done for any sub-level being entered.
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
 }
 
+.dl-menuwrapper button {
+  position: absolute;
+}
+
+.dl-menuwrapper .dl-menu {
+  min-width: 290px;
+  margin-top: 50px;
+}
+.dl-menuwrapper:first-child {
+  margin-right: 0;
+  position: relative;
+  z-index: 100;
+}
+
 /*------------------ Header-top ------------------*/
-.wrapMobileMenu {
-  display: none;
+.mainHeader {
+  border-bottom: 1px solid #9A008D;
+  margin-bottom: 0.9375em;
+}
+@media (min-width: 992px) {
+  .mainHeader {
+    border-bottom: none;
+  }
 }
 
 .wrapHeaderTop {
@@ -1304,6 +1331,10 @@ All this is done for any sub-level being entered.
   margin-top: 1.5625em;
 }
 
+.headerLogoImage {
+  max-width: 330px;
+}
+
 .headerUser {
   text-align: right;
   color: #757575;
@@ -1346,6 +1377,9 @@ All this is done for any sub-level being entered.
   font-size: 1.33333em;
 }
 
+.headerSearch {
+  position: relative;
+}
 .headerSearch .form-control {
   border: 0;
   height: 2.75em;
@@ -1414,6 +1448,103 @@ All this is done for any sub-level being entered.
 }
 .headerSearch .input-group-btn [class^="icon-"]:hover {
   color: #91b338;
+}
+
+.headerSearchResult {
+  position: absolute;
+  display: none;
+  z-index: 100;
+  width: 100%;
+  background: #ffffff;
+  border: 3px solid #a1a1a1;
+  box-sizing: border-box;
+  padding: 0.9375em;
+}
+
+.headerSearch:hover .headerSearchResult {
+  display: block;
+}
+
+.closeIcon {
+  text-align: right;
+  margin-bottom: 0.3125em;
+}
+.closeIcon [class^="icon-"] {
+  color: #a1a1a1;
+  cursor: pointer;
+}
+.closeIcon [class^="icon-"]:hover {
+  color: #888888;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.wrapSearchResultImage {
+  float: left;
+  height: 5.9375em;
+  width: 23%;
+  margin-right: 2%;
+}
+.wrapSearchResultImage .searchResultImage {
+  max-width: 10em;
+  width: 100%;
+  height: 5.9375em;
+}
+
+.searchResult {
+  overflow: hidden;
+  border-bottom: 1px solid #debcf8;
+  display: block;
+  padding: 0.625em;
+}
+.searchResult:hover {
+  background: #eeeeee;
+}
+
+.resultImageInfoTitle {
+  color: #505050;
+  font-size: 1em;
+  margin-bottom: 0.3125em;
+}
+
+.searchResultImageInfo {
+  float: left;
+  width: 75%;
+}
+
+.resultImageInfoArticle {
+  color: #757575;
+  font-size: 0.75em;
+}
+
+.resultImageInfoPrice {
+  color: #9951bd;
+  font-size: 0.875em;
+  margin-top: 1.42857em;
+}
+
+.wrapSearchResultBtn {
+  text-align: center;
+  padding-top: 0.625em;
+}
+
+.searchResultBtn {
+  color: #b6258f;
+  padding: 0.625em;
+  font-size: 1.125em;
+  background: #d3d3d3;
+  display: inline-block;
+}
+.searchResultBtn:hover {
+  background: #bababa;
+  color: #b6258f;
+}
+.searchResultBtn [class^="icon-"] {
+  display: inline-block;
+  position: relative;
+  top: 2px;
 }
 
 /*------------------ Header-bottom ------------------*/
