@@ -435,17 +435,6 @@ img {
   background: #aaa;
 }
 
-.dl-menuwrapper button:after {
-  content: '';
-  position: absolute;
-  width: 68%;
-  height: 5px;
-  background: #fff;
-  top: 10px;
-  left: 16%;
-  box-shadow: 0 10px 0 #fff, 0 20px 0 #fff;
-}
-
 .dl-menuwrapper ul {
   padding: 0;
   list-style: none;
@@ -1159,65 +1148,14 @@ All this is done for any sub-level being entered.
   background: #643771;
 }
 
-.burger {
-  display: inline-block;
-  border: 0;
-  background: none;
-  outline: 0;
-  padding: 0;
-  cursor: pointer;
-  border-bottom: 4px solid currentColor;
-  width: 28px;
-  transition: border-bottom 1s ease-in-out;
-  -webkit-transition: border-bottom 1s ease-in-out;
-}
-.burger::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-.burger:before {
-  content: "";
-  display: block;
-  border-bottom: 4px solid currentColor;
-  width: 100%;
-  margin-bottom: 5px;
-  transition: transform 0.5s ease-in-out;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-}
-.burger:after {
-  content: "";
-  display: block;
-  border-bottom: 4px solid currentColor;
-  width: 100%;
-  margin-bottom: 5px;
-  transition: transform 0.5s ease-in-out;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-}
-
-.burger-check {
-  display: none;
-}
-
-.burger-check:checked ~ .burger {
-  border-bottom: 4px solid transparent;
-  transition: border-bottom 0.8s ease-in-out;
-  -webkit-transition: border-bottom 0.8s ease-in-out;
-}
-.burger-check:checked ~ .burger:before {
-  transform: rotate(-405deg) translateY(1px) translateX(-3px);
-  -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
-  transition: transform 0.5s ease-in-out;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-}
-.burger-check:checked ~ .burger:after {
-  transform: rotate(405deg) translateY(-4px) translateX(-5px);
-  -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
-  transition: transform 0.5s ease-in-out;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-}
-
 .dl-menuwrapper button {
   position: absolute;
+  height: 46px;
+  background: none;
+  cursor: pointer;
+}
+.dl-menuwrapper button.dl-active {
+  background: none;
 }
 
 .dl-menuwrapper .dl-menu {
@@ -1228,6 +1166,81 @@ All this is done for any sub-level being entered.
   margin-right: 0;
   position: relative;
   z-index: 100;
+}
+
+.dl-menuwrapper li > a:after,
+.dl-menuwrapper li.dl-back:after {
+  color: #c0429e;
+}
+
+.mobileMenuItem,
+.mobileSubMenuItem {
+  border-bottom: 1px solid #ffffff;
+  background: #debcf8;
+}
+.mobileMenuItem:last-child,
+.mobileSubMenuItem:last-child {
+  border-bottom: none;
+}
+
+.dl-back {
+  background: #d675bc;
+}
+
+.dl-menuwrapper button:hover {
+  background: none;
+}
+
+.burger {
+  width: 33px;
+  cursor: pointer;
+}
+.burger:hover .burger-brick {
+  background: #91b338;
+}
+
+.dl-active .burger {
+  margin-top: -14px;
+}
+
+.burger-brick {
+  height: 4px;
+  background: #a9ca54;
+  margin-top: 6px;
+  -webkit-transition: 0.8s ease-out;
+  -moz-transition: 0.8s ease-out;
+  -ms-transition: 0.8s ease-out;
+  -o-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+}
+.burger-brick:first-child {
+  margin-top: 0;
+}
+
+.dl-active .burger-brick:first-child {
+  -webkit-transform: rotate(405deg);
+  -moz-transform: rotate(405deg);
+  -ms-transform: rotate(405deg);
+  -o-transform: rotate(405deg);
+  transform: rotate(405deg);
+  margin-top: 14px;
+}
+
+.dl-active .burger-brick:last-child {
+  -webkit-transform: rotate(-405deg);
+  -moz-transform: rotate(-405deg);
+  -ms-transform: rotate(-405deg);
+  -o-transform: rotate(-405deg);
+  transform: rotate(-405deg);
+  margin-top: -14px;
+}
+
+.dl-active .middle {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
 }
 
 /*------------------ Header-top ------------------*/
