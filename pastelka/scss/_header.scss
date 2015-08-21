@@ -209,6 +209,7 @@ $burger--thickness: 4px;
   color: $primeColor;
   &:hover{
     color: darken($primeColor, 10%);
+    text-decoration: underline;
   }
 }
 
@@ -224,10 +225,14 @@ $burger--thickness: 4px;
   margin-bottom: em(20px, 16px);
 }
 
-.infoCartTitle{
+.infoCartTitleLink{
   color: $primeColor;
   font-size: em(16px, 16px);
   margin-bottom: em(5px, 18px);
+  &:hover{
+    color: darken($primeColor, 10%);
+    text-decoration: underline;
+  }
 }
 
 .infoCart{
@@ -594,5 +599,84 @@ $burger--thickness: 4px;
 .headerCategoryItem1{
   .headerCategorySubList{
     background: $white url("../image/categoryBg/bedroom.png") right no-repeat;
+  }
+}
+
+
+@media (max-width: 992px) {
+
+  .middleContactIcon,
+  .infoCartIcon{
+    display: none;
+  }
+
+  .infoCart{
+    font-size: em(16px, 16px);
+  }
+
+  .headerLogo{
+    margin-top: 0;
+  }
+
+  .headerMiddleContentLeft{
+    margin-top: em(20px, 16px);
+  }
+
+  .wrapSearchResultImage {
+    width: 33%;
+  }
+
+  .searchResultImageInfo {
+    width: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .wrapSearchResultImage {
+    display: none;
+  }
+
+  .searchResultImageInfo {
+    width: 100%;
+  }
+
+  .headerMiddleContentLeft {
+    margin-top: em(16px, 16px);
+    overflow: hidden;
+  }
+
+  .middleContact {
+    margin-left: 0;
+    float: left;
+  }
+
+  .middleContactPhone {
+    font-size: em(16px, 16px);
+  }
+
+  .feedback {
+    float: right;
+  }
+
+  .feedbackBtn {
+    font-size: em(16px, 16px);
+  }
+
+  .headerLogo {
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .headerLogoImage {
+    max-width: em(200px, 16px);
+  }
+
+  .infoCartTitleLink {
+    margin-bottom: em(5px, 16px);
+  }
+
+  .infoCartNumber {
+    font-size: em(16px, 16px);
   }
 }

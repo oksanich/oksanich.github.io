@@ -1346,6 +1346,7 @@ All this is done for any sub-level being entered.
 }
 .headerUserLink:hover {
   color: #8c1c6e;
+  text-decoration: underline;
 }
 
 .headerInfoCart {
@@ -1360,10 +1361,14 @@ All this is done for any sub-level being entered.
   color: #debcf8;
 }
 
-.infoCartTitle {
+.infoCartTitleLink {
   color: #b6258f;
   font-size: 1em;
   margin-bottom: 0.27778em;
+}
+.infoCartTitleLink:hover {
+  color: #8c1c6e;
+  text-decoration: underline;
 }
 
 .infoCart {
@@ -1685,6 +1690,81 @@ All this is done for any sub-level being entered.
 
 .headerCategoryItem1 .headerCategorySubList {
   background: #ffffff url("../image/categoryBg/bedroom.png") right no-repeat;
+}
+
+@media (max-width: 992px) {
+  .middleContactIcon,
+  .infoCartIcon {
+    display: none;
+  }
+
+  .infoCart {
+    font-size: 1em;
+  }
+
+  .headerLogo {
+    margin-top: 0;
+  }
+
+  .headerMiddleContentLeft {
+    margin-top: 1.25em;
+  }
+
+  .wrapSearchResultImage {
+    width: 33%;
+  }
+
+  .searchResultImageInfo {
+    width: 65%;
+  }
+}
+@media (max-width: 768px) {
+  .wrapSearchResultImage {
+    display: none;
+  }
+
+  .searchResultImageInfo {
+    width: 100%;
+  }
+
+  .headerMiddleContentLeft {
+    margin-top: 1em;
+    overflow: hidden;
+  }
+
+  .middleContact {
+    margin-left: 0;
+    float: left;
+  }
+
+  .middleContactPhone {
+    font-size: 1em;
+  }
+
+  .feedback {
+    float: right;
+  }
+
+  .feedbackBtn {
+    font-size: 1em;
+  }
+
+  .headerLogo {
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .headerLogoImage {
+    max-width: 12.5em;
+  }
+
+  .infoCartTitleLink {
+    margin-bottom: 0.3125em;
+  }
+
+  .infoCartNumber {
+    font-size: 1em;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
