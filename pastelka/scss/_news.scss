@@ -1,0 +1,68 @@
+/*------------------ News ------------------*/
+
+.wrapNews{
+  background: $pink3  url("../image/bgPink.png") repeat;
+  padding: em(45px, 16px) 0 em(40px, 16px);
+}
+
+.newsTitle{
+  @extend .noveltyTitle;
+}
+
+.newsSingle{
+  padding: em(15px, 16px);
+  background: $white;
+  max-width: 360px;
+  margin: 0 auto em(15px, 16px);
+}
+
+.newsInfoDate{
+  color: $primeColor;
+  border-bottom: 1px solid $primeColor;
+  font-size: em(18px, 16px);
+  line-height: em(26px, 16px);
+  margin-bottom: em(15px, 18px);
+}
+
+.newsInfoTitleLink{
+  font-family: $MyraidproSemibold;
+  font-size: em(18px, 16px);
+  color: $purple1;
+  margin-bottom: em(18px, 18px);
+  display: inline-block;
+  &:hover{
+    color: $purple1;
+    text-decoration: underline;
+  }
+}
+
+.newsInfoText{
+  $font-size: 18px;
+  $line-height: 1.2;
+  $lines-to-show: 3;
+
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+  margin: 0 auto;
+  font-size: $font-size;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 768px) {
+  .newsSingle {
+    max-width: 100%;
+    min-height: 360px;
+    margin: 0 0 em(15px, 16px);
+  }
+}
+
+@media (min-width: 992px) {
+  .newsSingle{
+    min-height: 440px;
+  }
+}

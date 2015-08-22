@@ -1,0 +1,91 @@
+/*------------------ Novelty ------------------*/
+.wrapNovelty{
+  background: $pink2 url("../image/decor/decor_1.png") top repeat-x;
+  padding: em(45px, 16px) 0 em(40px, 16px);
+}
+
+.novaSingle{
+  overflow: hidden;
+  background: $pink3;
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto em(15px, 16px);
+  .cartBtn {
+    line-height: 1em;
+  }
+}
+
+.noveltyTitle{
+  font-size: em(36px, 16px);
+  text-transform: uppercase;
+  color: $white;
+  text-align: center;
+  margin-bottom: em(45px, 36px);
+}
+
+.novaSingleImage{
+  position: relative;
+  margin-bottom: -2px;
+}
+
+.novaSingleTitlLink{
+  margin-bottom: em(16px, 16px);
+  display: block;
+  color: $gray1;
+  &:hover{
+    color: $gray1;
+    text-decoration: underline;
+  }
+}
+
+.novaPrice{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $purple1;
+  color: $white;
+  font-size: em(18px, 16px);
+  padding: em(8px, 18px) em(8px, 18px) em(8px, 18px) em(12px, 18px);
+}
+
+.novaSingleInfo{
+  min-height: 100%;
+  padding: em(10px, 16px);
+}
+
+.novaSingleTitleLink{
+  color: $gray1;
+  &:hover{
+    color: $gray1;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 768px) {
+  .novaSingle {
+    max-width: 100%;
+    margin: 0 0 em(15px, 16px);
+  }
+}
+
+@media (min-width: 992px) {
+  .novaSingleImage{
+    width: 65%;
+    float: left;
+  }
+
+  .novaSingleInfo {
+    float: left;
+    width: 35%;
+  }
+
+  .novaSingle {
+    .cartBtn {
+      position: absolute;
+      bottom: em(10px, 16px);
+      right: em(10px, 16px);
+      line-height: 1em;
+      z-index: 100;
+    }
+  }
+}

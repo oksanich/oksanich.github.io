@@ -413,10 +413,7 @@ img {
   font-size: 1.125em;
   display: inline-block;
   background: #ffffff;
-  position: absolute;
-  bottom: 0.3125em;
-  right: 0.3125em;
-  padding: 0.27778em 0.55556em;
+  padding: 0.44444em 0.55556em;
 }
 .cartBtn:hover {
   border: 2px solid #99b84d;
@@ -1833,6 +1830,10 @@ All this is done for any sub-level being entered.
 }
 
 /*------------------ Special Offers ------------------*/
+.wrapSpecialOffers {
+  margin-bottom: 3.125em;
+}
+
 .wrapTitleDecor {
   overflow: hidden;
   text-align: center;
@@ -1939,6 +1940,11 @@ All this is done for any sub-level being entered.
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
 }
+@media (max-width: 768px) {
+  .specialOffer {
+    margin: 0 0.9375em 1.5625em;
+  }
+}
 
 .specialOfferImageLink {
   display: block;
@@ -1956,23 +1962,35 @@ All this is done for any sub-level being entered.
   display: none;
   text-align: center;
 }
-.specialOfferImageLink:hover {
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  -webkit-transition-duration: 1s;
-  transition-duration: 1s;
+@media (max-width: 992px) {
+  .specialOfferImageLink .fastView {
+    width: 10em;
+    font-size: 1em;
+    left: calc(50% - 80px);
+  }
 }
 .specialOfferImageLink:hover .fastView {
   display: block;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  -webkit-transition-duration: 1s;
-  transition-duration: 1s;
+}
+@media (max-width: 768px) {
+  .specialOfferImageLink {
+    text-align: center;
+  }
+}
+
+.specialOfferImage {
+  max-width: 370px !important;
 }
 
 .specialOfferInfo {
   position: relative;
   padding: 0.625em;
+}
+.specialOfferInfo .cartBtn {
+  position: absolute;
+  bottom: 0.3125em;
+  right: 0.3125em;
+  line-height: 1em;
 }
 
 .specialOfferTitleLink {
@@ -1993,6 +2011,155 @@ All this is done for any sub-level being entered.
 .specialOfferPrice {
   font-family: Roboto-bold, sans-serif;
   color: #9951bd;
+}
+
+/*------------------ Novelty ------------------*/
+.wrapNovelty {
+  background: #d675bc url("../image/decor/decor_1.png") top repeat-x;
+  padding: 2.8125em 0 2.5em;
+}
+
+.novaSingle {
+  overflow: hidden;
+  background: #debcf8;
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto 0.9375em;
+}
+.novaSingle .cartBtn {
+  line-height: 1em;
+}
+
+.noveltyTitle, .newsTitle {
+  font-size: 2.25em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1.25em;
+}
+
+.novaSingleImage {
+  position: relative;
+  margin-bottom: -2px;
+}
+
+.novaSingleTitlLink {
+  margin-bottom: 1em;
+  display: block;
+  color: #444444;
+}
+.novaSingleTitlLink:hover {
+  color: #444444;
+  text-decoration: underline;
+}
+
+.novaPrice {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #9951bd;
+  color: #ffffff;
+  font-size: 1.125em;
+  padding: 0.44444em 0.44444em 0.44444em 0.66667em;
+}
+
+.novaSingleInfo {
+  min-height: 100%;
+  padding: 0.625em;
+}
+
+.novaSingleTitleLink {
+  color: #444444;
+}
+.novaSingleTitleLink:hover {
+  color: #444444;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .novaSingle {
+    max-width: 100%;
+    margin: 0 0 0.9375em;
+  }
+}
+@media (min-width: 992px) {
+  .novaSingleImage {
+    width: 65%;
+    float: left;
+  }
+
+  .novaSingleInfo {
+    float: left;
+    width: 35%;
+  }
+
+  .novaSingle .cartBtn {
+    position: absolute;
+    bottom: 0.625em;
+    right: 0.625em;
+    line-height: 1em;
+    z-index: 100;
+  }
+}
+/*------------------ News ------------------*/
+.wrapNews {
+  background: #debcf8 url("../image/bgPink.png") repeat;
+  padding: 2.8125em 0 2.5em;
+}
+
+.newsSingle {
+  padding: 0.9375em;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto 0.9375em;
+}
+
+.newsInfoDate {
+  color: #b6258f;
+  border-bottom: 1px solid #b6258f;
+  font-size: 1.125em;
+  line-height: 1.625em;
+  margin-bottom: 0.83333em;
+}
+
+.newsInfoTitleLink {
+  font-family: Myriadpro-semibold, sans-serif;
+  font-size: 1.125em;
+  color: #9951bd;
+  margin-bottom: 1em;
+  display: inline-block;
+}
+.newsInfoTitleLink:hover {
+  color: #9951bd;
+  text-decoration: underline;
+}
+
+.newsInfoText {
+  display: block;
+  /* Fallback for non-webkit */
+  display: -webkit-box;
+  height: 64.8px;
+  /* Fallback for non-webkit */
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.2;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 768px) {
+  .newsSingle {
+    max-width: 100%;
+    min-height: 360px;
+    margin: 0 0 0.9375em;
+  }
+}
+@media (min-width: 992px) {
+  .newsSingle {
+    min-height: 440px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

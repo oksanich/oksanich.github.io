@@ -1,5 +1,9 @@
 /*------------------ Special Offers ------------------*/
 
+.wrapSpecialOffers{
+  margin-bottom: em(50px, 16px);
+}
+
 .wrapTitleDecor{
   overflow: hidden;
   text-align: center;
@@ -98,6 +102,9 @@
     border: 1px solid $pink2;
     @include transition-duration(1s);
   }
+  @media (max-width: 768px) {
+    margin: 0 em(15px, 16px) em(25px, 16px);
+  }
 }
 
 .specialOfferImageLink{
@@ -114,19 +121,37 @@
     left: calc(50% - 100px);
     display: none;
     text-align: center;
-  }
-  &:hover{
-    @include transition-duration(1s);
-    .fastView{
-      display: block;
-      @include transition-duration(1s);
+    @media (max-width: 992px) {
+      width: em(160px, 16px);
+      font-size: em(16px, 16px);
+      left: calc(50% - 80px);
     }
   }
+  &:hover{
+    .fastView{
+      display: block;
+    }
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.specialOfferImage{
+  max-width: 370px!important;
 }
 
 .specialOfferInfo{
   position: relative;
   padding: em(10px, 16px);
+
+  .cartBtn {
+    position: absolute;
+    bottom: em(5px, 16px);
+    right: em(5px, 16px);
+    line-height: 1em;
+  }
 }
 
 .specialOfferTitleLink{
