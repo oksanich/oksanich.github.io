@@ -52,6 +52,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-previous-slim:before {
+  content: "\e63a";
+}
+.icon-next-slim:before {
+  content: "\e63b";
+}
+
 .icon-discount .path1:before {
   content: "\e62b";
   color: rgb(68,68,68);

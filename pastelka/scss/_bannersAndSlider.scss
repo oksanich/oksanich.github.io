@@ -1,0 +1,19 @@
+/*------------------ Banners and slider ------------------*/
+
+.homePageSlider{
+  margin-bottom: em(30px, 16px);
+}
+
+.banners{
+  margin-bottom: em(60px, 16px);
+  @media (max-width: 768px) {
+    margin-bottom: em(30px, 16px);
+  }
+}
+
+.banner{
+  display: block;
+  @media (max-width: 768px) {
+    margin-bottom: em(16px, 16px);
+  }
+}

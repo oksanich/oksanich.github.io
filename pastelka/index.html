@@ -623,7 +623,7 @@
                                     </a>
                                 </div>
                                 <div class="feedback">
-                                    <a class="feedbackBtn" href="#">Обратный звонок</a>
+                                    <button class="feedbackBtn">Обратный звонок</button>
                                 </div>
                             </div>
                         </div>
@@ -1350,11 +1350,12 @@
                         </div>
                     </div>
 
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                    </a>
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
                 </div>
             </div>
         </div>
@@ -1365,13 +1366,13 @@
             <div class="banners">
                 <div class="row">
                     <div class="col-xs-12 col-sm-4">
-                        <a class="banner banner1"><img src="image/discont.jpg" alt=""/></a>
+                        <a class="banner banner1" href=""><img src="image/discont.jpg" alt=""/></a>
                     </div>
                     <div class="col-xs-12 col-sm-4">
-                        <a class="banner banner2"><img src="image/delivery.jpg" alt=""/></a>
+                        <a class="banner banner2" href=""><img src="image/delivery.jpg" alt=""/></a>
                     </div>
                     <div class="col-xs-12 col-sm-4">
-                        <a class="banner banner3"><img src="image/easyPayment.jpg" alt=""/></a>
+                        <a class="banner banner3" href=""><img src="image/easyPayment.jpg" alt=""/></a>
                     </div>
                 </div>
             </div>
@@ -1380,9 +1381,134 @@
 
         <!--START special offers-->
         <div class="wrapSpecialOffers">
-            <h2 class="specialOffersTitle">
-                Специяльные предложения
-            </h2>
+            <div class="wrapTitleDecor">
+                <h2 class="specialOffersTitle">Специяльные предложения</h2>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <!-- Carousel
+                    ================================================== -->
+                    <div id="myCarousel" class="carousel slide">
+                       <div class="wrapOfferCarousel">
+                           <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="thumbnail">
+                                                <div class="specialOffer">
+                                                    <a class="specialOfferImageLink" href="">
+                                                        <img class="specialOfferImage" src="image/offer1.jpg" alt="">
+                                                        <div class="fastView">Быстрый просмотр</div>
+                                                    </a>
+                                                    <div class="specialOfferInfo">
+                                                        <a class="specialOfferTitleLink" href="">Постельное белье Zastelli Дисней полуторный София  и ее друзья</a>
+                                                        <div class="specialOfferType">Для спальни</div>
+                                                        <div class="specialOfferPrice">2 184 грн</div>
+                                                        <button class="cartBtn">В корзину</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="thumbnail">
+                                                <div class="specialOffer">
+                                                    <a class="specialOfferImageLink" href="">
+                                                        <img class="specialOfferImage" src="image/offer2.jpg" alt="">
+                                                        <div class="fastView">Быстрый просмотр</div>
+                                                    </a>
+                                                    <div class="specialOfferInfo">
+                                                        <a class="specialOfferTitleLink" href="">Постельное белье Zastelli Дисней полуторный София  и ее друзья</a>
+                                                        <div class="specialOfferType">Нижнее белье</div>
+                                                        <div class="specialOfferPrice">1 250 грн</div>
+                                                        <button class="cartBtn">В корзину</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="thumbnail">
+                                                <div class="specialOffer">
+                                                    <a class="specialOfferImageLink" href="">
+                                                        <img class="specialOfferImage" src="image/offer3.jpg" alt="">
+                                                        <div class="fastView">Быстрый просмотр</div>
+                                                    </a>
+                                                    <div class="specialOfferInfo">
+                                                        <a class="specialOfferTitleLink" href="">Постельное белье Zastelli Дисней полуторный София  и ее друзья</a>
+                                                        <div class="specialOfferType">Для детской</div>
+                                                        <div class="specialOfferPrice">750 грн</div>
+                                                        <button class="cartBtn">В корзину</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               <div class="item">
+                                   <div class="row">
+                                       <div class="col-sm-4">
+                                           <div class="thumbnail">
+                                               <div class="specialOffer">
+                                                   <a class="specialOfferImageLink" href="">
+                                                       <img class="specialOfferImage" src="image/offer1.jpg" alt="">
+                                                       <div class="fastView">Быстрый просмотр</div>
+                                                   </a>
+                                                   <div class="specialOfferInfo">
+                                                       <a class="specialOfferTitleLink" href="">Постельное белье Zastelli Дисней полуторный София  и ее друзья</a>
+                                                       <div class="specialOfferType">Для спальни</div>
+                                                       <div class="specialOfferPrice">2 184 грн</div>
+                                                       <button class="cartBtn">В корзину</button>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-sm-4">
+                                           <div class="thumbnail">
+                                               <div class="specialOffer">
+                                                   <a class="specialOfferImageLink" href="">
+                                                       <img class="specialOfferImage" src="image/offer2.jpg" alt="">
+                                                       <div class="fastView">Быстрый просмотр</div>
+                                                   </a>
+                                                   <div class="specialOfferInfo">
+                                                       <a class="specialOfferTitleLink" href="">Постельное белье Zastelli Дисней полуторный София  и ее друзья</a>
+                                                       <div class="specialOfferType">Нижнее белье</div>
+                                                       <div class="specialOfferPrice">1 250 грн</div>
+                                                       <button class="cartBtn">В корзину</button>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="col-sm-4">
+                                           <div class="thumbnail">
+                                               <div class="specialOffer">
+                                                   <a class="specialOfferImageLink" href="">
+                                                       <img class="specialOfferImage" src="image/offer3.jpg" alt="">
+                                                       <div class="fastView">Быстрый просмотр</div>
+                                                   </a>
+                                                   <div class="specialOfferInfo">
+                                                       <a class="specialOfferTitleLink" href="">Постельное белье Zastelli Дисней полуторный София  и ее друзья</a>
+                                                       <div class="specialOfferType">Для детской</div>
+                                                       <div class="specialOfferPrice">750 грн</div>
+                                                       <button class="cartBtn">В корзину</button>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+
+                               </div>
+                           </div>
+                        </div>
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="icon-previous-slim"></span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="icon-next-slim"></span>
+                        </a>
+                    </div><!-- End Carousel -->
+                </div><!-- End Well -->
+            </div>
+
             <div class="container">
                 <div class="specialOffers">
                     <div class="wrapSpecialOffer">
@@ -1474,7 +1600,7 @@
                                 <span class="icon-letter"></span>
                             </div>
                             <div class="feedback">
-                                <a class="feedbackBtn" href="#">Обратный звонок</a>
+                                <button class="feedbackBtn">Обратный звонок</button>
                             </div>
                         </div>
                     </div>

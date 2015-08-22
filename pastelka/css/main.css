@@ -128,6 +128,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-previous-slim:before {
+  content: "\e63a";
+}
+
+.icon-next-slim:before {
+  content: "\e63b";
+}
+
 .icon-discount .path1:before {
   content: "\e62b";
   color: #444444;
@@ -397,6 +405,27 @@ textarea:focus {
 
 img {
   width: 100%;
+}
+
+.cartBtn {
+  border: 2px solid #a9ca54;
+  color: #a9ca54;
+  font-size: 1.125em;
+  display: inline-block;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0.3125em;
+  right: 0.3125em;
+  padding: 0.27778em 0.55556em;
+}
+.cartBtn:hover {
+  border: 2px solid #99b84d;
+  color: #ffffff;
+  background: #99b84d;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 /*------------------ Header ------------------*/
@@ -1332,6 +1361,7 @@ All this is done for any sub-level being entered.
 .feedbackBtn {
   padding: 0.625em 1.25em;
   font-size: 1.125em;
+  border: none;
 }
 
 .middleContentRightTop {
@@ -1778,6 +1808,191 @@ All this is done for any sub-level being entered.
   .infoCartNumber {
     font-size: 1em;
   }
+}
+/*------------------ Banners and slider ------------------*/
+.homePageSlider {
+  margin-bottom: 1.875em;
+}
+
+.banners {
+  margin-bottom: 3.75em;
+}
+@media (max-width: 768px) {
+  .banners {
+    margin-bottom: 1.875em;
+  }
+}
+
+.banner {
+  display: block;
+}
+@media (max-width: 768px) {
+  .banner {
+    margin-bottom: 1em;
+  }
+}
+
+/*------------------ Special Offers ------------------*/
+.wrapTitleDecor {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+.wrapTitleDecor .specialOffersTitle {
+  display: inline-block;
+  position: relative;
+  font-family: Roboto-thin, sans-serif;
+  font-size: 2.25em;
+  padding: 0 0.72222em;
+}
+@media (max-width: 768px) {
+  .wrapTitleDecor .specialOffersTitle {
+    font-size: 1.875em;
+  }
+}
+.wrapTitleDecor .specialOffersTitle:before, .wrapTitleDecor .specialOffersTitle:after {
+  content: "";
+  display: block;
+  width: 3000px;
+  height: 0.75em;
+  background: url("../image/decor/decor_2.png") -5px repeat-x;
+  position: absolute;
+  top: 0.13889em;
+}
+@media (max-width: 768px) {
+  .wrapTitleDecor .specialOffersTitle:before, .wrapTitleDecor .specialOffersTitle:after {
+    height: 0.86667em;
+  }
+}
+.wrapTitleDecor .specialOffersTitle:after {
+  right: 100%;
+}
+.wrapTitleDecor .specialOffersTitle:before {
+  left: 100%;
+}
+
+.wrapOfferCarousel .thumbnail {
+  margin-bottom: 0;
+  border: none;
+  padding: 0;
+}
+
+.carousel-control {
+  top: 30%;
+  bottom: auto;
+  width: 1.2em;
+  height: 2.5em;
+  text-shadow: none;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.75);
+  overflow: hidden;
+}
+.carousel-control [class^="icon-"] {
+  color: #757575;
+  font-size: 2.5em;
+  position: relative;
+  line-height: 1em;
+}
+.carousel-control:hover {
+  background: #debcf8;
+}
+.carousel-control:hover [class^="icon-"] {
+  color: #ffffff;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.carousel-control:hover {
+  color: #d9534f;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none !important;
+}
+
+.carousel-control.right {
+  left: auto;
+  right: 1px;
+}
+.carousel-control.right [class^="icon-"] {
+  right: 0.3em;
+}
+
+.carousel-control.left {
+  right: auto;
+  left: 1px;
+}
+.carousel-control.left [class^="icon-"] {
+  right: 0.3em;
+}
+
+.specialOffer {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+}
+.specialOffer:hover {
+  border: 1px solid #d675bc;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.specialOfferImageLink {
+  display: block;
+  position: relative;
+}
+.specialOfferImageLink .fastView {
+  width: 12.5em;
+  position: absolute;
+  color: #ffffff;
+  font-size: 1.125em;
+  background: rgba(182, 36, 142, 0.5);
+  padding: 0.27778em 0.83333em;
+  top: 40%;
+  left: calc(50% - 100px);
+  display: none;
+  text-align: center;
+}
+.specialOfferImageLink:hover {
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+.specialOfferImageLink:hover .fastView {
+  display: block;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.specialOfferInfo {
+  position: relative;
+  padding: 0.625em;
+}
+
+.specialOfferTitleLink {
+  font-size: 1em;
+  color: #444444;
+}
+.specialOfferTitleLink:hover {
+  color: #444444;
+  text-decoration: underline;
+}
+
+.specialOfferType {
+  font-size: 0.875em;
+  color: #a1a1a1;
+  margin-bottom: 1em;
+}
+
+.specialOfferPrice {
+  font-family: Roboto-bold, sans-serif;
+  color: #9951bd;
 }
 
 /*# sourceMappingURL=main.css.map */
