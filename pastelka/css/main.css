@@ -1418,6 +1418,7 @@ All this is done for any sub-level being entered.
   background: none;
   border: none;
   outline: none;
+  padding: 0;
 }
 
 .singUp [class^="icon-"] {
