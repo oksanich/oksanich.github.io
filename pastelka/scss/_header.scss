@@ -341,6 +341,7 @@
     [class^="icon-"]{
       font-size: em(26px, 16px);
       color: $green2;
+      vertical-align: middle;
       &:hover{
         color: darken($green2, 10%);
       }

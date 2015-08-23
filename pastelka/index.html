@@ -565,7 +565,6 @@
                             </li>
                         </ul>
                     </nav>
-
                 </div>
                 <!--END mobile-menu-->
 
@@ -587,13 +586,55 @@
                         </div>
                         <div class="col-xs-4 col-md-2 pull-right">
                             <div class="enterToSite">
-                                <a class="logIn">
+                                <a class="logIn" data-toggle="modal" data-target="#modalLogin">
                                     <span class="icon-enter"></span>
                                 </a>
                                 <a class="singUp">
                                     <span class="icon-person"></span>
                                 </a>
                             </div>
+
+                            <!--START modal-login-->
+                            <div class="modal fade" id="modalLogin">
+                                <div class="wrapModalGlobal">
+                                    <div class="modal-dialog modal-md">
+                                        <div class="modalLogin modalGlobal">
+                                            <div class="modalHeader">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-close"></span></button>
+                                                <h2 class="modalTitle">Bxoд в интеренет-магазин</h2>
+                                            </div>
+                                            <div class="modalBody">
+                                                <div class="modalForm">
+                                                    <form class="form-horizontal" role="form">
+                                                        <div class="form-group">
+                                                            <label for="inputLogin" class="col-xs-3 col-sm-2 control-label">Логин</label>
+                                                            <div class="col-xs-9 col-sm-10">
+                                                                <input type="text" class="form-control" id="inputLogin">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputPassword" class="col-xs-3 col-sm-2 control-label">Пароль</label>
+                                                            <div class="col-xs-9 col-sm-10">
+                                                                <input type="password" class="form-control" id="inputPassword">
+                                                            </div>
+                                                        </div>
+                                                        <div class="modalFormEnter">
+                                                            <a class="forgotPasswordLink" href="">Забыли пароль?</a>
+                                                            <button class="modalFormEnterBtn">Войти</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modalNotRegister">
+                                                    <p class="modalNotRegisterText">Еще не зарегистрированы у нас?</p>
+                                                    <button class="modalNotRegisterBtn">Зарегистрироваться</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END modal-login-->
+
                         </div>
                     </div>
                 </div>

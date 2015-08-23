@@ -1,0 +1,102 @@
+/*------------------ Modal ------------------*/
+
+.wrapModalGlobal{
+  .form-horizontal{
+    .control-label{
+      text-align: right;
+      margin-bottom: 0;
+      padding-top: 7px;
+      color: $gray3;
+    }
+  }
+
+  .form-control {
+    border-radius: 0;
+  }
+}
+
+.modalGlobal{
+  background: url("../image/bgPink.png") repeat;
+  padding: em(15px, 16px);
+}
+
+.modalTitle{
+  color: $primeColor;
+  font-size: em(18px, 16px);
+}
+
+.modalHeader{
+  padding-bottom: em(15px, 16px);
+  border-bottom: 1px solid $gray5;
+}
+
+.modalBody{
+  padding: em(20px, 16px) 0;
+}
+
+.forgotPasswordLink{
+  margin-top: em(14px, 14px);
+  display: inline-block;
+  color: $purple1;
+  font-size: em(14px, 16px);
+  &:hover{
+    color: $purple1;
+    text-decoration: underline;
+  }
+}
+
+.modalFormEnter{
+  overflow: hidden;
+}
+
+.modalFormEnterBtn{
+  border: none;
+  font-size: em(18px, 16px);
+  padding: em(10px, 18px) em(15px, 18px);
+  @extend %btnFull;
+  background: $pink1;
+  float: right;
+  &:hover{
+    background: darken($pink1, 10%);
+  }
+}
+
+.modalNotRegister{
+  overflow: hidden;
+}
+
+.modalNotRegisterText{
+  margin-bottom: em(20px, 18px);
+  font-size: em(18px, 16px);
+  clear: both;
+}
+
+.modalForm{
+  margin-bottom: em(50px, 16px);
+}
+
+.modalNotRegisterBtn{
+  border: none;
+  padding: em(10px, 18px) em(15px, 18px);
+  font-size: em(18px, 16px);
+  @extend %btnFull;
+  background: $primeColor;
+  float: right;
+  &:hover{
+    background: darken($primeColor, 10%);
+  }
+}
+
+@media (min-width: 768px) {
+
+  .wrapModalGlobal{
+    .modal-dialog {
+      max-width: 470px;
+    }
+  }
+
+  .modalTitle{
+    font-size: em(30px, 16px);
+  }
+
+}

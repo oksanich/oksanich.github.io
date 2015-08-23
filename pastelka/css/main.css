@@ -56,12 +56,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /*------------------ Bootstrap-skin ------------------*/
 /*------------------ Breadcrumbs ------------------*/
-.feedbackBtn, .footerRightChatBtn {
+.modalFormEnterBtn, .modalNotRegisterBtn, .feedbackBtn, .footerRightChatBtn {
   color: #ffffff;
   background: #a9ca54;
   display: inline-block;
 }
-.feedbackBtn:hover, .footerRightChatBtn:hover {
+.modalFormEnterBtn:hover, .modalNotRegisterBtn:hover, .feedbackBtn:hover, .footerRightChatBtn:hover {
   color: #e6e6e6;
   background: #9fc441;
 }
@@ -425,6 +425,96 @@ img {
   transition-duration: 1s;
 }
 
+/*------------------ Modal ------------------*/
+.wrapModalGlobal .form-horizontal .control-label {
+  text-align: right;
+  margin-bottom: 0;
+  padding-top: 7px;
+  color: #757575;
+}
+.wrapModalGlobal .form-control {
+  border-radius: 0;
+}
+
+.modalGlobal {
+  background: url("../image/bgPink.png") repeat;
+  padding: 0.9375em;
+}
+
+.modalTitle {
+  color: #b6258f;
+  font-size: 1.125em;
+}
+
+.modalHeader {
+  padding-bottom: 0.9375em;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.modalBody {
+  padding: 1.25em 0;
+}
+
+.forgotPasswordLink {
+  margin-top: 1em;
+  display: inline-block;
+  color: #9951bd;
+  font-size: 0.875em;
+}
+.forgotPasswordLink:hover {
+  color: #9951bd;
+  text-decoration: underline;
+}
+
+.modalFormEnter {
+  overflow: hidden;
+}
+
+.modalFormEnterBtn {
+  border: none;
+  font-size: 1.125em;
+  padding: 0.55556em 0.83333em;
+  background: #c0429e;
+  float: right;
+}
+.modalFormEnterBtn:hover {
+  background: #9b347f;
+}
+
+.modalNotRegister {
+  overflow: hidden;
+}
+
+.modalNotRegisterText {
+  margin-bottom: 1.11111em;
+  font-size: 1.125em;
+  clear: both;
+}
+
+.modalForm {
+  margin-bottom: 3.125em;
+}
+
+.modalNotRegisterBtn {
+  border: none;
+  padding: 0.55556em 0.83333em;
+  font-size: 1.125em;
+  background: #b6258f;
+  float: right;
+}
+.modalNotRegisterBtn:hover {
+  background: #8c1c6e;
+}
+
+@media (min-width: 768px) {
+  .wrapModalGlobal .modal-dialog {
+    max-width: 470px;
+  }
+
+  .modalTitle {
+    font-size: 1.875em;
+  }
+}
 /*------------------ Header ------------------*/
 /*------------------ Mobile-menu ------------------*/
 /* Common styles of menus */
@@ -1490,6 +1580,7 @@ All this is done for any sub-level being entered.
 .headerSearch .input-group-btn [class^="icon-"] {
   font-size: 1.625em;
   color: #a9ca54;
+  vertical-align: middle;
 }
 .headerSearch .input-group-btn [class^="icon-"]:hover {
   color: #91b338;
