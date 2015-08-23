@@ -1,0 +1,22 @@
+/*------------------ Bread crumbs ------------------*/
+
+.wrapBreadcrumb{
+  .breadcrumb{
+    background: none;
+    font-size: em(14px, 16px);
+  }
+
+  .breadcrumbItem{
+    color: $gray1;
+    &:before{
+      color: $gray1;
+    }
+  }
+
+  .breadcrumbLink{
+    color: $gray1;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

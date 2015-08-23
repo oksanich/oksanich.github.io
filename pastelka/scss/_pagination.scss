@@ -1,0 +1,33 @@
+/*------------------ Pagination ------------------*/
+
+.wrapPagination{
+  text-align: center;
+}
+
+.paginationItem{
+  float: none!important;
+  margin: 0 4px;
+}
+
+.paginationLink{
+  border: 1px solid $gray6!important;
+  background: $gray6!important;
+  color: $primeColor!important;
+  float: none!important;
+  font-size: em(18px, 16px);
+  &:hover{
+    border: 1px solid $primeColor!important;
+    background: $white!important;
+  }
+}
+
+.paginationLinkPrevious,
+.paginationLinkNext{
+  border: none!important;
+  background: none!important;
+  border-radius: 0!important;
+  &:hover{
+    color: $gray3!important;
+    border: none!important;
+  }
+}

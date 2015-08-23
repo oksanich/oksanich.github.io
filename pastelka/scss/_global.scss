@@ -42,4 +42,50 @@ img{
   }
 }
 
+.wrapTitleDecor{
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: em(40px, 16px);
+
+  .titleDecor{
+    display: inline-block;
+    position: relative;
+    font-family: $RobotoThin;
+    font-size: em(36px, 16px);
+    padding: 0 em(26px, 36px) em(5px, 36px);
+
+    @media (max-width: 768px) {
+      font-size: em(30px, 16px);
+    }
+    &:before,
+    &:after{
+      content: "";
+      display: block;
+      width: 3000px;
+      height: em(27px, 36px);
+      background: url("../image/decor/decor_2.png") -5px repeat-x;
+      position: absolute;
+      top: em(5px, 36px);
+      @media (max-width: 768px) {
+        height: em(26px, 30px);
+      }
+    }
+
+    &:after{
+      right: 100%;
+    }
+
+    &:before{
+      left: 100%;
+    }
+  }
+}
+
+.textBlock{
+  color: $gray2;
+  font-size: em(14px, 16px);
+  padding: em(26px, 14px) em(10px, 14px);
+  border-top: 2px solid $primeColor;
+}
+
 

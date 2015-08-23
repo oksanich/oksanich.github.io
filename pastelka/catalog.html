@@ -2,7 +2,7 @@
 <html lang="ua">
 <head>
     <meta charset="UTF-8">
-    <title>Главная</title>
+    <title>Каталог</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.3/css/bootstrap-select.min.css"/>
@@ -1365,311 +1365,332 @@
     <!--START content-->
     <div class="mainContent">
 
-        <!--START slider-->
-        <div class="container">
-
-            <!--START breadcrumb-->
-            <!--<ol class="breadcrumb">-->
-                <!--<li><a href="#">Главная</a></li>-->
-                <!--<li><a href="#">Библиотека</a></li>-->
-                <!--<li class="active">Данные</li>-->
-            <!--</ol>-->
-            <!--END breadcrumb-->
-
-            <div class="homePageSlider">
-                <div id="carousel" class="carousel slide" data-ride="carousel">
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="image/slider.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="image/slider.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="image/slider.jpg" alt="">
-                        </div>
-                    </div>
-
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel" data-slide-to="1"></li>
-                        <li data-target="#carousel" data-slide-to="2"></li>
-                    </ol>
-                </div>
+        <!--START breadcrumb-->
+        <div class="wrapBreadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumbItem">
+                        <a class="breadcrumbLink" href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumbItem">
+                        <a class="breadcrumbLink" href="#">Для спальни</a>
+                    </li>
+                    <li class="breadcrumbItem active">Покрывала</li>
+                </ol>
             </div>
         </div>
-        <!--END slider-->
+        <!--END breadcrumb-->
 
-        <!--START banners-->
-        <div class="container">
-            <div class="banners">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4">
-                        <a class="banner banner1" href=""><img src="image/discont.jpg" alt=""/></a>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <a class="banner banner2" href=""><img src="image/delivery.jpg" alt=""/></a>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <a class="banner banner3" href=""><img src="image/easyPayment.jpg" alt=""/></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--END banners-->
-
-        <!--START special offers-->
-        <div class="wrapSpecialOffers">
-            <div class="wrapTitleDecor">
-                <h2 class="specialOffersTitle titleDecor">Специяльные предложения</h2>
-            </div>
-
+        <!--START catalog-->
+        <div class="wrapCatalog">
             <div class="container">
                 <div class="row">
-                    <div id="carouselOffers" class="carousel slide">
-                       <div class="wrapOfferCarousel">
-                           <div class="carousel-inner">
-                                <div class="item active">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="thumbnail">
-                                                <div class="specialOffer">
-                                                    <a class="specialOfferImageLink" href="">
-                                                        <img class="specialOfferImage" src="image/offer1.jpg" alt="">
-                                                        <div class="fastView">Быстрый просмотр</div>
-                                                    </a>
-                                                    <div class="specialOfferInfo">
-                                                        <a class="specialOfferTitleLink" href="">Постельное белье Zastelli Дисней полуторный София  и ее друзья</a>
-                                                        <div class="specialOfferType">Для спальни</div>
-                                                        <div class="specialOfferPrice">2 184 грн</div>
-                                                        <button class="cartBtn">В корзину</button>
-                                                    </div>
-                                                </div>
+                    <!--START catalog-left-->
+                    <div class="wrapCatalogLeft">
+                        <div class="col-sm-4 col-lg-3">
+                            <div class="catalogLeft">
+                                <div class="catalogLeftTitle">Фильтр</div>
+                                <form class="catalogFiltersForm" action="">
+
+                                    <!--START filter-size-->
+                                    <div class="filterSize filterGroup">
+                                        <div class="filterGroupTitle">Размер</div>
+                                        <div class="filterItem">
+                                            <input id="itemSize1" type="checkbox"/>
+                                            <label for="itemSize1" class="itemSizeLabel">
+                                                <span class="itemSizePseudoCheckbox itemPseudoCheckbox"></span>
+                                                двуспальные <span class="itemSizeNumber">(354)</span>
+                                            </label>
+                                        </div>
+                                        <div class="filterItem">
+                                            <input id="itemSize2" type="checkbox"/>
+                                            <label for="itemSize2" class="itemSizeLabel">
+                                                <span class="itemSizePseudoCheckbox itemPseudoCheckbox"></span>
+                                                полуторные <span class="itemSizeNumber">(83)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!--END filter-size-->
+
+                                    <!--START filter-material-->
+                                    <div class="filterMaterial filterGroup">
+                                        <div class="filterGroupTitle">Размер</div>
+                                        <div class="filterItem">
+                                            <input id="itemMaterial1" type="checkbox"/>
+                                            <label for="itemMaterial1" class="itemMaterialLabel">
+                                                <span class="itemMaterialPseudoCheckbox itemPseudoCheckbox"></span>
+                                                лен <span class="itemMaterialNumber">(354)</span>
+                                            </label>
+                                        </div>
+                                        <div class="filterItem">
+                                            <input id="itemMaterial2" type="checkbox"/>
+                                            <label for="itemMaterial2" class="itemMaterialLabel">
+                                                <span class="itemMaterialPseudoCheckbox itemPseudoCheckbox"></span>
+                                                шелк <span class="itemMaterialNumber">(354)</span>
+                                            </label>
+                                        </div>
+                                        <div class="filterItem">
+                                            <input id="itemMaterial3" type="checkbox"/>
+                                            <label for="itemMaterial3" class="itemMaterialLabel">
+                                                <span class="itemMaterialPseudoCheckbox itemPseudoCheckbox"></span>
+                                                сатин <span class="itemMaterialNumber">(354)</span>
+                                            </label>
+                                        </div>
+                                        <div class="filterItem">
+                                            <input id="itemMaterial4" type="checkbox"/>
+                                            <label for="itemMaterial4" class="itemMaterialLabel">
+                                                <span class="itemMaterialPseudoCheckbox itemPseudoCheckbox"></span>
+                                                хлопок <span class="itemMaterialNumber">(354)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!--END filter-material-->
+
+                                    <!--START filter-color-->
+                                    <div class="filterColor filterGroup">
+                                        <div class="filterGroupTitle">Цвет</div>
+                                        <div class="filterItem">
+                                            <input id="itemColor1" type="checkbox"/>
+                                            <label for="itemColor1" class="itemColorlLabel">
+                                                <span class="itemColorPseudoCheckbox"></span>
+                                                лен <span class="itemColorlNumber">(354)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!--END filter-color-->
+
+                                    <!--START filter-price-->
+                                    <div class="filterPrice filterGroup">
+                                        <div class="filterGroupTitle">Цена</div>
+
+                                    </div>
+                                    <!--END filter-price-->
+
+                                    <div class="filterButtons">
+                                        <button class="filterButtonShow filterButton">Показать</button>
+                                        <button class="filterButtonReser filterButton">Сбросить</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END catalog-left-->
+
+                    <!--START catalog-right-->
+                    <div class="wrapCatalogRight">
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="wrapTitleDecor">
+                                <h2 class="catalogTitle titleDecor">Покрывала <span class="catalogTitleNumber">(765)</span></h2>
+                            </div>
+                            <div class="catalogRight">
+                                <!--START filter-right-top-->
+                                <div class="catalogRightTopFilter">
+                                    <div class="rightTopFilterManufacturer">
+                                        <ul class="filterManufacturerList">
+                                            <li class="filterManufacturerItem">
+                                                <input id="filterManufacturer1" type="checkbox"/>
+                                                <label for="filterManufacturer1" class="filterManufacturerLabel">
+                                                    Zastelli Ladinne
+                                                    <span class="filterManufacturerCountry">(Турция)</span>
+                                                </label>
+                                            </li>
+                                            <li class="filterManufacturerItem">
+                                                <input id="filterManufacturer2" type="checkbox"/>
+                                                <label for="filterManufacturer2" class="filterManufacturerLabel">
+                                                    Cahan
+                                                    <span class="filterManufacturerCountry">(Турция)</span>
+                                                </label>
+                                            </li>
+                                            <li class="filterManufacturerItem">
+                                                <input id="filterManufacturer3" type="checkbox"/>
+                                                <label for="filterManufacturer3" class="filterManufacturerLabel">
+                                                    Dibenedetto
+                                                    <span class="filterManufacturerCountry">(Турция)</span>
+                                                </label>
+                                            </li>
+                                            <li class="filterManufacturerItem">
+                                                <input id="filterManufacturer4" type="checkbox"/>
+                                                <label for="filterManufacturer4" class="filterManufacturerLabel">
+                                                    I ssimo
+                                                    <span class="filterManufacturerCountry">(Турция)</span>
+                                                </label>
+                                            </li>
+                                            <li class="filterManufacturerItem">
+                                                <input id="filterManufacturer5" type="checkbox"/>
+                                                <label for="filterManufacturer5" class="filterManufacturerLabel">
+                                                    Pavia Home
+                                                    <span class="filterManufacturerCountry">(Турция)</span>
+                                                </label>
+                                            </li>
+                                            <li class="filterManufacturerItem">
+                                                <input id="filterManufacturer6" type="checkbox"/>
+                                                <label for="filterManufacturer6" class="filterManufacturerLabel">
+                                                    Zastelli Home
+                                                    <span class="filterManufacturerCountry">(Турция)</span>
+                                                </label>
+                                            </li>
+                                            <li class="filterManufacturerItem">
+                                                <input id="filterManufacturer7" type="checkbox"/>
+                                                <label for="filterManufacturer7" class="filterManufacturerLabel">
+                                                    Cahan
+                                                    <span class="filterManufacturerCountry">(Турция)</span>
+                                                </label>
+                                            </li>
+                                            <li class="filterManufacturerItem">
+                                                <input id="filterManufacturer8" type="checkbox"/>
+                                                <label for="filterManufacturer8" class="filterManufacturerLabel">
+                                                    Dibenedetto
+                                                    <span class="filterManufacturerCountry">(Турция)</span>
+                                                </label>
+                                            </li>
+                                            <li class="filterManufacturerItem">
+                                                <input id="filterManufacturer9" type="checkbox"/>
+                                                <label for="filterManufacturer9" class="filterManufacturerLabel">
+                                                    I Home
+                                                    <span class="filterManufacturerCountry">(Турция)</span>
+                                                </label>
+                                            </li>
+                                            <li class="filterManufacturerItem">
+                                                <input id="filterManufacturer10" type="checkbox"/>
+                                                <label for="filterManufacturer10" class="filterManufacturerLabel">
+                                                    Pavia
+                                                    <span class="filterManufacturerCountry">(Турция)</span>
+                                                </label>
+                                            </li>
+                                            <li class="filterManufacturerItem">
+                                                <input id="filterManufacturer11" type="checkbox"/>
+                                                <label for="filterManufacturer11" class="filterManufacturerLabel">
+                                                    Ladinne
+                                                    <span class="filterManufacturerCountry">(Турция)</span>
+                                                </label>
+                                            </li>
+                                            <li class="filterManufacturerItem">
+                                                <input id="filterManufacturer12" type="checkbox"/>
+                                                <label for="filterManufacturer12" class="filterManufacturerLabel">
+                                                    Cahan
+                                                    <span class="filterManufacturerCountry">(Турция)</span>
+                                                </label>
+                                            </li>
+                                            <li class="filterManufacturerItem">
+                                                <input id="filterManufacturer13" type="checkbox"/>
+                                                <label for="filterManufacturer13" class="filterManufacturerLabel">
+                                                    Dibenedetto Home
+                                                    <span class="filterManufacturerCountry">(Турция)</span>
+                                                </label>
+                                            </li>
+                                            <li class="filterManufacturerItem">
+                                                <input id="filterManufacturer14" type="checkbox"/>
+                                                <label for="filterManufacturer14" class="filterManufacturerLabel">
+                                                    I ssimo Home Home
+                                                    <span class="filterManufacturerCountry">(Турция)</span>
+                                                </label>
+                                            </li>
+                                            <li class="filterManufacturerItem">
+                                                <input id="filterManufacturer15" type="checkbox"/>
+                                                <label for="filterManufacturer15" class="filterManufacturerLabel">
+                                                    Pavia
+                                                    <span class="filterManufacturerCountry">(Турция)</span>
+                                                </label>
+                                            </li>
+                                            <li class="filterManufacturerItem">
+                                                <input id="filterManufacturer16" type="checkbox"/>
+                                                <label for="filterManufacturer16" class="filterManufacturerLabel">
+                                                    Zastelli Ladinne
+                                                    <span class="filterManufacturerCountry">(Турция)</span>
+                                                </label>
+                                            </li>
+                                            <li class="filterManufacturerItem">
+                                                <input id="filterManufacturer17" type="checkbox"/>
+                                                <label for="filterManufacturer17" class="filterManufacturerLabel">
+                                                    Zastelli Cahan
+                                                    <span class="filterManufacturerCountry">(Турция)</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="rightTopFilterMulti">
+                                        <div class="wrapFilterMulti">
+                                            <div class="filterSorting filterMulti">
+                                                <div class="filterMultiText">Сортировать</div>
+                                                <select class="selectpicker">
+                                                    <option>по рейтингу</option>
+                                                    <option>по рейтингу</option>
+                                                    <option>по рейтингу</option>
+                                                </select>
+                                            </div>
+                                            <div class="filterQuantity filterMulti">
+                                                <div class="filterMultiText">Показывать по</div>
+                                                <select class="selectpicker">
+                                                    <option>15</option>
+                                                    <option>30</option>
+                                                    <option>60</option>
+                                                </select>
                                             </div>
                                         </div>
-                                        <div class="col-sm-4">
-                                            <div class="thumbnail">
-                                                <div class="specialOffer">
-                                                    <a class="specialOfferImageLink" href="">
-                                                        <img class="specialOfferImage" src="image/offer2.jpg" alt="">
-                                                        <div class="fastView">Быстрый просмотр</div>
-                                                    </a>
-                                                    <div class="specialOfferInfo">
-                                                        <a class="specialOfferTitleLink" href="">Постельное белье Zastelli Дисней полуторный София  и ее друзья</a>
-                                                        <div class="specialOfferType">Нижнее белье</div>
-                                                        <div class="specialOfferPrice">1 250 грн</div>
-                                                        <button class="cartBtn">В корзину</button>
-                                                    </div>
-                                                </div>
+                                        <div class="catalogRightSwitch">
+                                            <div class="catalogSwitchGrid catalogSwitch">
+                                                <span class="icon-th"></span>
                                             </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="thumbnail">
-                                                <div class="specialOffer">
-                                                    <a class="specialOfferImageLink" href="">
-                                                        <img class="specialOfferImage" src="image/offer3.jpg" alt="">
-                                                        <div class="fastView">Быстрый просмотр</div>
-                                                    </a>
-                                                    <div class="specialOfferInfo">
-                                                        <a class="specialOfferTitleLink" href="">Постельное белье Zastelli Дисней полуторный София  и ее друзья</a>
-                                                        <div class="specialOfferType">Для детской</div>
-                                                        <div class="specialOfferPrice">750 грн</div>
-                                                        <button class="cartBtn">В корзину</button>
-                                                    </div>
-                                                </div>
+                                            <div class="catalogSwitchList catalogSwitch">
+                                                <span class="icon-th-line"></span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                               <div class="item">
-                                   <div class="row">
-                                       <div class="col-sm-4">
-                                           <div class="thumbnail">
-                                               <div class="specialOffer">
-                                                   <a class="specialOfferImageLink" href="">
-                                                       <img class="specialOfferImage" src="image/offer1.jpg" alt="">
-                                                       <div class="fastView">Быстрый просмотр</div>
-                                                   </a>
-                                                   <div class="specialOfferInfo">
-                                                       <a class="specialOfferTitleLink" href="">Постельное белье Zastelli Дисней полуторный София  и ее друзья</a>
-                                                       <div class="specialOfferType">Для спальни</div>
-                                                       <div class="specialOfferPrice">2 184 грн</div>
-                                                       <button class="cartBtn">В корзину</button>
-                                                   </div>
-                                               </div>
-                                           </div>
-                                       </div>
-                                       <div class="col-sm-4">
-                                           <div class="thumbnail">
-                                               <div class="specialOffer">
-                                                   <a class="specialOfferImageLink" href="">
-                                                       <img class="specialOfferImage" src="image/offer2.jpg" alt="">
-                                                       <div class="fastView">Быстрый просмотр</div>
-                                                   </a>
-                                                   <div class="specialOfferInfo">
-                                                       <a class="specialOfferTitleLink" href="">Постельное белье Zastelli Дисней полуторный София  и ее друзья</a>
-                                                       <div class="specialOfferType">Нижнее белье</div>
-                                                       <div class="specialOfferPrice">1 250 грн</div>
-                                                       <button class="cartBtn">В корзину</button>
-                                                   </div>
-                                               </div>
-                                           </div>
-                                       </div>
-                                       <div class="col-sm-4">
-                                           <div class="thumbnail">
-                                               <div class="specialOffer">
-                                                   <a class="specialOfferImageLink" href="">
-                                                       <img class="specialOfferImage" src="image/offer3.jpg" alt="">
-                                                       <div class="fastView">Быстрый просмотр</div>
-                                                   </a>
-                                                   <div class="specialOfferInfo">
-                                                       <a class="specialOfferTitleLink" href="">Постельное белье Zastelli Дисней полуторный София  и ее друзья</a>
-                                                       <div class="specialOfferType">Для детской</div>
-                                                       <div class="specialOfferPrice">750 грн</div>
-                                                       <button class="cartBtn">В корзину</button>
-                                                   </div>
-                                               </div>
-                                           </div>
-                                       </div>
-                                   </div>
+                            </div>
+                            <!--END filter-right-top-->
 
-                               </div>
-                           </div>
+                            <!--START pagination-->
+                            <div class="wrapPagination">
+                                <ul class="pagination">
+                                    <li class="paginationItem paginationItemPrevious">
+                                        <a class="paginationLink paginationLinkPrevious" href="#" aria-label="Previous">
+                                            <span aria-hidden="true" class="icon-previous"></span>
+                                        </a>
+                                    </li>
+                                    <li class="paginationItem">
+                                        <a class="paginationLink" href="#">1</a>
+                                    </li>
+                                    <li class="paginationItem">
+                                        <a class="paginationLink"  href="#">2</a>
+                                    </li>
+                                    <li class="paginationItem">
+                                        <a class="paginationLink"  href="#">3</a>
+                                    </li>
+                                    <li class="paginationItem">
+                                        <a class="paginationLink"  href="#">4</a>
+                                    </li>
+                                    <li class="paginationItem">
+                                        <a class="paginationLink"  href="#">5</a>
+                                    </li>
+                                    <li class="paginationItem paginationItemNext">
+                                        <a class="paginationLink paginationLinkNext"  href="#" aria-label="Next">
+                                            <span aria-hidden="true" class="icon-next"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--END pagination-->
+
+                            <!--START text-block-->
+                            <div class="wrapTextBlock">
+                                <div class="textBlock">
+                                    <p class="textBlockText">
+                                        На этих страницах вы выберете качественное постельное белье евро размера. Европейские производители постельных принадлежностей придерживаются стандартов, которые отличаются от наших соотношением сторон. Иными словами, их пододеяльники и простыни всегда шире и иногда длиннее, чем конкурирующие с ними аналоги. Например, пододеяльник, входящий в двуспальный евро комплект постельного белья, имеет ширину от 200 см. Аналогичный пододеяльник отечественных производителей не превышает, как правило, 180 см. Сегодня успешные компании пытаются удовлетворить разносторонние запросы потребителей из разных стран. Поэтому в их каталогах все чаще появляется продукция, соответствующая различным мировым стандартам.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--END text-block-->
                         </div>
-                        <a class="left carousel-control" href="#carouselOffers" data-slide="prev">
-                            <span class="icon-previous-slim"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carouselOffers" data-slide="next">
-                            <span class="icon-next-slim"></span>
-                        </a>
                     </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="specialOffers">
-                    <div class="wrapSpecialOffer">
-
-                    </div>
+                    <!--END catalog-right-->
                 </div>
             </div>
         </div>
-        <!--END special offers-->
+        <!--END catalog-->
 
-        <!--START novelty-->
-        <div class="wrapNovelty">
-            <div class="container">
-                <h2 class="noveltyTitle">Новинки</h2>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="novaSingle">
-                            <div class="novaSingleImage">
-                                <img class="novaImage" src="image/novelty1.jpg" alt=""/>
-                                <span class="novaPrice">2 350 грн</span>
-                            </div>
-                            <div class="novaSingleInfo">
-                                <a class="novaSingleTitlLink" href="">Двухцветное постельное белье Wonderful</a>
-                                <button class="cartBtn">В корзину</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="novaSingle">
-                            <div class="novaSingleImage">
-                                <img class="novaImage" src="image/novelty2.jpg" alt=""/>
-                                <span class="novaPrice">1 130 грн</span>
-                            </div>
-                            <div class="novaSingleInfo">
-                                <a class="novaSingleTitlLink" href="">Двухцветное постельное белье Wonderful</a>
-                                <button class="cartBtn">В корзину</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="novaSingle">
-                            <div class="novaSingleImage">
-                                <img class="novaImage" src="image/novelty3.jpg" alt=""/>
-                                <span class="novaPrice">3 200 грн</span>
-                            </div>
-                            <div class="novaSingleInfo">
-                                <a class="novaSingleTitlLink" href="">Двухцветное постельное белье Wonderful</a>
-                                <button class="cartBtn">В корзину</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="novaSingle">
-                            <div class="novaSingleImage">
-                                <img class="novaImage" src="image/novelty4.jpg" alt=""/>
-                                <span class="novaPrice">800 грн</span>
-                            </div>
-                            <div class="novaSingleInfo">
-                                <a class="novaSingleTitlLink" href="">Двухцветное постельное белье Wonderful</a>
-                                <button class="cartBtn">В корзину</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--END novelty-->
-
-        <!--START news-->
-        <div class="wrapNews">
-            <div class="container">
-                <h2 class="newsTitle">Новости</h2>
-                <div class="news">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="newsSingle">
-                                <div class="newsSingleImage">
-                                    <a class="newsImageLink" href="">
-                                        <img class="newsImage" src="image/news1.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                <div class="newsSingleInfo">
-                                    <div class="newsInfoDate">23. 04.2015</div>
-                                    <a class="newsInfoTitleLink" href="">ВНИМАНИЕ</a>
-                                    <div class="newsInfoText">Обновляем весенне-летний гардероб маленьким модникам и модницам с новинками от Тм Gloria Jeans!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="newsSingle">
-                                <div class="newsSingleImage">
-                                    <a class="newsImageLink" href="">
-                                        <img class="newsImage" src="image/news2.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                <div class="newsSingleInfo">
-                                    <div class="newsInfoDate">23. 04.2015</div>
-                                    <a class="newsInfoTitleLink" href="">Новинки детского белья от Тм KidsDreams.</a>
-                                    <div class="newsInfoText">Кожа ребенка очень чувствительна к воздействию</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="newsSingle">
-                                <div class="newsSingleImage">
-                                    <a class="newsImageLink" href="">
-                                        <img class="newsImage" src="image/news3.jpg" alt=""/>
-                                    </a>
-                                </div>
-                                <div class="newsSingleInfo">
-                                    <div class="newsInfoDate">23. 04.2015</div>
-                                    <a class="newsInfoTitleLink" href="">ПОЗДРАВЛЯЕМ</a>
-                                    <div class="newsInfoText">В разгар весны и с приближени лета, обновляем гардероб - новинки для всей семьи от Тм Senti!</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--END news-->
     </div>
     <!--END content-->
 

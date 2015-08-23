@@ -56,14 +56,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /*------------------ Bootstrap-skin ------------------*/
 /*------------------ Breadcrumbs ------------------*/
-.modalFormEnterBtn, .modalNotRegisterBtn, .feedbackBtn, .footerRightChatBtn {
+.modalFormEnterBtn, .modalNotRegisterBtn, .feedbackBtn, .filterButton, .footerRightChatBtn {
   color: #ffffff;
   background: #a9ca54;
   display: inline-block;
 }
-.modalFormEnterBtn:hover, .modalNotRegisterBtn:hover, .feedbackBtn:hover, .footerRightChatBtn:hover {
+.modalFormEnterBtn:hover, .modalNotRegisterBtn:hover, .feedbackBtn:hover, .filterButton:hover, .footerRightChatBtn:hover {
   color: #e6e6e6;
   background: #9fc441;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 /*------------------ Fonts ------------------*/
@@ -423,6 +427,103 @@ img {
   -o-transition-duration: 1s;
   -webkit-transition-duration: 1s;
   transition-duration: 1s;
+}
+
+.wrapTitleDecor {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+.wrapTitleDecor .titleDecor {
+  display: inline-block;
+  position: relative;
+  font-family: Roboto-thin, sans-serif;
+  font-size: 2.25em;
+  padding: 0 0.72222em 0.13889em;
+}
+@media (max-width: 768px) {
+  .wrapTitleDecor .titleDecor {
+    font-size: 1.875em;
+  }
+}
+.wrapTitleDecor .titleDecor:before, .wrapTitleDecor .titleDecor:after {
+  content: "";
+  display: block;
+  width: 3000px;
+  height: 0.75em;
+  background: url("../image/decor/decor_2.png") -5px repeat-x;
+  position: absolute;
+  top: 0.13889em;
+}
+@media (max-width: 768px) {
+  .wrapTitleDecor .titleDecor:before, .wrapTitleDecor .titleDecor:after {
+    height: 0.86667em;
+  }
+}
+.wrapTitleDecor .titleDecor:after {
+  right: 100%;
+}
+.wrapTitleDecor .titleDecor:before {
+  left: 100%;
+}
+
+.textBlock {
+  color: #505050;
+  font-size: 0.875em;
+  padding: 1.85714em 0.71429em;
+  border-top: 2px solid #b6258f;
+}
+
+/*------------------ Bread crumbs ------------------*/
+.wrapBreadcrumb .breadcrumb {
+  background: none;
+  font-size: 0.875em;
+}
+.wrapBreadcrumb .breadcrumbItem {
+  color: #444444;
+}
+.wrapBreadcrumb .breadcrumbItem:before {
+  color: #444444;
+}
+.wrapBreadcrumb .breadcrumbLink {
+  color: #444444;
+}
+.wrapBreadcrumb .breadcrumbLink:hover {
+  text-decoration: underline;
+}
+
+/*------------------ Pagination ------------------*/
+.wrapPagination {
+  text-align: center;
+}
+
+.paginationItem {
+  float: none !important;
+  margin: 0 4px;
+}
+
+.paginationLink {
+  border: 1px solid #d3d3d3 !important;
+  background: #d3d3d3 !important;
+  color: #b6258f !important;
+  float: none !important;
+  font-size: 1.125em;
+}
+.paginationLink:hover {
+  border: 1px solid #b6258f !important;
+  background: #ffffff !important;
+}
+
+.paginationLinkPrevious,
+.paginationLinkNext {
+  border: none !important;
+  background: none !important;
+  border-radius: 0 !important;
+}
+.paginationLinkPrevious:hover,
+.paginationLinkNext:hover {
+  color: #757575 !important;
+  border: none !important;
 }
 
 /*------------------ Modal ------------------*/
@@ -1277,6 +1378,7 @@ All this is done for any sub-level being entered.
   height: 46px;
   background: none;
   cursor: pointer;
+  padding: 0;
 }
 .dl-menuwrapper button.dl-active {
   background: none;
@@ -1937,44 +2039,6 @@ All this is done for any sub-level being entered.
   margin-bottom: 3.125em;
 }
 
-.wrapTitleDecor {
-  overflow: hidden;
-  text-align: center;
-  margin-bottom: 2.5em;
-}
-.wrapTitleDecor .specialOffersTitle {
-  display: inline-block;
-  position: relative;
-  font-family: Roboto-thin, sans-serif;
-  font-size: 2.25em;
-  padding: 0 0.72222em;
-}
-@media (max-width: 768px) {
-  .wrapTitleDecor .specialOffersTitle {
-    font-size: 1.875em;
-  }
-}
-.wrapTitleDecor .specialOffersTitle:before, .wrapTitleDecor .specialOffersTitle:after {
-  content: "";
-  display: block;
-  width: 3000px;
-  height: 0.75em;
-  background: url("../image/decor/decor_2.png") -5px repeat-x;
-  position: absolute;
-  top: 0.13889em;
-}
-@media (max-width: 768px) {
-  .wrapTitleDecor .specialOffersTitle:before, .wrapTitleDecor .specialOffersTitle:after {
-    height: 0.86667em;
-  }
-}
-.wrapTitleDecor .specialOffersTitle:after {
-  right: 100%;
-}
-.wrapTitleDecor .specialOffersTitle:before {
-  left: 100%;
-}
-
 .wrapOfferCarousel .thumbnail {
   margin-bottom: 0;
   border: none;
@@ -2269,6 +2333,195 @@ All this is done for any sub-level being entered.
     min-height: 440px;
   }
 }
+/*------------------ Catalog ------------------*/
+/*------------------ Catalog-left ------------------*/
+.wrapCatalog .wrapTitleDecor {
+  text-align: left;
+  margin-bottom: 0.9375em;
+}
+
+.titleDecor.catalogTitle {
+  padding-left: 0;
+  text-transform: uppercase;
+  color: #9951bd;
+  font-family: Roboto-regular, sans-serif;
+}
+
+.catalogTitleNumber {
+  font-family: Roboto-thin, sans-serif;
+  color: #d3d3d3;
+}
+
+.catalogLeft {
+  background: #f2e5fd;
+  padding: 0.9375em;
+}
+
+.catalogLeftTitle {
+  color: #b6258f;
+  font-size: 1.5em;
+  padding-bottom: 0.41667em;
+  border-bottom: 2px solid #ffffff;
+  text-align: center;
+  margin-bottom: 1.04167em;
+}
+
+.filterGroup {
+  margin-bottom: 1.5625em;
+}
+
+.filterGroupTitle {
+  color: #505050;
+  margin-bottom: 1.11111em;
+  font-size: 1.125em;
+}
+
+.filterItem {
+  font-size: 0.875em;
+  margin-bottom: 1.07143em;
+}
+.filterItem input[type="checkbox"] {
+  display: none;
+}
+
+.itemPseudoCheckbox {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border-style: solid none none solid;
+  border-color: #a1a1a1;
+  border-width: 1px;
+  background: #ffffff;
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
+}
+
+.filterItem input[type='checkbox']:checked + label > .itemPseudoCheckbox {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: #9951bd;
+}
+
+.itemSizeLabel {
+  color: #505050;
+}
+
+.filterButton {
+  border: none;
+  width: 49%;
+  font-size: 1.125em;
+  padding: 0.55556em 0;
+}
+
+.filterButtonShow {
+  margin-right: 2%;
+}
+
+.filterButtonReser {
+  margin-right: -4px;
+  background: #c0429e;
+}
+.filterButtonReser:hover {
+  background: #9b347f;
+}
+
+/*------------------ Catalog-right ------------------*/
+.rightTopFilterManufacturer {
+  padding-bottom: 1.5625em;
+  border-bottom: 2px solid #b6258f;
+  margin-bottom: 0.9375em;
+}
+
+.filterManufacturerItem {
+  display: inline-block;
+  margin: 0 0.1875em 0.1875em 0;
+}
+.filterManufacturerItem input[type="checkbox"] {
+  display: none;
+}
+
+.filterManufacturerItem input[type='checkbox']:checked + .filterManufacturerLabel {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: #9951bd;
+  color: #ffffff;
+}
+.filterManufacturerItem input[type='checkbox']:checked + .filterManufacturerLabel .filterManufacturerCountry {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  color: #ffffff;
+}
+
+.filterManufacturerLabel {
+  font-size: 0.875em;
+  padding: 0.21429em;
+  display: inline-block;
+}
+
+.filterManufacturerCountry {
+  color: #a1a1a1;
+}
+
+.wrapFilterMulti {
+  display: inline-block;
+}
+
+.filterMulti {
+  display: inline-block;
+  margin-bottom: 0.625em;
+}
+.filterMulti .btn {
+  border-radius: 0;
+  padding: 4px 5px 4px 8px;
+  border-color: #757575;
+}
+.filterMulti .filter-option {
+  font-size: 0.875em;
+  color: #b6258f;
+}
+.filterMulti .caret {
+  margin-top: -5px !important;
+  border-top: 10px dashed;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  right: 8px !important;
+}
+.filterMulti .selectpicker {
+  outline: none;
+}
+.filterMulti .bootstrap-select .dropdown-toggle:focus {
+  outline: none !important;
+}
+.filterMulti.filterQuantity .bootstrap-select {
+  max-width: 70px;
+}
+
+.filterMultiText {
+  display: inline-block;
+  font-size: 0.875em;
+  margin-right: 0.35714em;
+  color: #757575;
+}
+
+.catalogRightSwitch {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.catalogSwitch {
+  display: inline-block;
+}
+.catalogSwitch [class^="icon-"] {
+  font-size: 2.5em;
+}
+
 /*------------------ Footer ------------------*/
 .mainFooter {
   background: url("../image/footerBg.png") bottom right no-repeat;

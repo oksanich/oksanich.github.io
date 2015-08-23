@@ -1,0 +1,195 @@
+/*------------------ Catalog ------------------*/
+
+
+/*------------------ Catalog-left ------------------*/
+.wrapCatalog{
+  .wrapTitleDecor{
+    text-align: left;
+    margin-bottom: em(15px, 16px);
+  }
+}
+
+.titleDecor{
+  &.catalogTitle{
+    padding-left: 0;
+    text-transform: uppercase;
+    color: $purple1;
+    font-family: $RobotoRegular;
+  }
+}
+
+.catalogTitleNumber{
+  font-family: $RobotoThin;
+  color: $gray6;
+}
+
+.catalogLeft{
+  background: $pink5;
+  padding: em(15px, 16px);
+}
+
+.catalogLeftTitle{
+  color: $primeColor;
+  font-size: em(24px, 16px);
+  padding-bottom: em(10px, 24px);
+  border-bottom: 2px solid $white;
+  text-align: center;
+  margin-bottom: em(25px, 24px);
+}
+
+.filterGroup{
+  margin-bottom: em(25px, 16px);
+}
+
+.filterGroupTitle{
+  color: $gray2;
+  margin-bottom: em(20px, 18px);
+  font-size: em(18px, 16px);
+}
+
+.filterItem{
+  font-size: em(14px, 16px);
+  margin-bottom: em(15px, 14px);
+  input[type="checkbox"]{
+    display: none;
+  }
+}
+
+.itemPseudoCheckbox{
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border-style: solid none none solid;
+  border-color: $gray4;
+  border-width: 1px;
+  background: $white;
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
+}
+
+.filterItem input[type='checkbox']:checked + label > .itemPseudoCheckbox{
+  @include transition-duration(.5s);
+  background: $purple1;
+}
+
+.itemSizeLabel{
+  color: $gray2;
+}
+
+.filterButton{
+  @extend %btnFull;
+  border: none;
+  width: 49%;
+  font-size: em(18px, 16px);
+  padding: em(10px, 18px) 0;
+}
+
+.filterButtonShow{
+  margin-right: 2%;
+}
+
+.filterButtonReser{
+  margin-right: -4px;
+  background: $pink1;
+  &:hover{
+    background: darken($pink1, 10%);
+  }
+}
+
+/*------------------ Catalog-right ------------------*/
+
+.rightTopFilterManufacturer{
+  padding-bottom: em(25px, 16px);
+  border-bottom: 2px solid $primeColor;
+  margin-bottom: em(15px, 16px);
+}
+
+.filterManufacturerItem{
+  display: inline-block;
+  margin: 0 em(3px, 16px) em(3px, 16px) 0;
+  input[type="checkbox"]{
+    display: none;
+  }
+}
+
+.filterManufacturerItem input[type='checkbox']:checked + .filterManufacturerLabel{
+  @include transition-duration(.5s);
+  background: $purple1;
+  color: $white;
+  .filterManufacturerCountry{
+    @include transition-duration(.5s);
+    color: $white;
+  }
+}
+
+.filterManufacturerLabel{
+  font-size: em(14px, 16px);
+  padding: em(3px, 14px);
+  display: inline-block;
+}
+
+.filterManufacturerCountry{
+  color: $gray4;
+}
+
+.wrapFilterMulti{
+  display: inline-block;
+}
+
+.filterMulti{
+  display: inline-block;
+  margin-bottom: em(10px, 16px);
+
+  .btn{
+    border-radius: 0;
+    padding: 4px 5px 4px 8px;
+    border-color: $gray3;
+  }
+
+  .filter-option{
+    font-size: em(14px, 16px);
+    color: $primeColor;
+  }
+
+  .caret {
+    margin-top: -5px!important;
+    border-top: 10px dashed;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    right: 8px!important;
+  }
+
+  .selectpicker{
+    outline: none;
+  }
+
+  .bootstrap-select .dropdown-toggle:focus {
+    outline: none!important;
+  }
+
+  &.filterQuantity{
+    .bootstrap-select{
+      max-width: 70px;
+    }
+  }
+}
+
+.filterMultiText{
+  display: inline-block;
+  font-size: em(14px, 16px);
+  margin-right: em(5px, 14px);
+  color: $gray3;
+}
+
+.catalogRightSwitch{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.catalogSwitch{
+  display: inline-block;
+  [class^="icon-"]{
+    font-size: em(40px, 16px);
+  }
+}
