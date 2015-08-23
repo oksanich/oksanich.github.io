@@ -436,6 +436,14 @@ img {
   border-radius: 0;
 }
 
+.modal-backdrop {
+  background: #3f264b;
+}
+
+.modal-backdrop.in {
+  opacity: .95;
+}
+
 .modalGlobal {
   background: url("../image/bgPink.png") repeat;
   padding: 0.9375em;

@@ -15,6 +15,14 @@
   }
 }
 
+.modal-backdrop {
+  background: rgb(63, 38, 75);
+}
+
+.modal-backdrop.in {
+  opacity: .95;
+}
+
 .modalGlobal{
   background: url("../image/bgPink.png") repeat;
   padding: em(15px, 16px);
