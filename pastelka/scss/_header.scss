@@ -671,8 +671,10 @@
     font-size: em(16px, 16px);
   }
 
-  .feedback {
-    float: right;
+  .headerMiddleContentLeft{
+    .feedback {
+      float: right;
+    }
   }
 
   .feedbackBtn {

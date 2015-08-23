@@ -1,0 +1,363 @@
+/*------------------ Footer ------------------*/
+
+.mainFooter{
+  background: url("../image/footerBg.png") bottom right no-repeat;
+}
+
+.footer{
+  padding: em(35px, 16px) 0;
+  font-family: $MyraidproRegular;
+}
+
+.footerLeftInfo{
+  margin: 0 0 em(20px,16px) em(35px,16px);
+}
+
+.footerLeftTitle{
+  font-size: em(24px, 16px);
+  color: $primeColor;
+  position: relative;
+  margin-bottom: em(5px, 24px);
+  [class^="icon-"]{
+    color: $pink3;
+    position: absolute;
+    font-size: em(45px, 24px);
+    left: em(-40px, 45px);
+  }
+}
+
+.footerLeftPhone{
+  display: block;
+  color: $gray1;
+  font-size: em(24px, 16px);
+  line-height: em(30px, 24px);
+  &:hover{
+    color: $gray1;
+  }
+}
+
+.footerLeftSchedule{
+  font-size: em(14px, 16px);
+  line-height: em(18px, 14px);
+  margin-bottom: em(25px, 14px);
+}
+
+.footerLeftMail{
+  position: relative;
+  [class^="icon-"]{
+    color: $pink3;
+    position: absolute;
+    font-size: em(30px, 18px);
+    left: em(-35px, 30px);
+    top: em(-5px, 30px);
+  }
+}
+
+.footerLeftMailLink{
+  font-size: em(18px, 16px);
+  display: block;
+  color: $primeColor;
+  &:hover{
+    color: darken($primeColor, 10%);
+  }
+}
+
+.footerMiddleList{
+  margin-left: em(60px, 16px);
+}
+
+.footerMiddleItem{
+  position: relative;
+  margin-bottom: em(30px, 16px);
+  [class^="icon-"]{
+    color: $pink3;
+    position: absolute;
+    font-size: em(50px, 16px);
+    left: em(-55px, 50px);
+    top: em(-12px, 50px);
+  }
+
+  [class^="icon-boomerang"]{
+    font-size: em(36px, 16px);
+    left: em(-45px, 36px);
+  }
+}
+
+.footerMiddleLink{
+  font-size: em(24px, 16px);
+  display: block;
+  color: $primeColor;
+  &:hover{
+    color: darken($primeColor, 10%);
+  }
+}
+
+.footerMiddleFinances{
+  overflow: hidden;
+  opacity: .5;
+  margin-left: em(50px, 16px);
+}
+
+.footerMiddleFinancesLink {
+  float: left;
+  width: 50%;
+  height: em(44px, 16px);
+  margin-bottom: em(10px, 16px);
+  img{
+   max-width: 100px;
+  }
+
+  &:nth-child(2n){
+    img{
+      margin-top: em(12px, 16px);
+    }
+  }
+}
+
+.footerRightSocialTitle{
+  font-size: em(24px, 16px);
+  margin-bottom: em(15px, 24px);
+}
+
+.footerRightSocialItem{
+  display: inline-block;
+}
+
+.footerRightSocialLink{
+  width: em(47px, 16px);
+  height: em(47px, 16px);
+  background: $purple1;
+  border-radius: em(47px, 16px);
+  display: block;
+  text-align: center;
+  [class^="icon-"]{
+    font-size: em(26px, 16px);
+    line-height: em(44px, 26px);
+  }
+  &:hover{
+    opacity: 0.7;
+  }
+  @media (min-width: 1200px) {
+    margin-right: em(15px, 16px);
+  }
+}
+
+.footerRightSocialList{
+  margin-bottom: em(25px, 16px);
+}
+
+.footerRightChat{
+  margin-bottom: em(25px, 16px);
+  [class^="icon-"]{
+    color: $pink3;
+    font-size: em(40px, 16px);
+    vertical-align: middle;
+    margin-right: em(5px, 40px);
+  }
+}
+
+.footerRightChatBtn{
+  width: 194px;
+  font-size: em(18px, 16px);
+  display: inline-block;
+  @extend %btnFull;
+  border: none;
+  padding: em(10px, 16px) 0;
+}
+
+.footerRightSubscribeTitle{
+  font-size: em(24px, 16px);
+  color: $primeColor;
+  margin-bottom: em(5px, 16px);
+}
+
+.footerRightSubscribeForm{
+  border: 3px solid $green2;
+  .form-control {
+    border: none;
+    height: em(54px, 16px);
+    line-height: em(27px, 16px);
+  }
+  .btn-default {
+    border: none;
+    background: none;
+  }
+  .input-group-btn{
+    background: $green2;
+  }
+
+  .form-control::-webkit-input-placeholder{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    font-size: em(18px, 16px);
+    color: $gray1;
+    font-family: $RobotoThin;
+  }
+
+  .form-control::-moz-placeholder{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    color: $gray1;
+    font-family: $RobotoThin;
+  }
+
+  .form-control:-moz-placeholder{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    color: $gray1;
+    font-family: $RobotoThin;
+  }
+
+  .form-control:-ms-input-placeholder{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    color: $gray1;
+    font-family: $RobotoThin;
+  }
+  .form-control:focus::-webkit-input-placeholder{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .form-control:focus::-moz-placeholder{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .form-control:focus:-moz-placeholder{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .form-control:focus:-ms-input-placeholder{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .btn-default{
+    border: none;
+    &:hover{
+      background: none;
+    }
+    &:focus{
+      background: none;
+      outline: none;
+    }
+    &:active{
+      background: none;
+    }
+  }
+
+  [class^="icon-"]{
+    color: $white;
+    font-size: em(40px, 16px);
+    vertical-align: middle;
+    margin-left: em(5px, 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .mainFooter{
+    background-position: bottom center;;
+  }
+
+  .footerLeft {
+    margin-bottom: em(30px, 16px);
+    text-align: center;
+    .footerLeftInfo{
+      margin-left: 0;
+    }
+    [class^="icon-"]{
+      display: none;
+    }
+  }
+
+  .footerLeftTitle {
+    font-size: em(24px, 16px);
+  }
+
+  .footerMiddle{
+    text-align: center;
+    margin-bottom: em(30px, 16px);
+  }
+
+  .footerMiddleItem{
+    [class^="icon-"]{
+      display: none;
+    }
+  }
+
+  .footerMiddleLink {
+    font-size: em(24px, 16px);
+  }
+
+  .footerMiddleList {
+    margin-left: 0;
+  }
+
+  .footerMiddleFinances{
+    margin-left: 0;
+  }
+
+  .footerRight{
+    text-align: center;
+  }
+
+  .footerRightSocialTitle{
+    font-size: em(24px, 16px);
+  }
+
+  .footerRightSubscribeTitle{
+    font-size: em(24px, 16px);
+  }
+
+  .footerRightSocialLink{
+    width: em(47px, 16px);
+    height: em(47px, 16px);
+    border-radius: em(47px, 16px);
+    [class^="icon-"]{
+      font-size: em(26px, 16px);
+      line-height: em(44px, 26px);
+    }
+  }
+
+  .footerRightChat{
+    [class^="icon-"]{
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .footerMiddleLink {
+    font-size: em(18px, 16px);
+  }
+
+  .footerLeftTitle {
+    font-size: em(18px, 16px);
+  }
+
+  .footerRightSocialTitle{
+    font-size: em(18px, 16px);
+  }
+
+  .footerRightSubscribeTitle{
+    font-size: em(18px, 16px);
+  }
+
+  .footerRightSocialLink{
+    width: em(37px, 16px);
+    height: em(37px, 16px);
+    border-radius: em(37px, 16px);
+    [class^="icon-"]{
+      font-size: em(20px, 16px);
+      line-height: em(34px, 20px);
+    }
+  }
+
+  .footerRightChat{
+    [class^="icon-"]{
+      display: none;
+    }
+  }
+}

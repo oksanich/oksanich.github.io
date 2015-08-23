@@ -56,12 +56,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /*------------------ Bootstrap-skin ------------------*/
 /*------------------ Breadcrumbs ------------------*/
-.feedbackBtn {
+.feedbackBtn, .footerRightChatBtn {
   color: #ffffff;
   background: #a9ca54;
   display: inline-block;
 }
-.feedbackBtn:hover {
+.feedbackBtn:hover, .footerRightChatBtn:hover {
   color: #e6e6e6;
   background: #9fc441;
 }
@@ -1781,7 +1781,7 @@ All this is done for any sub-level being entered.
     font-size: 1em;
   }
 
-  .feedback {
+  .headerMiddleContentLeft .feedback {
     float: right;
   }
 
@@ -2158,7 +2158,355 @@ All this is done for any sub-level being entered.
 }
 @media (min-width: 992px) {
   .newsSingle {
+    min-height: 390px;
+  }
+}
+@media (min-width: 1200px) {
+  .newsSingle {
     min-height: 440px;
+  }
+}
+/*------------------ Footer ------------------*/
+.mainFooter {
+  background: url("../image/footerBg.png") bottom right no-repeat;
+}
+
+.footer {
+  padding: 2.1875em 0;
+  font-family: Myriadpro-regular, sans-serif;
+}
+
+.footerLeftInfo {
+  margin: 0 0 1.25em 2.1875em;
+}
+
+.footerLeftTitle {
+  font-size: 1.5em;
+  color: #b6258f;
+  position: relative;
+  margin-bottom: 0.20833em;
+}
+.footerLeftTitle [class^="icon-"] {
+  color: #debcf8;
+  position: absolute;
+  font-size: 1.875em;
+  left: -0.88889em;
+}
+
+.footerLeftPhone {
+  display: block;
+  color: #444444;
+  font-size: 1.5em;
+  line-height: 1.25em;
+}
+.footerLeftPhone:hover {
+  color: #444444;
+}
+
+.footerLeftSchedule {
+  font-size: 0.875em;
+  line-height: 1.28571em;
+  margin-bottom: 1.78571em;
+}
+
+.footerLeftMail {
+  position: relative;
+}
+.footerLeftMail [class^="icon-"] {
+  color: #debcf8;
+  position: absolute;
+  font-size: 1.66667em;
+  left: -1.16667em;
+  top: -0.16667em;
+}
+
+.footerLeftMailLink {
+  font-size: 1.125em;
+  display: block;
+  color: #b6258f;
+}
+.footerLeftMailLink:hover {
+  color: #8c1c6e;
+}
+
+.footerMiddleList {
+  margin-left: 3.75em;
+}
+
+.footerMiddleItem {
+  position: relative;
+  margin-bottom: 1.875em;
+}
+.footerMiddleItem [class^="icon-"] {
+  color: #debcf8;
+  position: absolute;
+  font-size: 3.125em;
+  left: -1.1em;
+  top: -0.24em;
+}
+.footerMiddleItem [class^="icon-boomerang"] {
+  font-size: 2.25em;
+  left: -1.25em;
+}
+
+.footerMiddleLink {
+  font-size: 1.5em;
+  display: block;
+  color: #b6258f;
+}
+.footerMiddleLink:hover {
+  color: #8c1c6e;
+}
+
+.footerMiddleFinances {
+  overflow: hidden;
+  opacity: .5;
+  margin-left: 3.125em;
+}
+
+.footerMiddleFinancesLink {
+  float: left;
+  width: 50%;
+  height: 2.75em;
+  margin-bottom: 0.625em;
+}
+.footerMiddleFinancesLink img {
+  max-width: 100px;
+}
+.footerMiddleFinancesLink:nth-child(2n) img {
+  margin-top: 0.75em;
+}
+
+.footerRightSocialTitle {
+  font-size: 1.5em;
+  margin-bottom: 0.625em;
+}
+
+.footerRightSocialItem {
+  display: inline-block;
+}
+
+.footerRightSocialLink {
+  width: 2.9375em;
+  height: 2.9375em;
+  background: #9951bd;
+  border-radius: 2.9375em;
+  display: block;
+  text-align: center;
+}
+.footerRightSocialLink [class^="icon-"] {
+  font-size: 1.625em;
+  line-height: 1.69231em;
+}
+.footerRightSocialLink:hover {
+  opacity: 0.7;
+}
+@media (min-width: 1200px) {
+  .footerRightSocialLink {
+    margin-right: 0.9375em;
+  }
+}
+
+.footerRightSocialList {
+  margin-bottom: 1.5625em;
+}
+
+.footerRightChat {
+  margin-bottom: 1.5625em;
+}
+.footerRightChat [class^="icon-"] {
+  color: #debcf8;
+  font-size: 2.5em;
+  vertical-align: middle;
+  margin-right: 0.125em;
+}
+
+.footerRightChatBtn {
+  width: 194px;
+  font-size: 1.125em;
+  display: inline-block;
+  border: none;
+  padding: 0.625em 0;
+}
+
+.footerRightSubscribeTitle {
+  font-size: 1.5em;
+  color: #b6258f;
+  margin-bottom: 0.3125em;
+}
+
+.footerRightSubscribeForm {
+  border: 3px solid #a9ca54;
+}
+.footerRightSubscribeForm .form-control {
+  border: none;
+  height: 3.375em;
+  line-height: 1.6875em;
+}
+.footerRightSubscribeForm .btn-default {
+  border: none;
+  background: none;
+}
+.footerRightSubscribeForm .input-group-btn {
+  background: #a9ca54;
+}
+.footerRightSubscribeForm .form-control::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-size: 1.125em;
+  color: #444444;
+  font-family: Roboto-thin, sans-serif;
+}
+.footerRightSubscribeForm .form-control::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #444444;
+  font-family: Roboto-thin, sans-serif;
+}
+.footerRightSubscribeForm .form-control:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #444444;
+  font-family: Roboto-thin, sans-serif;
+}
+.footerRightSubscribeForm .form-control:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #444444;
+  font-family: Roboto-thin, sans-serif;
+}
+.footerRightSubscribeForm .form-control:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.footerRightSubscribeForm .form-control:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.footerRightSubscribeForm .form-control:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.footerRightSubscribeForm .form-control:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.footerRightSubscribeForm .btn-default {
+  border: none;
+}
+.footerRightSubscribeForm .btn-default:hover {
+  background: none;
+}
+.footerRightSubscribeForm .btn-default:focus {
+  background: none;
+  outline: none;
+}
+.footerRightSubscribeForm .btn-default:active {
+  background: none;
+}
+.footerRightSubscribeForm [class^="icon-"] {
+  color: #ffffff;
+  font-size: 2.5em;
+  vertical-align: middle;
+  margin-left: 0.125em;
+}
+
+@media (max-width: 768px) {
+  .mainFooter {
+    background-position: bottom center;
+  }
+
+  .footerLeft {
+    margin-bottom: 1.875em;
+    text-align: center;
+  }
+  .footerLeft .footerLeftInfo {
+    margin-left: 0;
+  }
+  .footerLeft [class^="icon-"] {
+    display: none;
+  }
+
+  .footerLeftTitle {
+    font-size: 1.5em;
+  }
+
+  .footerMiddle {
+    text-align: center;
+    margin-bottom: 1.875em;
+  }
+
+  .footerMiddleItem [class^="icon-"] {
+    display: none;
+  }
+
+  .footerMiddleLink {
+    font-size: 1.5em;
+  }
+
+  .footerMiddleList {
+    margin-left: 0;
+  }
+
+  .footerMiddleFinances {
+    margin-left: 0;
+  }
+
+  .footerRight {
+    text-align: center;
+  }
+
+  .footerRightSocialTitle {
+    font-size: 1.5em;
+  }
+
+  .footerRightSubscribeTitle {
+    font-size: 1.5em;
+  }
+
+  .footerRightSocialLink {
+    width: 2.9375em;
+    height: 2.9375em;
+    border-radius: 2.9375em;
+  }
+  .footerRightSocialLink [class^="icon-"] {
+    font-size: 1.625em;
+    line-height: 1.69231em;
+  }
+
+  .footerRightChat [class^="icon-"] {
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  .footerMiddleLink {
+    font-size: 1.125em;
+  }
+
+  .footerLeftTitle {
+    font-size: 1.125em;
+  }
+
+  .footerRightSocialTitle {
+    font-size: 1.125em;
+  }
+
+  .footerRightSubscribeTitle {
+    font-size: 1.125em;
+  }
+
+  .footerRightSocialLink {
+    width: 2.3125em;
+    height: 2.3125em;
+    border-radius: 2.3125em;
+  }
+  .footerRightSocialLink [class^="icon-"] {
+    font-size: 1.25em;
+    line-height: 1.7em;
+  }
+
+  .footerRightChat [class^="icon-"] {
+    display: none;
   }
 }
 

@@ -63,6 +63,12 @@
 
 @media (min-width: 992px) {
   .newsSingle{
+    min-height: 390px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .newsSingle{
     min-height: 440px;
   }
 }
