@@ -1407,6 +1407,9 @@ All this is done for any sub-level being entered.
 .logIn,
 .singUp {
   display: inline-block;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .singUp [class^="icon-"] {
