@@ -56,12 +56,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /*------------------ Bootstrap-skin ------------------*/
 /*------------------ Breadcrumbs ------------------*/
-.modalFormEnterBtn, .modalNotRegisterBtn, .feedbackBtn, .filterButton, .productInfoCartBtn, .productInfoBtn, .footerRightChatBtn {
+.modalFormEnterBtn, .modalNotRegisterBtn, .feedbackBtn, .filterButton, .productInfoCartBtn,
+.catalogProductCartBtn, .productInfoBtn, .footerRightChatBtn {
   color: #ffffff;
   background: #a9ca54;
   display: inline-block;
 }
-.modalFormEnterBtn:hover, .modalNotRegisterBtn:hover, .feedbackBtn:hover, .filterButton:hover, .productInfoCartBtn:hover, .productInfoBtn:hover, .footerRightChatBtn:hover {
+.modalFormEnterBtn:hover, .modalNotRegisterBtn:hover, .feedbackBtn:hover, .filterButton:hover, .productInfoCartBtn:hover,
+.catalogProductCartBtn:hover, .productInfoBtn:hover, .footerRightChatBtn:hover {
   color: #e6e6e6;
   background: #9fc441;
   -moz-transition-duration: 1s;
@@ -2548,12 +2550,33 @@ All this is done for any sub-level being entered.
 
 .catalogSwitch {
   display: inline-block;
+  cursor: pointer;
 }
 .catalogSwitch [class^="icon-"] {
   font-size: 2.5em;
 }
+.catalogSwitch :hover {
+  color: #8c1c6e;
+}
+
+.catalogRightSwitch .catalogSwitchGrid {
+  color: #b6258f;
+}
+.catalogRightSwitch .catalogSwitchList {
+  color: #757575;
+}
+.catalogRightSwitch.listItem .catalogSwitchGrid {
+  color: #757575;
+}
+.catalogRightSwitch.listItem .catalogSwitchList {
+  color: #b6258f;
+}
 
 /*------------------ Catalog-right content ------------------*/
+#products {
+  position: relative;
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
   .wrapCatalogRight .col-sm-8 {
     padding-left: 0;
@@ -2577,10 +2600,15 @@ All this is done for any sub-level being entered.
   display: none;
   text-align: center;
 }
+@media (max-width: 1200px) {
+  .catalogProductImageLink .fastView {
+    font-size: 1em;
+    left: calc(50% - 88px);
+  }
+}
 @media (max-width: 992px) {
   .catalogProductImageLink .fastView {
     width: 10em;
-    font-size: 1em;
     left: calc(50% - 80px);
   }
 }
@@ -2622,6 +2650,7 @@ All this is done for any sub-level being entered.
   display: table;
   width: 100%;
   border-spacing: 0 0.3125em;
+  margin-bottom: 0.9375em;
 }
 
 .productInfoRow {
@@ -2653,6 +2682,10 @@ All this is done for any sub-level being entered.
   color: #757575;
 }
 
+.productInfoPrice {
+  color: #9951bd;
+}
+
 .productInfoCell1 {
   text-align: left;
 }
@@ -2660,6 +2693,11 @@ All this is done for any sub-level being entered.
   font-size: 2em;
   color: #9951bd;
   opacity: .5;
+}
+@media (max-width: 768px) {
+  .productInfoCell1 {
+    display: none;
+  }
 }
 
 .productInfoInCell {
@@ -2683,23 +2721,47 @@ All this is done for any sub-level being entered.
   display: none;
 }
 
-.productInfoCartBtn {
+.productInfoCartBtn,
+.catalogProductCartBtn {
   width: 110px;
   border: 2px solid #a9ca54;
   font-size: 1em;
   padding: 0.5em 0.9375em;
 }
-.productInfoCartBtn:hover {
+.productInfoCartBtn:hover,
+.catalogProductCartBtn:hover {
   background: #ffffff;
   color: #a9ca54;
 }
 
+.catalogProduct .catalogProductCartBtn {
+  background: #ffffff;
+  color: #a9ca54;
+  margin: 0 auto;
+  display: none;
+}
+.catalogProduct .catalogProductCartBtn:hover {
+  background: #a9ca54;
+  color: #ffffff;
+}
+
+.catalogProductCartBtn {
+  background: #ffffff;
+  color: #a9ca54;
+  margin: 0 auto;
+  display: block;
+}
+.catalogProductCartBtn:hover {
+  background: #a9ca54;
+  color: #ffffff;
+}
+
 .productInfoBtn {
-  width: 110px;
+  max-width: 80px;
   border: 2px solid #b6258f;
   font-size: 0.75em;
   background: #b6258f;
-  padding: 0.33333em 1.25em;
+  padding: 0.33333em;
 }
 .productInfoBtn:hover {
   background: #ffffff;
@@ -2719,12 +2781,12 @@ All this is done for any sub-level being entered.
   overflow: hidden;
 }
 .item.list-group-item .wrapCatalogProductImage {
-  width: 30%;
+  width: 23%;
   display: inline-block;
   margin-right: 2%;
 }
 .item.list-group-item .catalogProductInfo {
-  width: 68%;
+  width: 75%;
   display: inline-block;
   vertical-align: top;
   margin-left: -4px;
@@ -2732,13 +2794,45 @@ All this is done for any sub-level being entered.
 .item.list-group-item .productInfoInCell {
   display: inline-block;
   vertical-align: middle;
-  width: 50%;
+}
+.item.list-group-item .productInfoInCell:first-child {
+  width: 55%;
 }
 .item.list-group-item .productInfoInCell:last-child {
   margin-left: -4px;
+  width: 45%;
+}
+.item.list-group-item .catalogProductCartBtn,
+.item.list-group-item .catalogProductPrice {
+  display: none;
 }
 .item.list-group-item .productInfoCell4 {
   display: block;
+}
+.item.list-group-item .catalogProductInfoGridShow {
+  display: block;
+}
+.item.list-group-item .productInfoTable {
+  display: table;
+  margin-bottom: 0;
+}
+.item.list-group-item .catalogProduct:hover {
+  position: relative;
+}
+.item.list-group-item .catalogProduct:hover .catalogProductCartBtn {
+  display: none;
+}
+
+.catalogProductPrice {
+  color: #9951bd;
+  font-size: 1.125em;
+  text-align: center;
+  margin-bottom: 0.83333em;
+}
+
+.catalogProductInfoGridShow,
+.productInfoTable {
+  display: none;
 }
 
 .catalogContentProduct {
@@ -2759,6 +2853,80 @@ All this is done for any sub-level being entered.
   clear: both;
 }
 
+.catalogProduct {
+  border: 1px solid #ffffff;
+  padding: 0.625em;
+  background: #ffffff;
+}
+.catalogProduct:hover {
+  position: absolute;
+  z-index: 100;
+  border: 1px solid #b6258f;
+  box-sizing: border-box;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+.catalogProduct:hover .catalogProductInfoGridShow {
+  display: block;
+}
+.catalogProduct:hover .productInfoTable {
+  display: table;
+}
+.catalogProduct:hover .catalogProductPrice {
+  display: none;
+}
+.catalogProduct:hover .catalogProductCartBtn {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .item.list-group-item .wrapCatalogProductImage {
+    max-width: 220px;
+    display: block;
+    margin: 0 auto 0.9375em;
+  }
+  .item.list-group-item .catalogProductInfo {
+    width: 100%;
+    display: block;
+  }
+
+  .productInfoCartBtn {
+    font-size: 0.875em;
+  }
+}
+@media (max-width: 768px) {
+  .item .catalogProductInfoGridShow {
+    display: block !important;
+  }
+  .item .productInfoTable {
+    display: table !important;
+  }
+  .item .catalogProductPrice {
+    display: none;
+  }
+  .item:hover {
+    border: none;
+  }
+
+  .catalogProductImageLink {
+    max-width: 200px;
+    margin: 0 auto 0.9375em;
+  }
+
+  .catalogProductCartBtn {
+    display: none;
+  }
+
+  .productInfoCell4 {
+    display: table-cell;
+  }
+
+  .catalogRightSwitch {
+    display: none;
+  }
+}
 /*------------------ Footer ------------------*/
 .mainFooter {
   background: url("../image/footerBg.png") bottom right no-repeat;

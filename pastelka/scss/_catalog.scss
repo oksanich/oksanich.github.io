@@ -217,12 +217,37 @@
 
 .catalogSwitch{
   display: inline-block;
+  cursor: pointer;
   [class^="icon-"]{
     font-size: em(40px, 16px);
+  }
+  :hover{
+    color: darken($primeColor, 10%);
+  }
+}
+
+.catalogRightSwitch{
+  .catalogSwitchGrid{
+    color: $primeColor;
+  }
+  .catalogSwitchList{
+    color: $gray3;
+  }
+  &.listItem{
+    .catalogSwitchGrid{
+      color: $gray3;
+    }
+    .catalogSwitchList{
+      color: $primeColor;
+    }
   }
 }
 
 /*------------------ Catalog-right content ------------------*/
+
+#products{
+  position: relative;
+}
 
 .wrapCatalogRight{
   @media (min-width: 768px) and (max-width: 992px) {
@@ -248,9 +273,14 @@
     left: calc(50% - 100px);
     display: none;
     text-align: center;
+
+    @media (max-width: 1200px) {
+      font-size: em(16px, 16px);
+      left: calc(50% - 88px);
+    }
+
     @media (max-width: 992px) {
       width: em(160px, 16px);
-      font-size: em(16px, 16px);
       left: calc(50% - 80px);
     }
   }
@@ -294,6 +324,7 @@
   display: table;
   width: 100%;
   border-spacing: 0 em(5px, 16px);
+  margin-bottom: em(15px, 16px);
 }
 
 .productInfoRow{
@@ -327,12 +358,19 @@
   color: $gray3;
 }
 
+.productInfoPrice{
+  color: $purple1;
+}
+
 .productInfoCell1{
   text-align: left;
   [class^="icon-"]{
     font-size: em(32px, 16px);
     color: $purple1;
     opacity: .5;
+  }
+  @media (max-width: 768px) {
+    display: none;
   }
 }
 
@@ -357,7 +395,8 @@
   display: none;
 }
 
-.productInfoCartBtn{
+.productInfoCartBtn,
+.catalogProductCartBtn{
   width: 110px;
   border: 2px solid $green2;
   font-size: em(16px, 16px);
@@ -369,12 +408,36 @@
   }
 }
 
+.catalogProduct {
+  .catalogProductCartBtn {
+    background: $white;
+    color: $green2;
+    margin: 0 auto;
+    display: none;
+    &:hover {
+      background: $green2;
+      color: $white;
+    }
+  }
+}
+
+.catalogProductCartBtn{
+  background: $white;
+  color: $green2;
+  margin: 0 auto;
+  display: block;
+  &:hover{
+    background: $green2;
+    color: $white;
+  }
+}
+
 .productInfoBtn{
-  width: 110px;
+  max-width: 80px;
   border: 2px solid $primeColor;
   font-size: em(12px, 16px);
   background: $primeColor;
-  padding: em(4px, 12px) em(15px, 12px);
+  padding: em(4px, 12px);
   @extend %btnFull;
   &:hover{
     background: $white;
@@ -396,14 +459,13 @@
   }
 
   .wrapCatalogProductImage{
-    //    min-width: 220px;
-    width: 30%;
+    width: 23%;
     display: inline-block;
     margin-right: 2%;
   }
 
   .catalogProductInfo{
-    width: 68%;
+    width: 75%;
     display: inline-block;
     vertical-align: top;
     margin-left: -4px;
@@ -412,15 +474,54 @@
   .productInfoInCell{
     display: inline-block;
     vertical-align: middle;
-    width: 50%;
+    &:first-child{
+      width: 55%;
+    }
+
     &:last-child{
       margin-left: -4px;
+      width: 45%;
     }
+  }
+
+  .catalogProductCartBtn,
+  .catalogProductPrice{
+    display: none;
   }
 
   .productInfoCell4{
     display: block;
   }
+
+  .catalogProductInfoGridShow{
+    display: block;
+  }
+  .productInfoTable{
+    display: table;
+    margin-bottom: 0;
+  }
+
+  .catalogProduct{
+    &:hover {
+      position: relative;
+
+      .catalogProductCartBtn{
+        display: none;
+      }
+    }
+  }
+}
+
+.catalogProductPrice{
+  color: $purple1;
+  font-size: em(18px, 16px);
+  text-align: center;
+  margin-bottom: em(15px, 18px);
+}
+
+.catalogProductInfoGridShow,
+.productInfoTable{
+  display: none;
 }
 
 .catalogContentProduct{
@@ -440,4 +541,91 @@
 .item.list-group-item:after
 {
   clear:both;
+}
+
+.catalogProduct {
+  border: 1px solid $white;
+  padding: em(10px, 16px);
+  background: $white;
+  &:hover {
+    position: absolute;
+    z-index: 100;
+    border: 1px solid $primeColor;
+    box-sizing: border-box;
+    @include transition-duration(1s);
+
+    .catalogProductInfoGridShow{
+      display: block;
+    }
+
+    .productInfoTable {
+      display: table;
+    }
+
+    .catalogProductPrice {
+      display: none;
+    }
+
+    .catalogProductCartBtn{
+      display: block;
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .item.list-group-item {
+
+    .wrapCatalogProductImage{
+      max-width: 220px;
+      display: block;
+      margin: 0 auto em(15px, 16px);
+    }
+
+    .catalogProductInfo{
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .productInfoCartBtn{
+    font-size: em(14px, 16px);
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+    .catalogProductInfoGridShow{
+      display: block!important;
+    }
+
+    .productInfoTable {
+      display: table!important;
+    }
+
+    .catalogProductPrice {
+      display: none;
+    }
+
+    &:hover {
+      border: none;
+    }
+  }
+
+  .catalogProductImageLink{
+    max-width: 200px;
+    margin: 0 auto em(15px, 16px);
+  }
+
+  .catalogProductCartBtn{
+    display: none;
+  }
+
+  .productInfoCell4{
+    display: table-cell;
+  }
+
+  .catalogRightSwitch{
+    display: none;
+  }
 }
