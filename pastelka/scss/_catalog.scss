@@ -26,6 +26,7 @@
 .catalogLeft{
   background: $pink5;
   padding: em(15px, 16px);
+  margin-bottom: em(20px, 16px);
 }
 
 .catalogLeftTitle{
@@ -77,6 +78,29 @@
   color: $gray2;
 }
 
+.filterColor{
+  margin-bottom: 0;
+}
+
+.filterItemColor{
+  display: inline-block;
+  margin-right: em(15px, 16px);
+}
+
+.itemColorPseudoCheckbox{
+  width: 34px;
+  height: 34px;
+  border-radius: 34px;
+}
+
+.filterItem input[type='checkbox']:checked + label > .itemColorPseudoCheckbox{
+  @include transition-duration(.5s);
+  border-top: 3px inset #D38CF7;
+  border-right: 3px inset $purple1;
+  border-bottom: 3px inset $purple1;
+  border-left: 3px inset #D38CF7;
+}
+
 .filterButton{
   @extend %btnFull;
   border: none;
@@ -97,6 +121,10 @@
   }
 }
 
+.catalogLeftBanner{
+  margin-bottom: em(20px, 16px);
+}
+
 /*------------------ Catalog-right ------------------*/
 
 .rightTopFilterManufacturer{
@@ -107,7 +135,7 @@
 
 .filterManufacturerItem{
   display: inline-block;
-  margin: 0 em(3px, 16px) em(3px, 16px) 0;
+  margin: 0 0 em(3px, 16px) 0;
   input[type="checkbox"]{
     display: none;
   }
@@ -192,4 +220,224 @@
   [class^="icon-"]{
     font-size: em(40px, 16px);
   }
+}
+
+/*------------------ Catalog-right content ------------------*/
+
+.wrapCatalogRight{
+  @media (min-width: 768px) and (max-width: 992px) {
+    .col-sm-8 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.catalogProductImageLink{
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  .fastView{
+    position: absolute;
+    color: $white;
+    font-size: em(18px, 16px);
+    background: rgba(182, 36, 142, 0.5);
+    padding: em(5px, 18px) em(15px, 18px);
+    top: 40%;
+    left: calc(50% - 100px);
+    display: none;
+    text-align: center;
+    @media (max-width: 992px) {
+      width: em(160px, 16px);
+      font-size: em(16px, 16px);
+      left: calc(50% - 80px);
+    }
+  }
+  &:hover{
+    .fastView{
+      display: block;
+    }
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.catalogProductTitleLink{
+  color: $gray1;
+  display: inline-block;
+  margin-bottom: em(15px, 16px);
+  &:hover{
+    color: $gray1;
+    text-decoration: underline;
+  }
+}
+
+.catalogProductArticle,
+.catalogProductMaterial{
+  font-size: em(14px, 16px);
+  color: $gray4;
+  margin-bottom: em(15px, 14px);
+}
+
+.catalogProductMaterialType{
+  color: $gray1;
+}
+
+.catalogProductManufacturer{
+  margin-bottom: em(15px, 16px);
+}
+
+.productInfoTable{
+  display: table;
+  width: 100%;
+  border-spacing: 0 em(5px, 16px);
+}
+
+.productInfoRow{
+  display: table-row;
+  color: $gray1;
+  &:hover{
+    background: $gray5;
+    color: $gray1;
+    .productInfoCell1{
+      [class^="icon-"]{
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.productInfoCell{
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 5px;
+  &:last-child{
+    padding-right: 0;
+  }
+}
+
+.productInfoAvailabilityYes{
+  color: $green1;
+}
+
+.productInfoAvailabilityNo{
+  color: $gray3;
+}
+
+.productInfoCell1{
+  text-align: left;
+  [class^="icon-"]{
+    font-size: em(32px, 16px);
+    color: $purple1;
+    opacity: .5;
+  }
+}
+
+.productInfoInCell {
+  line-height: 1.2em;
+}
+
+.productInfoCell2{
+  font-size: em(12px, 16px);
+}
+
+.productInfoArticle{
+  color: $gray3;
+}
+
+.productInfoCell3{
+  font-size: em(14px, 16px);
+}
+
+.productInfoCell4{
+  text-align: right;
+  display: none;
+}
+
+.productInfoCartBtn{
+  width: 110px;
+  border: 2px solid $green2;
+  font-size: em(16px, 16px);
+  padding: em(8px, 16px) em(15px, 16px);
+  @extend %btnFull;
+  &:hover{
+    background: $white;
+    color: $green2;
+  }
+}
+
+.productInfoBtn{
+  width: 110px;
+  border: 2px solid $primeColor;
+  font-size: em(12px, 16px);
+  background: $primeColor;
+  padding: em(4px, 12px) em(15px, 12px);
+  @extend %btnFull;
+  &:hover{
+    background: $white;
+    color: $primeColor;
+  }
+}
+
+.item.list-group-item {
+  float: none;
+  width: 100%;
+  border: none;
+
+  .catalogProduct{
+    padding: 10px;
+    margin-bottom: em(15px, 16px);
+    border-radius: 0;
+    border: 1px solid $primeColor;
+    overflow: hidden;
+  }
+
+  .wrapCatalogProductImage{
+    //    min-width: 220px;
+    width: 30%;
+    display: inline-block;
+    margin-right: 2%;
+  }
+
+  .catalogProductInfo{
+    width: 68%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -4px;
+  }
+
+  .productInfoInCell{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    &:last-child{
+      margin-left: -4px;
+    }
+  }
+
+  .productInfoCell4{
+    display: block;
+  }
+}
+
+.catalogContentProduct{
+  background-color:green;
+}
+
+.item.list-group-item:before,
+.item.list-group-item:after {
+  display: table;
+  content: " ";
+}
+
+.item.list-group-item img{
+  float:left;
+}
+
+.item.list-group-item:after
+{
+  clear:both;
 }

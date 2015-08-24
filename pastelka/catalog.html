@@ -1386,8 +1386,8 @@
             <div class="container">
                 <div class="row">
                     <!--START catalog-left-->
-                    <div class="wrapCatalogLeft">
-                        <div class="col-sm-4 col-lg-3">
+                    <div class="col-sm-4 col-lg-3">
+                        <div class="wrapCatalogLeft">
                             <div class="catalogLeft">
                                 <div class="catalogLeftTitle">Фильтр</div>
                                 <form class="catalogFiltersForm" action="">
@@ -1449,11 +1449,58 @@
                                     <!--START filter-color-->
                                     <div class="filterColor filterGroup">
                                         <div class="filterGroupTitle">Цвет</div>
-                                        <div class="filterItem">
+                                        <div class="filterItem filterItemColor">
                                             <input id="itemColor1" type="checkbox"/>
                                             <label for="itemColor1" class="itemColorlLabel">
-                                                <span class="itemColorPseudoCheckbox"></span>
-                                                лен <span class="itemColorlNumber">(354)</span>
+                                                <img class="itemColorPseudoCheckbox" src="image/greenfilter.jpg" alt="green" title="green"/>
+                                            </label>
+                                        </div>
+                                        <div class="filterItem filterItemColor">
+                                            <input id="itemColor2" type="checkbox"/>
+                                            <label for="itemColor2" class="itemColorlLabel">
+                                                <img class="itemColorPseudoCheckbox" src="image/greenfilter.jpg" alt="green" title="green"/>
+                                            </label>
+                                        </div>
+                                        <div class="filterItem filterItemColor">
+                                            <input id="itemColor3" type="checkbox"/>
+                                            <label for="itemColor3" class="itemColorlLabel">
+                                                <img class="itemColorPseudoCheckbox" src="image/greenfilter.jpg" alt="green" title="green"/>
+                                            </label>
+                                        </div>
+                                        <div class="filterItem filterItemColor">
+                                            <input id="itemColor4" type="checkbox"/>
+                                            <label for="itemColor4" class="itemColorlLabel">
+                                                <img class="itemColorPseudoCheckbox" src="image/greenfilter.jpg" alt="green" title="green"/>
+                                            </label>
+                                        </div>
+                                        <div class="filterItem filterItemColor">
+                                            <input id="itemColor5" type="checkbox"/>
+                                            <label for="itemColor5" class="itemColorlLabel">
+                                                <img class="itemColorPseudoCheckbox" src="image/greenfilter.jpg" alt="green" title="green"/>
+                                            </label>
+                                        </div>
+                                        <div class="filterItem filterItemColor">
+                                            <input id="itemColor6" type="checkbox"/>
+                                            <label for="itemColor6" class="itemColorlLabel">
+                                                <img class="itemColorPseudoCheckbox" src="image/greenfilter.jpg" alt="green" title="green"/>
+                                            </label>
+                                        </div>
+                                        <div class="filterItem filterItemColor">
+                                            <input id="itemColor7" type="checkbox"/>
+                                            <label for="itemColor7" class="itemColorlLabel">
+                                                <img class="itemColorPseudoCheckbox" src="image/greenfilter.jpg" alt="green" title="green"/>
+                                            </label>
+                                        </div>
+                                        <div class="filterItem filterItemColor">
+                                            <input id="itemColor8" type="checkbox"/>
+                                            <label for="itemColor8" class="itemColorlLabel">
+                                                <img class="itemColorPseudoCheckbox" src="image/greenfilter.jpg" alt="green" title="green"/>
+                                            </label>
+                                        </div>
+                                        <div class="filterItem filterItemColor">
+                                            <input id="itemColor9" type="checkbox"/>
+                                            <label for="itemColor9" class="itemColorlLabel">
+                                                <img class="itemColorPseudoCheckbox" src="image/greenfilter.jpg" alt="green" title="green"/>
                                             </label>
                                         </div>
                                     </div>
@@ -1470,8 +1517,15 @@
                                         <button class="filterButtonShow filterButton">Показать</button>
                                         <button class="filterButtonReser filterButton">Сбросить</button>
                                     </div>
-
                                 </form>
+                            </div>
+                            <div class="catalogLeftBanners">
+                                <div class="catalogLeftBanner">
+                                    <img src="image/catalogBanner1.jpg" alt=""/>
+                                </div>
+                                <div class="catalogLeftBanner">
+                                    <img src="image/catalogBanner2.jpg" alt=""/>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1479,7 +1533,7 @@
 
                     <!--START catalog-right-->
                     <div class="wrapCatalogRight">
-                        <div class="col-sm-8 col-lg-9">
+                        <div class="col-xs-12 col-sm-8 col-lg-9">
                             <div class="wrapTitleDecor">
                                 <h2 class="catalogTitle titleDecor">Покрывала <span class="catalogTitleNumber">(765)</span></h2>
                             </div>
@@ -1630,10 +1684,10 @@
                                             </div>
                                         </div>
                                         <div class="catalogRightSwitch">
-                                            <div class="catalogSwitchGrid catalogSwitch">
+                                            <div id="grid" class="catalogSwitchGrid catalogSwitch">
                                                 <span class="icon-th"></span>
                                             </div>
-                                            <div class="catalogSwitchList catalogSwitch">
+                                            <div id="list" class="catalogSwitchList catalogSwitch">
                                                 <span class="icon-th-line"></span>
                                             </div>
                                         </div>
@@ -1641,6 +1695,130 @@
                                 </div>
                             </div>
                             <!--END filter-right-top-->
+
+                            <div class="catalogRightContent">
+
+                                <div id="products" class="row">
+
+                                    <div class="item col-sm-6 col-lg-4 list-group-item">
+                                        <div class="catalogProduct">
+                                            <div class="wrapCatalogProductImage">
+                                                <a class="catalogProductImageLink" href="">
+                                                    <img class="catalogProductImage" src="image/catalogImage.jpg">
+                                                    <div class="fastView">Быстрый просмотр</div>
+                                                </a>
+                                            </div>
+                                            <div class="catalogProductInfo">
+                                                <a class="catalogProductTitleLink">Постельное белье Zastelli Дисней полуторный София  и ее друзья</a>
+                                                <div class="catalogProductArticle">Артикул 25486</div>
+                                                <div class="catalogProductMaterial">Материал: <span class="catalogProductMaterialType">хлопок</span></div>
+                                                <div class="catalogProductManufacturer">Dibenedetto</div>
+
+                                                <div class="productInfoTable">
+                                                    <a class="productInfoRow" href="">
+                                                        <div class="productInfoCell1 productInfoCell">
+                                                            <span class="icon-bedclothes-XL"></span>
+                                                        </div>
+                                                        <div class="productInfoCell2 productInfoCell">
+                                                            <div class="productInfoInCell">
+                                                                <div class="productInfoType">Семейный</div>
+                                                                <div class="productInfoAvailability productInfoAvailabilityYes">есть в наличии</div>
+                                                            </div>
+                                                            <div class="productInfoInCell">
+                                                                <div class="productInfoArticle">Артикул 25486</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="productInfoCell3 productInfoCell">
+                                                            <div class="productInfoPrice">2 184 грн</div>
+                                                        </div>
+                                                        <div class="productInfoCell4 productInfoCell">
+                                                            <button class="productInfoCartBtn">В корзину</button>
+                                                        </div>
+                                                    </a>
+                                                    <a class="productInfoRow" href="">
+                                                        <div class="productInfoCell1 productInfoCell">
+                                                            <span class="icon-bedclothes-L"></span>
+                                                        </div>
+                                                        <div class="productInfoCell2 productInfoCell">
+                                                            <div class="productInfoInCell">
+                                                                <div class="productInfoType">Двуспальный евро</div>
+                                                                <div class="productInfoAvailability productInfoAvailabilityYes">есть в наличии</div>
+                                                            </div>
+                                                            <div class="productInfoInCell">
+                                                                <div class="productInfoArticle">Артикул 25486</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="productInfoCell3 productInfoCell">
+                                                            <div class="productInfoPrice">12 184 грн</div>
+                                                        </div>
+                                                        <div class="productInfoCell4 productInfoCell">
+                                                            <button class="productInfoCartBtn">В корзину</button>
+                                                        </div>
+                                                    </a>
+                                                    <a class="productInfoRow" href="">
+                                                        <div class="productInfoCell1 productInfoCell">
+                                                            <span class="icon-bedclothes-M"></span>
+                                                        </div>
+                                                        <div class="productInfoCell2 productInfoCell">
+                                                            <div class="productInfoInCell">
+                                                                <div class="productInfoType">Полуторный</div>
+                                                                <div class="productInfoAvailability productInfoAvailabilityYes">есть в наличии</div>
+                                                            </div>
+                                                            <div class="productInfoInCell">
+                                                                <div class="productInfoArticle">Артикул 25486</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="productInfoCell3 productInfoCell">
+                                                            <div class="productInfoPrice">1 184 грн</div>
+                                                        </div>
+                                                        <div class="productInfoCell4 productInfoCell">
+                                                            <button class="productInfoCartBtn">В корзину</button>
+                                                        </div>
+                                                    </a>
+                                                    <a class="productInfoRow" href="">
+                                                        <div class="productInfoCell1 productInfoCell">
+                                                            <span class="icon-bedclothes-S"></span>
+                                                        </div>
+                                                        <div class="productInfoCell2 productInfoCell">
+                                                            <div class="productInfoInCell">
+                                                                <div class="productInfoType">Односпальный</div>
+                                                                <div class="productInfoAvailability productInfoAvailabilityNo">нет в наличии</div>
+                                                            </div>
+                                                            <div class="productInfoInCell">
+                                                                <div class="productInfoArticle">Артикул 25486</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="productInfoCell3 productInfoCell">
+                                                            <div class="productInfoPrice"></div>
+                                                        </div>
+                                                        <div class="productInfoCell4 productInfoCell">
+                                                            <button class="productInfoBtn">уведомить о поступлении</button>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item col-sm-6 col-lg-4">
+                                        <div class="catalogContentProduct">
+                                            <img class="group list-group-image" src="image/catalogImage.jpg">
+
+                                            <h4 class="group inner list-group-item-heading">List group item heading 1</h4>
+                                            <p class="group inner list-group-item-text">...</p>
+                                        </div>
+                                    </div>
+                                    <div class="item col-sm-6 col-lg-4">
+                                        <div class="catalogContentProduct">
+                                            <img class="group list-group-image" src="image/catalogImage.jpg">
+
+                                            <h4 class="group inner list-group-item-heading">List group item heading 1</h4>
+                                            <p class="group inner list-group-item-text">...</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
 
                             <!--START pagination-->
                             <div class="wrapPagination">

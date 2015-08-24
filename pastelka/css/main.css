@@ -56,12 +56,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /*------------------ Bootstrap-skin ------------------*/
 /*------------------ Breadcrumbs ------------------*/
-.modalFormEnterBtn, .modalNotRegisterBtn, .feedbackBtn, .filterButton, .footerRightChatBtn {
+.modalFormEnterBtn, .modalNotRegisterBtn, .feedbackBtn, .filterButton, .productInfoCartBtn, .productInfoBtn, .footerRightChatBtn {
   color: #ffffff;
   background: #a9ca54;
   display: inline-block;
 }
-.modalFormEnterBtn:hover, .modalNotRegisterBtn:hover, .feedbackBtn:hover, .filterButton:hover, .footerRightChatBtn:hover {
+.modalFormEnterBtn:hover, .modalNotRegisterBtn:hover, .feedbackBtn:hover, .filterButton:hover, .productInfoCartBtn:hover, .productInfoBtn:hover, .footerRightChatBtn:hover {
   color: #e6e6e6;
   background: #9fc441;
   -moz-transition-duration: 1s;
@@ -2355,6 +2355,7 @@ All this is done for any sub-level being entered.
 .catalogLeft {
   background: #f2e5fd;
   padding: 0.9375em;
+  margin-bottom: 1.25em;
 }
 
 .catalogLeftTitle {
@@ -2409,6 +2410,32 @@ All this is done for any sub-level being entered.
   color: #505050;
 }
 
+.filterColor {
+  margin-bottom: 0;
+}
+
+.filterItemColor {
+  display: inline-block;
+  margin-right: 0.9375em;
+}
+
+.itemColorPseudoCheckbox {
+  width: 34px;
+  height: 34px;
+  border-radius: 34px;
+}
+
+.filterItem input[type='checkbox']:checked + label > .itemColorPseudoCheckbox {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  border-top: 3px inset #D38CF7;
+  border-right: 3px inset #9951bd;
+  border-bottom: 3px inset #9951bd;
+  border-left: 3px inset #D38CF7;
+}
+
 .filterButton {
   border: none;
   width: 49%;
@@ -2428,6 +2455,10 @@ All this is done for any sub-level being entered.
   background: #9b347f;
 }
 
+.catalogLeftBanner {
+  margin-bottom: 1.25em;
+}
+
 /*------------------ Catalog-right ------------------*/
 .rightTopFilterManufacturer {
   padding-bottom: 1.5625em;
@@ -2437,7 +2468,7 @@ All this is done for any sub-level being entered.
 
 .filterManufacturerItem {
   display: inline-block;
-  margin: 0 0.1875em 0.1875em 0;
+  margin: 0 0 0.1875em 0;
 }
 .filterManufacturerItem input[type="checkbox"] {
   display: none;
@@ -2520,6 +2551,212 @@ All this is done for any sub-level being entered.
 }
 .catalogSwitch [class^="icon-"] {
   font-size: 2.5em;
+}
+
+/*------------------ Catalog-right content ------------------*/
+@media (min-width: 768px) and (max-width: 992px) {
+  .wrapCatalogRight .col-sm-8 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.catalogProductImageLink {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.catalogProductImageLink .fastView {
+  position: absolute;
+  color: #ffffff;
+  font-size: 1.125em;
+  background: rgba(182, 36, 142, 0.5);
+  padding: 0.27778em 0.83333em;
+  top: 40%;
+  left: calc(50% - 100px);
+  display: none;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .catalogProductImageLink .fastView {
+    width: 10em;
+    font-size: 1em;
+    left: calc(50% - 80px);
+  }
+}
+.catalogProductImageLink:hover .fastView {
+  display: block;
+}
+@media (max-width: 768px) {
+  .catalogProductImageLink {
+    text-align: center;
+  }
+}
+
+.catalogProductTitleLink {
+  color: #444444;
+  display: inline-block;
+  margin-bottom: 0.9375em;
+}
+.catalogProductTitleLink:hover {
+  color: #444444;
+  text-decoration: underline;
+}
+
+.catalogProductArticle,
+.catalogProductMaterial {
+  font-size: 0.875em;
+  color: #a1a1a1;
+  margin-bottom: 1.07143em;
+}
+
+.catalogProductMaterialType {
+  color: #444444;
+}
+
+.catalogProductManufacturer {
+  margin-bottom: 0.9375em;
+}
+
+.productInfoTable {
+  display: table;
+  width: 100%;
+  border-spacing: 0 0.3125em;
+}
+
+.productInfoRow {
+  display: table-row;
+  color: #444444;
+}
+.productInfoRow:hover {
+  background: #eeeeee;
+  color: #444444;
+}
+.productInfoRow:hover .productInfoCell1 [class^="icon-"] {
+  opacity: 1;
+}
+
+.productInfoCell {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+.productInfoCell:last-child {
+  padding-right: 0;
+}
+
+.productInfoAvailabilityYes {
+  color: #99b84d;
+}
+
+.productInfoAvailabilityNo {
+  color: #757575;
+}
+
+.productInfoCell1 {
+  text-align: left;
+}
+.productInfoCell1 [class^="icon-"] {
+  font-size: 2em;
+  color: #9951bd;
+  opacity: .5;
+}
+
+.productInfoInCell {
+  line-height: 1.2em;
+}
+
+.productInfoCell2 {
+  font-size: 0.75em;
+}
+
+.productInfoArticle {
+  color: #757575;
+}
+
+.productInfoCell3 {
+  font-size: 0.875em;
+}
+
+.productInfoCell4 {
+  text-align: right;
+  display: none;
+}
+
+.productInfoCartBtn {
+  width: 110px;
+  border: 2px solid #a9ca54;
+  font-size: 1em;
+  padding: 0.5em 0.9375em;
+}
+.productInfoCartBtn:hover {
+  background: #ffffff;
+  color: #a9ca54;
+}
+
+.productInfoBtn {
+  width: 110px;
+  border: 2px solid #b6258f;
+  font-size: 0.75em;
+  background: #b6258f;
+  padding: 0.33333em 1.25em;
+}
+.productInfoBtn:hover {
+  background: #ffffff;
+  color: #b6258f;
+}
+
+.item.list-group-item {
+  float: none;
+  width: 100%;
+  border: none;
+}
+.item.list-group-item .catalogProduct {
+  padding: 10px;
+  margin-bottom: 0.9375em;
+  border-radius: 0;
+  border: 1px solid #b6258f;
+  overflow: hidden;
+}
+.item.list-group-item .wrapCatalogProductImage {
+  width: 30%;
+  display: inline-block;
+  margin-right: 2%;
+}
+.item.list-group-item .catalogProductInfo {
+  width: 68%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -4px;
+}
+.item.list-group-item .productInfoInCell {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}
+.item.list-group-item .productInfoInCell:last-child {
+  margin-left: -4px;
+}
+.item.list-group-item .productInfoCell4 {
+  display: block;
+}
+
+.catalogContentProduct {
+  background-color: green;
+}
+
+.item.list-group-item:before,
+.item.list-group-item:after {
+  display: table;
+  content: " ";
+}
+
+.item.list-group-item img {
+  float: left;
+}
+
+.item.list-group-item:after {
+  clear: both;
 }
 
 /*------------------ Footer ------------------*/
