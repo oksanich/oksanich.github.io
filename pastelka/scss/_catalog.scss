@@ -167,7 +167,6 @@
 
 .filterMulti{
   display: inline-block;
-  margin-bottom: em(10px, 16px);
 
   .btn{
     border-radius: 0;
@@ -213,6 +212,7 @@
 .catalogRightSwitch{
   display: inline-block;
   vertical-align: middle;
+  float: right;
 }
 
 .catalogSwitch{
@@ -227,18 +227,19 @@
 }
 
 .catalogRightSwitch{
+  display: none;
   .catalogSwitchGrid{
-    color: $primeColor;
+    color: $gray3;
   }
   .catalogSwitchList{
-    color: $gray3;
+    color: $primeColor;
   }
   &.listItem{
     .catalogSwitchGrid{
-      color: $gray3;
+      color: $primeColor;
     }
     .catalogSwitchList{
-      color: $primeColor;
+      color: $gray3;
     }
   }
 }
@@ -256,6 +257,60 @@
       padding-right: 0;
     }
   }
+}
+
+.productInfoCartBtn,
+.catalogProductCartBtn{
+  width: 110px;
+  border: 2px solid $green2;
+  font-size: em(16px, 16px);
+  padding: em(8px, 16px) em(15px, 16px);
+  @extend %btnFull;
+  &:hover{
+    background: $white;
+    color: $green2;
+  }
+}
+
+.catalogProduct {
+  .catalogProductCartBtn {
+    background: $white;
+    color: $green2;
+    margin: 0 auto;
+    display: none;
+    &:hover {
+      background: $green2;
+      color: $white;
+    }
+  }
+}
+
+.catalogProductCartBtn{
+  background: $white;
+  color: $green2;
+  margin: 0 auto;
+  display: block;
+  &:hover{
+    background: $green2;
+    color: $white;
+  }
+}
+
+.productInfoBtn{
+  max-width: 80px;
+  border: 2px solid $primeColor;
+  font-size: em(12px, 16px);
+  background: $primeColor;
+  padding: em(4px, 12px);
+  @extend %btnFull;
+  &:hover{
+    background: $white;
+    color: $primeColor;
+  }
+}
+
+.item{
+  margin-bottom: em(20px, 15px);
 }
 
 .catalogProductImageLink{
@@ -395,64 +450,14 @@
   display: none;
 }
 
-.productInfoCartBtn,
-.catalogProductCartBtn{
-  width: 110px;
-  border: 2px solid $green2;
-  font-size: em(16px, 16px);
-  padding: em(8px, 16px) em(15px, 16px);
-  @extend %btnFull;
-  &:hover{
-    background: $white;
-    color: $green2;
-  }
-}
-
-.catalogProduct {
-  .catalogProductCartBtn {
-    background: $white;
-    color: $green2;
-    margin: 0 auto;
-    display: none;
-    &:hover {
-      background: $green2;
-      color: $white;
-    }
-  }
-}
-
-.catalogProductCartBtn{
-  background: $white;
-  color: $green2;
-  margin: 0 auto;
-  display: block;
-  &:hover{
-    background: $green2;
-    color: $white;
-  }
-}
-
-.productInfoBtn{
-  max-width: 80px;
-  border: 2px solid $primeColor;
-  font-size: em(12px, 16px);
-  background: $primeColor;
-  padding: em(4px, 12px);
-  @extend %btnFull;
-  &:hover{
-    background: $white;
-    color: $primeColor;
-  }
-}
-
 .item.list-group-item {
   float: none;
   width: 100%;
   border: none;
+  margin-bottom: 0;
 
   .catalogProduct{
     padding: 10px;
-    margin-bottom: em(15px, 16px);
     border-radius: 0;
     border: 1px solid $primeColor;
     overflow: hidden;
@@ -471,26 +476,13 @@
     margin-left: -4px;
   }
 
-  .productInfoInCell{
-    display: inline-block;
-    vertical-align: middle;
-    &:first-child{
-      width: 55%;
-    }
-
-    &:last-child{
-      margin-left: -4px;
-      width: 45%;
-    }
-  }
-
   .catalogProductCartBtn,
   .catalogProductPrice{
     display: none;
   }
 
   .productInfoCell4{
-    display: block;
+    display: table-cell;
   }
 
   .catalogProductInfoGridShow{
@@ -499,6 +491,22 @@
   .productInfoTable{
     display: table;
     margin-bottom: 0;
+  }
+
+  .productInfoCell1{
+    width: 9%;
+  }
+
+  .productInfoCell2{
+    width: 33%;
+  }
+
+  .productInfoCell3{
+    width: 28%;
+  }
+
+  .productInfoCell4{
+    width: 30%;
   }
 
   .catalogProduct{
@@ -510,6 +518,10 @@
       }
     }
   }
+
+  &.col-lg-4{
+    height: 100%;
+  }
 }
 
 .catalogProductPrice{
@@ -517,10 +529,6 @@
   font-size: em(18px, 16px);
   text-align: center;
   margin-bottom: em(15px, 18px);
-}
-
-.catalogProductInfoGridShow,
-.productInfoTable{
   display: none;
 }
 
@@ -543,41 +551,67 @@
   clear:both;
 }
 
-.catalogProduct {
-  border: 1px solid $white;
-  padding: em(10px, 16px);
-  background: $white;
-  &:hover {
-    position: absolute;
-    z-index: 100;
-    border: 1px solid $primeColor;
-    box-sizing: border-box;
-    @include transition-duration(1s);
 
-    .catalogProductInfoGridShow{
-      display: block;
-    }
+@media (min-width: 1200px) {
 
-    .productInfoTable {
-      display: table;
-    }
-
-    .catalogProductPrice {
-      display: none;
-    }
-
-    .catalogProductCartBtn{
-      display: block;
+  .item{
+    &.col-lg-4{
+      height: 333px;
     }
   }
-}
 
+  .catalogProduct {
+    border: 1px solid $white;
+    padding: em(10px, 16px);
+    background: $white;
+    &:hover {
+      position: absolute;
+      z-index: 100;
+      border: 1px solid $primeColor;
+      box-sizing: border-box;
+      @include transition-duration(1s);
+
+      .catalogProductInfoGridShow {
+        display: block;
+      }
+
+      .productInfoTable {
+        display: table;
+      }
+
+      .catalogProductPrice {
+        display: none;
+      }
+
+      .catalogProductCartBtn {
+        display: block;
+      }
+    }
+  }
+
+  .catalogProductInfoGridShow,
+  .productInfoTable{
+    display: none;
+  }
+
+  .catalogProductPrice{
+    display: block;
+  }
+
+  .catalogRightSwitch{
+    display: inline-block;
+  }
+
+  .filterMulti {
+    margin-top: em(4px, 16px);
+  }
+}
 
 @media (max-width: 992px) {
   .item.list-group-item {
 
     .wrapCatalogProductImage{
-      max-width: 220px;
+      width: 220px;
       display: block;
       margin: 0 auto em(15px, 16px);
     }
@@ -590,6 +624,10 @@
   
   .productInfoCartBtn{
     font-size: em(14px, 16px);
+  }
+
+  .filterMulti {
+    margin-bottom: em(10px, 16px);
   }
 }
 
@@ -611,6 +649,10 @@
       border: none;
     }
   }
+  
+  .catalogProduct{
+    border-bottom: 2px solid $primeColor;
+  }
 
   .catalogProductImageLink{
     max-width: 200px;
@@ -625,7 +667,19 @@
     display: table-cell;
   }
 
-  .catalogRightSwitch{
+  .catalogLeftBanners{
     display: none;
+  }
+
+  .productInfoInCell{
+    display: block;
+    vertical-align: middle;
+    &:first-child{
+      width: 100%;
+    }
+
+    &:last-child{
+      width: 100%;
+    }
   }
 }

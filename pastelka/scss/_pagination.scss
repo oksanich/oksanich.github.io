@@ -7,6 +7,9 @@
 .paginationItem{
   float: none!important;
   margin: 0 4px;
+  @media (max-width: 768px) {
+    margin: 0;
+  }
 }
 
 .paginationLink{
