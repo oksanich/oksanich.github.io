@@ -78,10 +78,6 @@
   color: $gray2;
 }
 
-.filterColor{
-  margin-bottom: 0;
-}
-
 .filterItemColor{
   display: inline-block;
   margin-right: em(15px, 16px);
@@ -99,6 +95,99 @@
   border-right: 3px inset $purple1;
   border-bottom: 3px inset $purple1;
   border-left: 3px inset #D38CF7;
+}
+
+.filterPriceSlider{
+  margin-bottom: em(15px, 16px);
+}
+
+.uislide{
+  position:relative;
+  height:6px;
+  border:1px solid #dbdbdb;
+  border-radius:3px;
+}
+
+.uislide.price-slide{
+  width: 95%;
+  margin: 0 auto;
+  background: $green1;
+}
+
+.uislide .ui-slider-range{
+  position:absolute;
+  height:6px;
+  margin-top:-2px;
+  background: $gray3;
+  border-radius:4px;
+}
+.uislide .ui-slider-handle:after{
+  content:'';
+  position:absolute;
+  display:block;
+  width:14px;
+  height:14px;
+  border-radius: 7px;
+  margin-top:-6px;
+  margin-left:-8px;
+  background: $primeColor;
+  &:hover{
+    background: darken($primeColor, 10%);
+  }
+}
+.uislide .ui-slider-handle{
+  position:absolute;
+  width:1px;height:1px;display:block;
+}
+.uislide .ui-slider-handle:active{
+  cursor:none;
+}
+
+.filterPriceInputs{
+  text-align: center;
+}
+
+.priceInput{
+  width: 30%;
+  outline: none;
+  padding: em(5px, 14px) em(10px, 14px);
+  font-size: em(14px, 16px);
+  border-style: solid none none solid;
+  border-color: $gray4;
+  &:focus{
+    border-color: darken($gray4, 10%);
+  }
+  &:first-child{
+    margin-right: em(20px, 14px);
+  }
+  &:last-child{
+    margin-left: em(20px, 14px);
+  }
+}
+
+.moreAndLess{
+  color: $primeColor;
+  font-size: em(14px, 16px);
+  .less{
+    display: none;
+  }
+  &.showMore{
+    .more{
+      display: none;
+    }
+    .less{
+      display: block;
+    }
+  }
+}
+
+.moreLess{
+  cursor: pointer;
+  [class^="icon-"]{
+    position: relative;
+    left: em(5px, 16px);
+    top: em(3px, 16px);
+  }
 }
 
 .filterButton{
@@ -161,6 +250,10 @@
   color: $gray4;
 }
 
+.rightTopFilterMulti{
+  margin-bottom: em(10px, 16px);
+}
+
 .wrapFilterMulti{
   display: inline-block;
 }
@@ -200,12 +293,21 @@
       max-width: 70px;
     }
   }
+
+  &.filterSorting{
+    @media (max-width: 768px) {
+      .bootstrap-select{
+        max-width: 190px;
+      }
+    }
+  }
 }
 
 .filterMultiText{
   display: inline-block;
   font-size: em(14px, 16px);
   margin-right: em(5px, 14px);
+  margin-bottom: em(5px, 14px);
   color: $gray3;
 }
 
@@ -241,6 +343,9 @@
     .catalogSwitchList{
       color: $gray3;
     }
+  }
+  @media (min-width: 1200px) {
+    display: inline-block;
   }
 }
 
@@ -552,7 +657,7 @@
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
 
   .item{
     &.col-lg-4{
@@ -596,10 +701,6 @@
 
   .catalogProductPrice{
     display: block;
-  }
-
-  .catalogRightSwitch{
-    display: inline-block;
   }
 
   .filterMulti {

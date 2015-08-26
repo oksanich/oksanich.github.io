@@ -2417,10 +2417,6 @@ All this is done for any sub-level being entered.
   color: #505050;
 }
 
-.filterColor {
-  margin-bottom: 0;
-}
-
 .filterItemColor {
   display: inline-block;
   margin-right: 0.9375em;
@@ -2441,6 +2437,102 @@ All this is done for any sub-level being entered.
   border-right: 3px inset #9951bd;
   border-bottom: 3px inset #9951bd;
   border-left: 3px inset #D38CF7;
+}
+
+.filterPriceSlider {
+  margin-bottom: 0.9375em;
+}
+
+.uislide {
+  position: relative;
+  height: 6px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.uislide.price-slide {
+  width: 95%;
+  margin: 0 auto;
+  background: #99b84d;
+}
+
+.uislide .ui-slider-range {
+  position: absolute;
+  height: 6px;
+  margin-top: -2px;
+  background: #757575;
+  border-radius: 4px;
+}
+
+.uislide .ui-slider-handle:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  margin-top: -6px;
+  margin-left: -8px;
+  background: #b6258f;
+}
+.uislide .ui-slider-handle:after:hover {
+  background: #8c1c6e;
+}
+
+.uislide .ui-slider-handle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  display: block;
+}
+
+.uislide .ui-slider-handle:active {
+  cursor: none;
+}
+
+.filterPriceInputs {
+  text-align: center;
+}
+
+.priceInput {
+  width: 30%;
+  outline: none;
+  padding: 0.35714em 0.71429em;
+  font-size: 0.875em;
+  border-style: solid none none solid;
+  border-color: #a1a1a1;
+}
+.priceInput:focus {
+  border-color: #888888;
+}
+.priceInput:first-child {
+  margin-right: 1.42857em;
+}
+.priceInput:last-child {
+  margin-left: 1.42857em;
+}
+
+.moreAndLess {
+  color: #b6258f;
+  font-size: 0.875em;
+}
+.moreAndLess .less {
+  display: none;
+}
+.moreAndLess.showMore .more {
+  display: none;
+}
+.moreAndLess.showMore .less {
+  display: block;
+}
+
+.moreLess {
+  cursor: pointer;
+}
+.moreLess [class^="icon-"] {
+  position: relative;
+  left: 0.3125em;
+  top: 0.1875em;
 }
 
 .filterButton {
@@ -2507,6 +2599,10 @@ All this is done for any sub-level being entered.
   color: #a1a1a1;
 }
 
+.rightTopFilterMulti {
+  margin-bottom: 0.625em;
+}
+
 .wrapFilterMulti {
   display: inline-block;
 }
@@ -2539,11 +2635,17 @@ All this is done for any sub-level being entered.
 .filterMulti.filterQuantity .bootstrap-select {
   max-width: 70px;
 }
+@media (max-width: 768px) {
+  .filterMulti.filterSorting .bootstrap-select {
+    max-width: 190px;
+  }
+}
 
 .filterMultiText {
   display: inline-block;
   font-size: 0.875em;
   margin-right: 0.35714em;
+  margin-bottom: 0.35714em;
   color: #757575;
 }
 
@@ -2578,6 +2680,11 @@ All this is done for any sub-level being entered.
 }
 .catalogRightSwitch.listItem .catalogSwitchList {
   color: #757575;
+}
+@media (min-width: 1200px) {
+  .catalogRightSwitch {
+    display: inline-block;
+  }
 }
 
 /*------------------ Catalog-right content ------------------*/
@@ -2865,7 +2972,7 @@ All this is done for any sub-level being entered.
   clear: both;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .item.col-lg-4 {
     height: 333px;
   }
@@ -2905,10 +3012,6 @@ All this is done for any sub-level being entered.
 
   .catalogProductPrice {
     display: block;
-  }
-
-  .catalogRightSwitch {
-    display: inline-block;
   }
 
   .filterMulti {

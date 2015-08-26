@@ -547,7 +547,7 @@
                                 </ul>
                             </li>
                             <li class="mobileMenuItem">
-                                <a href="#" class="mobileMenuLink">Как сдалать заказ</a>
+                                <a href="#" class="mobileMenuLink">Как сделать заказ</a>
                             </li>
                             <li class="mobileMenuItem">
                                 <a href="#" class="mobileMenuLink">Доставка</a>
@@ -602,7 +602,7 @@
                                         <div class="modalLogin modalGlobal">
                                             <div class="modalHeader">
                                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-close"></span></button>
-                                                <h2 class="modalTitle">Bxoд в интеренет-магазин</h2>
+                                                <h2 class="modalTitle">Bxoд в интернет-магазин</h2>
                                             </div>
                                             <div class="modalBody">
                                                 <div class="modalForm">
@@ -1443,6 +1443,10 @@
                                                 хлопок <span class="itemMaterialNumber">(354)</span>
                                             </label>
                                         </div>
+                                        <div class="moreAndLess">
+                                            <div class="more moreLess _moreLess">Больше <span class="icon-down"></span></div>
+                                            <div class="less moreLess _moreLess">Меньше <span class="icon-up"></span></div>
+                                        </div>
                                     </div>
                                     <!--END filter-material-->
 
@@ -1458,43 +1462,43 @@
                                         <div class="filterItem filterItemColor">
                                             <input id="itemColor2" type="checkbox"/>
                                             <label for="itemColor2" class="itemColorlLabel">
-                                                <img class="itemColorPseudoCheckbox" src="image/greenfilter.jpg" alt="green" title="green"/>
+                                                <img class="itemColorPseudoCheckbox" src="image/grayfilter.jpg" alt="green" title="gray"/>
                                             </label>
                                         </div>
                                         <div class="filterItem filterItemColor">
                                             <input id="itemColor3" type="checkbox"/>
                                             <label for="itemColor3" class="itemColorlLabel">
-                                                <img class="itemColorPseudoCheckbox" src="image/greenfilter.jpg" alt="green" title="green"/>
+                                                <img class="itemColorPseudoCheckbox" src="image/purplefilter.jpg" alt="green" title="purple"/>
                                             </label>
                                         </div>
                                         <div class="filterItem filterItemColor">
                                             <input id="itemColor4" type="checkbox"/>
                                             <label for="itemColor4" class="itemColorlLabel">
-                                                <img class="itemColorPseudoCheckbox" src="image/greenfilter.jpg" alt="green" title="green"/>
+                                                <img class="itemColorPseudoCheckbox" src="image/orangefilter.jpg" alt="green" title="orange"/>
                                             </label>
                                         </div>
                                         <div class="filterItem filterItemColor">
                                             <input id="itemColor5" type="checkbox"/>
                                             <label for="itemColor5" class="itemColorlLabel">
-                                                <img class="itemColorPseudoCheckbox" src="image/greenfilter.jpg" alt="green" title="green"/>
+                                                <img class="itemColorPseudoCheckbox" src="image/blackfilter.jpg" alt="green" title="black"/>
                                             </label>
                                         </div>
                                         <div class="filterItem filterItemColor">
                                             <input id="itemColor6" type="checkbox"/>
                                             <label for="itemColor6" class="itemColorlLabel">
-                                                <img class="itemColorPseudoCheckbox" src="image/greenfilter.jpg" alt="green" title="green"/>
+                                                <img class="itemColorPseudoCheckbox" src="image/whitefilter.jpg" alt="green" title="white"/>
                                             </label>
                                         </div>
                                         <div class="filterItem filterItemColor">
                                             <input id="itemColor7" type="checkbox"/>
                                             <label for="itemColor7" class="itemColorlLabel">
-                                                <img class="itemColorPseudoCheckbox" src="image/greenfilter.jpg" alt="green" title="green"/>
+                                                <img class="itemColorPseudoCheckbox" src="image/yellowfilter.jpg" alt="green" title="yellow"/>
                                             </label>
                                         </div>
                                         <div class="filterItem filterItemColor">
                                             <input id="itemColor8" type="checkbox"/>
                                             <label for="itemColor8" class="itemColorlLabel">
-                                                <img class="itemColorPseudoCheckbox" src="image/greenfilter.jpg" alt="green" title="green"/>
+                                                <img class="itemColorPseudoCheckbox" src="image/brownfilter.jpg" alt="green" title="brown"/>
                                             </label>
                                         </div>
                                         <div class="filterItem filterItemColor">
@@ -1503,13 +1507,24 @@
                                                 <img class="itemColorPseudoCheckbox" src="image/greenfilter.jpg" alt="green" title="green"/>
                                             </label>
                                         </div>
+                                        <div class="moreAndLess">
+                                            <div class="more moreLess _moreLess">Больше <span class="icon-down"></span></div>
+                                            <div class="less moreLess _moreLess">Меньше <span class="icon-up"></span></div>
+                                        </div>
                                     </div>
                                     <!--END filter-color-->
 
                                     <!--START filter-price-->
                                     <div class="filterPrice filterGroup">
                                         <div class="filterGroupTitle">Цена</div>
-
+                                        <div class="filterPriceSlider">
+                                            <div class='price-slide uislide column'></div>
+                                        </div>
+                                        <div class="filterPriceInputs">
+                                            <input class="priceInput" type="number"/>
+                                            -
+                                            <input class="priceInput" type="number"/>
+                                        </div>
                                     </div>
                                     <!--END filter-price-->
 
@@ -2354,6 +2369,7 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.3/js/bootstrap-select.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery.dlmenu.js"></script>
