@@ -10,7 +10,6 @@ a{
   &:hover{
     color: darken($white, 10%);
     text-decoration: none;
-    @include transition-duration(1s)
   }
   &:focus{
     text-decoration: none;
@@ -38,7 +37,6 @@ img{
     border: 2px solid $green1;
     color: $white;
     background: $green1;
-    @include transition-duration(1s)
   }
 }
 

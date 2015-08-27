@@ -31,7 +31,6 @@
     background: $pink3;
     [class^="icon-"] {
       color: $white;
-      @include transition-duration(1s)
     }
   }
 }
@@ -61,7 +60,6 @@
   box-sizing: border-box;
   &:hover{
     border: 1px solid $pink2;
-    @include transition-duration(1s);
   }
   @media (max-width: 768px) {
     margin: 0 em(15px, 16px) em(25px, 16px);

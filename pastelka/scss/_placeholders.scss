@@ -22,7 +22,6 @@
   &:hover {
     color: darken($white, 10%);
     background: darken($green2, 5%);
-    @include transition-duration(1s);
   }
 }
 

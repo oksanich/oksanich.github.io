@@ -28,20 +28,21 @@
 
 .dl-menuwrapper li > a:after,
 .dl-menuwrapper li.dl-back:after{
-  color: $pink1;
+  color: darken($purple1, 10%);
 }
 
 .mobileMenuItem,
 .mobileSubMenuItem{
   border-bottom: 1px solid $white;
-  background: $pink3;
+  background: $purple1;
   &:last-child{
     border-bottom: none;
   }
 }
 
 .dl-back{
-  background: $pink2;
+  background: darken($purple1, 10%);
+  border-bottom: 1px solid $white;
 }
 
 .dl-menuwrapper button:hover{
@@ -382,7 +383,6 @@
     cursor: pointer;
     &:hover{
       color: darken($gray4, 10%);
-      @include transition-duration(1s)
     }
   }
 }
@@ -471,6 +471,7 @@
   padding: em(15px, 16px) 0;
   width: 100%;
   min-height: em(140px, 16px);
+  color: $white;
 
   span{
     display: block;
@@ -525,7 +526,6 @@
   box-sizing: border-box;
   background: $white;
   position: absolute;
-  @include transition-duration(2s);
   z-index: 10;
 }
 
@@ -651,6 +651,97 @@
   .searchResultImageInfo {
     width: 65%;
   }
+
+  .wrapHeaderBottom{
+    background: none;
+  }
+
+  .headerBottom{
+    background: $pink3 url("../image/bgPink.png") repeat;
+  }
+
+  .headerCategoryLink{
+    min-height: 100%;
+  }
+
+  .headerCategoryLink {
+    [class^="icon-"] {
+      display: none;
+    }
+  }
+
+  [class^="headerCategoryItem"]{
+    .headerCategorySubList{
+      background: $pink5;
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  .headerCategorySubListLeft {
+    width: 100%;
+    float: none;
+  }
+
+  .headerCategoryLink {
+    padding: em(10px, 16px);
+    overflow: hidden;
+    span{
+      display: inline;
+    }
+    .caret{
+      display: inline-block;
+      width: 0;
+      height: 0;
+      color: $primeColor;
+      margin-left: 5px;
+      margin-top: 8px;
+      vertical-align: middle;
+      border-top: 6px solid;
+      border-right: 6px solid transparent;
+      border-left: 6px solid transparent;
+      float: right;
+    }
+    &:hover {
+      .caret{
+        color: $white;
+      }
+    }
+  }
+
+  .headerCategoryLinkTitle{
+    float: left;
+  }
+
+  .headerCategoryItem {
+    width: 100%;
+    float: none;
+    border-bottom: 1px solid $white;
+    &:hover{
+      > .headerCategorySubList{
+        display: none;
+      }
+    }
+
+    &.open{
+      background: $primeColor;
+
+      .headerCategoryLinkTitle{
+        color: $white;
+      }
+      .caret{
+        border-top: none;
+        border-bottom: 6px solid;
+        border-right: 6px solid transparent;
+        border-left: 6px solid transparent;
+        color: $white;
+      }
+      > .headerCategorySubList{
+        display: block;
+      }
+    }
+  }
+  
 }
 
 @media (max-width: 768px) {
@@ -702,5 +793,11 @@
 
   .infoCartNumber {
     font-size: em(16px, 16px);
+  }
+}
+
+@media (min-width: 992px) {
+  .caret {
+    display: none!important;
   }
 }

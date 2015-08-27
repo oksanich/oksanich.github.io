@@ -29,6 +29,16 @@ $('#grid').click(function(){
     $this.parent($('.catalogRightSwitch')).addClass('listItem');
 });
 
+// Open/close mobile category item
+
+$('._headerCategoryList .headerCategoryItem').on('click', function () {
+    if($(this).hasClass("open")){
+        $(this).removeClass("open");
+    }else{
+        $(this).addClass("open").siblings().removeClass('open');
+    }
+});
+
 // Slider
 
 $('.uislide').slider({

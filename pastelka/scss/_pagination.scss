@@ -22,6 +22,10 @@
     border: 1px solid $primeColor!important;
     background: $white!important;
   }
+  &.active{
+    border: 1px solid $primeColor!important;
+    background: $white!important;
+  }
 }
 
 .paginationLinkPrevious,

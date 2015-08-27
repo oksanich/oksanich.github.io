@@ -70,7 +70,6 @@
 }
 
 .filterItem input[type='checkbox']:checked + label > .itemPseudoCheckbox{
-  @include transition-duration(.5s);
   background: $purple1;
 }
 
@@ -90,7 +89,6 @@
 }
 
 .filterItem input[type='checkbox']:checked + label > .itemColorPseudoCheckbox{
-  @include transition-duration(.5s);
   border-top: 3px inset #D38CF7;
   border-right: 3px inset $purple1;
   border-bottom: 3px inset $purple1;
@@ -231,11 +229,9 @@
 }
 
 .filterManufacturerItem input[type='checkbox']:checked + .filterManufacturerLabel{
-  @include transition-duration(.5s);
   background: $purple1;
   color: $white;
   .filterManufacturerCountry{
-    @include transition-duration(.5s);
     color: $white;
   }
 }
@@ -244,6 +240,13 @@
   font-size: em(14px, 16px);
   padding: em(3px, 14px);
   display: inline-block;
+  &:hover{
+    background: lighten($purple1, 15%);
+    color: $white;
+    .filterManufacturerCountry{
+      color: $white;
+    }
+  }
 }
 
 .filterManufacturerCountry{
@@ -604,6 +607,7 @@
 
   .productInfoCell2{
     width: 33%;
+    min-width: 90px;
   }
 
   .productInfoCell3{
@@ -674,7 +678,6 @@
       z-index: 100;
       border: 1px solid $primeColor;
       box-sizing: border-box;
-      @include transition-duration(1s);
 
       .catalogProductInfoGridShow {
         display: block;
@@ -782,5 +785,10 @@
     &:last-child{
       width: 100%;
     }
+  }
+
+
+  .productInfoCartBtn {
+    width: 100px;
   }
 }
