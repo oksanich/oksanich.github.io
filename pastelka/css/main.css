@@ -396,6 +396,10 @@ a:focus {
   text-decoration: none;
 }
 
+input,
+textarea {
+  outline: none;
+}
 input:focus,
 textarea:focus {
   border-color: inherit;
@@ -455,6 +459,10 @@ img {
 }
 .wrapTitleDecor .titleDecor:before {
   left: 100%;
+}
+
+.wrapTitleDecorFull {
+  overflow: visible;
 }
 
 .textBlock {
@@ -1409,7 +1417,7 @@ All this is done for any sub-level being entered.
 }
 
 .dl-back {
-  background: #7e3c9f;
+  background: #91b338;
   border-bottom: 1px solid #ffffff;
 }
 
@@ -2601,11 +2609,11 @@ All this is done for any sub-level being entered.
   margin-right: 2%;
 }
 
-.filterButtonReser {
+.filterButtonReset {
   margin-right: -4px;
   background: #c0429e;
 }
-.filterButtonReser:hover {
+.filterButtonReset:hover {
   background: #9b347f;
 }
 
@@ -3138,6 +3146,35 @@ All this is done for any sub-level being entered.
     width: 100px;
   }
 }
+/*------------------ Product-card ------------------*/
+.wrapProductCard .wrapTitleDecor {
+  text-align: left;
+}
+
+.productCardRowLink {
+  color: #505050;
+  display: block;
+}
+.productCardRowLink:hover {
+  background: #eeeeee;
+  color: #505050;
+}
+
+.productCardCell {
+  display: inline-block;
+  width: 25%;
+  margin-right: -4px;
+  vertical-align: middle;
+}
+
+.productCardRowTop .productCardCell {
+  vertical-align: top;
+}
+
+.productCardRowBottom .productCardCell1 {
+  width: 50%;
+}
+
 /*------------------ Footer ------------------*/
 .mainFooter {
   background: url("../image/footerBg.png") bottom right no-repeat;
@@ -3312,7 +3349,7 @@ All this is done for any sub-level being entered.
 }
 .footerRightSubscribeForm .form-control {
   border: none;
-  height: 3.375em;
+  height: 3.3125em;
   line-height: 1.6875em;
 }
 .footerRightSubscribeForm .btn-default {

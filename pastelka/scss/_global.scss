@@ -16,9 +16,12 @@ a{
   }
 }
 
-input:focus,
-textarea:focus{
-  border-color: inherit;
+input,
+textarea{
+  outline: none;
+  &:focus{
+    border-color: inherit;
+  }
 }
 
 img{
@@ -77,6 +80,10 @@ img{
       left: 100%;
     }
   }
+}
+
+.wrapTitleDecorFull{
+  overflow: visible;
 }
 
 .textBlock{

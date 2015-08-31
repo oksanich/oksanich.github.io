@@ -1,0 +1,43 @@
+/*------------------ Product-card ------------------*/
+
+.wrapProductCard{
+  .wrapTitleDecor{
+    text-align: left;
+  }
+}
+
+.productCardRowLink{
+  color: $gray2;
+  display: block;
+  &:hover{
+    background: $gray5;
+    color: $gray2;
+  }
+}
+
+.wrapProductCard{
+
+}
+
+.productCardRow{
+
+}
+
+.productCardCell{
+  display: inline-block;
+  width: 25%;
+  margin-right: -4px;
+  vertical-align: middle;
+}
+
+.productCardRowTop{
+  .productCardCell{
+    vertical-align: top;
+  }
+}
+
+.productCardRowBottom{
+  .productCardCell1{
+    width: 50%;
+  }
+}
