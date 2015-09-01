@@ -83,7 +83,10 @@ img{
 }
 
 .wrapTitleDecorFull{
-  overflow: visible;
+  overflow: inherit;
+  @media (max-width: 992px) {
+    overflow: hidden;
+  }
 }
 
 .textBlock{
