@@ -57,13 +57,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*------------------ Bootstrap-skin ------------------*/
 /*------------------ Breadcrumbs ------------------*/
 .modalFormEnterBtn, .modalNotRegisterBtn, .feedbackBtn, .filterButton, .productInfoCartBtn,
-.catalogProductCartBtn, .productInfoBtn, .footerRightChatBtn {
+.catalogProductCartBtn, .productInfoBtn, .productCardBtn, .productCardBtnNotify, .reviewsFormSend, .footerRightChatBtn {
   color: #ffffff;
   background: #a9ca54;
   display: inline-block;
 }
 .modalFormEnterBtn:hover, .modalNotRegisterBtn:hover, .feedbackBtn:hover, .filterButton:hover, .productInfoCartBtn:hover,
-.catalogProductCartBtn:hover, .productInfoBtn:hover, .footerRightChatBtn:hover {
+.catalogProductCartBtn:hover, .productInfoBtn:hover, .productCardBtn:hover, .productCardBtnNotify:hover, .reviewsFormSend:hover, .footerRightChatBtn:hover {
   color: #e6e6e6;
   background: #9fc441;
 }
@@ -1747,15 +1747,6 @@ img {
 }
 .wrapTitleDecor .titleDecor:before {
   left: 100%;
-}
-
-.wrapTitleDecorFull {
-  overflow: inherit;
-}
-@media (max-width: 992px) {
-  .wrapTitleDecorFull {
-    overflow: hidden;
-  }
 }
 
 .textBlock {
@@ -4440,18 +4431,83 @@ All this is done for any sub-level being entered.
   }
 }
 /*------------------ Product-card ------------------*/
+.wrapProductCard {
+  margin-bottom: 1.875em;
+}
 .wrapProductCard .wrapTitleDecor {
   text-align: left;
 }
+.wrapProductCard .productCardTitle {
+  padding-left: 0.41667em;
+}
 
 /*------------------ Product-card-top ------------------*/
+.productCardTop {
+  overflow: hidden;
+  border-bottom: 1px solid #e5c3ff;
+  padding-bottom: 0.625em;
+  margin-bottom: 0.9375em;
+}
+
+@media (max-width: 992px) {
+  .productTopLeft {
+    margin-bottom: 0.625em;
+  }
+}
+
+.productGallery {
+  overflow: hidden;
+  margin-bottom: 0.9375em;
+}
+
+@media (max-width: 768px) {
+  .productAdvantagesList {
+    display: none;
+  }
+}
+
+.productAdvantagesIcon [class^="icon-"] {
+  font-size: 3.75em;
+  color: #9951bd;
+}
+.productAdvantagesIcon .icon-discount {
+  position: relative;
+}
+.productAdvantagesIcon .icon-discount [class^="path"] {
+  color: #9951bd;
+}
+
+.productAdvantagesItem {
+  width: 16%;
+  display: inline-block;
+  margin-left: 5%;
+  vertical-align: top;
+  margin-right: -4px;
+  text-align: center;
+}
+.productAdvantagesItem:first-child {
+  margin-left: 0;
+}
+
+.productAdvantagesText {
+  font-size: 0.75em;
+}
+
 .productCardRowLink {
   color: #505050;
   display: block;
+  padding: 0.625em;
+  border-bottom: 1px solid #d3d3d3;
 }
 .productCardRowLink:hover {
   background: #eeeeee;
   color: #505050;
+}
+.productCardRowLink:hover [class^="icon-"] {
+  color: #9951bd;
+}
+.productCardRowLink:last-child {
+  border-bottom: none;
 }
 
 .productCardCell {
@@ -4460,16 +4516,425 @@ All this is done for any sub-level being entered.
   margin-right: -4px;
   vertical-align: middle;
 }
+.productCardCell [class^="icon-"] {
+  font-size: 4.375em;
+  color: #e5c3ff;
+}
 
 .productCardRowTop .productCardCell {
   vertical-align: top;
+}
+@media (max-width: 768px) {
+  .productCardRowTop .productCardCell1 {
+    width: 100%;
+    margin-bottom: 0.625em;
+  }
+  .productCardRowTop .productCardCell1 [class^="icon-"] {
+    font-size: 3.125em;
+    color: #e5c3ff;
+  }
+  .productCardRowTop .productCardCell2,
+  .productCardRowTop .productCardCell3,
+  .productCardRowTop .productCardCell4 {
+    width: 33.3%;
+    text-align: center;
+  }
+  .productCardRowTop .productCardCellText {
+    font-size: 0.75em;
+  }
 }
 
 .productCardRowBottom .productCardCell1 {
   width: 50%;
 }
+.productCardRowBottom .productCardCell3,
+.productCardRowBottom .productCardCell4 {
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .productCardRowBottom .productCardCell1 {
+    width: 100%;
+    margin-bottom: 0.625em;
+  }
+  .productCardRowBottom .productCardCell3 .productCardPrice {
+    text-align: left;
+  }
+  .productCardRowBottom .productCardCell3,
+  .productCardRowBottom .productCardCell4 {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+.productCardCellText {
+  color: #505050;
+  font-size: 0.875em;
+}
+
+.productCardCellTextTitle {
+  display: block;
+}
+
+.productCardRowTop {
+  margin-bottom: 0.9375em;
+}
+
+.productCardType {
+  font-size: 0.875em;
+  color: #444444;
+  margin-bottom: 0.21429em;
+}
+
+.productCardAvailability {
+  font-size: 0.875em;
+  color: #a9ca54;
+  margin-bottom: 0.21429em;
+}
+
+.productCardArticle {
+  font-size: 0.75em;
+  color: #a1a1a1;
+}
+
+.productCardPrice {
+  font-size: 1.5em;
+  color: #9951bd;
+}
+@media (max-width: 768px) {
+  .productCardPrice {
+    font-size: 1em;
+  }
+}
+
+.productCardBtn {
+  box-sizing: border-box;
+  width: 6.11111em;
+  font-size: 1.125em;
+  border: 2px solid #a9ca54;
+  padding: 0.44444em 0;
+}
+.productCardBtn:hover {
+  background: #ffffff;
+  color: #a9ca54;
+}
+
+.productCardBtnNotify {
+  max-width: 110px;
+  border: 2px solid #b6258f;
+  font-size: 0.75em;
+  background: #b6258f;
+  padding: 0.33333em;
+}
+.productCardBtnNotify:hover {
+  background: #ffffff;
+  color: #b6258f;
+}
 
 /*------------------ Product-card-bottom ------------------*/
+.characteristicsTitle,
+.reviewsTitle {
+  font-size: 1.5em;
+  color: #debcf8;
+  margin-bottom: 0.83333em;
+}
+
+.characteristicsText,
+.characteristicsTable {
+  font-size: 0.875em;
+  color: #444444;
+  margin-bottom: 1.42857em;
+}
+
+.characteristicsTable {
+  display: table;
+  width: 100%;
+  border-spacing: 0.3125em 0.625em;
+}
+
+.characteristicsRow {
+  display: table-row;
+}
+
+.characteristicsCell {
+  display: table-cell;
+  vertical-align: top;
+  width: 50%;
+}
+
+.characteristicsImage {
+  width: 120px;
+}
+
+.characteristicsCell:last-child {
+  color: #757575;
+}
+
+.reviewsNumber {
+  font-size: 0.75em;
+  color: #757575;
+}
+
+.wrapReviewsTitle {
+  overflow: hidden;
+}
+.wrapReviewsTitle .reviewsTitle {
+  float: left;
+}
+.wrapReviewsTitle .moreAndLess {
+  float: right;
+  margin-top: 0.3125em;
+  margin-right: 0.3125em;
+}
+
+.cardReviews {
+  overflow: hidden;
+  margin-bottom: 2.8125em;
+}
+
+.cardReviewsAvatar {
+  float: left;
+  margin-right: 2%;
+  width: 20%;
+}
+@media (max-width: 768px) {
+  .cardReviewsAvatar {
+    float: none;
+    width: 100%;
+  }
+}
+
+.cardReviewsTextTop {
+  overflow: hidden;
+  margin-bottom: 0.625em;
+}
+
+.cardReviewsAvatarImage {
+  width: 78px;
+  border-radius: 50%;
+}
+
+.cardReviewsName {
+  float: left;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.85714em;
+}
+
+.cardReviewsDate {
+  float: right;
+  color: #757575;
+  font-size: 0.85714em;
+}
+
+.cardReviewsText {
+  float: left;
+  width: 78%;
+  font-size: 0.875em;
+  line-height: 1.5em;
+}
+@media (max-width: 768px) {
+  .cardReviewsText {
+    float: none;
+    width: 100%;
+  }
+}
+
+.reviewsFormTop {
+  overflow: hidden;
+  margin-bottom: 1.5625em;
+}
+
+.reviewsFormTitle {
+  float: left;
+  margin-top: 0.5em;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .reviewsFormTitle {
+    float: none;
+    margin-bottom: 0.625em;
+  }
+}
+
+.reviewsFormSocial {
+  float: right;
+}
+@media (max-width: 768px) {
+  .reviewsFormSocial {
+    float: none;
+  }
+}
+
+.reviewsSocialLink {
+  color: #d3d3d3;
+  width: 2em;
+  height: 2em;
+  border: 2px solid #d3d3d3;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+}
+.reviewsSocialLink [class^="icon-"] {
+  line-height: 1.625em;
+}
+.reviewsSocialLink:hover {
+  color: #bababa;
+  border-color: #bababa;
+}
+
+.reviewsFormSocialText {
+  display: inline-block;
+  margin-right: 1.5625em;
+}
+
+.reviewsSocialList {
+  display: inline-block;
+}
+
+.reviewsSocialItem {
+  display: inline-block;
+}
+
+.reviewsFormInput,
+.reviewsFormTextarea {
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #505050;
+  width: 48%;
+  display: inline-block;
+  margin-left: -4px;
+  font-size: 0.875em;
+  padding: 0.35714em 0.71429em;
+  line-height: 1.28571em;
+  margin-bottom: 1.07143em;
+}
+.reviewsFormInput:first-child,
+.reviewsFormTextarea:first-child {
+  margin-right: 4%;
+}
+
+@media (max-width: 768px) {
+  .reviewsFormInput {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.reviewsFormTextarea {
+  width: 100%;
+  min-height: 75px;
+}
+
+.reviewsFormInput::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-size: 1.125em;
+  color: #757575;
+}
+
+.reviewsFormInput::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #757575;
+}
+
+.reviewsFormInput:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #757575;
+}
+
+.reviewsFormInput:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #757575;
+}
+
+.reviewsFormInput:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.reviewsFormInput:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.reviewsFormInput:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.reviewsFormInput:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.reviewsFormTextarea::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-size: 1.125em;
+  color: #757575;
+}
+
+.reviewsFormTextarea::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #757575;
+}
+
+.reviewsFormTextarea:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #757575;
+}
+
+.reviewsFormTextarea:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #757575;
+}
+
+.reviewsFormTextarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.reviewsFormTextarea:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.reviewsFormTextarea:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.reviewsFormTextarea:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.reviewsFormSend {
+  box-sizing: border-box;
+  width: 6.66667em;
+  font-size: 1.125em;
+  border: 2px solid #a9ca54;
+  padding: 0.44444em 0;
+  float: right;
+}
+.reviewsFormSend:hover {
+  background: #ffffff;
+  color: #a9ca54;
+}
+@media (max-width: 768px) {
+  .reviewsFormSend {
+    float: none;
+    width: 100%;
+  }
+}
+
 /*------------------ Footer ------------------*/
 .mainFooter {
   background: url("../image/footerBg.png") bottom right no-repeat;

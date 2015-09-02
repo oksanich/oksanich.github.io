@@ -82,13 +82,6 @@ img{
   }
 }
 
-.wrapTitleDecorFull{
-  overflow: inherit;
-  @media (max-width: 992px) {
-    overflow: hidden;
-  }
-}
-
 .textBlock{
   color: $gray2;
   font-size: em(14px, 16px);
