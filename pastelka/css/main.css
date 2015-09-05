@@ -1735,7 +1735,7 @@ img {
   height: 0.75em;
   background: url("../image/decor/decor_2.png") -5px repeat-x;
   position: absolute;
-  top: 0.13889em;
+  top: 0.22222em;
 }
 @media (max-width: 768px) {
   .wrapTitleDecor .titleDecor:before, .wrapTitleDecor .titleDecor:after {
@@ -5486,6 +5486,8 @@ All this is done for any sub-level being entered.
 }
 .wrapArticles .articlesTitle {
   padding-left: 0;
+  color: #b6258f;
+  font-family: Roboto-regular, sans-serif;
 }
 
 .articlesList {
@@ -5537,6 +5539,54 @@ All this is done for any sub-level being entered.
 }
 .articleText:first-child {
   margin-top: 1.07143em;
+}
+
+/*------------------ Delivery ------------------*/
+.wrapDelivery {
+  margin-bottom: 1.875em;
+}
+.wrapDelivery .wrapTitleDecor {
+  text-align: left;
+}
+.wrapDelivery .deliveryTitle {
+  padding-left: 0;
+  color: #b6258f;
+  font-family: Roboto-regular, sans-serif;
+}
+
+.deliveryAbout {
+  color: #757575;
+  font-size: 1.125em;
+  margin-bottom: 1.38889em;
+}
+
+.deliveryType,
+.deliveryAttention,
+.deliveryAttentionBack {
+  margin-bottom: 3.75em;
+}
+
+.deliveryTypeTitle {
+  color: #9951bd;
+  font-size: 1.5em;
+  margin-bottom: 0.41667em;
+}
+
+.deliveryText {
+  font-size: 0.875em;
+  color: #444444;
+  line-height: 1.28571em;
+}
+
+.deliveryPay {
+  color: #9951bd;
+  font-size: 1.5em;
+  margin-bottom: 2.5em;
+  line-height: 1.33333em;
+}
+
+.deliveryTitle {
+  font-size: 2.25em;
 }
 
 /*------------------ Footer ------------------*/

@@ -1,0 +1,50 @@
+/*------------------ Delivery ------------------*/
+
+
+.wrapDelivery{
+  margin-bottom: em(30px, 16px);
+  .wrapTitleDecor{
+    text-align: left;
+  }
+
+  .deliveryTitle{
+    padding-left: 0;
+    color: $primeColor;
+    font-family: $RobotoRegular;
+  }
+}
+
+.deliveryAbout{
+  color: $gray3;
+  font-size: em(18px, 16px);
+  margin-bottom: em(25px, 18px);
+}
+
+.deliveryType,
+.deliveryAttention,
+.deliveryAttentionBack{
+  margin-bottom: em(60px, 16px);
+}
+
+.deliveryTypeTitle{
+  color: $purple1;
+  font-size: em(24px, 16px);
+  margin-bottom: em(10px, 24px);
+}
+
+.deliveryText{
+  font-size: em(14px, 16px);
+  color: $gray1;
+  line-height: em(18px, 14px);
+}
+
+.deliveryPay{
+  color: $purple1;
+  font-size: em(24px, 16px);
+  margin-bottom: em(60px, 24px);
+  line-height: em(32px, 24px);
+}
+
+.deliveryTitle{
+  font-size: em(36px, 16px);
+}
