@@ -5129,7 +5129,8 @@ All this is done for any sub-level being entered.
 }
 
 .checkoutCounter {
-  width: 45px;
+  width: 60px;
+  padding: 10px;
   display: inline-block;
   text-align: center;
   border: 1px solid #d3d3d3;
@@ -5474,6 +5475,68 @@ All this is done for any sub-level being entered.
   .checkoutFormCommentBtn {
     float: none;
   }
+}
+
+/*------------------ Articles ------------------*/
+.wrapArticles {
+  margin-bottom: 1.875em;
+}
+.wrapArticles .wrapTitleDecor {
+  text-align: left;
+}
+.wrapArticles .articlesTitle {
+  padding-left: 0;
+}
+
+.articlesList {
+  margin-bottom: 5.625em;
+}
+
+.articlesLink {
+  font-size: 1.125em;
+  color: #9951bd;
+  line-height: 1.44444em;
+  margin-right: 0.27778em;
+}
+.articlesLink:hover {
+  text-decoration: underline;
+  color: #9951bd;
+}
+
+.articlesNumber {
+  font-size: 1.125em;
+  color: #757575;
+}
+
+.articleSingle {
+  margin-bottom: 5.625em;
+}
+
+.articleSingleTitleLink {
+  color: #9951bd;
+  font-size: 1.875em;
+  margin-bottom: 0.5em;
+}
+.articleSingleTitleLink:hover {
+  color: #9951bd;
+  text-decoration: underline;
+}
+
+.articleSingleImage {
+  max-width: 320px;
+  margin-right: 1.25em;
+  margin-bottom: 1.875em;
+  float: left;
+}
+
+.articleText {
+  font-size: 0.875em;
+  color: #444444;
+  margin-bottom: 0.9375em;
+  line-height: 1.42857em;
+}
+.articleText:first-child {
+  margin-top: 1.07143em;
 }
 
 /*------------------ Footer ------------------*/

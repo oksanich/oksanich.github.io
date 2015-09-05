@@ -1,0 +1,63 @@
+/*------------------ Articles ------------------*/
+
+.wrapArticles{
+  margin-bottom: em(30px, 16px);
+  .wrapTitleDecor{
+    text-align: left;
+  }
+
+  .articlesTitle{
+    padding-left: 0;
+  }
+}
+
+.articlesList{
+  margin-bottom: em(90px, 16px);
+}
+
+.articlesLink{
+  font-size: em(18px, 16px);
+  color: $purple1;
+  line-height: em(26px, 18px);
+  margin-right: em(5px, 18px);
+  &:hover{
+    text-decoration: underline;
+    color: $purple1;
+  }
+}
+
+.articlesNumber{
+  font-size: em(18px, 16px);
+  color: $gray3;
+}
+
+.articleSingle{
+  margin-bottom: em(90px, 16px);
+}
+
+.articleSingleTitleLink{
+  color: $purple1;
+  font-size: em(30px, 16px);
+  margin-bottom: em(15px, 30px);
+  &:hover{
+    color: $purple1;
+    text-decoration: underline;
+  }
+}
+
+.articleSingleImage{
+  max-width: 320px;
+  margin-right: em(20px, 16px);
+  margin-bottom: em(30px, 16px);
+  float: left;
+}
+
+.articleText{
+  font-size: em(14px, 16px);
+  color: $gray1;
+  margin-bottom: em(15px, 16px);
+  line-height: em(20px, 14px);
+  &:first-child{
+    margin-top: em(15px, 14px);
+  }
+}
