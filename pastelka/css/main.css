@@ -57,13 +57,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*------------------ Bootstrap-skin ------------------*/
 /*------------------ Breadcrumbs ------------------*/
 .modalFormEnterBtn, .modalNotRegisterBtn, .feedbackBtn, .filterButton, .productInfoCartBtn,
-.catalogProductCartBtn, .productInfoBtn, .productCardBtn, .productCardBtnNotify, .reviewsFormSend, .footerRightChatBtn {
+.catalogProductCartBtn, .productInfoBtn, .productCardBtn, .productCardBtnNotify, .reviewsFormSend, .backBuyBtn, .checkoutCommentBtn, .footerRightChatBtn {
   color: #ffffff;
   background: #a9ca54;
   display: inline-block;
 }
 .modalFormEnterBtn:hover, .modalNotRegisterBtn:hover, .feedbackBtn:hover, .filterButton:hover, .productInfoCartBtn:hover,
-.catalogProductCartBtn:hover, .productInfoBtn:hover, .productCardBtn:hover, .productCardBtnNotify:hover, .reviewsFormSend:hover, .footerRightChatBtn:hover {
+.catalogProductCartBtn:hover, .productInfoBtn:hover, .productCardBtn:hover, .productCardBtnNotify:hover, .reviewsFormSend:hover, .backBuyBtn:hover, .checkoutCommentBtn:hover, .footerRightChatBtn:hover {
   color: #e6e6e6;
   background: #9fc441;
 }
@@ -1760,6 +1760,7 @@ img {
 .wrapBreadcrumb .breadcrumb {
   background: none;
   font-size: 0.875em;
+  padding-left: 0 !important;
 }
 .wrapBreadcrumb .breadcrumbItem {
   color: #444444;
@@ -4438,7 +4439,7 @@ All this is done for any sub-level being entered.
   text-align: left;
 }
 .wrapProductCard .productCardTitle {
-  padding-left: 0.41667em;
+  padding-left: 0;
 }
 
 /*------------------ Product-card-top ------------------*/
@@ -4460,23 +4461,6 @@ All this is done for any sub-level being entered.
   margin-bottom: 0.9375em;
 }
 
-@media (max-width: 768px) {
-  .productAdvantagesList {
-    display: none;
-  }
-}
-
-.productAdvantagesIcon [class^="icon-"] {
-  font-size: 3.75em;
-  color: #9951bd;
-}
-.productAdvantagesIcon .icon-discount {
-  position: relative;
-}
-.productAdvantagesIcon .icon-discount [class^="path"] {
-  color: #9951bd;
-}
-
 .productAdvantagesItem {
   width: 16%;
   display: inline-block;
@@ -4488,9 +4472,38 @@ All this is done for any sub-level being entered.
 .productAdvantagesItem:first-child {
   margin-left: 0;
 }
+@media (max-width: 768px) {
+  .productAdvantagesItem {
+    margin: 0 0 0.625em 0;
+    width: 100%;
+  }
+}
 
-.productAdvantagesText {
+.productAdvantagesLink .productAdvantagesIcon [class^="icon-"] {
+  font-size: 3.75em;
+  color: #9951bd;
+}
+@media (max-width: 768px) {
+  .productAdvantagesLink .productAdvantagesIcon {
+    font-size: 0.5em;
+  }
+}
+.productAdvantagesLink .productAdvantagesText {
+  color: #444444;
   font-size: 0.75em;
+}
+@media (max-width: 768px) {
+  .productAdvantagesLink .productAdvantagesText {
+    font-size: 1em;
+  }
+}
+.productAdvantagesLink:hover .productAdvantagesIcon [class^="icon-"] {
+  opacity: .7;
+}
+@media (max-width: 768px) {
+  .productAdvantagesLink:hover .productAdvantagesText {
+    text-decoration: underline;
+  }
 }
 
 .productCardRowLink {
@@ -4932,6 +4945,534 @@ All this is done for any sub-level being entered.
   .reviewsFormSend {
     float: none;
     width: 100%;
+  }
+}
+
+/*------------------ Checkout ------------------*/
+.wrapCheckout {
+  margin-bottom: 1.875em;
+}
+.wrapCheckout .wrapTitleDecor {
+  text-align: left;
+}
+.wrapCheckout .checkoutTitle {
+  padding-left: 0;
+}
+
+.checkoutFormTitle {
+  color: #b6258f;
+  font-size: 1.875em;
+  margin-bottom: 0.66667em;
+}
+
+.checkoutProducts {
+  margin-bottom: 1.875em;
+}
+
+.checkoutProduct {
+  padding: 0.9375em 0.625em;
+  border-bottom: 1px solid #d3d3d3;
+  box-sizing: border-box;
+}
+.checkoutProduct:nth-child(even) {
+  background: #eeeeee;
+}
+.checkoutProduct:first-child {
+  border-top: 1px solid #d3d3d3;
+}
+.checkoutProduct:last-child {
+  margin-bottom: 1.25em;
+}
+
+.checkoutProductCell {
+  display: inline-block;
+  margin-left: -4px;
+  vertical-align: top;
+  margin-right: 1%;
+}
+.checkoutProductCell:last-child {
+  margin-right: 0;
+}
+
+.checkoutProductTitleLink {
+  font-size: 1em;
+  color: #b6258f;
+  line-height: 1.25em;
+  margin-bottom: 7px;
+  display: block;
+}
+.checkoutProductTitleLink:hover {
+  color: #8c1c6e;
+}
+
+.checkoutProductArticle {
+  color: #a1a1a1;
+  font-size: 0.75em;
+  margin-bottom: 0.58333em;
+}
+
+.checkoutProductType {
+  color: #444444;
+  font-size: 0.875em;
+}
+
+.checkoutProductImage {
+  width: 15%;
+}
+@media (max-width: 768px) {
+  .checkoutProductImage {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 0.625em;
+  }
+}
+.checkoutProductImage .checkoutImage {
+  max-width: 150px;
+}
+
+.checkoutProductAbout {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .checkoutProductAbout {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.625em;
+  }
+}
+
+.checkoutProductCount {
+  width: 8%;
+}
+@media (max-width: 768px) {
+  .checkoutProductCount {
+    width: 32%;
+  }
+}
+
+.checkoutProductPrice {
+  width: 15%;
+  vertical-align: bottom;
+  margin-bottom: 3.375em;
+}
+@media (max-width: 1200px) {
+  .checkoutProductPrice {
+    margin-bottom: 2.75em;
+  }
+}
+@media (max-width: 768px) {
+  .checkoutProductPrice {
+    width: 32%;
+    text-align: center;
+    margin-bottom: 2.625em;
+  }
+}
+
+.checkoutProductBasket {
+  width: 8%;
+  padding-top: 2.5em;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .checkoutProductBasket {
+    width: 32%;
+  }
+}
+
+.checkoutBasket {
+  display: inline-block;
+  vertical-align: middle;
+}
+.checkoutBasket [class^="icon-"] {
+  font-size: 2.25em;
+  color: #757575;
+}
+.checkoutBasket [class^="icon-"]:hover {
+  color: #5c5c5c;
+}
+
+.checkoutPrice {
+  font-size: 1.5em;
+  font-family: Roboto-medium, sans-serif;
+}
+@media (max-width: 992px) {
+  .checkoutPrice {
+    font-size: 1em;
+  }
+}
+
+.checkoutPriceOld {
+  text-decoration: line-through;
+  margin-bottom: 0.625em;
+  color: #757575;
+}
+
+.checkoutPriceNow {
+  color: #9951bd;
+}
+
+.checkoutCounterBtn {
+  color: #b6258f;
+  border: none;
+  background: none;
+  outline: none;
+  display: inline-block;
+  width: 100%;
+}
+.checkoutCounterBtn:hover {
+  color: #8c1c6e;
+}
+
+.wrapCheckoutCounter {
+  text-align: center;
+}
+
+.checkoutCounter {
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  border-top: 2px solid #d3d3d3;
+  font-size: 1.875em;
+  margin: 0.23333em 0 0.33333em;
+}
+
+.checkoutProductBottom .productAdvantages {
+  width: 60%;
+  margin-right: 1%;
+  display: inline-block;
+  vertical-align: top;
+}
+@media (min-width: 1200px) {
+  .checkoutProductBottom .productAdvantages {
+    width: 62%;
+  }
+}
+@media (max-width: 992px) {
+  .checkoutProductBottom .productAdvantages {
+    width: 100%;
+    margin-bottom: 1.25em;
+  }
+}
+.checkoutProductBottom .productAdvantagesIcon [class^="icon-"] {
+  font-size: 2.625em;
+}
+
+.checkoutProductTotal {
+  width: 31%;
+  display: inline-block;
+  margin-left: -4px;
+}
+.checkoutProductTotal div {
+  margin-bottom: 10px;
+}
+@media (max-width: 992px) {
+  .checkoutProductTotal {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.checkoutProductTotal {
+  font-size: 1.5em;
+}
+@media (max-width: 992px) {
+  .checkoutProductTotal {
+    font-size: 1.125em;
+  }
+}
+
+.checkoutTotalText {
+  width: 110px;
+  margin-right: 15px;
+  display: inline-block;
+  text-align: right;
+}
+@media (max-width: 992px) {
+  .checkoutTotalText {
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  .checkoutTotalText {
+    margin-right: 20px;
+  }
+}
+
+.checkoutTotalNumber,
+.checkoutSaleNumber,
+.checkoutPayNumber {
+  color: #9951bd;
+}
+
+.wrapBackBuyBtn {
+  margin-bottom: 2.1875em;
+}
+
+.backBuyBtn {
+  border: none;
+  font-size: 1.125em;
+  background: #757575;
+  padding: 0.44444em 0.83333em;
+}
+.backBuyBtn:hover {
+  background: #5c5c5c;
+}
+
+.checkoutFormContact,
+.checkoutFormAddress {
+  display: table;
+  border-spacing: 0 0.83333em;
+  font-size: 1.125em;
+  width: 100%;
+}
+
+.checkoutFormContactRow,
+.checkoutFormAddressRow {
+  display: table-row;
+}
+
+.checkoutFormContactCell,
+.checkoutFormAddressCell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.checkoutFormContactCell:first-child,
+.checkoutFormAddressCell:first-child {
+  width: 100px;
+  color: #757575;
+}
+
+.checkoutFormContactInput,
+.checkoutFormAddressInput {
+  border: 1px solid #d3d3d3;
+  border-top: 2px solid #d3d3d3;
+  box-sizing: border-box;
+  padding: 0.27778em 0.83333em;
+  font-size: 1.125em;
+  color: #505050;
+  width: 345px;
+}
+@media (max-width: 768px) {
+  .checkoutFormContactInput,
+  .checkoutFormAddressInput {
+    width: 100%;
+  }
+}
+
+.checkoutDeliveryItem input[type="radio"],
+.checkoutPaymentItem input[type="radio"] {
+  display: none;
+}
+
+.checkoutPseudoRadio {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #a1a1a1;
+  background: #ffffff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: relative;
+  top: 5px;
+  margin-right: 0.625em;
+}
+
+.checkoutPseudoRadioIn {
+  display: none;
+}
+
+.checkoutDeliveryItem input[type="radio"]:checked + label > .checkoutPseudoRadio > .checkoutPseudoRadioIn,
+.checkoutPaymentItem input[type="radio"]:checked + label > .checkoutPseudoRadio > .checkoutPseudoRadioIn {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  background: #444444;
+  border-radius: 50%;
+  float: left;
+}
+
+.checkoutDeliveryItem {
+  margin-bottom: 0.9375em;
+}
+
+.checkoutDeliveryLabel {
+  font-size: 1.125em;
+}
+
+.checkoutFormTitleSub {
+  color: #757575;
+  font-size: 1.125em;
+  margin-bottom: 0.83333em;
+}
+
+.checkoutFormPayment {
+  display: table;
+  width: 100%;
+  border-spacing: 0 20px;
+}
+@media (max-width: 768px) {
+  .checkoutFormPayment {
+    display: block;
+  }
+}
+
+.checkoutPaymentRow {
+  display: table-row;
+}
+@media (max-width: 768px) {
+  .checkoutPaymentRow {
+    display: block;
+    margin-bottom: 0.9375em;
+  }
+}
+
+.checkoutPaymentCell {
+  display: table-cell;
+}
+.checkoutPaymentCell:first-child {
+  width: 300px;
+}
+@media (max-width: 768px) {
+  .checkoutPaymentCell {
+    display: block;
+  }
+  .checkoutPaymentCell:first-child {
+    width: 100%;
+    margin-bottom: 0.9375em;
+  }
+}
+
+.checkoutPaymentItem {
+  font-size: 1.125em;
+}
+
+.paymentText {
+  font-size: 0.875em;
+  color: #757575;
+}
+
+.wrapCheckoutFormComment {
+  width: 100%;
+  max-width: 620px;
+}
+
+.checkoutCommentTextarea {
+  margin-bottom: 1.25em;
+}
+
+.checkoutTextarea {
+  width: 100%;
+  min-height: 140px;
+  padding: 0.625em 0.9375em;
+  resize: horizontal;
+  border: 1px solid #d3d3d3;
+  border-top: 2px solid #d3d3d3;
+  box-sizing: border-box;
+}
+
+.checkoutTextarea::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-size: 1.125em;
+  color: #505050;
+}
+
+.checkoutTextarea::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #505050;
+}
+
+.checkoutTextarea:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #505050;
+}
+
+.checkoutTextarea:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #505050;
+}
+
+.checkoutTextarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.checkoutTextarea:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.checkoutTextarea:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.checkoutTextarea:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.checkoutCommentLabel {
+  font-size: 0.875em;
+  color: #9951bd;
+  margin-bottom: 0.71429em;
+}
+
+.checkoutCommentBtn {
+  background: #b6258f;
+  border: none;
+  font-size: 1.125em;
+  padding: 0.44444em 0.83333em;
+}
+.checkoutCommentBtn:hover {
+  background: #8c1c6e;
+}
+
+.checkoutCommentCheckbox {
+  border: 1px solid #d3d3d3;
+  border-top: 2px solid #d3d3d3;
+  width: 17px;
+  height: 17px;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+}
+
+.checkoutCommentItem input[type="checkbox"] {
+  display: none;
+}
+
+.checkoutCommentItem input[type="checkbox"]:checked + label > .checkoutCommentCheckbox {
+  background: url("../image/decor/checked.png") 1px 2px no-repeat;
+}
+
+.checkoutFormCommentCheckboxes {
+  overflow: hidden;
+}
+
+.checkoutFormCommentCheckboxes {
+  float: left;
+}
+@media (max-width: 768px) {
+  .checkoutFormCommentCheckboxes {
+    float: none;
+  }
+}
+
+.checkoutFormCommentBtn {
+  float: right;
+  margin-top: 1.25em;
+}
+@media (max-width: 768px) {
+  .checkoutFormCommentBtn {
+    float: none;
   }
 }
 
