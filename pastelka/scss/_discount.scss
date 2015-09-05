@@ -1,0 +1,60 @@
+/*------------------ Discount ------------------*/
+
+.wrapDiscount{
+  margin-bottom: em(30px, 16px);
+  .wrapTitleDecor{
+    text-align: left;
+  }
+
+  .discountTitle{
+    padding-left: 0;
+    color: $primeColor;
+    font-family: $RobotoRegular;
+  }
+}
+
+.discountAbout{
+  color: $gray3;
+  font-size: em(18px, 16px);
+  margin-bottom: em(25px, 18px);
+}
+
+.discountTypes{
+  margin-bottom: em(80px, 16px);
+}
+
+.discountType{
+  color: $gray1;
+  font-size: em(18px, 16px);
+  margin-bottom: em(20px, 18px);
+}
+
+.discountTypesSum,
+.discountTextSum{
+  color: $purple1;
+}
+
+.discountTypesPercent,
+.discountTextPercent{
+  color: $primeColor;
+  font-family: $RobotoBold;
+}
+
+.discountText{
+  font-size: em(14px, 16px);
+  color: $gray3;
+  line-height: em(18px, 14px);
+  margin-bottom: em(60px, 14px);
+}
+
+.discountTextBold{
+  font-size: em(18px, 14px);
+  color: $gray1;
+}
+
+.discountTitleSub{
+  color: $purple1;
+  font-size: em(24px, 16px);
+  margin-bottom: em(40px, 24px);
+}
+

@@ -5589,6 +5589,64 @@ All this is done for any sub-level being entered.
   font-size: 2.25em;
 }
 
+/*------------------ Discount ------------------*/
+.wrapDiscount {
+  margin-bottom: 1.875em;
+}
+.wrapDiscount .wrapTitleDecor {
+  text-align: left;
+}
+.wrapDiscount .discountTitle {
+  padding-left: 0;
+  color: #b6258f;
+  font-family: Roboto-regular, sans-serif;
+}
+
+.discountAbout {
+  color: #757575;
+  font-size: 1.125em;
+  margin-bottom: 1.38889em;
+}
+
+.discountTypes {
+  margin-bottom: 5em;
+}
+
+.discountType {
+  color: #444444;
+  font-size: 1.125em;
+  margin-bottom: 1.11111em;
+}
+
+.discountTypesSum,
+.discountTextSum {
+  color: #9951bd;
+}
+
+.discountTypesPercent,
+.discountTextPercent {
+  color: #b6258f;
+  font-family: Roboto-bold, sans-serif;
+}
+
+.discountText {
+  font-size: 0.875em;
+  color: #757575;
+  line-height: 1.28571em;
+  margin-bottom: 4.28571em;
+}
+
+.discountTextBold {
+  font-size: 1.28571em;
+  color: #444444;
+}
+
+.discountTitleSub {
+  color: #9951bd;
+  font-size: 1.5em;
+  margin-bottom: 1.66667em;
+}
+
 /*------------------ Footer ------------------*/
 .mainFooter {
   background: url("../image/footerBg.png") bottom right no-repeat;
