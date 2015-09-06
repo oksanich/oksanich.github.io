@@ -6124,6 +6124,34 @@ All this is done for any sub-level being entered.
   }
 }
 
+/*------------------ News Single ------------------*/
+.newsSinglePageImages {
+  text-align: center;
+}
+.newsSinglePageImages .newsSingleImage {
+  max-width: inherit;
+  margin-bottom: 2.5em;
+}
+.newsSinglePageImages .newsSingleImageLess {
+  max-width: 600px;
+}
+
+.newsSinglePageBtnAll {
+  float: left;
+}
+
+.newsSinglePageBtnNext {
+  width: 230px;
+}
+
+@media (max-width: 768px) {
+  .newsSinglePageBtnNext,
+  .newsSinglePageBtnAll {
+    width: 100%;
+    margin-bottom: 0.625em;
+  }
+}
+
 /*------------------ Footer ------------------*/
 .mainFooter {
   background: url("../image/footerBg.png") bottom right no-repeat;

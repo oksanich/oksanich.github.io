@@ -1,0 +1,28 @@
+/*------------------ News Single ------------------*/
+
+.newsSinglePageImages{
+  text-align: center;
+  .newsSingleImage{
+    max-width: inherit;
+    margin-bottom: em(40px, 16px);
+  }
+  .newsSingleImageLess{
+    max-width: 600px;
+  }
+}
+
+.newsSinglePageBtnAll{
+  float: left;
+}
+
+.newsSinglePageBtnNext{
+  width: 230px;
+}
+
+.newsSinglePageBtnNext,
+.newsSinglePageBtnAll{
+  @media (max-width: 768px) {
+    width: 100%;
+      margin-bottom: em(10px, 16px);
+  }
+}
