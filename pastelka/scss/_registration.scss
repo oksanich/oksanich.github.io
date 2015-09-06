@@ -49,6 +49,17 @@
 }
 
 .registerFormBlock2{
+  .registerFormRow{
+    &:last-child{
+      .registerFormCell:first-child {
+        vertical-align: top;
+        line-height: 2em;
+      }
+    }
+  }
+}
+
+.registerFormBlock3{
   margin-bottom: em(40px, 16px);
 }
 

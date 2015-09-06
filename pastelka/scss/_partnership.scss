@@ -1,0 +1,59 @@
+/*------------------ Partnership ------------------*/
+
+.wrapPartnership{
+  margin-bottom: em(30px, 16px);
+  .wrapTitleDecor{
+    text-align: left;
+  }
+
+  .partnershipTitle{
+    padding-left: 0;
+    font-family: $RobotoRegular;
+    color: $primeColor;
+  }
+}
+
+.partnershipForm{
+  .registerFormRow{
+    &:last-child{
+      .registerFormCell:first-child {
+        vertical-align: top;
+        line-height: 2em;
+      }
+    }
+  }
+}
+
+.wrapPartnershipText{
+  margin-bottom: em(60px, 16px);
+}
+
+.partnershipText,
+.partnershipTextList{
+  font-size: em(18px, 16px);
+  color: $gray1;
+  margin-bottom: em(20px, 18px);
+  line-height: em(22px, 18px);
+}
+
+.partnershipTitleSub{
+  font-size: em(18px, 16px);
+  text-transform: uppercase;
+  color: $purple1;
+  font-family: $RobotoMedium;
+}
+
+.partnershipTextMail{
+  color: $primeColor;
+  &:hover{
+    color: darken($primeColor, 10%);
+  }
+}
+
+.partnershipForm{
+  .checkoutFormCommentBtn{
+    float: none;
+    text-align: right;
+    max-width: 455px;
+  }
+}

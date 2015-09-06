@@ -260,7 +260,8 @@
 .checkoutFormAddress,
 .registerFormBlock1,
 .registerFormBlock2,
-.registerFormBlock3{
+.registerFormBlock3,
+.partnershipForm{
   display: table;
   border-spacing: 0 em(15px, 18px);
   font-size: em(18px, 16px);
@@ -279,7 +280,7 @@
   display: table-cell;
   vertical-align: middle;
   &:first-child{
-    width: 100px;
+    width: 110px;
     color: $gray3;
   }
 }
