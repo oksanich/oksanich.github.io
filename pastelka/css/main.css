@@ -57,13 +57,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*------------------ Bootstrap-skin ------------------*/
 /*------------------ Breadcrumbs ------------------*/
 .modalFormEnterBtn, .modalNotRegisterBtn, .feedbackBtn, .filterButton, .productInfoCartBtn,
-.catalogProductCartBtn, .productInfoBtn, .productCardBtn, .productCardBtnNotify, .reviewsFormSend, .backBuyBtn, .checkoutCommentBtn, .registerSuccessfulBtn, .footerRightChatBtn {
+.catalogProductCartBtn, .productInfoBtn, .productCardBtn, .productCardBtnNotify, .reviewsFormSend, .backBuyBtn, .checkoutCommentBtn, .registerSuccessfulBtn, .newsSinglePageBtn, .footerRightChatBtn {
   color: #ffffff;
   background: #a9ca54;
   display: inline-block;
 }
 .modalFormEnterBtn:hover, .modalNotRegisterBtn:hover, .feedbackBtn:hover, .filterButton:hover, .productInfoCartBtn:hover,
-.catalogProductCartBtn:hover, .productInfoBtn:hover, .productCardBtn:hover, .productCardBtnNotify:hover, .reviewsFormSend:hover, .backBuyBtn:hover, .checkoutCommentBtn:hover, .registerSuccessfulBtn:hover, .footerRightChatBtn:hover {
+.catalogProductCartBtn:hover, .productInfoBtn:hover, .productCardBtn:hover, .productCardBtnNotify:hover, .reviewsFormSend:hover, .backBuyBtn:hover, .checkoutCommentBtn:hover, .registerSuccessfulBtn:hover, .newsSinglePageBtn:hover, .footerRightChatBtn:hover {
   color: #e6e6e6;
   background: #9fc441;
 }
@@ -5988,6 +5988,140 @@ All this is done for any sub-level being entered.
   float: none;
   text-align: right;
   max-width: 455px;
+}
+
+/*------------------ News Page ------------------*/
+.wrapNewsPage {
+  margin-bottom: 1.875em;
+}
+.wrapNewsPage .wrapTitleDecor {
+  text-align: left;
+}
+.wrapNewsPage .newsPageTitle {
+  padding-left: 0;
+  font-family: Roboto-regular, sans-serif;
+  color: #b6258f;
+}
+
+.newsSinglePage {
+  margin-bottom: 3.75em;
+}
+@media (max-width: 768px) {
+  .newsSinglePage {
+    margin-bottom: 2em;
+  }
+}
+
+.newsSinglePageImage {
+  display: inline-block;
+  margin-right: 2%;
+  width: 23%;
+  vertical-align: top;
+}
+@media (max-width: 768px) {
+  .newsSinglePageImage {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 0.9375em;
+  }
+}
+.newsSinglePageImage .newsPageImage {
+  max-width: 250px;
+}
+
+.newsSinglePageContent {
+  width: 75%;
+  display: inline-block;
+  margin-left: -4px;
+}
+@media (max-width: 768px) {
+  .newsSinglePageContent {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.newsSinglePageTop {
+  overflow: hidden;
+  margin-bottom: 0.9375em;
+}
+
+.newsSinglePageTitle {
+  font-size: 1.125em;
+  color: #9951bd;
+  text-transform: uppercase;
+  float: left;
+  font-family: Myriadpro-semibold, sans-serif;
+  max-width: 70%;
+}
+@media (max-width: 768px) {
+  .newsSinglePageTitle {
+    max-width: 100%;
+  }
+}
+
+.newsSinglePageDate {
+  font-size: 1.125em;
+  color: #757575;
+  float: right;
+  padding-bottom: 0.55556em;
+  width: 140px;
+  border-bottom: 1px solid #e5c3ff;
+  text-align: right;
+}
+
+.newsSinglePageText {
+  font-size: 1.125em;
+  color: #444444;
+  line-height: 1.375em;
+  margin-bottom: 1.11111em;
+}
+
+.newsSinglePageBottom {
+  text-align: right;
+}
+
+.newsSinglePageBtn {
+  color: #b6258f;
+  background: #d3d3d3;
+  border: none;
+  width: 150px;
+  font-size: 1.125em;
+  padding: 0.55556em 0 0.66667em;
+}
+.newsSinglePageBtn:hover {
+  color: #b6258f;
+  background: #bababa;
+}
+.newsSinglePageBtn [class^="icon"] {
+  position: relative;
+  top: 2px;
+}
+
+.newsSinglePageMiddleImages {
+  text-align: center;
+  margin-bottom: 1.25em;
+}
+
+.newsSinglePageMiddleImage {
+  max-width: 150px;
+  width: 24%;
+  margin-right: 1%;
+  margin-left: -4px;
+}
+.newsSinglePageMiddleImage:first-child {
+  margin-left: 0;
+}
+.newsSinglePageMiddleImage:last-child {
+  margin-right: 0;
+}
+@media (max-width: 768px) {
+  .newsSinglePageMiddleImage {
+    max-width: 150px;
+    width: 48%;
+    text-align: center;
+  }
 }
 
 /*------------------ Footer ------------------*/
