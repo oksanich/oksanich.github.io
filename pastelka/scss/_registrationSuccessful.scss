@@ -1,0 +1,44 @@
+/*------------------ Register Successful ------------------*/
+
+.wrapRegisterSuccessful{
+  margin-bottom: em(30px, 16px);
+  .wrapTitleDecor{
+    text-align: left;
+  }
+
+  .registerTitle{
+    padding-left: 0;
+    font-family: $RobotoRegular;
+    color: $primeColor;
+  }
+}
+
+.registerSuccessful{
+  padding: em(70px, 16px) 0 em(70px, 16px);
+  text-align: center;
+  @media (min-width: 768px) {
+    padding: em(70px, 16px) 0 em(400px, 16px);
+    background: url("../image/registrationSuccessfulBg.png") center bottom no-repeat;
+  }
+}
+
+.registerSuccessfulTitle{
+  font-size: em(36px, 16px);
+  color: $purple1;
+  margin-bottom: em(50px, 36px);
+}
+
+.registerSuccessfulText{
+  font-size: em(24px, 16px);
+  color: $gray3;
+  margin-bottom: em(60px, 24px);
+}
+
+.registerSuccessfulBtn{
+  @extend %btnFull;
+  border: none;
+  width: 300px;
+  text-align: center;
+  font-size: em(18px, 16px);
+  padding: em(10px, 18px) 0;
+}

@@ -57,13 +57,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*------------------ Bootstrap-skin ------------------*/
 /*------------------ Breadcrumbs ------------------*/
 .modalFormEnterBtn, .modalNotRegisterBtn, .feedbackBtn, .filterButton, .productInfoCartBtn,
-.catalogProductCartBtn, .productInfoBtn, .productCardBtn, .productCardBtnNotify, .reviewsFormSend, .backBuyBtn, .checkoutCommentBtn, .footerRightChatBtn {
+.catalogProductCartBtn, .productInfoBtn, .productCardBtn, .productCardBtnNotify, .reviewsFormSend, .backBuyBtn, .checkoutCommentBtn, .registerSuccessfulBtn, .footerRightChatBtn {
   color: #ffffff;
   background: #a9ca54;
   display: inline-block;
 }
 .modalFormEnterBtn:hover, .modalNotRegisterBtn:hover, .feedbackBtn:hover, .filterButton:hover, .productInfoCartBtn:hover,
-.catalogProductCartBtn:hover, .productInfoBtn:hover, .productCardBtn:hover, .productCardBtnNotify:hover, .reviewsFormSend:hover, .backBuyBtn:hover, .checkoutCommentBtn:hover, .footerRightChatBtn:hover {
+.catalogProductCartBtn:hover, .productInfoBtn:hover, .productCardBtn:hover, .productCardBtnNotify:hover, .reviewsFormSend:hover, .backBuyBtn:hover, .checkoutCommentBtn:hover, .registerSuccessfulBtn:hover, .footerRightChatBtn:hover {
   color: #e6e6e6;
   background: #9fc441;
 }
@@ -5888,6 +5888,50 @@ All this is done for any sub-level being entered.
 .registerFormBottom .checkoutFormCommentBtn {
   float: none;
   margin-top: 0;
+}
+
+/*------------------ Register Successful ------------------*/
+.wrapRegisterSuccessful {
+  margin-bottom: 1.875em;
+}
+.wrapRegisterSuccessful .wrapTitleDecor {
+  text-align: left;
+}
+.wrapRegisterSuccessful .registerTitle {
+  padding-left: 0;
+  font-family: Roboto-regular, sans-serif;
+  color: #b6258f;
+}
+
+.registerSuccessful {
+  padding: 4.375em 0 4.375em;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .registerSuccessful {
+    padding: 4.375em 0 25em;
+    background: url("../image/registrationSuccessfulBg.png") center bottom no-repeat;
+  }
+}
+
+.registerSuccessfulTitle {
+  font-size: 2.25em;
+  color: #9951bd;
+  margin-bottom: 1.38889em;
+}
+
+.registerSuccessfulText {
+  font-size: 1.5em;
+  color: #757575;
+  margin-bottom: 2.5em;
+}
+
+.registerSuccessfulBtn {
+  border: none;
+  width: 300px;
+  text-align: center;
+  font-size: 1.125em;
+  padding: 0.55556em 0;
 }
 
 /*------------------ Footer ------------------*/
