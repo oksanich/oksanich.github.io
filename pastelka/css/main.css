@@ -4440,6 +4440,8 @@ All this is done for any sub-level being entered.
 }
 .wrapProductCard .productCardTitle {
   padding-left: 0;
+  font-family: Roboto-regular, sans-serif;
+  color: #b6258f;
 }
 
 /*------------------ Product-card-top ------------------*/
@@ -4957,6 +4959,8 @@ All this is done for any sub-level being entered.
 }
 .wrapCheckout .checkoutTitle {
   padding-left: 0;
+  font-family: Roboto-regular, sans-serif;
+  color: #b6258f;
 }
 
 .checkoutFormTitle {
@@ -5222,7 +5226,10 @@ All this is done for any sub-level being entered.
 }
 
 .checkoutFormContact,
-.checkoutFormAddress {
+.checkoutFormAddress,
+.registerFormBlock1,
+.registerFormBlock2,
+.registerFormBlock3 {
   display: table;
   border-spacing: 0 0.83333em;
   font-size: 1.125em;
@@ -5230,23 +5237,27 @@ All this is done for any sub-level being entered.
 }
 
 .checkoutFormContactRow,
-.checkoutFormAddressRow {
+.checkoutFormAddressRow,
+.registerFormRow {
   display: table-row;
 }
 
 .checkoutFormContactCell,
-.checkoutFormAddressCell {
+.checkoutFormAddressCell,
+.registerFormCell {
   display: table-cell;
   vertical-align: middle;
 }
 .checkoutFormContactCell:first-child,
-.checkoutFormAddressCell:first-child {
+.checkoutFormAddressCell:first-child,
+.registerFormCell:first-child {
   width: 100px;
   color: #757575;
 }
 
 .checkoutFormContactInput,
-.checkoutFormAddressInput {
+.checkoutFormAddressInput,
+.registerFormInput {
   border: 1px solid #d3d3d3;
   border-top: 2px solid #d3d3d3;
   box-sizing: border-box;
@@ -5254,11 +5265,19 @@ All this is done for any sub-level being entered.
   font-size: 1.125em;
   color: #505050;
   width: 345px;
+  background: #eeeeee;
+}
+.checkoutFormContactInput:focus,
+.checkoutFormAddressInput:focus,
+.registerFormInput:focus {
+  background: #ffffff;
 }
 @media (max-width: 768px) {
   .checkoutFormContactInput,
-  .checkoutFormAddressInput {
+  .checkoutFormAddressInput,
+  .registerFormInput {
     width: 100%;
+    font-size: 0.875em;
   }
 }
 
@@ -5377,7 +5396,7 @@ All this is done for any sub-level being entered.
 .checkoutTextarea::-webkit-input-placeholder {
   opacity: 1;
   transition: opacity 0.3s ease;
-  font-size: 1.125em;
+  font-size: 0.875em;
   color: #505050;
 }
 
@@ -5726,6 +5745,149 @@ All this is done for any sub-level being entered.
 .aboutTitle {
   font-size: 1.875em;
   margin-bottom: 1.2em;
+}
+
+/*------------------ Register ------------------*/
+.wrapRegister {
+  margin-bottom: 1.875em;
+}
+.wrapRegister .wrapTitleDecor {
+  text-align: left;
+}
+.wrapRegister .registerTitle {
+  padding-left: 0;
+  font-family: Roboto-regular, sans-serif;
+  color: #b6258f;
+}
+
+@media (min-width: 992px) {
+  .wrapRegister .container {
+    background: url("../image/registerBg.png") top right no-repeat;
+  }
+}
+
+.registerTextMain {
+  font-size: 0.875em;
+  color: #757575;
+}
+.registerTextMain:before {
+  content: '*';
+  color: #b6258f;
+  position: relative;
+  margin-right: 5px;
+}
+
+.registerFormNameImportant:after {
+  content: '*';
+  color: #b6258f;
+  position: relative;
+  margin-left: 5px;
+  font-size: 0.77778em;
+}
+
+.registerFormBlock1,
+.registerFormBlock2 {
+  margin-bottom: 3.75em;
+}
+
+.registerFormBlock2 {
+  margin-bottom: 2.5em;
+}
+
+.registerFormTextarea {
+  height: 110px;
+  resize: vertical;
+}
+
+.registerFormSelect .btn-default {
+  border: 1px solid #d3d3d3;
+  border-top: 2px solid #d3d3d3;
+  box-sizing: border-box;
+  padding: 0.27778em 0.83333em;
+  font-size: 1.125em;
+  color: #505050;
+  width: 345px;
+  background: #eeeeee;
+  border-radius: 0;
+}
+.registerFormSelect .btn-default:focus {
+  background: #ffffff;
+}
+@media (max-width: 768px) {
+  .registerFormSelect .btn-default {
+    width: 100%;
+    font-size: 0.875em;
+  }
+}
+.registerFormSelect .dropdown-menu {
+  border-radius: 0;
+  width: 345px;
+}
+@media (max-width: 768px) {
+  .registerFormSelect .dropdown-menu {
+    width: 100%;
+  }
+}
+.registerFormSelect .caret {
+  margin-top: -5px !important;
+  border-top: 10px dashed;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  right: 8px !important;
+  display: block !important;
+}
+.registerFormSelect .selectpicker {
+  outline: none;
+}
+.registerFormSelect .bootstrap-select .dropdown-toggle:focus {
+  outline: none !important;
+}
+@media (max-width: 768px) {
+  .registerFormSelect .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100%;
+  }
+}
+
+.wrapCaptcha {
+  margin-bottom: 0.9375em;
+}
+
+.captchaText {
+  font-size: 0.875em;
+  color: #444444;
+  margin-bottom: 1.42857em;
+}
+
+.captchaImage {
+  width: 140px;
+  height: 50px;
+  background: #99b84d;
+  display: inline-block;
+}
+
+.captchaReload {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+  margin-right: 10px;
+  color: #444444;
+}
+
+.captchaInput {
+  width: 140px;
+  height: 50px;
+  border: 1px solid #d3d3d3;
+  border-top: 2px solid #d3d3d3;
+  box-sizing: border-box;
+  font-size: 1.125em;
+  color: #505050;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.registerFormBottom .checkoutFormCommentBtn {
+  float: none;
+  margin-top: 0;
 }
 
 /*------------------ Footer ------------------*/

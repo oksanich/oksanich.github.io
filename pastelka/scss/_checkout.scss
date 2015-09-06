@@ -8,6 +8,8 @@
 
   .checkoutTitle{
     padding-left: 0;
+    font-family: $RobotoRegular;
+    color: $primeColor;
   }
 }
 
@@ -255,7 +257,10 @@
 }
 
 .checkoutFormContact,
-.checkoutFormAddress{
+.checkoutFormAddress,
+.registerFormBlock1,
+.registerFormBlock2,
+.registerFormBlock3{
   display: table;
   border-spacing: 0 em(15px, 18px);
   font-size: em(18px, 16px);
@@ -263,12 +268,14 @@
 }
 
 .checkoutFormContactRow,
-.checkoutFormAddressRow{
+.checkoutFormAddressRow,
+.registerFormRow{
   display: table-row;
 }
 
 .checkoutFormContactCell,
-.checkoutFormAddressCell{
+.checkoutFormAddressCell,
+.registerFormCell{
   display: table-cell;
   vertical-align: middle;
   &:first-child{
@@ -278,7 +285,8 @@
 }
 
 .checkoutFormContactInput,
-.checkoutFormAddressInput {
+.checkoutFormAddressInput,
+.registerFormInput{
   border: 1px solid #d3d3d3;
   border-top: 2px solid #d3d3d3;
   box-sizing: border-box;
@@ -286,9 +294,13 @@
   font-size: em(18px, 16px);
   color: $gray2;
   width: 345px;
-
+  background: $gray5;
+  &:focus{
+    background: $white;
+  }
   @media (max-width: 768px) {
     width: 100%;
+    font-size: em(14px, 16px);
   }
 }
 
@@ -401,7 +413,7 @@
 .checkoutTextarea::-webkit-input-placeholder{
   opacity: 1;
   transition: opacity 0.3s ease;
-  font-size: em(18px, 16px);
+  font-size: em(14px, 16px);
   color: $gray2;
 }
 

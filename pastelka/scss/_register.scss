@@ -1,0 +1,154 @@
+/*------------------ Register ------------------*/
+
+.wrapRegister{
+  margin-bottom: em(30px, 16px);
+  .wrapTitleDecor{
+    text-align: left;
+  }
+
+  .registerTitle{
+    padding-left: 0;
+    font-family: $RobotoRegular;
+    color: $primeColor;
+  }
+}
+
+.wrapRegister{
+  .container{
+    @media (min-width: 992px) {
+      background: url("../image/registerBg.png") top right no-repeat;
+    }
+  }
+
+}
+
+.registerTextMain{
+  font-size: em(14px, 16px);
+  color: $gray3;
+  &:before{
+    content: '*';
+    color: $primeColor;
+    position: relative;
+    margin-right: 5px;
+  }
+}
+
+.registerFormNameImportant{
+  &:after{
+    content: '*';
+    color: $primeColor;
+    position: relative;
+    margin-left: 5px;
+    font-size: em(14px, 18px);
+  }
+}
+
+.registerFormBlock1,
+.registerFormBlock2{
+  margin-bottom: em(60px, 16px);
+}
+
+.registerFormBlock2{
+  margin-bottom: em(40px, 16px);
+}
+
+.registerFormTextarea{
+  height: 110px;
+  resize: vertical;
+}
+
+.registerFormSelect{
+  .btn-default{
+    border: 1px solid #d3d3d3;
+    border-top: 2px solid #d3d3d3;
+    box-sizing: border-box;
+    padding: em(5px, 18px) em(15px, 18px);
+    font-size: em(18px, 16px);
+    color: $gray2;
+    width: 345px;
+    background: $gray5;
+    border-radius: 0;
+    &:focus{
+      background: $white;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      font-size: em(14px, 16px);
+    }
+  }
+
+  .dropdown-menu{
+    border-radius: 0;
+    width: 345px;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .caret {
+    margin-top: -5px!important;
+    border-top: 10px dashed;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    right: 8px!important;
+    display: block!important;
+  }
+
+  .selectpicker{
+    outline: none;
+  }
+
+  .bootstrap-select .dropdown-toggle:focus {
+    outline: none!important;
+  }
+
+  .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.wrapCaptcha{
+  margin-bottom: em(15px, 16px);
+}
+
+.captchaText{
+  font-size: em(14px, 16px);
+  color: $gray1;
+  margin-bottom: em(20px, 14px);
+}
+
+.captchaImage{
+  width: 140px;
+  height: 50px;
+  background: $green1;
+  display: inline-block;
+}
+
+.captchaReload{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+  margin-right: 10px;
+  color: $gray1;
+}
+
+.captchaInput{
+  width: 140px;
+  height: 50px;
+  border: 1px solid #d3d3d3;
+  border-top: 2px solid #d3d3d3;
+  box-sizing: border-box;
+  font-size: em(18px, 16px);
+  color: $gray2;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.registerFormBottom{
+  .checkoutFormCommentBtn {
+    float: none;
+    margin-top: 0;
+  }
+}
