@@ -1,18 +1,5 @@
 /*------------------ Partnership ------------------*/
 
-.wrapPartnership{
-  margin-bottom: em(30px, 16px);
-  .wrapTitleDecor{
-    text-align: left;
-  }
-
-  .partnershipTitle{
-    padding-left: 0;
-    font-family: $RobotoRegular;
-    color: $primeColor;
-  }
-}
-
 .partnershipForm{
   .registerFormRow{
     &:last-child{

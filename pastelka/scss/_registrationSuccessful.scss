@@ -1,18 +1,5 @@
 /*------------------ Register Successful ------------------*/
 
-.wrapRegisterSuccessful{
-  margin-bottom: em(30px, 16px);
-  .wrapTitleDecor{
-    text-align: left;
-  }
-
-  .registerTitle{
-    padding-left: 0;
-    font-family: $RobotoRegular;
-    color: $primeColor;
-  }
-}
-
 .registerSuccessful{
   padding: em(70px, 16px) 0 em(70px, 16px);
   text-align: center;

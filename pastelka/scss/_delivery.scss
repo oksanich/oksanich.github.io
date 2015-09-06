@@ -1,18 +1,5 @@
 /*------------------ Delivery ------------------*/
 
-.wrapDelivery{
-  margin-bottom: em(30px, 16px);
-  .wrapTitleDecor{
-    text-align: left;
-  }
-
-  .deliveryTitle{
-    padding-left: 0;
-    color: $primeColor;
-    font-family: $RobotoRegular;
-  }
-}
-
 .deliveryAbout{
   color: $gray3;
   font-size: em(18px, 16px);

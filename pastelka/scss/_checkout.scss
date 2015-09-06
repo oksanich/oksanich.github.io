@@ -1,18 +1,5 @@
 /*------------------ Checkout ------------------*/
 
-.wrapCheckout{
-  margin-bottom: em(30px, 16px);
-  .wrapTitleDecor{
-    text-align: left;
-  }
-
-  .checkoutTitle{
-    padding-left: 0;
-    font-family: $RobotoRegular;
-    color: $primeColor;
-  }
-}
-
 .checkoutFormTitle{
   color: $primeColor;
   font-size: em(30px, 16px);
@@ -261,7 +248,8 @@
 .registerFormBlock1,
 .registerFormBlock2,
 .registerFormBlock3,
-.partnershipForm{
+.partnershipForm,
+.paymentPageForm{
   display: table;
   border-spacing: 0 em(15px, 18px);
   font-size: em(18px, 16px);

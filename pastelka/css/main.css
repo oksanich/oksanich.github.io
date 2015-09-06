@@ -1756,6 +1756,16 @@ img {
   border-top: 2px solid #b6258f;
 }
 
+.wrapPageTitle {
+  margin-bottom: 1.875em;
+  text-align: left;
+}
+.wrapPageTitle .pageTitle {
+  padding-left: 0;
+  font-family: Roboto-regular, sans-serif;
+  color: #b6258f;
+}
+
 /*------------------ Bread crumbs ------------------*/
 .wrapBreadcrumb .breadcrumb {
   background: none;
@@ -4432,18 +4442,6 @@ All this is done for any sub-level being entered.
   }
 }
 /*------------------ Product-card ------------------*/
-.wrapProductCard {
-  margin-bottom: 1.875em;
-}
-.wrapProductCard .wrapTitleDecor {
-  text-align: left;
-}
-.wrapProductCard .productCardTitle {
-  padding-left: 0;
-  font-family: Roboto-regular, sans-serif;
-  color: #b6258f;
-}
-
 /*------------------ Product-card-top ------------------*/
 .productCardTop {
   overflow: hidden;
@@ -4951,18 +4949,6 @@ All this is done for any sub-level being entered.
 }
 
 /*------------------ Checkout ------------------*/
-.wrapCheckout {
-  margin-bottom: 1.875em;
-}
-.wrapCheckout .wrapTitleDecor {
-  text-align: left;
-}
-.wrapCheckout .checkoutTitle {
-  padding-left: 0;
-  font-family: Roboto-regular, sans-serif;
-  color: #b6258f;
-}
-
 .checkoutFormTitle {
   color: #b6258f;
   font-size: 1.875em;
@@ -5230,7 +5216,8 @@ All this is done for any sub-level being entered.
 .registerFormBlock1,
 .registerFormBlock2,
 .registerFormBlock3,
-.partnershipForm {
+.partnershipForm,
+.paymentPageForm {
   display: table;
   border-spacing: 0 0.83333em;
   font-size: 1.125em;
@@ -5498,18 +5485,6 @@ All this is done for any sub-level being entered.
 }
 
 /*------------------ Articles ------------------*/
-.wrapArticles {
-  margin-bottom: 1.875em;
-}
-.wrapArticles .wrapTitleDecor {
-  text-align: left;
-}
-.wrapArticles .articlesTitle {
-  padding-left: 0;
-  color: #b6258f;
-  font-family: Roboto-regular, sans-serif;
-}
-
 .articlesList {
   margin-bottom: 5.625em;
 }
@@ -5567,18 +5542,6 @@ All this is done for any sub-level being entered.
 }
 
 /*------------------ Delivery ------------------*/
-.wrapDelivery {
-  margin-bottom: 1.875em;
-}
-.wrapDelivery .wrapTitleDecor {
-  text-align: left;
-}
-.wrapDelivery .deliveryTitle {
-  padding-left: 0;
-  color: #b6258f;
-  font-family: Roboto-regular, sans-serif;
-}
-
 .deliveryAbout {
   color: #757575;
   font-size: 1.125em;
@@ -5615,18 +5578,6 @@ All this is done for any sub-level being entered.
 }
 
 /*------------------ Discount ------------------*/
-.wrapDiscount {
-  margin-bottom: 1.875em;
-}
-.wrapDiscount .wrapTitleDecor {
-  text-align: left;
-}
-.wrapDiscount .discountTitle {
-  padding-left: 0;
-  color: #b6258f;
-  font-family: Roboto-regular, sans-serif;
-}
-
 .discountAbout {
   color: #757575;
   font-size: 1.125em;
@@ -5673,18 +5624,6 @@ All this is done for any sub-level being entered.
 }
 
 /*------------------ About ------------------*/
-.wrapAbout {
-  margin-bottom: 1.875em;
-}
-.wrapAbout .wrapTitleDecor {
-  text-align: left;
-}
-.wrapAbout .aboutTitle {
-  padding-left: 0;
-  color: #b6258f;
-  font-family: Roboto-regular, sans-serif;
-}
-
 .aboutImageBig {
   max-width: 380px;
 }
@@ -5749,18 +5688,6 @@ All this is done for any sub-level being entered.
 }
 
 /*------------------ Register ------------------*/
-.wrapRegister {
-  margin-bottom: 1.875em;
-}
-.wrapRegister .wrapTitleDecor {
-  text-align: left;
-}
-.wrapRegister .registerTitle {
-  padding-left: 0;
-  font-family: Roboto-regular, sans-serif;
-  color: #b6258f;
-}
-
 @media (min-width: 992px) {
   .wrapRegister .container {
     background: url("../image/registerBg.png") top right no-repeat;
@@ -5897,18 +5824,6 @@ All this is done for any sub-level being entered.
 }
 
 /*------------------ Register Successful ------------------*/
-.wrapRegisterSuccessful {
-  margin-bottom: 1.875em;
-}
-.wrapRegisterSuccessful .wrapTitleDecor {
-  text-align: left;
-}
-.wrapRegisterSuccessful .registerTitle {
-  padding-left: 0;
-  font-family: Roboto-regular, sans-serif;
-  color: #b6258f;
-}
-
 .registerSuccessful {
   padding: 4.375em 0 4.375em;
   text-align: center;
@@ -5941,18 +5856,6 @@ All this is done for any sub-level being entered.
 }
 
 /*------------------ Partnership ------------------*/
-.wrapPartnership {
-  margin-bottom: 1.875em;
-}
-.wrapPartnership .wrapTitleDecor {
-  text-align: left;
-}
-.wrapPartnership .partnershipTitle {
-  padding-left: 0;
-  font-family: Roboto-regular, sans-serif;
-  color: #b6258f;
-}
-
 .partnershipForm .registerFormRow:last-child .registerFormCell:first-child {
   vertical-align: top;
   line-height: 2em;
@@ -5991,18 +5894,6 @@ All this is done for any sub-level being entered.
 }
 
 /*------------------ News Page ------------------*/
-.wrapNewsPage {
-  margin-bottom: 1.875em;
-}
-.wrapNewsPage .wrapTitleDecor {
-  text-align: left;
-}
-.wrapNewsPage .newsPageTitle {
-  padding-left: 0;
-  font-family: Roboto-regular, sans-serif;
-  color: #b6258f;
-}
-
 .newsSinglePage {
   margin-bottom: 3.75em;
 }
@@ -6153,18 +6044,6 @@ All this is done for any sub-level being entered.
 }
 
 /*------------------ Contact Page ------------------*/
-.wrapContactPage {
-  margin-bottom: 1.875em;
-}
-.wrapContactPage .wrapTitleDecor {
-  text-align: left;
-}
-.wrapContactPage .contactPageTitle {
-  padding-left: 0;
-  font-family: Roboto-regular, sans-serif;
-  color: #b6258f;
-}
-
 @media (min-width: 1200px) {
   .contactPageContent {
     background: url("../image/contactBg.png") bottom right no-repeat;
@@ -6238,6 +6117,65 @@ All this is done for any sub-level being entered.
   width: 69px;
   height: 35px;
   margin-top: 7px;
+}
+
+/*------------------ Payment ------------------*/
+.paymentPageTopText {
+  font-size: 1.125em;
+  color: #757575;
+  margin-bottom: 1.11111em;
+}
+
+.paymentPageType {
+  margin-bottom: 3.75em;
+}
+@media (max-width: 768px) {
+  .paymentPageType {
+    margin-bottom: 1.875em;
+  }
+}
+
+.paymentPageTypeTitle {
+  font-size: 1.5em;
+  color: #9951bd;
+  margin-bottom: 0.625em;
+}
+
+.paymentPageImage {
+  max-width: 220px;
+}
+
+.paymentPageTypeImage {
+  display: inline-block;
+  width: 25%;
+  margin-right: 2%;
+  vertical-align: top;
+}
+@media (max-width: 768px) {
+  .paymentPageTypeImage {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 0.9375em;
+  }
+}
+
+.paymentPageTypeContent {
+  display: inline-block;
+  width: 73%;
+  margin-left: -4px;
+}
+@media (max-width: 768px) {
+  .paymentPageTypeContent {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.paymentPageTypeText {
+  font-size: 0.875em;
+  color: #444444;
+  line-height: 1.28571em;
 }
 
 /*------------------ Footer ------------------*/

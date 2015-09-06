@@ -1,18 +1,5 @@
 /*------------------ Discount ------------------*/
 
-.wrapDiscount{
-  margin-bottom: em(30px, 16px);
-  .wrapTitleDecor{
-    text-align: left;
-  }
-
-  .discountTitle{
-    padding-left: 0;
-    color: $primeColor;
-    font-family: $RobotoRegular;
-  }
-}
-
 .discountAbout{
   color: $gray3;
   font-size: em(18px, 16px);

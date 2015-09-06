@@ -28,8 +28,8 @@
       <file leaf-file-name="_global.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pastelka/scss/_global.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3333333" vertical-offset="619" max-vertical-offset="1470">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="16" />
+            <state vertical-scroll-proportion="-29.291666" vertical-offset="692" max-vertical-offset="1605">
+              <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -48,28 +48,38 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pastelka/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="570">
-              <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+            <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="585">
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pastelka/contact.html">
+      <file leaf-file-name="_checkout.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pastelka/scss/_checkout.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.791666" vertical-offset="20672" max-vertical-offset="23925">
-              <caret line="1405" column="70" selection-start-line="1405" selection-start-column="49" selection-end-line="1405" selection-end-column="70" />
+            <state vertical-scroll-proportion="-11.25" vertical-offset="3630" max-vertical-offset="7605">
+              <caret line="260" column="17" selection-start-line="260" selection-start-column="17" selection-end-line="260" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_contact.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pastelka/scss/_contact.scss">
+      <file leaf-file-name="payment.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pastelka/payment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30066815" vertical-offset="0" max-vertical-offset="1395">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state vertical-scroll-proportion="-24.916666" vertical-offset="21137" max-vertical-offset="24405">
+              <caret line="1449" column="189" selection-start-line="1449" selection-start-column="189" selection-end-line="1449" selection-end-column="189" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_payment.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pastelka/scss/_payment.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.18374164" vertical-offset="0" max-vertical-offset="898">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -80,9 +90,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pastelka/scss/_novelty.scss" />
-        <option value="$PROJECT_DIR$/pastelka/scss/_news.scss" />
-        <option value="$PROJECT_DIR$/pastelka/scss/_modal.scss" />
         <option value="$PROJECT_DIR$/fantik/scss/_pagination.scss" />
         <option value="$PROJECT_DIR$/pastelka/scss/_variables.scss" />
         <option value="$PROJECT_DIR$/pastelka/scss/_pagination.scss" />
@@ -98,39 +105,42 @@
         <option value="$PROJECT_DIR$/pastelka/scss/_breadcrumbs.scss" />
         <option value="$PROJECT_DIR$/pastelka/js/main.js" />
         <option value="$PROJECT_DIR$/pastelka/css/main.css" />
-        <option value="$PROJECT_DIR$/pastelka/сheckout.html" />
-        <option value="$PROJECT_DIR$/pastelka/product-card.html" />
-        <option value="$PROJECT_DIR$/pastelka/articles.html" />
-        <option value="$PROJECT_DIR$/pastelka/scss/_global.scss" />
-        <option value="$PROJECT_DIR$/pastelka/delivery.html" />
-        <option value="$PROJECT_DIR$/pastelka/discount.html" />
-        <option value="$PROJECT_DIR$/pastelka/scss/_delivery.scss" />
-        <option value="$PROJECT_DIR$/pastelka/scss/_discount.scss" />
-        <option value="$PROJECT_DIR$/pastelka/scss/_articles.scss" />
         <option value="$PROJECT_DIR$/pastelka/scss/about.html" />
-        <option value="$PROJECT_DIR$/pastelka/scss/_about.scss" />
-        <option value="$PROJECT_DIR$/pastelka/about.html" />
-        <option value="$PROJECT_DIR$/pastelka/scss/_productCard.scss" />
         <option value="$PROJECT_DIR$/pastelka/catalog.html" />
         <option value="$PROJECT_DIR$/pastelka/register.html" />
         <option value="$PROJECT_DIR$/pastelka/scss/_register.scss" />
         <option value="$PROJECT_DIR$/pastelka/scss/registerSuccessful.html" />
         <option value="$PROJECT_DIR$/pastelka/registerSuccessful.html" />
-        <option value="$PROJECT_DIR$/pastelka/registrationSuccessful.html" />
-        <option value="$PROJECT_DIR$/pastelka/scss/_registrationSuccessful.scss" />
         <option value="$PROJECT_DIR$/pastelka/scss/partnership.html" />
-        <option value="$PROJECT_DIR$/pastelka/scss/_registration.scss" />
-        <option value="$PROJECT_DIR$/pastelka/scss/_checkout.scss" />
-        <option value="$PROJECT_DIR$/pastelka/partnership.html" />
-        <option value="$PROJECT_DIR$/pastelka/scss/_partnership.scss" />
-        <option value="$PROJECT_DIR$/pastelka/scss/_newsPage.scss" />
-        <option value="$PROJECT_DIR$/pastelka/news.html" />
         <option value="$PROJECT_DIR$/pastelka/_newsSingle.html" />
         <option value="$PROJECT_DIR$/pastelka/scss/_newsSingle.scss" />
+        <option value="$PROJECT_DIR$/pastelka/scss/_contact.scss" />
+        <option value="$PROJECT_DIR$/pastelka/about.html" />
+        <option value="$PROJECT_DIR$/pastelka/scss/_about.scss" />
+        <option value="$PROJECT_DIR$/pastelka/articles.html" />
+        <option value="$PROJECT_DIR$/pastelka/scss/_articles.scss" />
+        <option value="$PROJECT_DIR$/pastelka/delivery.html" />
+        <option value="$PROJECT_DIR$/pastelka/scss/_delivery.scss" />
+        <option value="$PROJECT_DIR$/pastelka/scss/_global.scss" />
+        <option value="$PROJECT_DIR$/pastelka/discount.html" />
+        <option value="$PROJECT_DIR$/pastelka/scss/_discount.scss" />
+        <option value="$PROJECT_DIR$/pastelka/news.html" />
+        <option value="$PROJECT_DIR$/pastelka/scss/_newsPage.scss" />
         <option value="$PROJECT_DIR$/pastelka/newsSingle.html" />
+        <option value="$PROJECT_DIR$/pastelka/partnership.html" />
+        <option value="$PROJECT_DIR$/pastelka/scss/_partnership.scss" />
+        <option value="$PROJECT_DIR$/pastelka/product-card.html" />
+        <option value="$PROJECT_DIR$/pastelka/scss/_productCard.scss" />
+        <option value="$PROJECT_DIR$/pastelka/registration.html" />
+        <option value="$PROJECT_DIR$/pastelka/scss/_registration.scss" />
+        <option value="$PROJECT_DIR$/pastelka/scss/_registrationSuccessful.scss" />
+        <option value="$PROJECT_DIR$/pastelka/registrationSuccessful.html" />
         <option value="$PROJECT_DIR$/pastelka/scss/main.scss" />
         <option value="$PROJECT_DIR$/pastelka/contact.html" />
-        <option value="$PROJECT_DIR$/pastelka/scss/_contact.scss" />
+        <option value="$PROJECT_DIR$/pastelka/сheckout.html" />
+        <option value="$PROJECT_DIR$/pastelka/scss/_checkout.scss" />
+        <option value="$PROJECT_DIR$/pastelka/payment.html" />
+        <option value="$PROJECT_DIR$/pastelka/scss/_payment.scss" />
       </list>
     </option>
   </component>
@@ -186,20 +196,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SvitlaHosting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SvitlaHosting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pastelka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -232,28 +228,28 @@
       <recent name="$PROJECT_DIR$/pastelka/scss" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.contact.html">
+  <component name="RunManager" selected="JavaScript Debug.registration.html">
+    <configuration default="false" name="product-card.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/pastelka/product-card.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="false" name="registration.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/pastelka/registration.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="partnership.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/pastelka/partnership.html">
+    <configuration default="false" name="registrationSuccessful.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/pastelka/registrationSuccessful.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="news.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/pastelka/news.html">
+    <configuration default="false" name="сheckout.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/pastelka/сheckout.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="newsSingle.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/pastelka/newsSingle.html">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="contact.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/pastelka/contact.html">
+    <configuration default="false" name="payment.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/pastelka/payment.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
@@ -285,19 +281,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.registration.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.partnership.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.news.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.newsSingle.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.contact.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.product-card.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.registration.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.registrationSuccessful.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.сheckout.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.payment.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.contact.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.newsSingle.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.news.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.partnership.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.registration.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.registration.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.сheckout.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.payment.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.registrationSuccessful.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.product-card.html" />
       </list>
     </recent_temporary>
   </component>
@@ -325,7 +321,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.124423966" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27510917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32751092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -387,20 +383,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fantik/singlePage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28202116" vertical-offset="2010" max-vertical-offset="5430">
-          <caret line="150" column="50" selection-start-line="150" selection-start-column="50" selection-end-line="150" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fantik/scss/_product.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45828438" vertical-offset="735" max-vertical-offset="2895">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="79" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pastelka/scss/_modal.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3877791" vertical-offset="630" max-vertical-offset="1725">
@@ -520,75 +502,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/_global.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3333333" vertical-offset="619" max-vertical-offset="1470">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pastelka/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33257142" vertical-offset="83304" max-vertical-offset="89115">
           <caret line="5573" column="0" selection-start-line="5573" selection-start-column="0" selection-end-line="5573" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/delivery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20681551" vertical-offset="20839" max-vertical-offset="24150">
-          <caret line="1401" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="1604" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/discount.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8813161" vertical-offset="20415" max-vertical-offset="23610">
-          <caret line="1411" column="44" selection-start-line="1411" selection-start-column="28" selection-end-line="1411" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/_discount.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84136313" vertical-offset="139" max-vertical-offset="990">
-          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20681551" vertical-offset="21319" max-vertical-offset="24285">
-          <caret line="1433" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1613" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/_delivery.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.375" vertical-offset="0" max-vertical-offset="810">
-          <caret line="47" column="2" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/_about.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59929496" vertical-offset="75" max-vertical-offset="1170">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/_articles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/_productCard.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19388954" vertical-offset="0" max-vertical-offset="8145">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -598,75 +515,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/product-card.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50881314" vertical-offset="20567" max-vertical-offset="30150">
-          <caret line="1400" column="16" selection-start-line="1400" selection-start-column="16" selection-end-line="1402" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/catalog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33607522" vertical-offset="16124" max-vertical-offset="27075">
-          <caret line="1691" column="36" selection-start-line="1691" selection-start-column="36" selection-end-line="1718" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/сheckout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.5" vertical-offset="26085" max-vertical-offset="29130">
-          <caret line="1767" column="40" selection-start-line="1767" selection-start-column="40" selection-end-line="1769" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pastelka/scss/_catalog.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55097085" vertical-offset="3701" max-vertical-offset="12000">
           <caret line="277" column="2" selection-start-line="277" selection-start-column="2" selection-end-line="283" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/_registrationSuccessful.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28202116" vertical-offset="0" max-vertical-offset="851">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/registrationSuccessful.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2596945" vertical-offset="20644" max-vertical-offset="23445">
-          <caret line="1391" column="42" selection-start-line="1391" selection-start-column="20" selection-end-line="1391" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/registration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.7097533" vertical-offset="20239" max-vertical-offset="25320">
-          <caret line="1503" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="1682" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/_registration.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3172738" vertical-offset="480" max-vertical-offset="2550">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="59" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/articles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2575024" vertical-offset="20629" max-vertical-offset="25665">
-          <caret line="1393" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="1705" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/_partnership.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="975">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="13" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -679,22 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/_checkout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46770602" vertical-offset="4095" max-vertical-offset="7785">
-          <caret line="301" column="2" selection-start-line="301" selection-start-column="2" selection-end-line="304" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.96659243" vertical-offset="21977" max-vertical-offset="25800">
-          <caret line="1523" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="1714" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pastelka/scss/_news.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
@@ -703,58 +539,239 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/partnership.html">
+    <entry file="file://$PROJECT_DIR$/pastelka/scss/_about.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0833335" vertical-offset="20749" max-vertical-offset="24285">
-          <caret line="1393" column="42" selection-start-line="1393" selection-start-column="28" selection-end-line="1393" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
+          <caret line="0" column="47" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/newsSingle.html">
+    <entry file="file://$PROJECT_DIR$/pastelka/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8685969" vertical-offset="20730" max-vertical-offset="23880">
-          <caret line="1434" column="22" selection-start-line="1434" selection-start-column="22" selection-end-line="1434" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.4131403" vertical-offset="20524" max-vertical-offset="24285">
+          <caret line="1393" column="56" selection-start-line="1393" selection-start-column="56" selection-end-line="1393" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/_newsSingle.scss">
+    <entry file="file://$PROJECT_DIR$/pastelka/scss/_articles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+          <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/articles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61358577" vertical-offset="20359" max-vertical-offset="25665">
+          <caret line="1394" column="65" selection-start-line="1394" selection-start-column="65" selection-end-line="1394" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/catalog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3975501" vertical-offset="15200" max-vertical-offset="27075">
+          <caret line="1694" column="74" selection-start-line="1694" selection-start-column="74" selection-end-line="1694" selection-end-column="74" />
+          <folding>
+            <element signature="n#div#2;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/delivery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.458334" vertical-offset="20404" max-vertical-offset="24150">
+          <caret line="1393" column="56" selection-start-line="1393" selection-start-column="56" selection-end-line="1393" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/scss/_global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.291666" vertical-offset="692" max-vertical-offset="1605">
+          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/scss/_delivery.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="898">
+          <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/discount.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55122495" vertical-offset="20415" max-vertical-offset="23610">
+          <caret line="1394" column="65" selection-start-line="1394" selection-start-column="65" selection-end-line="1394" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/scss/_discount.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="898">
+          <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pastelka/scss/_newsPage.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.033407573" vertical-offset="0" max-vertical-offset="1965">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="13" selection-end-column="1" />
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1770">
+          <caret line="0" column="51" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/main.scss">
+    <entry file="file://$PROJECT_DIR$/pastelka/newsSingle.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="570">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        <state vertical-scroll-proportion="-18.75" vertical-offset="20460" max-vertical-offset="23880">
+          <caret line="1394" column="65" selection-start-line="1394" selection-start-column="65" selection-end-line="1394" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/contact.html">
+    <entry file="file://$PROJECT_DIR$/pastelka/news.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.791666" vertical-offset="20672" max-vertical-offset="23925">
-          <caret line="1405" column="70" selection-start-line="1405" selection-start-column="49" selection-end-line="1405" selection-end-column="70" />
+        <state vertical-scroll-proportion="0.114699334" vertical-offset="20792" max-vertical-offset="25800">
+          <caret line="1393" column="56" selection-start-line="1393" selection-start-column="56" selection-end-line="1393" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/scss/_newsSingle.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2505568" vertical-offset="0" max-vertical-offset="898">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/partnership.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21269488" vertical-offset="20704" max-vertical-offset="24285">
+          <caret line="1393" column="56" selection-start-line="1393" selection-start-column="56" selection-end-line="1393" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/product-card.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4988864" vertical-offset="20567" max-vertical-offset="30150">
+          <caret line="1401" column="68" selection-start-line="1401" selection-start-column="68" selection-end-line="1401" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/scss/_partnership.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="898">
+          <caret line="0" column="53" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/scss/_productCard.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="7965">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/scss/_registrationSuccessful.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="0" column="61" selection-start-line="0" selection-start-column="61" selection-end-line="0" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/registrationSuccessful.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4298441" vertical-offset="20524" max-vertical-offset="23445">
+          <caret line="1394" column="65" selection-start-line="1394" selection-start-column="65" selection-end-line="1394" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pastelka/scss/_contact.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30066815" vertical-offset="0" max-vertical-offset="1395">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.41759464" vertical-offset="0" max-vertical-offset="1200">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43207127" vertical-offset="21077" max-vertical-offset="23910">
+          <caret line="1431" column="22" selection-start-line="1431" selection-start-column="22" selection-end-line="1431" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/сheckout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8028953" vertical-offset="22274" max-vertical-offset="25455">
+          <caret line="1778" column="14" selection-start-line="1778" selection-start-column="14" selection-end-line="1778" selection-end-column="14" />
+          <folding>
+            <element signature="n#form#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#form#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63028955" vertical-offset="22204" max-vertical-offset="25320">
+          <caret line="1518" column="36" selection-start-line="1518" selection-start-column="36" selection-end-line="1520" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/scss/_registration.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2355">
+          <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="585">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/scss/_checkout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25" vertical-offset="3630" max-vertical-offset="7605">
+          <caret line="260" column="17" selection-start-line="260" selection-start-column="17" selection-end-line="260" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/payment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.916666" vertical-offset="21137" max-vertical-offset="24405">
+          <caret line="1449" column="189" selection-start-line="1449" selection-start-column="189" selection-end-line="1449" selection-end-column="189" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/scss/_payment.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18374164" vertical-offset="0" max-vertical-offset="898">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding />
         </state>
       </provider>

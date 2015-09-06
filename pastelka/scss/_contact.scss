@@ -1,18 +1,5 @@
 /*------------------ Contact Page ------------------*/
 
-.wrapContactPage{
-  margin-bottom: em(30px, 16px);
-  .wrapTitleDecor{
-    text-align: left;
-  }
-
-  .contactPageTitle{
-    padding-left: 0;
-    font-family: $RobotoRegular;
-    color: $primeColor;
-  }
-}
-
 .contactPageContent{
   @media (min-width: 1200px){
     background: url("../image/contactBg.png") bottom right no-repeat;

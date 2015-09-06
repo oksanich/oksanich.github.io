@@ -89,4 +89,13 @@ img{
   border-top: 2px solid $primeColor;
 }
 
+.wrapPageTitle{
+  margin-bottom: em(30px, 16px);
+  text-align: left;
+  .pageTitle{
+    padding-left: 0;
+    font-family: $RobotoRegular;
+    color: $primeColor;
+  }
+}
 

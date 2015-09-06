@@ -1,19 +1,6 @@
 /*------------------ Register ------------------*/
 
 .wrapRegister{
-  margin-bottom: em(30px, 16px);
-  .wrapTitleDecor{
-    text-align: left;
-  }
-
-  .registerTitle{
-    padding-left: 0;
-    font-family: $RobotoRegular;
-    color: $primeColor;
-  }
-}
-
-.wrapRegister{
   .container{
     @media (min-width: 992px) {
       background: url("../image/registerBg.png") top right no-repeat;

@@ -1,18 +1,5 @@
 /*------------------ About ------------------*/
 
-.wrapAbout{
-  margin-bottom: em(30px, 16px);
-  .wrapTitleDecor{
-    text-align: left;
-  }
-
-  .aboutTitle{
-    padding-left: 0;
-    color: $primeColor;
-    font-family: $RobotoRegular;
-  }
-}
-
 .aboutImageBig{
   max-width: 380px;
 }

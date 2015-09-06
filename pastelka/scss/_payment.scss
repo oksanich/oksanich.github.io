@@ -1,0 +1,53 @@
+/*------------------ Payment ------------------*/
+
+.paymentPageTopText{
+  font-size: em(18px, 16px);
+  color: $gray3;
+  margin-bottom: em(20px, 18px);
+}
+
+.paymentPageType{
+  margin-bottom: em(60px, 16px);
+  @media (max-width: 768px){
+    margin-bottom: em(30px, 16px);
+  }
+}
+
+.paymentPageTypeTitle{
+  font-size: em(24px, 16px);
+  color: $purple1;
+  margin-bottom: em(15px, 24px);
+}
+
+.paymentPageImage{
+  max-width: 220px;
+}
+
+.paymentPageTypeImage{
+  display: inline-block;
+  width: 25%;
+  margin-right: 2%;
+  vertical-align: top;
+  @media (max-width: 768px){
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: em(15px, 16px);
+  }
+}
+
+.paymentPageTypeContent{
+  display: inline-block;
+  width: 73%;
+  margin-left: -4px;
+  @media (max-width: 768px){
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.paymentPageTypeText{
+  font-size: em(14px, 16px);
+  color: $gray1;
+  line-height: em(18px, 14px);
+}

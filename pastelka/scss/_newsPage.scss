@@ -1,18 +1,5 @@
 /*------------------ News Page ------------------*/
 
-.wrapNewsPage{
-  margin-bottom: em(30px, 16px);
-  .wrapTitleDecor{
-    text-align: left;
-  }
-
-  .newsPageTitle{
-    padding-left: 0;
-    font-family: $RobotoRegular;
-    color: $primeColor;
-  }
-}
-
 .newsSinglePage{
   margin-bottom: em(60px, 16px);
   @media (max-width: 768px) {
