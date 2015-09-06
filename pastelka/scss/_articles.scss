@@ -52,6 +52,9 @@
   margin-right: em(20px, 16px);
   margin-bottom: em(30px, 16px);
   float: left;
+  @media (max-width: 768px) {
+    float: none;
+  }
 }
 
 .articleText{

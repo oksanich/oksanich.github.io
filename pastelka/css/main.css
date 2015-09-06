@@ -5530,6 +5530,11 @@ All this is done for any sub-level being entered.
   margin-bottom: 1.875em;
   float: left;
 }
+@media (max-width: 768px) {
+  .articleSingleImage {
+    float: none;
+  }
+}
 
 .articleText {
   font-size: 0.875em;
@@ -5645,6 +5650,82 @@ All this is done for any sub-level being entered.
   color: #9951bd;
   font-size: 1.5em;
   margin-bottom: 1.66667em;
+}
+
+/*------------------ About ------------------*/
+.wrapAbout {
+  margin-bottom: 1.875em;
+}
+.wrapAbout .wrapTitleDecor {
+  text-align: left;
+}
+.wrapAbout .aboutTitle {
+  padding-left: 0;
+  color: #b6258f;
+  font-family: Roboto-regular, sans-serif;
+}
+
+.aboutImageBig {
+  max-width: 380px;
+}
+
+.aboutImage {
+  max-width: 320px;
+}
+
+.aboutImageLeft {
+  float: left;
+  margin-right: 1.25em;
+  margin-bottom: 1.875em;
+}
+@media (max-width: 768px) {
+  .aboutImageLeft {
+    float: none;
+    margin-right: 0;
+  }
+}
+
+.aboutImageRight {
+  float: right;
+  margin-left: 1.25em;
+  margin-bottom: 1.875em;
+}
+@media (max-width: 768px) {
+  .aboutImageRight {
+    float: none;
+    margin-left: 0;
+  }
+}
+
+.aboutBlock {
+  overflow: hidden;
+  margin-bottom: 2.5em;
+}
+
+.aboutBlockTitle {
+  color: #9951bd;
+  font-size: 1.125em;
+  margin-bottom: 0.83333em;
+}
+
+.aboutText {
+  font-size: 0.875em;
+  color: #444444;
+  margin-bottom: 0.9375em;
+  line-height: 1.42857em;
+}
+
+.aboutTextLink {
+  color: #b6258f;
+}
+.aboutTextLink:hover {
+  color: #b6258f;
+  text-decoration: underline;
+}
+
+.aboutTitle {
+  font-size: 1.875em;
+  margin-bottom: 1.2em;
 }
 
 /*------------------ Footer ------------------*/

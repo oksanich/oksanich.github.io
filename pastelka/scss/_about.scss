@@ -1,0 +1,73 @@
+/*------------------ About ------------------*/
+
+.wrapAbout{
+  margin-bottom: em(30px, 16px);
+  .wrapTitleDecor{
+    text-align: left;
+  }
+
+  .aboutTitle{
+    padding-left: 0;
+    color: $primeColor;
+    font-family: $RobotoRegular;
+  }
+}
+
+.aboutImageBig{
+  max-width: 380px;
+}
+
+.aboutImage{
+  max-width: 320px;
+}
+
+.aboutImageLeft{
+  float: left;
+  margin-right: em(20px, 16px);
+  margin-bottom: em(30px, 16px);
+  @media (max-width: 768px) {
+    float: none;
+    margin-right: 0;
+  }
+}
+
+.aboutImageRight{
+  float: right;
+  margin-left: em(20px, 16px);
+  margin-bottom: em(30px, 16px);
+  @media (max-width: 768px) {
+    float: none;
+    margin-left: 0;
+  }
+}
+
+.aboutBlock{
+  overflow: hidden;
+  margin-bottom: em(40px, 16px);
+}
+
+.aboutBlockTitle{
+  color: $purple1;
+  font-size: em(18px, 16px);
+  margin-bottom: em(15px, 18px);
+}
+
+.aboutText{
+  font-size: em(14px, 16px);
+  color: $gray1;
+  margin-bottom: em(15px, 16px);
+  line-height: em(20px, 14px);
+}
+
+.aboutTextLink{
+  color: $primeColor;
+  &:hover{
+    color: $primeColor;
+    text-decoration: underline;
+  }
+}
+
+.aboutTitle{
+  font-size: em(30px, 16px);
+  margin-bottom: em(36px, 30px);
+}
