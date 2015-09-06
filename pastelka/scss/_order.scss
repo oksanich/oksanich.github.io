@@ -1,0 +1,48 @@
+/*------------------ Order ------------------*/
+
+.orderItemText{
+  font-size: em(18px, 16px);
+  color: $gray3;
+  margin-bottom: em(15px, 18px);
+  line-height: em(30px, 18px);
+}
+
+.orderItemNumber{
+  font-size: em(24px, 18px);
+  color: $primeColor;
+}
+
+.orderItemLink{
+  color: $purple1;
+  &:hover{
+    color: $purple1;
+    text-decoration: underline;
+  }
+}
+
+.orderItem{
+  margin-bottom: em(50px, 16px);
+}
+
+.orderItem3{
+  .orderItemImage{
+    max-width: 470px;
+  }
+}
+
+.wrapOrderBottomText{
+  text-align: center;
+  margin-bottom: em(60px, 16px);
+}
+
+.orderBottomText{
+  font-size: em(14px, 16px);
+  color: $gray3;
+  line-height: em(30px, 14px);
+  margin-bottom: em(30px, 14px);
+}
+
+.orderBottomTextBig{
+  color: $purple1;
+  font-size: em(30px, 16px);
+}

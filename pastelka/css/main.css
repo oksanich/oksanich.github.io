@@ -6178,6 +6178,52 @@ All this is done for any sub-level being entered.
   line-height: 1.28571em;
 }
 
+/*------------------ Order ------------------*/
+.orderItemText {
+  font-size: 1.125em;
+  color: #757575;
+  margin-bottom: 0.83333em;
+  line-height: 1.66667em;
+}
+
+.orderItemNumber {
+  font-size: 1.33333em;
+  color: #b6258f;
+}
+
+.orderItemLink {
+  color: #9951bd;
+}
+.orderItemLink:hover {
+  color: #9951bd;
+  text-decoration: underline;
+}
+
+.orderItem {
+  margin-bottom: 3.125em;
+}
+
+.orderItem3 .orderItemImage {
+  max-width: 470px;
+}
+
+.wrapOrderBottomText {
+  text-align: center;
+  margin-bottom: 3.75em;
+}
+
+.orderBottomText {
+  font-size: 0.875em;
+  color: #757575;
+  line-height: 2.14286em;
+  margin-bottom: 2.14286em;
+}
+
+.orderBottomTextBig {
+  color: #9951bd;
+  font-size: 1.875em;
+}
+
 /*------------------ Footer ------------------*/
 .mainFooter {
   background: url("../image/footerBg.png") bottom right no-repeat;
