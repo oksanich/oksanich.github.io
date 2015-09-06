@@ -1,0 +1,55 @@
+/*------------------ Brands ------------------*/
+
+.brandsNamesLink{
+  color: $primeColor;
+  line-height: em(24px, 14px);
+  font-size: em(14px, 16px);
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &:hover{
+    color: $primeColor;
+    text-decoration: underline;
+  }
+}
+
+.brandsText{
+  font-size: em(18px, 16px);
+  color: $gray3;
+  margin-bottom: em(20px, 18px);
+}
+
+.brandsCountries{
+  margin-bottom: em(60px, 16px);
+}
+
+.brandsCountryItem{
+  display: inline-block;
+}
+
+.brandsCountryLink{
+  color: $primeColor;
+  font-size: em(14px, 16px);
+  margin-right: em(20px, 14px);
+  margin-bottom: em(15px, 14px);
+  display: inline-block;
+  &:hover{
+    color: $primeColor;
+    text-decoration: underline;
+  }
+}
+
+.brandsNameTitle{
+  font-size: em(30px, 16px);
+  color: $purple1;
+  margin-bottom: em(20px, 30px);
+}
+
+.wrapBrandsName{
+  margin-bottom: em(65px, 16px);
+  @media (max-width: 768px){
+    text-align: center;
+  }
+}
+

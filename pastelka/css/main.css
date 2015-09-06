@@ -6224,6 +6224,62 @@ All this is done for any sub-level being entered.
   font-size: 1.875em;
 }
 
+/*------------------ Brands ------------------*/
+.brandsNamesLink {
+  color: #b6258f;
+  line-height: 1.71429em;
+  font-size: 0.875em;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.brandsNamesLink:hover {
+  color: #b6258f;
+  text-decoration: underline;
+}
+
+.brandsText {
+  font-size: 1.125em;
+  color: #757575;
+  margin-bottom: 1.11111em;
+}
+
+.brandsCountries {
+  margin-bottom: 3.75em;
+}
+
+.brandsCountryItem {
+  display: inline-block;
+}
+
+.brandsCountryLink {
+  color: #b6258f;
+  font-size: 0.875em;
+  margin-right: 1.42857em;
+  margin-bottom: 1.07143em;
+  display: inline-block;
+}
+.brandsCountryLink:hover {
+  color: #b6258f;
+  text-decoration: underline;
+}
+
+.brandsNameTitle {
+  font-size: 1.875em;
+  color: #9951bd;
+  margin-bottom: 0.66667em;
+}
+
+.wrapBrandsName {
+  margin-bottom: 4.0625em;
+}
+@media (max-width: 768px) {
+  .wrapBrandsName {
+    text-align: center;
+  }
+}
+
 /*------------------ Footer ------------------*/
 .mainFooter {
   background: url("../image/footerBg.png") bottom right no-repeat;
