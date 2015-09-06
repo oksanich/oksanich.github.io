@@ -6152,6 +6152,94 @@ All this is done for any sub-level being entered.
   }
 }
 
+/*------------------ Contact Page ------------------*/
+.wrapContactPage {
+  margin-bottom: 1.875em;
+}
+.wrapContactPage .wrapTitleDecor {
+  text-align: left;
+}
+.wrapContactPage .contactPageTitle {
+  padding-left: 0;
+  font-family: Roboto-regular, sans-serif;
+  color: #b6258f;
+}
+
+@media (min-width: 1200px) {
+  .contactPageContent {
+    background: url("../image/contactBg.png") bottom right no-repeat;
+    padding-bottom: 9.375em;
+  }
+}
+
+.contactPageSchedule {
+  font-size: 1.125em;
+  color: #757575;
+  margin-bottom: 1.11111em;
+}
+
+.contactScheduleTime {
+  color: #9951bd;
+}
+
+.contactPagePhones {
+  margin-bottom: 3.125em;
+}
+
+.contactPagePhone {
+  position: relative;
+}
+
+.contactPhonesTitle,
+.contactPageMailsTitle {
+  font-size: 1.5em;
+  margin-bottom: 0.83333em;
+  color: #9951bd;
+}
+
+.contactPhone,
+.contactMail {
+  font-size: 1.5em;
+  color: #444444;
+}
+.contactPhone:hover,
+.contactMail:hover {
+  color: #444444;
+}
+
+.contactPhone {
+  line-height: 2em;
+  margin-left: 2.91667em;
+}
+
+.contactMail {
+  text-decoration: underline;
+}
+
+.contactPagePhoneImage {
+  position: absolute;
+}
+
+.contactPagePhoneKiev {
+  background: url("../image/kievstar.png") no-repeat;
+  width: 64px;
+  height: 46px;
+}
+
+.contactPagePhoneMts {
+  background: url("../image/mts.png") no-repeat;
+  width: 59px;
+  height: 28px;
+  margin-top: 11px;
+}
+
+.contactPagePhoneLife {
+  background: url("../image/life.png") no-repeat;
+  width: 69px;
+  height: 35px;
+  margin-top: 7px;
+}
+
 /*------------------ Footer ------------------*/
 .mainFooter {
   background: url("../image/footerBg.png") bottom right no-repeat;

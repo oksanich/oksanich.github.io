@@ -1,0 +1,88 @@
+/*------------------ Contact Page ------------------*/
+
+.wrapContactPage{
+  margin-bottom: em(30px, 16px);
+  .wrapTitleDecor{
+    text-align: left;
+  }
+
+  .contactPageTitle{
+    padding-left: 0;
+    font-family: $RobotoRegular;
+    color: $primeColor;
+  }
+}
+
+.contactPageContent{
+  @media (min-width: 1200px){
+    background: url("../image/contactBg.png") bottom right no-repeat;
+    padding-bottom: em(150px, 16px);
+  }
+}
+
+.contactPageSchedule{
+  font-size: em(18px, 16px);
+  color: $gray3;
+  margin-bottom: em(20px, 18px);
+}
+
+.contactScheduleTime{
+  color: $purple1;
+}
+
+.contactPagePhones{
+  margin-bottom: em(50px, 16px);
+}
+
+.contactPagePhone{
+  position: relative;
+}
+
+.contactPhonesTitle,
+.contactPageMailsTitle{
+  font-size: em(24px, 16px);
+  margin-bottom: em(20px, 24px);
+  color: $purple1;
+}
+
+.contactPhone,
+.contactMail{
+  font-size: em(24px, 16px);
+  color: $gray1;
+  &:hover{
+    color: $gray1;
+  }
+}
+
+.contactPhone{
+  line-height: em(48px, 24px);
+  margin-left: em(70px, 24px);
+}
+
+.contactMail{
+  text-decoration: underline;
+}
+
+.contactPagePhoneImage{
+  position: absolute;
+}
+
+.contactPagePhoneKiev{
+  background: url("../image/kievstar.png") no-repeat;
+  width: 64px;
+  height: 46px;
+}
+
+.contactPagePhoneMts{
+  background: url("../image/mts.png") no-repeat;
+  width: 59px;
+  height: 28px;
+  margin-top: 11px;
+}
+
+.contactPagePhoneLife{
+  background: url("../image/life.png") no-repeat;
+  width: 69px;
+  height: 35px;
+  margin-top: 7px;
+}
