@@ -1,0 +1,85 @@
+/*------------------ Personal Area ------------------*/
+
+.personInfo,
+.personOrderHistory{
+  display: table;
+}
+
+.personInfoRow,
+.personOrderHistoryHeadRow{
+  display: table-row;
+}
+
+.personInfoCell,
+.personOrderHistoryCell{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.personInfo{
+  color: $gray1;
+  border-spacing: 0 30px;
+  font-size: em(18px, 16px);
+  .personInfoCell{
+    &:first-child{
+      width: 100px;
+      color: $gray3;
+    }
+
+  }
+}
+
+.personInfoBtn{
+  @extend %btnFull;
+  border: none;
+  background: $primeColor;
+  font-size: em(18px, 16px);
+  padding: em(8px, 18px) em(15px, 18px);
+  margin-bottom: em(60px, 18px);
+  &:hover{
+    background: darken($primeColor, 10%);
+  }
+}
+
+.personOrderHistoryTitle{
+  font-size: em(30px, 16px);
+  color: $purple1;
+  margin-bottom: em(40px, 30px);
+}
+
+.personOrderHistory{
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: em(60px, 16px);
+}
+
+.personOrderHistoryHeadRow{
+  border-bottom: 1px solid $pink4;
+  height: 70px;
+  &:last-child{
+    border-bottom: none;
+  }
+}
+
+.personOrderHistoryHead{
+  font-size: em(14px, 16px);
+  .personOrderHistoryCell {
+    color: $gray3;
+    &:first-child {
+      color: $gray3;
+    }
+  }
+}
+
+.personOrderHistoryCell{
+  text-align: center;
+  width: 25%;
+  font-size: em(18px, 16px);
+  color: $gray1;
+  &:first-child{
+    color: $primeColor;
+  }
+  @media (max-width: 768px) {
+    font-size: em(14px, 16px);
+  }
+}

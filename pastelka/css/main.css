@@ -57,13 +57,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*------------------ Bootstrap-skin ------------------*/
 /*------------------ Breadcrumbs ------------------*/
 .modalFormEnterBtn, .modalNotRegisterBtn, .feedbackBtn, .filterButton, .productInfoCartBtn,
-.catalogProductCartBtn, .productInfoBtn, .productCardBtn, .productCardBtnNotify, .reviewsFormSend, .backBuyBtn, .checkoutCommentBtn, .registerSuccessfulBtn, .newsSinglePageBtn, .footerRightChatBtn {
+.catalogProductCartBtn, .productInfoBtn, .productCardBtn, .productCardBtnNotify, .reviewsFormSend, .backBuyBtn, .checkoutCommentBtn, .registerSuccessfulBtn, .newsSinglePageBtn, .personInfoBtn, .footerRightChatBtn {
   color: #ffffff;
   background: #a9ca54;
   display: inline-block;
 }
 .modalFormEnterBtn:hover, .modalNotRegisterBtn:hover, .feedbackBtn:hover, .filterButton:hover, .productInfoCartBtn:hover,
-.catalogProductCartBtn:hover, .productInfoBtn:hover, .productCardBtn:hover, .productCardBtnNotify:hover, .reviewsFormSend:hover, .backBuyBtn:hover, .checkoutCommentBtn:hover, .registerSuccessfulBtn:hover, .newsSinglePageBtn:hover, .footerRightChatBtn:hover {
+.catalogProductCartBtn:hover, .productInfoBtn:hover, .productCardBtn:hover, .productCardBtnNotify:hover, .reviewsFormSend:hover, .backBuyBtn:hover, .checkoutCommentBtn:hover, .registerSuccessfulBtn:hover, .newsSinglePageBtn:hover, .personInfoBtn:hover, .footerRightChatBtn:hover {
   color: #e6e6e6;
   background: #9fc441;
 }
@@ -6277,6 +6277,89 @@ All this is done for any sub-level being entered.
 @media (max-width: 768px) {
   .wrapBrandsName {
     text-align: center;
+  }
+}
+
+/*------------------ Personal Area ------------------*/
+.personInfo,
+.personOrderHistory {
+  display: table;
+}
+
+.personInfoRow,
+.personOrderHistoryHeadRow {
+  display: table-row;
+}
+
+.personInfoCell,
+.personOrderHistoryCell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.personInfo {
+  color: #444444;
+  border-spacing: 0 30px;
+  font-size: 1.125em;
+}
+.personInfo .personInfoCell:first-child {
+  width: 100px;
+  color: #757575;
+}
+
+.personInfoBtn {
+  border: none;
+  background: #b6258f;
+  font-size: 1.125em;
+  padding: 0.44444em 0.83333em;
+  margin-bottom: 3.33333em;
+}
+.personInfoBtn:hover {
+  background: #8c1c6e;
+}
+
+.personOrderHistoryTitle {
+  font-size: 1.875em;
+  color: #9951bd;
+  margin-bottom: 1.33333em;
+}
+
+.personOrderHistory {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 3.75em;
+}
+
+.personOrderHistoryHeadRow {
+  border-bottom: 1px solid #e5c3ff;
+  height: 70px;
+}
+.personOrderHistoryHeadRow:last-child {
+  border-bottom: none;
+}
+
+.personOrderHistoryHead {
+  font-size: 0.875em;
+}
+.personOrderHistoryHead .personOrderHistoryCell {
+  color: #757575;
+}
+.personOrderHistoryHead .personOrderHistoryCell:first-child {
+  color: #757575;
+}
+
+.personOrderHistoryCell {
+  text-align: center;
+  width: 25%;
+  font-size: 1.125em;
+  color: #444444;
+}
+.personOrderHistoryCell:first-child {
+  color: #b6258f;
+}
+@media (max-width: 768px) {
+  .personOrderHistoryCell {
+    font-size: 0.875em;
   }
 }
 
