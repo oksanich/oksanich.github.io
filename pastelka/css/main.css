@@ -57,13 +57,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*------------------ Bootstrap-skin ------------------*/
 /*------------------ Breadcrumbs ------------------*/
 .modalFormEnterBtn, .modalNotRegisterBtn, .feedbackBtn, .filterButton, .productInfoCartBtn,
-.catalogProductCartBtn, .productInfoBtn, .productCardBtn, .productCardBtnNotify, .reviewsFormSend, .backBuyBtn, .checkoutCommentBtn, .registerSuccessfulBtn, .newsSinglePageBtn, .personInfoBtn, .footerRightChatBtn {
+.catalogProductCartBtn, .productInfoBtn, .productCardBtn, .productCardBtnNotify, .reviewsFormSend, .backBuyBtn, .checkoutCommentBtn, .registerSuccessfulBtn, .newsSinglePageBtn, .personInfoBtn, .orderStatusContentPrintBtn, .footerRightChatBtn {
   color: #ffffff;
   background: #a9ca54;
   display: inline-block;
 }
 .modalFormEnterBtn:hover, .modalNotRegisterBtn:hover, .feedbackBtn:hover, .filterButton:hover, .productInfoCartBtn:hover,
-.catalogProductCartBtn:hover, .productInfoBtn:hover, .productCardBtn:hover, .productCardBtnNotify:hover, .reviewsFormSend:hover, .backBuyBtn:hover, .checkoutCommentBtn:hover, .registerSuccessfulBtn:hover, .newsSinglePageBtn:hover, .personInfoBtn:hover, .footerRightChatBtn:hover {
+.catalogProductCartBtn:hover, .productInfoBtn:hover, .productCardBtn:hover, .productCardBtnNotify:hover, .reviewsFormSend:hover, .backBuyBtn:hover, .checkoutCommentBtn:hover, .registerSuccessfulBtn:hover, .newsSinglePageBtn:hover, .personInfoBtn:hover, .orderStatusContentPrintBtn:hover, .footerRightChatBtn:hover {
   color: #e6e6e6;
   background: #9fc441;
 }
@@ -2790,12 +2790,33 @@ All this is done for any sub-level being entered.
 .topMenuList {
   overflow: hidden;
 }
+@media (min-width: 1200px) {
+  .topMenuList {
+    overflow: inherit;
+    text-align: justify;
+    text-align-last: justify;
+    height: 46px;
+  }
+  .topMenuList:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+}
 
 .topMenuItem {
   float: left;
 }
 .topMenuItem:first-child .topMenuLink {
   padding-left: 0;
+}
+@media (min-width: 1200px) {
+  .topMenuItem {
+    float: none;
+    display: inline-block;
+  }
 }
 
 .topMenuLink {
@@ -3179,6 +3200,7 @@ All this is done for any sub-level being entered.
   font-size: 1.125em;
   padding: 0 0.27778em;
   color: #444444;
+  font-family: Roboto-bold, sans-serif;
 }
 .headerCategorySubLink:hover {
   background: #debcf8;
@@ -3388,7 +3410,7 @@ All this is done for any sub-level being entered.
   }
 }
 @media (min-width: 992px) {
-  .caret {
+  .headerCategoryLink .caret {
     display: none !important;
   }
 }
@@ -4472,12 +4494,6 @@ All this is done for any sub-level being entered.
 .productAdvantagesItem:first-child {
   margin-left: 0;
 }
-@media (max-width: 768px) {
-  .productAdvantagesItem {
-    margin: 0 0 0.625em 0;
-    width: 100%;
-  }
-}
 
 .productAdvantagesLink .productAdvantagesIcon [class^="icon-"] {
   font-size: 3.75em;
@@ -4485,7 +4501,7 @@ All this is done for any sub-level being entered.
 }
 @media (max-width: 768px) {
   .productAdvantagesLink .productAdvantagesIcon {
-    font-size: 0.5em;
+    font-size: 0.66667em;
   }
 }
 .productAdvantagesLink .productAdvantagesText {
@@ -4495,15 +4511,11 @@ All this is done for any sub-level being entered.
 @media (max-width: 768px) {
   .productAdvantagesLink .productAdvantagesText {
     font-size: 1em;
+    display: none;
   }
 }
 .productAdvantagesLink:hover .productAdvantagesIcon [class^="icon-"] {
   opacity: .7;
-}
-@media (max-width: 768px) {
-  .productAdvantagesLink:hover .productAdvantagesText {
-    text-decoration: underline;
-  }
 }
 
 .productCardRowLink {
@@ -5044,11 +5056,11 @@ All this is done for any sub-level being entered.
 .checkoutProductPrice {
   width: 15%;
   vertical-align: bottom;
-  margin-bottom: 3.375em;
+  margin-bottom: 3.25em;
 }
-@media (max-width: 1200px) {
+@media (min-width: 992px) {
   .checkoutProductPrice {
-    margin-bottom: 2.75em;
+    margin-bottom: 3em;
   }
 }
 @media (max-width: 768px) {
@@ -5061,7 +5073,7 @@ All this is done for any sub-level being entered.
 
 .checkoutProductBasket {
   width: 8%;
-  padding-top: 2.5em;
+  padding-top: 2.875em;
   text-align: right;
 }
 @media (max-width: 768px) {
@@ -5129,27 +5141,6 @@ All this is done for any sub-level being entered.
   margin: 0.23333em 0 0.33333em;
 }
 
-.checkoutProductBottom .productAdvantages {
-  width: 60%;
-  margin-right: 1%;
-  display: inline-block;
-  vertical-align: top;
-}
-@media (min-width: 1200px) {
-  .checkoutProductBottom .productAdvantages {
-    width: 62%;
-  }
-}
-@media (max-width: 992px) {
-  .checkoutProductBottom .productAdvantages {
-    width: 100%;
-    margin-bottom: 1.25em;
-  }
-}
-.checkoutProductBottom .productAdvantagesIcon [class^="icon-"] {
-  font-size: 2.625em;
-}
-
 .checkoutProductTotal {
   width: 31%;
   display: inline-block;
@@ -5171,6 +5162,17 @@ All this is done for any sub-level being entered.
 @media (max-width: 992px) {
   .checkoutProductTotal {
     font-size: 1.125em;
+    margin-left: 0;
+  }
+}
+@media (min-width: 992px) {
+  .checkoutProductTotal {
+    margin-left: 61.5%;
+  }
+}
+@media (min-width: 1200px) {
+  .checkoutProductTotal {
+    margin-left: 63%;
   }
 }
 
@@ -6361,6 +6363,181 @@ All this is done for any sub-level being entered.
   .personOrderHistoryCell {
     font-size: 0.875em;
   }
+}
+
+/*------------------ Order Status ------------------*/
+.orderStatusInfo {
+  margin-bottom: 6.25em;
+}
+@media (max-width: 768px) {
+  .orderStatusInfo {
+    margin-bottom: 3.125em;
+  }
+}
+
+.orderStatusInfoCell {
+  display: inline-block;
+  margin-left: -4px;
+  width: 27.3%;
+  vertical-align: top;
+  border-right: 1px solid #ffffff;
+  box-sizing: border-box;
+}
+.orderStatusInfoCell:last-child {
+  border-right: none;
+  text-align: right;
+  width: 18%;
+}
+.orderStatusInfoCell:first-child {
+  margin-left: 0;
+}
+@media (max-width: 992px) {
+  .orderStatusInfoCell {
+    width: 50%;
+  }
+  .orderStatusInfoCell:nth-child(even) {
+    border-right: none;
+  }
+  .orderStatusInfoCell:nth-child(odd) {
+    margin-left: 0;
+  }
+  .orderStatusInfoCell:last-child {
+    text-align: left;
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .orderStatusInfoCell {
+    width: 100%;
+    border-right: none;
+    margin-left: 0;
+  }
+  .orderStatusInfoCell:last-child {
+    width: 100%;
+  }
+}
+
+.orderStatusCellTitle,
+.orderStatusTableHead {
+  background: #e5c3ff;
+  padding: 0.625em;
+  font-size: 0.875em;
+  color: #ffffff;
+  text-align: left;
+}
+
+.orderStatusCellContent {
+  padding: 1.5625em 0.625em 0.625em;
+}
+
+.orderStatusContentItem {
+  color: #757575;
+  margin-bottom: 1.42857em;
+  font-size: 0.875em;
+}
+.orderStatusContentItem .orderStatusItem {
+  color: #444444;
+}
+
+.orderStatusContentPrint {
+  margin-top: 0.625em;
+}
+.orderStatusContentPrint [class^="icon-"] {
+  font-size: 2.5em;
+  color: #e5c3ff;
+}
+
+.orderStatusContentPrintBtn {
+  border: none;
+  font-size: 1.125em;
+  padding: 0.55556em 0.83333em 0.66667em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.orderStatusTableTitle {
+  font-size: 1.875em;
+  color: #9951bd;
+  margin-bottom: 1.33333em;
+}
+@media (max-width: 768px) {
+  .orderStatusTableTitle {
+    font-size: 1.5em;
+    margin-bottom: 0.66667em;
+  }
+}
+
+.orderStatusProducts,
+.orderStatusHistory {
+  margin-bottom: 5em;
+}
+@media (max-width: 768px) {
+  .orderStatusProducts,
+  .orderStatusHistory {
+    margin-bottom: 1.875em;
+  }
+}
+
+.orderStatusTable {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orderStatusTableHead,
+.orderStatusTableRow,
+.orderStatusTableRowTotal {
+  display: table-row;
+}
+
+.orderStatusTableRow {
+  border-bottom: 1px solid #e5c3ff;
+}
+.orderStatusTableRow:last-child {
+  border-bottom: none;
+}
+.orderStatusTableRow .orderStatusTableCell {
+  padding: 1.25em 0.625em;
+  font-size: 0.875em;
+}
+
+.orderStatusTableHead .orderStatusTableCell {
+  color: #ffffff;
+}
+
+.orderStatusTableCell {
+  display: table-cell;
+  padding: 0.625em;
+  color: #444444;
+}
+
+.orderStatusTableRowTotal {
+  width: 100%;
+  text-align: left;
+}
+
+.orderStatusTableCellText {
+  font-size: 1.125em;
+  margin-bottom: 0.83333em;
+}
+
+.orderStatusTableCell2 .orderStatusTableCellText {
+  margin-right: 0.83333em;
+  text-align: right;
+  font-family: Roboto-bold, sans-serif;
+}
+
+.orderStatusTableCellPercent {
+  color: #757575;
+}
+
+.orderStatusTableCellSum {
+  color: #9951bd;
+}
+
+.orderStatusTableCellTotal {
+  color: #b6258f;
+  font-family: Roboto-bold, sans-serif;
 }
 
 /*------------------ Footer ------------------*/

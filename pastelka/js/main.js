@@ -141,3 +141,21 @@ $(".qtyminus").click(function(e) {
         $('input[name='+fieldName+']').val(0);
     }
 });
+
+//Brand-page mobile
+
+(function($) {
+    var $window = $(window),
+        $html = $('._wrapBrandsName');
+
+    function resize() {
+        if ($window.width() < 768) {
+            return $html.addClass('mobile');
+        }
+
+        $html.removeClass('mobile');
+    }
+
+    $window.resize(resize).trigger('resize');
+
+})(jQuery);

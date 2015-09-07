@@ -1,0 +1,170 @@
+/*------------------ Order Status ------------------*/
+
+.orderStatusInfo{
+  margin-bottom: em(100px, 16px);
+  @media (max-width: 768px){
+    margin-bottom: em(50px, 16px);
+  }
+}
+
+.orderStatusInfoCell{
+  display: inline-block;
+  margin-left: -4px;
+  width: 27.3%;
+  vertical-align: top;
+  border-right: 1px solid $white;
+  box-sizing: border-box;
+  &:last-child{
+    border-right: none;
+    text-align: right;
+    width: 18%;
+  }
+  &:first-child{
+    margin-left: 0;
+  }
+  @media (max-width: 992px){
+    width: 50%;
+    &:nth-child(even){
+      border-right: none;
+    }
+    &:nth-child(odd){
+      margin-left: 0;
+    }
+    &:last-child{
+      text-align: left;
+      width: 50%;
+    }
+  }
+  @media (max-width: 768px){
+    width: 100%;
+    border-right: none;
+    margin-left: 0;
+    &:last-child{
+      width: 100%;
+    }
+  }
+}
+
+.orderStatusCellTitle,
+.orderStatusTableHead{
+  background: $pink4;
+  padding: em(10px, 16px);
+  font-size: em(14px, 16px);
+  color: $white;
+  text-align: left;
+}
+
+.orderStatusCellContent{
+  padding: em(25px, 16px) em(10px, 16px) em(10px, 16px);
+}
+
+.orderStatusContentItem{
+  color: $gray3;
+  margin-bottom: em(20px, 14px);
+  font-size: em(14px, 16px);
+  .orderStatusItem{
+    color: $gray1;
+  }
+}
+
+.orderStatusContentPrint{
+  margin-top: em(10px, 16px);
+  [class^="icon-"]{
+    font-size: em(40px, 16px);
+    color: $pink4;
+  }
+}
+
+.orderStatusContentPrintBtn{
+  @extend %btnFull;
+  border: none;
+  font-size: em(18px, 16px);
+  padding: em(10px, 18px) em(15px, 18px) em(12px, 18px);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.orderStatusTableTitle{
+  font-size: em(30px, 16px);
+  color: $purple1;
+  margin-bottom: em(40px, 30px);
+  @media (max-width: 768px){
+    font-size: em(24px, 16px);
+    margin-bottom: em(20px, 30px);
+  }
+}
+
+.orderStatusProducts,
+.orderStatusHistory{
+  margin-bottom: em(80px, 16px);
+  @media (max-width: 768px){
+    margin-bottom: em(30px, 16px);
+  }
+}
+
+.orderStatusTable{
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orderStatusTableHead,
+.orderStatusTableRow,
+.orderStatusTableRowTotal{
+  display: table-row;
+}
+
+.orderStatusTableRow{
+  border-bottom: 1px solid $pink4;
+  &:last-child{
+    border-bottom: none;
+  }
+  .orderStatusTableCell{
+    padding: em(20px, 16px) em(10px, 16px);
+    font-size: em(14px, 16px);
+  }
+}
+
+.orderStatusTableHead{
+  .orderStatusTableCell{
+    color: $white;
+  }
+}
+
+.orderStatusTableCell{
+  display: table-cell;
+  padding: em(10px, 16px);
+  color: $gray1;
+}
+
+.orderStatusTableRowTotal{
+  width: 100%;
+  text-align: left;
+}
+
+.orderStatusTableCellText {
+  font-size: em(18px, 16px);
+  margin-bottom: em(15px, 18px);
+}
+
+.orderStatusTableCell2{
+  .orderStatusTableCellText{
+    margin-right: em(15px, 18px);
+    text-align: right;
+    font-family: $RobotoBold;
+  }
+}
+
+.orderStatusTableCellPercent{
+  color: $gray3;
+}
+
+.orderStatusTableCellSum{
+  color: $purple1;
+}
+
+.orderStatusTableCellTotal{
+  color: $primeColor;
+  font-family: $RobotoBold;
+}
+

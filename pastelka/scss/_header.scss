@@ -122,12 +122,29 @@
 
 .topMenuList{
   overflow: hidden;
+  @media (min-width: 1200px) {
+    overflow: inherit;
+    text-align: justify;
+    text-align-last:justify;
+    height: 46px;
+    &:after {
+      content:"";
+      display:inline-block;
+      width:100%;
+      height:0;
+      overflow:hidden;
+    }
+  }
 }
 
 .topMenuItem{
   float: left;
   &:first-child .topMenuLink{
     padding-left: 0;
+  }
+  @media (min-width: 1200px) {
+    float: none;
+    display: inline-block;
   }
 }
 
@@ -546,6 +563,7 @@
   font-size: em(18px, 16px);
   padding: 0 em(5px,18px);
   color: $gray1;
+  font-family: $RobotoBold;
   &:hover {
     background: $pink3;
     color: $gray1;
@@ -797,7 +815,9 @@
 }
 
 @media (min-width: 992px) {
-  .caret {
-    display: none!important;
+  .headerCategoryLink{
+    .caret {
+      display: none!important;
+    }
   }
 }
