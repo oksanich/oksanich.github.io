@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -6498,7 +6499,7 @@ All this is done for any sub-level being entered.
   border-bottom: none;
 }
 .orderStatusTableRow .orderStatusTableCell {
-  padding: 1.25em 0.625em;
+  padding: 1.42857em 0.71429em;
   font-size: 0.875em;
 }
 
@@ -6541,6 +6542,209 @@ All this is done for any sub-level being entered.
   font-family: Roboto-bold, sans-serif;
 }
 
+/*------------------ Price ------------------*/
+.wrapPriceTitleSub {
+  overflow: hidden;
+  margin-bottom: 3.125em;
+}
+
+.priceTitlePrint {
+  float: right;
+}
+
+.priceTitleSub {
+  font-size: 1.875em;
+  color: #9951bd;
+  margin-top: 0.6em;
+  float: left;
+}
+
+.priceTableTitle {
+  font-size: 1.5em;
+  color: #444444;
+  margin-bottom: 0.83333em;
+}
+
+.priceTable {
+  display: table;
+  width: 100%;
+  margin-bottom: 5em;
+  border-collapse: collapse;
+}
+
+.priceTableHead {
+  display: table-header-group;
+}
+
+.priceTableBody {
+  display: table-row-group;
+}
+
+.priceTableRow {
+  display: table-row;
+}
+
+.priceTableCell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.priceTableCell:first-child {
+  color: #757575;
+  width: 17%;
+}
+.priceTableCell:nth-child(2n) {
+  width: 40%;
+}
+.priceTableCell:nth-child(3n) {
+  width: 27%;
+}
+.priceTableCell:last-child {
+  width: 15%;
+}
+
+.priceTableHead {
+  background: #e5c3ff;
+  font-size: 0.875em;
+  color: #ffffff;
+  text-align: left;
+}
+.priceTableHead .priceTableCell {
+  padding: 0.71429em;
+  border-right: 1px solid #ffffff;
+}
+.priceTableHead .priceTableCell:first-child {
+  color: #ffffff;
+}
+.priceTableHead .priceTableCell:last-child {
+  border-right: none;
+}
+
+.priceTableRow {
+  border-bottom: 1px solid #e5c3ff;
+}
+
+.priceTableCell {
+  padding: 1.07143em 0.71429em;
+  font-size: 0.875em;
+}
+
+.priceTableLink {
+  color: #444444;
+  line-height: 1.3em;
+}
+.priceTableLink:hover {
+  color: #9951bd;
+}
+
+.priceTableText {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 8px;
+  margin-right: 0.71429em;
+}
+
+.priceFilters .priceFiltersText {
+  display: inline-block;
+  margin-bottom: 0.71429em;
+  font-size: 0.875em;
+}
+.priceFilters .wrapPriceFilter {
+  display: inline-block;
+}
+.priceFilters .wrapPriceFilter:last-child {
+  margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .priceFilters .wrapPriceFilter {
+    display: block;
+  }
+  .priceFilters .wrapPriceFilter:last-child {
+    margin-left: 0;
+  }
+  .priceFilters .wrapPriceFilter .filterMultiText {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .priceTable,
+  .priceTableHead,
+  .priceTableRow,
+  .priceTableCell,
+  .priceTableBody {
+    display: block;
+  }
+
+  .priceTableHead .priceTableRow {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .priceTableRow {
+    overflow: hidden;
+    border-bottom: 1px solid #b6258f;
+    background: #f9f1ff;
+  }
+  .priceTableRow:nth-child(odd) {
+    background: #f0ddff;
+  }
+  .priceTableRow:first-child {
+    border-top: 1px solid #b6258f;
+  }
+
+  .priceTableCell {
+    position: relative;
+    padding-left: 50%;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin: 10px 0;
+  }
+  .priceTableCell:before {
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  .priceTableCell:first-child {
+    width: 100%;
+    color: #444444;
+  }
+  .priceTableCell:nth-child(2n) {
+    width: 100%;
+  }
+  .priceTableCell:nth-child(3n) {
+    width: 100%;
+  }
+  .priceTableCell:last-child {
+    width: 100%;
+  }
+
+  .priceTableCell:nth-of-type(1):before {
+    content: "Артикул";
+    font-family: Roboto-bold, sans-serif;
+  }
+
+  .priceTableCell:nth-of-type(2):before {
+    content: "Наименование";
+    font-family: Roboto-bold, sans-serif;
+  }
+
+  .priceTableCell:nth-of-type(3):before {
+    content: "Наличие";
+    font-family: Roboto-bold, sans-serif;
+  }
+
+  .priceTableCell:nth-of-type(4):before {
+    content: "Цена, грн";
+    font-family: Roboto-bold, sans-serif;
+  }
+
+  .priceTableText {
+    vertical-align: top;
+  }
+}
 /*------------------ Footer ------------------*/
 .mainFooter {
   background: url("../image/footerBg.png") bottom right no-repeat;
