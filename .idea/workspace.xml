@@ -28,8 +28,8 @@
       <file leaf-file-name="_global.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pastelka/scss/_global.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-29.291666" vertical-offset="692" max-vertical-offset="1605">
-              <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="587" max-vertical-offset="1605">
+              <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -38,7 +38,7 @@
       <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pastelka/scss/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="630">
+            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="630">
               <caret line="18" column="6" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="6" />
               <folding />
             </state>
@@ -48,38 +48,28 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pastelka/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.875" vertical-offset="0" max-vertical-offset="660">
-              <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+            <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="660">
+              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="orderStatus.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pastelka/orderStatus.html">
+      <file leaf-file-name="section.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pastelka/section.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.541666" vertical-offset="21062" max-vertical-offset="25170">
-              <caret line="1437" column="28" selection-start-line="1437" selection-start-column="28" selection-end-line="1447" selection-end-column="34" />
+            <state vertical-scroll-proportion="-24.291666" vertical-offset="20387" max-vertical-offset="24195">
+              <caret line="1398" column="0" selection-start-line="1398" selection-start-column="0" selection-end-line="1398" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_orderStatus.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pastelka/scss/_orderStatus.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.5" vertical-offset="1185" max-vertical-offset="2640">
-              <caret line="107" column="2" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="price.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="price.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pastelka/price.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.791666" vertical-offset="20792" max-vertical-offset="26985">
-              <caret line="1413" column="49" selection-start-line="1413" selection-start-column="49" selection-end-line="1413" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.016703786" vertical-offset="8580" max-vertical-offset="26985">
+              <caret line="573" column="55" selection-start-line="573" selection-start-column="55" selection-end-line="573" selection-end-column="55" />
               <folding>
                 <element signature="n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -87,23 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="catalog.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pastelka/catalog.html">
+      <file leaf-file-name="_section.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pastelka/scss/_section.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.509804" vertical-offset="16195" max-vertical-offset="27075">
-              <caret line="1692" column="40" selection-start-line="1692" selection-start-column="40" selection-end-line="1700" selection-end-column="50" />
-              <folding>
-                <element signature="n#div#2;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_price.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pastelka/scss/_price.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5155902" vertical-offset="1277" max-vertical-offset="3135">
-              <caret line="116" column="22" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -114,7 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pastelka/scss/about.html" />
         <option value="$PROJECT_DIR$/pastelka/catalog.html" />
         <option value="$PROJECT_DIR$/pastelka/register.html" />
         <option value="$PROJECT_DIR$/pastelka/scss/_register.scss" />
@@ -130,7 +107,6 @@
         <option value="$PROJECT_DIR$/pastelka/scss/_articles.scss" />
         <option value="$PROJECT_DIR$/pastelka/delivery.html" />
         <option value="$PROJECT_DIR$/pastelka/scss/_delivery.scss" />
-        <option value="$PROJECT_DIR$/pastelka/scss/_global.scss" />
         <option value="$PROJECT_DIR$/pastelka/discount.html" />
         <option value="$PROJECT_DIR$/pastelka/scss/_discount.scss" />
         <option value="$PROJECT_DIR$/pastelka/news.html" />
@@ -157,14 +133,16 @@
         <option value="$PROJECT_DIR$/pastelka/scss/_checkout.scss" />
         <option value="$PROJECT_DIR$/pastelka/brands.html" />
         <option value="$PROJECT_DIR$/pastelka/js/main.js" />
-        <option value="$PROJECT_DIR$/pastelka/scss/_header.scss" />
-        <option value="$PROJECT_DIR$/pastelka/index.html" />
         <option value="$PROJECT_DIR$/pastelka/orderStatus.html" />
         <option value="$PROJECT_DIR$/pastelka/css/main.css" />
         <option value="$PROJECT_DIR$/pastelka/scss/main.scss" />
         <option value="$PROJECT_DIR$/pastelka/scss/_orderStatus.scss" />
-        <option value="$PROJECT_DIR$/pastelka/price.html" />
         <option value="$PROJECT_DIR$/pastelka/scss/_price.scss" />
+        <option value="$PROJECT_DIR$/pastelka/scss/_global.scss" />
+        <option value="$PROJECT_DIR$/pastelka/scss/_header.scss" />
+        <option value="$PROJECT_DIR$/pastelka/index.html" />
+        <option value="$PROJECT_DIR$/pastelka/section.html" />
+        <option value="$PROJECT_DIR$/pastelka/price.html" />
       </list>
     </option>
   </component>
@@ -201,7 +179,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,6 +213,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -266,18 +244,8 @@
       <recent name="$PROJECT_DIR$/pastelka/scss" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.catalog.html">
+  <component name="RunManager" selected="JavaScript Debug.price.html">
     <configuration default="false" name="checkout.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/pastelka/checkout.html">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="orderStatus.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/pastelka/orderStatus.html">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="order.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/pastelka/order.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
@@ -288,6 +256,16 @@
       <method />
     </configuration>
     <configuration default="false" name="catalog.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/pastelka/catalog.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/pastelka/index.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="section.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/pastelka/section.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
@@ -320,18 +298,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.checkout.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.orderStatus.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.order.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.price.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.catalog.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.price.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.catalog.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.section.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.catalog.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.price.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.checkout.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.orderStatus.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.order.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.price.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.section.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.catalog.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.checkout.html" />
       </list>
     </recent_temporary>
   </component>
@@ -353,16 +331,15 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32751092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299539" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.124423966" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32751092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.124423966" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -370,6 +347,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -421,27 +399,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/_breadcrumbs.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3877791" vertical-offset="0" max-vertical-offset="851">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/_fonts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0575793" vertical-offset="15" max-vertical-offset="3750">
-          <caret line="61" column="14" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pastelka/scss/_specialOffers.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -454,7 +415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55097085" vertical-offset="3701" max-vertical-offset="12000">
           <caret line="277" column="2" selection-start-line="277" selection-start-column="2" selection-end-line="283" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -462,7 +422,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -470,7 +429,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
           <caret line="0" column="47" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -478,7 +436,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
           <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -486,15 +443,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.458334" vertical-offset="20404" max-vertical-offset="24150">
           <caret line="1393" column="56" selection-start-line="1393" selection-start-column="56" selection-end-line="1393" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/_global.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.291666" vertical-offset="692" max-vertical-offset="1605">
-          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -502,7 +450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="898">
           <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -510,7 +457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55122495" vertical-offset="20415" max-vertical-offset="23610">
           <caret line="1394" column="65" selection-start-line="1394" selection-start-column="65" selection-end-line="1394" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -518,7 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="898">
           <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -526,7 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1770">
           <caret line="0" column="51" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -534,7 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.75" vertical-offset="20460" max-vertical-offset="23880">
           <caret line="1394" column="65" selection-start-line="1394" selection-start-column="65" selection-end-line="1394" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -542,7 +485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.114699334" vertical-offset="20792" max-vertical-offset="25800">
           <caret line="1393" column="56" selection-start-line="1393" selection-start-column="56" selection-end-line="1393" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -550,7 +492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2505568" vertical-offset="0" max-vertical-offset="898">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -558,7 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21269488" vertical-offset="20704" max-vertical-offset="24285">
           <caret line="1393" column="56" selection-start-line="1393" selection-start-column="56" selection-end-line="1393" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -566,7 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="898">
           <caret line="0" column="53" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -574,7 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="540">
           <caret line="0" column="61" selection-start-line="0" selection-start-column="61" selection-end-line="0" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -582,7 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4298441" vertical-offset="20524" max-vertical-offset="23445">
           <caret line="1394" column="65" selection-start-line="1394" selection-start-column="65" selection-end-line="1394" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -590,7 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41759464" vertical-offset="0" max-vertical-offset="1200">
           <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -598,7 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43207127" vertical-offset="21077" max-vertical-offset="23910">
           <caret line="1431" column="22" selection-start-line="1431" selection-start-column="22" selection-end-line="1431" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -606,7 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.63028955" vertical-offset="22204" max-vertical-offset="25320">
           <caret line="1518" column="36" selection-start-line="1518" selection-start-column="36" selection-end-line="1520" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -614,7 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2355">
           <caret line="0" column="50" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -622,7 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18374164" vertical-offset="0" max-vertical-offset="898">
           <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -630,7 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23162584" vertical-offset="21797" max-vertical-offset="24405">
           <caret line="1467" column="23" selection-start-line="1467" selection-start-column="23" selection-end-line="1467" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -638,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26726058" vertical-offset="20580" max-vertical-offset="23910">
           <caret line="1388" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="1588" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -646,7 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="898">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -654,7 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -662,7 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-23.041666" vertical-offset="21407" max-vertical-offset="24405">
           <caret line="1464" column="22" selection-start-line="1464" selection-start-column="22" selection-end-line="1464" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -670,7 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-33.666668" vertical-offset="407" max-vertical-offset="1350">
           <caret line="81" column="29" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,7 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3864143" vertical-offset="1545" max-vertical-offset="7845">
           <caret line="186" column="2" selection-start-line="186" selection-start-column="2" selection-end-line="186" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,7 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46770602" vertical-offset="2475" max-vertical-offset="7380">
           <caret line="193" column="3" selection-start-line="193" selection-start-column="3" selection-end-line="193" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -694,7 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="218" max-vertical-offset="2490">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,18 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43429846" vertical-offset="20865" max-vertical-offset="25995">
           <caret line="1417" column="78" selection-start-line="1417" selection-start-column="63" selection-end-line="1417" selection-end-column="78" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,7 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="898">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,7 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32962137" vertical-offset="20524" max-vertical-offset="24285">
           <caret line="1388" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="1613" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -737,15 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48106903" vertical-offset="25188" max-vertical-offset="28470">
           <caret line="1708" column="44" selection-start-line="1708" selection-start-column="44" selection-end-line="1714" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6862745" vertical-offset="21115" max-vertical-offset="27315">
-          <caret line="1427" column="64" selection-start-line="1427" selection-start-column="64" selection-end-line="1427" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -753,15 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.208333" vertical-offset="21253" max-vertical-offset="30150">
           <caret line="1438" column="85" selection-start-line="1438" selection-start-column="83" selection-end-line="1438" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="12435">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -769,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.541666" vertical-offset="21062" max-vertical-offset="25170">
           <caret line="1437" column="28" selection-start-line="1437" selection-start-column="28" selection-end-line="1447" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -785,17 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36636972" vertical-offset="22441" max-vertical-offset="25245">
           <caret line="1518" column="16" selection-start-line="1518" selection-start-column="16" selection-end-line="1548" selection-end-column="37" />
-          <folding>
-            <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.875" vertical-offset="0" max-vertical-offset="660">
-          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -803,13 +682,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.5" vertical-offset="1185" max-vertical-offset="2640">
           <caret line="107" column="2" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pastelka/scss/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="630">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="630">
           <caret line="18" column="6" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="6" />
           <folding />
         </state>
@@ -819,27 +697,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.509804" vertical-offset="16195" max-vertical-offset="27075">
           <caret line="1692" column="40" selection-start-line="1692" selection-start-column="40" selection-end-line="1700" selection-end-column="50" />
-          <folding>
-            <element signature="n#div#2;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/price.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.791666" vertical-offset="20792" max-vertical-offset="26985">
-          <caret line="1413" column="49" selection-start-line="1413" selection-start-column="49" selection-end-line="1413" selection-end-column="49" />
-          <folding>
-            <element signature="n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pastelka/scss/_price.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5155902" vertical-offset="1277" max-vertical-offset="3135">
+        <state vertical-scroll-proportion="-19.291666" vertical-offset="1277" max-vertical-offset="3135">
           <caret line="116" column="22" selection-start-line="116" selection-start-column="22" selection-end-line="116" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/scss/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.27451" vertical-offset="2050" max-vertical-offset="12450">
+          <caret line="158" column="21" selection-start-line="158" selection-start-column="21" selection-end-line="158" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31737193" vertical-offset="8520" max-vertical-offset="27315">
+          <caret line="587" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="1815" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/scss/_global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="587" max-vertical-offset="1605">
+          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/scss/_section.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="922">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/section.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.291666" vertical-offset="20387" max-vertical-offset="24195">
+          <caret line="1398" column="0" selection-start-line="1398" selection-start-column="0" selection-end-line="1398" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="660">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/price.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.016703786" vertical-offset="8580" max-vertical-offset="26985">
+          <caret line="573" column="55" selection-start-line="573" selection-start-column="55" selection-end-line="573" selection-end-column="55" />
+          <folding>
+            <element signature="n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
