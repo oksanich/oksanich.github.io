@@ -3154,6 +3154,7 @@ All this is done for any sub-level being entered.
   margin: 0 0.3125em;
   color: #b6258f;
   line-height: 1.22222em;
+  font-family: Roboto-bold, sans-serif;
 }
 @media (min-width: 1200px) {
   .headerCategoryLink .headerCategoryLinkTitle {
