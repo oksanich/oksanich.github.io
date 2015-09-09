@@ -142,7 +142,7 @@ $(".qtyminus").click(function(e) {
     }
 });
 
-//Brand-page mobile
+// Brand-page mobile
 
 (function($) {
     var $window = $(window),
@@ -159,3 +159,4 @@ $(".qtyminus").click(function(e) {
     $window.resize(resize).trigger('resize');
 
 })(jQuery);
+

@@ -1,0 +1,173 @@
+/*------------------ Section ------------------*/
+
+.sectionBlockProducts{
+  margin-bottom: em(60px, 16px);
+}
+
+.sectionBlockProductLink{
+  position: relative;
+  display: block;
+  border: 1px solid $primeColor;
+  box-sizing: border-box;
+  padding: 1px;
+  &:hover{
+    padding: 0;
+    border: 2px solid $primeColor;
+    .sectionBlockProductText{
+      color: $primeColor;
+      right: 9px;
+    }
+  }
+}
+
+.sectionBlockProduct{
+  margin-bottom: em(20px, 16px);
+}
+
+.sectionBlockProductImage {
+  margin-bottom: -2px;
+}
+
+.sectionBlockProductText{
+  position: absolute;
+  font-size: em(30px, 16px);
+  font-family: $RobotoBold;
+  color: darken($purple1, 20%);
+  top: calc(50% - 15px);
+  right: em(10px, 30px);
+  text-align: right;
+}
+
+.viewedProducts{
+  background: $pink2;
+  padding: em(10px, 16px);
+  @media (max-width: 992px) {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+.viewedProductsTitle{
+  font-size: em(24px, 16px);
+  color: $white;
+  text-align: center;
+  margin-bottom: em(15px, 24px);
+}
+
+.anythingSlider-default{
+  .anythingWindow {
+    border: none;
+  }
+
+  .panel{
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+  }
+}
+
+.anythingSlider-default {
+  margin: 0;
+  padding: 0;
+  height: 540px !important;
+}
+
+.verticalSliderItem,
+.anythingSlider{
+  width: 100%!important;
+  @media (min-width: 992px) and (max-width: 1200px) {
+    width: 300px;
+  }
+}
+
+.verticalSliderContentLink{
+  display: block;
+  height: 120px !important;
+  overflow: hidden;
+  margin-bottom: em(20px, 16px)!important;
+  background: $white;
+  width: 100%;
+  &:hover{
+    background: $pink5;
+    .verticalSliderInfoTitle{
+      color: $primeColor;
+    }
+    .verticalSliderContentImage{
+      opacity: .8;
+    }
+  }
+}
+
+.verticalSliderContentImage{
+  float: left;
+  max-width: 130px;
+  width: 46%;
+  .verticalSliderImage{
+    height: 120px;
+  }
+}
+
+.verticalSliderContentInfo{
+  float: left;
+  width: 60%;
+  padding: 10px;
+  height: 120px;
+  position: relative;
+  @media (min-width: 992px) and (max-width: 1200px) {
+    width: 54%;
+  }
+}
+
+.verticalSliderInfoTitle{
+  color: $gray1;
+  line-height: 1.2em;
+}
+
+.verticalSliderArrow{
+  text-align: center;
+  .verticalSliderArrowLink{
+    display: inline-block;
+    width: em(50px, 16px);
+    height: em(24px, 16px);
+    background: rgba(223, 189, 249, 0.75);
+    [class^="icon"]{
+      color: $gray3!important;
+      font-size: em(40px, 16px);
+      position: relative;
+      top: -5px;
+    }
+    &:hover {
+      opacity: .7;
+      background: $primeColor;
+      [class^="icon"]{
+        color: $white!important;
+      }
+    }
+  }
+}
+
+.verticalSliderArrowUp{
+  margin-bottom: -15px;
+}
+
+.verticalSliderPrice{
+  color: $purple1;
+  font-size: em(18px, 16px);
+  font-family: $RobotoBold;
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
+
+}
+
+.verticalSliderContentBottom{
+  [class^="icon"]{
+    color: $green1;
+    font-size: em(38px, 16px);
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+  }
+}
