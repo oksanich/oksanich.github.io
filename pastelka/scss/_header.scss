@@ -477,6 +477,20 @@
   background: $pink3 url("../image/bgPink.png") repeat-x;
 }
 
+.headerBottomDesktop{
+  display: none;
+  @media (min-width: 992px) {
+    display: block;
+  }
+}
+
+.headerBottomMobile{
+  display: block;
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+
 .headerCategoryItem{
   width: 10%;
   float: left;

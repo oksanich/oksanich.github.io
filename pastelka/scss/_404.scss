@@ -1,0 +1,41 @@
+/*------------------ 404 ------------------*/
+
+.errorBlockPage{
+  @media (max-width: 768px) {
+    text-align: center;
+    margin-bottom: em(30px, 16px);
+    .errorPageImage{
+      max-width: 320px;
+    }
+  }
+}
+
+.errorBlockPage1{
+  .errorPageImage {
+    margin-top: 60px;
+  }
+}
+
+.errorPageTitle{
+  color: $gray3;
+  text-transform: uppercase;
+  font-family: $RobotoBold;
+  font-size: em(36px, 16px);
+  margin: em(70px, 36px) 0 em(20px, 36px);
+}
+
+.errorPageTitleSub{
+  font-size: em(24px, 16px);
+  color: $gray3;
+  margin-bottom: em(70px, 24px);
+}
+
+.errorPageBtn{
+  @extend %btnFull;
+  border: none;
+  font-size: em(18px, 16px);
+  padding: em(10px, 18px) em(25px, 18px);
+  @media (max-width: 992px) {
+    font-size: em(16px, 16px);
+  }
+}

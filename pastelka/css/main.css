@@ -58,13 +58,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*------------------ Bootstrap-skin ------------------*/
 /*------------------ Breadcrumbs ------------------*/
 .modalFormEnterBtn, .modalNotRegisterBtn, .feedbackBtn, .filterButton, .productInfoCartBtn,
-.catalogProductCartBtn, .productInfoBtn, .productCardBtn, .productCardBtnNotify, .reviewsFormSend, .backBuyBtn, .checkoutCommentBtn, .registerSuccessfulBtn, .newsSinglePageBtn, .personInfoBtn, .orderStatusContentPrintBtn, .footerRightChatBtn {
+.catalogProductCartBtn, .productInfoBtn, .productCardBtn, .productCardBtnNotify, .reviewsFormSend, .backBuyBtn, .checkoutCommentBtn, .registerSuccessfulBtn, .newsSinglePageBtn, .personInfoBtn, .orderStatusContentPrintBtn, .errorPageBtn, .footerRightChatBtn {
   color: #ffffff;
   background: #a9ca54;
   display: inline-block;
 }
 .modalFormEnterBtn:hover, .modalNotRegisterBtn:hover, .feedbackBtn:hover, .filterButton:hover, .productInfoCartBtn:hover,
-.catalogProductCartBtn:hover, .productInfoBtn:hover, .productCardBtn:hover, .productCardBtnNotify:hover, .reviewsFormSend:hover, .backBuyBtn:hover, .checkoutCommentBtn:hover, .registerSuccessfulBtn:hover, .newsSinglePageBtn:hover, .personInfoBtn:hover, .orderStatusContentPrintBtn:hover, .footerRightChatBtn:hover {
+.catalogProductCartBtn:hover, .productInfoBtn:hover, .productCardBtn:hover, .productCardBtnNotify:hover, .reviewsFormSend:hover, .backBuyBtn:hover, .checkoutCommentBtn:hover, .registerSuccessfulBtn:hover, .newsSinglePageBtn:hover, .personInfoBtn:hover, .orderStatusContentPrintBtn:hover, .errorPageBtn:hover, .footerRightChatBtn:hover {
   color: #e6e6e6;
   background: #9fc441;
 }
@@ -3473,6 +3473,24 @@ All this is done for any sub-level being entered.
 /*------------------ Header-bottom ------------------*/
 .wrapHeaderBottom {
   background: #debcf8 url("../image/bgPink.png") repeat-x;
+}
+
+.headerBottomDesktop {
+  display: none;
+}
+@media (min-width: 992px) {
+  .headerBottomDesktop {
+    display: block;
+  }
+}
+
+.headerBottomMobile {
+  display: block;
+}
+@media (min-width: 992px) {
+  .headerBottomMobile {
+    display: none;
+  }
 }
 
 .headerCategoryItem {
@@ -7224,7 +7242,7 @@ All this is done for any sub-level being entered.
   height: 120px;
   position: relative;
 }
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .verticalSliderContentInfo {
     width: 54%;
   }
@@ -7237,6 +7255,7 @@ All this is done for any sub-level being entered.
 
 .verticalSliderArrow {
   text-align: center;
+  height: 1.5em;
 }
 .verticalSliderArrow .verticalSliderArrowLink {
   display: inline-block;
@@ -7258,10 +7277,6 @@ All this is done for any sub-level being entered.
   color: #ffffff !important;
 }
 
-.verticalSliderArrowUp {
-  margin-bottom: -15px;
-}
-
 .verticalSliderPrice {
   color: #9951bd;
   font-size: 1.125em;
@@ -7278,6 +7293,46 @@ All this is done for any sub-level being entered.
   position: absolute;
   right: 5px;
   bottom: 10px;
+}
+
+/*------------------ 404 ------------------*/
+@media (max-width: 768px) {
+  .errorBlockPage {
+    text-align: center;
+    margin-bottom: 1.875em;
+  }
+  .errorBlockPage .errorPageImage {
+    max-width: 320px;
+  }
+}
+
+.errorBlockPage1 .errorPageImage {
+  margin-top: 60px;
+}
+
+.errorPageTitle {
+  color: #757575;
+  text-transform: uppercase;
+  font-family: Roboto-bold, sans-serif;
+  font-size: 2.25em;
+  margin: 1.94444em 0 0.55556em;
+}
+
+.errorPageTitleSub {
+  font-size: 1.5em;
+  color: #757575;
+  margin-bottom: 2.91667em;
+}
+
+.errorPageBtn {
+  border: none;
+  font-size: 1.125em;
+  padding: 0.55556em 1.38889em;
+}
+@media (max-width: 992px) {
+  .errorPageBtn {
+    font-size: 1em;
+  }
 }
 
 /*------------------ Footer ------------------*/

@@ -58,6 +58,7 @@
 .anythingSlider-default{
   .anythingWindow {
     border: none;
+//    margin-top: -15px;
   }
 
   .panel{
@@ -114,7 +115,7 @@
   padding: 10px;
   height: 120px;
   position: relative;
-  @media (min-width: 992px) and (max-width: 1200px) {
+  @media (max-width: 1200px) {
     width: 54%;
   }
 }
@@ -126,6 +127,7 @@
 
 .verticalSliderArrow{
   text-align: center;
+  height: 1.5em;
   .verticalSliderArrowLink{
     display: inline-block;
     width: em(50px, 16px);
@@ -145,10 +147,18 @@
       }
     }
   }
+  .verticalSliderArrowLinkUp{
+//    position: relative;
+//    top: 15px;
+  }
 }
 
 .verticalSliderArrowUp{
-  margin-bottom: -15px;
+//  position: relative;
+//  top: 15px;
+//  @media (max-width: 768px) {
+//    margin-bottom: -10px;
+//  }
 }
 
 .verticalSliderPrice{
