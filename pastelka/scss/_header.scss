@@ -471,6 +471,11 @@
   }
 }
 
+.searchResultNotFoundText{
+  color: $gray1;
+  margin-bottom: em(25px, 16px);
+}
+
 /*------------------ Header-bottom ------------------*/
 
 .wrapHeaderBottom{

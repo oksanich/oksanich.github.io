@@ -103,8 +103,133 @@
     }
   }
 
+  .wrapModalGlobalLarge{
+    .modal-dialog {
+      max-width: 1000px;
+    }
+  }
+
   .modalTitle{
     font-size: em(30px, 16px);
   }
 
+}
+
+//Modal cart
+
+.modalCart{
+  .modalForm{
+    margin-bottom: em(15px, 16px);
+  }
+
+  .modalHeader{
+    border-bottom: none;
+  }
+
+  .checkoutProduct{
+    &:nth-child(odd){
+      background: $white;
+    }
+  }
+  
+  .checkoutProducts{
+    margin-bottom: 0;
+  }
+
+  .checkoutProductTotal{
+    @media (min-width: 768px) {
+      margin-left: 59%;
+    }
+  }
+
+  .checkoutProductAbout{
+    @media (min-width: 768px) {
+      width: 45%;
+    }
+  }
+
+  .checkoutProductCount{
+    @media (min-width: 768px) {
+      width: 13%;
+    }
+  }
+
+  .feedbackBtn{
+    font-size: em(18px, 16px);
+    padding: em(10px, 18px) em(15px, 18px);
+  }
+
+  .modalNotRegisterBtn{
+    margin-left: 15px;
+  }
+
+  .backBuyBtn{
+    padding: em(10px, 18px) em(15px, 18px);
+  }
+
+  .feedbackBtn{
+    float: right;
+  }
+
+  @media (max-width: 992px) {
+
+    .modalNotRegister{
+      text-align: center;
+    }
+
+    .backBuyBtn,
+    .modalNotRegisterBtn{
+      margin-bottom: 10px;
+    }
+
+    .modalNotRegisterBtn{
+      float: none;
+      margin-left: 0;
+    }
+
+    .feedbackBtn{
+      float: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .checkoutProductImage{
+      display: none;
+    }
+  }
+}
+
+//Modal forgot
+
+.modalLoginForgot{
+  .control-label-login{
+    margin-bottom: em(20px, 18px)!important;
+    font-size: em(18px, 16px);
+    color: $gray1!important;
+    text-align: left!important;
+  }
+}
+
+//Modal new
+
+.modalLoginNew{
+  .modalForm{
+    margin-bottom: 0;
+  }
+}
+
+//Modal quick view
+
+.modalQuickView{
+  &.modalGlobal{
+    background: $white;
+  }
+
+  .productCardPrice{
+    font-size: em(18px, 16px);
+  }
+
+  .productCardBtn{
+    font-size: em(14px, 16px);
+  }
 }

@@ -1923,10 +1923,97 @@ img {
     max-width: 470px;
   }
 
+  .wrapModalGlobalLarge .modal-dialog {
+    max-width: 1000px;
+  }
+
   .modalTitle {
     font-size: 1.875em;
   }
 }
+.modalCart .modalForm {
+  margin-bottom: 0.9375em;
+}
+.modalCart .modalHeader {
+  border-bottom: none;
+}
+.modalCart .checkoutProduct:nth-child(odd) {
+  background: #ffffff;
+}
+.modalCart .checkoutProducts {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .modalCart .checkoutProductTotal {
+    margin-left: 59%;
+  }
+}
+@media (min-width: 768px) {
+  .modalCart .checkoutProductAbout {
+    width: 45%;
+  }
+}
+@media (min-width: 768px) {
+  .modalCart .checkoutProductCount {
+    width: 13%;
+  }
+}
+.modalCart .feedbackBtn {
+  font-size: 1.125em;
+  padding: 0.55556em 0.83333em;
+}
+.modalCart .modalNotRegisterBtn {
+  margin-left: 15px;
+}
+.modalCart .backBuyBtn {
+  padding: 0.55556em 0.83333em;
+}
+.modalCart .feedbackBtn {
+  float: right;
+}
+@media (max-width: 992px) {
+  .modalCart .modalNotRegister {
+    text-align: center;
+  }
+  .modalCart .backBuyBtn,
+  .modalCart .modalNotRegisterBtn {
+    margin-bottom: 10px;
+  }
+  .modalCart .modalNotRegisterBtn {
+    float: none;
+    margin-left: 0;
+  }
+  .modalCart .feedbackBtn {
+    float: none;
+  }
+}
+@media (max-width: 768px) {
+  .modalCart .checkoutProductImage {
+    display: none;
+  }
+}
+
+.modalLoginForgot .control-label-login {
+  margin-bottom: 1.11111em !important;
+  font-size: 1.125em;
+  color: #444444 !important;
+  text-align: left !important;
+}
+
+.modalLoginNew .modalForm {
+  margin-bottom: 0;
+}
+
+.modalQuickView.modalGlobal {
+  background: #ffffff;
+}
+.modalQuickView .productCardPrice {
+  font-size: 1.125em;
+}
+.modalQuickView .productCardBtn {
+  font-size: 0.875em;
+}
+
 /*
 	AnythingSlider v1.8+ Default theme
 	By Chris Coyier: http://css-tricks.com
@@ -3468,6 +3555,11 @@ All this is done for any sub-level being entered.
   display: inline-block;
   position: relative;
   top: 2px;
+}
+
+.searchResultNotFoundText {
+  color: #444444;
+  margin-bottom: 1.5625em;
 }
 
 /*------------------ Header-bottom ------------------*/
