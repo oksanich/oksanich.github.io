@@ -160,3 +160,22 @@ $(".qtyminus").click(function(e) {
 
 })(jQuery);
 
+// Scroll top/bottom
+
+$('._scrollTop ').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 1000);
+    return false;
+});
+$('._scrollBottom').click(function(){
+    $('html,body').animate({scrollTop: $(document).height()}, 1000);
+    return false;
+});
+
+
+// Do not open map section, opens this link
+
+//$('._redirectLink').on('click', function (e) {
+//    e.preventDefault();
+//    e.stopPropagation();
+//});
+

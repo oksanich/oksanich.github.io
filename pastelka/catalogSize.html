@@ -2004,19 +2004,14 @@
                                     <!--START filter-size-->
                                     <div class="filterSize filterGroup">
                                         <div class="filterGroupTitle">Размер</div>
-                                        <div class="filterItem">
-                                            <input id="itemSize1" type="checkbox"/>
-                                            <label for="itemSize1" class="itemSizeLabel">
-                                                <span class="itemSizePseudoCheckbox itemPseudoCheckbox"></span>
-                                                двуспальные <span class="itemSizeNumber">(354)</span>
-                                            </label>
-                                        </div>
-                                        <div class="filterItem">
-                                            <input id="itemSize2" type="checkbox"/>
-                                            <label for="itemSize2" class="itemSizeLabel">
-                                                <span class="itemSizePseudoCheckbox itemPseudoCheckbox"></span>
-                                                полуторные <span class="itemSizeNumber">(83)</span>
-                                            </label>
+                                        <div class="filterSorting filterMulti">
+                                            <select class="selectpicker">
+                                                <option>S</option>
+                                                <option>M</option>
+                                                <option>L</option>
+                                                <option>XL</option>
+                                                <option>XXL</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <!--END filter-size-->
@@ -2417,7 +2412,7 @@
                                                             </div>
                                                             <div class="productInfoCell3 productInfoCell">
                                                                 <div class="productInfoPrice"></div>
-                                                                <div class="productInfoBtn" data-toggle="modal" data-target="#modalNoticeArrival">уведомить о поступлении</div>
+                                                                <button class="productInfoBtn">уведомить о поступлении</button>
                                                             </div>
                                                             <div class="productInfoCell4 productInfoCell">
                                                                 <button class="productInfoCartBtn">В корзину</button>
@@ -2788,48 +2783,6 @@
                                         </div>
                                         <!--END catalog-product-->
                                     </div>
-
-                                    <!--START modal-login-->
-                                    <div class="modal fade" id="modalNoticeArrival">
-                                        <div class="wrapModalGlobal">
-                                            <div class="modal-dialog modal-md">
-                                                <div class="modalNoticeArrival modalGlobal">
-                                                    <div class="modalHeader">
-                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-close"></span></button>
-                                                        <h2 class="modalTitle">Уведомить о поступлении</h2>
-                                                    </div>
-                                                    <div class="modalBody">
-                                                        <p class="modalBodyText">Введите данные и мы сообщим когда поступит:</p>
-                                                        <h3 class="modalBodyProductTitle">Постельное белье Zastelli Дисней полуторный София  и ее друзья</h3>
-                                                        <div class="modalForm">
-                                                            <form class="form-horizontal" role="form">
-                                                                <div class="form-group">
-                                                                    <label for="inputLogin" class="col-xs-3 col-sm-2 control-label">Логин</label>
-                                                                    <div class="col-xs-9 col-sm-10">
-                                                                        <input type="text" class="form-control" id="inputLoginNew">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputPassword" class="col-xs-3 col-sm-2 control-label">Пароль</label>
-                                                                    <div class="col-xs-9 col-sm-10">
-                                                                        <input type="password" class="form-control" id="inputPasswordNew">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="modalFormEnter">
-                                                                    <button class="modalFormEnterBtn">Войти</button>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                        <div class="modalNotRegister">
-                                                            <p class="modalNotRegisterText">Еще не зарегистрированы у нас?</p>
-                                                            <button class="modalNotRegisterBtn">Зарегистрироваться</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--END modal-login-->
                                 </div>
                             </div>
                             <!--END catalog-products-->

@@ -1767,6 +1767,35 @@ img {
   color: #b6258f;
 }
 
+.wrapScroll {
+  position: fixed;
+  top: 42%;
+  right: 2%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .wrapScroll {
+    display: none;
+  }
+}
+
+.scroll {
+  color: #99b84d;
+  font-size: 2.25em;
+  cursor: pointer;
+}
+.scroll:hover {
+  color: #7c963c;
+}
+
+.circle {
+  width: 32px;
+  height: 32px;
+  background: #99b84d;
+  display: inline-block;
+  border-radius: 50%;
+}
+
 /*------------------ Bread crumbs ------------------*/
 .wrapBreadcrumb .breadcrumb {
   background: none;
@@ -3367,6 +3396,7 @@ All this is done for any sub-level being entered.
 .infoCartIcon [class^="icon-"] {
   font-size: 2.5em;
   color: #debcf8;
+  cursor: pointer;
 }
 
 .infoCartTitleLink {
@@ -4230,6 +4260,24 @@ All this is done for any sub-level being entered.
   margin-bottom: 1.5625em;
 }
 
+.filterSize .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 235px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .filterSize .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 265px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .filterSize .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 190px;
+  }
+}
+.filterSize .filterMulti .filter-option {
+  font-size: 1em;
+  color: #444444;
+}
+
 .filterGroupTitle {
   color: #505050;
   margin-bottom: 1.11111em;
@@ -4583,6 +4631,7 @@ All this is done for any sub-level being entered.
   font-size: 0.75em;
   background: #b6258f;
   padding: 0.33333em;
+  position: absolute;
 }
 .productInfoBtn:hover {
   background: #ffffff;
@@ -4631,6 +4680,18 @@ All this is done for any sub-level being entered.
 }
 
 .catalogProductTitleLink {
+  display: block;
+  /* Fallback for non-webkit */
+  display: -webkit-box;
+  height: 48px;
+  /* Fallback for non-webkit */
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: #444444;
   display: inline-block;
   margin-bottom: 0.9375em;

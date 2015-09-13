@@ -28,7 +28,6 @@ img{
   width: 100%;
 }
 
-
 .cartBtn{
   border: 2px solid $green2;
   color: $green2;
@@ -98,4 +97,33 @@ img{
     color: $primeColor;
   }
 }
+
+.wrapScroll{
+  position: fixed;
+  top: 42%;
+  right: 2%;
+  text-align: center;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.scroll{
+  color: $green1;
+  font-size: em(36px, 16px);
+  cursor: pointer;
+  &:hover{
+    color: darken($green1, 10%);
+  }
+}
+
+.circle{
+  width: 32px;
+  height: 32px;
+  background: $green1;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+
 

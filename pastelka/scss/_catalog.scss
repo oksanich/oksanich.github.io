@@ -42,6 +42,27 @@
   margin-bottom: em(25px, 16px);
 }
 
+.filterSize{
+  .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 235px;
+    @media (min-width: 992px) and (max-width: 1200px){
+      width: 265px;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px){
+      width: 190px;
+    }
+  }
+
+  .filterMulti {
+
+    .filter-option {
+      font-size: em(16px, 16px);
+      color: $gray1;
+    }
+  }
+}
+
 .filterGroupTitle{
   color: $gray2;
   margin-bottom: em(20px, 18px);
@@ -410,6 +431,7 @@
   font-size: em(12px, 16px);
   background: $primeColor;
   padding: em(4px, 12px);
+  position: absolute;
   @extend %btnFull;
   &:hover{
     background: $white;
@@ -459,6 +481,21 @@
 }
 
 .catalogProductTitleLink{
+  $font-size: 16px;
+  $line-height: 1;
+  $lines-to-show: 3;
+
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+  margin: 0 auto;
+  font-size: $font-size;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
   color: $gray1;
   display: inline-block;
   margin-bottom: em(15px, 16px);
