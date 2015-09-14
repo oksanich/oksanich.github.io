@@ -2043,6 +2043,39 @@ img {
   font-size: 0.875em;
 }
 
+.modalNoticeArrival label {
+  font-size: 1.125em;
+  text-align: left !important;
+}
+@media (max-width: 768px) {
+  .modalNoticeArrival label {
+    font-size: 0.875em;
+  }
+}
+.modalNoticeArrival [for="inputNoticeNumber"] + .col-sm-2 {
+  padding-left: 0 !important;
+}
+.modalNoticeArrival .modalBodyText {
+  font-size: 1.125em;
+  color: #444444;
+  margin-bottom: 0.55556em;
+}
+.modalNoticeArrival .modalBodyProductTitle {
+  color: #9951bd;
+  line-height: 1.2em;
+  font-size: 1.125em;
+  margin-bottom: 0.83333em;
+}
+.modalNoticeArrival textarea {
+  resize: vertical;
+}
+.modalNoticeArrival .captchaText {
+  color: #757575;
+}
+.modalNoticeArrival .modalForm {
+  margin-bottom: 0.9375em;
+}
+
 /*
 	AnythingSlider v1.8+ Default theme
 	By Chris Coyier: http://css-tricks.com
@@ -3749,6 +3782,22 @@ All this is done for any sub-level being entered.
   background: #ffffff url("../image/categoryBg/bedroom.png") right no-repeat;
 }
 
+.allCategorySubLink {
+  position: absolute;
+  bottom: 1.11111em;
+  right: 1.11111em;
+  font-size: 1.125em;
+  color: #b6258f;
+  font-family: Roboto-bold, sans-serif;
+}
+.allCategorySubLink [class^="icon-"] {
+  position: relative;
+  top: 2px;
+}
+.allCategorySubLink:hover {
+  color: #8c1c6e;
+}
+
 @media (max-width: 992px) {
   .middleContactIcon,
   .infoCartIcon {
@@ -4631,7 +4680,7 @@ All this is done for any sub-level being entered.
   font-size: 0.75em;
   background: #b6258f;
   padding: 0.33333em;
-  position: absolute;
+  cursor: pointer;
 }
 .productInfoBtn:hover {
   background: #ffffff;
@@ -4645,7 +4694,6 @@ All this is done for any sub-level being entered.
 .catalogProductImageLink {
   position: relative;
   display: block;
-  overflow: hidden;
 }
 .catalogProductImageLink .fastView {
   position: absolute;
@@ -4654,20 +4702,18 @@ All this is done for any sub-level being entered.
   background: rgba(182, 36, 142, 0.5);
   padding: 0.27778em 0.83333em;
   top: 40%;
-  left: calc(50% - 100px);
   display: none;
   text-align: center;
+  width: 100%;
 }
 @media (max-width: 1200px) {
   .catalogProductImageLink .fastView {
     font-size: 1em;
-    left: calc(50% - 88px);
   }
 }
 @media (max-width: 992px) {
   .catalogProductImageLink .fastView {
     width: 10em;
-    left: calc(50% - 80px);
   }
 }
 .catalogProductImageLink:hover .fastView {
@@ -4872,9 +4918,52 @@ All this is done for any sub-level being entered.
 .item.list-group-item img {
   float: left;
 }
+@media (max-width: 992px) {
+  .item.list-group-item img {
+    float: none;
+  }
+}
 
 .item.list-group-item:after {
   clear: both;
+}
+
+.catalogProductSale {
+  position: relative;
+}
+.catalogProductSale:before {
+  content: '';
+  background: url("../image/decor/percent.png");
+  width: 36px;
+  height: 37px;
+  position: absolute;
+  z-index: 99;
+  right: -10px;
+  top: -10px;
+}
+@media (max-width: 768px) {
+  .catalogProductSale:before {
+    right: 0;
+  }
+}
+
+.catalogProductNew {
+  position: relative;
+}
+.catalogProductNew:after {
+  content: '';
+  background: url("../image/decor/newRibbon.png");
+  width: 89px;
+  height: 21px;
+  position: absolute;
+  z-index: 99;
+  left: -5px;
+  top: 0;
+}
+@media (max-width: 768px) {
+  .catalogProductNew:after {
+    left: 5px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -6814,6 +6903,10 @@ All this is done for any sub-level being entered.
   .wrapBrandsName {
     text-align: center;
   }
+}
+
+._brandsNames.mobile .brandsNamesList {
+  display: none;
 }
 
 /*------------------ Personal Area ------------------*/

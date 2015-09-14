@@ -146,7 +146,7 @@ $(".qtyminus").click(function(e) {
 
 (function($) {
     var $window = $(window),
-        $html = $('._wrapBrandsName');
+        $html = $('._brandsNames');
 
     function resize() {
         if ($window.width() < 768) {
@@ -157,6 +157,14 @@ $(".qtyminus").click(function(e) {
     }
 
     $window.resize(resize).trigger('resize');
+
+    $("._wrapBrandsName").click(function(){
+        if($(this).hasClass("open")){
+            $(this).removeClass("open");
+        }else{
+            $(this).addClass("open").parent($("._brandsNames")).find($("._wrapBrandsName")).removeClass("");
+        }
+    });
 
 })(jQuery);
 
@@ -171,11 +179,4 @@ $('._scrollBottom').click(function(){
     return false;
 });
 
-
-// Do not open map section, opens this link
-
-//$('._redirectLink').on('click', function (e) {
-//    e.preventDefault();
-//    e.stopPropagation();
-//});
 

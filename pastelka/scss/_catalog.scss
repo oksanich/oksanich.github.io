@@ -431,8 +431,8 @@
   font-size: em(12px, 16px);
   background: $primeColor;
   padding: em(4px, 12px);
-  position: absolute;
   @extend %btnFull;
+  cursor: pointer;
   &:hover{
     background: $white;
     color: $primeColor;
@@ -446,7 +446,6 @@
 .catalogProductImageLink{
   position: relative;
   display: block;
-  overflow: hidden;
 
   .fastView{
     position: absolute;
@@ -455,18 +454,16 @@
     background: rgba(182, 36, 142, 0.5);
     padding: em(5px, 18px) em(15px, 18px);
     top: 40%;
-    left: calc(50% - 100px);
     display: none;
     text-align: center;
+    width: 100%;
 
     @media (max-width: 1200px) {
       font-size: em(16px, 16px);
-      left: calc(50% - 88px);
     }
 
     @media (max-width: 992px) {
       width: em(160px, 16px);
-      left: calc(50% - 80px);
     }
   }
   &:hover{
@@ -690,6 +687,9 @@
 
 .item.list-group-item img{
   float:left;
+  @media (max-width: 992px){
+    float: none;
+  }
 }
 
 .item.list-group-item:after
@@ -697,6 +697,43 @@
   clear:both;
 }
 
+.catalogProductSale{
+  position: relative;
+  &:before{
+    content: '';
+    background: url("../image/decor/percent.png");
+    width: 36px;
+    height: 37px;
+    position: absolute;
+    z-index: 99;
+    right: -10px;
+    top: -10px;
+  }
+  @media (max-width: 768px) {
+    &:before{
+      right: 0;
+    }
+  }
+}
+
+.catalogProductNew{
+  position: relative;
+  &:after{
+    content: '';
+    background: url("../image/decor/newRibbon.png");
+    width: 89px;
+    height: 21px;
+    position: absolute;
+    z-index: 99;
+    left: -5px;
+    top: 0;
+  }
+  @media (max-width: 768px) {
+    &:after{
+      left: 5px;
+    }
+  }
+}
 
 @media (min-width: 768px) {
 

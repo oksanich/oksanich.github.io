@@ -664,6 +664,22 @@
   }
 }
 
+.allCategorySubLink {
+  position: absolute;
+  bottom: em(20px, 18px);
+  right: em(20px, 18px);
+  font-size: em(18px, 16px);
+  color: $primeColor;
+  font-family: $RobotoBold;
+  [class^="icon-"]{
+    position: relative;
+    top: 2px;
+  }
+  &:hover{
+    color: darken($primeColor, 10%);
+  }
+}
+
 
 @media (max-width: 992px) {
 
