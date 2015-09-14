@@ -159,10 +159,13 @@ $(".qtyminus").click(function(e) {
     $window.resize(resize).trigger('resize');
 
     $("._wrapBrandsName").click(function(){
-        if($(this).hasClass("open")){
-            $(this).removeClass("open");
+        var $this = $(this);
+
+        if($this.hasClass("open")){
+            $this.removeClass("open");
         }else{
-            $(this).addClass("open").parent($("._brandsNames")).find($("._wrapBrandsName")).removeClass("");
+            $this.parent($("._brandsNames")).find($("._wrapBrandsName")).removeClass("open");
+            $this.addClass("open");
         }
     });
 

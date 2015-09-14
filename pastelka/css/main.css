@@ -6909,6 +6909,29 @@ All this is done for any sub-level being entered.
   display: none;
 }
 
+@media (max-width: 768px) {
+  .wrapBrandsName {
+    margin-bottom: 1.25em;
+    position: relative;
+  }
+  .wrapBrandsName:after {
+    content: '';
+    border: 6px solid transparent;
+    border-top: 8px solid #9951bd;
+    top: 15px;
+    right: 35%;
+    position: absolute;
+  }
+  .wrapBrandsName.open:after {
+    content: '';
+    border: 6px solid transparent;
+    border-bottom: 8px solid #9951bd;
+    top: 4px;
+  }
+  .wrapBrandsName.open .brandsNamesList {
+    display: block !important;
+  }
+}
 /*------------------ Personal Area ------------------*/
 .personInfo,
 .personOrderHistory {

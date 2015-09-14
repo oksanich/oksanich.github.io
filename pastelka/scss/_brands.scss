@@ -61,3 +61,36 @@
   }
 }
 
+@media (max-width: 768px) {
+  .wrapBrandsName{
+    margin-bottom: em(20px, 16px);
+    position: relative;
+
+    &:after{
+      content: '';
+      border: 6px solid transparent;
+      border-top: 8px solid $purple1;
+      top: 15px;
+      right: 35%;
+      position: absolute;
+
+    }
+    &.open{
+      &:after{
+        content: '';
+        border: 6px solid transparent;
+        border-bottom: 8px solid $purple1;
+        top: 4px;
+      }
+
+      .brandsNamesList{
+        display: block!important;
+      }
+    }
+  }
+
+  .brandsNameTitle{
+
+  }
+}
+
