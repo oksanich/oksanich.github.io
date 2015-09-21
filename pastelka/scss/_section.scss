@@ -58,7 +58,6 @@
 .anythingSlider-default{
   .anythingWindow {
     border: none;
-//    margin-top: -15px;
   }
 
   .panel{
@@ -147,18 +146,6 @@
       }
     }
   }
-  .verticalSliderArrowLinkUp{
-//    position: relative;
-//    top: 15px;
-  }
-}
-
-.verticalSliderArrowUp{
-//  position: relative;
-//  top: 15px;
-//  @media (max-width: 768px) {
-//    margin-bottom: -10px;
-//  }
 }
 
 .verticalSliderPrice{
@@ -180,4 +167,15 @@
     right: 5px;
     bottom: 10px;
   }
+}
+
+#carousel_9{
+  height: 540px !important;
+  overflow: hidden;
+}
+
+.carousel_box{
+  height: 140px !important;
+  width: 100%;
+  padding-bottom: 1.25em;
 }

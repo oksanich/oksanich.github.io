@@ -53,6 +53,7 @@ img{
     font-family: $RobotoMedium;
     font-size: em(36px, 16px);
     padding: 0 em(26px, 36px) em(5px, 36px);
+    color: $primeColor;
 
     @media (max-width: 768px) {
       font-size: em(30px, 16px);
@@ -103,8 +104,10 @@ img{
   top: 42%;
   right: 2%;
   text-align: center;
+  z-index: 100;
   @media (max-width: 768px) {
-    display: none;
+    top: 75%;
+    right: 15px;
   }
 }
 

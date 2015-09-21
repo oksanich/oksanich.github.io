@@ -124,6 +124,7 @@ $('.qtyplus').click(function(e){
         $('input[name='+fieldName+']').val(0);
     }
 });
+
 // This button will decrement the value till 0
 $(".qtyminus").click(function(e) {
     // Stop acting like a button
@@ -161,13 +162,15 @@ $(".qtyminus").click(function(e) {
     $("._wrapBrandsName").click(function(){
         var $this = $(this);
 
-        if($this.hasClass("open")){
-            $this.removeClass("open");
-        }else{
-            $this.parent($("._brandsNames")).find($("._wrapBrandsName")).removeClass("open");
-            $this.addClass("open");
-        }
-    });
+        $this.toggleClass("open");
+
+        //if($this.hasClass("open")){
+        //    $this.removeClass("open");
+        //}else{
+        //    $this.parent($("._brandsNames .row")).find($("._wrapBrandsName")).removeClass("open");
+        //    $this.addClass("open");
+        //}
+   });
 
 })(jQuery);
 

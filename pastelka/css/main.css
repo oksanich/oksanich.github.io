@@ -1723,6 +1723,7 @@ img {
   font-family: Roboto-medium, sans-serif;
   font-size: 2.25em;
   padding: 0 0.72222em 0.13889em;
+  color: #b6258f;
 }
 @media (max-width: 768px) {
   .wrapTitleDecor .titleDecor {
@@ -1772,10 +1773,12 @@ img {
   top: 42%;
   right: 2%;
   text-align: center;
+  z-index: 100;
 }
 @media (max-width: 768px) {
   .wrapScroll {
-    display: none;
+    top: 75%;
+    right: 15px;
   }
 }
 
@@ -2043,36 +2046,44 @@ img {
   font-size: 0.875em;
 }
 
-.modalNoticeArrival label {
+.modalNoticeArrival label,
+.modalFeedBack label {
   font-size: 1.125em;
   text-align: left !important;
 }
 @media (max-width: 768px) {
-  .modalNoticeArrival label {
+  .modalNoticeArrival label,
+  .modalFeedBack label {
     font-size: 0.875em;
   }
 }
-.modalNoticeArrival [for="inputNoticeNumber"] + .col-sm-2 {
+.modalNoticeArrival [for="inputNoticeNumber"] + .col-sm-2,
+.modalFeedBack [for="inputNoticeNumber"] + .col-sm-2 {
   padding-left: 0 !important;
 }
-.modalNoticeArrival .modalBodyText {
+.modalNoticeArrival .modalBodyText,
+.modalFeedBack .modalBodyText {
   font-size: 1.125em;
   color: #444444;
   margin-bottom: 0.55556em;
 }
-.modalNoticeArrival .modalBodyProductTitle {
+.modalNoticeArrival .modalBodyProductTitle,
+.modalFeedBack .modalBodyProductTitle {
   color: #9951bd;
   line-height: 1.2em;
   font-size: 1.125em;
   margin-bottom: 0.83333em;
 }
-.modalNoticeArrival textarea {
+.modalNoticeArrival textarea,
+.modalFeedBack textarea {
   resize: vertical;
 }
-.modalNoticeArrival .captchaText {
+.modalNoticeArrival .captchaText,
+.modalFeedBack .captchaText {
   color: #757575;
 }
-.modalNoticeArrival .modalForm {
+.modalNoticeArrival .modalForm,
+.modalFeedBack .modalForm {
   margin-bottom: 0.9375em;
 }
 
@@ -6198,8 +6209,11 @@ All this is done for any sub-level being entered.
   line-height: 1.33333em;
 }
 
-.deliveryTitle {
-  font-size: 2.25em;
+.deliveryAttention .deliveryTitle,
+.deliveryAttentionBack .deliveryTitle {
+  text-align: left;
+  color: #b6258f;
+  font-size: 1.875em;
 }
 
 /*------------------ Discount ------------------*/
@@ -7562,6 +7576,17 @@ All this is done for any sub-level being entered.
   position: absolute;
   right: 5px;
   bottom: 10px;
+}
+
+#carousel_9 {
+  height: 540px !important;
+  overflow: hidden;
+}
+
+.carousel_box {
+  height: 140px !important;
+  width: 100%;
+  padding-bottom: 1.25em;
 }
 
 /*------------------ 404 ------------------*/

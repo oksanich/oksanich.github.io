@@ -742,7 +742,6 @@
                         <div class="col-sm-8 col-md-9">
                             <div class="headerMiddleContentRight">
                                 <div class="row">
-
                                     <div class="middleContentRightTop">
                                         <div class="col-xs-5 col-sm-6 col-md-7">
                                             <div class="headerLogo">
@@ -2792,11 +2791,77 @@
                                 </div>
                             </div>
                             <div class="feedback">
-                                <button class="feedbackBtn">Обратный звонок</button>
+                                <button class="feedbackBtn" data-toggle="modal" data-target="#modalFeedBack">Обратная связь</button>
                             </div>
                         </div>
                     </div>
                     <!--END footer-left-->
+
+
+                    <!--START modal-feedback-->
+                    <div class="modal fade" id="modalFeedBack">
+                        <div class="wrapModalGlobal">
+                            <div class="modal-dialog modal-md">
+                                <div class="modalFeedBack modalGlobal">
+                                    <div class="modalHeader">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-close"></span></button>
+                                        <h2 class="modalTitle">Обратная связь</h2>
+                                    </div>
+                                    <div class="modalBody">
+                                        <p class="modalBodyText">Чтобы высказать ваши предложения, замечания или задать вопрос, пожалуйста, заполните приведенную ниже форму.</p>
+                                        <div class="modalForm">
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <label for="inputNoticeName" class="col-xs-3 col-sm-3 control-label">Имя</label>
+                                                    <div class="col-xs-9 col-sm-9">
+                                                        <input type="text" class="form-control" id="inputNoticeName">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputNoticeMail" class="col-xs-3 col-sm-3 control-label">E-mail</label>
+                                                    <div class="col-xs-9 col-sm-9">
+                                                        <input type="email" class="form-control" id="inputNoticeMail">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputNoticeTel" class="col-xs-5 col-sm-4 control-label">Телефон</label>
+                                                    <div class="col-xs-7 col-sm-8">
+                                                        <input type="tel" class="form-control" id="inputNoticeTel">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputNoticeMessage" class="col-xs-5 col-sm-4 control-label">Сообщение</label>
+                                                    <div class="col-xs-7 col-sm-8">
+                                                        <textarea class="form-control" name="" id="inputNoticeMessage"></textarea>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <div class="wrapCaptcha">
+                                            <div class="mainCaptcha">
+                                                <p class="captchaText">Введите число, изображенное на рисунке</p>
+                                                <div class="captcha">
+                                                    <div class="captchaImage">
+
+                                                    </div>
+                                                    <div class="captchaReload">
+                                                        <span class="icon-revers"></span>
+                                                    </div>
+                                                    <input class="captchaInput" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="modalNotRegister">
+                                            <button class="modalNotRegisterBtn">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END modal-feedback-->
 
                     <!--START footer-middle-->
                     <div class="col-xs-12 col-sm-4">
@@ -2902,7 +2967,7 @@
             <span class="icon-down"></span>
         </div>
     </div>
-    <!--END scrol-top/bottom-->
+    <!--END scroll-top/bottom-->
 
 </div>
 

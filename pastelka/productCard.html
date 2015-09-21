@@ -571,7 +571,7 @@
 
                 <div class="headerTop">
                     <div class="row">
-                        <div class="col-md-10 hidden-xs hidden-sm">
+                        <div class="col-md-10 col-lg-11 hidden-xs hidden-sm">
                             <nav class="topMenu">
                                 <ul class="topMenuList">
                                     <li class="topMenuItem"><a class="topMenuLink" href="#">О магазине</a></li>
@@ -585,7 +585,7 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="col-xs-5 col-md-2 pull-right">
+                        <div class="pull-right">
                             <div class="enterToSite">
                                 <button class="logIn" data-toggle="modal" data-target="#modalLogin">
                                     <span class="icon-enter"></span>
@@ -620,7 +620,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="modalFormEnter">
-                                                            <a class="forgotPasswordLink" href="">Забыли пароль?</a>
+                                                            <a class="forgotPasswordLink" href="#" data-toggle="modal" data-target="#modalForgotLogin">Забыли пароль?</a>
                                                             <button class="modalFormEnterBtn">Войти</button>
                                                         </div>
                                                     </form>
@@ -635,6 +635,76 @@
                                 </div>
                             </div>
                             <!--END modal-login-->
+
+                            <!--START modal-login-forgot-->
+                            <div class="modal fade" id="modalForgotLogin">
+                                <div class="wrapModalGlobal">
+                                    <div class="modal-dialog modal-md">
+                                        <div class="modalLoginForgot modalGlobal">
+                                            <div class="modalHeader">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-close"></span></button>
+                                                <h2 class="modalTitle">Напомнить пароль</h2>
+                                            </div>
+                                            <div class="modalBody">
+                                                <div class="modalForm">
+                                                    <form class="form-horizontal" role="form">
+                                                        <div class="form-group">
+                                                            <label for="inputLoginForgot" class="col-sm-12 control-label control-label-login">Введите Логин или E-mail</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="text" class="form-control" id="inputLoginForgot">
+                                                            </div>
+                                                        </div>
+                                                        <div class="modalFormEnter">
+                                                            <button class="modalFormEnterBtn">Отправить пароль</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modalNotRegister">
+                                                    <p class="modalNotRegisterText">Еще не зарегистрированы у нас?</p>
+                                                    <button class="modalNotRegisterBtn">Зарегистрироваться</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END modal-login-forgot-->
+
+                            <!--START modal-login-new-->
+                            <div class="modal fade" id="modalLoginNew">
+                                <div class="wrapModalGlobal">
+                                    <div class="modal-dialog modal-md">
+                                        <div class="modalLoginNew modalGlobal">
+                                            <div class="modalHeader">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-close"></span></button>
+                                                <h2 class="modalTitle">Bxoд в интернет-магазин</h2>
+                                            </div>
+                                            <div class="modalBody">
+                                                <div class="modalForm">
+                                                    <form class="form-horizontal" role="form">
+                                                        <div class="form-group">
+                                                            <label for="inputLogin" class="col-xs-3 col-sm-2 control-label">Логин</label>
+                                                            <div class="col-xs-9 col-sm-10">
+                                                                <input type="text" class="form-control" id="inputLoginNew">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputPassword" class="col-xs-3 col-sm-2 control-label">Пароль</label>
+                                                            <div class="col-xs-9 col-sm-10">
+                                                                <input type="password" class="form-control" id="inputPasswordNew">
+                                                            </div>
+                                                        </div>
+                                                        <div class="modalFormEnter">
+                                                            <button class="modalFormEnterBtn">Войти</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END modal-login-new-->
 
                         </div>
                     </div>
@@ -672,7 +742,6 @@
                         <div class="col-sm-8 col-md-9">
                             <div class="headerMiddleContentRight">
                                 <div class="row">
-
                                     <div class="middleContentRightTop">
                                         <div class="col-xs-5 col-sm-6 col-md-7">
                                             <div class="headerLogo">
@@ -688,15 +757,119 @@
                                                 </div>
                                                 <div class="headerInfoCart">
                                                     <div class="infoCartIcon">
-                                                        <span class="icon-bag"></span>
+                                                        <span class="icon-bag" data-toggle="modal" data-target="#modalCart"></span>
                                                     </div>
                                                     <div class="infoCart">
-                                                        <a class="infoCartTitleLink" href="">Корзина</a>
+                                                        <a class="infoCartTitleLink" data-toggle="modal" data-target="#modalCart" href="#">Корзина</a>
                                                         <p class="infoCartProduct infoCart">товаров: <span class="infoCartProductNumber infoCartNumber">2</span> </p>
                                                         <p class="infoCartSum infoCart">на сумму: <span class="infoCartSumNumber infoCartNumber">3 685 грн</span></p>
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <!--START modal-cart-->
+                                            <div class="modal fade" id="modalCart">
+                                                <div class="wrapModalGlobalLarge">
+                                                    <div class="modal-dialog modal-lg">
+                                                        <div class="modalCart modalGlobal">
+                                                            <div class="modalHeader">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-close"></span></button>
+                                                                <h2 class="modalTitle">Корзина</h2>
+                                                            </div>
+                                                            <div class="modalBody">
+                                                                <div class="modalForm">
+                                                                    <!--START checkout-products-->
+                                                                    <div class="checkoutProducts">
+                                                                        <div class="wrapCheckoutProduct">
+                                                                            <!--START checkout-product-->
+                                                                            <div class="checkoutProduct">
+                                                                                <div class="checkoutProductImage checkoutProductCell">
+                                                                                    <img class="checkoutImage" src="image/checkoutProduct1.jpg" alt=""/>
+                                                                                </div>
+                                                                                <div class="checkoutProductAbout checkoutProductCell">
+                                                                                    <a class="checkoutProductTitleLink" href="">Постельное белье Zastelli Дисней полуторный София и ее друзья</a>
+                                                                                    <div class="checkoutProductArticle">Артикул: 25486</div>
+                                                                                    <div class="checkoutProductType">Семейный</div>
+                                                                                </div>
+                                                                                <div class="checkoutProductCount checkoutProductCell">
+                                                                                    <div class="wrapCheckoutCounter">
+                                                                                        <button class='qtyplus  checkoutCounterBtn' field='quantity1'>
+                                                                                            <span class="icon-up"></span>
+                                                                                        </button>
+                                                                                        <input type='text' name='quantity1' value='0' class='qty checkoutCounter' />
+                                                                                        <button class='qtyminus checkoutCounterBtn' field='quantity1'>
+                                                                                            <span class="icon-down"></span>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="checkoutProductPrice checkoutProductCell">
+                                                                                    <div class="checkoutPrice checkoutPriceOld">12 000 грн</div>
+                                                                                    <div class="checkoutPrice checkoutPriceNow">11 542 грн</div>
+                                                                                </div>
+                                                                                <div class="checkoutProductBasket checkoutProductCell">
+                                                                                    <a class="checkoutBasket" href="">
+                                                                                        <span class="icon-basket"></span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--END checkout-product-->
+
+                                                                            <!--START checkout-product-->
+                                                                            <div class="checkoutProduct">
+                                                                                <div class="checkoutProductImage checkoutProductCell">
+                                                                                    <img class="checkoutImage" src="image/checkoutProduct2.jpg" alt=""/>
+                                                                                </div>
+                                                                                <div class="checkoutProductAbout checkoutProductCell">
+                                                                                    <a class="checkoutProductTitleLink" href="">Постельное Altinbasak</a>
+                                                                                    <div class="checkoutProductArticle">Артикул: 25486</div>
+                                                                                    <div class="checkoutProductType">Семейный</div>
+                                                                                </div>
+                                                                                <div class="checkoutProductCount checkoutProductCell">
+                                                                                    <div class="wrapCheckoutCounter">
+                                                                                        <button class='qtyplus checkoutCounterBtn' field='quantity'>
+                                                                                            <span class="icon-up"></span>
+                                                                                        </button>
+                                                                                        <input type='text' name='quantity' value='0' class='qty checkoutCounter' />
+                                                                                        <button class='qtyminus checkoutCounterBtn' field='quantity'>
+                                                                                            <span class="icon-down"></span>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="checkoutProductPrice checkoutProductCell">
+                                                                                    <div class="checkoutPrice checkoutPriceNow">1 655 грн</div>
+                                                                                </div>
+                                                                                <div class="checkoutProductBasket checkoutProductCell">
+                                                                                    <a class="checkoutBasket" href="">
+                                                                                        <span class="icon-basket"></span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--END checkout-product-->
+                                                                        </div>
+
+                                                                        <!--END checkout-product-bottom-->
+                                                                        <div class="checkoutProductBottom">
+                                                                            <div class="checkoutProductTotal">
+                                                                                <div class="checkoutTotal"><span class="checkoutTotalText">Итого:</span> <span class="checkoutTotalNumber">13 655 грн</span></div>
+                                                                                <div class="checkoutSale"><span class="checkoutTotalText">Скидка:</span> <span class="checkoutSaleNumber">0 %</span></div>
+                                                                                <div class="checkoutPay"><span class="checkoutTotalText">К оплате:</span> <span class="checkoutPayNumber">13 655 грн</span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--END checkout-product-bottom-->
+                                                                    </div>
+                                                                    <!--END checkout-products-->
+                                                                </div>
+                                                                <div class="modalNotRegister">
+                                                                    <button class="backBuyBtn">Вернуться к покупкам</button>
+                                                                    <button class="modalNotRegisterBtn">Зарегистрироваться</button>
+                                                                    <button class="feedbackBtn">Пересчитать</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--END modal-cart-->
                                         </div>
                                     </div>
                                 </div>
@@ -772,7 +945,615 @@
         <!--START header-bottom-->
         <div class="wrapHeaderBottom">
             <div class="container">
-                <div class="headerBottom">
+                <!--START header-bottom-desktop-->
+                <div class="headerBottom headerBottomDesktop">
+                    <ul class="headerCategoryList">
+                        <li class="headerCategoryItem headerCategoryItem1">
+                            <a class="headerCategoryLink" href="">
+                                <span class="icon-bed"></span>
+                                <span class="headerCategoryLinkTitle">Для Спальни</span>
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="headerCategorySubList">
+                                <div class="headerCategorySubListLeft">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Подушки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Постельное белье</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Простыни и наволочки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Покрывала</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Пледы</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Эксклюзив</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Наматрасники</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Халаты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Домашняя одежда</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Товары для сауны</a>
+                                    </li>
+                                </div>
+                                <div class="headerCategorySubRight">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Матрасы для сна</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские комплекты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Все для детской спальни</a>
+                                    </li>
+                                </div>
+                                <a class="allCategorySubLink" href="">Все Для спальни <span class="icon-next-full"></span></a>
+                            </ul>
+                        </li>
+                        <li class="headerCategoryItem headerCategoryItem2">
+                            <a class="headerCategoryLink" href="">
+                                <span class="icon-teapot"></span>
+                                <span class="headerCategoryLinkTitle">Для Кухни</span>
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="headerCategorySubList">
+                                <div class="headerCategorySubListLeft">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Подушки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Постельное белье</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Простыни и наволочки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Покрывала</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Пледы</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Эксклюзив</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Наматрасники</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Халаты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Домашняя одежда</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Товары для сауны</a>
+                                    </li>
+                                </div>
+                                <div class="headerCategorySubRight">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Матрасы для сна</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские комплекты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Все для детской спальни</a>
+                                    </li>
+                                </div>
+                                <a class="allCategorySubLink" href="">Все Для кухни <span class="icon-next-full"></span></a>
+                            </ul>
+                        </li>
+                        <li class="headerCategoryItem headerCategoryItem3">
+                            <a class="headerCategoryLink" href="">
+                                <span class="icon-bathub"></span>
+                                <span class="headerCategoryLinkTitle">Для Ванной</span>
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="headerCategorySubList">
+                                <div class="headerCategorySubListLeft">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Подушки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Постельное белье</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Простыни и наволочки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Покрывала</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Пледы</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Эксклюзив</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Наматрасники</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Халаты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Домашняя одежда</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Товары для сауны</a>
+                                    </li>
+                                </div>
+                                <div class="headerCategorySubRight">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Матрасы для сна</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские комплекты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Все для детской спальни</a>
+                                    </li>
+                                </div>
+                                <a class="allCategorySubLink" href="">Все Для ванной <span class="icon-next-full"></span></a>
+                            </ul>
+                        </li>
+                        <li class="headerCategoryItem headerCategoryItem4">
+                            <a class="headerCategoryLink" href="">
+                                <span class="icon-children-bed"></span>
+                                <span class="headerCategoryLinkTitle">Для Детской</span>
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="headerCategorySubList">
+                                <div class="headerCategorySubListLeft">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Подушки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Постельное белье</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Простыни и наволочки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Покрывала</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Пледы</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Эксклюзив</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Наматрасники</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Халаты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Домашняя одежда</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Товары для сауны</a>
+                                    </li>
+                                </div>
+                                <div class="headerCategorySubRight">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Матрасы для сна</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские комплекты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Все для детской спальни</a>
+                                    </li>
+                                </div>
+                                <a class="allCategorySubLink" href="">Все Для детской <span class="icon-next-full"></span></a>
+                            </ul>
+                        </li>
+                        <li class="headerCategoryItem headerCategoryItem5">
+                            <a class="headerCategoryLink" href="">
+                                <span class="icon-closes"></span>
+                                <span class="headerCategoryLinkTitle">Домашняя Одежда</span>
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="headerCategorySubList">
+                                <div class="headerCategorySubListLeft">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Подушки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Постельное белье</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Простыни и наволочки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Покрывала</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Пледы</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Эксклюзив</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Наматрасники</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Халаты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Домашняя одежда</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Товары для сауны</a>
+                                    </li>
+                                </div>
+                                <div class="headerCategorySubRight">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Матрасы для сна</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские комплекты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Все для детской спальни</a>
+                                    </li>
+                                </div>
+                                <a class="allCategorySubLink" href="">Все Домашняя одежда <span class="icon-next-full"></span></a>
+                            </ul>
+                        </li>
+                        <li class="headerCategoryItem headerCategoryItem6">
+                            <a class="headerCategoryLink" href="">
+                                <span class="icon-horse"></span>
+                                <span class="headerCategoryLinkTitle">Детский Мир</span>
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="headerCategorySubList">
+                                <div class="headerCategorySubListLeft">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Подушки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Постельное белье</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Простыни и наволочки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Покрывала</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Пледы</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Эксклюзив</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Наматрасники</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Халаты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Домашняя одежда</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Товары для сауны</a>
+                                    </li>
+                                </div>
+                                <div class="headerCategorySubRight">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Матрасы для сна</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские комплекты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Все для детской спальни</a>
+                                    </li>
+                                </div>
+                                <a class="allCategorySubLink" href="">Все Детский мир <span class="icon-next-full"></span></a>
+                            </ul>
+                        </li>
+                        <li class="headerCategoryItem headerCategoryItem7">
+                            <a class="headerCategoryLink" href="">
+                                <span class="icon-blinds"></span>
+                                <span class="headerCategoryLinkTitle">Домашний уют</span>
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="headerCategorySubList">
+                                <div class="headerCategorySubListLeft">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Подушки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Постельное белье</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Простыни и наволочки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Покрывала</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Пледы</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Эксклюзив</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Наматрасники</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Халаты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Домашняя одежда</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Товары для сауны</a>
+                                    </li>
+                                </div>
+                                <div class="headerCategorySubRight">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Матрасы для сна</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские комплекты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Все для детской спальни</a>
+                                    </li>
+                                </div>
+                                <a class="allCategorySubLink" href="">Все Домашний уют<span class="icon-next-full"></span></a>
+                            </ul>
+                        </li>
+                        <li class="headerCategoryItem headerCategoryItem8">
+                            <a class="headerCategoryLink" href="">
+                                <span class="icon-lingerie"></span>
+                                <span class="headerCategoryLinkTitle">Нижнее белье</span>
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="headerCategorySubList">
+                                <div class="headerCategorySubListLeft">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Подушки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Постельное белье</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Простыни и наволочки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Покрывала</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Пледы</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Эксклюзив</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Наматрасники</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Халаты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Домашняя одежда</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Товары для сауны</a>
+                                    </li>
+                                </div>
+                                <div class="headerCategorySubRight">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Матрасы для сна</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские комплекты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Все для детской спальни</a>
+                                    </li>
+                                </div>
+                                <a class="allCategorySubLink" href="">Все Нижнее белье<span class="icon-next-full"></span></a>
+                            </ul>
+                        </li>
+                        <li class="headerCategoryItem headerCategoryItem9">
+                            <a class="headerCategoryLink" href="">
+                                <span class="icon-mushroom"></span>
+                                <span class="headerCategoryLinkTitle">Для Отдыха</span>
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="headerCategorySubList">
+                                <div class="headerCategorySubListLeft">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Подушки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Постельное белье</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Простыни и наволочки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Покрывала</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Пледы</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Эксклюзив</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Наматрасники</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Халаты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Домашняя одежда</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Товары для сауны</a>
+                                    </li>
+                                </div>
+                                <div class="headerCategorySubRight">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Матрасы для сна</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские комплекты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Все для детской спальни</a>
+                                    </li>
+                                </div>
+                                <a class="allCategorySubLink" href="">Все Для отдыха <span class="icon-next-full"></span></a>
+                            </ul>
+                        </li>
+                        <li class="headerCategoryItem headerCategoryItem10">
+                            <a class="headerCategoryLink" href="">
+                                <span class="icon-key"></span>
+                                <span class="headerCategoryLinkTitle">Для Гостиниц</span>
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="headerCategorySubList">
+                                <div class="headerCategorySubListLeft">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Подушки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Постельное белье</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Простыни и наволочки</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Покрывала</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Пледы</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Эксклюзив</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Наматрасники</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Халаты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Домашняя одежда</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Товары для сауны</a>
+                                    </li>
+                                </div>
+                                <div class="headerCategorySubRight">
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Матрасы для сна</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские комплекты</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Детские одеяла</a>
+                                    </li>
+                                    <li class="headerCategorySubItem">
+                                        <a class="headerCategorySubLink" href="">Все для детской спальни</a>
+                                    </li>
+                                </div>
+                                <a class="allCategorySubLink" href="">Все Для гостиниц <span class="icon-next-full"></span></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--END header-bottom-desktop-->
+
+                <!--START header-bottom-mobile-->
+                <div class="headerBottom headerBottomMobile">
                     <ul class="headerCategoryList _headerCategoryList">
                         <li class="headerCategoryItem headerCategoryItem1">
                             <div class="headerCategoryLink">
@@ -1366,6 +2147,7 @@
                         </li>
                     </ul>
                 </div>
+                <!--END header-bottom-mobile-->
             </div>
         </div>
         <!--END header-bottom-->
@@ -1477,7 +2259,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="wrapProductCard">
-                                <a class="productCardRowLink" href="">
+                                <div class="productCardRowLink">
                                     <div class="productCardRow productCardRowTop">
                                         <div class="productCardCell productCardCell1">
                                             <span class="icon-bedclothes-XL"></span>
@@ -1514,8 +2296,8 @@
                                             <button class="productCardBtn">В корзину</button>
                                         </div>
                                     </div>
-                                </a>
-                                <a class="productCardRowLink" href="">
+                                </div>
+                                <div class="productCardRowLink">
                                     <div class="productCardRow productCardRowTop">
                                         <div class="productCardCell productCardCell1">
                                             <span class="icon-bedclothes-L"></span>
@@ -1552,8 +2334,8 @@
                                             <button class="productCardBtn">В корзину</button>
                                         </div>
                                     </div>
-                                </a>
-                                <a class="productCardRowLink" href="">
+                                </div>
+                                <div class="productCardRowLink">
                                     <div class="productCardRow productCardRowTop">
                                         <div class="productCardCell productCardCell1">
                                             <span class="icon-bedclothes-M"></span>
@@ -1587,10 +2369,10 @@
                                             <p class="productCardPrice">855 грн</p>
                                         </div>
                                         <div class="productCardCell productCardCell4">
-                                            <button class="productCardBtnNotify">Уведомить о поступлении</button>
+                                            <button class="productCardBtnNotify" data-toggle="modal" data-target="#modalNoticeArrival">Уведомить о поступлении</button>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1722,7 +2504,7 @@
         <!--START special offers-->
         <div class="wrapSpecialOffers">
             <div class="wrapTitleDecor">
-                <h2 class="specialOffersTitle titleDecor">РЕКОМЕНДУЕМ ПОСМОТРЕТЬ</h2>
+                <h2 class="specialOffersTitle titleDecor">Специальные предложения</h2>
             </div>
 
             <div class="container">
@@ -1735,7 +2517,7 @@
                                         <div class="col-sm-4">
                                             <div class="thumbnail">
                                                 <div class="specialOffer">
-                                                    <a class="specialOfferImageLink" href="">
+                                                    <a class="specialOfferImageLink" href="" data-toggle="modal" data-target="#quickView">
                                                         <img class="specialOfferImage" src="image/offer1.jpg" alt="">
                                                         <div class="fastView">Быстрый просмотр</div>
                                                     </a>
@@ -1751,7 +2533,7 @@
                                         <div class="col-sm-4">
                                             <div class="thumbnail">
                                                 <div class="specialOffer">
-                                                    <a class="specialOfferImageLink" href="">
+                                                    <a class="specialOfferImageLink" href="" data-toggle="modal" data-target="#quickView">
                                                         <img class="specialOfferImage" src="image/offer2.jpg" alt="">
                                                         <div class="fastView">Быстрый просмотр</div>
                                                     </a>
@@ -1767,7 +2549,7 @@
                                         <div class="col-sm-4">
                                             <div class="thumbnail">
                                                 <div class="specialOffer">
-                                                    <a class="specialOfferImageLink" href="">
+                                                    <a class="specialOfferImageLink" href="" data-toggle="modal" data-target="#quickView">
                                                         <img class="specialOfferImage" src="image/offer3.jpg" alt="">
                                                         <div class="fastView">Быстрый просмотр</div>
                                                     </a>
@@ -1787,7 +2569,7 @@
                                         <div class="col-sm-4">
                                             <div class="thumbnail">
                                                 <div class="specialOffer">
-                                                    <a class="specialOfferImageLink" href="">
+                                                    <a class="specialOfferImageLink" href="" data-toggle="modal" data-target="#quickView">
                                                         <img class="specialOfferImage" src="image/offer1.jpg" alt="">
                                                         <div class="fastView">Быстрый просмотр</div>
                                                     </a>
@@ -1803,7 +2585,7 @@
                                         <div class="col-sm-4">
                                             <div class="thumbnail">
                                                 <div class="specialOffer">
-                                                    <a class="specialOfferImageLink" href="">
+                                                    <a class="specialOfferImageLink" href="" data-toggle="modal" data-target="#quickView">
                                                         <img class="specialOfferImage" src="image/offer2.jpg" alt="">
                                                         <div class="fastView">Быстрый просмотр</div>
                                                     </a>
@@ -1819,7 +2601,7 @@
                                         <div class="col-sm-4">
                                             <div class="thumbnail">
                                                 <div class="specialOffer">
-                                                    <a class="specialOfferImageLink" href="">
+                                                    <a class="specialOfferImageLink" href="" data-toggle="modal" data-target="#quickView">
                                                         <img class="specialOfferImage" src="image/offer3.jpg" alt="">
                                                         <div class="fastView">Быстрый просмотр</div>
                                                     </a>
@@ -1846,11 +2628,393 @@
                     </div>
                 </div>
             </div>
+
+            <!--START modal-quick-view-->
+            <div class="modal fade" id="quickView">
+                <div class="wrapModalGlobalLarge">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modalQuickView modalGlobal">
+                            <div class="modalHeader">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-close"></span></button>
+                                <h2 class="modalTitle">Постельное Altinbasak</h2>
+                            </div>
+                            <div class="modalBody">
+                                <!--START product-card-top-->
+                                <div class="row">
+                                    <div class="productCardTop">
+                                        <div class="productTopLeft">
+                                            <div class="col-md-6">
+                                                <div class="productGallery">
+                                                    <img class="productGalleryImage" src="image/royalSlider/fullImages/gallery1.jpg" alt=""/>
+                                                </div>
+                                                <div class="productAdvantages">
+                                                    <ul class="productAdvantagesList">
+                                                        <li class="productAdvantagesItem">
+                                                            <a class="productAdvantagesLink" href="">
+                                                                <div class="productAdvantagesIcon">
+                                                                    <span class="icon-car"></span>
+                                                                </div>
+                                                                <p class="productAdvantagesText">Бесплатная доставка</p>
+                                                            </a>
+                                                        </li>
+                                                        <li class="productAdvantagesItem">
+                                                            <a class="productAdvantagesLink" href="">
+                                                                <div class="productAdvantagesIcon">
+                                                                    <span class="icon-discount-label"></span>
+                                                                </div>
+                                                                <p class="productAdvantagesText">Дисконтная система скидок</p>
+                                                            </a>
+                                                        </li>
+                                                        <li class="productAdvantagesItem">
+                                                            <a class="productAdvantagesLink" href="">
+                                                                <div class="productAdvantagesIcon">
+                                                                    <span class="icon-wallet"></span>
+                                                                </div>
+                                                                <p class="productAdvantagesText">Оплата онлайн</p>
+                                                            </a>
+                                                        </li>
+                                                        <li class="productAdvantagesItem">
+                                                            <a class="productAdvantagesLink" href="">
+                                                                <div class="productAdvantagesIcon">
+                                                                    <span class="icon-chat-full"></span>
+                                                                </div>
+                                                                <p class="productAdvantagesText">Онлайн консультация</p>
+                                                            </a>
+                                                        </li>
+                                                        <li class="productAdvantagesItem">
+                                                            <a class="productAdvantagesLink" href="">
+                                                                <div class="productAdvantagesIcon">
+                                                                    <span class="icon-achive"></span>
+                                                                </div>
+                                                                <p class="productAdvantagesText">Гарантия качества</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="wrapProductCard">
+                                                <a class="productCardRowLink" href="">
+                                                    <div class="productCardRow productCardRowTop">
+                                                        <div class="productCardCell productCardCell1">
+                                                            <span class="icon-bedclothes-XL"></span>
+                                                        </div>
+                                                        <div class="productCardCell productCardCell2">
+                                                            <p class="productCardCellText">
+                                                                <span class="productCardCellTextTitle">Пододеяльник:</span>
+                                                                1,200 х 220 см
+                                                            </p>
+                                                        </div>
+                                                        <div class="productCardCell productCardCell3">
+                                                            <p class="productCardCellText">
+                                                                <span class="productCardCellTextTitle">Простынь:</span>
+                                                                1,240 х 260 см
+                                                            </p>
+                                                        </div>
+                                                        <div class="productCardCell productCardCell4">
+                                                            <p class="productCardCellText">
+                                                                <span class="productCardCellTextTitle">Наволочка:</span>
+                                                                2,50 х 70 см
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="productCardRow productCardRowBottom">
+                                                        <div class="productCardCell productCardCell1">
+                                                            <div class="productCardType">Семейный</div>
+                                                            <div class="productCardAvailability productCardAvailabilityYes">есть в наличии</div>
+                                                            <div class="productCardArticle">Артикул: 25486</div>
+                                                        </div>
+                                                        <div class="productCardCell productCardCell3">
+                                                            <p class="productCardPrice">2 184 грн</p>
+                                                        </div>
+                                                        <div class="productCardCell productCardCell4">
+                                                            <button class="productCardBtn">В корзину</button>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="productCardRowLink" href="">
+                                                    <div class="productCardRow productCardRowTop">
+                                                        <div class="productCardCell productCardCell1">
+                                                            <span class="icon-bedclothes-L"></span>
+                                                        </div>
+                                                        <div class="productCardCell productCardCell2">
+                                                            <p class="productCardCellText">
+                                                                <span class="productCardCellTextTitle">Пододеяльник:</span>
+                                                                1,200 х 220 см
+                                                            </p>
+                                                        </div>
+                                                        <div class="productCardCell productCardCell3">
+                                                            <p class="productCardCellText">
+                                                                <span class="productCardCellTextTitle">Простынь:</span>
+                                                                1,240 х 260 см
+                                                            </p>
+                                                        </div>
+                                                        <div class="productCardCell productCardCell4">
+                                                            <p class="productCardCellText">
+                                                                <span class="productCardCellTextTitle">Наволочка:</span>
+                                                                2,50 х 70 см
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="productCardRow productCardRowBottom">
+                                                        <div class="productCardCell productCardCell1">
+                                                            <div class="productCardType">Двуспальный евро</div>
+                                                            <div class="productCardAvailability productCardAvailabilityYes">есть в наличии</div>
+                                                            <div class="productCardArticle">Артикул: 25486</div>
+                                                        </div>
+                                                        <div class="productCardCell productCardCell3">
+                                                            <p class="productCardPrice">1 655 грн</p>
+                                                        </div>
+                                                        <div class="productCardCell productCardCell4">
+                                                            <button class="productCardBtn">В корзину</button>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="productCardRowLink" href="">
+                                                    <div class="productCardRow productCardRowTop">
+                                                        <div class="productCardCell productCardCell1">
+                                                            <span class="icon-bedclothes-M"></span>
+                                                        </div>
+                                                        <div class="productCardCell productCardCell2">
+                                                            <p class="productCardCellText">
+                                                                <span class="productCardCellTextTitle">Пододеяльник:</span>
+                                                                1,200 х 220 см
+                                                            </p>
+                                                        </div>
+                                                        <div class="productCardCell productCardCell3">
+                                                            <p class="productCardCellText">
+                                                                <span class="productCardCellTextTitle">Простынь:</span>
+                                                                1,240 х 260 см
+                                                            </p>
+                                                        </div>
+                                                        <div class="productCardCell productCardCell4">
+                                                            <p class="productCardCellText">
+                                                                <span class="productCardCellTextTitle">Наволочка:</span>
+                                                                2,50 х 70 см
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="productCardRow productCardRowBottom">
+                                                        <div class="productCardCell productCardCell1">
+                                                            <div class="productCardType">Семейный</div>
+                                                            <div class="productCardAvailability productCardAvailabilityNo">нет в наличии</div>
+                                                            <div class="productCardArticle">Артикул: 25486</div>
+                                                        </div>
+                                                        <div class="productCardCell productCardCell3">
+                                                            <p class="productCardPrice">855 грн</p>
+                                                        </div>
+                                                        <div class="productCardCell productCardCell4">
+                                                            <button class="productCardBtnNotify">Уведомить о поступлении</button>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--END product-card-top-->
+
+                                <!--START product-card-bottom-->
+                                <div class="row">
+                                    <div class="productCardBottom">
+                                        <div class="col-md-6">
+                                            <div class="productCardCharacteristics">
+                                                <h3 class="characteristicsTitle">Характеристики</h3>
+                                                <p class="characteristicsText">Комплект постельного белья La Scala с ромашками.</p>
+
+                                                <div class="characteristicsTable">
+                                                    <div class="characteristicsRow">
+                                                        <div class="characteristicsCell">
+                                                            <div class="characteristicsManufacturer">Производитель:</div>
+                                                            La Scala , Китай
+                                                        </div>
+                                                        <div class="characteristicsCell">
+                                                            <img class="characteristicsImage" src="image/la-scala.jpg" alt=""/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="characteristicsRow">
+                                                        <div class="characteristicsCell">Ткань</div>
+                                                        <div class="characteristicsCell">
+                                                            сатин, 100% хлопок
+                                                        </div>
+                                                    </div>
+                                                    <div class="characteristicsRow">
+                                                        <div class="characteristicsCell">Упаковка</div>
+                                                        <div class="characteristicsCell">
+                                                            подарочный коробка, пакет
+                                                        </div>
+                                                    </div>
+                                                    <div class="characteristicsRow">
+                                                        <div class="characteristicsCell">Цвет</div>
+                                                        <div class="characteristicsCell">
+                                                            многоцветный
+                                                        </div>
+                                                    </div>
+                                                    <div class="characteristicsRow">
+                                                        <div class="characteristicsCell">Материал</div>
+                                                        <div class="characteristicsCell">
+                                                            сатин 3D
+                                                        </div>
+                                                    </div>
+                                                    <div class="characteristicsRow">
+                                                        <div class="characteristicsCell">Особенности</div>
+                                                        <div class="characteristicsCell">
+                                                            нет
+                                                        </div>
+                                                    </div>
+                                                    <div class="characteristicsRow">
+                                                        <div class="characteristicsCell">Рисунок</div>
+                                                        <div class="characteristicsCell">
+                                                            цвет
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="productCardReviews">
+                                                <div class="wrapReviewsTitle">
+                                                    <h3 class="reviewsTitle">Отзывы <span class="reviewsNumber">(3)</span></h3>
+                                                    <div class="moreAndLess">
+                                                        <div class="more moreLess _moreLess">Паказать все <span class="icon-down"></span></div>
+                                                        <div class="less moreLess _moreLess">Свернуть <span class="icon-up"></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="cardReviews">
+                                                    <div class="cardReviewsAvatar">
+                                                        <img class="cardReviewsAvatarImage" src="image/avatarSocial.jpg" alt=""/>
+                                                    </div>
+                                                    <div class="cardReviewsText">
+                                                        <div class="cardReviewsTextTop">
+                                                            <div class="cardReviewsName">Дмитрий К.</div>
+                                                            <div class="cardReviewsDate">25 Мая 2015</div>
+                                                        </div>
+                                                        <p class="reviewsText">
+                                                            Я купляв дочці в спальню, вона була в захваті, і справді якість білизни і малюнок просто БОМБА!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="wrapCardReviewsForm">
+                                                    <div class="reviewsFormTop">
+                                                        <div class="reviewsFormTitle">Добавить отзыв</div>
+                                                        <div class="reviewsFormSocial">
+                                                            <div class="reviewsFormSocialText">Написать от:</div>
+                                                            <ul class="reviewsSocialList">
+                                                                <li class="reviewsSocialItem">
+                                                                    <a class="reviewsSocialLink" href="">
+                                                                        <span class="icon-vkontakte"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="reviewsSocialItem">
+                                                                    <a class="reviewsSocialLink" href="">
+                                                                        <span class="icon-facebook"></span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="reviewsSocialItem">
+                                                                    <a class="reviewsSocialLink" href="">
+                                                                        <span class="icon-googleplus"></span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <form class="reviewsForm" action="">
+                                                        <input class="reviewsFormInput reviewsFormInputName" type="text" placeholder="Имя"/>
+                                                        <input class="reviewsFormInput reviewsFormInputThem" type="text" placeholder="Тема"/>
+                                                        <textarea name="" id="" placeholder="Отзыв" class="reviewsFormTextarea"></textarea>
+                                                        <button class="reviewsFormSend">Отправить</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--END product-card-bottom-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END modal-quick-view-->
+
         </div>
         <!--END special offers-->
 
     </div>
     <!--END content-->
+
+    <!--START modal-notify-->
+    <div class="modal fade" id="modalNoticeArrival">
+        <div class="wrapModalGlobal">
+            <div class="modal-dialog modal-md">
+                <div class="modalNoticeArrival modalGlobal">
+                    <div class="modalHeader">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-close"></span></button>
+                        <h2 class="modalTitle">Уведомить о поступлении</h2>
+                    </div>
+                    <div class="modalBody">
+                        <p class="modalBodyText">Введите данные и мы сообщим когда поступит:</p>
+                        <h3 class="modalBodyProductTitle">Постельное белье Zastelli Дисней полуторный София  и ее друзья</h3>
+                        <div class="modalForm">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label for="inputNoticeNumber" class="col-xs-9 col-sm-10 control-label">Необходимое количество данного товара</label>
+                                    <div class="col-xs-3 col-sm-2">
+                                        <input type="number" min="0" class="form-control" id="inputNoticeNumber">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputNoticeName" class="col-xs-3 col-sm-3 control-label">Имя</label>
+                                    <div class="col-xs-9 col-sm-9">
+                                        <input type="text" class="form-control" id="inputNoticeName">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputNoticeMail" class="col-xs-3 col-sm-3 control-label">E-mail</label>
+                                    <div class="col-xs-9 col-sm-9">
+                                        <input type="email" class="form-control" id="inputNoticeMail">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputNoticeDate" class="col-xs-5 col-sm-4 control-label">Актуально до</label>
+                                    <div class="col-xs-7 col-sm-8">
+                                        <input type="date" class="form-control" id="inputNoticeDate">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputNoticeComment" class="col-xs-5 col-sm-4 control-label">Комментарий</label>
+                                    <div class="col-xs-7 col-sm-8">
+                                        <textarea class="form-control" name="" id="inputNoticeComment"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="wrapCaptcha">
+                            <div class="mainCaptcha">
+                                <p class="captchaText">Введите число, изображенное на рисунке</p>
+                                <div class="captcha">
+                                    <div class="captchaImage">
+
+                                    </div>
+                                    <div class="captchaReload">
+                                        <span class="icon-revers"></span>
+                                    </div>
+                                    <input class="captchaInput" type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modalNotRegister">
+                            <button class="modalNotRegisterBtn">Оформить заявку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END modal-notify-->
 
     <!--START footer-->
     <footer class="mainFooter">
@@ -1885,11 +3049,77 @@
                                 </div>
                             </div>
                             <div class="feedback">
-                                <button class="feedbackBtn">Обратный звонок</button>
+                                <button class="feedbackBtn" data-toggle="modal" data-target="#modalFeedBack">Обратная связь</button>
                             </div>
                         </div>
                     </div>
                     <!--END footer-left-->
+
+
+                    <!--START modal-feedback-->
+                    <div class="modal fade" id="modalFeedBack">
+                        <div class="wrapModalGlobal">
+                            <div class="modal-dialog modal-md">
+                                <div class="modalFeedBack modalGlobal">
+                                    <div class="modalHeader">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-close"></span></button>
+                                        <h2 class="modalTitle">Обратная связь</h2>
+                                    </div>
+                                    <div class="modalBody">
+                                        <p class="modalBodyText">Чтобы высказать ваши предложения, замечания или задать вопрос, пожалуйста, заполните приведенную ниже форму.</p>
+                                        <div class="modalForm">
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <label for="inputNoticeName" class="col-xs-3 col-sm-3 control-label">Имя</label>
+                                                    <div class="col-xs-9 col-sm-9">
+                                                        <input type="text" class="form-control" id="inputNoticeName">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputNoticeMail" class="col-xs-3 col-sm-3 control-label">E-mail</label>
+                                                    <div class="col-xs-9 col-sm-9">
+                                                        <input type="email" class="form-control" id="inputNoticeMail">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputNoticeTel" class="col-xs-5 col-sm-4 control-label">Телефон</label>
+                                                    <div class="col-xs-7 col-sm-8">
+                                                        <input type="tel" class="form-control" id="inputNoticeTel">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputNoticeMessage" class="col-xs-5 col-sm-4 control-label">Сообщение</label>
+                                                    <div class="col-xs-7 col-sm-8">
+                                                        <textarea class="form-control" name="" id="inputNoticeMessage"></textarea>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <div class="wrapCaptcha">
+                                            <div class="mainCaptcha">
+                                                <p class="captchaText">Введите число, изображенное на рисунке</p>
+                                                <div class="captcha">
+                                                    <div class="captchaImage">
+
+                                                    </div>
+                                                    <div class="captchaReload">
+                                                        <span class="icon-revers"></span>
+                                                    </div>
+                                                    <input class="captchaInput" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="modalNotRegister">
+                                            <button class="modalNotRegisterBtn">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END modal-feedback-->
 
                     <!--START footer-middle-->
                     <div class="col-xs-12 col-sm-4">
@@ -1982,6 +3212,20 @@
         </div>
     </footer>
     <!--END footer-->
+
+    <!--START scroll-top/bottom-->
+    <div class="wrapScroll">
+        <div class="scroll scrollTop _scrollTop">
+            <span class="icon-up"></span>
+        </div>
+        <div class="scrollCircle">
+            <span class="circle"></span>
+        </div>
+        <div class="scroll scrollBottom _scrollBottom">
+            <span class="icon-down"></span>
+        </div>
+    </div>
+    <!--END scroll-top/bottom-->
 
 </div>
 
