@@ -1777,7 +1777,7 @@ img {
 }
 @media (max-width: 768px) {
   .wrapScroll {
-    top: 83%;
+    top: 75%;
     right: 17px;
   }
 }
