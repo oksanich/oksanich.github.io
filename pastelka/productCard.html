@@ -3236,10 +3236,38 @@
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery.dlmenu.js"></script>
 <script src="js/royalSlider.js"></script>
+<script src="js/vertical.js"></script>
 <script>
     $(function() {
         $( '#dl-menu' ).dlmenu({
             animationClasses : { classin : 'dl-animate-in-2', classout : 'dl-animate-out-2' }
+        });
+
+        $('#gallery-1').royalSlider({
+            fullscreen: {
+                enabled: true,
+                nativeFS: true
+            },
+            controlNavigation: 'thumbnails',
+            autoScaleSlider: true,
+            autoScaleSliderWidth: 500,
+            autoScaleSliderHeight: 400,
+            loop: false,
+            imageScaleMode: 'fit-if-smaller',
+            navigateByClick: true,
+            numImagesToPreload:6,
+            arrowsNav:true,
+            arrowsNavAutoHide: true,
+            arrowsNavHideOnTouch: true,
+            keyboardNavEnabled: true,
+            fadeinLoadedSlide: true,
+            globalCaption: true,
+            globalCaptionInside: false,
+            thumbs: {
+                appendSpan: true,
+                firstMargin: true,
+                paddingBottom: 4
+            }
         });
     });
 </script>

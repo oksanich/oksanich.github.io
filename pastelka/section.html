@@ -2663,12 +2663,13 @@
     <!--END scroll-top/bottom-->
 
 </div>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.3/js/bootstrap-select.min.js"></script>
+<script src="js/vertical.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery.dlmenu.js"></script>
-<script src="js/vertical.js"></script>
 <script>
     $(function() {
         $( '#dl-menu' ).dlmenu({
@@ -2677,23 +2678,23 @@
     });
 
     (function() {
-        var $carousel = $('#carousel_9').carousel({
+        var $carousel = $('#carousel_9').carousel1({
             vertical: true,
             group: 1,
             duration: 0.6
         });
 
         setInterval(function() {
-            $carousel.carousel('next');
+            $carousel.carousel1('next');
         }, 5000);
 
         $('#carousel_9_prev').on('click', function(ev) {
             ev.preventDefault();
-            $carousel.carousel('prev');
+            $carousel.carousel1('prev');
         });
         $('#carousel_9_next').on('click', function(ev) {
             ev.preventDefault();
-            $carousel.carousel('next');
+            $carousel.carousel1('next');
         });
     }());
 

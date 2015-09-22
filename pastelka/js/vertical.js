@@ -4,14 +4,14 @@
 
 ;(function($, undefined) {
 
-    var Carousel = function(parent, conf) {
-        this.namespace = 'Carousel';
-        if ( this instanceof Carousel ) {
+    var Carousel1 = function(parent, conf) {
+        this.namespace = 'Carousel1';
+        if ( this instanceof Carousel1 ) {
             return this.init(parent, conf);
         }
-        return new Carousel(parent, conf);
+        return new Carousel1(parent, conf);
     };
-    Carousel.prototype = {
+    Carousel1.prototype = {
 
         init: function(parent, conf) {
             var self = this;
@@ -147,10 +147,10 @@
             }
             indicator = self.$indicator.data('indicator');
             self.$elem.bind({
-                'Carousel.prev': function() {
+                'Carousel1.prev': function() {
                     indicator.active();
                 },
-                'Carousel.next': function() {
+                'Carousel1.next': function() {
                     indicator.active();
                 }
             });
@@ -369,7 +369,7 @@
                     easing: conf.easing,
                     duration: conf.duration*1000,
                     complete: function() {
-                        self.$elem.trigger('Carousel.prev');
+                        self.$elem.trigger('Carousel1.prev');
                     }
                 });
 
@@ -452,7 +452,7 @@
             if ( conf ) {
                 self.conf = $.extend(self.conf, conf);
             }
-            self.$elem.trigger('Carousel.reset');
+            self.$elem.trigger('Carousel1.reset');
             return self.$elem;
         },
 
@@ -462,30 +462,30 @@
             self._build();
             self._setIndicator();
 
-            self.$elem.trigger('Carousel.refresh');
+            self.$elem.trigger('Carousel1.refresh');
             return self.$elem;
         }
     };
 
-    var Indicator = function(carousel, num) {
+    var Indicator = function(carousel1, num) {
         this.namespace = 'Indicator';
         if ( this instanceof Indicator ) {
-            return this.init(carousel, num);
+            return this.init(carousel1, num);
         }
-        return new Indicator(carousel, num);
+        return new Indicator(carousel1, num);
     };
     Indicator.prototype = {
-        init: function(carousel, num) {
+        init: function(carousel1, num) {
             var self = this;
-            self.carousel = carousel;
+            self.carousel1 = carousel;
             self._build(num);
         },
 
         _build: function(num) {
             var self = this,
-                carousel = self.carousel,
-                current = carousel.getCurrent(),
-                i = 0, l = carousel.items_length,
+                carousel1 = self.carousel1,
+                current = carousel1.getCurrent(),
+                i = 0, l = carousel1.items_length,
                 indi = '',
                 active = '';
             for ( ; i < l; i++ ) {
@@ -503,10 +503,10 @@
 
         _setActive: function() {
             var self = this,
-                carousel = self.carousel;
+                carousel1 = self.carousel1;
 
             self.$elems.removeClass('active');
-            self.$elems.eq(carousel.getCurrent()).addClass('active');
+            self.$elems.eq(carousel1.getCurrent()).addClass('active');
         },
 
         refresh: function() {
@@ -538,14 +538,14 @@
     }
 
     // $.fn extend
-    jQuery.fn.carousel = function(conf, arguments) {
-        var carousel = this.data('carousel');
+    jQuery.fn.carousel1 = function(conf, arguments) {
+        var carousel1 = this.data('carousel1');
 
-        if ( carousel ) {
-            return carousel._callAPI(conf, arguments);
+        if ( carousel1 ) {
+            return carousel1._callAPI(conf, arguments);
         } else {
-            carousel = Carousel(this, conf);
-            this.data('carousel', carousel);
+            carousel1 = Carousel1(this, conf);
+            this.data('carousel1', carousel1);
             return this;
         }
     };

@@ -1,6 +1,6 @@
 // Carousel home page
 
-$('#carousel').carousel({
+$('#carouselHome').carousel({
     interval: 3000
 });
 
@@ -78,36 +78,8 @@ $('.uislide').slider({
     }
 });
 
-jQuery(document).ready(function($) {
-    $('#gallery-1').royalSlider({
-        fullscreen: {
-            enabled: true,
-            nativeFS: true
-        },
-        controlNavigation: 'thumbnails',
-        autoScaleSlider: true,
-        autoScaleSliderWidth: 500,
-        autoScaleSliderHeight: 400,
-        loop: false,
-        imageScaleMode: 'fit-if-smaller',
-        navigateByClick: true,
-        numImagesToPreload:6,
-        arrowsNav:true,
-        arrowsNavAutoHide: true,
-        arrowsNavHideOnTouch: true,
-        keyboardNavEnabled: true,
-        fadeinLoadedSlide: true,
-        globalCaption: true,
-        globalCaptionInside: false,
-        thumbs: {
-            appendSpan: true,
-            firstMargin: true,
-            paddingBottom: 4
-        }
-    });
-});
-
 // This button will increment the value
+
 $('.qtyplus').click(function(e){
     // Stop acting like a button
     e.preventDefault();
@@ -125,7 +97,8 @@ $('.qtyplus').click(function(e){
     }
 });
 
-// This button will decrement the value till 0
+// This button will decrement
+
 $(".qtyminus").click(function(e) {
     // Stop acting like a button
     e.preventDefault();
