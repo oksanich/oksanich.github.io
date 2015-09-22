@@ -106,8 +106,8 @@ img{
   text-align: center;
   z-index: 100;
   @media (max-width: 768px) {
-    top: 75%;
-    right: 15px;
+    top: 83%;
+    right: 17px;
   }
 }
 
@@ -118,6 +118,17 @@ img{
   &:hover{
     color: darken($green1, 10%);
   }
+  @media (max-width: 768px) {
+    background: rgba(187, 222, 95, 0.7);
+    margin-bottom: 5px;
+    padding: 0 2px;
+    border: 1px solid $primeColor;
+    font-size: em(30px, 16px);
+    color: $primeColor;
+    &:hover{
+      color: darken($primeColor, 10%);
+    }
+  }
 }
 
 .circle{
@@ -126,6 +137,9 @@ img{
   background: $green1;
   display: inline-block;
   border-radius: 50%;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 
