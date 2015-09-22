@@ -1792,15 +1792,7 @@ img {
 }
 @media (max-width: 768px) {
   .scroll {
-    background: rgba(187, 222, 95, 0.7);
-    margin-bottom: 5px;
-    padding: 0 2px;
-    border: 1px solid #b6258f;
-    font-size: 1.875em;
-    color: #b6258f;
-  }
-  .scroll:hover {
-    color: #8c1c6e;
+    font-size: 1.75em;
   }
 }
 
@@ -1813,7 +1805,8 @@ img {
 }
 @media (max-width: 768px) {
   .circle {
-    display: none;
+    width: 24px;
+    height: 24px;
   }
 }
 

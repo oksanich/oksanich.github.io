@@ -119,15 +119,7 @@ img{
     color: darken($green1, 10%);
   }
   @media (max-width: 768px) {
-    background: rgba(187, 222, 95, 0.7);
-    margin-bottom: 5px;
-    padding: 0 2px;
-    border: 1px solid $primeColor;
-    font-size: em(30px, 16px);
-    color: $primeColor;
-    &:hover{
-      color: darken($primeColor, 10%);
-    }
+    font-size: em(28px, 16px);
   }
 }
 
@@ -138,7 +130,8 @@ img{
   display: inline-block;
   border-radius: 50%;
   @media (max-width: 768px) {
-    display: none;
+    width: 24px;
+    height: 24px;
   }
 }
 
