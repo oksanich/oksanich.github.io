@@ -104,7 +104,7 @@ table {
 
 .mainContent{
     clear: both;
-    background: url("img/foto.png") right 20px no-repeat;
+    background: url("img/foto.png") right 0 no-repeat;
 }
 
 .slogan{
@@ -292,7 +292,7 @@ textarea{
 textarea{
     resize: none;
     padding: 15px 10px;
-    height: 59px;
+    height: 58px;
 }
 
 .footerForm:after{
