@@ -292,6 +292,7 @@ textarea{
 textarea{
     resize: none;
     padding: 15px 10px;
+    height: 59px;
 }
 
 .footerForm:after{
@@ -319,6 +320,22 @@ input:-ms-input-placeholder{
     color:#fff;
 }
 
+input:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+
+input:focus:-moz-placeholder {
+    color:transparent;
+}
+
+input:focus::-moz-placeholder {
+    color:transparent;
+}
+
+input:focus:-ms-input-placeholder {
+    color:transparent;
+}
+
 textarea::-webkit-input-placeholder{
     color:#fff;
 }
@@ -333,6 +350,22 @@ textarea:-moz-placeholder{
 
 textarea:-ms-input-placeholder{
     color:#fff;
+}
+
+textarea:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+
+textarea:focus:-moz-placeholder {
+    color:transparent;
+}
+
+textarea:focus::-moz-placeholder {
+    color:transparent;
+}
+
+textarea:focus:-ms-input-placeholder {
+    color:transparent;
 }
 
 .footerFormBtn{
