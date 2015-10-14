@@ -68,9 +68,9 @@
     <footer class="mainFooter">
         <div class="footer">
             <form action="" class="footerForm">
-                <input type="text" placeholder="П.І.Б."/>
-                <input type="tel" placeholder="ТЕЛ."/>
-                <textarea name="" id="" placeholder="ВАШЕ ПИТАННЯ"></textarea>
+                <input type="text" name="name" placeholder="П.І.Б." required/>
+                <input type="tel" name="phone" placeholder="ТЕЛ." required/>
+                <textarea name="text" id="" placeholder="ВАШЕ ПИТАННЯ" required></textarea>
                 <button class="footerFormBtn _footerFormBtn" type="submit"></button>
             </form>
             <div class="footerAddress">
@@ -97,7 +97,8 @@
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="main.js"></script>
+<!--<script src="main.js"></script>-->
+<script src="common.js"></script>
 
 </body>
 </html>

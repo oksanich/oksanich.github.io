@@ -273,6 +273,7 @@ table {
     background: url("img/footerBg.jpg") no-repeat;
     overflow: hidden;
     padding-top: 10px;
+    padding-bottom: 25px;
 }
 
 input,
