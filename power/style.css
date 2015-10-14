@@ -1,0 +1,505 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'helvetica';
+    src: url('font/helvetica-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+    font-family: helvetica, sans-serif;
+    color: #151212;
+}
+
+.mainHeader{
+    background: #f2f2f2;
+}
+
+.header{
+    margin: 0 60px;
+    border-top: 18px solid #a62c32;
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+.headerLogo{
+    width: 240px;
+    margin-right: 50px;
+    float: left;
+    overflow: hidden;
+}
+
+.headerText{
+    float: left;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.headerTextName,
+.headerTextDistrict{
+    font-size: 58px;
+    float: left;
+}
+
+.headerTextName > span,
+.headerTextDistrict > span{
+    font-size: 75px;
+}
+
+.headerTextName{
+    width: 315px;
+    margin-right: 45px;
+}
+
+.headerTextDistrict{
+    color: #9c1f2c;
+    width: 190px;
+}
+
+.mainContent{
+    clear: both;
+    background: url("img/foto.png") right 20px no-repeat;
+}
+
+.slogan{
+    font-size: 25px;
+    color: #fff;
+    background: #a62c32;
+    padding: 10px 60px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.content{
+    margin: 0 60px;
+}
+
+.leftBlock{
+    width: 570px;
+}
+
+.purpose{
+    font-size: 23px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+.purposeList{
+    margin-bottom: 15px;
+}
+
+.purposeItem{
+    font-size: 18px;
+    line-height: 1.2;
+    margin-left: 100px;
+    position: relative;
+}
+
+.purposeItem1:before{
+    position: absolute;
+    content: '';
+    background: url("img/icon1.png") no-repeat;
+    width: 81px;
+    height: 81px;
+    left: -100px;
+    top: -10px;
+}
+
+.purposeItem2:before{
+    position: absolute;
+    content: '';
+    background: url("img/icon2.png") no-repeat;
+    width: 81px;
+    height: 81px;
+    left: -100px;
+    top: -10px;
+}
+
+.purposeItem3:before{
+    position: absolute;
+    content: '';
+    background: url("img/icon3.png") no-repeat;
+    width: 81px;
+    height: 81px;
+    left: -100px;
+    top: -10px;
+}
+
+.purposeItem4:before{
+    position: absolute;
+    content: '';
+    background: url("img/icon4.png") no-repeat;
+    width: 81px;
+    height: 81px;
+    left: -100px;
+    top: -10px;
+}
+
+.purposeItem5:before{
+    position: absolute;
+    content: '';
+    background: url("img/icon5.png") no-repeat;
+    width: 81px;
+    height: 81px;
+    left: -100px;
+    top: -10px;
+}
+
+.purposeItem6:before{
+    position: absolute;
+    content: '';
+    background: url("img/icon6.png") no-repeat;
+    width: 81px;
+    height: 81px;
+    left: -100px;
+    top: 0px;
+}
+
+.purposeItem1{
+    width: 405px;
+    margin-bottom: 40px;
+}
+
+.purposeItem2{
+    width: 435px;
+    margin-bottom: 35px;
+}
+
+.purposeItem3{
+    width: 305px;
+    margin-bottom: 40px;
+}
+
+.purposeItem4{
+    width: 395px;
+    margin-bottom: 60px;
+}
+
+.purposeItem5{
+    width: 370px;
+    margin-bottom: 30px;
+}
+
+.purposeItem6{
+    width: 425px;
+}
+
+.leftBlockQuestion{
+    font-size: 42px;
+    color: #a62c32;
+    width: 550px;
+}
+
+.leftBlockQuestion > div{
+    margin-bottom: 10px;
+}
+
+.blockQuestionTop{
+    text-align: right;
+    margin-right: 55px;
+}
+
+.blockQuestionMiddle,
+.mainFooterTitle{
+    color: #fff;
+    background: #a62c32;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.mainFooterTitle{
+    font-size: 42px;
+    margin-bottom: 18px;
+    margin-left: -60px;
+    width: 360px;
+    text-align: center;
+    padding: 0;
+}
+
+.footerForm{
+    width: 360px;
+    position: relative;
+    float: left;
+    margin-top: -10px;
+}
+
+.footer{
+    background: url("img/footerBg.jpg") no-repeat;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+input,
+textarea{
+    outline: none;
+    border: none;
+    background: #a62c32;
+    padding: 5px 10px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    width: 340px;
+    color: #fff;
+    font-family: helvetica, sans-serif;
+}
+
+textarea{
+    resize: none;
+    padding: 15px 10px;
+}
+
+.footerForm:after{
+    content: '';
+    position: absolute;
+    right: -64px;
+    bottom: 22px;
+    border: 44px solid transparent;
+    border-left: 20px solid #a62c32;
+}
+
+input::-webkit-input-placeholder{
+    color:#fff;
+}
+
+input::-moz-placeholder{
+    color:#fff;
+}
+
+input:-moz-placeholder{
+    color:#fff;
+}
+
+input:-ms-input-placeholder{
+    color:#fff;
+}
+
+textarea::-webkit-input-placeholder{
+    color:#fff;
+}
+
+textarea::-moz-placeholder{
+    color:#fff;
+}
+
+textarea:-moz-placeholder{
+    color:#fff;
+}
+
+textarea:-ms-input-placeholder{
+    color:#fff;
+}
+
+.footerFormBtn{
+    background: url("img/icon-question.png") no-repeat;
+    width: 81px;
+    height: 81px;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    bottom: 25px;
+    right: -120px;
+    outline: none;
+}
+
+@-webkit-keyframes beat {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        transform: scale(1.1);
+        animation-timing-function: ease-in;
+    }
+    15% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+    25% {
+        transform: scale(1.05);
+        animation-timing-function: ease-in;
+    }
+    35% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes beat {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        transform: scale(1.1);
+        animation-timing-function: ease-in;
+    }
+    15% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+    25% {
+        transform: scale(1.05);
+        animation-timing-function: ease-in;
+    }
+    35% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+.footerFormBtn {
+    display: inline-block;
+    -webkit-animation: beat 1s infinite;
+}
+
+.footerAddress{
+    float: left;
+    margin-left: 20px;
+    color: #a62c32;
+}
+
+.footerDistrict{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.footerAddressAvenue,
+.footerAddressStreet{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footerSocial{
+    float: left;
+    position: relative;
+}
+
+.footerSocialTitle{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 25px;
+    margin-left: 75px;
+}
+
+.footerSocialIcon {
+    text-align: center;
+    margin-left: 75px;
+}
+
+.footerSocialIcon a{
+    display: inline-block;
+}
+
+.socialTwitter{
+    background: url("img/icon-twitter.png") no-repeat;
+    width: 80px;
+    height: 80px;
+    margin-right: 50px;
+}
+
+.socialFacebook{
+    background: url("img/icon-facebook.png") no-repeat;
+    width: 81px;
+    height: 81px;
+}
+
+.footerSocialLink{
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    bottom: -55px;
+    right: -15px;
+    text-decoration: none;
+}
+
+.footerSocialLink:hover{
+    text-decoration: underline;
+}
+
+
+#modal_form {
+    width: 450px;
+    height: 200px; /* Рaзмеры дoлжны быть фиксирoвaны */
+    border-radius: 5px;
+    border: 3px #000 solid;
+    background: #fff;
+    position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+    top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+    left: 50%; /* пoлoвинa экрaнa слевa */
+    margin-top: -100px;
+    margin-left: -225px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+    display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+    opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+    z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+    padding: 20px 10px;
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#modal_form #modal_close {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: block;
+}
+/* Пoдлoжкa */
+#overlay {
+    z-index: 3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+    position: fixed; /* всегдa перекрывaет весь сaйт */
+    background-color: #000; /* чернaя */
+    opacity: 0.8; /* нo немнoгo прoзрaчнa */
+    width: 100%;
+    height: 100%; /* рaзмерoм вo весь экрaн */
+    top: 0;
+    left: 0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+    cursor: pointer;
+    display: none; /* в oбычнoм сoстoянии её нет) */
+}
