@@ -1,0 +1,71 @@
+//-------------------------
+// Variables
+//-------------------------
+
+
+// Screens
+//-------------------------
+
+$smScreen: 768px;
+$mdScreen: 992px;
+$lgScreen: 1200px;
+$xlgScreen: 1368px;
+
+// Colors
+//-------------------------
+
+// Gray
+$nero: #272727;
+$jon: #434041;
+$arsenic: #3f4750;
+$mortar: #585757;
+$scorpion: #686868;
+$raven: #6f757c;
+$gray: #7f7f7f;
+$ravenLight: #86909b;
+$mischka: #a1abb6;
+$darkGray: #b2b2b2;
+$darkGrayLight: #ababab;
+$whiteSmoke: #ebebeb;
+$whiteSmokeLight: #f0f0f0;
+
+// Green
+
+$bahia: #a7cc24;
+$christi: #81a015;
+
+// Red
+$violetRed: #ef3073;
+
+// Orange
+$safetyOrange: #fb7009;
+
+// Blue
+$pictonBlue: #64afd7;
+$pelorous: #3398cc;
+
+// White
+$white: #fff;
+
+// Colors variables
+//-------------------------
+
+$textColor: $jon;
+$textColorLight: $arsenic;
+
+$btnGreen: $bahia;
+$btnGreenHover: $christi;
+
+$btnBlue: $pelorous;
+
+$linkHover: $safetyOrange;
+
+
+// Fonts
+//-------------------------
+
+$robotoRegular: 'Roboto-Regular', Helvetica, sans-serif;
+$robotoLight: 'Roboto-Light', Helvetica, sans-serif;
+$robotoBold: 'Roboto-Bold', Helvetica, sans-serif;
+
+$borderRadius: .3rem;

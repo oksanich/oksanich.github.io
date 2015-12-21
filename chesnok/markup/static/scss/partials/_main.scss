@@ -1,0 +1,37 @@
+//-------------------------
+// Main styles
+//-------------------------
+
+html {
+  font-size: 10px;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  color: $textColor;
+  font-family: $robotoRegular;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: $textColor;
+  text-decoration: none;
+
+  &:hover {
+    color: $safetyOrange;
+    text-decoration: none;
+  }
+}
+
+input,
+textarea {
+	outline: none;
+}

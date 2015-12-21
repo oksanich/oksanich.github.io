@@ -1,0 +1,33 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+.btn {
+  border-radius: $borderRadius;
+  color: $white;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+}
+
+.btnGreen {
+  background: $bahia;
+
+  &:hover {
+    background: $christi;
+    color: $white;
+  }
+}
+
+.btnBlue {
+
+}
+
+.link {
+  color: $textColor;
+  text-decoration: none;
+
+  &:hover {
+    color: $safetyOrange;
+    text-decoration: none;
+  }
+}
