@@ -1,3 +1,181 @@
 //-------------------------
 // Footer
 //-------------------------
+
+.footerMain {
+  background: $whiteSmokeLight;
+  border-top: .1rem solid $darkGray;
+  padding: 2rem 0 5rem;
+}
+
+.linkFooter {
+  color: $arsenic;
+  font-size: 1.4rem;
+
+  [class^="icon"] {
+    color: $mischka;
+    font-size: 3.2rem;
+    margin-right: 1rem;
+  }
+
+  [class="icon-document"] {
+    position: relative;
+    top: .5rem;
+  }
+
+  &:hover {
+    color: $pelorous;
+
+    [class^="icon"] {
+      color: $bahia;
+    }
+  }
+}
+
+.textLinkFooter {
+  line-height: 2.6;
+  vertical-align: top;
+}
+
+.contactFooter {
+  margin-top: .5rem;
+}
+
+.phoneContactMiddle {
+  color: $nero;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+
+  @media (max-width: $smScreen) {
+    text-align: center;
+  }
+}
+
+.titleSocialFooter,
+.titleDeliveryFooter {
+  font-size: 1.4rem;
+  font-family: $robotoBold;
+  margin: 1rem 0 2rem;
+}
+
+.listSocialFooter {
+  overflow: hidden;
+  @media (max-width: $smScreen) {
+    text-align: center;
+  }
+}
+
+.itemSocialFooter {
+  float: left;
+  margin-right: 1.5rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: $smScreen) {
+    float: none;
+    display: inline-block;
+  }
+}
+
+.linkSocialFooter{
+  background: $safetyOrange;
+  border-radius: 50%;
+  color: $whiteSmokeLight;
+  display: inline-block;
+  height: 3.3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 3.3rem;
+
+  [class^="icon"] {
+    font-size: 2rem;
+    line-height: 1.6;
+  }
+
+  &:hover{
+    background: $bahia;
+    color: $whiteSmokeLight;
+  }
+}
+
+.inputDeliveryFooter{
+  border: none;
+  display: inline-block;
+  height: 4rem;
+  padding: 0 1rem;
+  vertical-align: top;
+}
+
+.inputDeliveryFooter::-webkit-input-placeholder {
+  color: $darkGray;
+  font-family: $robotoRegular;
+  font-size: 1.4rem;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.inputDeliveryFooter::-moz-placeholder {
+  color: $darkGray;
+  font-family: $robotoRegular;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.inputDeliveryFooter:-moz-placeholder {
+  color: $darkGray;
+  font-family: $robotoRegular;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.inputDeliveryFooter:-ms-input-placeholder {
+  color: $darkGray;
+  font-family: $robotoRegular;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.inputDeliveryFooter:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.inputDeliveryFooter:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.inputDeliveryFooter:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-control:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.inputDeliveryMail{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.inputDeliveryName{
+  width: 80%;
+  margin-right: 3%;
+}
+
+.buttonDeliveryFooter{
+  border: none;
+  height: 4rem;
+  margin-left: -.4rem;
+  padding: 0;
+  width: 17%;
+
+  [class^="icon"] {
+    color: $white;
+    font-size: 3.2rem;
+  }
+}
