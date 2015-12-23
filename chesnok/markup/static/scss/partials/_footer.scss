@@ -8,6 +8,14 @@
   padding: 2rem 0 5rem;
 }
 
+.linksFooter,
+.creditCardsFooter,
+.socialFooter{
+  @media (max-width: $mdScreen) {
+    margin-bottom: 2rem;
+  }
+}
+
 .linkFooter {
   color: $arsenic;
   font-size: 1.4rem;
@@ -38,7 +46,11 @@
 }
 
 .contactFooter {
-  margin-top: .5rem;
+  margin: .5rem 0 5rem;
+
+  @media (max-width: $mdScreen) {
+    margin-bottom: 2rem;
+  }
 }
 
 .phoneContactMiddle {
@@ -178,4 +190,8 @@
     color: $white;
     font-size: 3.2rem;
   }
+}
+
+.searchResultImage{
+  max-width: 4.3rem;
 }
