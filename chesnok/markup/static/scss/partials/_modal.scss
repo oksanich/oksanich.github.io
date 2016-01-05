@@ -1,0 +1,103 @@
+//-------------------------
+// Modal
+//-------------------------
+
+.modalGlobal {
+  background: $white;
+  border-radius: .3rem;
+  padding: 3.5rem 2rem 4.5rem;
+}
+
+.modal-backdrop {
+  background: $modalBg;
+}
+
+.modalHeader {
+  .close {
+    opacity: 1;
+    position: relative;
+    right: -1rem;
+    top: -2.5rem;
+
+    &:hover {
+      color: $safetyOrange;
+    }
+  }
+}
+
+.modalTitle {
+  color: $textColor;
+  border-bottom: 1px solid $violetRed;
+  font-size: 2.4rem;
+  margin: 0 0 2.5rem 0;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.schedule {
+  color: $textColor;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.scheduleHours {
+  color: $safetyOrange;
+}
+
+.modal-dialog {
+  @media (min-width: $smScreen) {
+    width: 65rem;
+    margin: 20rem auto 3rem;
+  }
+}
+
+.phonesModal,
+.emailModal {
+  text-align: center;
+}
+
+.titlePhonesModal,
+.titleEmailModal {
+  color: $textColor;
+  font-size: 1.8rem;
+  font-family: $robotoLight;
+  margin-bottom: 2.5rem;
+}
+
+.phoneModal,
+.emailModal {
+  color: $textColor;
+  display: inline-block;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.emailModal {
+  text-decoration: underline;
+  margin-bottom: 0;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.modalTopCircle {
+  background: $bahia;
+  border: .3rem solid $white;
+  box-sizing: border-box;
+  border-radius: 50%;
+  height: 6rem;
+  left: calc(50% - 3.5rem);
+  position: absolute;
+  text-align: center;
+  top: -3rem;
+  width: 6rem;
+
+  [class^='icon']{
+    color: $white;
+    font-size: 3.2rem;
+    line-height: 1.6;
+  }
+}

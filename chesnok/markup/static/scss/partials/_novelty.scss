@@ -1,0 +1,129 @@
+//-------------------------
+// Header
+//-------------------------
+
+.thumbnail {
+  &:hover {
+    border: .1rem solid $safetyOrange;
+  }
+}
+
+.linkNoveltyImage {
+  display: block;
+  margin-bottom: 1rem;
+  text-align: center;
+  position: relative;
+
+  &:hover {
+
+    .imageNovelty {
+      opacity: .35;
+    }
+
+    .fastView {
+      @include bg-svg($eye, no-repeat);
+      bottom: 0;
+      display: inline-block;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+.fastView {
+  display: none;
+}
+
+.imageNovelty {
+  max-width: 26rem;
+  margin: 0 auto;
+}
+
+.infoNovelty {
+  margin: .5rem;
+}
+
+.titleLinkNovelty {
+  color: $textColor;
+  display: inherit;
+  font-family: $robotoBold;
+  font-size: 1.4rem;
+  max-height: 4rem;
+  overflow: hidden;
+}
+
+.vendorСodeNovelty {
+  color: $mischka;
+  font-size: 1.4rem;
+}
+
+.priceNovelty {
+  color: $textColor;
+  float: left;
+  font-family: $robotoBold;
+  font-size: 2.4rem;
+  line-height: 1.6;
+
+  @media (max-width: $lgScreen) {
+    font-size: 1.8rem;
+    line-height: 2;
+  }
+}
+
+.topInfoNovelty {
+  height: 6rem;
+}
+
+.bottomInfoNovelty {
+  .btn {
+    float: right;
+  }
+}
+
+.carousel-control {
+  position: inherit;
+  &.left {
+    background-image: none;
+  }
+  &.right {
+    background-image: none;
+  }
+}
+
+.carouselArrows {
+  position: absolute;
+  top: -7rem;
+  right: 5rem;
+
+  .icon-arrowLeftBig {
+    position: relative;
+    right: 6rem;
+
+    @media (max-width: $lgScreen) {
+      right: 4rem;
+    }
+  }
+
+  [class^="icon"] {
+    color: $darkGrayLight;
+    font-size: 5.8rem;
+    opacity: 1;
+    text-shadow: none;
+
+    &:hover {
+      color: $pelorous;
+    }
+
+    @media (max-width: $lgScreen) {
+      font-size: 3.8rem;
+    }
+  }
+
+  @media (max-width: $lgScreen) {
+    top: -5rem;
+    right: 3rem;
+  }
+}

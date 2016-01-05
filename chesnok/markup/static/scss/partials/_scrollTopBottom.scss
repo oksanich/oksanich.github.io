@@ -1,0 +1,26 @@
+//-------------------------
+// Scroll Top/Bottom
+//-------------------------
+
+.wrapScroll {
+  position: fixed;
+  right: 2%;
+  text-align: center;
+  top: 42%;
+  z-index: 100;
+
+  [class^='icon'] {
+    color: $darkGrayLight;
+    font-size: 3.2rem;
+    opacity: .7;
+
+    &:hover {
+      color: $bahia;
+      opacity: 1;
+    }
+  }
+}
+
+.scrollTop {
+  margin-bottom: 1.5rem;
+}

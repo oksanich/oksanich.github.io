@@ -16,7 +16,7 @@
                     </button>
                     <ul class="dl-menu">
                         <li class="mobileMenuItem">
-                            <a href="#" class="mobileMenuLink">Контакты</a>
+                            <a href="#" class="mobileMenuLink" data-toggle="modal" data-target="#modalContact">Контакты</a>
                         </li>
                         <li class="mobileMenuItem">
                             <a href="#" class="mobileMenuLink">О магазине</a>
@@ -544,12 +544,11 @@
                         <div class="navTopLeft">
                             <ul class="navTopLeftList">
                                 <li class="navTopLeftItem">
-                                    <a href="#" class="navTopLeftLink">
+                                    <a href="#" class="navTopLeftLink" data-toggle="modal" data-target="#modalContact">
                                         <i class="icon-phone"></i>
                                         <span class="navTopLinkText">Контакты</span>
                                     </a>
                                 </li>
-
                                 <li class="navTopLeftItem">
                                     <a href="#" class="navTopLeftLink">
                                         <i class="icon-briefcase"></i>
@@ -593,6 +592,42 @@
                         </div>
                     </div>
                 </div>
+
+                <!--START modal-contact-->
+                <div class="modal fade" id="modalContact">
+                    <div class="wrapModalGlobal">
+                        <div class="modal-dialog modal-md">
+                            <div class="modalContact modalGlobal">
+                                <div class="modalHeader">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-close"></i></button>
+                                    <h2 class="modalTitle">Контакты</h2>
+                                    <div class="modalTopCircle">
+                                        <i class="icon-phone"></i>
+                                    </div>
+                                </div>
+                                <div class="modalBody">
+                                    <div class="schedule">
+                                        <span class="scheduleText">Для заказов и консультаций ежедневно с </span>
+                                        <span class="scheduleHours">10:00 - 19:00</span>
+                                    </div>
+                                    <div class="phonesModal">
+                                        <div class="titlePhonesModal">Телефон</div>
+                                        <div class="listPhonesModal">
+                                            <a href="tel:+380977056215" class="phoneModal">(097) 705-62-15</a>
+                                            <a href="tel:+380666198107" class="phoneModal">(066) 619-81-07</a>
+                                            <a href="tel:+380636497042" class="phoneModal">(063) 649-70-42</a>
+                                        </div>
+                                    </div>
+                                    <div class="emailModal">
+                                        <div class="titleEmailModal">E-mail</div>
+                                        <a class="emailModal" href="mailto:postelkaa@gmail.com">postelkaa@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END modal-contact-->
             </div>
         </div>
     </div>
@@ -707,8 +742,9 @@
     <div class="headerBottomWrap">
         <div class="container">
             <!--START header-bottom-desktop-->
-            <div class="headerBottom headerBottomDesktop">
-                <ul class="headerCategoryList clearfix">
+            <div class="row">
+                <div class="headerBottom headerBottomDesktop">
+                    <ul class="headerCategoryList clearfix">
                     <li class="headerCategoryItem headerCategoryItem1">
                         <a class="headerCategoryLink" href="">
                             <span class="headerCategoryLinkTitle">Кухонная посуда</span>
@@ -1430,6 +1466,7 @@
                         </ul>
                     </li>
                 </ul>
+                </div>
             </div>
             <!--END header-bottom-desktop-->
 

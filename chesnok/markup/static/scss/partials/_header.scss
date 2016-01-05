@@ -201,6 +201,7 @@
   display: block;
   font-family: $robotoBold;
   font-size: 2.4rem;
+  width: 100%;
 
   &:hover {
     color: $mortar;
@@ -218,12 +219,13 @@
 
 .logoHeader {
   @include bg-svg($logo, no-repeat);
-  background-size: contain;
   display: inline-block;
-  height: 15rem;
   position: relative;
   top: -9.5rem;
-  width: 20.1rem;
+
+  path{
+    fill: red;
+  }
 }
 
 .cartHeaderMiddle {
@@ -545,7 +547,7 @@
     margin: 0 .5rem;
 
     @media (min-width: $lgScreen) {
-      margin: 0 .8rem 2rem;
+      margin: 0 1rem 2rem;
     }
   }
 }
@@ -811,9 +813,8 @@
   }
 
   .logoHeader {
-    height: 10rem;
+    @include bg-svg($logoMedium, no-repeat);
     top: -1rem;
-    width: 13.5rem;
   }
 
   .headerSearch {
@@ -846,9 +847,8 @@
   }
 
   .logoHeader {
-    height: 6rem;
+    @include bg-svg($logoSmall, no-repeat);
     top: 0;
-    width: 8rem;
   }
 
   .cartHeaderMiddle {

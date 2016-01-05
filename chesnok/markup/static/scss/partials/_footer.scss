@@ -10,7 +10,7 @@
 
 .linksFooter,
 .creditCardsFooter,
-.socialFooter{
+.socialFooter {
   @media (max-width: $mdScreen) {
     margin-bottom: 2rem;
   }
@@ -53,10 +53,17 @@
   }
 }
 
-.phoneContactMiddle {
+.footerPhoneContact {
   color: $nero;
+  display: inline-block;
+  font-family: $robotoBold;
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  width: 100%;
+
+  &:hover {
+    color: $nero;
+  }
 
   @media (max-width: $smScreen) {
     text-align: center;
@@ -91,7 +98,7 @@
   }
 }
 
-.linkSocialFooter{
+.linkSocialFooter {
   background: $safetyOrange;
   border-radius: 50%;
   color: $whiteSmokeLight;
@@ -106,13 +113,13 @@
     line-height: 1.6;
   }
 
-  &:hover{
+  &:hover {
     background: $bahia;
     color: $whiteSmokeLight;
   }
 }
 
-.inputDeliveryFooter{
+.inputDeliveryFooter {
   border: none;
   display: inline-block;
   height: 4rem;
@@ -169,17 +176,23 @@
   transition: opacity 0.3s ease;
 }
 
-.inputDeliveryMail{
+.inputDeliveryMail {
   width: 100%;
   margin-bottom: 1rem;
 }
 
-.inputDeliveryName{
+.inputDeliveryName {
   width: 80%;
   margin-right: 3%;
 }
 
-.buttonDeliveryFooter{
+.creditCardsFooter {
+  @media (max-width: $smScreen) {
+    text-align: center;
+  }
+}
+
+.buttonDeliveryFooter {
   border: none;
   height: 4rem;
   margin-left: -.4rem;
@@ -189,9 +202,10 @@
   [class^="icon"] {
     color: $white;
     font-size: 3.2rem;
+    line-height: 1.2;
   }
 }
 
-.searchResultImage{
+.imgCreditCard {
   max-width: 4.3rem;
 }

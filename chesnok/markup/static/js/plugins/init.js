@@ -4,6 +4,22 @@
 
 // Carousel home page
 //-------------------------
-$('#carouselHome').carousel({
-    interval: 3000
+
+$(function(){
+    $('#carouselHome').carousel({
+        interval: 3000
+    });
 });
+
+// Carousel novelty
+//-------------------------
+$('#carouselNovelty').carousel({
+    interval: 4000
+});
+
+// Carousel viewed
+//-------------------------
+$('#carouselViewed').carousel({
+    interval: 5000
+});
+

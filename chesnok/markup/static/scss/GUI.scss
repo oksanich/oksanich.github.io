@@ -32,7 +32,59 @@
   }
 }
 
-.blockTitle{
+.blockTitle {
   color: $jon;
   font-size: 4.8rem;
+  margin-top: 1rem;
+
+  @media (max-width: $lgScreen) {
+    font-size: 3.2rem;
+  }
+}
+
+.titleText {
+  font-family: $robotoBold;
+  font-size: 2.4rem;
+}
+
+.text {
+  margin-bottom: 2rem;
+}
+
+.marker{
+  border-radius: 50%;
+  color: $white;
+  display: table;
+  font-size: 1.8rem;
+  height: 9rem;
+  line-height: 1.2;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 9rem;
+
+  @media (max-width: $mdScreen) {
+    font-size: 1.4rem;
+    height: 7rem;
+    line-height: 1.2;
+    width: 7rem;
+  }
+}
+
+.markerNew {
+  background: $bahia;
+}
+
+.markerHit{
+  background: $pelorous;
+}
+
+.markerSale{
+  background: $violetRed;
+}
+
+.markerText{
+  display: table-cell;
+  vertical-align: middle;
 }

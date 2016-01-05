@@ -29,6 +29,11 @@ a {
     color: $safetyOrange;
     text-decoration: none;
   }
+
+  &:focus,
+  &:active{
+    outline: none;
+  }
 }
 
 img{
@@ -38,4 +43,16 @@ img{
 input,
 textarea {
 	outline: none;
+
+  &:focus,
+  &:active{
+    outline: none;
+  }
+}
+
+button{
+  &:focus,
+  &:active{
+    outline: none;
+  }
 }

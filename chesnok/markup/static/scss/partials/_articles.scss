@@ -1,0 +1,102 @@
+//-------------------------
+// Articles
+//-------------------------
+
+.articlesWrap {
+  background: $whiteSmokeLight;
+  border-top: .1rem solid $darkGray;
+  border-bottom: .1rem solid $darkGray;
+  margin-bottom: 2rem;
+  padding: 3rem 0 0;
+
+  .container {
+    padding: 0;
+  }
+
+  @media (max-width: $smScreen) {
+    padding: 3rem 0 2rem;
+  }
+}
+
+.linkArticleWrap {
+  background: $white;
+  color: $arsenic;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 3rem;
+
+  .iconArticle{
+    @extend .icon-arrowRightCircle;
+    font-family: $icons;
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+
+  [class^="icon"] {
+    bottom: -1.25rem;
+    color: $darkGray;
+    font-size: 3.2rem;
+    float: right;
+    position: relative;
+    right: -3rem;
+
+    @media (max-width: $lgScreen) {
+      bottom: .75rem;
+    }
+  }
+
+  &:hover {
+    background: $bahia;
+    color: $white;
+
+    .iconArticle{
+      @extend .icon-iconPlusCircle;
+    }
+
+    [class^="icon"] {
+      color: $white;
+    }
+  }
+
+  @media (max-width: $smScreen) {
+    margin: 0 1rem 1rem;
+  }
+}
+
+.articleLeft {
+  float: left;
+  padding: 2rem 4rem;
+  width: 50%;
+
+  @media (max-width: $lgScreen) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.articleRight {
+  float: left;
+  width: 50%;
+
+  @media (max-width: $lgScreen) {
+    display: none;
+  }
+}
+
+.titleArticle {
+  font-family: $robotoBold;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin: 0 0 2rem;
+}
+
+.textArticle {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  max-height: 9.6rem;
+  overflow: hidden;
+}
+
+.imgArticle {
+  display: block;
+}
