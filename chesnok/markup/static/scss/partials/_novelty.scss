@@ -29,6 +29,10 @@
       position: absolute;
       right: 0;
       top: 0;
+
+      @media (max-width: $mdScreen) {
+        display: none !important;
+      }
     }
   }
 }

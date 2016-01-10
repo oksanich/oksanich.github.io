@@ -1,0 +1,25 @@
+//-------------------------
+// Bread crumbs
+//-------------------------
+
+.wrapBreadcrumb{
+  border-bottom: .1rem solid $darkGray;
+  margin-bottom: 2rem;
+}
+
+.breadcrumb {
+  background: none;
+  margin-bottom: 0;
+
+  > .active {
+    color: $gray;
+    font-family: $robotoLight;
+    font-size: 1.4rem;
+  }
+}
+
+.breadcrumbLink {
+  color: $gray;
+  font-family: $robotoLight;
+  font-size: 1.4rem;
+}

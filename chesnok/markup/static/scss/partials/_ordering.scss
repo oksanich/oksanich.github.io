@@ -1,0 +1,173 @@
+//-------------------------
+// Ordering
+//-------------------------
+
+.orderingContent {
+  margin-bottom: 3rem;
+}
+
+.titleOrderingForm {
+  color: $safetyOrange;
+  font-family: $robotoBold;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.blockOrderingForm {
+  max-width: 43rem;
+  margin: 0 auto;
+}
+
+.checkoutFormTitleSub {
+  color: $raven;
+  font-family: $robotoLight;
+  font-size: 1.8rem;
+}
+
+.checkoutDeliveryItem input[type="radio"],
+.checkoutPaymentItem input[type="radio"] {
+  display: none;
+}
+
+.checkoutPseudoRadio {
+  background: $white;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 1px solid $gray;
+  display: inline-block;
+  height: 22px;
+  margin-right: 1.5rem;
+  position: relative;
+  top: 5px;
+  width: 22px;
+}
+
+.checkoutPseudoRadioIn {
+  display: none;
+}
+
+.checkoutDeliveryItem input[type="radio"]:checked + label > .checkoutPseudoRadio > .checkoutPseudoRadioIn,
+.checkoutPaymentItem input[type="radio"]:checked + label > .checkoutPseudoRadio > .checkoutPseudoRadioIn {
+  background: $black;
+  border-radius: 50%;
+  display: block;
+  float: left;
+  height: 12px;
+  margin: 4px;
+  width: 12px;
+}
+
+.checkoutDeliveryLabel {
+  font-family: $robotoLight;
+  font-size: 1.8rem;
+}
+
+.checkboxesOrderingForm {
+  margin-bottom: 3rem;
+}
+
+.checkoutCommentCheckbox {
+  border: 1px solid #d3d3d3;
+  border-top: 2px solid #d3d3d3;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 20px;
+  margin-right: .5rem;
+  position: relative;
+  top: 3px;
+  width: 20px;
+}
+
+.checkoutCommentItem {
+  margin-bottom: 1rem;
+
+  input[type="checkbox"] {
+    display: none;
+  }
+}
+
+.checkoutCommentItem input[type="checkbox"]:checked + label > .checkoutCommentCheckbox {
+  background: url('%=staticPrefixForCss=%general/checked.png') 2px 3px no-repeat;
+}
+
+.checkoutCommentLabel {
+  font-family: $robotoLight;
+  font-size: 1.4rem;
+}
+
+// Sidebar
+//-------------------------
+
+.sidebar {
+  border: .1rem solid $darkGray;
+}
+
+.headerSidebar {
+  background: $safetyOrange;
+  padding: .5rem 0;
+  text-align: center;
+}
+
+.titleSidebar {
+  color: $white;
+  font-size: 4.8rem;
+  margin-bottom: 1rem;
+}
+
+.productNumberSidebar {
+  color: $white;
+  font-size: 2.4rem;
+}
+
+.contentSidebar {
+  background: $inputBg;
+}
+
+.topContentSidebar {
+  padding: 4rem 1rem 1.5rem;
+  border-bottom: .1rem solid $darkGray;
+}
+
+.priceSidebar,
+.discountSidebar {
+  font-family: $robotoBold;
+  font-size: 1.8rem;
+}
+
+.priceSidebar {
+  margin-bottom: 1.5rem;
+}
+
+.toPay {
+  font-family: $robotoBold;
+  font-size: 2.4rem;
+  margin-bottom: 10rem;
+}
+
+.numberPriceSidebar,
+.numberDiscountSidebar,
+.numberToPay {
+  color: $violetRed;
+}
+
+.bottomContentSidebar{
+
+  padding: 1.5rem 1rem;
+}
+
+.listLinksSidebar{
+  padding: 1.5rem;
+
+  .itemLinkFooter{
+    margin-bottom: 1.5rem;
+  }
+
+  .linkFooter{
+    color: $pelorous;
+  }
+
+  .linkFooter:hover{
+    color: $safetyOrange;
+  }
+}

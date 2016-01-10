@@ -8,6 +8,12 @@
   padding: 3.5rem 2rem 4.5rem;
 }
 
+.modalText {
+  font-family: $robotoLight;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
 .modal-backdrop {
   background: $modalBg;
 }
@@ -46,9 +52,25 @@
 }
 
 .modal-dialog {
+  margin-top: 5rem;
+
+  &.modal-lg {
+    margin: 0 auto;
+    width: 90%;
+  }
+
   @media (min-width: $smScreen) {
-    width: 65rem;
     margin: 20rem auto 3rem;
+
+    &.modal-md {
+      width: 65rem;
+    }
+  }
+
+  @media (min-width: $lgScreen) {
+    &.modal-lg {
+      width: 110rem;
+    }
   }
 }
 
@@ -95,9 +117,33 @@
   top: -3rem;
   width: 6rem;
 
-  [class^='icon']{
+  [class^='icon'] {
     color: $white;
     font-size: 3.2rem;
     line-height: 1.6;
   }
+}
+
+.formModal {
+  max-width: 43rem;
+  margin: 0 auto;
+}
+
+.formSignIn {
+  .btnSend {
+    margin-bottom: 1rem;
+  }
+}
+
+.linkForgotPassword {
+  color: $pictonBlue;
+  display: inline-block;
+  font-family: $robotoLight;
+  font-size: 1.8rem;
+  float: right;
+  margin: .5rem 0 2rem;
+}
+
+.modalBtnWrap {
+  clear: both;
 }

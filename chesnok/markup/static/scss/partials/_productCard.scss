@@ -1,0 +1,38 @@
+//-------------------------
+// Product card
+//-------------------------
+
+.productCardWrap {
+  margin-bottom: 5rem;
+
+  .productGallery {
+    border: .1rem solid $darkGray;
+    padding: 2.5rem;
+  }
+
+  .marker{
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .productInfoWrap {
+    padding: 2rem;
+    border: .1rem solid $darkGray;
+  }
+
+  @media (max-width: $smScreen){
+    .pseudoTable {
+      margin-left: -1rem;
+    }
+  }
+}
+
+.titleProductInfo{
+  color: $safetyOrange;
+  font-size: 3rem;
+  margin: 0 0 3rem;
+
+  @media (max-width: $smScreen) {
+    font-size: 2rem;
+  }
+}

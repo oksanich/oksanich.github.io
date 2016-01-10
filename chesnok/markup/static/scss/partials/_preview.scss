@@ -1,0 +1,410 @@
+//-------------------------
+// Preview
+//-------------------------
+
+.previewWrap {
+
+  .modalGlobal {
+    overflow: hidden;
+  }
+
+  .close {
+    @media (max-width: $mdScreen) {
+      top: -3.25rem;
+    }
+  }
+
+  .modalTitle {
+    text-align: left;
+
+    @media (max-width: $mdScreen) {
+      font-size: 1.8rem;
+      margin-top: 2rem;
+    }
+  }
+
+  .modal {
+    display: block !important;
+    visibility: hidden;
+    z-index: -10;
+
+    &.in {
+      visibility: visible;
+      z-index: 1050;
+    }
+  }
+
+  .carousel-control {
+    height: 6.4rem;
+    opacity: 1;
+    position: absolute;
+    text-shadow: none;
+    top: calc(50% - 3.2rem);
+    width: 6.4rem;
+
+    @media (max-width: $mdScreen) {
+      top: 2rem;
+      height: 3rem;
+      width: 3rem;
+      z-index: 1100;
+
+      &:active,
+      &:focus {
+        background: none;
+      }
+    }
+
+    &.left {
+      left: -6rem;
+
+      @media (max-width: $mdScreen) {
+        left: 2rem;
+      }
+    }
+
+    &.right {
+      right: -6rem;
+
+      @media (max-width: $mdScreen) {
+        left: 7rem;
+      }
+    }
+  }
+
+  .carousel-inner {
+    min-height: 74rem;
+    margin-top: 20rem;
+    overflow: inherit;
+
+    > .item {
+      display: block !important;
+      position: absolute;
+      visibility: hidden;
+      z-index: 1000;
+      width: 100%;
+      -webkit-transition: .3s ease-in-out left;
+      -o-transition: .3s ease-in-out left;
+      transition: .3s ease-in-out left;
+
+      .rsMainSlideImage {
+        visibility: hidden !important;
+      }
+    }
+
+    > .active {
+      visibility: visible !important;
+
+      .rsMainSlideImage {
+        visibility: visible !important;
+      }
+    }
+
+    .item {
+      transition-property: opacity;
+    }
+
+    .item,
+    .active.left,
+    .active.right {
+      opacity: 0;
+    }
+
+    .active,
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+
+    .next,
+    .prev,
+    .active.left,
+    .active.right {
+      left: 0;
+      transform: translate3d(0, 0, 0);
+    }
+
+    @media (max-width: $mdScreen) {
+      margin-top: 3rem;
+    }
+  }
+}
+
+.modalPreview {
+  [class^='col-'] {
+    @media (max-width: $smScreen) {
+      padding: 0;
+    }
+  }
+
+  .pseudoTable {
+    @media (max-width: $smScreen) {
+      margin-left: -.5rem;
+    }
+  }
+}
+
+.productGallery {
+  overflow: hidden;
+  position: relative;
+
+  @media (max-width: $mdScreen) {
+    margin-bottom: 3rem;
+  }
+}
+
+.modalArrow {
+  color: $whiteSmoke;
+  font-size: 6.4rem;
+  opacity: 1;
+
+  &:hover {
+    color: $pelorous;
+  }
+
+  @media (max-width: $mdScreen) {
+    background: $bahia;
+    color: $safetyOrange;
+    font-size: 3rem;
+  }
+}
+
+// Product info
+//-------------------------
+
+.productInfoTop,
+.productInfoBottom {
+  margin-bottom: 3rem;
+}
+
+.productInfoBottom {
+  @media (max-width: $smScreen) {
+    .pull-left {
+      font-variant: normal;
+      margin-bottom: 1rem;
+    }
+
+    .pull-right {
+      font-variant: normal;
+      width: 100%;
+    }
+  }
+}
+
+.vendorСodeProduct {
+  color: $mischka;
+  font-size: 1.4rem;
+}
+
+.notAvailabilityProduct {
+  color: $textColor;
+  font-size: 1.4rem;
+  padding-right: 3rem;
+  position: relative;
+
+  &:after {
+    background: $violetRed;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 2rem;
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 2rem;
+  }
+}
+
+.availabilityProduct {
+  @extend .notAvailabilityProduct;
+
+  &:after {
+    background: $bahia;
+  }
+}
+
+.priceProduct {
+  color: $textColor;
+  font-family: $robotoBold;
+  font-size: 3rem;
+}
+
+.productInfoTabs {
+  .nav-tabs {
+    .itemProductTab {
+      border-bottom: .3rem solid $gray;
+      margin-bottom: 0;
+      text-align: center;
+      width: 33.3%;
+
+      &.active {
+        border-bottom: .3rem solid $bahia;
+
+        .linkProductTab {
+          color: $textColor;
+        }
+      }
+
+      &:hover {
+        border: none;
+        border-bottom: .3rem solid $bahia;
+      }
+
+      @media (max-width: $smScreen) {
+        float: none;
+        width: 100%;
+      }
+    }
+
+    .linkProductTab {
+      color: $pelorous;
+      border: none;
+      font-size: 1.8rem;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background: $white;
+        color: $bahia;
+        border: none;
+      }
+    }
+  }
+}
+
+.listProductTabs {
+  border: none;
+}
+
+.tabContentWrap {
+  margin-top: 3rem;
+}
+
+.colorItemBlack {
+  background: $black;
+  display: inline-block;
+  height: 2.8rem;
+  margin-bottom: -.4rem;
+  width: 2.8rem;
+}
+
+.typeAbout {
+  border: .1rem solid $darkGray;
+  display: inline-block;
+  height: 4.5rem;
+  position: relative;
+  width: 4.5rem;
+  margin: 1rem 1.5rem 0 0;
+}
+
+.textAbout {
+  color: $textColor;
+  font-size: 1.4rem;
+}
+
+.itemReview {
+  margin-bottom: 2.5rem;
+}
+
+.titleReview {
+  border-bottom: .1rem solid $violetRed;
+  margin-bottom: 2rem;
+  position: relative;
+
+  &::after {
+    background: $violetRed;
+    border-radius: 50%;
+    color: $white;
+    content: '\e952';
+    display: inline-block;
+    font-family: $icons;
+    font-size: 3.2rem;
+    height: 6rem;
+    left: 0;
+    line-height: 2;
+    position: absolute;
+    text-align: center;
+    top: -1rem;
+    width: 6rem;
+
+    @media (max-width: $smScreen) {
+      display: none;
+    }
+  }
+}
+
+.nameTitleReview {
+  display: inline-block;
+  margin-left: 6.5rem;
+
+  @media (max-width: $smScreen) {
+    margin-left: 0;
+  }
+}
+
+.textReview {
+  color: $textColor;
+  font-size: 1.4rem;
+  margin-left: 7rem;
+
+  @media (max-width: $smScreen) {
+    margin-left: 0;
+  }
+}
+
+._itemReview {
+  display: none;
+
+  &:nth-child(-n+2) {
+    display: block;
+  }
+}
+
+.titleReviewForm {
+  color: $textColor;
+  font-family: $robotoBold;
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 0 0 3rem;
+}
+
+.showMoreLess {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  .showMore {
+    color: $ravenLight;
+    display: inline-block;
+  }
+
+  .showLess {
+    color: $violetRed;
+    margin-top: 1rem;
+
+    &.hideShowLess {
+      display: none;
+    }
+  }
+
+  [class^="show"] {
+    cursor: pointer;
+
+    &:hover {
+      color: $bahia;
+    }
+  }
+
+  [class^="icon"] {
+    display: block;
+    font-size: 2.4rem;
+  }
+}
+
+.numberProductPreviewWrap {
+  font-family: $robotoLight;
+  font-size: 1.8rem;
+  bottom: 0rem;
+  left: 2rem;
+  position: absolute;
+  z-index: 1100;
+}

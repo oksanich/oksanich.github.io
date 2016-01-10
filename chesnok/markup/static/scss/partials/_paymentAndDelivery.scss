@@ -1,0 +1,25 @@
+//-------------------------
+// Payment and delivery
+//-------------------------
+
+.paymentAndDeliveryWrap {
+  font-size: 1.4rem;
+  margin-bottom: 5rem;
+
+  .text {
+    font-family: $robotoLight;
+  }
+}
+
+.titlePaymentAndDelivery{
+  font-family: $robotoBold;
+  font-size: 1.4rem;
+}
+
+.textPickOut {
+  color: $safetyOrange;
+
+  a {
+    color: $safetyOrange;
+  }
+}

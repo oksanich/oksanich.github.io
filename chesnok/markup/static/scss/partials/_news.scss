@@ -3,8 +3,11 @@
 //-------------------------
 
 .newsWrap {
-  .container {
-    padding: 0;
+
+  @media (min-width: $smScreen) {
+    .container {
+      padding: 0;
+    }
   }
 }
 

@@ -1,0 +1,54 @@
+//-------------------------
+// Product card tab
+//-------------------------
+
+.productCardTabsWrap {
+
+  .carouselArrows {
+    margin-bottom: 3rem;
+    position: relative;
+    right: 0;
+    text-align: center;
+    top: 0;
+
+    [class^='icon'] {
+      right: 0;
+    }
+  }
+}
+
+.contentTabWrap {
+  background: $whiteSmokeLight;
+}
+
+.listProductCardTabs {
+  border-bottom: none;
+  &.nav-tabs {
+    .itemProductCardTab {
+      margin-bottom: 0;
+
+      &.active {
+        .linkProductCardTab {
+          background: $whiteSmokeLight;
+          border: none;
+          color: $textColor;
+        }
+      }
+
+      @media (max-width: $smScreen){
+        width: 100%;
+      }
+    }
+
+    .linkProductCardTab {
+      border: none;
+      color: $pelorous;
+      font-size: 1.8rem;
+      padding: 2.5rem 3.5rem 1.5rem;
+
+      &:hover {
+        color: $textColor;
+      }
+    }
+  }
+}

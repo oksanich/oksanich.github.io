@@ -53,13 +53,16 @@
   }
 }
 
+.itemContactFooter {
+  display: block;
+}
+
 .footerPhoneContact {
   color: $nero;
   display: inline-block;
   font-family: $robotoBold;
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  width: 100%;
 
   &:hover {
     color: $nero;

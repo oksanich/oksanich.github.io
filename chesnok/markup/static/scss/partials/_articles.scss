@@ -9,12 +9,14 @@
   margin-bottom: 2rem;
   padding: 3rem 0 0;
 
-  .container {
-    padding: 0;
-  }
-
   @media (max-width: $smScreen) {
     padding: 3rem 0 2rem;
+  }
+
+  @media (min-width: $smScreen) {
+    .container {
+      padding: 0;
+    }
   }
 }
 

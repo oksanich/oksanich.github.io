@@ -196,12 +196,15 @@
 // Header Middle
 //-------------------------
 
+.itemContactHeader{
+  display: block;
+}
+
 .phoneContactMiddle {
   color: $mortar;
-  display: block;
+  display: inline-block;
   font-family: $robotoBold;
   font-size: 2.4rem;
-  width: 100%;
 
   &:hover {
     color: $mortar;
@@ -577,7 +580,7 @@
   position: absolute;
   text-align: left;
   width: 73rem;
-  z-index: 100;
+  z-index: 1100;
 
   @media (min-width: $lgScreen) and (max-width: $xlgScreen) {
     width: 63rem;
