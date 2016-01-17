@@ -2352,217 +2352,102 @@
         </div>
     </div>    <!-- END bread crumbs -->
 
-    <!-- START ordering content -->
-    <div class="orderingWrap">
+    <!-- START registration content -->
+    <div class="registrationWrap">
         <div class="container">
-            <h2 class="blockTitle">Оплата и Доставка</h2>
-            <div class="row">
-                <div class="col-sm-7 col-md-8 col-lg-9">
-                    <div class="orderingContent">
-                        <form action="" class="orderingForm">
-                            <div class="blockOrderingForm">
-                                <h3 class="titleOrderingForm">Личные данные</h3>
-    
-                                <input type="text" class="inputGlobal" placeholder="Имя">
-                                <input type="text" class="inputGlobal" placeholder="Фамилия">
-                                <input type="email" class="inputGlobal" placeholder="E-mail">
-                                <input type="tel" class="inputGlobal" placeholder="Телефон">
+            <h2 class="blockTitle">Регистрация</h2>
+            <form class="formRegistration">
+                <div class="row">
+                    <div class="blockRegistration">
+                        <div class="col-sm-6">
+                            <div class="requiredText"><span class="requiredMarker">*</span> Обязательны для заполнения</div>
+                            <div class="inputRequired">
+                                <input type="text" class="inputGlobal" placeholder="Логин">
                             </div>
-    
-                            <div class="blockOrderingForm">
-                                <h3 class="titleOrderingForm">Адрес доставки</h3>
-    
-                                <input type="text" class="inputGlobal" placeholder="Область">
-                                <input type="text" class="inputGlobal" placeholder="Город">
-                                <input type="text" class="inputGlobal" placeholder="Адрес">
-                                <input type="text" class="inputGlobal" placeholder="Индекс">
+                            <div class="inputRequired">
+                                <input type="password" class="inputGlobal" placeholder="Пароль">
                             </div>
-    
-                            <div class="blockOrderingForm">
-                                <h3 class="titleOrderingForm">Способ доставки</h3>
-    
-                                <div class="checkoutDeliveryItem">
-                                    <input id="deliveryItem1" type="radio" name="checkoutDelivery"/>
-                                    <label for="deliveryItem1" class="checkoutDeliveryLabel">
-                                                <span class="checkoutDeliveryPseudoRadio checkoutPseudoRadio">
-                                                     <span class="checkoutPseudoRadioIn"></span>
-                                                </span>
-                                        Самовывоз
-                                    </label>
-                                </div>
-                                <div class="checkoutDeliveryItem">
-                                    <input id="deliveryItem2" type="radio" name="checkoutDelivery"/>
-                                    <label for="deliveryItem2" class="checkoutDeliveryLabel">
-                                                <span class="checkoutDeliveryPseudoRadio checkoutPseudoRadio">
-                                                    <span class="checkoutPseudoRadioIn"></span>
-                                                </span>
-                                        Курьером по Киеву
-                                    </label>
-                                </div>
-    
-                                <h3 class="checkoutFormTitleSub">Курьерская служба по Украине</h3>
-    
-                                <div class="checkoutDeliveryItem">
-                                    <input id="deliveryItem3" type="radio" name="checkoutDelivery"/>
-                                    <label for="deliveryItem3" class="checkoutDeliveryLabel">
-                                                <span class="checkoutDeliveryPseudoRadio checkoutPseudoRadio">
-                                                    <span class="checkoutPseudoRadioIn"></span>
-                                                </span>
-                                        Новая почта
-                                    </label>
-                                </div>
-                                <div class="checkoutDeliveryItem">
-                                    <input id="deliveryItem4" type="radio" name="checkoutDelivery"/>
-                                    <label for="deliveryItem4" class="checkoutDeliveryLabel">
-                                                <span class="checkoutDeliveryPseudoRadio checkoutPseudoRadio">
-                                                    <span class="checkoutPseudoRadioIn"></span>
-                                                </span>
-                                        Деливери
-                                    </label>
-                                </div>
-                                <div class="checkoutDeliveryItem">
-                                    <input id="deliveryItem5" type="radio" name="checkoutDelivery"/>
-                                    <label for="deliveryItem5" class="checkoutDeliveryLabel">
-                                                <span class="checkoutDeliveryPseudoRadio checkoutPseudoRadio">
-                                                    <span class="checkoutPseudoRadioIn"></span>
-                                                </span>
-                                        Автолюкс
-                                    </label>
-                                </div>
-                                <div class="checkoutDeliveryItem">
-                                    <input id="deliveryItem6" type="radio" name="checkoutDelivery"/>
-                                    <label for="deliveryItem6" class="checkoutDeliveryLabel">
-                                                <span class="checkoutDeliveryPseudoRadio checkoutPseudoRadio">
-                                                    <span class="checkoutPseudoRadioIn"></span>
-                                                </span>
-                                        ИнТайм
-                                    </label>
-                                </div>
+                            <div class="inputRequired">
+                                <input type="password" class="inputGlobal" placeholder="Повторите пароль">
                             </div>
+                        </div>
     
-                            <div class="blockOrderingForm">
-                                <h3 class="titleOrderingForm">Способ оплаты</h3>
-    
-                                <div class="checkoutDeliveryItem">
-                                    <input id="paymentItem1" type="radio" name="checkoutDelivery"/>
-                                    <label for="paymentItem1" class="checkoutDeliveryLabel">
-                                                <span class="checkoutDeliveryPseudoRadio checkoutPseudoRadio">
-                                                    <span class="checkoutPseudoRadioIn"></span>
-                                                </span>
-                                        Карта " Приватбанк "
-                                    </label>
-                                </div>
-                                <div class="checkoutDeliveryItem">
-                                    <input id="paymentItem2" type="radio" name="checkoutDelivery"/>
-                                    <label for="paymentItem2" class="checkoutDeliveryLabel">
-                                                <span class="checkoutDeliveryPseudoRadio checkoutPseudoRadio">
-                                                    <span class="checkoutPseudoRadioIn"></span>
-                                                </span>
-                                        Оплата наличными курьеру
-                                    </label>
-                                </div>
-                                <div class="checkoutDeliveryItem">
-                                    <input id="paymentItem3" type="radio" name="checkoutDelivery"/>
-                                    <label for="paymentItem3" class="checkoutDeliveryLabel">
-                                                <span class="checkoutDeliveryPseudoRadio checkoutPseudoRadio">
-                                                    <span class="checkoutPseudoRadioIn"></span>
-                                                </span>
-                                        Наложенный платеж
-                                    </label>
-                                </div>
-                                <div class="checkoutDeliveryItem">
-                                    <input id="paymentItem4" type="radio" name="checkoutDelivery"/>
-                                    <label for="paymentItem4" class="checkoutDeliveryLabel">
-                                                <span class="checkoutDeliveryPseudoRadio checkoutPseudoRadio">
-                                                    <span class="checkoutPseudoRadioIn"></span>
-                                                </span>
-                                        Оплата он-лайн
-                                    </label>
-                                </div>
-                            </div>
-    
-                            <div class="blockOrderingForm">
-                                <h3 class="titleOrderingForm">Комментарий к заказу</h3>
-    
-                                <textarea class="textareaGlobal" name="" id="" placeholder="Ваше сообщение"></textarea>
-    
-                                <div class="checkboxesOrderingForm">
-                                    <div class="checkoutCommentItem">
-                                        <input id="commentItem1" type="checkbox"/>
-                                        <label for="commentItem1" class="checkoutCommentLabel">
-                                            <span class="checkoutCommentPseudoCheckbox checkoutCommentCheckbox"></span>
-                                            Подписаться на новости
-                                        </label>
-                                    </div>
-                                    <div class="checkoutCommentItem">
-                                        <input id="commentItem2" type="checkbox"/>
-                                        <label for="commentItem2" class="checkoutCommentLabel">
-                                            <span class="checkoutCommentPseudoCheckbox checkoutCommentCheckbox"></span>
-                                            Зарегистрироваться
-                                        </label>
-                                    </div>
-                                </div>
-    
-                                <button class="btn btnGreen btnSend">Подтвердить заказ</button>
-                            </div>
-                        </form>
                     </div>
                 </div>
-                <div class="col-sm-5 col-md-4 col-lg-3">
-                    <div class="sidebarWrap">
-                        <div class="sidebar">
-                            <div class="headerSidebar">
-                                <div class="titleSidebar">Корзина</div>
-                                <div class="productNumberSidebar">2 товара</div>
+                <div class="row">
+                    <div class="blockRegistration">
+                        <div class="col-sm-6">
+                            <div class="inputRequired">
+                                <input type="text" class="inputGlobal" placeholder="Имя">
                             </div>
-                            <div class="contentSidebar">
-                                <div class="topContentSidebar">
-                                    <div class="priceSidebar">
-                                        <span class="titlePriceSidebar">Стоимость:</span>
-                                        <span class="numberPriceSidebar">2594 грн</span>
-                                    </div>
-                                    <div class="discountSidebar">
-                                        <span class="titleDiscountSidebar">Скидка:</span>
-                                        <sapn class="numberDiscountSidebar"> 0 грн</sapn>
-                                    </div>
-                                </div>
+                            <div class="inputRequired">
+                                <input type="text" class="inputGlobal" placeholder="Фамилия">
+                            </div>
+                            <div class="inputRequired">
+                                <input type="email" class="inputGlobal" placeholder="E-mail">
+                            </div>
+                        </div>
     
-                                <div class="bottomContentSidebar">
-                                    <div class="toPay">
-                                        <span class="titleToPay">К оплате:</span>
-                                        <span class="numberToPay">2594 грн</span>
-                                    </div>
+                        <div class="col-sm-6">
+                            <div class="inputRequired">
+                                <input type="tel" class="inputGlobal" placeholder="Телефон">
+                            </div>
+                            <textarea class="textareaGlobal textareaAddress" name="" id="" placeholder="Телефон"></textarea>
+                        </div>
+                    </div>
+                </div>
     
-                                    <button class="btn btnBlue btnBackBuy">Вернуться к покупкам</button>
+                <div class="row">
+                    <div class="blockRegistration">
+                        <div class="col-sm-6">
+                            <div class="inputRequired">
+                                <input type="text" class="inputGlobal" placeholder="Область">
+                            </div>
+                            <div class="inputRequired">
+                                <input type="text" class="inputGlobal" placeholder="Город">
+                            </div>
+                        </div>
+    
+                        <div class="col-sm-6">
+                            <input type="text" class="inputGlobal" placeholder="Индекс">
+                            <div class="inputRequired">
+                                <input type="text" class="inputGlobal" placeholder="Страна">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="blockRegistration">
+                        <div class="col-sm-6">
+                            <div class="captchaWrap">
+                                <p class="textCaptcha">Введите число, изображенное на рисунке</p>
+                                <div class="captcha">
+                                    <div class="captchaImg"></div>
+                                    <a class="captchaRefresh">
+                                        <i class="icon-revers"></i>
+                                    </a>
+                                    <input type="text" class="inputGlobal captchaInput">
                                 </div>
                             </div>
                         </div>
     
-                        <ul class="listLinksSidebar">
-                            <li class="itemLinkFooter">
-                                <a href="#" class="linkFooter">
-                                    <i class="icon-car"></i>
-                                    <span class="textLinkFooter">Оплата и Доставка</span>
-                                </a>
-                            </li>
-                            <li class="itemLinkFooter">
-                                <a href="#" class="linkFooter">
-                                    <i class="icon-exchange"></i>
-                                    <span class="textLinkFooter">Обмен/Возврат</span>
-                                </a>
-                            </li>
-                            <li class="itemLinkFooter">
-                                <a href="#" class="linkFooter">
-                                    <i class="icon-discount-label"></i>
-                                    <span class="textLinkFooter"> Дисконтная программа</span>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="col-sm-6">
+                            <button class="btn btnGreen">Зарегистрироваться</button>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="checkoutCommentItem">
+                    <input id="commentItem1" type="checkbox"/>
+                    <label for="commentItem1" class="checkoutCommentLabel">
+                        <span class="checkoutCommentPseudoCheckbox checkoutCommentCheckbox"></span>
+                        Подписаться на новости
+                    </label>
+                </div>
+            </form>
         </div>
-    </div>    <!-- END ordering content -->
+    </div>
+    </div>    <!-- END registration content -->
 
     <!--START scroll top-->
     <div class="wrapScroll">

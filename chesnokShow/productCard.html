@@ -2414,7 +2414,7 @@
                                 <h2 class="titleProductInfo">Сковорода для жарки  MONETA SAVER 28 х 5,7 см</h2>
                                 <div class="productInfoBottom clearfix">
                                     <div class="priceProduct pull-left">1 550 грн.</div>
-                                    <!--<div class="btn btnOrange pull-right">Уведомить о поступлении</div>-->
+                                    <!--<div class="btn btnOrange pull-right" data-toggle="modal" data-target="#modalEntrance">Уведомить о поступлении</div>-->
                                     <div class="btn btnGreen btnBuy pull-right">Купить</div>
                                 </div>
                             </div>
@@ -3295,7 +3295,7 @@
                                                         </div>
                                                         <div class="productInfoBottom clearfix">
                                                             <div class="priceProduct pull-left">1 550 грн.</div>
-                                                            <div class="btn btnOrange pull-right">Уведомить о поступлении</div>
+                                                            <div class="btn btnOrange _btnNotify pull-right" data-toggle="modal" data-target="#modalEntrance">Уведомить о поступлении</div>
                                                             <!--<div class="btn btnGreen pull-right">Купить</div>-->
                                                         </div>
                                                     </div>
@@ -3624,7 +3624,7 @@
                                                         </div>
                                                         <div class="productInfoBottom clearfix">
                                                             <div class="priceProduct pull-left">1 550 грн.</div>
-                                                            <div class="btn btnOrange pull-right">Уведомить о поступлении</div>
+                                                            <div class="btn btnOrange _btnNotify pull-right" data-toggle="modal" data-target="#modalEntrance">Уведомить о поступлении</div>
                                                             <!--<div class="btn btnGreen pull-right">Купить</div>-->
                                                         </div>
                                                     </div>
@@ -3797,6 +3797,67 @@
         
         
         <!--END preview-->
+
+        <!--START modal-entrance-->
+        <div class="modal fade" id="modalEntrance">
+            <div class="modal-dialog modal-md">
+                <div class="modalEntrance modalGlobal">
+                    <div class="modalHeader">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                                class="icon-close"></i></button>
+                        <h2 class="modalTitle">Уведомить о поступлении товара</h2>
+                    </div>
+                    <div class="modalBody">
+                        <p class="titleModalEntranceBody">Введите данные и мы сообщим когда поступит:</p>
+                        <div class="productEntrance searchResult">
+                            <div class="wrapSearchResultImage">
+                                <img class="searchResultImage" src="static/img/content/searchImg_1.jpg"
+                                     alt=""/>
+                            </div>
+                            <div class="searchResultImageInfo">
+                                <div class="resultImageInfoTitle">Набор из 4 кружек 320 мл</div>
+                                <div class="resultImageInfoArticle">Арт: 9260</div>
+        
+                                <div class="resultImageInfoMaterial">
+                                    Материал:
+                                    <span class="resultImageInfoMaterialName">керамика</span>
+                                </div>
+                                <div class="resultImageInfoManufacturer">
+                                    Производитель:
+                                    <span class="resultImageInfoManufacturerName">Sambuka</span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <form class="formModal formEntrance">
+                            <label class="labelInputNumber" for="inputNumber">
+                                <span class="textInputEntrance">Необходимое количество</span>
+                                <input type="number" id="inputNumber" class="inputGlobal inputNumber" value="0" min="0">
+                            </label>
+                            <input type="text" class="inputGlobal inputName" placeholder="Имя">
+                            <input type="email" class="inputGlobal inputEmail" placeholder="E-mail">
+                            <label class="labelInputDate clearfix" for="inputDate">
+                                <span class="textInputEntrance">Актуально до:</span>
+                                <input type="date" id="inputDate" name="inputDate" class="inputGlobal inputDate">
+                                <i class="icon-calendar"></i>
+                            </label>
+                            <textarea class="textareaGlobal" name="" id="" placeholder="Комментарий"></textarea>
+                            <div class="captchaWrap">
+                                <p class="textCaptcha">Введите число, изображенное на рисунке</p>
+                                <div class="captcha">
+                                    <div class="captchaImg"></div>
+                                    <a class="captchaRefresh">
+                                        <i class="icon-revers"></i>
+                                    </a>
+                                    <input type="text" class="inputGlobal captchaInput">
+                                </div>
+                            </div>
+                            <button class="btn btnGreen btnSend">отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>        <!--END modal-entrance-->
 
         <!--START scroll top-->
         <div class="wrapScroll">
