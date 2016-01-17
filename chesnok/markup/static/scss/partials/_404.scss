@@ -1,0 +1,45 @@
+//-------------------------
+// 404
+//-------------------------
+
+.block404{
+  text-align: center;
+  margin: 3rem 0;
+
+  @media (max-width: $smScreen) {
+    margin: 1.5rem 0;
+  }
+}
+
+.logo404 {
+  @include bg-svg($logo, no-repeat);
+  display: inline-block;
+  margin-bottom: 7rem;
+
+  @media (max-width: $smScreen) {
+    margin-bottom: 3rem;
+  }
+}
+
+.img404 {
+  max-width: 55rem;
+  margin-bottom: 2rem;
+}
+
+.text404Wrap {
+  color: $scorpion;
+  margin-bottom: 5rem;
+
+  @media (max-width: $smScreen) {
+    margin-bottom: 3rem;
+  }
+}
+
+.titleText404 {
+  font-family: $robotoBold;
+  font-size: 3.6rem;
+}
+
+.text404 {
+  font-size: 2.4rem;
+}

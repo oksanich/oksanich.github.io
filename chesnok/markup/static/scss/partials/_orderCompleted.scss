@@ -1,0 +1,24 @@
+//-------------------------
+// Order completed
+//-------------------------
+
+.orderingCompletedContent{
+  text-align: center;
+  margin: 2rem 0 5rem;
+
+  .btnBlue{
+    font-size: 1.8rem;
+    text-transform: inherit;
+  }
+}
+
+.textOrderingCompletedWrap {
+  margin-bottom: 5.5rem;
+}
+
+.textOrderingCompleted {
+  color: $safetyOrange;
+  font-family: $robotoBold;
+  font-size: 1.8rem;
+  margin-bottom: .25rem;
+}

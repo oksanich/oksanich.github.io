@@ -27,6 +27,14 @@ $(function () {
     });
 });
 
+// Carousel viewed
+//-------------------------
+$(function () {
+    $('#carouselRecommend').carousel({
+        interval: 7000
+    });
+});
+
 // Carousel modal
 //-------------------------
 $(function () {

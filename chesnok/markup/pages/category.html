@@ -1,0 +1,97 @@
+<!doctype html>
+<!--[if IE 7]>
+<html class="ie7 lt-ie10 lt-ie9 lt-ie8 no-js" lang="ru"><![endif]-->
+<!--[if IE 8]>
+<html class="ie8 lt-ie10 lt-ie9 no-js" lang="ru"><![endif]-->
+<!--[if IE 9 ]>
+<html class="ie9 lt-ie10 no-js" lang="ru"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="ru"><!--<![endif]-->
+
+<head>
+    {{> head/head head.defaults}}
+</head>
+
+<body class="page">
+
+<!-- START header -->
+{{> header/header}}
+<!-- END header -->
+
+<section class="wrapper">
+
+    <!-- START bread crumbs -->
+    {{> breadCrumbs/breadCrumbs}}
+    <!-- END bread crumbs -->
+
+    <!-- START section content -->
+    {{> category/categoryContent}}
+    <!-- END section content -->
+
+    <!--START scroll top-->
+    {{> scrollTopBottom/scrollTopBottom}}
+    <!--END scroll bottom-->
+
+    <!--START viewed-->
+    {{> viewed/viewed}}
+    <!--END viewed-->
+
+    <!--START recommend-->
+    {{> recommend/recommend}}
+    <!--END recommend-->
+
+    <!--START preview-->
+    {{> preview/preview}}
+    <!--END preview-->
+
+</section>
+
+<!-- START footer -->
+{{> footer/footer}}
+<!-- END footer -->
+
+<!-- Main scripts. You can replace it, but I recommend you to leave it here-->
+
+<!--<script src="%=staticPrefix=%js/separate-js/jquery-2.1.4.min.js" type="text/javascript"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="%=staticPrefix=%js/separate-js/royalSlider.js" type="text/javascript"></script>
+
+<script>
+    $(function () {
+        $('#dl-menu').dlmenu({
+            animationClasses: {classin: 'dl-animate-in-2', classout: 'dl-animate-out-2'}
+        });
+
+        $('._royalSlider').royalSlider({
+            fullscreen: {
+                enabled: false,
+                nativeFS: true
+            },
+            controlNavigation: 'thumbnails',
+            autoScaleSlider: true,
+            autoScaleSliderWidth: 500,
+            autoScaleSliderHeight: 700,
+            loop: false,
+            imageScaleMode: 'fit-if-smaller',
+            navigateByClick: true,
+            numImagesToPreload: 6,
+            arrowsNav: false,
+            arrowsNavAutoHide: true,
+            arrowsNavHideOnTouch: true,
+            keyboardNavEnabled: true,
+            fadeinLoadedSlide: true,
+            globalCaption: true,
+            globalCaptionInside: false,
+            thumbs: {
+                appendSpan: true,
+                firstMargin: true,
+                paddingBottom: 4
+            }
+        });
+    });
+</script>
+
+<script src="%=staticPrefix=%js/main%=hash=%%=min=%.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+//-------------------------
+// Registration
+//-------------------------
+
+.requiredText {
+  color: $textColorLight;
+  font-family: $robotoLight;
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+}
+
+.formRegistration{
+  > div:nth-last-of-type(1){
+    margin-bottom: 1rem;
+  }
+}
+
+.requiredMarker {
+  color: $safetyOrange;
+  font-size: 1.6rem;
+}
+
+.inputRequired {
+  position: relative;
+
+  &::after {
+    content: '*';
+    color: $safetyOrange;
+    font-family: $robotoLight;
+    font-size: 1.6rem;
+    position: absolute;
+    right: -1.5rem;
+    top: -.25rem;
+  }
+}
+
+.blockRegistration {
+  overflow: hidden;
+  margin-bottom: 7rem;
+
+  .btn {
+    margin-top: 4rem;
+    float: right;
+
+    @media (max-width: $smScreen) {
+      margin-top: 2rem;
+      font-size: 2rem;
+      float: none;
+      width: 100%;
+    }
+  }
+}
+
+.textareaAddress {
+  height: 11rem;
+}
+
+.textCaptcha {
+  color: $textColorLight;
+  font-family: $robotoLight;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.captchaWrap {
+  overflow: hidden;
+}
+
+.captchaImg {
+  background: $safetyOrange;
+  border-radius: .2rem;
+  float: left;
+  height: 5rem;
+  margin-right: 1.5rem;
+  width: 14rem;
+
+  @media (max-width: $smScreen) {
+    margin-bottom: 1rem;
+  }
+}
+
+.captchaRefresh {
+  cursor: pointer;
+  float: left;
+  margin: 1.5rem 3rem 0 0;
+
+  [class^='icon'] {
+    font-size: 2rem;
+  }
+}
+
+.captchaInput {
+  float: left;
+  width: 14rem;
+}

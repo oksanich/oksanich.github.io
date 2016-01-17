@@ -1,0 +1,65 @@
+//-------------------------
+// Entrance modal
+//-------------------------
+
+.labelInputDate {
+  .inputDate {
+    max-width: 20rem;
+    margin-rightt: 1rem;
+  }
+
+  [class^='icon'] {
+    display: inline-block;
+    font-size: 3.2rem;
+    vertical-align: middle;
+  }
+}
+
+.labelInputNumber {
+  .inputNumber {
+    max-width: 7rem;
+    padding: 1.25rem 1.5rem;
+  }
+}
+
+.textInputEntrance {
+  display: inline-block;
+  font-family: $robotoLight;
+  font-size: 1.8rem;
+  margin: 0 1rem;
+
+  @media (max-width: $smScreen) {
+    margin-bottom: 1rem;
+  }
+}
+
+.titleModalEntranceBody {
+  color: $violetRed;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.productEntrance {
+  border: .2rem solid $safetyOrange;
+  margin-bottom: 1rem;
+
+  .resultImageInfoTitle,
+  .resultImageInfoArticle {
+    font-size: 1.8rem;
+  }
+
+  .resultImageInfoArticle {
+    margin-bottom: 2rem;
+  }
+}
+
+.resultImageInfoMaterial,
+.resultImageInfoManufacturer {
+  font-family: $robotoLight;
+  font-size: 1.8rem;
+}
+
+.resultImageInfoMaterialName,
+.resultImageInfoManufacturerName {
+  font-family: $robotoRegular;
+}

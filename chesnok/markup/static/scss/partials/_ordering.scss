@@ -113,6 +113,10 @@
   color: $white;
   font-size: 4.8rem;
   margin-bottom: 1rem;
+  
+  @media (max-width: $lgScreen) {
+    font-size: 3.2rem;
+  }
 }
 
 .productNumberSidebar {

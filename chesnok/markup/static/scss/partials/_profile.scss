@@ -1,0 +1,50 @@
+//-------------------------
+// Profile
+//-------------------------
+
+.profileWrap {
+  margin-bottom: 3rem;
+}
+
+.listSidebar {
+  margin: 0;
+  padding: 2rem 3rem 3.5rem;
+}
+
+.itemSidebar {
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.linkSidebar {
+  font-family: $robotoBold;
+  font-size: 1.8rem;
+
+  &:hover {
+    color: $pelorous;
+  }
+}
+
+.profileForm {
+  max-width: 53rem;
+}
+
+.itemProfileForm {
+  overflow: hidden;
+}
+
+.fieldProfileForm {
+  overflow: hidden;
+}
+
+.titleProfileForm {
+  color: $textColor;
+  font-family: $robotoLight;
+  font-size: 1.8rem;
+  float: left;
+  margin-top: 1.25rem;
+  width: 10rem;
+}

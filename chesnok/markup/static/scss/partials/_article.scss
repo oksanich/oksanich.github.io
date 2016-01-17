@@ -1,0 +1,66 @@
+//-------------------------
+// Article
+//-------------------------
+
+.articleWrap {
+
+  .article {
+    margin-bottom: 5rem;
+  }
+
+  .articleRight {
+    width: 27%;
+  }
+
+  .articleLeft {
+    width: 73%;
+
+    @media (max-width: $lgScreen) {
+      width: 100%;
+    }
+  }
+
+  .linkArticleWrap {
+    background: $inputBg;
+
+    &:hover {
+      background: $bahia;
+    }
+  }
+
+  .btnBlue {
+    font-size: 1.8rem;
+    float: right;
+    margin-bottom: 3rem;
+    text-transform: inherit;
+    width: 24rem;
+
+    @media (max-width: $smScreen) {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .linkTextArticle {
+    color: $pelorous;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.topTextArticleWrap {
+  margin-bottom: 7rem;
+}
+
+.allArticlesBtn {
+  clear: both;
+  overflow: hidden;
+}
+
+.topTextArticle {
+  color: $textColor;
+  font-family: $robotoLight;
+  font-size: 1.4rem;
+}
