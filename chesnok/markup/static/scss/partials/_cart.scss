@@ -1,0 +1,118 @@
+//-------------------------
+// Cart
+//-------------------------
+
+.cartWrap {
+  margin-bottom: 3rem;
+}
+
+.itemCart {
+  border: .1rem solid $darkGray;
+  border-radius: .2rem;
+  margin-bottom: 2.5rem;
+  padding: 3rem 1rem 2rem;
+  position: relative;
+
+  [class^='icon-close'] {
+    font-size: 2.4rem;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+
+    &:hover {
+      color: $safetyOrange;
+    }
+  }
+}
+
+.imgCartRow {
+  position: relative;
+  width: 100%;
+}
+
+.titleInfoCart {
+  font-family: $robotoBold;
+  font-size: 1.4rem;
+}
+
+.articleInfoCart {
+  color: $darkGray;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.reviewsInfoCart {
+  color: $pelorous;
+  font-size: 1.4rem;
+
+  &:hover {
+    color: darken($pelorous, 10%);
+  }
+}
+
+.leftInfoCart {
+  float: left;
+  width: 50%;
+
+  @media (max-width: $mdScreen) {
+    float: none;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+}
+
+.rightInfoCart {
+  float: left;
+  margin-top: 2rem;
+  overflow: hidden;
+  width: 50%;
+
+  @media (max-width: $mdScreen) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.inputCart {
+  border-radius: .3rem;
+  height: 3.5rem;
+  padding: 1rem .5rem;
+  text-align: center;
+  width: 4rem;
+}
+
+.wrapCheckoutCounter {
+  float: left;
+
+  @media (max-width: $lgScreen) {
+    float: none;
+  }
+}
+
+.cartPrice {
+  color: $violetRed;
+  float: right;
+  font-family: $robotoBold;
+  font-size: 2.4rem;
+  margin: .5rem 2rem 0 0;
+
+  @media (max-width: $lgScreen) {
+    float: none;
+    margin-right: 0;
+  }
+}
+
+.checkoutCounterBtn {
+  background: none;
+  border: none;
+
+  [class^='icon'] {
+    font-size: 2.4rem;
+    display: inline-block;
+    vertical-align: middle;
+
+    &:hover {
+      color: $safetyOrange;
+    }
+  }
+}

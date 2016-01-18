@@ -2,41 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="789dcce9-d83f-485c-aefa-3e1eb21595e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/modules/404/404Content.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/modules/article/articleContent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/modules/orderCompleted/orderCompletedContent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/modules/profile/profileContent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/pages/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/pages/article.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/pages/orderCompleted.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/pages/registration.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_404.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_article.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_category.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_entranceModal.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_orderCompleted.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_profile.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_registration.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/static/fonts/icons/icons.eot" afterPath="$PROJECT_DIR$/chesnok/markup/static/fonts/icons/icons.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/static/fonts/icons/icons.ttf" afterPath="$PROJECT_DIR$/chesnok/markup/static/fonts/icons/icons.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/static/fonts/icons/icons.woff" afterPath="$PROJECT_DIR$/chesnok/markup/static/fonts/icons/icons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/static/img/general/royalSlider/rs-defau.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/modules/cart/cartContent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/pages/cart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/static/js/plugins/cartCounter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_cart.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/modules/ordering/orderingContent.html" afterPath="$PROJECT_DIR$/chesnok/markup/modules/ordering/orderingContent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/modules/preview/preview.html" afterPath="$PROJECT_DIR$/chesnok/markup/modules/preview/preview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/modules/productCardContent/productCardContent.html" afterPath="$PROJECT_DIR$/chesnok/markup/modules/productCardContent/productCardContent.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/pages/index.html" afterPath="$PROJECT_DIR$/chesnok/markup/pages/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/pages/productCard.html" afterPath="$PROJECT_DIR$/chesnok/markup/pages/productCard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/static/fonts/icons/icons.svg" afterPath="$PROJECT_DIR$/chesnok/markup/static/fonts/icons/icons.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/static/js/plugins/hideModal.js" afterPath="$PROJECT_DIR$/chesnok/markup/static/js/plugins/hideModal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/static/js/plugins/init.js" afterPath="$PROJECT_DIR$/chesnok/markup/static/js/plugins/init.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/static/scss/GUI.scss" afterPath="$PROJECT_DIR$/chesnok/markup/static/scss/GUI.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/static/scss/common.scss" afterPath="$PROJECT_DIR$/chesnok/markup/static/scss/common.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/static/scss/fonts.scss" afterPath="$PROJECT_DIR$/chesnok/markup/static/scss/fonts.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_header.scss" afterPath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_modal.scss" afterPath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_modal.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_ordering.scss" afterPath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_ordering.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_preview.scss" afterPath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_preview.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_scrollTopBottom.scss" afterPath="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_scrollTopBottom.scss" />
     </list>
     <ignored path="SvitlaHosting.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,18 +44,48 @@
       <file leaf-file-name="common.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/common.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.375">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state vertical-scroll-proportion="-16.875">
+              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_modal.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/partials/_modal.scss">
+      <file leaf-file-name="_ordering.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/partials/_ordering.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-93.75">
-              <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+            <state vertical-scroll-proportion="-11.25">
+              <caret line="148" column="18" selection-start-line="148" selection-start-column="18" selection-end-line="148" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_entranceModal.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/partials/_entranceModal.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.333333">
+              <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vars.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/vars.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.625">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cartContent.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chesnok/markup/modules/cart/cartContent.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.51004636">
+              <caret line="64" column="99" selection-start-line="64" selection-start-column="99" selection-end-line="64" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -88,48 +94,18 @@
       <file leaf-file-name="GUI.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/GUI.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state vertical-scroll-proportion="-59.333332">
+              <caret line="108" column="4" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="productCard.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chesnok/markup/pages/productCard.html">
+      <file leaf-file-name="_cart.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/partials/_cart.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.375">
-              <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="entranceModal.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chesnok/markup/modules/entranceModal/entranceModal.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7532468">
-              <caret line="9" column="48" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_entranceModal.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/partials/_entranceModal.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51038575">
-              <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_preview.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/partials/_preview.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.0">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state vertical-scroll-proportion="-1.1764706">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -151,17 +127,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chesnok/markup/pages/paymentAndPelivery.html" />
-        <option value="$PROJECT_DIR$/chesnok/markup/pages/paymentAndDelivery.html" />
-        <option value="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_productCardTab.scss" />
-        <option value="$PROJECT_DIR$/chesnok/markup/modules/paymentAndDelivery/paymentAndDeliveryContent.html" />
         <option value="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_paymentAndDelivery.scss" />
         <option value="$PROJECT_DIR$/chesnok/markup/static/scss/vars.scss" />
         <option value="$PROJECT_DIR$/pastelka/scss/_checkout.scss" />
         <option value="$PROJECT_DIR$/chesnok/dev/index.html" />
         <option value="$PROJECT_DIR$/chesnok/markup/modules/profile/profileContent.html" />
         <option value="$PROJECT_DIR$/chesnok/markup/pages/ordering.html" />
-        <option value="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_ordering.scss" />
         <option value="$PROJECT_DIR$/chesnok/markup/modules/profile/profileConten.html" />
         <option value="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_profile.scss" />
         <option value="$PROJECT_DIR$/chesnok/markup/pages/orderCompleted.html" />
@@ -191,17 +162,22 @@
         <option value="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_modal.scss" />
         <option value="$PROJECT_DIR$/chesnok/markup/static/scss/fonts.scss" />
         <option value="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_enetarenceModal.scss" />
-        <option value="$PROJECT_DIR$/chesnok/markup/static/scss/common.scss" />
-        <option value="$PROJECT_DIR$/chesnok/markup/static/scss/GUI.scss" />
         <option value="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_registration.scss" />
-        <option value="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_preview.scss" />
         <option value="$PROJECT_DIR$/chesnok/markup/static/js/plugins/hideModal.js" />
-        <option value="$PROJECT_DIR$/chesnok/markup/pages/index.html" />
         <option value="$PROJECT_DIR$/chesnok/markup/modules/preview/preview.html" />
-        <option value="$PROJECT_DIR$/chesnok/markup/pages/productCard.html" />
         <option value="$PROJECT_DIR$/chesnok/markup/modules/productCardContent/productCardContent.html" />
         <option value="$PROJECT_DIR$/chesnok/markup/modules/entranceModal/entranceModal.html" />
         <option value="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_entranceModal.scss" />
+        <option value="$PROJECT_DIR$/chesnok/markup/pages/productCard.html" />
+        <option value="$PROJECT_DIR$/chesnok/markup/pages/index.html" />
+        <option value="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_preview.scss" />
+        <option value="$PROJECT_DIR$/chesnok/markup/pages/cart.html" />
+        <option value="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_ordering.scss" />
+        <option value="$PROJECT_DIR$/chesnok/markup/static/scss/common.scss" />
+        <option value="$PROJECT_DIR$/chesnok/markup/static/js/plugins/cartCounter.js" />
+        <option value="$PROJECT_DIR$/chesnok/markup/static/scss/GUI.scss" />
+        <option value="$PROJECT_DIR$/chesnok/markup/static/scss/partials/_cart.scss" />
+        <option value="$PROJECT_DIR$/chesnok/markup/modules/cart/cartContent.html" />
       </list>
     </option>
   </component>
@@ -215,9 +191,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="958" />
     <option name="y" value="23" />
-    <option name="width" value="958" />
+    <option name="width" value="1916" />
     <option name="height" value="1177" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -295,6 +270,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pastelka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SvitlaHosting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oksanych.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pastelka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -464,6 +457,96 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SvitlaHosting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oksanych.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chesnok" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="general" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SvitlaHosting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oksanych.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chesnok" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="general" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="royalSlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SvitlaHosting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oksanych.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chesnok" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -590,6 +673,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="ordering" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SvitlaHosting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oksanych.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chesnok" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="novelty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SvitlaHosting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oksanych.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chesnok" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="header" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -620,6 +755,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SvitlaHosting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oksanych.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chesnok" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -640,9 +801,16 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="editor.config.accepted" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/oksanych/Documents/OkSanych/Web/Portfolio/oksanych.github.io/chesnok/markup/static/scss/common.scss" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/oksanych/Documents/OkSanych/Web/Portfolio/oksanych.github.io/chesnok/markup/modules/cart/cartContent.html&#10;va&#9;FILE&#9;file:///Users/oksanych/Documents/OkSanych/Web/Portfolio/oksanych.github.io/chesnok/markup/static/scss/vars.scss" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chesnok/markup/static/img/general/royalSlider" />
+      <recent name="$PROJECT_DIR$/chesnok/markup/modules/recomend" />
+      <recent name="$PROJECT_DIR$/chesnok/markup/modules/viewed" />
+      <recent name="$PROJECT_DIR$/chesnok/markup/modules/profile" />
+      <recent name="$PROJECT_DIR$/chesnok/markup/static/img/general" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/chesnok/markup/modules" />
       <recent name="$PROJECT_DIR$/chesnok/markup/static/js/separate-js" />
@@ -650,21 +818,8 @@
       <recent name="$PROJECT_DIR$/chesnok/markup/static/img/general/categoryBg" />
       <recent name="$PROJECT_DIR$/chesnok/markup/static/js" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/chesnok/markup/modules/recomend" />
-      <recent name="$PROJECT_DIR$/chesnok/markup/modules/viewed" />
-      <recent name="$PROJECT_DIR$/chesnok/markup/modules/profile" />
-      <recent name="$PROJECT_DIR$/chesnok/markup/static/img/general" />
-      <recent name="$PROJECT_DIR$/chesnok/markup/static/scss/partials" />
-    </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.paymentAndDelivery.html (1)">
-    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/chesnokShow/index.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="ordering.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/chesnokShow/ordering.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.checkout.html">
     <configuration default="false" name="paymentAndDelivery.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/chesnokShow/paymentAndDelivery.html">
       <method />
     </configuration>
@@ -672,6 +827,12 @@
       <method />
     </configuration>
     <configuration default="false" name="paymentAndDelivery.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/chesnok/markup/pages/paymentAndDelivery.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="productCard.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/pastelka/productCard.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="checkout.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SvitlaHosting/pastelka/checkout.html">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -704,19 +865,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.ordering.html (1)" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.paymentAndDelivery.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.productCard.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.paymentAndDelivery.html (1)" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.paymentAndDelivery.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.productCard.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.paymentAndDelivery.html (1)" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.productCard.html (1)" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.checkout.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.paymentAndDelivery.html (1)" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.productCard.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.paymentAndDelivery.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.ordering.html (1)" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.checkout.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.productCard.html (1)" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.paymentAndDelivery.html (1)" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.productCard.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.paymentAndDelivery.html" />
       </list>
     </recent_temporary>
   </component>
@@ -743,17 +904,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="958" y="23" width="958" height="1177" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1916" height="1177" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3231441" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15795091" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934684" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299539" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934684" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3321067" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3321067" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -761,11 +924,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842687" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -814,79 +975,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pastelka/checkout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.509804">
-          <caret line="2491" column="63" selection-start-line="2491" selection-start-column="63" selection-end-line="2491" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pastelka/scss/_checkout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0392156">
-          <caret line="466" column="66" selection-start-line="466" selection-start-column="66" selection-end-line="466" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/markup/modules/footer/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8679525">
-          <caret line="39" column="37" selection-start-line="8" selection-start-column="32" selection-end-line="39" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/partials/_ordering.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5942029">
-          <caret line="122" column="16" selection-start-line="122" selection-start-column="16" selection-end-line="122" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/partials/_royalSlider.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.014492754">
-          <caret line="514" column="1" selection-start-line="514" selection-start-column="1" selection-end-line="514" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/dev/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.014492754">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/markup/pages/ordering.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3043478">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/markup/modules/profile/profileContent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="23" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/partials/_paymentAndDelivery.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/markup/modules/orderCompleted/orderCompletedContent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875">
-          <caret line="3" column="44" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/partials/_orderCompleted.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.375">
@@ -947,20 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/markup/modules/ordering/orderingContent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.044510387">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/markup/static/js/plugins/init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43909347">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chesnok/markup/modules/category/categoryContent.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -998,25 +1072,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/markup/pages/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2173913">
-          <caret line="15" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chesnok/markup/pages/article.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.25">
           <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/vars.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1092,28 +1151,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/common.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/partials/_preview.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chesnok/markup/static/js/plugins/hideModal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42979944">
           <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1159,22 +1202,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/markup/pages/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51186943">
-          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="56" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/GUI.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chesnok/markup/modules/productCardContent/productCardTabs.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1191,26 +1218,177 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/markup/pages/productCard.html">
+    <entry file="file://$PROJECT_DIR$/chesnok/markup/modules/entranceModal/entranceModal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.375">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.2173913">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chesnok/markup/modules/entranceModal/entranceModal.html">
+    <entry file="file://$PROJECT_DIR$/pastelka/image/royalSlider/blank.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/image/royalSlider/rs-defau.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chesnok/markup/pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7532468">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="48" />
+        <state vertical-scroll-proportion="-36.791668">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/partials/_preview.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chesnok/markup/pages/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.3333335">
+          <caret line="15" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chesnok/markup/pages/productCard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4688427">
+          <caret line="66" column="34" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chesnok/markup/pages/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.125">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/common.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.875">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/partials/_ordering.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="148" column="18" selection-start-line="148" selection-start-column="18" selection-end-line="148" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/partials/_entranceModal.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51038575">
+        <state vertical-scroll-proportion="-14.333333">
           <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chesnok/markup/modules/ordering/orderingContent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.044510387">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="207" selection-end-column="14" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chesnok/markup/modules/novelty/novelty.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33382788">
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pastelka/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="116" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chesnok/markup/static/js/plugins/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chesnok/markup/static/js/plugins/stickyFooter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chesnok/markup/static/js/plugins/cartCounter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/vars.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.625">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/GUI.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-59.333332">
+          <caret line="108" column="4" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chesnok/markup/static/scss/partials/_cart.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1764706">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chesnok/markup/modules/cart/cartContent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51004636">
+          <caret line="64" column="99" selection-start-line="64" selection-start-column="99" selection-end-line="64" selection-end-column="99" />
           <folding />
         </state>
       </provider>

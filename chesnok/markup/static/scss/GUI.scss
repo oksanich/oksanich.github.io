@@ -43,6 +43,13 @@
   }
 }
 
+.btnCheckout {
+  font-size: 1.8rem;
+  text-transform: inherit;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
 .btnSend {
   display: block;
   margin: 0 auto;
@@ -53,7 +60,7 @@
   }
 }
 
-.btnSave{
+.btnSave {
   float: right;
   margin-top: 3rem;
 
@@ -73,6 +80,34 @@
 
 .btnSignUp {
   @extend .btnSend;
+}
+
+.btnBorder {
+  background: $inputBg;
+  border: .2rem solid $gray;
+  color: $textColorLight;
+  font-size: 1.8rem;
+  float: right;
+  text-transform: inherit;
+  outline: none;
+  max-width: 24rem;
+  width: 100%;
+
+  &:focus,
+  &:active{
+    outline: none;
+  }
+
+  &:hover {
+    color: $safetyOrange;
+    border: .2rem solid $safetyOrange;
+  }
+
+  @media (max-width: $smScreen) {
+    float: none;
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
 }
 
 .link {
