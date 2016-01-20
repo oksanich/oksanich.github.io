@@ -196,7 +196,7 @@
 // Header Middle
 //-------------------------
 
-.itemContactHeader{
+.itemContactHeader {
   display: block;
 }
 
@@ -460,7 +460,7 @@
   margin-bottom: 2rem;
 }
 
-.feedBackBtn{
+.feedBackBtn {
   display: none;
 }
 
@@ -471,6 +471,12 @@
   background: $whiteSmokeLight;
   border-top: .1rem solid $darkGray;
   border-bottom: .1rem solid $darkGray;
+
+  @media (min-width: 1368px) {
+    .container {
+      //width: 119rem;
+    }
+  }
 }
 
 .headerBottomDesktop {
@@ -527,6 +533,15 @@
     top: 2rem;
   }
 
+  .icon-iconMenu_1,
+  .icon-iconMenu_4,
+  .icon-iconMenu_6 {
+    @media (min-width: $xlgScreen) {
+      position: relative;
+      top: 2rem;
+    }
+  }
+
   &:hover {
     background: $bahia;
     color: $white;
@@ -580,6 +595,10 @@
 
   @media (min-width: $lgScreen) and (max-width: $xlgScreen) {
     width: 63rem;
+  }
+
+  @media (max-width: $lgScreen) {
+    z-index: 0;
   }
 }
 
@@ -836,7 +855,7 @@
     }
   }
 
-  .contactHeaderMiddle{
+  .contactHeaderMiddle {
     float: left;
   }
 

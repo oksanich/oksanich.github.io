@@ -77,17 +77,15 @@
 
   position: absolute;
   cursor: pointer;
-  background: url("../image/royalSlider/rs-defau.png");
+  background: url("%=staticPrefixForCss=%general/royalSlider/rs-defau.png");
 
-  background-color: red;
-  opacity: .9;
+  background-color: $bahia;
 
   border-radius: 2px;
 }
 
 .rsDefault .rsArrowIcn:hover {
-  background-color: red;
-  opacity: .7;
+  background-color: $safetyOrange;
 }
 
 .rsDefault.rsHor .rsArrowLeft .rsArrowIcn {
@@ -391,7 +389,7 @@
 ****************/
 
 .rsDefault .rsFullscreenBtn {
-  right: 0;
+  left: 0;
   top: 0;
   width: 44px;
   height: 44px;
@@ -408,15 +406,14 @@
   width: 32px;
   height: 32px;
 
-  background: url("../image/royalSlider/rs-defau.png") 0 0;
-  background-color: red;
+  background: url("%=staticPrefixForCss=%general/royalSlider/rs-defau.png") 0 0;
+  background-color: $bahia;
   border-radius: 2px;
   opacity: .9;
 }
 
 .rsDefault .rsFullscreenIcn:hover {
-  background-color: red;
-  opacity: .7;
+  background-color: $safetyOrange;
 }
 
 .rsDefault.rsFullscreen .rsFullscreenIcn {
@@ -1166,6 +1163,7 @@ table.tc-variables-table tbody tr:hover td {
   left: 0 !important;
   bottom: 0 !important;
   right: 0 !important;
+  background: $darkGray;
 }
 
 .royalSlider .rsSlide.rsFakePreloader {

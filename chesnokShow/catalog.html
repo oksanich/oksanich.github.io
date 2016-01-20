@@ -2352,102 +2352,1207 @@
         </div>
     </div>    <!-- END bread crumbs -->
 
-    <!-- START registration content -->
-    <div class="registrationWrap">
+    <!-- START catalog content -->
+    <div class="catalogWrap">
         <div class="container">
-            <h2 class="blockTitle">Регистрация</h2>
-            <form class="formRegistration">
-                <div class="row">
-                    <div class="blockRegistration">
-                        <div class="col-sm-6">
-                            <div class="requiredText"><span class="requiredMarker">*</span> Обязательны для заполнения</div>
-                            <div class="inputRequired">
-                                <input type="text" class="inputGlobal" placeholder="Логин">
+            <div class="row">
+                <div class="col-sm-5 col-md-4 col-lg-3">
+                    <div class="sidebarWrap">
+                        <div class="sidebar">
+                            <div class="headerSidebar">
+                                <div class="titleSidebar">Фильтр</div>
+                                <div class="productNumberSidebar">65 товаров</div>
                             </div>
-                            <div class="inputRequired">
-                                <input type="password" class="inputGlobal" placeholder="Пароль">
-                            </div>
-                            <div class="inputRequired">
-                                <input type="password" class="inputGlobal" placeholder="Повторите пароль">
+                            <div class="contentSidebar">
+                                <form class="filtersSidebar">
+                                    <div class="filterSidebar filterSeries">
+                                        <div class="titleFilterSidebar _closeFilter">
+                                            <span class="textTitleFilterSidebar">Серия</span>
+                                            <span class="closeFilter"></span>
+                                        </div>
+                                        <div class="itemsFilter itemsFilterSeries">
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterSeries_1">
+                                                <label for="itemFilterSeries_1" class="titleItemFilter">AMPHORA</label>
+                                                <label for="itemFilterSeries_1" class="uncheckItem">
+                                                    <i class="icon-close"></i>
+                                                </label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterSeries_2">
+                                                <label for="itemFilterSeries_2" class="titleItemFilter">AGNIS</label>
+                                                <label for="itemFilterSeries_2" class="uncheckItem">
+                                                    <i class="icon-close"></i>
+                                                </label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterSeries_3">
+                                                <label for="itemFilterSeries_3" class="titleItemFilter">ARCADIA</label>
+                                                <label for="itemFilterSeries_3" class="uncheckItem">
+                                                    <i class="icon-close"></i>
+                                                </label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterSeries_4">
+                                                <label for="itemFilterSeries_4" class="titleItemFilter">ARROSTO</label>
+                                                <label for="itemFilterSeries_4" class="uncheckItem">
+                                                    <i class="icon-close"></i>
+                                                </label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterSeries_5">
+                                                <label for="itemFilterSeries_5" class="titleItemFilter">AZALEA</label>
+                                                <label for="itemFilterSeries_5" class="uncheckItem">
+                                                    <i class="icon-close"></i>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filterSidebar filterMaterial">
+                                        <div class="titleFilterSidebar _closeFilter">
+                                            <span class="textTitleFilterSidebar">Материал</span>
+                                            <span class="closeFilter"></span>
+                                        </div>
+                                        <div class="itemsFilter itemsFilterMaterial">
+                                        </div>
+                                    </div>
+                                    <div class="filterSidebar filterDiameter">
+                                        <div class="titleFilterSidebar _closeFilter">
+                                            <span class="textTitleFilterSidebar">Диаметр, см</span>
+                                            <span class="closeFilter"></span>
+                                        </div>
+                                        <div class="itemsFilter itemsFilterDiameter">
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterDiameter_1">
+                                                <label for="itemFilterDiameter_1" class="titleItemFilter">20</label>
+                                                <label for="itemFilterDiameter_1" class="uncheckItem">
+                                                    <i class="icon-close"></i>
+                                                </label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterDiameter_2">
+                                                <label for="itemFilterDiameter_2" class="titleItemFilter">24</label>
+                                                <label for="itemFilterDiameter_2" class="uncheckItem">
+                                                    <i class="icon-close"></i>
+                                                </label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterDiameter_3">
+                                                <label for="itemFilterDiameter_3" class="titleItemFilter">26</label>
+                                                <label for="itemFilterDiameter_3" class="uncheckItem">
+                                                    <i class="icon-close"></i>
+                                                </label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterDiameter_4">
+                                                <label for="itemFilterDiameter_4" class="titleItemFilter">28</label>
+                                                <label for="itemFilterDiameter_4" class="uncheckItem">
+                                                    <i class="icon-close"></i>
+                                                </label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterDiameter_5">
+                                                <label for="itemFilterDiameter_5" class="titleItemFilter">30</label>
+                                                <label for="itemFilterDiameter_5" class="uncheckItem">
+                                                    <i class="icon-close"></i>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filterSidebar filterColor">
+                                        <div class="titleFilterSidebar _closeFilter">
+                                            <span class="textTitleFilterSidebar">Цвет</span>
+                                            <span class="closeFilter"></span>
+                                        </div>
+                                        <div class="itemsFilter itemsFilterColor">
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterColor_1">
+                                                <label for="itemFilterColor_1" class="itemFilterColor itemFilterColor_1"></label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterColor_2">
+                                                <label for="itemFilterColor_2" class="itemFilterColor itemFilterColor_2"></label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterColor_3">
+                                                <label for="itemFilterColor_3" class="itemFilterColor itemFilterColor_3"></label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterColor_4">
+                                                <label for="itemFilterColor_4" class="itemFilterColor itemFilterColor_4"></label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterColor_5">
+                                                <label for="itemFilterColor_5" class="itemFilterColor itemFilterColor_5"></label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterColor_6">
+                                                <label for="itemFilterColor_6" class="itemFilterColor itemFilterColor_6"></label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterColor_7">
+                                                <label for="itemFilterColor_7" class="itemFilterColor itemFilterColor_7"></label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterColor_8">
+                                                <label for="itemFilterColor_8" class="itemFilterColor itemFilterColor_8"></label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterColor_9">
+                                                <label for="itemFilterColor_9" class="itemFilterColor itemFilterColor_9"></label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterColor_10">
+                                                <label for="itemFilterColor_10" class="itemFilterColor itemFilterColor_10"></label>
+                                            </div>
+                                            <div class="itemFilter">
+                                                <input class="checkboxFilter" type="checkbox" id="itemFilterColor_11">
+                                                <label for="itemFilterColor_11" class="itemFilterColor itemFilterColor_11"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filterSidebar filterPrice">
+                                        <div class="titleFilterSidebar _closeFilter">
+                                            <span class="textTitleFilterSidebar">Цена, грн</span>
+                                            <span class="closeFilter"></span>
+                                        </div>
+                                        <div class="itemsFilter itemsFilterPrice">
+                                            <div class="filterPriceSlider">
+                                                <div class='price-slide uislide column'></div>
+                                            </div>
+                                            <div class="filterPriceInputs">
+                                                <input class="priceInput" type="number" min="0"/>
+                                                &mdash;
+                                                <input class="priceInput" type="number" min="0"/>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <button class="btn btnOrange btnResetFilters">Сбросить фильтр</button>
+                                </form>
                             </div>
                         </div>
     
+                        <div class="bunnerSidebar">
+                            <a href="#" class="bunner">
+                                <img src="static/img/general/bannerSideBar.jpg" alt="" class="imgBunner">
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="blockRegistration">
-                        <div class="col-sm-6">
-                            <div class="inputRequired">
-                                <input type="text" class="inputGlobal" placeholder="Имя">
-                            </div>
-                            <div class="inputRequired">
-                                <input type="text" class="inputGlobal" placeholder="Фамилия">
-                            </div>
-                            <div class="inputRequired">
-                                <input type="email" class="inputGlobal" placeholder="E-mail">
+                <div class="col-sm-7 col-md-8 col-lg-9">
+                    <div class="contentCatalog">
+                        <div class="topContentCatalog clearfix">
+                            <h2 class="blockTitle">Сковороды для жарки</h2>
+    
+                            <div class="sortSwitchWrap">
+                                <!--START sorting-->
+                                <div class="sortingCatalog">
+                                    <span class="textSortingCatalog">Сортировать:</span>
+                                    <a href="#" class="popularSortingCatalog _itemSortingCatalog active">по популярности</a>
+                                    <span class="sortingSeparator">|</span>
+                                    <a href="#" class="priceSortingCatalog _itemSortingCatalog">по цене</a>
+                                </div>
+                                <!--END sorting-->
+    
+                                <!--START switch orientation-->
+                                <div class="catalogSwitchWrap">
+                                    <div id="list" class="catalogSwitchList catalogSwitch">
+                                        <i class="icon-th-line"></i>
+                                    </div>
+                                    <div id="grid" class="catalogSwitchGrid catalogSwitch">
+                                        <i class="icon-th"></i>
+                                    </div>
+                                </div>
+                                <!--END switch orientation-->
                             </div>
                         </div>
+                        <div id="products" class="productsCatalogWrap">
+                            <div class="row">
+                                <!--START catalog-product-->
+                                <div class="item col-xs-12 col-lg-4 list-group-item">
+                                    <div class="productCatalog">
+                                        <a class="linkNoveltyImage" href="#" data-toggle="modal"
+                                           data-target="#modalPreview">
+                                            <img class="imageNovelty"
+                                                 src="static/img/general/novelty/noveltyImg_1.jpg"
+                                                 alt=""/>
+                                            <div class="fastView"></div>
+                                            <div class="marker markerNew">
+                                                <span class="markerText">Новинка</span>
+                                            </div>
+                                        </a>
+                                        <div class="infoNovelty">
+                                            <div class="topInfoNovelty">
+                                                <a class="titleLinkNovelty" href="">Набор ножей 5 пр. SAMBUCA 2655</a>
+                                                <div class="vendorСodeNovelty">артикул 25896</div>
+                                                <div class="resultImageInfoMaterial">
+                                                    Материал:
+                                                    <span class="resultImageInfoMaterialName">керамика</span>
     
-                        <div class="col-sm-6">
-                            <div class="inputRequired">
-                                <input type="tel" class="inputGlobal" placeholder="Телефон">
+                                                </div>
+                                                <div class="resultImageInfoManufacturer">
+                                                    Производитель:
+                                                    <span class="resultImageInfoManufacturerName">Sambuka</span>
+                                                </div>
+                                            </div>
+                                            <div class="bottomInfoNovelty clearfix">
+                                                <div class="priceNovelty">800 грн</div>
+                                                <button class="btn btnGreen">В корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--END catalog-product-->
+    
+                                <!--START catalog-product-->
+                                <div class="item col-xs-12 col-lg-4 list-group-item">
+                                    <div class="productCatalog">
+                                        <a class="linkNoveltyImage" href="#" data-toggle="modal" data-target="#modalPreview">
+                                            <img class="imageNovelty"
+                                                 src="static/img/general/novelty/noveltyImg_2.jpg"
+                                                 alt=""/>
+                                            <div class="fastView"></div>
+                                            <div class="marker markerHit">
+                                                <span class="markerText">Хит продаж</span>
+                                            </div>
+                                        </a>
+                                        <div class="infoNovelty">
+                                            <div class="topInfoNovelty">
+                                                <a class="titleLinkNovelty" href="">Набор ножей 5 пр. SAMBUCA 2655</a>
+                                                <div class="vendorСodeNovelty">артикул 25896</div>
+                                                <div class="resultImageInfoMaterial">
+                                                    Материал:
+                                                    <span class="resultImageInfoMaterialName">керамика</span>
+    
+                                                </div>
+                                                <div class="resultImageInfoManufacturer">
+                                                    Производитель:
+                                                    <span class="resultImageInfoManufacturerName">Sambuka</span>
+                                                </div>
+                                            </div>
+                                            <div class="bottomInfoNovelty clearfix">
+                                                <div class="priceNovelty">1200 грн</div>
+                                                <button class="btn btnGreen">В корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--END catalog-product-->
+    
+                                <!--START catalog-product-->
+                                <div class="item col-xs-12 col-lg-4 list-group-item">
+                                    <div class="productCatalog">
+                                        <a class="linkNoveltyImage" href="#" data-toggle="modal" data-target="#modalPreview">
+                                            <img class="imageNovelty" src="static/img/general/novelty/noveltyImg_3.jpg" alt=""/>
+                                            <div class="fastView"></div>
+                                            <div class="marker markerSale">
+                                                <span class="markerText">Скидка</span>
+                                            </div>
+                                        </a>
+                                        <div class="infoNovelty">
+                                            <div class="topInfoNovelty">
+                                                <a class="titleLinkNovelty" href="">Прямоугольное блюдо для запеканки 27.2 х 20.8 х 5.9 см</a>
+                                                <div class="vendorСodeNovelty">артикул 25896</div>
+                                                <div class="resultImageInfoMaterial">
+                                                    Материал:
+                                                    <span class="resultImageInfoMaterialName">керамика</span>
+    
+                                                </div>
+                                                <div class="resultImageInfoManufacturer">
+                                                    Производитель:
+                                                    <span class="resultImageInfoManufacturerName">Sambuka</span>
+                                                </div>
+                                            </div>
+                                            <div class="bottomInfoNovelty clearfix">
+                                                <div class="priceNovelty">800 грн</div>
+                                                <button class="btn btnGreen">В корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--END catalog-product-->
+    
+                                <!--START catalog-product-->
+                                <div class="item col-xs-12 col-lg-4 list-group-item">
+                                    <div class="productCatalog">
+                                        <a class="linkNoveltyImage" href="#" data-toggle="modal"
+                                           data-target="#modalPreview">
+                                            <img class="imageNovelty"
+                                                 src="static/img/general/novelty/noveltyImg_1.jpg"
+                                                 alt=""/>
+                                            <div class="fastView"></div>
+                                            <div class="marker markerNew">
+                                                <span class="markerText">Новинка</span>
+                                            </div>
+                                        </a>
+                                        <div class="infoNovelty">
+                                            <div class="topInfoNovelty">
+                                                <a class="titleLinkNovelty" href="">Набор ножей 5 пр. SAMBUCA 2655</a>
+                                                <div class="vendorСodeNovelty">артикул 25896</div>
+                                                <div class="resultImageInfoMaterial">
+                                                    Материал:
+                                                    <span class="resultImageInfoMaterialName">керамика</span>
+    
+                                                </div>
+                                                <div class="resultImageInfoManufacturer">
+                                                    Производитель:
+                                                    <span class="resultImageInfoManufacturerName">Sambuka</span>
+                                                </div>
+                                            </div>
+                                            <div class="bottomInfoNovelty clearfix">
+                                                <div class="priceNovelty">800 грн</div>
+                                                <button class="btn btnGreen">В корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--END catalog-product-->
+    
+                                <!--START catalog-product-->
+                                <div class="item col-xs-12 col-lg-4 list-group-item">
+                                    <div class="productCatalog">
+                                        <a class="linkNoveltyImage" href="#" data-toggle="modal" data-target="#modalPreview">
+                                            <img class="imageNovelty"
+                                                 src="static/img/general/novelty/noveltyImg_2.jpg"
+                                                 alt=""/>
+                                            <div class="fastView"></div>
+                                            <div class="marker markerHit">
+                                                <span class="markerText">Хит продаж</span>
+                                            </div>
+                                        </a>
+                                        <div class="infoNovelty">
+                                            <div class="topInfoNovelty">
+                                                <a class="titleLinkNovelty" href="">Набор ножей 5 пр. SAMBUCA 2655</a>
+                                                <div class="vendorСodeNovelty">артикул 25896</div>
+                                                <div class="resultImageInfoMaterial">
+                                                    Материал:
+                                                    <span class="resultImageInfoMaterialName">керамика</span>
+    
+                                                </div>
+                                                <div class="resultImageInfoManufacturer">
+                                                    Производитель:
+                                                    <span class="resultImageInfoManufacturerName">Sambuka</span>
+                                                </div>
+                                            </div>
+                                            <div class="bottomInfoNovelty clearfix">
+                                                <div class="priceNovelty">1200 грн</div>
+                                                <button class="btn btnGreen">В корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--END catalog-product-->
+    
+                                <!--START catalog-product-->
+                                <div class="item col-xs-12 col-lg-4 list-group-item">
+                                    <div class="productCatalog">
+                                        <a class="linkNoveltyImage" href="#" data-toggle="modal" data-target="#modalPreview">
+                                            <img class="imageNovelty" src="static/img/general/novelty/noveltyImg_3.jpg" alt=""/>
+                                            <div class="fastView"></div>
+                                            <div class="marker markerSale">
+                                                <span class="markerText">Скидка</span>
+                                            </div>
+                                        </a>
+                                        <div class="infoNovelty">
+                                            <div class="topInfoNovelty">
+                                                <a class="titleLinkNovelty" href="">Прямоугольное блюдо для запеканки 27.2 х 20.8 х 5.9 см</a>
+                                                <div class="vendorСodeNovelty">артикул 25896</div>
+                                                <div class="resultImageInfoMaterial">
+                                                    Материал:
+                                                    <span class="resultImageInfoMaterialName">керамика</span>
+    
+                                                </div>
+                                                <div class="resultImageInfoManufacturer">
+                                                    Производитель:
+                                                    <span class="resultImageInfoManufacturerName">Sambuka</span>
+                                                </div>
+                                            </div>
+                                            <div class="bottomInfoNovelty clearfix">
+                                                <div class="priceNovelty">800 грн</div>
+                                                <button class="btn btnGreen">В корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--END catalog-product-->
+    
+                                <!--START catalog-product-->
+                                <div class="item col-xs-12 col-lg-4 list-group-item">
+                                    <div class="productCatalog">
+                                        <a class="linkNoveltyImage" href="#" data-toggle="modal"
+                                           data-target="#modalPreview">
+                                            <img class="imageNovelty"
+                                                 src="static/img/general/novelty/noveltyImg_1.jpg"
+                                                 alt=""/>
+                                            <div class="fastView"></div>
+                                            <div class="marker markerNew">
+                                                <span class="markerText">Новинка</span>
+                                            </div>
+                                        </a>
+                                        <div class="infoNovelty">
+                                            <div class="topInfoNovelty">
+                                                <a class="titleLinkNovelty" href="">Набор ножей 5 пр. SAMBUCA 2655</a>
+                                                <div class="vendorСodeNovelty">артикул 25896</div>
+                                                <div class="resultImageInfoMaterial">
+                                                    Материал:
+                                                    <span class="resultImageInfoMaterialName">керамика</span>
+    
+                                                </div>
+                                                <div class="resultImageInfoManufacturer">
+                                                    Производитель:
+                                                    <span class="resultImageInfoManufacturerName">Sambuka</span>
+                                                </div>
+                                            </div>
+                                            <div class="bottomInfoNovelty clearfix">
+                                                <div class="priceNovelty">800 грн</div>
+                                                <button class="btn btnGreen">В корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--END catalog-product-->
+    
+                                <!--START catalog-product-->
+                                <div class="item col-xs-12 col-lg-4 list-group-item">
+                                    <div class="productCatalog">
+                                        <a class="linkNoveltyImage" href="#" data-toggle="modal" data-target="#modalPreview">
+                                            <img class="imageNovelty"
+                                                 src="static/img/general/novelty/noveltyImg_2.jpg"
+                                                 alt=""/>
+                                            <div class="fastView"></div>
+                                            <div class="marker markerHit">
+                                                <span class="markerText">Хит продаж</span>
+                                            </div>
+                                        </a>
+                                        <div class="infoNovelty">
+                                            <div class="topInfoNovelty">
+                                                <a class="titleLinkNovelty" href="">Набор ножей 5 пр. SAMBUCA 2655</a>
+                                                <div class="vendorСodeNovelty">артикул 25896</div>
+                                                <div class="resultImageInfoMaterial">
+                                                    Материал:
+                                                    <span class="resultImageInfoMaterialName">керамика</span>
+    
+                                                </div>
+                                                <div class="resultImageInfoManufacturer">
+                                                    Производитель:
+                                                    <span class="resultImageInfoManufacturerName">Sambuka</span>
+                                                </div>
+                                            </div>
+                                            <div class="bottomInfoNovelty clearfix">
+                                                <div class="priceNovelty">1200 грн</div>
+                                                <button class="btn btnGreen">В корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--END catalog-product-->
+    
+                                <!--START catalog-product-->
+                                <div class="item col-xs-12 col-lg-4 list-group-item">
+                                    <div class="productCatalog">
+                                        <a class="linkNoveltyImage" href="#" data-toggle="modal" data-target="#modalPreview">
+                                            <img class="imageNovelty" src="static/img/general/novelty/noveltyImg_3.jpg" alt=""/>
+                                            <div class="fastView"></div>
+                                            <div class="marker markerSale">
+                                                <span class="markerText">Скидка</span>
+                                            </div>
+                                        </a>
+                                        <div class="infoNovelty">
+                                            <div class="topInfoNovelty">
+                                                <a class="titleLinkNovelty" href="">Прямоугольное блюдо для запеканки 27.2 х 20.8 х 5.9 см</a>
+                                                <div class="vendorСodeNovelty">артикул 25896</div>
+                                                <div class="resultImageInfoMaterial">
+                                                    Материал:
+                                                    <span class="resultImageInfoMaterialName">керамика</span>
+    
+                                                </div>
+                                                <div class="resultImageInfoManufacturer">
+                                                    Производитель:
+                                                    <span class="resultImageInfoManufacturerName">Sambuka</span>
+                                                </div>
+                                            </div>
+                                            <div class="bottomInfoNovelty clearfix">
+                                                <div class="priceNovelty">800 грн</div>
+                                                <button class="btn btnGreen">В корзину</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--END catalog-product-->
                             </div>
-                            <textarea class="textareaGlobal textareaAddress" name="" id="" placeholder="Телефон"></textarea>
                         </div>
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <div class="blockRegistration">
-                        <div class="col-sm-6">
-                            <div class="inputRequired">
-                                <input type="text" class="inputGlobal" placeholder="Область">
+                        <div class="bottomContentCatalog">
+                            <div class="numberProductPreviewWrap">
+                                Показано <span class="numberProductPreview">25</span> из <span class="numberProductPreviewAll">65</span> товаров
                             </div>
-                            <div class="inputRequired">
-                                <input type="text" class="inputGlobal" placeholder="Город">
-                            </div>
-                        </div>
     
-                        <div class="col-sm-6">
-                            <input type="text" class="inputGlobal" placeholder="Индекс">
-                            <div class="inputRequired">
-                                <input type="text" class="inputGlobal" placeholder="Страна">
+                            <div class="paginationWrap">
+                                <!--<a href="#" class="itemPagination itemArrowLeftPagination">-->
+                                    <!--<i class="icon-arrowLeftCircle"></i>-->
+                                <!--</a>-->
+                                <a href="#" class="itemPagination itemActivePagination">1</a>
+                                <a href="#" class="itemPagination">2</a>
+                                <a href="#" class="itemPagination itemArrowRightPagination">
+                                    <i class="icon-arrowRightCircle"></i>
+                                </a>
+                                <a href="#" class="itemPagination">Все</a>
                             </div>
-                        </div>
-                    </div>
-                </div>
     
-                <div class="row">
-                    <div class="blockRegistration">
-                        <div class="col-sm-6">
-                            <div class="captchaWrap">
-                                <p class="textCaptcha">Введите число, изображенное на рисунке</p>
-                                <div class="captcha">
-                                    <div class="captchaImg"></div>
-                                    <a class="captchaRefresh">
-                                        <i class="icon-revers"></i>
-                                    </a>
-                                    <input type="text" class="inputGlobal captchaInput">
+                            <div class="showMoreWrap">
+                                <div class="showMore">
+                                    <i class="icon-iconPlusCircle"></i>
+                                    <span class="textShowMore">Показать еще</span>
                                 </div>
                             </div>
                         </div>
+                    </div>
     
-                        <div class="col-sm-6">
-                            <button class="btn btnGreen">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>    <!-- END catalog content -->
+
+    <!--START preview-->
+    <div class="previewWrap">
+        <!-- START Modal Left -->
+        <div class="previewLeft">
+            <div class="modal fade" id="modalPreview">
+                <div class="modal-dialog modal-lg">
+    
+                    <div id="carouselModal" class="carousel slide" data-ride="carousel">
+    
+                        <!-- START Modal Slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="modalPreview modalGlobal">
+                                    <div class="modalHeader">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                            <i class="icon-close"></i>
+                                        </button>
+                                        <h2 class="modalTitle">Сковорода для жарки MONETA SAVER 28 х 5,7 см</h2>
+                                    </div>
+                                    <div class="modalBody">
+                                        <div class="col-md-5">
+                                            <div class="productGallery">
+                                                <div class="col span_6 fwImage">
+                                                    <div class="royalSlider rsDefault _royalSlider">
+                                                        <a class="rsImg bugaga"
+                                                           data-rsbigimg="static/img/general/modalSlider/modalSliderBigImg.jpg"
+                                                           href="static/img/general/modalSlider/modalSliderBigImg.jpg">
+                                                            <img class="rsTmb"
+                                                                 src="static/img/general/modalSlider/modalSliderSmallImg.jpg">
+                                                        </a>
+                                                        <a class="rsImg bugaga"
+                                                           data-rsbigimg="static/img/general/modalSlider/modalSliderBigImg.jpg"
+                                                           href="static/img/general/modalSlider/modalSliderBigImg.jpg">
+                                                            <img class="rsTmb"
+                                                                 src="static/img/general/modalSlider/modalSliderSmallImg.jpg">
+                                                        </a>
+                                                        <a class="rsImg bugaga"
+                                                           data-rsbigimg="static/img/general/modalSlider/modalSliderBigImg.jpg"
+                                                           href="static/img/general/modalSlider/modalSliderBigImg.jpg">
+                                                            <img class="rsTmb"
+                                                                 src="static/img/general/modalSlider/modalSliderSmallImg.jpg">
+                                                        </a>
+                                                        <a class="rsImg bugaga"
+                                                           data-rsbigimg="static/img/general/modalSlider/modalSliderBigImg.jpg"
+                                                           href="static/img/general/modalSlider/modalSliderBigImg.jpg">
+                                                            <img class="rsTmb"
+                                                                 src="static/img/general/modalSlider/modalSliderSmallImg.jpg">
+                                                        </a>
+                                                        <a class="rsImg bugaga"
+                                                           data-rsbigimg="static/img/general/modalSlider/modalSliderBigImg.jpg"
+                                                           href="static/img/general/modalSlider/modalSliderBigImg.jpg">
+                                                            <img class="rsTmb"
+                                                                 src="static/img/general/modalSlider/modalSliderSmallImg.jpg">
+                                                        </a>
+                                                        <a class="rsImg bugaga"
+                                                           data-rsbigimg="static/img/general/modalSlider/modalSliderBigImg.jpg"
+                                                           href="static/img/general/modalSlider/modalSliderBigImg.jpg">
+                                                            <img class="rsTmb"
+                                                                 src="static/img/general/modalSlider/modalSliderSmallImg.jpg">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="marker markerHit">
+                                                    <span class="markerText">Хит продаж</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="productInfoWrap">
+                                                <div class="productInfo">
+                                                    <div class="productInfoTop clearfix">
+                                                        <div class="vendorСodeProduct pull-left">Артикул : 6589</div>
+                                                        <div class="notAvailabilityProduct pull-right">Нет в наличии</div>
+                                                        <!--<div class="availabilityProduct pull-right">В наличии</div>-->
+                                                    </div>
+                                                    <div class="productInfoBottom clearfix">
+                                                        <div class="priceProduct pull-left">1 550 грн.</div>
+                                                        <div class="btn btnOrange _btnNotify pull-right" data-toggle="modal" data-target="#modalEntrance">Уведомить о поступлении</div>
+                                                        <!--<div class="btn btnGreen pull-right">Купить</div>-->
+                                                    </div>
+                                                </div>
+                                                <div class="productInfoTabs">
+                                                    <ul class="listProductTabs nav nav-tabs">
+                                                        <li class="itemProductTab active">
+                                                            <a class="linkProductTab" data-toggle="tab" href="#home_1">Характеристики</a>
+                                                        </li>
+                                                        <li class="itemProductTab">
+                                                            <a class="linkProductTab" data-toggle="tab" href="#menu_1_1">Описание</a>
+                                                        </li>
+                                                        <li class="itemProductTab">
+                                                            <a class="linkProductTab" data-toggle="tab" href="#menu_1_2">
+                                                                Отзывы<span class="numberReviewsTab">(6)</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+    
+                                                    <div class="tab-content contentProductTabs">
+                                                        <div id="home_1" class="tab-pane fade in active">
+                                                            <div class="aboutProduct tabContentWrap">
+                                                                <div class="pseudoTable tableAboutProduct">
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Серия</div>
+                                                                        <div class="pseudoTd reviewAboutTd">FIORE</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Материал</div>
+                                                                        <div class="pseudoTd reviewAboutTd">алюминий</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Диаметр, см</div>
+                                                                        <div class="pseudoTd reviewAboutTd">28</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Антипригарное
+                                                                            покрытие
+                                                                        </div>
+                                                                        <div class="pseudoTd reviewAboutTd">мраморное</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Тип плиты</div>
+                                                                        <div class="pseudoTd reviewAboutTd">газовая,
+                                                                            электрическая, индукционная, стеклокерамическая
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Диаметр дна, см
+                                                                        </div>
+                                                                        <div class="pseudoTd reviewAboutTd">23</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Можно мыть в
+                                                                            посудомоечной машине
+                                                                        </div>
+                                                                        <div class="pseudoTd reviewAboutTd">Да</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Материал ручки
+                                                                        </div>
+                                                                        <div class="pseudoTd reviewAboutTd">бакелит</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Размер (дл х шир
+                                                                            х выс), см
+                                                                        </div>
+                                                                        <div class="pseudoTd reviewAboutTd">46 х 28 х 5.7
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Вес, кг</div>
+                                                                        <div class="pseudoTd reviewAboutTd">1.353</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Длина ручки, см
+                                                                        </div>
+                                                                        <div class="pseudoTd reviewAboutTd">18</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Высота стенок,
+                                                                            см
+                                                                        </div>
+                                                                        <div class="pseudoTd reviewAboutTd">5</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Цвет</div>
+                                                                        <div class="pseudoTd reviewAboutTd">
+                                                                            <span class="colorItemBlack"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Тип плиты</div>
+                                                                        <div class="pseudoTd reviewAboutTd">
+                                                                            <span class="typeAbout typeAbout_1">
+                                                                                <img src="static/img/general/stoveType/stoveTypeImg_1.jpg"
+                                                                                     alt="">
+                                                                            </span>
+                                                                            <span class="typeAbout typeAbout_2">
+                                                                                <img src="static/img/general/stoveType/stoveTypeImg_2.jpg"
+                                                                                     alt="">
+                                                                            </span>
+                                                                            <span class="typeAbout typeAbout_3">
+                                                                                <img src="static/img/general/stoveType/stoveTypeImg_3.jpg"
+                                                                                     alt="">
+                                                                            </span>
+                                                                            <span class="typeAbout typeAbout_4">
+                                                                                <img src="static/img/general/stoveType/stoveTypeImg_4.jpg"
+                                                                                     alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="menu_1_1" class="tab-pane fade">
+                                                            <div class="tabContentWrap">
+                                                                <p class="textAbout">Новая кастрюля SPOTTY STONE от компании
+                                                                    FISSMAN
+                                                                    изготовлена из литого алюминия с многослойным
+                                                                    антипригарным
+                                                                    покрытием FissEcoStone, которое усилено вкраплением
+                                                                    каменных
+                                                                    частиц. Главное преимущество покрытия - это устойчивость
+                                                                    к
+                                                                    царапинам и износу. Также покрытие безопасно для
+                                                                    здоровья
+                                                                    человека и окружающей среды. Утолщенное дно кастрюли
+                                                                    рационально распределяет тепло, что позволяет продуктам
+                                                                    готовиться быстро и равномерно. Приятные на ощупь ручки
+                                                                    из
+                                                                    бакелита не нагреваются и не скользят в руках. Посуда
+                                                                    серии
+                                                                    SPOTTY STONE - это уникальный дизайн и не превзойденное
+                                                                    качество.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="menu_1_2" class="tab-pane fade">
+                                                            <div class="tabContentWrap">
+                                                                <ul id="listReviews" class="listReviews">
+                                                                    <li class="itemReview _itemReview">
+                                                                        <div class="titleReview">
+                                                                            <span class="nameTitleReview">Татьяна Е.</span>
+                                                                        </div>
+                                                                        <p class="textReview">Новая кастрюля SPOTTY STONE от
+                                                                            компании FISSMAN изготовлена из литого алюминия
+                                                                            с многослойным антипригарным покрытием
+                                                                            FissEcoStone, которое усилено вкраплением
+                                                                            каменных частиц. Главное преимущество покрытия -
+                                                                            это устойчивость к царапинам и износу. Также
+                                                                            покрытие безопасно для здоровья человека и
+                                                                            окружающей среды. Утолщенное дно кастрюли
+                                                                            рационально распределяет тепло, что позволяет
+                                                                            продуктам готовиться быстро и равномерно</p>
+                                                                    </li>
+                                                                    <li class="itemReview _itemReview">
+                                                                        <div class="titleReview">
+                                                                            <span class="nameTitleReview">Олег Максимов</span>
+                                                                        </div>
+                                                                        <p class="textReview">Новая кастрюля SPOTTY STONE от
+                                                                            компании FISSMAN изготовлена из литого алюминия
+                                                                            с многослойным антипригарным покрытием</p>
+                                                                    </li>
+                                                                    <li class="itemReview _itemReview">
+                                                                        <div class="titleReview">
+                                                                            <span class="nameTitleReview">Татьяна Е.</span>
+                                                                        </div>
+                                                                        <p class="textReview">Новая кастрюля SPOTTY STONE от
+                                                                            компании FISSMAN изготовлена из литого алюминия
+                                                                            с многослойным антипригарным покрытием
+                                                                            FissEcoStone, которое усилено вкраплением
+                                                                            каменных частиц. Главное преимущество покрытия -
+                                                                            это устойчивость к царапинам и износу. Также
+                                                                            покрытие безопасно для здоровья человека и
+                                                                            окружающей среды. Утолщенное дно кастрюли
+                                                                            рационально распределяет тепло, что позволяет
+                                                                            продуктам готовиться быстро и равномерно</p>
+                                                                    </li>
+                                                                    <li class="itemReview _itemReview">
+                                                                        <div class="titleReview">
+                                                                            <span class="nameTitleReview">Олег Максимов</span>
+                                                                        </div>
+                                                                        <p class="textReview">Новая кастрюля SPOTTY STONE от
+                                                                            компании FISSMAN изготовлена из литого алюминия
+                                                                            с многослойным антипригарным покрытием</p>
+                                                                    </li>
+                                                                    <li class="itemReview _itemReview">
+                                                                        <div class="titleReview">
+                                                                            <span class="nameTitleReview">Татьяна Е.</span>
+                                                                        </div>
+                                                                        <p class="textReview">Новая кастрюля SPOTTY STONE от
+                                                                            компании FISSMAN изготовлена из литого алюминия
+                                                                            с многослойным антипригарным покрытием
+                                                                            FissEcoStone, которое усилено вкраплением
+                                                                            каменных частиц. Главное преимущество покрытия -
+                                                                            это устойчивость к царапинам и износу. Также
+                                                                            покрытие безопасно для здоровья человека и
+                                                                            окружающей среды. Утолщенное дно кастрюли
+                                                                            рационально распределяет тепло, что позволяет
+                                                                            продуктам готовиться быстро и равномерно</p>
+                                                                    </li>
+                                                                    <li class="itemReview _itemReview">
+                                                                        <div class="titleReview">
+                                                                            <span class="nameTitleReview">Олег Максимов</span>
+                                                                        </div>
+                                                                        <p class="textReview">Новая кастрюля SPOTTY STONE от
+                                                                            компании FISSMAN изготовлена из литого алюминия
+                                                                            с многослойным антипригарным покрытием</p>
+                                                                    </li>
+                                                                    <li class="itemReview _itemReview">
+                                                                        <div class="titleReview">
+                                                                            <span class="nameTitleReview">Татьяна Е.</span>
+                                                                        </div>
+                                                                        <p class="textReview">Новая кастрюля SPOTTY STONE от
+                                                                            компании FISSMAN изготовлена из литого алюминия
+                                                                            с многослойным антипригарным покрытием
+                                                                            FissEcoStone, которое усилено вкраплением
+                                                                            каменных частиц. Главное преимущество покрытия -
+                                                                            это устойчивость к царапинам и износу. Также
+                                                                            покрытие безопасно для здоровья человека и
+                                                                            окружающей среды. Утолщенное дно кастрюли
+                                                                            рационально распределяет тепло, что позволяет
+                                                                            продуктам готовиться быстро и равномерно</p>
+                                                                    </li>
+                                                                    <li class="itemReview _itemReview">
+                                                                        <div class="titleReview">
+                                                                            <span class="nameTitleReview">Олег Максимов</span>
+                                                                        </div>
+                                                                        <p class="textReview">Новая кастрюля SPOTTY STONE от
+                                                                            компании FISSMAN изготовлена из литого алюминия
+                                                                            с многослойным антипригарным покрытием</p>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="showMoreLess">
+                                                                    <div class="showMore _showMore">
+                                                                        <i class="icon-iconPlusCircle"></i>
+                                                                        <span class="textShowMore">Показать еще</span>
+                                                                    </div>
+                                                                    <div class="showLess hideShowLess _showLess">
+                                                                        <i class="icon-minusCircle"></i>
+                                                                        <span class="textShowMore">Скрыть</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+    
+                                                            <div class="reviewFormWrap">
+                                                                <h3 class="titleReviewForm">Оставить отзыв</h3>
+                                                                <form action="" class="reviewForm">
+                                                                    <input type="text" class="inputGlobal inputName"
+                                                                           placeholder="Ваше имя">
+                                                                <textarea class="textareaGlobal" name="" id=""
+                                                                          placeholder="Ваш отзыв"></textarea>
+                                                                    <button class="btn btnGreen btnSend">отправить</button>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="modalPreview modalGlobal">
+                                    <div class="modalHeader">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                            <i class="icon-close"></i>
+                                        </button>
+                                        <h2 class="modalTitle">Сковорода для жарки MONETA SAVER</h2>
+                                    </div>
+                                    <div class="modalBody">
+                                        <div class="col-md-5">
+                                            <div class="productGallery">
+                                                <div class="col span_6 fwImage">
+                                                    <div class="royalSlider rsDefault _royalSlider">
+                                                        <a class="rsImg bugaga"
+                                                           data-rsbigimg="static/img/general/modalSlider/modalSliderBigImg.jpg"
+                                                           href="static/img/general/modalSlider/modalSliderBigImg.jpg">
+                                                            <img class="rsTmb"
+                                                                 src="static/img/general/modalSlider/modalSliderSmallImg.jpg">
+                                                        </a>
+                                                        <a class="rsImg bugaga"
+                                                           data-rsbigimg="static/img/general/modalSlider/modalSliderBigImg.jpg"
+                                                           href="static/img/general/modalSlider/modalSliderBigImg.jpg">
+                                                            <img class="rsTmb"
+                                                                 src="static/img/general/modalSlider/modalSliderSmallImg.jpg">
+                                                        </a>
+                                                        <a class="rsImg bugaga"
+                                                           data-rsbigimg="static/img/general/modalSlider/modalSliderBigImg.jpg"
+                                                           href="static/img/general/modalSlider/modalSliderBigImg.jpg">
+                                                            <img class="rsTmb"
+                                                                 src="static/img/general/modalSlider/modalSliderSmallImg.jpg">
+                                                        </a>
+                                                        <a class="rsImg bugaga"
+                                                           data-rsbigimg="static/img/general/modalSlider/modalSliderBigImg.jpg"
+                                                           href="static/img/general/modalSlider/modalSliderBigImg.jpg">
+                                                            <img class="rsTmb"
+                                                                 src="static/img/general/modalSlider/modalSliderSmallImg.jpg">
+                                                        </a>
+                                                        <a class="rsImg bugaga"
+                                                           data-rsbigimg="static/img/general/modalSlider/modalSliderBigImg.jpg"
+                                                           href="static/img/general/modalSlider/modalSliderBigImg.jpg">
+                                                            <img class="rsTmb"
+                                                                 src="static/img/general/modalSlider/modalSliderSmallImg.jpg">
+                                                        </a>
+                                                        <a class="rsImg bugaga"
+                                                           data-rsbigimg="static/img/general/modalSlider/modalSliderBigImg.jpg"
+                                                           href="static/img/general/modalSlider/modalSliderBigImg.jpg">
+                                                            <img class="rsTmb"
+                                                                 src="static/img/general/modalSlider/modalSliderSmallImg.jpg">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="marker markerHit">
+                                                    <span class="markerText">Хит продаж</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="productInfoWrap">
+                                                <div class="productInfo">
+                                                    <div class="productInfoTop clearfix">
+                                                        <div class="vendorСodeProduct pull-left">Артикул : 6589</div>
+                                                        <div class="notAvailabilityProduct pull-right">Нет в наличии</div>
+                                                        <!--<div class="availabilityProduct pull-right">В наличии</div>-->
+                                                    </div>
+                                                    <div class="productInfoBottom clearfix">
+                                                        <div class="priceProduct pull-left">1 550 грн.</div>
+                                                        <div class="btn btnOrange _btnNotify pull-right" data-toggle="modal" data-target="#modalEntrance">Уведомить о поступлении</div>
+                                                        <!--<div class="btn btnGreen pull-right">Купить</div>-->
+                                                    </div>
+                                                </div>
+                                                <div class="productInfoTabs">
+                                                    <ul class="listProductTabs nav nav-tabs">
+                                                        <li class="itemProductTab active">
+                                                            <a class="linkProductTab" data-toggle="tab" href="#home_2">Характеристики</a>
+                                                        </li>
+                                                        <li class="itemProductTab">
+                                                            <a class="linkProductTab" data-toggle="tab" href="#menu_2_1">Описание</a>
+                                                        </li>
+                                                        <li class="itemProductTab">
+                                                            <a class="linkProductTab" data-toggle="tab" href="#menu_2_2">
+                                                                Отзывы<span class="numberReviewsTab">(6)</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+    
+                                                    <div class="tab-content contentProductTabs">
+                                                        <div id="home_2" class="tab-pane fade in active">
+                                                            <div class="aboutProduct tabContentWrap">
+                                                                <div class="pseudoTable tableAboutProduct">
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Серия</div>
+                                                                        <div class="pseudoTd reviewAboutTd">FIORE</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Материал</div>
+                                                                        <div class="pseudoTd reviewAboutTd">алюминий</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Диаметр, см</div>
+                                                                        <div class="pseudoTd reviewAboutTd">28</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Антипригарное
+                                                                            покрытие
+                                                                        </div>
+                                                                        <div class="pseudoTd reviewAboutTd">мраморное</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Тип плиты</div>
+                                                                        <div class="pseudoTd reviewAboutTd">газовая,
+                                                                            электрическая, индукционная, стеклокерамическая
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Диаметр дна, см
+                                                                        </div>
+                                                                        <div class="pseudoTd reviewAboutTd">23</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Можно мыть в
+                                                                            посудомоечной машине
+                                                                        </div>
+                                                                        <div class="pseudoTd reviewAboutTd">Да</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Материал ручки
+                                                                        </div>
+                                                                        <div class="pseudoTd reviewAboutTd">бакелит</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Размер (дл х шир
+                                                                            х выс), см
+                                                                        </div>
+                                                                        <div class="pseudoTd reviewAboutTd">46 х 28 х 5.7
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Вес, кг</div>
+                                                                        <div class="pseudoTd reviewAboutTd">1.353</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Длина ручки, см
+                                                                        </div>
+                                                                        <div class="pseudoTd reviewAboutTd">18</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Высота стенок,
+                                                                            см
+                                                                        </div>
+                                                                        <div class="pseudoTd reviewAboutTd">5</div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Цвет</div>
+                                                                        <div class="pseudoTd reviewAboutTd">
+                                                                            <span class="colorItemBlack"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="pseudoTr">
+                                                                        <div class="pseudoTd titleAboutTd">Тип плиты</div>
+                                                                        <div class="pseudoTd reviewAboutTd">
+                                                                            <span class="typeAbout typeAbout_1">
+                                                                                <img src="static/img/general/stoveType/stoveTypeImg_1.jpg"
+                                                                                     alt="">
+                                                                            </span>
+                                                                            <span class="typeAbout typeAbout_2">
+                                                                                <img src="static/img/general/stoveType/stoveTypeImg_2.jpg"
+                                                                                     alt="">
+                                                                            </span>
+                                                                            <span class="typeAbout typeAbout_3">
+                                                                                <img src="static/img/general/stoveType/stoveTypeImg_3.jpg"
+                                                                                     alt="">
+                                                                            </span>
+                                                                            <span class="typeAbout typeAbout_4">
+                                                                                <img src="static/img/general/stoveType/stoveTypeImg_4.jpg"
+                                                                                     alt="">
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="menu_2_1" class="tab-pane fade">
+                                                            <div class="tabContentWrap">
+                                                                <p class="textAbout">Новая кастрюля SPOTTY STONE от компании
+                                                                    FISSMAN
+                                                                    изготовлена из литого алюминия с многослойным
+                                                                    антипригарным
+                                                                    покрытием FissEcoStone, которое усилено вкраплением
+                                                                    каменных
+                                                                    частиц. Главное преимущество покрытия - это устойчивость
+                                                                    к
+                                                                    царапинам и износу. Также покрытие безопасно для
+                                                                    здоровья
+                                                                    человека и окружающей среды. Утолщенное дно кастрюли
+                                                                    рационально распределяет тепло, что позволяет продуктам
+                                                                    готовиться быстро и равномерно. Приятные на ощупь ручки
+                                                                    из
+                                                                    бакелита не нагреваются и не скользят в руках. Посуда
+                                                                    серии
+                                                                    SPOTTY STONE - это уникальный дизайн и не превзойденное
+                                                                    качество.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="menu_2_2" class="tab-pane fade">
+                                                            <div class="tabContentWrap">
+    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!-- END Modal Slides -->
+    
+                        <!-- START Controls Slider -->
+                        <a class="left carousel-control" href="#carouselModal" role="button" data-slide="prev">
+                            <i class="modalArrow modalArrowLeft icon-arrowLeftBig"></i>
+                        </a>
+                        <a class="right carousel-control" href="#carouselModal" role="button" data-slide="next">
+                            <i class="modalArrow modalArrowRight icon-arrowRightBig"></i>
+                        </a>
+                        <!-- END Controls Slider -->
+                    </div>
+    
+                    <div class="numberProductPreviewWrap">
+                        Товар <span class="numberProductPreview">3</span> из <span class="numberProductPreviewAll">65</span>
                     </div>
                 </div>
-                <div class="checkoutCommentItem">
-                    <input id="commentItem1" type="checkbox"/>
-                    <label for="commentItem1" class="checkoutCommentLabel">
-                        <span class="checkoutCommentPseudoCheckbox checkoutCommentCheckbox"></span>
-                        Подписаться на новости
-                    </label>
-                </div>
-            </form>
+            </div>
         </div>
+        <!-- END Modal Slides -->
     </div>
-    </div>    <!-- END registration content -->
+    
+    
+    <!--END preview-->
+
+    <!--START modal-entrance-->
+    <div class="modal fade" id="modalEntrance">
+        <div class="modal-dialog modal-md">
+            <div class="modalEntrance modalGlobal">
+                <div class="modalHeader">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                            class="icon-close"></i></button>
+                    <h2 class="modalTitle">Уведомить о поступлении товара</h2>
+                </div>
+                <div class="modalBody">
+                    <p class="titleModalEntranceBody">Введите данные и мы сообщим когда поступит:</p>
+                    <div class="productEntrance searchResult">
+                        <div class="wrapSearchResultImage">
+                            <img class="searchResultImage" src="static/img/content/searchImg_1.jpg"
+                                 alt=""/>
+                        </div>
+                        <div class="searchResultImageInfo">
+                            <div class="resultImageInfoTitle">Набор из 4 кружек 320 мл</div>
+                            <div class="resultImageInfoArticle">Арт: 9260</div>
+    
+                            <div class="resultImageInfoMaterial">
+                                Материал:
+                                <span class="resultImageInfoMaterialName">керамика</span>
+                            </div>
+                            <div class="resultImageInfoManufacturer">
+                                Производитель:
+                                <span class="resultImageInfoManufacturerName">Sambuka</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <form class="formModal formEntrance">
+                        <label class="labelInputNumber" for="inputNumber">
+                            <span class="textInputEntrance">Необходимое количество</span>
+                            <input type="number" id="inputNumber" class="inputGlobal inputNumber" value="0" min="0">
+                        </label>
+                        <input type="text" class="inputGlobal inputName" placeholder="Имя">
+                        <input type="email" class="inputGlobal inputEmail" placeholder="E-mail">
+                        <label class="labelInputDate clearfix" for="inputDate">
+                            <span class="textInputEntrance">Актуально до:</span>
+                            <input type="date" id="inputDate" name="inputDate" class="inputGlobal inputDate">
+                            <i class="icon-calendar"></i>
+                        </label>
+                        <textarea class="textareaGlobal" name="" id="" placeholder="Комментарий"></textarea>
+                        <div class="captchaWrap">
+                            <p class="textCaptcha">Введите число, изображенное на рисунке</p>
+                            <div class="captcha">
+                                <div class="captchaImg"></div>
+                                <a class="captchaRefresh">
+                                    <i class="icon-revers"></i>
+                                </a>
+                                <input type="text" class="inputGlobal captchaInput">
+                            </div>
+                        </div>
+                        <button class="btn btnGreen btnSend">отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>    <!--END modal-entrance-->
 
     <!--START scroll top-->
     <div class="wrapScroll">
@@ -2591,12 +3696,13 @@
 
 <!--<script src="static/js/separate-js/jquery-2.1.4.min.js" type="text/javascript"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script src="static/js/separate-js/royalSlider.js" type="text/javascript"></script>
 
 <script>
     $(function () {
         $('#dl-menu').dlmenu({
-            animationClasses: {classin: 'dl-animate-in-3', classout: 'dl-animate-out-3'}
+            animationClasses: {classin: 'dl-animate-in-2', classout: 'dl-animate-out-2'}
         });
 
         $('._royalSlider').royalSlider({

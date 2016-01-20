@@ -24,9 +24,17 @@
     {{> breadCrumbs/breadCrumbs}}
     <!-- END bread crumbs -->
 
-    <!-- START order completed content -->
-    {{> orderCompleted/orderCompletedContent}}
-    <!-- END order complete content -->
+    <!-- START catalog content -->
+    {{> catalog/catalogContent}}
+    <!-- END catalog content -->
+
+    <!--START preview-->
+    {{> preview/preview}}
+    <!--END preview-->
+
+    <!--START modal-entrance-->
+    {{> entranceModal/entranceModal}}
+    <!--END modal-entrance-->
 
     <!--START scroll top-->
     {{> scrollTopBottom/scrollTopBottom}}
@@ -42,12 +50,13 @@
 
 <!--<script src="%=staticPrefix=%js/separate-js/jquery-2.1.4.min.js" type="text/javascript"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script src="%=staticPrefix=%js/separate-js/royalSlider.js" type="text/javascript"></script>
 
 <script>
     $(function () {
         $('#dl-menu').dlmenu({
-            animationClasses: {classin: 'dl-animate-in-3', classout: 'dl-animate-out-3'}
+            animationClasses: {classin: 'dl-animate-in-2', classout: 'dl-animate-out-2'}
         });
 
         $('._royalSlider').royalSlider({

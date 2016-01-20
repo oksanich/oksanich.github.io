@@ -1,0 +1,513 @@
+//-------------------------
+// Catalog
+//-------------------------
+
+.catalogWrap {
+  .sidebar {
+    margin-bottom: 6rem;
+  }
+
+  .productCatalog {
+    border: .1rem solid $darkGray;
+    border-radius: .2rem;
+    padding: .5rem;
+    margin-bottom: 3rem;
+
+    @media (min-width: $lgScreen) {
+      height: 35.5rem;
+    }
+
+    &:hover {
+      border: .1rem solid $safetyOrange;
+    }
+  }
+
+  .btn {
+    @media (max-width: $xlgScreen) {
+      font-size: 1.8rem;
+    }
+  }
+
+  .resultImageInfoMaterial,
+  .resultImageInfoManufacturer {
+    display: none;
+  }
+
+  .numberProductPreviewWrap {
+    position: relative;
+  }
+}
+
+.topContentCatalog {
+  position: relative;
+
+  .blockTitle {
+    float: left;
+
+    @media (max-width: $lgScreen) {
+      float: none;
+    }
+  }
+}
+
+.productsCatalogWrap {
+  margin-bottom: 5rem;
+}
+
+.sortSwitchWrap {
+  float: right;
+  margin-top: 1rem;
+
+  @media (max-width: $lgScreen) {
+    float: none;
+  }
+}
+
+.sortingCatalog {
+  font-family: $robotoLight;
+  font-size: 1.4rem;
+  .active {
+    color: $pelorous;
+
+    &:hover {
+      color: $safetyOrange;
+    }
+  }
+}
+
+.sortingSeparator {
+  margin: 0 1rem;
+}
+
+.catalogSwitchWrap {
+  margin-top: 1rem;
+  text-align: right;
+
+  &.listItem {
+    .catalogSwitchList {
+      color: $textColor;
+    }
+
+    .catalogSwitchGrid {
+      color: $pelorous;
+    }
+  }
+}
+
+.catalogSwitch {
+  display: inline-block;
+
+  [class^='icon'] {
+    font-size: 4.2rem;
+  }
+
+  @media (max-width: $lgScreen) {
+    display: none;
+  }
+}
+
+.catalogSwitchList {
+  color: $pelorous;
+}
+
+.filtersSidebar {
+  padding: 1rem 0 2rem;
+}
+
+.filterSidebar {
+  padding: 1rem 1rem 0;
+  border-bottom: .1rem solid $darkGray;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.titleFilterSidebar {
+  font-family: $robotoBold;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.itemsFilter {
+  display: none;
+}
+
+.itemFilter {
+  display: block;
+  position: relative;
+  margin-bottom: 2rem;
+
+  [class^='icon'] {
+    margin-top: .1rem;
+    &:hover {
+      color: $safetyOrange;
+      cursor: pointer;
+    }
+  }
+}
+
+.checkboxFilter {
+  display: none;
+
+  &:checked {
+
+    ~ .titleItemFilter {
+      display: block;
+      color: $violetRed;
+      background: $white;
+    }
+
+    ~ .uncheckItem {
+      display: inline-block;
+    }
+
+    ~ .itemFilterColor {
+      border: .2rem solid $violetRed;
+      border-radius: .3rem;
+    }
+  }
+}
+
+.titleItemFilter {
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: .25rem;
+  text-transform: uppercase;
+}
+
+.uncheckItem {
+  display: none;
+  font-size: 2.4rem;
+  position: absolute;
+  right: 0;
+  top: -.25rem;
+}
+
+.closeFilter {
+  @extend .icon-iconPlusCircle;
+  font-family: $icons;
+  font-size: 2.4rem;
+  position: absolute;
+  right: 0;
+}
+
+.openFilter {
+  .closeFilter {
+    @extend .icon-minusCircle;
+    font-family: $icons;
+  }
+
+  ~ .itemsFilter {
+    display: block;
+  }
+}
+
+.itemsFilterColor {
+  overflow: hidden;
+
+  .itemFilter {
+    margin: 0;
+  }
+}
+
+.itemFilterColor {
+  border: .1rem solid $whiteSmoke;
+  display: inline-block;
+  float: left;
+  margin: 0 1.5rem 1.5rem 0;
+  height: 2.8rem;
+  width: 2.8rem;
+
+  &.itemFilterColor_1 {
+    background: white;
+  }
+
+  &.itemFilterColor_2 {
+    background: #33ccff;
+  }
+
+  &.itemFilterColor_3 {
+    background: red;
+  }
+
+  &.itemFilterColor_4 {
+    background: #008000;
+  }
+
+  &.itemFilterColor_5 {
+    background: #ffa500;
+  }
+
+  &.itemFilterColor_6 {
+    background: #d9d9d9;
+  }
+
+  &.itemFilterColor_7 {
+    background: #9933ff;
+  }
+
+  &.itemFilterColor_8 {
+    background: #064b96;
+  }
+
+  &.itemFilterColor_9 {
+    background: #1c1c1c;
+  }
+
+  &.itemFilterColor_10 {
+    background: #ff0080;
+  }
+
+  &.itemFilterColor_11 {
+    background: #00ff33;
+  }
+}
+
+.filterPrice {
+  border-bottom: none;
+}
+
+.filterPriceSlider {
+  margin: 5rem 0 3rem;
+}
+
+.filterPriceInputs {
+  margin-bottom: 2rem;
+}
+
+.uislide {
+  position: relative;
+  height: .1rem;
+  border: .1rem solid $bahia;
+  border-radius: 3px;
+}
+
+.uislide.price-slide {
+  width: 95%;
+  margin: 0 auto;
+  background: $bahia;
+}
+
+.uislide .ui-slider-range {
+  position: absolute;
+  height: .3rem;
+  margin-top: -.2rem;
+  background: $mischka;
+  border-radius: 4px;
+}
+
+.uislide .ui-slider-handle:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  margin-top: -1.1rem;
+  margin-left: -.8rem;
+  background: $violetRed;
+  &:hover {
+    background: darken($violetRed, 10%);
+  }
+}
+
+.uislide .ui-slider-handle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  display: block;
+}
+
+.uislide .ui-slider-handle:active {
+  cursor: none;
+}
+
+.filterPriceInputs {
+  text-align: center;
+}
+
+.priceInput {
+  @extend .inputGlobal;
+  height: 4rem;
+  padding: .5rem;
+  text-align: center;
+  width: 35%;
+
+  &:first-child {
+    margin-right: 1rem;
+  }
+
+  &:last-child {
+    margin-left: 1rem;
+  }
+}
+
+.bunnerSidebar {
+  margin-bottom: 3rem;
+
+  @media (max-width: $mdScreen) {
+    display: none;
+  }
+}
+
+.item.list-group-item {
+  float: none;
+  width: 100%;
+  border: none;
+  margin-bottom: 0;
+
+  .productCatalog {
+    height: 100%;
+    overflow: hidden;
+    padding: 2rem;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $mdScreen) {
+    .topInfoNovelty {
+      margin-top: 2rem;
+    }
+
+    .bottomInfoNovelty {
+      margin-top: 1rem;
+    }
+
+    .titleLinkNovelty,
+    .vendorСodeNovelty {
+      font-size: 1.8rem;
+    }
+
+    .vendorСodeNovelty {
+      margin-bottom: 2rem;
+    }
+
+    .linkNoveltyImage {
+      float: left;
+      margin-right: 3%;
+      width: 30%;
+    }
+
+    .infoNovelty {
+      float: left;
+      width: 65%;
+    }
+
+    .topInfoNovelty {
+      float: left;
+      width: 60%;
+    }
+
+    .bottomInfoNovelty {
+      float: right;
+      width: 40%;
+    }
+
+    .titleLinkNovelty {
+      max-height: 5rem;
+    }
+
+    .topInfoNovelty {
+      height: 100%;
+    }
+
+    .priceNovelty {
+      float: none;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      float: none;
+    }
+
+    .resultImageInfoMaterial,
+    .resultImageInfoManufacturer {
+      display: block;
+    }
+  }
+}
+
+.item.list-group-item:before,
+.item.list-group-item:after {
+  display: table;
+  content: " ";
+}
+
+.item.list-group-item:after {
+  clear: both;
+}
+
+.bottomContentCatalog {
+  overflow: hidden;
+  margin-bottom: 10rem;
+
+  .showMore {
+    clear: both;
+    display: inline-block;
+    padding-top: 2rem;
+    text-align: center;
+
+    &:hover {
+      .icon-iconPlusCircle {
+        color: $safetyOrange;
+      }
+
+      .textShowMore {
+        color: $safetyOrange;
+      }
+    }
+  }
+
+  .icon-iconPlusCircle {
+    font-size: 6.4rem;
+    display: block;
+    color: $darkGray;
+  }
+
+  .textShowMore {
+    display: block;
+    color: $pelorous;
+  }
+}
+
+.showMoreWrap {
+  clear: both;
+  text-align: center;
+}
+
+.numberProductPreviewWrap {
+  float: left;
+}
+
+.paginationWrap {
+  float: right;
+  font-family: $robotoLight;
+  font-size: 1.8rem;
+  vertical-align: middle;
+
+  [class^='icon'] {
+    font-size: 3.2rem;
+  }
+}
+
+.itemPagination {
+  display: inline-block;
+  height: 3.2rem;
+  line-height: 1.8;
+  margin-right: .5rem;
+  text-align: center;
+  width: 3.2rem;
+  vertical-align: middle;
+}
+
+.itemActivePagination {
+  background: $safetyOrange;
+  border-radius: 50%;
+  color: $white;
+
+  &:hover {
+    color: $textColor;
+  }
+}

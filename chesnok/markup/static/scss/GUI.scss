@@ -9,7 +9,7 @@
   padding: 1rem 1.5rem;
   text-transform: uppercase;
 
-  @media (max-width: $mdScreen) {
+  @media (max-width: $lgScreen) {
     font-size: 1.6rem;
   }
 }
@@ -20,6 +20,10 @@
   &:hover {
     background: $christi;
     color: $white;
+  }
+
+  @media (max-width: $lgScreen) {
+    font-size: 1.8rem;
   }
 }
 
@@ -71,6 +75,17 @@
   }
 }
 
+.btnResetFilters {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
 .btnBackBuy {
   font-size: 1.8rem;
   text-align: center;
@@ -94,7 +109,7 @@
   width: 100%;
 
   &:focus,
-  &:active{
+  &:active {
     outline: none;
   }
 

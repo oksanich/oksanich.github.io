@@ -60,3 +60,9 @@ button{
 .wrapper{
   background: $white;
 }
+
+@media (min-width: $xlgScreen) {
+  .container{
+    width: 130rem;
+  }
+}

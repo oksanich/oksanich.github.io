@@ -59,12 +59,12 @@
     <script>
         $(function () {
             $('#dl-menu').dlmenu({
-                animationClasses: {classin: 'dl-animate-in-2', classout: 'dl-animate-out-2'}
+                animationClasses: {classin: 'dl-animate-in-3', classout: 'dl-animate-out-3'}
             });
 
             $('._royalSlider').royalSlider({
                 fullscreen: {
-                    enabled: false,
+                    enabled: true,
                     nativeFS: true
                 },
                 controlNavigation: 'thumbnails',
@@ -75,7 +75,7 @@
                 imageScaleMode: 'fit-if-smaller',
                 navigateByClick: true,
                 numImagesToPreload: 6,
-                arrowsNav: false,
+                arrowsNav: true,
                 arrowsNavAutoHide: true,
                 arrowsNavHideOnTouch: true,
                 keyboardNavEnabled: true,
