@@ -1,0 +1,60 @@
+//-------------------------
+// Footer
+//-------------------------
+
+.footer-main {
+  background: $codGrey;
+  color: $aluminium;
+  font-size: 1.5rem;
+  padding: 4rem 0;
+}
+
+.footer-logo {
+  background: url("../img/perehid4-logo-footer.png") no-repeat/contain;
+  display: inline-block;
+  height: 3rem;
+  width: 100%;
+  max-width: 15rem;
+}
+
+.footer-title {
+  color: $ghost;
+  font-family: $openSansBold;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.list-item-address {
+  display: inline-block;
+}
+
+.footer-copyright {
+  line-height: 1.4;
+}
+
+.footer-list,
+.footer-general{
+  @media all and (max-width: $mdScreen) {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.footer-list-item {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+
+  .fa {
+    margin-right: 1rem;
+  }
+}
+
+.footer-list-link {
+  color: $aluminium;
+  font-size: 1.5rem;
+
+  &:hover {
+    color: $viking;
+    text-decoration: none;
+  }
+}

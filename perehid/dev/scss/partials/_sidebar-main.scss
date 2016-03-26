@@ -1,0 +1,185 @@
+//-------------------------
+// Sidebar-main
+//-------------------------
+
+.sidebar-section {
+  margin-bottom: 5rem;
+}
+
+.sidebar-filter {
+  border: .1rem solid $viking;
+  box-sizing: border-box;
+}
+
+.filter-header {
+  background: $viking;
+  overflow: hidden;
+  padding: 2.5rem 2rem;
+}
+
+.filter-title {
+  color: $white;
+  font-size: 2rem;
+  font-family: $openSansBold;
+  float: left;
+  text-transform: uppercase;
+}
+
+.filter-clear {
+  color: $white;
+  cursor: pointer;
+  font-size: 1.6rem;
+  float: right;
+
+  &:hover {
+    opacity: .75;
+  }
+}
+
+.filter-body {
+  padding: 2.5rem 2rem;
+}
+
+.filter-list-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.filter-item-name {
+  float: left;
+  font-size: 1.6rem;
+
+  .fa {
+    position: absolute;
+    top: .15rem;
+    color: $ghost;
+  }
+}
+
+.filter-item-text {
+  margin-left: 3rem;
+  color: $vulcan;
+}
+
+.filter-item-remove {
+  color: $ghost;
+  cursor: pointer;
+  float: right;
+
+  .fa {
+    font-size: 1.4rem;
+  }
+
+  &:hover {
+    color: $viking;
+  }
+}
+
+.sidebar-title {
+  color: $vulcan;
+  font-size: 2rem;
+  font-family: $openSansBold;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.sidebar-inputs {
+  overflow: hidden;
+}
+
+.sidebar-input {
+  border: .1rem solid $ghost;
+  float: left;
+  width: 50%;
+
+  &:last-child {
+    border-left: none;
+  }
+}
+
+.input-min,
+.input-max {
+  border: none;
+  display: block;
+  float: left;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  padding: 1rem;
+  width: 75%;
+
+  &::-webkit-inner-spin-button {
+    display: none;
+  }
+
+  &::-webkit-calendar-picker-indicator {
+    background: $white;
+  }
+
+  &::-webkit-datetime-edit-text {
+    color: #A9A9A9;
+  }
+
+  &::-webkit-datetime-edit-month-field {
+    color: #A9A9A9;
+  }
+  &::-webkit-datetime-edit-day-field {
+    color: #A9A9A9;
+  }
+  &::-webkit-datetime-edit-year-field {
+    color: #A9A9A9;
+  }
+}
+
+[class^='input-icon'] {
+  border-right: .1rem solid $ghost;
+  color: $white;
+  display: block;
+  float: left;
+  height: 4.5rem;
+  line-height: 2.5;
+  text-align: center;
+  width: 25%;
+}
+
+.input-icon-max {
+  background: $burntSienna;
+}
+
+.input-icon-min {
+  background: $viking;
+}
+
+.category-select {
+  height: 4.5rem;
+}
+
+.sidebar-category-title {
+  display: block;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.sidebar-category {
+  .panel-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    position: relative;
+
+    .caret {
+      position: absolute;
+      right: .5rem;
+      top: 1rem;
+    }
+  }
+
+  .custom-checkbox {
+    font-size: 1.4rem;
+  }
+}

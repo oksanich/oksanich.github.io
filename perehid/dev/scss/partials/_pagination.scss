@@ -1,0 +1,58 @@
+//-------------------------
+// Pagination
+//-------------------------
+
+.wrap-pagination {
+  text-align: right;
+}
+
+.pagination {
+
+  .pagination-item {
+    display: inline-block;
+    margin-right: .5rem;
+
+    &:last-child {
+      margin-right: 0;
+
+      .pagination-item-link{
+        border-radius: 0;
+      }
+    }
+
+    &:first-child {
+      .pagination-item-link{
+        border-radius: 0;
+      }
+    }
+
+    @media all and (max-width: $smScreen) {
+      margin-right: .25rem;
+    }
+  }
+
+  .active{
+    .pagination-item-link{
+      background: $viking;
+      border-color: $ghost;
+      color: $white;
+
+      &:hover {
+        background: $viking;
+        border-color: $ghost;
+        color: $white;
+      }
+    }
+  }
+
+  .pagination-item-link {
+    border-color: $ghost;
+    color: $shuttleGrey;
+    padding: .75rem 1.5rem;
+
+    &:hover {
+      background: $viking;
+      color: $white;
+    }
+  }
+}

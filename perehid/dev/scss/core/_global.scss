@@ -1,0 +1,20 @@
+//-------------------------
+// Global
+//-------------------------
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: $openSansRegular;
+  font-size: 1.8rem;
+}
+
+input,
+select {
+  &:focus,
+  &:active {
+    outline: none !important;
+  }
+}
