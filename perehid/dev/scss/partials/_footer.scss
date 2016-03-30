@@ -7,10 +7,13 @@
   color: $aluminium;
   font-size: 1.5rem;
   padding: 4rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-logo {
-  background: url("../img/perehid4-logo-footer.png") no-repeat/contain;
+  background: url("../images/perehid4-logo-footer.png") no-repeat/contain;
   display: inline-block;
   height: 3rem;
   width: 100%;

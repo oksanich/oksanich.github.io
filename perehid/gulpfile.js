@@ -21,21 +21,21 @@ var path = {
         html: 'app/html/',
         js: 'app/js/',
         css: 'app/css/',
-        img: 'app/img/',
+        img: 'app/images/',
         fonts: 'app/fonts/'
     },
     src: { //Where to get the files
         html: 'dev/html/pages/*.html',
         js: 'dev/js/**/*.js',
         style: 'dev/scss/main.scss',
-        img: 'dev/img/**/*.*',
+        img: 'dev/images/**/*.*',
         fonts: 'dev/fonts/**/*.*'
     },
     watch: { //The change which files we want to observe
         html: 'dev/html/**/*.html',
         js: 'dev/js/**/*.js',
         style: 'dev/scss/**/*.scss',
-        img: 'dev/img/**/*.*',
+        img: 'dev/images/**/*.*',
         fonts: 'dev/fonts/**/*.*'
     },
     clean: './app'

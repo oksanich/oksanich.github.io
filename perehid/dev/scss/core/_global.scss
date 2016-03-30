@@ -4,11 +4,14 @@
 
 html {
   font-size: 10px;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
   font-family: $openSansRegular;
   font-size: 1.8rem;
+  margin-bottom: 25rem;
 }
 
 input,
