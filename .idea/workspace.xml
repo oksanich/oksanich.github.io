@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="789dcce9-d83f-485c-aefa-3e1eb21595e3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/perehid/dev/html/partials/content-product.html" afterPath="$PROJECT_DIR$/perehid/dev/html/partials/content-product.html" />
     </list>
     <ignored path="SvitlaHosting.iws" />
     <ignored path=".idea/workspace.xml" />
