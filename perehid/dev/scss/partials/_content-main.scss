@@ -93,6 +93,9 @@
 }
 
 .product-img {
+  height: 19rem;
+  object-fit: cover;
+  -o-object-fit: cover;
   width: 100%;
 }
 

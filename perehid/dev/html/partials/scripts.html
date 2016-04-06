@@ -1,0 +1,92 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="../js/lib/bootstrap/bootstrap.min.js"></script>
+<script src="../js/lib/select2/select2.min.js"></script>
+<script src="../js/lib/datepicker/datepicker.js"></script>
+<script src="../js/lib/slick/slick.min.js"></script>
+<script src="../js/lib/moment/moment.min.js"></script>
+<script src="../js/lib/fullcalendar/fullcalendar.min.js"></script>
+<script src="../js/main.js"></script>
+
+<script>
+    $('#sandbox-container .input-daterange').datepicker({
+        language: "uk",
+        format: "dd/mm/yy",
+    });
+
+    $('#header-date .header-date-input').datepicker({
+        language: "uk",
+        format: "dd/mm/yy",
+    });
+
+    $('._select').select2();
+
+    $('._select2').select2({
+        minimumResultsForSearch: Infinity
+    });
+
+    $('#full-calendar-modal').on('shown.bs.modal', function () {
+        $("#full-calendar").fullCalendar('render');
+    });
+
+
+    var date = new Date();
+    var d = date.getDate();
+    var m = date.getMonth();
+    var y = date.getFullYear();
+
+
+    $('#full-calendar').fullCalendar({
+        header: {
+            left: 'today',
+            center: 'prev,title,next',
+            right: 'month,agendaWeek,agendaDay'
+        },
+        events: [{
+            title: 'Lunch',
+            start: new Date(y, m, d, 12, 0),
+            end: new Date(y, m, d, 14, 0),
+            allDay: false
+        }, {
+            title: 'Birthday Party',
+            start: new Date(y, m, d + 1, 19, 0),
+            end: new Date(y, m, d + 1, 22, 30),
+            allDay: false
+        }, {
+            title: 'Birthday Party',
+            start: new Date(y, m, d + 1, 9, 0),
+            end: new Date(y, m, d + 1, 24, 30),
+            allDay: false
+        }, {
+            title: 'Birthday Party',
+            start: new Date(y, m, d + 1, 14, 0),
+            end: new Date(y, m, d + 1, 23, 30),
+            allDay: false
+        }],
+
+        eventRender: function (event, element) {
+            if (!event.url) {
+                element.popover({
+                    content: function () {
+                        return $("#popoverContent").html();
+                    },
+                    placement: 'top',
+                    html: 'true',
+                    container: '#full-calendar-modal'
+                }).on('shown.bs.popover', function () {
+
+                    increment();
+
+                    $('._close').on('click', function () {
+                        $(this).closest('.popover').hide();
+                    });
+                });
+
+                $('body').on('click', function (e) {
+                    if (!element.is(e.target) && element.has(e.target).length === 0 && $('.popover').has(e.target).length === 0)
+                        element.popover('hide');
+                });
+            }
+        }
+    });
+
+</script>

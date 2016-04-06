@@ -1,0 +1,23 @@
+//-------------------------
+// Bread-crumbs
+//-------------------------
+
+.breadcrumb-main {
+  background: darken($solitudeLight, 1.5%);
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+
+  .breadcrumb {
+    background: none;
+    margin-bottom: 0;
+  }
+
+  .breadcrumb-item {
+    color: $nobel;
+    font-size: 1.6rem;
+  }
+
+  .breadcrumb-link {
+    color: $heather;
+  }
+}

@@ -12,6 +12,14 @@ body {
   font-family: $openSansRegular;
   font-size: 1.8rem;
   margin-bottom: 25rem;
+
+  @media all and (max-width: $smScreen) {
+    margin-bottom: 65rem;
+  }
+
+  @media all and (min-width: $smScreen) and (max-width: $mdScreen) {
+    margin-bottom: 45rem;
+  }
 }
 
 input,

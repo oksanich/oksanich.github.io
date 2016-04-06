@@ -1,0 +1,409 @@
+//-------------------------
+// Content-product
+//-------------------------
+
+.content-product-top {
+  margin-bottom: 3rem;
+}
+
+.content-product-bottom {
+  margin-bottom: 3rem;
+}
+
+.product-about-new {
+  position: relative;
+
+  &::after {
+    background: $viking;
+    color: $white;
+    content: 'новинка';
+    font-family: $openSansBold;
+    font-size: 1.4rem;
+    padding: 1rem .5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.product-about-sale {
+  position: relative;
+
+  &::after {
+    background: $burntSienna;
+    color: $white;
+    content: 'знижка';
+    font-family: $openSansBold;
+    font-size: 1.4rem;
+    padding: 1rem .5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.product-about-top {
+  margin-bottom: 3rem;
+}
+
+.product-about-title {
+  color: $trout;
+  font-family: $openSansBold;
+  font-size: 2rem;
+  line-height: 1.4;
+  max-width: 70%;
+  margin-bottom: 1.5rem;
+}
+
+.product-about-article {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-about-article-number {
+  color: $shuttleGrey;
+  font-family: $openSansBold;
+}
+
+.product-size {
+  color: $shuttleGrey;
+  font-size: 1.4rem;
+}
+
+.product-about-middle {
+  margin-bottom: 5rem;
+}
+
+.product-about-price {
+  color: $burntSienna;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.product-about-availability {
+  margin-bottom: 2.5rem;
+}
+
+.product-about-rating {
+  font-size: 1.6rem;
+
+  .fa {
+    color: $viking;
+    font-size: 2rem;
+  }
+}
+
+.product-rating-rate {
+  font-family: $openSansBold;
+}
+
+.product-rating-number {
+  color: $gray;
+}
+
+.product-about-table {
+  color: $stormGrey;
+  display: table;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.product-about-tr {
+  display: table-row;
+}
+
+.product-about-td {
+  border-bottom: .1rem solid $solitude;
+  display: table-cell;
+  line-height: 1.4;
+  padding: 1rem 0;
+  vertical-align: middle;
+  width: 40%;
+
+  &:last-child {
+    width: 60%;
+  }
+}
+
+.product-table-link {
+  color: $trout;
+  text-decoration: underline;
+
+  &:hover {
+    color: $viking;
+    text-decoration: none;
+  }
+}
+
+.product-about-btn {
+  background: $burntSienna;
+  border-radius: 0;
+  color: $white;
+  font-family: $openSansBold;
+  font-size: 1.6rem;
+  padding: 1rem 4rem;
+
+  .fa {
+    margin-right: 1rem;
+  }
+
+  &:hover {
+    background: darken($burntSienna, 5%);
+    color: $white;
+  }
+}
+
+.product-slider-main {
+  .carousel-thumb {
+    margin-top: 1rem;
+  }
+
+  .item {
+    .thumb {
+      cursor: pointer;
+      float: left;
+      margin-right: 2%;
+      width: 23%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:first-child {
+        margin-left: 1%;
+      }
+    }
+  }
+
+  .item .thumb img {
+    width: 100%;
+  }
+
+  .item img {
+    width: 100%;
+  }
+
+  .carousel-control {
+    background: none;
+    text-shadow: none;
+    width: 7%;
+
+    &.left {
+      text-align: left;
+    }
+  }
+
+  .fa {
+    color: $ghost;
+    font-size: 2.4rem;
+    position: absolute;
+    top: 40%;
+  }
+
+  @media all and (max-width: $smScreen) {
+    margin-bottom: 3rem;
+  }
+}
+
+.product-slider-thumb {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.product-counter {
+  display: inline-block;
+  position: relative
+}
+
+.product-counter-input {
+  border: .1rem solid $ghost;
+  border-right: 0;
+  height: 4rem;
+  text-align: center;
+  width: 4rem;
+}
+
+.product-counter-btn {
+  border: .1rem solid $ghost;
+  cursor: pointer;
+  display: inline-block;
+  height: 2rem;
+  position: absolute;
+  text-align: center;
+  width: 2rem;
+
+  &.qtyplus {
+    top: 0;
+    left: 100%;
+  }
+
+  &.qtyminus {
+    bottom: 0;
+    border-top: none;
+    left: 100%;
+  }
+
+  .fa {
+    position: relative;
+    top: -0.25rem;
+  }
+
+  &:hover {
+    background: $linkWater;
+  }
+}
+
+.tab-content {
+  font-size: 1.6rem;
+}
+
+.tab-content-title {
+  font-family: $openSansBold;
+  margin-bottom: 2rem;
+}
+
+.tab-content-text {
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.product-tabs {
+
+  .nav-tabs {
+    border-bottom: none;
+  }
+
+  .product-tab-nav {
+    border-bottom: 1px solid transparent;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: .1rem;
+    width: 100%;
+
+    &.active {
+      border: none;
+      border-bottom: .1rem solid $ghost;
+
+      .product-tab-nav-item {
+        border: none;
+        border-bottom: .2rem solid $viking;
+        display: inline-block;
+      }
+    }
+  }
+
+  .product-tab-nav-item {
+    bottom: -.1rem;
+    border: none;
+    border-bottom: .2rem solid transparent;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: $vulcan;
+    font-family: $openSansBold;
+    font-size: 1.6rem;
+    position: relative;
+  }
+}
+
+.full-calendar-modal {
+
+  .modal-header {
+    background: $solitudeSecond;
+  }
+
+  .fc-button {
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-size: 1.6rem;
+    outline: none;
+  }
+
+  .fc-state-default {
+    color: $aluminium;
+    &.fc-state-active {
+      color: $codGrey;
+    }
+  }
+
+  .fc-center {
+    h2 {
+      display: inline-block;
+      font-size: 2.4rem;
+      vertical-align: middle;
+    }
+  }
+
+  .fc-view-container {
+    border-top: .3rem solid $viking;
+  }
+
+  .fc-today {
+    background: lighten($viking, 35%);
+  }
+
+  .event-offers,
+  .fc-event {
+    background: $viking;
+    border: none;
+    color: $white;
+    cursor: pointer;
+    margin: 0 .5rem .25rem;
+  }
+
+  .popover {
+    max-width: 100%;
+    width: 40rem;
+  }
+}
+
+.calendar-popover-header {
+  position: relative;
+
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.calendar-popover-title {
+  display: inline-block;
+  font-family: $openSansBold;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.calendar-popover-price {
+  color: $burntSienna;
+}
+
+.calendar-popover-button {
+  text-align: center;
+
+  .product-about-btn {
+    display: inline-block;
+  }
+}
+
+.calendar-popover-img {
+  float: left;
+  width: 30%;
+}
+
+.calendar-popover-table{
+  float: left;
+  width: 70%;
+}
+
+.popover-img {
+  height: 9rem;
+  width: 9rem;
+}
+
+.product-about-td{
+  &:last-child{
+    //display: none;
+  }
+}

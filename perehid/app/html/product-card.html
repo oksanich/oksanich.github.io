@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Perehid 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA5CAYAAACMGIOFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OEM5NjFCOENFNjAzMTFFNThGNTBDOTQxRjAzNDhBQzciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OEM5NjFCOERFNjAzMTFFNThGNTBDOTQxRjAzNDhBQzciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDQUI3NDY3RkU2MDIxMUU1OEY1MEM5NDFGMDM0OEFDNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDQUI3NDY4MEU2MDIxMUU1OEY1MEM5NDFGMDM0OEFDNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PrJiprQAAAIoSURBVHja7Jk7SwNBFIVnJRCLCAEbH5VipbZiWhEsJIUIPhotxc7EUhuxiKIowVSp0koKSeHjB+gP0NpC/Q2CKAjxXhw789h7dmYnyRw4JLCZ7HyZmzOPDer1umqktfunxhdluiFn+U25VAzbdor8SE78dzFdrQSNGvYpe/ok54H2540AW8km5Cn5Wdh2ibwgvbEtyBfysbBtUv9AynXIXfKHsC2X+ITrkBw2NWHbIfIe2gHTkGjYcIkPuA6JhM0MeTOKTpiEfAXChue8C/3qNGQeCJsNciaqjpiCvAXCJkUuRNkZE5Bf5BzQntN01HXIEyBsxsA0tgKJhM3f+rTfdUgkbOb0GlW5DImETUJPGcplSDRstsjTrkMiYTNIPjS57IoCEg2bAw3qNCQSNlyi26a3QSgkEjasovRIwxYkGjY8Xczb2LEjkOKwKZeKST3xK5ch38CwyeslnNOQOWnY0CiO0Mu+sijJn/4ODJuC3k61o3fyt21IDpsd6c1oFDMhjzQWyQ+2y1V8ZkOAgZ4yAmVZYSA5bI6Ae/EIzqoYFAYSCZsU+ANZgUTDhtN02GVINGzGTRxpRA2JHBCzztTvQ5vYFLR4CMvbqElgl9FshCP9vnS1Ip4ncyYAW3XKdrnWVBeoT/WAmv4nu0U9MZIe0kN6SA9pXU1XPNnl9Y4Bub66FC/r4p5EA1+uHrL9co1b1RCfXe1UyBVfrh7SQ3pID+khY9SPAAMAJWpt9psyt2MAAAAASUVORK5CYII=" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+
+<body>
+
+<!-- START header -->
+<header class="header-main">
+
+    <!-- START header-top -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row hidden-xs">
+                <!-- START header-top social -->
+                <div class="col-sm-3 col-md-2">
+                    <div class="social">
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="fa fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="fa fa-vk"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END header-top social -->
+
+                <!-- START header-top menu -->
+                <div class="col-sm-6 col-md-5 col-lg-4 col-sm-offset-3 col-md-offset-5 col-lg-offset-6 clearfix">
+                    <div class="header-top-nav">
+                        <ul class="header-top-nav-list">
+                            <li class="header-top-nav-item">
+                                <a href="#" class="header-top-nav-link">Новини</a>
+                            </li>
+                            <li class="header-top-nav-item">
+                                <a href="#" class="header-top-nav-link">Про нас</a>
+                            </li>
+                            <li class="header-top-nav-item">
+                                <a href="#" class="header-top-nav-link">Історія</a>
+                            </li>
+                            <li class="header-top-nav-item">
+                                <a href="#" class="header-top-nav-link">Довідка</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="switch-language">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">UK <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Українська</a></li>
+                                    <li><a href="#">Російська</a></li>
+                                    <li><a href="#">Англійська</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END header-top menu -->
+            </div>
+        </div>
+    </div>
+    <!-- END header-top -->
+
+    <!-- START header-middle -->
+    <div class="header-middle">
+        <div class="container">
+            <div class="row">
+                <nav class="header-middle-nav navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">
+                                <img class="header-logo" src="../images/perehid4-logo.png" alt="">
+                            </a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="header-middle-nav-list nav navbar-nav navbar-right">
+                                <li class="header-middle-nav-item dropdown">
+                                    <a href="#" class="header-middle-nav-link dropdown-toggle "
+                                       data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Товари пропоную<span
+                                            class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Тест</a></li>
+                                        <li><a href="#">Тест</a></li>
+                                        <li><a href="#">Тест</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header-middle-nav-item dropdown">
+                                    <a href="#" class="header-middle-nav-link dropdown-toggle" data-toggle="dropdown"
+                                       role="button"
+                                       aria-haspopup="true" aria-expanded="false">Послуги <span
+                                            class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Тест</a></li>
+                                        <li><a href="#">Тест</a></li>
+                                        <li><a href="#">Тест</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header-middle-nav-item dropdown">
+                                    <a href="#" class="header-middle-nav-link dropdown-toggle" data-toggle="dropdown"
+                                       role="button"
+                                       aria-haspopup="true" aria-expanded="false">Послуги <span
+                                            class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Тест</a></li>
+                                        <li><a href="#">Тест</a></li>
+                                        <li><a href="#">Тест</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header-middle-nav-item dropdown">
+                                    <a href="#" class=" header-middle-nav-link dropdown-toggle"
+                                       data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Послуги <span
+                                            class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Тест</a></li>
+                                        <li><a href="#">Тест</a></li>
+                                        <li><a href="#">Тест</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header-middle-nav-item">
+                                    <a class="header-middle-nav-link" href="#">Користувачі</a>
+                                </li>
+                                <li class="header-middle-nav-item dropdown">
+                                    <a href="#" class=" header-middle-nav-link dropdown-toggle"
+                                       data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <span class="cart-product-number">2</span>
+                                    </a>
+                                    <div class="dropdown-menu header-middle-cart">
+                                        <div class="cart-dropdown-top clearfix">
+                                            <div class="cart-dropdown-product-number">2 товари</div>
+                                            <div class="cart-dropdown-product-price">1000 грн</div>
+                                        </div>
+                                        <div class="cart-dropdown">
+                                            <div class="cart-dropdown-body">
+                                                <div class="cart-dropdown-product clearfix">
+                                                    <i class="fa fa-close"></i>
+                                                    <div class="cart-dropdown-product-img">
+
+                                                    </div>
+
+                                                    <div class="wrap-cart-product-review">
+                                                        <a href="#" class="cart-product-title-link">ASKHOLMEN
+                                                            підставка для
+                                                            вазонів дерев’яна...</a>
+                                                        <div class="wrap-cart-product-price">
+                                                            <span class="cart-product-price">500 грн.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-dropdown">
+                                            <div class="cart-dropdown-body">
+                                                <div class="cart-dropdown-product clearfix">
+                                                    <i class="fa fa-close"></i>
+                                                    <div class="cart-dropdown-product-img">
+
+                                                    </div>
+
+                                                    <div class="wrap-cart-product-review">
+                                                        <a href="#" class="cart-product-title-link">ASKHOLMEN
+                                                            підставка для
+                                                            вазонів дерев’яна...</a>
+                                                        <div class="wrap-cart-product-price">
+                                                            <span class="cart-product-price">500 грн.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-dropdown-buttons clearfix">
+                                            <button class="add-favorite product-button">До кошику</button>
+                                            <button class="add-cart product-button">Розрахувати</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header-middle-nav-enter">
+                                    <a class="header-button-enter" href="#">
+                                        <i class="fa fa-user"></i>
+                                        Вхід
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+
+            </div>
+        </div>
+    </div>
+    <!-- END header-middle -->
+</header>
+<!-- END header -->
+
+<!-- START bread-crumbs -->
+<div class="breadcrumb-main hidden-xs">
+    <div class="container">
+        <ol class="breadcrumb breadcrumb-list">
+            <li class="breadcrumb-item">
+                <a class="breadcrumb-link" href="#">Головна</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a class="breadcrumb-link" href="#">Пропоную товари</a>
+            </li>
+            <li class="breadcrumb-item active">Споживчі товари</li>
+        </ol>
+    </div>
+</div>
+<!-- END bread-crumbs -->
+
+<section class="content-main">
+    <div class="container">
+        <div class="row">
+            <!-- START content-product -->
+            <!-- START content-product-top -->
+            <div class="content-product-top clearfix">
+                <!-- START content-product-slider -->
+                <div class="col-sm-6">
+                    <div class="product-slider-main">
+                        <div id="carousel" class="carousel carousel-big slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="../../images/product-slider/slider-big.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="../../images/product-slider/slider-big.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="../../images/product-slider/slider-big.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="../../images/product-slider/slider-big.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="../../images/product-slider/slider-big.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="../../images/product-slider/slider-big.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="../../images/product-slider/slider-big.jpg">
+                                </div>
+                                <div class="item">
+                                    <img src="../../images/product-slider/slider-big.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div id="thumbcarousel" class="carousel carousel-thumb slide" data-interval="false">
+                                <div class="carousel-inner product-slider-thumb">
+                                    <div class="item active">
+                                        <div data-target="#carousel" data-slide-to="0" class="thumb"><img
+                                                src="../../images/product-slider/slider-small-1.jpg"></div>
+                                        <div data-target="#carousel" data-slide-to="1" class="thumb"><img
+                                                src="../../images/product-slider/slider-small-2.jpg"></div>
+                                        <div data-target="#carousel" data-slide-to="2" class="thumb"><img
+                                                src="../../images/product-slider/slider-small-3.jpg"></div>
+                                        <div data-target="#carousel" data-slide-to="3" class="thumb"><img
+                                                src="../../images/product-slider/slider-small-4.jpg"></div>
+                                    </div>
+                                    <div class="item">
+                                        <div data-target="#carousel" data-slide-to="0" class="thumb"><img
+                                                src="../../images/product-slider/slider-small-1.jpg"></div>
+                                        <div data-target="#carousel" data-slide-to="1" class="thumb"><img
+                                                src="../../images/product-slider/slider-small-2.jpg"></div>
+                                        <div data-target="#carousel" data-slide-to="2" class="thumb"><img
+                                                src="../../images/product-slider/slider-small-3.jpg"></div>
+                                        <div data-target="#carousel" data-slide-to="3" class="thumb"><img
+                                                src="../../images/product-slider/slider-small-4.jpg"></div>
+                                    </div>
+                                </div>
+                                <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
+                                    <i class="fa fa-chevron-left"></i>
+                                </a>
+                                <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END content-product-slider -->
+            
+                <!-- START content-product-about -->
+                <div class="col-sm-6">
+                    <div class="product-about-wrap product-about-new">
+                        <div class="product-about-top">
+                            <h3 class="product-about-title">Живий йогурт під замовлення з
+                                сезонними ягодами 2,5%</h3>
+                            <div class="product-about-article">Артикул:
+                                <span class="product-about-article-number">089437</span>
+                            </div>
+                            <div class="product-size">500 мл</div>
+                        </div>
+                        <div class="product-about-middle">
+                            <div class="product-about-price">24.00 грн.</div>
+                            <div class="product-about-availability">Є в наявності</div>
+                            <div class="product-about-rating">
+                                <i class="fa fa-star"></i>
+                                <span class="product-rating-text">Рейтинг:</span>
+                                <span class="product-rating-rate">4,8</span>
+                                <span class="product-rating-number">(30 голосiв)</span>
+                            </div>
+                        </div>
+                        <div class="product-about-bottom">
+                            <div class="product-about-table">
+                                <div class="product-about-tr">
+                                    <div class="product-about-td">Роздріб</div>
+                                    <div class="product-about-td"></div>
+                                </div>
+                                <div class="product-about-tr">
+                                    <div class="product-about-td">Товар доступний</div>
+                                    <div class="product-about-td">
+                                        <i class="fa fa-clock-o"></i>
+                                        Сьогодні з 10:00, Завтра з 12:00 <a href="#" class="product-table-link" data-toggle="modal"
+                                                                            data-target="#full-calendar-modal">більше</a>
+                                    </div>
+                                </div>
+                                <div class="product-about-tr">
+                                    <div class="product-about-td">Кількість</div>
+                                    <div class="product-about-td">
+                                        <div class="product-counter">
+                                            <input type="text" name="quantity1" value="0" class="qty product-counter-input">
+                                            <span class="qtyplus  product-counter-btn" field="quantity1">
+                                                <i class="fa fa-caret-up"></i>
+                                            </span>
+                                            <span class="qtyminus product-counter-btn" field="quantity1">
+                                                <i class="fa fa-caret-down"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-about-tr">
+                                    <div class="product-about-td">Бренд</div>
+                                    <div class="product-about-td">Latter (Украина)</div>
+                                </div>
+                                <div class="product-about-tr">
+                                    <div class="product-about-td">Продавець</div>
+                                    <div class="product-about-td">Марченко Василь</div>
+                                </div>
+                            </div>
+            
+                            <div class="btn product-about-btn pull-right" data-toggle="modal"
+                                 data-target="#full-calendar-modal"><i class="fa fa-shopping-basket"></i>Купити</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END content-product-about -->
+            </div>
+            <!-- END content-product-top -->
+            
+            <!-- START content-product-bottom -->
+            <div class="content-product-bottom clearfix">
+                <div class="product-tabs">
+                    <!-- START product-tabs-nav -->
+                    <div class="col-xs-12 col-sm-3">
+                        <ul class="nav nav-tabs tabs-left sideways">
+                            <li class="product-tab-nav active">
+                                <a href="#info" class="product-tab-nav-item" data-toggle="tab">Інформація</a>
+                            </li>
+                            <li class="product-tab-nav">
+                                <a href="#info-additional" class="product-tab-nav-item" data-toggle="tab">Додаткові умови</a>
+                            </li>
+                            <li class="product-tab-nav">
+                                <a href="#delivery-volumes" class="product-tab-nav-item" data-toggle="tab">Об'єм та доставка</a>
+                            </li>
+                            <li class="product-tab-nav">
+                                <a href="#question" class="product-tab-nav-item" data-toggle="tab">Питання / відгуки</a>
+                            </li>
+                            <li class="product-tab-nav">
+                                <a href="#calendar" class="product-tab-nav-item" data-toggle="tab">Календар</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END product-tabs-nav -->
+            
+                    <!-- START product-tabs-content -->
+                    <div class="col-xs-12 col-sm-9">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="info">
+                                <h3 class="tab-content-title">Інформація</h3>
+                                <p class="tab-content-text"> Aле більшість з них зазнала певних змін на кшталт жартівливих вставок
+                                    або змішування слів, які навіть не виглядають правдоподібно.
+                                </p>
+                                <p class="tab-content-text">Якщо ви збираєтесь використовувати Lorem Ipsum, ви маєте упевнитись в
+                                    тому, що всередині тексту не приховано нічого, що могло б викликати у читача конфуз. Більшість
+                                    відомих генераторів Lorem Ipsum в Мережі генерують текст шляхом повторення наперед заданих
+                                    послідовностей Lorem Ipsum.
+                                </p>
+                            </div>
+                            <div class="tab-pane" id="info-additional">
+                                <h3 class="tab-content-title">Додаткові умови</h3>
+                                <p class="tab-content-text"> Aле більшість з них зазнала певних змін на кшталт жартівливих вставок
+                                    або змішування слів, які навіть не виглядають правдоподібно.
+                                </p>
+                                <p class="tab-content-text">Принципова відмінність цього генератора робить його першим справжнім
+                                    генератором Lorem Ipsum. Він використовує словник з більш як 200 слів латини та цілий набір
+                                    моделей речень - це дозволяє генерувати Lorem Ipsum, який виглядає осмислено.
+                                </p>
+                            </div>
+                            <div class="tab-pane" id="delivery-volumes">
+                                <h3 class="tab-content-title">Об'єм та доставка</h3>
+                                <p class="tab-content-text">Якщо ви збираєтесь використовувати Lorem Ipsum, ви маєте упевнитись в
+                                    тому, що всередині тексту не приховано нічого, що могло б викликати у читача конфуз. Більшість
+                                    відомих генераторів Lorem Ipsum в Мережі генерують текст шляхом повторення наперед заданих
+                                    послідовностей Lorem Ipsum.
+                                </p>
+                                <p class="tab-content-text">Принципова відмінність цього генератора робить його першим справжнім
+                                    генератором Lorem Ipsum. Він використовує словник з більш як 200 слів латини та цілий набір
+                                    моделей речень - це дозволяє генерувати Lorem Ipsum, який виглядає осмислено.
+                                </p>
+                            </div>
+                            <div class="tab-pane" id="question">
+                                <h3 class="tab-content-title">Питання / відгуки</h3>
+                                <p class="tab-content-text"> Aле більшість з них зазнала певних змін на кшталт жартівливих вставок
+                                    або змішування слів, які навіть не виглядають правдоподібно.
+                                </p>
+                            </div>
+                            <div class="tab-pane" id="calendar">
+                                <h3 class="tab-content-title">Календар</h3>
+            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- START product-tabs-content -->
+                </div>
+            </div>
+            <!-- END content-product-bottom -->
+            
+            <!-- START content-product-modal -->
+            <div class="modal fade full-calendar-modal" id="full-calendar-modal" tabindex="-1" role="dialog"
+                 aria-labelledby="myModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Оберіть дату купівлі товару</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id='full-calendar'></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END content-product-modal -->
+            
+            <!-- START content-product-popover -->
+            <div class="popover-content hidden" id="popoverContent">
+                <div id="calendar-popover" class="calendar-popover">
+                    <div class="calendar-popover-header">
+                        <h3 class="calendar-popover-title">Живий йогурт під замовлення з сезонними
+                            ягодами 2,5%: <span class="calendar-popover-price">24.00 грн</span></h3>
+                        <button type="button" class="close _close">&times;</button>
+                    </div>
+                    <div class="calendar-popover-content clearfix">
+                        <div class="calendar-popover-img">
+                            <img class="popover-img" src="../../images/product-slider/slider-small-3.jpg" alt="">
+                        </div>
+                        <div class="calendar-popover-table product-about-table">
+                            <div class="product-about-tr">
+                                <div class="product-about-td">Кількість</div>
+                                <div class="product-about-td">
+                                    <div class="product-counter">
+                                        <input type="text" name="quantity" value="0" class="qty product-counter-input">
+                                        <span class="qtyplus  product-counter-btn" field="quantity">
+                                            <i class="fa fa-caret-up"></i>
+                                        </span>
+                                        <span class="qtyminus product-counter-btn" field="quantity">
+                                            <i class="fa fa-caret-down"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-about-tr">
+                                <div class="product-about-td">Доставка</div>
+                                <div class="product-about-td">
+                                    <select class="show-select form-control">
+                                        <optgroup>
+                                            <option value="">Нова Пошта</option>
+                                            <option value="">Нова Пошта</option>
+                                            <option value="">Нова Пошта</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calendar-popover-button">
+                        <div class="btn product-about-btn"><i class="fa fa-shopping-basket"></i>Купити</div>
+                    </div>
+                </div>
+            </div>
+            <!-- START content-product-popover -->
+            <!-- END content-product -->
+        </div>
+    </div>
+</section>
+
+<!-- START footer -->
+<footer class="footer-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="footer-general">
+                    <a href="#" class="footer-logo"></a>
+                    <div class="footer-copyright">
+                        2016 © Perehid4 <br>
+                        Всі права захищені
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="footer-contact">
+                    <h3 class="footer-title">Контакти</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <address class="list-item-address"><i class="fa fa-map-marker"></i> Україна <br>
+                                м. Івано-Франківськ, 7600
+                            </address>
+                        </li>
+                        <li class="footer-list-item">
+                            <i class="fa fa-mobile"></i>
+                            <a href="tel:+38(0XX) XXX-XXX-XX" class="footer-list-link">+38(0XX) XXX-XXX-XX</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <i class="fa fa-envelope-o"></i>
+                            <a href="mailto:mail@gmail.com" class="footer-list-link">mail@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="footer-info">
+                    <h3 class="footer-title">Інформація</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Про нас</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Як це працює</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="footer-dovidka">
+                    <h3 class="footer-title">Довідка</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Концепція</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Бізплан</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Кооперація та партнери</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Наука про кооперацію</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Кооперація у світі</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END footer -->
+
+</body>
+
+<!-- START footer -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="../js/lib/bootstrap/bootstrap.min.js"></script>
+<script src="../js/lib/select2/select2.min.js"></script>
+<script src="../js/lib/datepicker/datepicker.js"></script>
+<script src="../js/lib/slick/slick.min.js"></script>
+<script src="../js/lib/moment/moment.min.js"></script>
+<script src="../js/lib/fullcalendar/fullcalendar.min.js"></script>
+<script src="../js/main.js"></script>
+
+<script>
+    $('#sandbox-container .input-daterange').datepicker({
+        language: "uk",
+        format: "dd/mm/yy",
+    });
+
+    $('#header-date .header-date-input').datepicker({
+        language: "uk",
+        format: "dd/mm/yy",
+    });
+
+    $('._select').select2();
+
+    $('._select2').select2({
+        minimumResultsForSearch: Infinity
+    });
+
+    $('#full-calendar-modal').on('shown.bs.modal', function () {
+        $("#full-calendar").fullCalendar('render');
+    });
+
+
+    var date = new Date();
+    var d = date.getDate();
+    var m = date.getMonth();
+    var y = date.getFullYear();
+
+
+    $('#full-calendar').fullCalendar({
+        header: {
+            left: 'today',
+            center: 'prev,title,next',
+            right: 'month,agendaWeek,agendaDay'
+        },
+        events: [{
+            title: 'Lunch',
+            start: new Date(y, m, d, 12, 0),
+            end: new Date(y, m, d, 14, 0),
+            allDay: false
+        }, {
+            title: 'Birthday Party',
+            start: new Date(y, m, d + 1, 19, 0),
+            end: new Date(y, m, d + 1, 22, 30),
+            allDay: false
+        }, {
+            title: 'Birthday Party',
+            start: new Date(y, m, d + 1, 9, 0),
+            end: new Date(y, m, d + 1, 24, 30),
+            allDay: false
+        }, {
+            title: 'Birthday Party',
+            start: new Date(y, m, d + 1, 14, 0),
+            end: new Date(y, m, d + 1, 23, 30),
+            allDay: false
+        }],
+
+        eventRender: function (event, element) {
+            if (!event.url) {
+                element.popover({
+                    content: function () {
+                        return $("#popoverContent").html();
+                    },
+                    placement: 'top',
+                    html: 'true',
+                    container: '#full-calendar-modal'
+                }).on('shown.bs.popover', function () {
+
+                    increment();
+
+                    $('._close').on('click', function () {
+                        $(this).closest('.popover').hide();
+                    });
+                });
+
+                $('body').on('click', function (e) {
+                    if (!element.is(e.target) && element.has(e.target).length === 0 && $('.popover').has(e.target).length === 0)
+                        element.popover('hide');
+                });
+            }
+        }
+    });
+
+</script>
+<!-- END footer -->
+
+</html>
