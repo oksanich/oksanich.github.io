@@ -45,7 +45,7 @@ var config = {
     server: {
         baseDir: './app'
     },
-    startPath: "/html/product-card.html",
+    startPath: "/html/registration.html",
     tunnel: 'oksanych',
     host: 'localhost',
     port: 9000,

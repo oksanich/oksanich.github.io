@@ -29,3 +29,24 @@ select {
     outline: none !important;
   }
 }
+
+.btn {
+  border-radius: 0;
+  color: $white;
+  font-family: $openSansBold;
+  font-size: 1.6rem;
+  padding: 1rem 4rem;
+}
+
+.btn-blue {
+  background: $viking;
+  outline: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:active,
+  &:focus{
+    color: $white;
+    background: darken($viking, 5%);
+  }
+}
