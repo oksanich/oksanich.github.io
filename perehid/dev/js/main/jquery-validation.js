@@ -124,7 +124,7 @@ $(document).ready(function () {
             },
             street: {
                 required: 'Будь-ласка заповніть поле',
-                digits: 'Будь-ласка тільки цифри',
+                lettersonly: 'Будь-ласка тільки букви',
                 minlength: 'Мінімум 2 символи'
             },
             house: {

@@ -1,0 +1,135 @@
+//-------------------------
+// Comments
+//-------------------------
+
+.comments-wrap {
+  margin-bottom: 5rem;
+}
+
+.comments-label {
+  border-bottom: .2rem solid $viking;
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+}
+
+.comments-label-text {
+  font-family: $openSansBold;
+  text-transform: uppercase;
+}
+
+.comments-label-number {
+  color: $nobel;
+  font-size: 1.4rem;
+}
+
+.comments-field-wrap {
+  background: $solitudeSecond;
+  border: .1rem solid $solitude;
+  padding: 3rem 2rem;
+}
+
+.comment-avatar {
+  float: left;
+  width: 7%;
+  margin-right: 3%;
+
+  @media all and (max-width: $lgScreen) {
+    display: none;
+  }
+}
+
+.comment-field {
+  float: left;
+  margin-top: .5rem;
+  width: 65%;
+
+  .form-control {
+    border-radius: 0;
+  }
+
+  @media all and (max-width: $lgScreen) {
+    width: 60%;
+  }
+}
+
+.btn-comment {
+  float: left;
+  height: 4.5rem;
+  margin-top: .5rem;
+  width: 25%;
+
+  @media all and (max-width: $lgScreen) {
+    width: 40%;
+    font-size: 1.4rem;
+    padding: 1rem .5rem;
+  }
+}
+
+.comments-content {
+  border: .1rem solid $solitude;
+  border-top: none;
+  padding: 2rem;
+}
+
+.comment-avatar-img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.comment-name {
+  font-size: 1.6rem;
+  font-family: $openSansBold;
+  margin-right: 1rem;
+
+  @media all and (max-width: $smScreen) {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+.comment-wrap {
+  margin-bottom: 3rem;
+}
+
+.comment-date {
+  font-size: 1.4rem;
+}
+
+.comment-top {
+  margin-bottom: 1rem;
+}
+
+.comment-text {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.comment-content {
+  float: left;
+  width: 90%;
+}
+
+.comment-bottom {
+  font-size: 1.2rem;
+}
+
+.comment-add-subcomment-text {
+  margin-right: 1rem;
+}
+
+.comment-add-subcomment-text,
+.comment-add-rating-text {
+  color: $trout;
+  cursor: pointer;
+
+  &:hover {
+    color: $viking;
+
+  }
+}
+
+.comment-sub-wrap {
+  margin-left: 10%;
+}

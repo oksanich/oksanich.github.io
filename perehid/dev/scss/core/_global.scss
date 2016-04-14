@@ -45,8 +45,30 @@ select {
 
   &:hover,
   &:active,
-  &:focus{
+  &:focus {
     color: $white;
     background: darken($viking, 5%);
   }
+}
+
+.btn-add-news {
+  border: .1rem solid $nobel;
+  border-radius: 3rem;
+  color: $trout;
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1rem 2rem .75rem;
+  text-transform: uppercase;
+
+
+  &:hover {
+    border: .1rem solid $viking;
+    color: $viking;
+    cursor: pointer;
+
+  }
+}
+
+.btn-default{
+  color: $trout;
 }

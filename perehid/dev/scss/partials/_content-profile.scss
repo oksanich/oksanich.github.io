@@ -1,0 +1,169 @@
+//-------------------------
+// Content-profile
+//-------------------------
+
+.section-tab-wrap {
+  position: relative;
+  margin: 2rem 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  .nav-tabs {
+    border-bottom: none;
+  }
+
+  .tab-content {
+    border: .1rem solid $solitude;
+    padding: 3rem 2rem;
+  }
+
+  .tab-nav-text {
+    color: $trout;
+    font-size: 1.6rem;
+    font-family: $openSansBold;
+    text-transform: uppercase;
+  }
+
+  .tab-nav-number {
+    color: $nobel;
+    font-size: 1.6rem;
+  }
+
+  .tab-nav-item {
+
+    .tab-nav-item-link {
+      border: none;
+      border-bottom: .2rem solid transparent;
+      border-radius: 0;
+
+      &:hover {
+        background: none;
+      }
+    }
+
+    &.active {
+      .tab-nav-item-link {
+        border: none;
+        border-bottom: .2rem solid $viking;
+      }
+    }
+
+    @media all and (max-width: $mdScreen) {
+      float: none;
+    }
+  }
+
+  .btn-add-news {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+
+    @media all and (max-width: $lgScreen) {
+      font-size: 1rem;
+      margin-top: 1rem;
+      position: relative;
+    }
+  }
+
+  .tab-view-all {
+    color: $trout;
+    font-size: 1.4rem;
+
+    .fa {
+      color: $heather;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      color: $viking;
+      text-decoration: none;
+
+      .fa {
+        color: $viking;
+      }
+    }
+  }
+
+  .product-title-link {
+    font-size: 1.6rem;
+    max-height: 1.6rem;
+  }
+
+  .news-wrap {
+    margin-bottom: 2rem;
+  }
+
+  .news-img-wrap {
+    float: left;
+    width: 25%;
+    margin-right: 5%;
+    position: relative;
+
+    .news-img {
+      max-width: 100%;
+    }
+
+    .news-img-date {
+      background: $blackOpacity;
+      border: .2rem solid $white;
+      box-sizing: border-box;
+      color: $white;
+      height: 5rem;
+      left: calc(50% - 2.5rem);
+      padding: .55rem 0;
+      position: absolute;
+      text-align: center;
+      top: calc(50% - 2.5rem);
+      font-family: $openSansBold;
+      width: 5rem;
+    }
+
+    .news-img-date-number {
+      font-size: 1.6rem;
+
+    }
+
+    .news-img-date-month {
+      font-size: 1.4rem;
+    }
+  }
+
+  .news-about {
+    float: left;
+    width: 70%;
+    margin: 0.75rem 0;
+
+    @media all and (max-width: $smScreen) {
+      margin: 0;
+    }
+  }
+
+  .news-about-title {
+    color: $trout;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-family: $openSansBold;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    max-height: 3.8rem;
+    overflow: hidden;
+
+    &:hover {
+      color: $viking;
+    }
+  }
+
+  .news-about-preview {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    max-height: 3.2rem;
+    overflow: hidden;
+  }
+}
+
+// Content-profile-rating
+//-------------------------
+

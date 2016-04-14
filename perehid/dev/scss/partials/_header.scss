@@ -87,6 +87,7 @@
 
 .header-middle {
   padding: 3rem 0 1rem;
+  text-transform: uppercase;
 
   .navbar-brand {
     padding: 0 1.5rem;
@@ -429,13 +430,52 @@
   }
 }
 
+// Header-bottom
+//-------------------------
 
+.header-bottom-profile {
+  background: url("../images/header-profile-bg.jpg") no-repeat/cover;
+  height: 25rem;
+  object-fit: cover;
+  o-object-fit: cover;
+  position: relative;
+  margin-bottom: 3rem;
 
+  @media all and (max-width: $smScreen) {
+    height: 100%;
+    margin-bottom: 5rem;
+  }
+}
 
+.header-bottom-nav-wrap {
+  background: $whiteOpacity;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 
+  .header-middle {
+    padding: 1rem 0;
+  }
 
+  @media all and (max-width: $smScreen) {
+    position: relative;
+    z-index: 10000;
+  }
+}
 
+.header-bottom-nav {
+  @media all and (max-width: $smScreen) {
+    padding: 0 2rem;
 
+    .navbar-nav {
+      margin: 1rem 0;
+    }
+
+    .header-middle-nav-link {
+      border-bottom: .1rem solid $ghost!important;
+    }
+  }
+}
 
 
 

@@ -323,11 +323,18 @@
     }
   }
 
-  .fc-center {
+  .fc-center,
+  .fc-left {
     h2 {
       display: inline-block;
       font-size: 2.4rem;
       vertical-align: middle;
+    }
+  }
+
+  .fc-left {
+    h2 {
+      margin-top: .5rem;
     }
   }
 
@@ -388,7 +395,7 @@
   width: 30%;
 }
 
-.calendar-popover-table{
+.calendar-popover-table {
   float: left;
   width: 70%;
 }
@@ -398,8 +405,8 @@
   width: 9rem;
 }
 
-.product-about-td{
-  &:last-child{
+.product-about-td {
+  &:last-child {
     //display: none;
   }
 }
