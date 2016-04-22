@@ -499,7 +499,7 @@
 
 </body>
 
-<!-- START footer -->
+<!-- START scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="../js/lib/bootstrap/bootstrap.min.js"></script>
 <script src="../js/lib/select2/select2.min.js"></script>
@@ -513,6 +513,11 @@
 
 <script>
     $('#sandbox-container .input-daterange').datepicker({
+        language: "uk",
+        format: "dd/mm/yy",
+    });
+
+    $('.input-date-wrap').datepicker({
         language: "uk",
         format: "dd/mm/yy",
     });
@@ -623,6 +628,6 @@
     });
 
 </script>
-<!-- END footer -->
+<!-- END scripts -->
 
 </html>

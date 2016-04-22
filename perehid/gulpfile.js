@@ -45,7 +45,7 @@ var config = {
     server: {
         baseDir: './app'
     },
-    startPath: "/html/profile.html",
+    startPath: "/html/organization-theme.html",
     tunnel: 'oksanych',
     host: 'localhost',
     port: 9000,

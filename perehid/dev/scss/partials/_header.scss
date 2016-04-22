@@ -338,30 +338,6 @@
   padding: 2rem 1rem;
 }
 
-.custom-checkbox {
-  padding: .5rem 2rem;
-
-  [type='checkbox'] {
-    display: none;
-  }
-
-  [type='checkbox']:checked {
-    + .custom-checkbox-wrap {
-      .custom-checkbox-square {
-        background: $viking;
-      }
-    }
-  }
-
-  .custom-checkbox-square {
-    border: .2rem solid $ghost;
-    display: inline-block;
-    height: 1.5rem;
-    vertical-align: bottom;
-    width: 1.5rem;
-  }
-}
-
 .header-region-section {
   float: left;
 }
@@ -472,9 +448,13 @@
     }
 
     .header-middle-nav-link {
-      border-bottom: .1rem solid $ghost!important;
+      border-bottom: .1rem solid $ghost !important;
     }
   }
+}
+
+.header-bottom-organization {
+  background: url("../images/header-organization-bg.jpg") no-repeat/cover;
 }
 
 

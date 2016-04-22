@@ -12,6 +12,7 @@
   .form-label {
     display: inline-block;
     font-size: 1.8rem;
+    line-height: 1.2;
     margin-bottom: 2rem;
   }
 
@@ -56,6 +57,7 @@
   .custom-checkbox-text {
     color: $trout;
     font-size: 1.4rem;
+    line-height: 1.2;
   }
 
   .forgot-link {
@@ -93,7 +95,109 @@
     bottom: -2rem;
     color: $burntSienna;
     font-size: 1.4rem;
+    left: 0;
     margin-left: 0rem;
     position: absolute;
   }
+
+  .form-control {
+    &.error {
+      .custom-checkbox-text {
+        color: $burntSienna;
+      }
+    }
+  }
+
+  option {
+    color: darken($solitude, 10%);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .form-control-textarea{
+    border-radius: 0;
+    height: 15rem;
+    resize: none;
+  }
+  
+  .form-group-textarea-bottom,
+  .form-group-textarea-top{
+    background: $solitudeSecond;
+    border: .1rem solid $solitude;
+    border-top: none;
+    height: 4rem;
+  }
+
+  .form-group-textarea-top{
+    border-top: .1rem solid $solitude;
+    border-bottom: none;
+  }
+
+  .form-group-textarea-top{
+    @media all and (max-width: $mdScreen) {
+      height: 100%;
+    }
+  }
+}
+
+.custom-checkbox {
+  padding: .5rem 2rem;
+
+  [type='checkbox'] {
+    position: absolute;
+    visibility: hidden;
+    z-index: -10;
+
+    &.error {
+      ~ .custom-checkbox-wrap {
+        .custom-checkbox-text {
+          color: $burntSienna;
+        }
+      }
+    }
+  }
+
+  [type='checkbox']:checked {
+    ~ .custom-checkbox-wrap {
+      .custom-checkbox-square {
+        background: $viking;
+      }
+    }
+  }
+
+  .custom-checkbox-square {
+    border: .2rem solid $ghost;
+    display: inline-block;
+    height: 1.5rem;
+    vertical-align: bottom;
+    width: 1.5rem;
+  }
+}
+
+.custom-radio-button {
+
+  [type='radio'] {
+    display: none;
+  }
+
+  [type='radio']:checked {
+    ~ .custom-radio-button-wrap {
+      .custom-radio-button-circle {
+        background: $viking;
+      }
+    }
+  }
+
+  .custom-radio-button-circle {
+    border: .2rem solid $ghost;
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: inline-block;
+    height: 1.6rem;
+    position: relative;
+    vertical-align: bottom;
+    width: 1.6rem;
+  }
+
 }

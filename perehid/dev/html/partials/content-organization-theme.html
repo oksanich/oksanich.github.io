@@ -1,0 +1,213 @@
+<div class="col-sm-7 col-md-8 col-lg-9" 1>
+    <div class="section-tab-wrap">
+        <!--START Nav-tabs -->
+        <div class="nav-tabs-wrap">
+            <ul class="nav nav-tabs tab-nav-list" role="tablist">
+                <li role="presentation" class="tab-nav-item active">
+                    <a href="#tab-1" aria-controls="tab-1" role="tab" data-toggle="tab" class="tab-nav-item-link">
+                        <span class="tab-nav-text">Створення теми для обговорення</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--END Nav-tabs -->
+
+        <!-- START Tab-panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="tab-1">
+                <div class="organization-theme-wrap">
+                    <form action="" class="form-global">
+
+                        <fieldset class="form-group">
+                            <label for="title" class="form-label">Заголовок</label>
+                            <input type="text" class="form-control" id="title" name="title"
+                                   placeholder="Введіть заголовок теми">
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                            <label class="form-label">Тип</label>
+                            <div class="custom-radio-button">
+                                <input type="radio" class="form-control" id="type1" name="type" checked>
+                                <label for="type1" class="custom-radio-button-wrap">
+                                    <span class="custom-radio-button-circle"></span>
+                                    <span class="custom-radio-button-text">Необов’язкове</span>
+                                </label>
+                            </div>
+                            <div class="custom-radio-button">
+                                <input type="radio" class="form-control" id="type2" name="type">
+                                <label for="type2" class="custom-radio-button-wrap">
+                                    <span class="custom-radio-button-circle"></span>
+                                    <span class="custom-radio-button-text">Обов’язкове, відкрите</span>
+                                </label>
+                            </div>
+                            <div class="custom-radio-button">
+                                <input type="radio" class="form-control" id="type3" name="type">
+                                <label for="type3" class="custom-radio-button-wrap">
+                                    <span class="custom-radio-button-circle"></span>
+                                    <span class="custom-radio-button-text">За запрошенням</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                            <label class="form-label">Опис</label>
+                            <div class="form-group-textarea-wrap">
+                                <div class="form-group-textarea-top clearfix">
+                                    <div class="textarea-top-block">
+                                        <span class="textarea-top-icons">
+                                            <span class="textarea-icons-block">
+                                                <span class="textarea-icon">
+                                                    <i class="fa fa-reply-all"></i>
+                                                </span>
+                                                <span class="textarea-icon">
+                                                    <i class="fa fa-reply"></i>
+                                                </span>
+                                                <span class="textarea-icon">
+                                                    <i class="fa fa-share"></i>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="textarea-top-icons">
+                                            <span class="textarea-icons-block">
+                                                <span class="textarea-icon">
+                                                    <span class="textarea-icon-text">Formats</span>
+                                                    <i class="fa fa-caret-down"></i>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="textarea-top-icons">
+                                            <span class="textarea-icons-block">
+                                                <span class="textarea-icon">
+                                                    <i class="fa fa-bold"></i>
+                                                </span>
+                                                <span class="textarea-icon">
+                                                    <i class="fa fa-italic"></i>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="textarea-top-block">
+                                        <span class="textarea-top-icons">
+                                            <span class="textarea-icons-block">
+                                                <span class="textarea-icon">
+                                                    <i class="fa fa-align-left"></i>
+                                                </span>
+                                                <span class="textarea-icon">
+                                                    <i class="fa fa-align-center"></i>
+                                                </span>
+                                                <span class="textarea-icon">
+                                                    <i class="fa fa-bars"></i>
+                                                </span>
+                                                <span class="textarea-icon">
+                                                    <i class="fa fa-align-justify"></i>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="textarea-top-icons">
+                                            <span class="textarea-icons-block">
+                                                <span class="textarea-icon">
+                                                    <i class="fa fa-list"></i>
+                                                    <i class="fa fa-caret-down"></i>
+                                                </span>
+                                                <span class="textarea-icon">
+                                                    <i class="fa fa-list-ol"></i>
+                                                    <i class="fa fa-caret-down"></i>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="textarea-top-icons">
+                                            <span class="textarea-icons-block">
+                                                <span class="textarea-icon">
+                                                    <i class="fa fa-link"></i>
+                                                </span>
+                                                <span class="textarea-icon">
+                                                    <i class="fa fa-picture-o"></i>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <textarea name="" id="" class="form-control form-control-textarea"></textarea>
+                                <div class="form-group-textarea-bottom"></div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                            <label class="form-label">Початок обговорення</label>
+                                    <span class="input-date-wrap">
+                                        <input type="text" class="form-control" name="start"
+                                               placeholder="Оберіть початкову дату">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                    <span class="input-time-wrap">
+                                        <input type="text" class="form-control" onfocus="(this.type='time')"
+                                               placeholder="Введіть час початку">
+                                        <i class="fa fa-clock-o"></i>
+                                    </span>
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                            <label class="form-label">Кінець обговорення</label>
+                                    <span class="input-date-wrap">
+                                        <input type="text" class="form-control" name="end"
+                                               placeholder="Оберіть кінцеву дату">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                    <span class="input-time-wrap">
+                                        <input type="text" class="form-control" onfocus="(this.type='time')"
+                                               placeholder="Введіть час закінчення">
+                                        <i class="fa fa-clock-o"></i>
+                                    </span>
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                            <label class="form-label">Конфіденційність</label>
+                            <div class="custom-radio-button">
+                                <input type="radio" class="form-control" id="type4" name="type1" checked>
+                                <label for="type4" class="custom-radio-button-wrap">
+                                    <span class="custom-radio-button-circle"></span>
+                                    <span class="custom-radio-button-text">Доступна для всіх</span>
+                                </label>
+                            </div>
+                            <div class="custom-radio-button">
+                                <input type="radio" class="form-control" id="type5" name="type1">
+                                <label for="type5" class="custom-radio-button-wrap">
+                                    <span class="custom-radio-button-circle"></span>
+                                    <span class="custom-radio-button-text">Прихована тема обговорення</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                            <label class="form-label">Статус</label>
+                            <div class="custom-radio-button">
+                                <input type="radio" class="form-control" id="type6" name="type2" checked>
+                                <label for="type6" class="custom-radio-button-wrap">
+                                    <span class="custom-radio-button-circle"></span>
+                                    <span class="custom-radio-button-text">Завершена</span>
+                                </label>
+                            </div>
+                            <div class="custom-radio-button">
+                                <input type="radio" class="form-control" id="type7" name="type2">
+                                <label for="type7" class="custom-radio-button-wrap">
+                                    <span class="custom-radio-button-circle"></span>
+                                    <span class="custom-radio-button-text">Продовжується</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="organization-theme-bottom clearfix">
+                            <button type="submit" class="btn btn-border pull-right">
+                                <i class="fa fa-save"></i>
+                                <span class="btn-border-text">Зберегти</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- END Tab-panes -->
+    </div>
+</div>
+
+

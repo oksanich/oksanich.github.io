@@ -1,0 +1,1099 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Perehid 4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA5CAYAAACMGIOFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OEM5NjFCOENFNjAzMTFFNThGNTBDOTQxRjAzNDhBQzciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OEM5NjFCOERFNjAzMTFFNThGNTBDOTQxRjAzNDhBQzciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDQUI3NDY3RkU2MDIxMUU1OEY1MEM5NDFGMDM0OEFDNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDQUI3NDY4MEU2MDIxMUU1OEY1MEM5NDFGMDM0OEFDNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PrJiprQAAAIoSURBVHja7Jk7SwNBFIVnJRCLCAEbH5VipbZiWhEsJIUIPhotxc7EUhuxiKIowVSp0koKSeHjB+gP0NpC/Q2CKAjxXhw789h7dmYnyRw4JLCZ7HyZmzOPDer1umqktfunxhdluiFn+U25VAzbdor8SE78dzFdrQSNGvYpe/ok54H2540AW8km5Cn5Wdh2ibwgvbEtyBfysbBtUv9AynXIXfKHsC2X+ITrkBw2NWHbIfIe2gHTkGjYcIkPuA6JhM0MeTOKTpiEfAXChue8C/3qNGQeCJsNciaqjpiCvAXCJkUuRNkZE5Bf5BzQntN01HXIEyBsxsA0tgKJhM3f+rTfdUgkbOb0GlW5DImETUJPGcplSDRstsjTrkMiYTNIPjS57IoCEg2bAw3qNCQSNlyi26a3QSgkEjasovRIwxYkGjY8Xczb2LEjkOKwKZeKST3xK5ch38CwyeslnNOQOWnY0CiO0Mu+sijJn/4ODJuC3k61o3fyt21IDpsd6c1oFDMhjzQWyQ+2y1V8ZkOAgZ4yAmVZYSA5bI6Ae/EIzqoYFAYSCZsU+ANZgUTDhtN02GVINGzGTRxpRA2JHBCzztTvQ5vYFLR4CMvbqElgl9FshCP9vnS1Ip4ncyYAW3XKdrnWVBeoT/WAmv4nu0U9MZIe0kN6SA9pXU1XPNnl9Y4Bub66FC/r4p5EA1+uHrL9co1b1RCfXe1UyBVfrh7SQ3pID+khY9SPAAMAJWpt9psyt2MAAAAASUVORK5CYII=" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+
+<body>
+
+<!-- START header -->
+<header class="header-main">
+
+    <!-- START header-top -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row hidden-xs">
+                <!-- START header-top social -->
+                <div class="col-sm-3 col-md-2">
+                    <div class="social">
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="fa fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="fa fa-vk"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END header-top social -->
+
+                <!-- START header-top menu -->
+                <div class="col-sm-6 col-md-5 col-lg-4 col-sm-offset-3 col-md-offset-5 col-lg-offset-6 clearfix">
+                    <div class="header-top-nav">
+                        <ul class="header-top-nav-list">
+                            <li class="header-top-nav-item">
+                                <a href="#" class="header-top-nav-link">Новини</a>
+                            </li>
+                            <li class="header-top-nav-item">
+                                <a href="#" class="header-top-nav-link">Про нас</a>
+                            </li>
+                            <li class="header-top-nav-item">
+                                <a href="#" class="header-top-nav-link">Історія</a>
+                            </li>
+                            <li class="header-top-nav-item">
+                                <a href="#" class="header-top-nav-link">Довідка</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="switch-language">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">UK <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Українська</a></li>
+                                    <li><a href="#">Російська</a></li>
+                                    <li><a href="#">Англійська</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END header-top menu -->
+            </div>
+        </div>
+    </div>
+    <!-- END header-top -->
+
+    <!-- START header-middle -->
+    <div class="header-middle">
+        <div class="container">
+            <div class="row">
+                <nav class="header-middle-nav navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">
+                                <img class="header-logo" src="../images/perehid4-logo.png" alt="">
+                            </a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="header-middle-nav-list nav navbar-nav navbar-right">
+                                <li class="header-middle-nav-item dropdown">
+                                    <a href="#" class="header-middle-nav-link dropdown-toggle "
+                                       data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Товари пропоную<span
+                                            class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Тест</a></li>
+                                        <li><a href="#">Тест</a></li>
+                                        <li><a href="#">Тест</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header-middle-nav-item dropdown">
+                                    <a href="#" class="header-middle-nav-link dropdown-toggle" data-toggle="dropdown"
+                                       role="button"
+                                       aria-haspopup="true" aria-expanded="false">Послуги <span
+                                            class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Тест</a></li>
+                                        <li><a href="#">Тест</a></li>
+                                        <li><a href="#">Тест</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header-middle-nav-item dropdown">
+                                    <a href="#" class="header-middle-nav-link dropdown-toggle" data-toggle="dropdown"
+                                       role="button"
+                                       aria-haspopup="true" aria-expanded="false">Послуги <span
+                                            class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Тест</a></li>
+                                        <li><a href="#">Тест</a></li>
+                                        <li><a href="#">Тест</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header-middle-nav-item dropdown">
+                                    <a href="#" class=" header-middle-nav-link dropdown-toggle"
+                                       data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Послуги <span
+                                            class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Тест</a></li>
+                                        <li><a href="#">Тест</a></li>
+                                        <li><a href="#">Тест</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header-middle-nav-item">
+                                    <a class="header-middle-nav-link" href="#">Користувачі</a>
+                                </li>
+                                <li class="header-middle-nav-item dropdown">
+                                    <a href="#" class=" header-middle-nav-link dropdown-toggle"
+                                       data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <span class="cart-product-number">2</span>
+                                    </a>
+                                    <div class="dropdown-menu header-middle-cart">
+                                        <div class="cart-dropdown-top clearfix">
+                                            <div class="cart-dropdown-product-number">2 товари</div>
+                                            <div class="cart-dropdown-product-price">1000 грн</div>
+                                        </div>
+                                        <div class="cart-dropdown">
+                                            <div class="cart-dropdown-body">
+                                                <div class="cart-dropdown-product clearfix">
+                                                    <i class="fa fa-close"></i>
+                                                    <div class="cart-dropdown-product-img">
+
+                                                    </div>
+
+                                                    <div class="wrap-cart-product-review">
+                                                        <a href="#" class="cart-product-title-link">ASKHOLMEN
+                                                            підставка для
+                                                            вазонів дерев’яна...</a>
+                                                        <div class="wrap-cart-product-price">
+                                                            <span class="cart-product-price">500 грн.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-dropdown">
+                                            <div class="cart-dropdown-body">
+                                                <div class="cart-dropdown-product clearfix">
+                                                    <i class="fa fa-close"></i>
+                                                    <div class="cart-dropdown-product-img">
+
+                                                    </div>
+
+                                                    <div class="wrap-cart-product-review">
+                                                        <a href="#" class="cart-product-title-link">ASKHOLMEN
+                                                            підставка для
+                                                            вазонів дерев’яна...</a>
+                                                        <div class="wrap-cart-product-price">
+                                                            <span class="cart-product-price">500 грн.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-dropdown-buttons clearfix">
+                                            <button class="add-favorite product-button">До кошику</button>
+                                            <button class="add-cart product-button">Розрахувати</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header-middle-nav-enter">
+                                    <a class="header-button-enter" href="#">
+                                        <i class="fa fa-user"></i>
+                                        Вхід
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+
+            </div>
+        </div>
+    </div>
+    <!-- END header-middle -->
+</header>
+<!-- END header -->
+
+<!-- START header-bottom-organization -->
+<div class="header-bottom-profile header-bottom-organization">
+    <div class="header-bottom-nav-wrap">
+        <div class="header-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="">
+                        <div class="header-bottom-nav">
+                            <div class="navbar-default">
+                                <ul class="header-middle-nav-list nav navbar-nav navbar-right">
+                                    <li class="header-middle-nav-item dropdown">
+                                        <a href="#" class="header-middle-nav-link dropdown-toggle "
+                                           data-toggle="dropdown" role="button"
+                                           aria-haspopup="true" aria-expanded="false">Товари пропоную<span
+                                                class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Тест</a></li>
+                                            <li><a href="#">Тест</a></li>
+                                            <li><a href="#">Тест</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header-middle-nav-item dropdown">
+                                        <a href="#" class="header-middle-nav-link dropdown-toggle"
+                                           data-toggle="dropdown"
+                                           role="button"
+                                           aria-haspopup="true" aria-expanded="false">Послуги <span
+                                                class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Тест</a></li>
+                                            <li><a href="#">Тест</a></li>
+                                            <li><a href="#">Тест</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header-middle-nav-item dropdown">
+                                        <a href="#" class="header-middle-nav-link dropdown-toggle"
+                                           data-toggle="dropdown"
+                                           role="button"
+                                           aria-haspopup="true" aria-expanded="false">Технології <span
+                                                class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Тест</a></li>
+                                            <li><a href="#">Тест</a></li>
+                                            <li><a href="#">Тест</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header-middle-nav-item dropdown">
+                                        <a href="#" class=" header-middle-nav-link dropdown-toggle"
+                                           data-toggle="dropdown" role="button"
+                                           aria-haspopup="true" aria-expanded="false">Інвестиції <span
+                                                class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Тест</a></li>
+                                            <li><a href="#">Тест</a></li>
+                                            <li><a href="#">Тест</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header-middle-nav-item">
+                                        <a class="header-middle-nav-link" href="#">обговорення</a>
+                                    </li>
+                                    <li class="header-middle-nav-item dropdown">
+                                        <a href="#" class=" header-middle-nav-link dropdown-toggle"
+                                           data-toggle="dropdown" role="button"
+                                           aria-haspopup="true" aria-expanded="false">більше <span
+                                                class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Тест</a></li>
+                                            <li><a href="#">Тест</a></li>
+                                            <li><a href="#">Тест</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END header-bottom-organization -->
+
+
+<section class="content-main">
+    <div class="container">
+        <div class="row">
+            <!-- START sidebar-organization -->
+            <div class="sidebar-position">
+                <div class="col-sm-5 col-md-4 col-lg-3">
+                    <div class="profile-info-wrap sidebar-section">
+                        <div class="profile-info-img">
+                            <img class="profile-img" src="../images/organization-avatar.jpg" alt="">
+                        </div>
+                        <div class="profile-info">
+                            <div class="profile-info-name">
+                                <div class="profile-info-name-text">mES10 організація і ведення
+                                    тюльпанного бізнесу
+                                </div>
+                            </div>
+                            <ul class="profile-info-list">
+                                <li class="profile-info-item">
+                                    <i class="fa fa-mobile"></i>
+                                    <span class="profile-info-text">
+                                        <a href="tel:+3 099  555 55 65" class="profile-info-link">+3 (099) 555 55 65</a>
+                                    </span>
+                                </li>
+                                <li class="profile-info-item">
+                                    <i class="fa fa-mobile"></i>
+                                    <span class="profile-info-text">
+                                        <a href="tel:+3 099  555 55 75" class="profile-info-link">+3 (099) 555 55 75</a>
+                                    </span>
+                                </li>
+                                <li class="profile-info-item">
+                                    <i class="fa fa-fax"></i>
+                                    <span class="profile-info-text">
+                                        <a href="tel:+3 099  555 55 25" class="profile-info-link">+3 (099) 555 55 25</a>
+                                    </span>
+                                </li>
+                                <li class="profile-info-item">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <span class="profile-info-text">
+                                        <a href="mailto:mes10@gmail.com" class="profile-info-link">mes10@gmail.com</a>
+                                    </span>
+                                </li>
+                                <li class="profile-info-item">
+                                    <i class="fa fa-link"></i>
+                                    <span class="profile-info-text">
+                                        <a href="www.mes10.com" class="profile-info-link">www.mes10.com</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="sidebar-section sidebar-rating">
+                        <div class="sidebar-comment clearfix">
+                            <div class="sidebar-comment-text" data-toggle="modal" data-target="#modal-private-user">Стати власником</div>
+                            <div class="sidebar-comment-icon">
+                                <i class="fa fa-user-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-section sidebar-discussions">
+                        <div class="sidebar-title-wrap">
+                            <h3 class="sidebar-title">Обговорення</h3>
+                            <span class="sidebar-title-separator">&#8226;</span>
+                            <span class="sidebar-title-number">36</span>
+                            <i class="fa fa-caret-down"></i>
+                        </div>
+                        <div class="sidebar-section-discussion clearfix">
+                            <div class="sidebar-discussions-theme">
+                                <a href="" class="discussions-theme-link">Тема обговорення порядку денного</a>
+                                <p class="discussions-theme-about">Сенс використання Lorem Ipsum полягає в тому, що цей текст
+                                    має більш-менш нормальне виді ...</p>
+                                <div class="discussions-theme-dates">
+                                    <span class="discussions-theme-from">03.08.2015, 16:03</span>
+                                    <span class="discussions-theme-separator">-</span>
+                                    <span class="discussions-theme-to">18.03.2016, 12:34</span>
+                                </div>
+                                <div class="sidebar-discussions-theme-author">
+                                    <img src="../images/discussion-avatar.jpg" alt="" class="discussions-theme-author-avatar">
+                                    <span class="discussions-theme-author-name">Людмила Белиш</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-section-discussion clearfix">
+                            <div class="sidebar-discussions-theme">
+                                <a href="" class="discussions-theme-link">Тема обговорення порядку денного</a>
+                                <p class="discussions-theme-about">Сенс використання Lorem Ipsum полягає в тому, що цей текст
+                                    має більш-менш нормальне виді ...</p>
+                                <div class="discussions-theme-dates">
+                                    <span class="discussions-theme-from">03.08.2015, 16:03</span>
+                                    <span class="discussions-theme-separator">-</span>
+                                    <span class="discussions-theme-to">18.03.2016, 12:34</span>
+                                </div>
+                                <div class="sidebar-discussions-theme-author">
+                                    <img src="../images/discussion-avatar.jpg" alt="" class="discussions-theme-author-avatar">
+                                    <span class="discussions-theme-author-name">Людмила Белиш</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-section-discussion clearfix">
+                            <div class="sidebar-discussions-theme">
+                                <a href="" class="discussions-theme-link">Тема обговорення сягла більшої
+                                    кількості симовлів одного рядка</a>
+                                <p class="discussions-theme-about">Сенс використання Lorem Ipsum полягає в тому, що цей текст
+                                    має більш-менш нормальне виді ...</p>
+                                <div class="discussions-theme-dates">
+                                    <span class="discussions-theme-from">03.08.2015, 16:03</span>
+                                    <span class="discussions-theme-separator">-</span>
+                                    <span class="discussions-theme-to">18.03.2016, 12:34</span>
+                                </div>
+                                <div class="sidebar-discussions-theme-author">
+                                    <img src="../images/discussion-avatar.jpg" alt="" class="discussions-theme-author-avatar">
+                                    <span class="discussions-theme-author-name">Людмила Белиш</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-section sidebar-friends">
+                        <div class="sidebar-title-wrap">
+                            <h3 class="sidebar-title">Учасники</h3>
+                            <span class="sidebar-title-separator">&#8226;</span>
+                            <span class="sidebar-title-number">328</span>
+                            <i class="fa fa-caret-down"></i>
+                            <div class="sidebar-section-images clearfix">
+                                <div class="sidebar-section-img-wrap-small">
+                                    <img src="../images/friends/friend-1.jpg" alt="" class="sidebar-section-img-small">
+                                    <div class="section-img-title-link-wrap">
+                                        <a href="#" class="section-img-title-link">
+                                            Іван
+                                            Загородній
+                                            <span class="friend-online"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="sidebar-section-img-wrap-small">
+                                    <img src="../images/friends/friend-1.jpg" alt="" class="sidebar-section-img-small">
+                                    <div class="section-img-title-link-wrap">
+                                        <a href="#" class="section-img-title-link">
+                                            Марія
+                                            Стополя
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="sidebar-section-img-wrap-small">
+                                    <img src="../images/friends/friend-1.jpg" alt="" class="sidebar-section-img-small">
+                                    <div class="section-img-title-link-wrap">
+                                        <a href="#" class="section-img-title-link">
+                                            Іван
+                                            Загородній
+                                            <span class="friend-online"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="sidebar-section-img-wrap-small">
+                                    <img src="../images/friends/friend-1.jpg" alt="" class="sidebar-section-img-small">
+                                    <div class="section-img-title-link-wrap">
+                                        <a href="#" class="section-img-title-link">
+                                            Іван
+                                            Загородній
+                                            <span class="friend-online"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="sidebar-section-img-wrap-small">
+                                    <img src="../images/friends/friend-1.jpg" alt="" class="sidebar-section-img-small">
+                                    <div class="section-img-title-link-wrap">
+                                        <a href="#" class="section-img-title-link">
+                                            Іван
+                                            Загородній
+                                            <span class="friend-online"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="sidebar-section-img-wrap-small">
+                                    <img src="../images/friends/friend-1.jpg" alt="" class="sidebar-section-img-small">
+                                    <div class="section-img-title-link-wrap">
+                                        <a href="#" class="section-img-title-link">
+                                            Іван
+                                            Загородній
+                                            <span class="friend-online"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="sidebar-section-img-wrap-small">
+                                    <img src="../images/friends/friend-1.jpg" alt="" class="sidebar-section-img-small">
+                                    <div class="section-img-title-link-wrap">
+                                        <a href="#" class="section-img-title-link">
+                                            Іван
+                                            Загородній
+                                            <span class="friend-online"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="sidebar-section-img-wrap-small">
+                                    <img src="../images/friends/friend-1.jpg" alt="" class="sidebar-section-img-small">
+                                    <div class="section-img-title-link-wrap">
+                                        <a href="#" class="section-img-title-link">
+                                            Іван
+                                            Загородній
+                                            <span class="friend-online"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="sidebar-section-img-wrap-small">
+                                    <img src="../images/friends/friend-1.jpg" alt="" class="sidebar-section-img-small">
+                                    <div class="section-img-title-link-wrap">
+                                        <a href="#" class="section-img-title-link">
+                                            Іван
+                                            Загородній
+                                            <span class="friend-online"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END sidebar-organization -->
+
+            <!-- START content-organization-discussion -->
+            <div class="col-sm-7 col-md-8 col-lg-9">
+                <div class="section-tab-wrap">
+                    <!--START Nav-tabs -->
+                    <div class="nav-tabs-wrap">
+                        <span class="btn-add-news">
+                            <i class="fa fa-plus"></i>
+                            <span class="add-news-text">додати новину</span>
+                        </span>
+                        <ul class="nav nav-tabs tab-nav-list" role="tablist">
+                            <li role="presentation" class="tab-nav-item active">
+                                <a href="#tab-1" aria-controls="tab-1" role="tab" data-toggle="tab" class="tab-nav-item-link">
+                                    <span class="tab-nav-text">новини</span>
+                                    <span class="tab-nav-separator">•</span>
+                                    <span class="tab-nav-number">7</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--END Nav-tabs -->
+            
+                    <!-- START Tab-panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="tab-1">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="section-discussion">
+                                        <div class="discussion-btn-wrap">
+                                            <div class="btn btn-blue">Продовжено</div>
+                                        </div>
+                                        <a href="#" class="discussions-theme-link">Тема обговорення порядку
+                                            денного
+                                        </a>
+                                        <p class="discussions-theme-about">Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном "lorem ipsum" відкриє багато веб-сайтів, які знаходяться ще в зародковому
+                                            стані.</p>
+            
+                                        <div class="sidebar-discussions-theme-author clearfix">
+                                            <img src="../images/discussion-avatar.jpg" alt="" class="discussions-theme-author-avatar">
+                                            <div class="discussions-details">
+                                                <div class="discussions-theme-author-name">Людмила Белиш</div>
+                                                <span class="discussions-details-text">створено:</span>
+                                                <span class="discussions-theme-from">03.08.2015, 16:03</span>
+                                                <span class="discussions-details-text">продовжено:</span>
+                                                <span class="discussions-theme-to">18.03.2016, 12:34</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="section-discussion">
+                                        <div class="discussion-btn-wrap">
+                                            <div class="btn btn-red">Відхилено</div>
+                                        </div>
+                                        <a href="#" class="discussions-theme-link">Тема обговорення порядку
+                                            денного
+                                        </a>
+                                        <p class="discussions-theme-about">Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном</p>
+            
+                                        <div class="sidebar-discussions-theme-author clearfix">
+                                            <img src="../images/discussion-avatar.jpg" alt="" class="discussions-theme-author-avatar">
+                                            <div class="discussions-details">
+                                                <div class="discussions-theme-author-name">Людмила Белиш</div>
+                                                <span class="discussions-details-text">створено:</span>
+                                                <span class="discussions-theme-from">03.08.2015, 16:03</span>
+                                                <span class="discussions-details-text">відхилено:</span>
+                                                <span class="discussions-theme-to">18.03.2016, 12:34</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="section-discussion">
+                                        <div class="discussion-btn-wrap">
+                                            <div class="btn btn-grey">Обговорюється</div>
+                                        </div>
+                                        <a href="#" class="discussions-theme-link">Тема обговорення порядку
+                                            денного
+                                        </a>
+                                        <p class="discussions-theme-about">Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном</p>
+            
+                                        <div class="sidebar-discussions-theme-author clearfix">
+                                            <img src="../images/discussion-avatar.jpg" alt="" class="discussions-theme-author-avatar">
+                                            <div class="discussions-details">
+                                                <div class="discussions-theme-author-name">Людмила Белиш</div>
+                                                <span class="discussions-details-text">створено:</span>
+                                                <span class="discussions-theme-from">03.08.2015, 16:03</span>
+                                                <span class="discussions-details-text">продовжено:</span>
+                                                <span class="discussions-theme-to">18.03.2016, 12:34</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="section-discussion">
+                                        <div class="discussion-btn-wrap">
+                                            <div class="btn btn-grey">Обговорюється</div>
+                                        </div>
+                                        <a href="#" class="discussions-theme-link">Тема обговорення порядку
+                                            денного
+                                        </a>
+                                        <p class="discussions-theme-about">Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном</p>
+            
+                                        <div class="sidebar-discussions-theme-author clearfix">
+                                            <img src="../images/discussion-avatar.jpg" alt="" class="discussions-theme-author-avatar">
+                                            <div class="discussions-details">
+                                                <div class="discussions-theme-author-name">Людмила Белиш</div>
+                                                <span class="discussions-details-text">створено:</span>
+                                                <span class="discussions-theme-from">03.08.2015, 16:03</span>
+                                                <span class="discussions-details-text">продовжено:</span>
+                                                <span class="discussions-theme-to">18.03.2016, 12:34</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="section-discussion">
+                                        <div class="discussion-btn-wrap">
+                                            <div class="btn btn-grey">Обговорюється</div>
+                                        </div>
+                                        <a href="#" class="discussions-theme-link">Тема обговорення порядку
+                                            денного
+                                        </a>
+                                        <p class="discussions-theme-about">Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном</p>
+            
+                                        <div class="sidebar-discussions-theme-author clearfix">
+                                            <img src="../images/discussion-avatar.jpg" alt="" class="discussions-theme-author-avatar">
+                                            <div class="discussions-details">
+                                                <div class="discussions-theme-author-name">Людмила Белиш</div>
+                                                <span class="discussions-details-text">створено:</span>
+                                                <span class="discussions-theme-from">03.08.2015, 16:03</span>
+                                                <span class="discussions-details-text">продовжено:</span>
+                                                <span class="discussions-theme-to">18.03.2016, 12:34</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="section-discussion">
+                                        <div class="discussion-btn-wrap">
+                                            <div class="btn btn-grey">Обговорюється</div>
+                                        </div>
+                                        <a href="#" class="discussions-theme-link">Тема обговорення порядку
+                                            денного
+                                        </a>
+                                        <p class="discussions-theme-about">Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном</p>
+            
+                                        <div class="sidebar-discussions-theme-author clearfix">
+                                            <img src="../images/discussion-avatar.jpg" alt="" class="discussions-theme-author-avatar">
+                                            <div class="discussions-details">
+                                                <div class="discussions-theme-author-name">Людмила Белиш</div>
+                                                <span class="discussions-details-text">створено:</span>
+                                                <span class="discussions-theme-from">03.08.2015, 16:03</span>
+                                                <span class="discussions-details-text">продовжено:</span>
+                                                <span class="discussions-theme-to">18.03.2016, 12:34</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="section-discussion">
+                                        <div class="discussion-btn-wrap">
+                                            <div class="btn btn-grey">Обговорюється</div>
+                                        </div>
+                                        <a href="#" class="discussions-theme-link">Тема обговорення порядку
+                                            денного
+                                        </a>
+                                        <p class="discussions-theme-about">Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном</p>
+            
+                                        <div class="sidebar-discussions-theme-author clearfix">
+                                            <img src="../images/discussion-avatar.jpg" alt="" class="discussions-theme-author-avatar">
+                                            <div class="discussions-details">
+                                                <div class="discussions-theme-author-name">Людмила Белиш</div>
+                                                <span class="discussions-details-text">створено:</span>
+                                                <span class="discussions-theme-from">03.08.2015, 16:03</span>
+                                                <span class="discussions-details-text">продовжено:</span>
+                                                <span class="discussions-theme-to">18.03.2016, 12:34</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="section-discussion">
+                                        <div class="discussion-btn-wrap">
+                                            <div class="btn btn-grey">Обговорюється</div>
+                                        </div>
+                                        <a href="#" class="discussions-theme-link">Тема обговорення порядку
+                                            денного
+                                        </a>
+                                        <p class="discussions-theme-about">Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном</p>
+            
+                                        <div class="sidebar-discussions-theme-author clearfix">
+                                            <img src="../images/discussion-avatar.jpg" alt="" class="discussions-theme-author-avatar">
+                                            <div class="discussions-details">
+                                                <div class="discussions-theme-author-name">Людмила Белиш</div>
+                                                <span class="discussions-details-text">створено:</span>
+                                                <span class="discussions-theme-from">03.08.2015, 16:03</span>
+                                                <span class="discussions-details-text">продовжено:</span>
+                                                <span class="discussions-theme-to">18.03.2016, 12:34</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="section-discussion">
+                                        <div class="discussion-btn-wrap">
+                                            <div class="btn btn-grey">Обговорюється</div>
+                                        </div>
+                                        <a href="#" class="discussions-theme-link">Тема обговорення порядку
+                                            денного
+                                        </a>
+                                        <p class="discussions-theme-about">Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном</p>
+            
+                                        <div class="sidebar-discussions-theme-author clearfix">
+                                            <img src="../images/discussion-avatar.jpg" alt="" class="discussions-theme-author-avatar">
+                                            <div class="discussions-details">
+                                                <div class="discussions-theme-author-name">Людмила Белиш</div>
+                                                <span class="discussions-details-text">створено:</span>
+                                                <span class="discussions-theme-from">03.08.2015, 16:03</span>
+                                                <span class="discussions-details-text">продовжено:</span>
+                                                <span class="discussions-theme-to">18.03.2016, 12:34</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="section-discussion">
+                                        <div class="discussion-btn-wrap">
+                                            <div class="btn btn-grey">Обговорюється</div>
+                                        </div>
+                                        <a href="#" class="discussions-theme-link">Тема обговорення порядку
+                                            денного
+                                        </a>
+                                        <p class="discussions-theme-about">Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном</p>
+            
+                                        <div class="sidebar-discussions-theme-author clearfix">
+                                            <img src="../images/discussion-avatar.jpg" alt="" class="discussions-theme-author-avatar">
+                                            <div class="discussions-details">
+                                                <div class="discussions-theme-author-name">Людмила Белиш</div>
+                                                <span class="discussions-details-text">створено:</span>
+                                                <span class="discussions-theme-from">03.08.2015, 16:03</span>
+                                                <span class="discussions-details-text">продовжено:</span>
+                                                <span class="discussions-theme-to">18.03.2016, 12:34</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="section-discussion">
+                                        <div class="discussion-btn-wrap">
+                                            <div class="btn btn-grey">Обговорюється</div>
+                                        </div>
+                                        <a href="#" class="discussions-theme-link">Тема обговорення порядку
+                                            денного
+                                        </a>
+                                        <p class="discussions-theme-about">Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном</p>
+            
+                                        <div class="sidebar-discussions-theme-author clearfix">
+                                            <img src="../images/discussion-avatar.jpg" alt="" class="discussions-theme-author-avatar">
+                                            <div class="discussions-details">
+                                                <div class="discussions-theme-author-name">Людмила Белиш</div>
+                                                <span class="discussions-details-text">створено:</span>
+                                                <span class="discussions-theme-from">03.08.2015, 16:03</span>
+                                                <span class="discussions-details-text">продовжено:</span>
+                                                <span class="discussions-theme-to">18.03.2016, 12:34</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="section-discussion">
+                                        <div class="discussion-btn-wrap">
+                                            <div class="btn btn-grey">Обговорюється</div>
+                                        </div>
+                                        <a href="#" class="discussions-theme-link">Тема обговорення порядку
+                                            денного
+                                        </a>
+                                        <p class="discussions-theme-about">Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном Багато програм верстування та веб-дизайну використовують
+                                            Lorem Ipsum як зразок і пошук за
+                                            терміном</p>
+            
+                                        <div class="sidebar-discussions-theme-author clearfix">
+                                            <img src="../images/discussion-avatar.jpg" alt="" class="discussions-theme-author-avatar">
+                                            <div class="discussions-details">
+                                                <div class="discussions-theme-author-name">Людмила Белиш</div>
+                                                <span class="discussions-details-text">створено:</span>
+                                                <span class="discussions-theme-from">03.08.2015, 16:03</span>
+                                                <span class="discussions-details-text">продовжено:</span>
+                                                <span class="discussions-theme-to">18.03.2016, 12:34</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Tab-panes -->
+                </div>
+            </div>
+            <!-- END content-organization-discussion -->
+        </div>
+    </div>
+</section>
+
+<!-- START footer -->
+<footer class="footer-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="footer-general">
+                    <a href="#" class="footer-logo"></a>
+                    <div class="footer-copyright">
+                        2016 © Perehid4 <br>
+                        Всі права захищені
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="footer-contact">
+                    <h3 class="footer-title">Контакти</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <address class="list-item-address"><i class="fa fa-map-marker"></i> Україна <br>
+                                м. Івано-Франківськ, 7600
+                            </address>
+                        </li>
+                        <li class="footer-list-item">
+                            <i class="fa fa-mobile"></i>
+                            <a href="tel:+38(0XX) XXX-XXX-XX" class="footer-list-link">+38(0XX) XXX-XXX-XX</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <i class="fa fa-envelope-o"></i>
+                            <a href="mailto:mail@gmail.com" class="footer-list-link">mail@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="footer-info">
+                    <h3 class="footer-title">Інформація</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Про нас</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Як це працює</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="footer-dovidka">
+                    <h3 class="footer-title">Довідка</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Концепція</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Бізплан</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Кооперація та партнери</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Наука про кооперацію</a>
+                        </li>
+                        <li class="footer-list-item">
+                            <a href="#" class="footer-list-link">Кооперація у світі</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END footer -->
+
+</body>
+
+<!-- START scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="../js/lib/bootstrap/bootstrap.min.js"></script>
+<script src="../js/lib/select2/select2.min.js"></script>
+<script src="../js/lib/datepicker/datepicker.js"></script>
+<script src="../js/lib/slick/slick.min.js"></script>
+<script src="../js/lib/moment/moment.min.js"></script>
+<script src="../js/lib/fullcalendar/fullcalendar.min.js"></script>
+<script src="../js/lib/jquery-validation/jquery.validate.min.js"></script>
+<script src="../js/main/jquery-validation.js"></script>
+<script src="../js/main.js"></script>
+
+<script>
+    $('#sandbox-container .input-daterange').datepicker({
+        language: "uk",
+        format: "dd/mm/yy",
+    });
+
+    $('.input-date-wrap').datepicker({
+        language: "uk",
+        format: "dd/mm/yy",
+    });
+
+    $('#header-date .header-date-input').datepicker({
+        language: "uk",
+        format: "dd/mm/yy",
+    });
+
+    $('._select').select2();
+
+    $('._select2').select2({
+        minimumResultsForSearch: Infinity
+    });
+
+    $('#full-calendar-modal').on('shown.bs.modal', function () {
+        $("#full-calendar").fullCalendar('render');
+    });
+
+
+    var date = new Date();
+    var d = date.getDate();
+    var m = date.getMonth();
+    var y = date.getFullYear();
+
+
+    $('#full-calendar').fullCalendar({
+        header: {
+            left: 'today',
+            center: 'prev,title,next',
+            right: 'month,agendaWeek,agendaDay'
+        },
+        events: [{
+            title: 'Lunch',
+            start: new Date(y, m, d, 12, 0),
+            end: new Date(y, m, d, 14, 0),
+            allDay: false
+        }, {
+            title: 'Birthday Party',
+            start: new Date(y, m, d + 1, 19, 0),
+            end: new Date(y, m, d + 1, 22, 30),
+            allDay: false
+        }, {
+            title: 'Birthday Party',
+            start: new Date(y, m, d + 1, 9, 0),
+            end: new Date(y, m, d + 1, 24, 30),
+            allDay: false
+        }, {
+            title: 'Birthday Party',
+            start: new Date(y, m, d + 1, 14, 0),
+            end: new Date(y, m, d + 1, 23, 30),
+            allDay: false
+        }],
+
+        eventRender: function (event, element) {
+            if (!event.url) {
+                element.popover({
+                    content: function () {
+                        return $("#popoverContent").html();
+                    },
+                    placement: 'top',
+                    html: 'true',
+                    container: '#full-calendar-modal'
+                }).on('shown.bs.popover', function () {
+
+                    increment();
+
+                    $('._close').on('click', function () {
+                        $(this).closest('.popover').hide();
+                    });
+                });
+
+                $('body').on('click', function (e) {
+                    if (!element.is(e.target) && element.has(e.target).length === 0 && $('.popover').has(e.target).length === 0)
+                        element.popover('hide');
+                });
+            }
+        }
+    });
+
+    $(document).ready(function () {
+
+        var date = new Date();
+        var d = date.getDate();
+        var m = date.getMonth();
+        var y = date.getFullYear();
+
+        $('#calendar').fullCalendar({
+            height: "auto",
+            header: {
+                left: 'title',
+                right: 'prev,next'
+            },
+
+            // For DEMO only
+            // *************
+            events: [
+                {
+                    title: 'All Day Event',
+                    start: new Date(y, m, 1)
+                },
+                {
+                    title: 'Long Event',
+                    start: new Date(y, m, d - 5)
+                },
+            ]
+        });
+    });
+
+</script>
+<!-- END scripts -->
+
+</html>

@@ -1,0 +1,253 @@
+//-------------------------
+// Content-organization
+//-------------------------
+
+.discussion-btn-wrap {
+  margin-bottom: 2rem;
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+}
+
+.section-discussion {
+
+  border: .1rem solid $solitude;
+  margin-bottom: 2rem;
+  padding: 2rem;
+
+  .discussions-theme-about {
+    height: 9.6rem;
+    max-height: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .discussions-theme-author-name {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .discussions-theme-author-avatar {
+    float: left;
+    margin-right: 5%;
+    width: 30%;
+  }
+
+  .discussions-details {
+    float: left;
+    width: 65%;
+  }
+
+  .discussions-details-text {
+    font-family: $openSansBold;
+    font-size: 1.4rem;
+  }
+}
+
+.organization-vote-wrap {
+  .comments-content {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .comments-field-wrap {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin: 0 -2rem -3rem;
+  }
+}
+
+.organization-vote-about {
+  line-height: 1.4;
+  margin-bottom: 3rem;
+}
+
+.vote-wrap {
+  margin-bottom: 3rem;
+}
+
+.vote-btn {
+  margin-left: -.5rem;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  @media all and (max-width: $mdScreen) {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+.modal-private-user {
+  .form-control-fourth {
+    width: 25%;
+    margin-right: 5%;
+    float: left;
+
+    @media all and (max-width: $mdScreen) {
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+
+  .form-group-text {
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-top: 1.5rem;
+    width: 70%;
+
+    @media all and (max-width: $mdScreen) {
+      margin-top: 4rem;
+      width: 100%;
+    }
+  }
+
+  .form-private-user-bottom {
+    border-top: .1rem solid $solitude;
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+
+  .form-private-user {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+
+    @media all and (max-width: $mdScreen) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .custom-checkbox-square {
+    margin-right: .5rem;
+  }
+}
+
+.btn-border {
+  float: right;
+
+  .fa {
+    color: inherit;
+    font-size: inherit;
+  }
+
+  @media all and (max-width: $mdScreen) {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+}
+
+.organization-theme-wrap {
+  .form-label {
+    display: block;
+  }
+
+  .custom-radio-button {
+    display: inline-block;
+    margin-right: 2rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media all and (max-width: $mdScreen) {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .input-date-wrap,
+  .input-time-wrap {
+    display: block;
+    float: left;
+    position: relative;
+    width: 45%;
+
+    @media all and (max-width: $mdScreen) {
+      width: 100%;
+      float: none;
+    }
+  }
+
+  .input-date-wrap {
+    margin-right: 5rem;
+
+    @media all and (max-width: $mdScreen) {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .input-date-wrap,
+  .input-time-wrap {
+    .fa {
+      display: inline-block;
+      left: 1rem;
+      top: 1.25rem;
+      width: 2rem;
+    }
+
+    .form-control {
+      padding-left: 4rem;
+    }
+  }
+}
+
+.form-group-textarea-wrap {
+
+  .textarea-top-block {
+    float: left;
+    @media all and (max-width: $mdScreen) {
+      float: none;
+    }
+  }
+
+  .textarea-top-icons {
+    border-right: .1rem solid lighten($shuttleGrey, 20%);
+    line-height: 2.4;
+    padding-right: .5rem;
+
+    &:first-child {
+      margin-left: .5rem;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  .textarea-icon {
+    display: inline-block;
+    padding: 0 .5rem;
+
+    .fa {
+      color: $shuttleGrey;
+      cursor: pointer;
+      font-size: 1.6rem;
+      position: static;
+
+      &:hover {
+        color: $viking;
+      }
+    }
+
+    .fa-caret-down {
+      vertical-align: middle;
+      margin-left: .5rem;
+    }
+
+    &:first-child {
+      padding-left: 1rem;
+    }
+  }
+
+  .textarea-icon-text {
+    font-size: 1.4rem;
+  }
+}

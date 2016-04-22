@@ -163,4 +163,121 @@ $(document).ready(function () {
             }
         }
     });
+
+    $.validator.addMethod("australianDate", function (value, element) {
+            return this.optional(element) || value == value.match(/^\d\d?\/\d\d?\/\d\d\d\d$/);
+        }
+    );
+
+    jQuery.validator.addMethod('selectcheck', function (value) {
+        return (value != '0');
+    }, "Будь-ласка заповніть поле");
+
+    $('#form-private-user').validate({
+        errorElement: 'span',
+        rules: {
+            name: {
+                required: true,
+                minlength: 6
+            },
+            birthday: {
+                required: true,
+                australianDate: true
+            },
+            userId: {
+                required: true,
+                digits: true
+            },
+            passport: {
+                required: true
+            },
+            passportDetail: {
+                required: true
+            },
+            address: {
+                required: true
+            },
+            contacts: {
+                required: true
+            },
+            recommendation: {
+                required: true,
+                selectcheck: true
+            },
+            fee1: {
+                required: true,
+                digits: true
+            },
+            fee2: {
+                required: true,
+                digits: true
+            },
+            invoice: {
+                required: true,
+                selectcheck: true
+            },
+            'myCheckBox[]': {
+                required: true,
+                minlength: 1
+            },
+            customCheckbox2: {
+                required: true
+            }
+        },
+        messages: {
+            name: {
+                required: 'Будь-ласка заповніть поле',
+                minlength: 'Мінімум 6 символів'
+            },
+            birthday: {
+                required: 'Будь-ласка заповніть поле',
+                australianDate: "Формат dd/mm/yyyy"
+            },
+            userId: {
+                required: 'Будь-ласка заповніть поле',
+                digits: 'Будь-ласка тільки цифри'
+            },
+            passport: {
+                required: 'Будь-ласка заповніть поле'
+            },
+            passportDetail: {
+                required: 'Будь-ласка заповніть поле'
+            },
+            address: {
+                required: 'Будь-ласка заповніть поле'
+            },
+            contacts: {
+                required: 'Будь-ласка заповніть поле'
+            },
+            recommendation: {
+                required: 'Будь-ласка заповніть поле',
+                selectcheck: 'Будь-ласка заповніть поле'
+            },
+            fee1: {
+                required: 'Будь-ласка заповніть поле',
+                digits: 'Будь-ласка тільки цифри'
+            },
+            fee2: {
+                required: 'Будь-ласка заповніть поле',
+                digits: 'Будь-ласка тільки цифри'
+            },
+            invoice: {
+                required: 'Будь-ласка заповніть поле',
+                selectcheck: 'Будь-ласка заповніть поле'
+            },
+            'myCheckBox[]': {
+                required: ''
+            },
+            customCheckbox2: {
+                required: ''
+            }
+        }
+    });
+
+    $("#form-private-user :checkbox").change(function(){
+        if(this.checked) {
+            $(this).removeClass("error");
+        }
+    });
+
 });

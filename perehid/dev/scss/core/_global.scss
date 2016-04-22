@@ -51,7 +51,35 @@ select {
   }
 }
 
-.btn-add-news {
+.btn-red {
+  background: $burntSienna;
+  outline: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $white;
+    background: darken($burntSienna, 5%);
+  }
+}
+
+.btn-grey {
+  background: $heather;
+  outline: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $white;
+    background: darken($heather, 5%);
+  }
+}
+
+.btn-add-news,
+.btn-border{
+  background: $white;
   border: .1rem solid $nobel;
   border-radius: 3rem;
   color: $trout;
@@ -60,15 +88,22 @@ select {
   padding: 1rem 2rem .75rem;
   text-transform: uppercase;
 
-
   &:hover {
     border: .1rem solid $viking;
     color: $viking;
     cursor: pointer;
-
   }
 }
 
-.btn-default{
+.btn-default {
   color: $trout;
+}
+
+.content-title {
+  color: #373b3f;
+  font-family: $openSansBold;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
 }

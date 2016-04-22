@@ -1,0 +1,144 @@
+<div class="modal fade modal-private-user modal-global" id="modal-private-user" role="dialog"
+     aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Анкета-Заява фізичної особи</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form id="form-private-user" class="form-global form-private-user">
+                        <div class="col-md-5">
+                            <fieldset class="form-group">
+                                <label for="name" class="form-label">Прізвище, ім’я, по-батькові</label>
+                                <input type="text" class="form-control" id="name" name="name"
+                                       placeholder="Введіть прізвище, ім’я, по-батькові">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-4">
+                            <fieldset class="form-group">
+                                <label for="birthday" class="form-label">Дата нарождення</label>
+                                <input type="text" class="form-control" id="birthday" name="birthday"
+                                       placeholder="Введіть дату нарождення (dd/mm/yyyy)">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-3">
+                            <fieldset class="form-group">
+                                <label for="userId" class="form-label">ІПН</label>
+                                <input type="text" class="form-control" id="userId" name="userId"
+                                       placeholder="Введіть ІПН">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-4">
+                            <fieldset class="form-group">
+                                <label for="passport" class="form-label">Серія та номер паспорту</label>
+                                <input type="text" class="form-control" id="passport" name="passport"
+                                       placeholder="Введіть серію та номер паспорту">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-8">
+                            <fieldset class="form-group">
+                                <label for="passportDetail" class="form-label">Ким та коли виданий</label>
+                                <input type="text" class="form-control" id="passportDetail" name="passportDetail"
+                                       placeholder="Введіть дані ким та коли виданий паспорт">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-6">
+                            <fieldset class="form-group">
+                                <label for="address" class="form-label">Адреса проживання</label>
+                                <input type="text" class="form-control" id="address" name="address"
+                                       placeholder="Введіть дані ким та коли виданий паспорт">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-6">
+                            <fieldset class="form-group">
+                                <label for="contacts" class="form-label">Контактна інформація</label>
+                                <input type="text" class="form-control" id="contacts" name="contacts"
+                                       placeholder="Введіть контактну інформацію">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-8">
+                            <fieldset class="form-group">
+                                <label for="recommendation" class="form-label">Рекомендація</label>
+                                <select class="form-control" name="recommendation" id="recommendation">
+                                    <option value="0" disabled selected hidden class="option-placeholder">Оберіть члена
+                                        кооперативу, який надав рекомендацію
+                                    </option>
+                                    <option value="1">Тест</option>
+                                    <option value="2">Тест</option>
+                                    <option value="3">Тест</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                            <fieldset class="form-group">
+                                <label for="fee1" class="form-label">Прошу прийняти мене, як дійсного члена кооперативу
+                                    та зняти з моїх пайових нарахувань
+                                    вступний внесок у розмірі:</label>
+                                <input type="text" class="form-control form-control-fourth" id="fee1" name="fee1"
+                                       placeholder="Введіть суму">
+                                <span class="form-group-text">Мінімальний пайовий внесок для дійсного члена кооперативу становить 1000 грн</span>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                            <fieldset class="form-group">
+                                <label for="fee2" class="form-label">Прошу прийняти мене, як асоціативного члена
+                                    кооперативу та зняти з моїх пайових нарахувань
+                                    вступний внесок у розмірі:</label>
+                                <input type="text" class="form-control form-control-fourth" id="fee2" name="fee2"
+                                       placeholder="Введіть суму">
+                                <span class="form-group-text">Мінімальний пайовий внесок для асоціативного члена кооперативу становить 50 грн</span>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-8">
+                            <fieldset class="form-group">
+                                <label for="invoice" class="form-label">Прошу зарахувати пайовий та вступний внески на
+                                    рахунок</label>
+                                <select class="form-control" name="invoice" id="invoice">
+                                    <option value="0" disabled selected hidden class="option-placeholder">Оберіть
+                                        рахунок
+                                    </option>
+                                    <option value="1">Тест</option>
+                                    <option value="2">Тест</option>
+                                    <option value="3">Тест</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="">
+                                <div class="custom-checkbox _custom-checkbox">
+                                    <input type="checkbox" value="" id="custom-checkbox-cat-1" name="myCheckBox[]" required>
+                                    <label class="custom-checkbox-wrap" for="custom-checkbox-cat-1">
+                                        <span class="custom-checkbox-square"></span>
+                                        <span class="custom-checkbox-text">Я ознайомлений (а) з положенням статуту. Мені відомі та зрозумілі права та обов’язки пойовика.</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="custom-checkbox _custom-checkbox">
+                                <input type="checkbox" value="" id="custom-checkbox-cat-2" name="customCheckbox2" required>
+                                <label class="custom-checkbox-wrap" for="custom-checkbox-cat-2">
+                                    <span class="custom-checkbox-square"></span>
+                                    <span class="custom-checkbox-text">Я зобов’язуюся виконувати положення Статуту, рішення членів-пайовиків Загальних зборів та інших органів правління і
+контролю. Несу відповідальність згідно діючого законодавства Українита внутрішнього статуту і укладених договорів.</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-private-user-bottom clearfix">
+                                <span class="form-private-user">Для подачі заяви необхідно заповнити всі поля, що містяться в анкеті</span>
+                                <button type="submit" class="btn btn-border pull-right">
+                                    <i class="fa fa-save"></i>
+                                    <span class="btn-border-text">Зберегти</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
