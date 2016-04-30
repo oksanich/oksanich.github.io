@@ -32,7 +32,7 @@
     font-size: 2rem;
   }
 
-  .form-control {
+  .form-control{
     @include placeholder {
       color: darken($solitude, 10%);
     }
@@ -43,6 +43,25 @@
     &.error {
       border: .1rem solid $burntSienna;
     }
+  }
+
+  .select2-container {
+    width: 100% !important;
+  }
+
+  .select2-selection--single {
+    @include placeholder {
+      color: darken($solitude, 10%);
+    }
+    border: .1rem solid $solitude;
+    border-radius: 0 .4rem .4rem 0;
+    height: 4.5rem;
+    font-size: 1.4rem;
+  }
+
+  .select2-selection__rendered {
+    line-height: 2 !important;
+    padding: 8px 12px;
   }
 
   .custom-checkbox {

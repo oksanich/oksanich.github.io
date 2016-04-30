@@ -1,0 +1,179 @@
+<div class="modal fade modal-volume-and-frequency modal-global" id="modal-volume-and-frequency" role="dialog"
+     aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Введіть періодичність</h4>
+            </div>
+            <div class="modal-body">
+
+                <form id="form-volume-and-frequency" class="form-global volume-and-frequency">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <fieldset class="form-group">
+                                <label class="form-label">Початкова дата</label>
+                                <span class="input-date-wrap">
+                                    <input type="text" class="form-control" name="start"
+                                           placeholder="Оберіть початкову дату">
+                                    <i class="fa fa-calendar"></i>
+                                </span>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-4">
+                            <fieldset class="form-group">
+                                <label class="form-label">Кінцева дата</label>
+                                <span class="input-date-wrap">
+                                    <input type="text" class="form-control" name="start"
+                                           placeholder="Оберіть кінцеву дату">
+                                    <i class="fa fa-calendar"></i>
+                                </span>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-4">
+                            <fieldset class="form-group">
+                                <label for="number-of-units-modal" class="form-label">
+                                    Кількість одиниць
+                                </label>
+                                <div class="input-vs-select">
+                                    <input type="text" class="form-control" id="number-of-units-modal"
+                                           name="number-of-units-modal"
+                                           placeholder="Введіть кількість одиниць">
+
+                                    <select class="_select2 form-control">
+                                        <option value="1" selected>Штук</option>
+                                        <option value="2">Тест</option>
+                                        <option value="3">Тест</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <fieldset class="form-group">
+                                <label for="repeats" class="form-label">
+                                    Повтори
+                                </label>
+                                <select class="_select2 form-control" id="repeats" name="repeats">
+                                    <option value="1" selected>Щотижня</option>
+                                    <option value="2">Тест</option>
+                                    <option value="3">Тест</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-8">
+                            <fieldset class="form-group form-group-offer">
+                                <label for="repeats" class="form-label">
+                                    Повторювати по
+                                </label>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" value="" id="custom-checkbox-cat-22" name="">
+                                    <label class="custom-checkbox-wrap" for="custom-checkbox-cat-22">
+                                        <span class="custom-checkbox-square"></span>
+                                        <span class="custom-checkbox-text">Пн.</span>
+                                    </label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" value="" id="custom-checkbox-cat-23" name="">
+                                    <label class="custom-checkbox-wrap" for="custom-checkbox-cat-23">
+                                        <span class="custom-checkbox-square"></span>
+                                        <span class="custom-checkbox-text">Вт.</span>
+                                    </label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" value="" id="custom-checkbox-cat-25" name="">
+                                    <label class="custom-checkbox-wrap" for="custom-checkbox-cat-25">
+                                        <span class="custom-checkbox-square"></span>
+                                        <span class="custom-checkbox-text">Ср.</span>
+                                    </label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" value="" id="custom-checkbox-cat-26" name="">
+                                    <label class="custom-checkbox-wrap" for="custom-checkbox-cat-26">
+                                        <span class="custom-checkbox-square"></span>
+                                        <span class="custom-checkbox-text">Чт.</span>
+                                    </label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" value="" id="custom-checkbox-cat-27" name="">
+                                    <label class="custom-checkbox-wrap" for="custom-checkbox-cat-27">
+                                        <span class="custom-checkbox-square"></span>
+                                        <span class="custom-checkbox-text">Пт.</span>
+                                    </label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" value="" id="custom-checkbox-cat-28" name="">
+                                    <label class="custom-checkbox-wrap" for="custom-checkbox-cat-28">
+                                        <span class="custom-checkbox-square"></span>
+                                        <span class="custom-checkbox-text">Сб.</span>
+                                    </label>
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" value="" id="custom-checkbox-cat-29" name="">
+                                    <label class="custom-checkbox-wrap" for="custom-checkbox-cat-29">
+                                        <span class="custom-checkbox-square"></span>
+                                        <span class="custom-checkbox-text">Нд.</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <fieldset class="form-group">
+                                <label for="repeats" class="form-label">
+                                    Час
+                                </label>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <span class="input-time-wrap">
+                                            <input type="text" class="form-control" onfocus="(this.type='time')"
+                                                   placeholder="Введіть час початку">
+                                            <i class="fa fa-clock-o"></i>
+                                        </span>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <span class="input-time-wrap">
+                                            <input type="text" class="form-control" onfocus="(this.type='time')"
+                                                   placeholder="Введіть час кінця">
+                                            <i class="fa fa-clock-o"></i>
+                                        </span>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control" onfocus="(this.type='time')"
+                                               placeholder="Введіть кількість одиниць">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button type="submit" class="btn btn-border">
+                                            <i class="fa fa-times"></i>
+                                            <span class="btn-border-text">видалити</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="add-time">
+                                <i class="fa fa-plus-circle"></i>
+                                <span class="add-time-text">Натисніть тут, щоб додати новий часовий проміжок</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-volume-and-frequency-bottom clearfix">
+                                <span class="form-private-user">Підсумок: щотижня по понеділкам</span>
+                                <button type="submit" class="btn btn-border pull-right">
+                                    <i class="fa fa-save"></i>
+                                    <span class="btn-border-text">Зберегти</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

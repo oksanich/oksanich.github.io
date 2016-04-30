@@ -435,7 +435,7 @@
 
   @media all and (max-width: $smScreen) {
     position: relative;
-    z-index: 10000;
+    z-index: 1000;
   }
 }
 
@@ -456,21 +456,3 @@
 .header-bottom-organization {
   background: url("../images/header-organization-bg.jpg") no-repeat/cover;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

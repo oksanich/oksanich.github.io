@@ -134,6 +134,7 @@
   .fa {
     color: inherit;
     font-size: inherit;
+    position: inherit !important;
   }
 
   @media all and (max-width: $mdScreen) {
@@ -143,7 +144,8 @@
   }
 }
 
-.organization-theme-wrap {
+.organization-theme-wrap,
+.modal-volume-and-frequency {
   .form-label {
     display: block;
   }

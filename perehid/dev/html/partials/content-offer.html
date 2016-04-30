@@ -1,0 +1,768 @@
+<div class="col-sm-7 col-md-8 col-lg-9">
+    <div class="offer-wrap">
+        <form action="" class="form-global">
+            <div class="section-tab-wrap">
+                <!--START Nav-tabs -->
+                <div class="nav-tabs-wrap">
+                    <ul class="nav nav-tabs tab-nav-list" role="tablist">
+                        <li role="presentation" class="tab-nav-item active">
+                            <a href="#tab-1" aria-controls="tab-1" role="tab" data-toggle="tab"
+                               class="tab-nav-item-link">
+                                <span class="tab-nav-text">додати пропозицію</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--END Nav-tabs -->
+
+                <!-- START Tab-panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab-1">
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <fieldset class="form-group">
+                                    <label for="title" class="form-label">
+                                        Назва
+                                        <span class="form-label-required">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="title" name="title"
+                                           placeholder="Вдала назва дасть змогу краще та швидше знайти покупцю ваш товар">
+                                </fieldset>
+                            </div>
+                            <div class="col-md-4">
+                                <fieldset class="form-group">
+                                    <label for="vendor-code" class="form-label">
+                                        Артикул
+                                        <span class="form-label-required">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="vendor-code" name="vendor-code"
+                                           placeholder="Введіть артикул">
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <fieldset class="form-group">
+                                    <label for="category" class="form-label">
+                                        Категорія
+                                        <span class="form-label-required">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="category" name="category"
+                                           placeholder="Оберіть категорію">
+                                    <div class="push-modal push-modal-top" data-toggle="modal" data-target="#modal-choose-category">
+                                        <i class="fa fa-plus-circle"></i>
+                                        <span class="push-modal-text">Натисніть тут, щоб обраты</span>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <fieldset class="form-group">
+                                    <label class="form-label">Опис</label>
+                                    <div class="form-group-textarea-wrap">
+                                        <div class="form-group-textarea-top clearfix">
+                                            <div class="textarea-top-block">
+                                                    <span class="textarea-top-icons">
+                                                        <span class="textarea-icons-block">
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-reply-all"></i>
+                                                            </span>
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-reply"></i>
+                                                            </span>
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-share"></i>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="textarea-top-icons">
+                                                        <span class="textarea-icons-block">
+                                                            <span class="textarea-icon">
+                                                                <span class="textarea-icon-text">Formats</span>
+                                                                <i class="fa fa-caret-down"></i>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="textarea-top-icons">
+                                                        <span class="textarea-icons-block">
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-bold"></i>
+                                                            </span>
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-italic"></i>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                            </div>
+                                            <div class="textarea-top-block">
+                                                    <span class="textarea-top-icons">
+                                                        <span class="textarea-icons-block">
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-align-left"></i>
+                                                            </span>
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-align-center"></i>
+                                                            </span>
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-bars"></i>
+                                                            </span>
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-align-justify"></i>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="textarea-top-icons">
+                                                        <span class="textarea-icons-block">
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-list"></i>
+                                                                <i class="fa fa-caret-down"></i>
+                                                            </span>
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-list-ol"></i>
+                                                                <i class="fa fa-caret-down"></i>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="textarea-top-icons">
+                                                        <span class="textarea-icons-block">
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-link"></i>
+                                                            </span>
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-picture-o"></i>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                            </div>
+                                        </div>
+                                            <textarea name="" id=""
+                                                      class="form-control form-control-textarea"></textarea>
+                                        <div class="form-group-textarea-bottom"></div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <fieldset class="form-group">
+                                    <label class="form-label">Фотографії</label>
+                                    <div class="add-photo-wrap">
+                                        <div class="add-photo-content">
+                                            <p class="add-photo-text">Для завантаження
+                                                фотографій перетягніть їх на це
+                                                поле</p>
+                                            <p class="add-photo-separator">або</p>
+                                            <div class="add-photo-input">
+                                                <input type="file" class="add-photo-download">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-8">
+                                <fieldset class="form-group">
+                                    <label for="product-id" class="form-label">
+                                        Код товару згідно УКТ ЗЕД
+                                        <span class="form-label-required">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="product-id" name="product-id"
+                                           placeholder="Оберіть код товару згідно УКТ ЗЕД">
+
+                                    <div class="push-modal push-modal-top" data-toggle="modal" data-target="#modal-product-id">
+                                        <i class="fa fa-plus-circle"></i>
+                                        <span class="push-modal-text">Натисніть тут, щоб обраты</span>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <fieldset class="form-group">
+                                    <label for="production-type" class="form-label">
+                                        Тип виробництва
+                                        <span class="form-label-required">*</span>
+                                    </label>
+                                    <select class="form-control _select2" id="production-type"
+                                            name="production-type">
+                                        <option value="0" disabled="" selected="" hidden=""
+                                                class="option-placeholder">
+                                            Бренд
+                                        </option>
+                                        <option value="1">Тест</option>
+                                        <option value="2">Тест</option>
+                                        <option value="3">Тест</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <fieldset class="form-group">
+                                    <input type="text" class="form-control" id="enter-id" name="enter-id"
+                                           placeholder="Введіть бренд">
+                                </fieldset>
+                            </div>
+
+                            <div class="col-md-6">
+                                <fieldset class="form-group">
+                                    <input type="text" class="form-control" id="enter-cod" name="enter-cod"
+                                           placeholder="Введіть код товару">
+                                </fieldset>
+                            </div>
+
+                            <div class="col-md-6">
+                                <fieldset class="form-group">
+                                    <select class="form-control _select2" id="production-country"
+                                            name="production-country">
+                                        <option value="0" disabled="" selected="" hidden=""
+                                                class="option-placeholder">
+                                            Оберіть країну виробника
+                                        </option>
+                                        <option value="1">Тест</option>
+                                        <option value="2">Тест</option>
+                                        <option value="3">Тест</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+
+                            <div class="col-md-6">
+                                <fieldset class="form-group">
+                                    <input type="text" class="form-control" id="enter-link" name="enter-link"
+                                           placeholder="Введіть посилання">
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Tab-panes -->
+            </div>
+
+            <div class="section-tab-wrap">
+                <!--START Nav-tabs -->
+                <div class="nav-tabs-wrap">
+                    <ul class="nav nav-tabs tab-nav-list" role="tablist">
+                        <li role="presentation" class="tab-nav-item active">
+                            <a href="#tab-2" aria-controls="tab-2" role="tab" data-toggle="tab"
+                               class="tab-nav-item-link">
+                                <span class="tab-nav-text">ціна та умови</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--END Nav-tabs -->
+
+                <!-- START Tab-panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab-2">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <fieldset class="form-group">
+                                    <label class="form-label">Наявність</label>
+                                    <div class="custom-radio-button">
+                                        <input type="radio" class="form-control" id="type1" name="type" checked="">
+                                        <label for="type1" class="custom-radio-button-wrap">
+                                            <span class="custom-radio-button-circle"></span>
+                                            <span class="custom-radio-button-text">В наявності</span>
+                                        </label>
+                                    </div>
+                                    <div class="custom-radio-button">
+                                        <input type="radio" class="form-control" id="type2" name="type">
+                                        <label for="type2" class="custom-radio-button-wrap">
+                                            <span class="custom-radio-button-circle"></span>
+                                            <span class="custom-radio-button-text">Немає в наявності</span>
+                                        </label>
+                                    </div>
+                                    <div class="custom-radio-button">
+                                        <input type="radio" class="form-control" id="type3" name="type">
+                                        <label for="type3" class="custom-radio-button-wrap">
+                                            <span class="custom-radio-button-circle"></span>
+                                            <span class="custom-radio-button-text">Під замовлення</span>
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-12">
+                                <fieldset class="form-group form-group-offer">
+                                    <label class="form-label">Об'єм продажу</label>
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" value="" id="custom-checkbox-cat-19" name="">
+                                        <label class="custom-checkbox-wrap" for="custom-checkbox-cat-19">
+                                            <span class="custom-checkbox-square"></span>
+                                            <span class="custom-checkbox-text">В роздріб</span>
+                                        </label>
+                                    </div>
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" value="" id="custom-checkbox-cat-20" name="">
+                                        <label class="custom-checkbox-wrap" for="custom-checkbox-cat-20">
+                                            <span class="custom-checkbox-square"></span>
+                                            <span class="custom-checkbox-text">Дрібний гурт</span>
+                                        </label>
+                                    </div>
+                                    <div class="custom-checkbox">
+                                        <input type="checkbox" value="" id="custom-checkbox-cat-21" name="">
+                                        <label class="custom-checkbox-wrap" for="custom-checkbox-cat-21">
+                                            <span class="custom-checkbox-square"></span>
+                                            <span class="custom-checkbox-text">Гурт</span>
+                                        </label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-7">
+                                <fieldset class="form-group">
+                                    <label for="number-of-units" class="form-label">
+                                        Кількість одиниць
+                                    </label>
+                                    <div class="input-vs-select">
+                                        <input type="text" class="form-control" id="number-of-units"
+                                               name="number-of-units"
+                                               placeholder="Введіть кількість одиниць">
+
+                                        <select class="_select2 form-control">
+                                            <option value="1" selected>Штук</option>
+                                            <option value="2">Тест</option>
+                                            <option value="3">Тест</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <fieldset class="form-group">
+                                    <label for="price-1" class="form-label">
+                                        Ціна (роздріб)
+                                    </label>
+                                    <div class="input-vs-select">
+                                        <input type="text" class="form-control" id="price-1"
+                                               name="price-1"
+                                               placeholder="Введіть ціну">
+
+                                        <select class="_select2 form-control">
+                                            <option value="1" selected>UAH</option>
+                                            <option value="2">Тест</option>
+                                            <option value="3">Тест</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-4">
+                                <fieldset class="form-group">
+                                    <label for="price-2" class="form-label">
+                                        Ціна (дрібний гурт)
+                                    </label>
+                                    <div class="input-vs-select">
+                                        <input type="text" class="form-control" id="price-2"
+                                               name="price-2"
+                                               placeholder="Введіть ціну">
+
+                                        <select class="_select2 form-control">
+                                            <option value="1" selected>UAH</option>
+                                            <option value="2">Тест</option>
+                                            <option value="3">Тест</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-4">
+                                <fieldset class="form-group">
+                                    <label for="price-3" class="form-label">
+                                        Ціна (гурт)
+                                    </label>
+                                    <div class="input-vs-select">
+                                        <input type="text" class="form-control" id="price-3"
+                                               name="price-3"
+                                               placeholder="Введіть ціну">
+
+                                        <select class="_select2 form-control">
+                                            <option value="1" selected>UAH</option>
+                                            <option value="2">Тест</option>
+                                            <option value="3">Тест</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <fieldset class="form-group">
+                                    <label for="price-4" class="form-label">
+                                        Повернення
+                                    </label>
+                                    <div class="input-vs-select">
+                                        <input type="text" class="form-control" id="price-4"
+                                               name="price-4"
+                                               placeholder="Введіть ціну">
+
+                                        <select class="_select2 form-control">
+                                            <option value="1" selected>UAH</option>
+                                            <option value="2">Тест</option>
+                                            <option value="3">Тест</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-4">
+                                <fieldset class="form-group">
+                                    <label for="price-5" class="form-label">
+                                        Пайовий внесок
+                                    </label>
+                                    <div class="input-vs-select">
+                                        <input type="text" class="form-control" id="price-5"
+                                               name="price-5"
+                                               placeholder="Введіть ціну">
+
+                                        <select class="_select2 form-control">
+                                            <option value="1" selected>UAH</option>
+                                            <option value="2">Тест</option>
+                                            <option value="3">Тест</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-4">
+                                <fieldset class="form-group">
+                                    <label for="price-6" class="form-label">
+                                        Рахунок пайового внеску
+                                    </label>
+                                    <div class="input-vs-select">
+                                        <input type="text" class="form-control" id="price-6"
+                                               name="price-6"
+                                               placeholder="Введіть ціну">
+
+                                        <select class="_select2 form-control">
+                                            <option value="1" selected>UAH</option>
+                                            <option value="2">Тест</option>
+                                            <option value="3">Тест</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-7">
+                                <fieldset class="form-group ">
+                                    <label class="form-label">
+                                        Об’єм та періодичність
+                                    </label>
+                                    <div class="push-modal" data-toggle="modal"
+                                         data-target="#modal-volume-and-frequency">
+                                        <i class="fa fa-plus-circle"></i>
+                                        <span class="push-modal-text">Натисніть тут, щоб додати</span>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <!-- END Tab-panes -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-tab-wrap">
+                <!--START Nav-tabs -->
+                <div class="nav-tabs-wrap">
+                    <ul class="nav nav-tabs tab-nav-list" role="tablist">
+                        <li role="presentation" class="tab-nav-item active">
+                            <a href="#tab-3" aria-controls="tab-3" role="tab" data-toggle="tab"
+                               class="tab-nav-item-link">
+                                <span class="tab-nav-text">Об’єм та доставка</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--END Nav-tabs -->
+
+                <!-- START Tab-panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab-3">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <fieldset class="form-group">
+                                    <label class="form-label">Додати коментар</label>
+                                    <div class="form-group-textarea-wrap">
+                                        <div class="form-group-textarea-top clearfix">
+                                            <div class="textarea-top-block">
+                                                    <span class="textarea-top-icons">
+                                                        <span class="textarea-icons-block">
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-reply-all"></i>
+                                                            </span>
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-reply"></i>
+                                                            </span>
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-share"></i>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="textarea-top-icons">
+                                                        <span class="textarea-icons-block">
+                                                            <span class="textarea-icon">
+                                                                <span class="textarea-icon-text">Formats</span>
+                                                                <i class="fa fa-caret-down"></i>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="textarea-top-icons">
+                                                        <span class="textarea-icons-block">
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-bold"></i>
+                                                            </span>
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-italic"></i>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                            </div>
+                                            <div class="textarea-top-block">
+                                                    <span class="textarea-top-icons">
+                                                        <span class="textarea-icons-block">
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-align-left"></i>
+                                                            </span>
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-align-center"></i>
+                                                            </span>
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-bars"></i>
+                                                            </span>
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-align-justify"></i>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="textarea-top-icons">
+                                                        <span class="textarea-icons-block">
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-list"></i>
+                                                                <i class="fa fa-caret-down"></i>
+                                                            </span>
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-list-ol"></i>
+                                                                <i class="fa fa-caret-down"></i>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="textarea-top-icons">
+                                                        <span class="textarea-icons-block">
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-link"></i>
+                                                            </span>
+                                                            <span class="textarea-icon">
+                                                                <i class="fa fa-picture-o"></i>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                            </div>
+                                        </div>
+                                            <textarea name="" id=""
+                                                      class="form-control form-control-textarea"></textarea>
+                                        <div class="form-group-textarea-bottom"></div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <fieldset class="form-group">
+                                    <label class="form-label">Служби доставки</label>
+
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-1"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap" for="custom-checkbox-cat-1">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">Міст Експрес</span>
+                                                </label>
+                                            </div>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-2"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap" for="custom-checkbox-cat-2">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">Авто Люкс</span>
+                                                </label>
+                                            </div>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-3"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap" for="custom-checkbox-cat-3">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">TNT express</span>
+                                                </label>
+                                            </div>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-4"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap" for="custom-checkbox-cat-4">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">Гюнсел</span>
+                                                </label>
+                                            </div>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-5"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap" for="custom-checkbox-cat-5">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">Делівері</span>
+                                                </label>
+                                            </div>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-6"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap" for="custom-checkbox-cat-6">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">Євроекспрес пошта</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-7"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap" for="custom-checkbox-cat-7">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">Express moto</span>
+                                                </label>
+                                            </div>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-8"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap" for="custom-checkbox-cat-8">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">Weltex</span>
+                                                </label>
+                                            </div>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-9"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap" for="custom-checkbox-cat-9">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">Ін Тайм</span>
+                                                </label>
+                                            </div>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-10"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap"
+                                                       for="custom-checkbox-cat-10">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">DHL-Експрес</span>
+                                                </label>
+                                            </div>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-11"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap"
+                                                       for="custom-checkbox-cat-11">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">Арамекс</span>
+                                                </label>
+                                            </div>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-12"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap"
+                                                       for="custom-checkbox-cat-12">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">Кур'єрська служба доставки</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-13"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap"
+                                                       for="custom-checkbox-cat-13">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">Обласний вузол спеціального зв'язку</span>
+                                                </label>
+                                            </div>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-14"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap"
+                                                       for="custom-checkbox-cat-14">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">Меркурій-Експресс</span>
+                                                </label>
+                                            </div>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-15"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap"
+                                                       for="custom-checkbox-cat-15">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">Міжнародна служба доставки UPS</span>
+                                                </label>
+                                            </div>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-16"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap"
+                                                       for="custom-checkbox-cat-16">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">Експрес-пошта</span>
+                                                </label>
+                                            </div>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-17"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap"
+                                                       for="custom-checkbox-cat-17">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">СМС</span>
+                                                </label>
+                                            </div>
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" value="" id="custom-checkbox-cat-18"
+                                                       name="">
+                                                <label class="custom-checkbox-wrap"
+                                                       for="custom-checkbox-cat-18">
+                                                    <span class="custom-checkbox-square"></span>
+                                                    <span class="custom-checkbox-text">Кур'єрський сервіс від А до Я</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Tab-panes -->
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="organization-theme-bottom clearfix">
+                        <button type="submit" class="btn btn-border pull-right">
+                            <i class="fa fa-save"></i>
+                            <span class="btn-border-text">Зберегти</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

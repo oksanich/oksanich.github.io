@@ -1,0 +1,204 @@
+//-------------------------
+// Content-offer
+//-------------------------
+
+.offer-wrap {
+  margin-bottom: 3rem;
+
+  .custom-checkbox {
+    margin-bottom: 2rem;
+  }
+
+  .form-label {
+    display: block;
+  }
+
+  .custom-radio-button,
+  .form-group-offer .custom-checkbox {
+    display: inline-block;
+    margin-right: 2rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media all and (max-width: $mdScreen) {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .input-date-wrap {
+    display: block;
+  }
+}
+
+.modal-volume-and-frequency {
+  .custom-checkbox {
+    margin-bottom: 2rem;
+  }
+
+  .form-label {
+    display: block;
+  }
+
+  .form-group-offer .custom-checkbox {
+    display: inline-block;
+    margin-right: 2rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media all and (max-width: $mdScreen) {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .input-date-wrap,
+  .input-time-wrap {
+    width: 100%;
+  }
+}
+
+.add-photo-wrap {
+  border: .2rem dashed $viking;
+  padding: 3rem 2rem;
+}
+
+.add-photo-text {
+  color: $trout;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.add-photo-separator {
+  color: $aluminium;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.add-photo-download {
+  display: inline-block !important;
+  margin-left: 10rem;
+
+  @media all and (max-width: $mdScreen) {
+    margin-left: 0;
+  }
+}
+
+.add-photo-content {
+  text-align: center;
+}
+
+.add-photo-input {
+  text-align: center;
+}
+
+.input-vs-select {
+  .form-control {
+    float: left;
+
+    &:first-child {
+      width: 75%;
+      border-radius: .4rem 0 0 .4rem;
+      border-right: none;
+    }
+  }
+
+  .select2-container {
+    float: left;
+    width: 25% !important;
+  }
+}
+
+.form-group {
+
+  .push-modal {
+    cursor: pointer;
+
+    .fa {
+      position: inherit;
+      vertical-align: middle;
+    }
+  }
+}
+
+.push-modal-top {
+  margin-top: 2rem;
+}
+
+.push-modal-text {
+  color: $nobel;
+  font-size: 1.4rem;
+}
+
+.form-volume-and-frequency-bottom {
+  border-top: .1rem solid #dee7ed;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.add-time {
+  cursor: pointer;
+
+  .fa {
+    margin-right: .5rem;
+    vertical-align: middle;
+  }
+
+  .add-time-text {
+    color: $nobel;
+    font-size: 1.4rem;
+  }
+}
+
+.modal-product-id {
+  .modal-body {
+    padding-top: 5rem;
+  }
+}
+
+.modal-category-item {
+  color: $trout;
+  font-size: 1.4rem;
+  padding: 1rem .5rem;
+  position: relative;
+
+  .fa {
+    position: absolute;
+    right: .5rem;
+    top: calc(50% - 1rem);
+  }
+
+  &.active {
+    background: $solitudeSecond;
+    color: $grayDark;
+
+    .fa {
+      color: $grayDark;
+    }
+  }
+
+  &:hover{
+    background: $solitude;
+    color: $grayDark;
+    cursor: pointer;
+
+    .fa {
+      color: $grayDark;
+    }
+  }
+}
+
+.form-private-user {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+
+  @media all and (max-width: $mdScreen) {
+    margin-bottom: 2rem;
+  }
+}
