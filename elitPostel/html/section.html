@@ -604,6 +604,7 @@
             </div>
             <!-- END header__search -->
         </div>
+
     </header>
     <!-- END header -->
 
@@ -657,7 +658,7 @@
                             <h4 class="title__side-bar">Бренды</h4>
                         </div>
                         
-                        <div class="side-bar__content">
+                        <div class="side-bar__content side-bar__content-js">
                             <ul class="articles-them__list">
                                 <li class="articles-them__item">
                                     <a href="#" class="articles-them__link">Almira Mix</a>
@@ -732,6 +733,24 @@
                                     <a href="#" class="articles-them__link">Home Sweet Home (Турция)</a>
                                 </li>
                             </ul>
+                            <div class="articles-more-less articles-all-js">
+                                <a class="articles-more">
+                                    <span class="articles-show-all__text">Показать все бренды</span>
+                                    <span class="articles-show-all__icon">
+                                        <svg class="icon icon-arrow-right">
+                                            <use xlink:href="../img/svg-icons/svg-icons.svg#arrow-right"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a class="articles-less">
+                                    <span class="articles-show-all__text">Скрыть</span>
+                                    <span class="articles-show-all__icon">
+                                        <svg class="icon icon-arrow-right">
+                                            <use xlink:href="../img/svg-icons/svg-icons.svg#arrow-right"></use>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                         
                         
@@ -888,11 +907,11 @@
                             </div>
                         </div>
                     
-                        <div class="section__move">
-                            <a href="#" class="section__move-link">
+                        <button class="section__move-btn">
+                            <span class="section__move-text">
                                 Перейти в каталог <span class="text--bold">Постельное белье</span> для выбора >>
-                            </a>
-                        </div>
+                            </span>
+                        </button>
                     </div>
                     <!-- END content__section -->
                 </div>
@@ -1138,6 +1157,30 @@
         pause: true,
         interval: false
     });
+
+
+    $(document).on('ready', function () {
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            asNavFor: '.slider-nav',
+            arrow: false
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            focusOnSelect: true,
+            arrows: true
+        });
+    });
+
+    $('.modal').on('shown.bs.modal', function () {
+        $('.slider-for').slick("setPosition", 0);
+        $('.slider-nav').slick("setPosition", 0);
+    })
+
 
 </script>
 <!-- END scripts -->

@@ -604,6 +604,7 @@
             </div>
             <!-- END header__search -->
         </div>
+
     </header>
     <!-- END header -->
 
@@ -628,12 +629,44 @@
             <!-- START content__article -->
             <div class="product-card-wrap">
                 <div class="row">
-                    <div class="col col--6-of-12">
+                    <div class="col col--6-of-12 col--xs-4-of-4 col--sm-4-of-4">
                         <div class="product-card__slider">
-            
+                            <div class="slider__view" data-toggle="modal" data-target="#view">
+                                <section class="slider-for">
+                                    <div>
+                                        <img src="../img/img-delete-after-integration/slider-1.jpg">
+                                    </div>
+                                    <div>
+                                        <img src="../img/img-delete-after-integration/slider-1.jpg">
+                                    </div>
+                                    <div>
+                                        <img src="../img/img-delete-after-integration/slider-1.jpg">
+                                    </div>
+                                    <div>
+                                        <img src="../img/img-delete-after-integration/slider-1.jpg">
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="slider__thumbnails">
+                                <div class="slider-nav">
+                                    <div>
+                                        <img src="../img/img-delete-after-integration/slider-thumb-1.jpg">
+                                    </div>
+                                    <div>
+                                        <img src="../img/img-delete-after-integration/slider-thumb-2.jpg">
+                                    </div>
+                                    <div>
+                                        <img src="../img/img-delete-after-integration/slider-thumb-3.jpg">
+                                    </div>
+                                    <div>
+                                        <img src="../img/img-delete-after-integration/slider-thumb-2.jpg">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col col--6-of-12">
+            
+                    <div class="col col--6-of-12 col--xs-4-of-4 col--sm-4-of-4">
                         <div class="product-card__info">
                             <h2 class="title title--section">Постельное белье La Scala - BPR-09 </h2>
                             <span class="product-card__info-article">Артикул: 45895627</span>
@@ -641,8 +674,9 @@
                                 <div class="info-block__top">3 300 грн</div>
                                 <div class="info-block__bottom">
                                     <div class="info-block__bottom-left">
+                                        <label for="quantity" class="field__label">кол-во</label>
                                         <span class="field--select-wrap">
-                                            <select class="field field--select field--select-small" id="quantity1"
+                                            <select class="field field--select field--select-small" id="quantity"
                                                     name="quantity1">
                                                 <option value="1" selected="selected">1</option>
                                                 <option value="2">2</option>
@@ -656,6 +690,43 @@
                                         <div class="btn btn--green btn--lg">В КОРЗИНУ</div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="product-card__info-about">
+                                <div class="product-about-wrap">
+                                    <ul class="product-about__property-list">
+                                        <li class="product-about__property-item">
+                                            <span class="product-about__property-name">бренд:</span>
+                                            <span class="product-about__property-value">La Scala (Франция)</span>
+                                        </li>
+                                        <li class="product-about__property-item">
+                                            <span class="product-about__property-name">размер:</span>
+                                            <span class="product-about__property-value">160 Х 220 (полуторный)</span>
+                                        </li>
+                                        <li class="product-about__property-item">
+                                            <span class="product-about__property-name">наволочка:</span>
+                                            <span class="product-about__property-value">50 Х 70 (2 шт)</span>
+                                        </li>
+                                        <li class="product-about__property-item">
+                                            <span class="product-about__property-name">простынь:</span>
+                                            <span class="product-about__property-value">200 Х 250 см</span>
+                                        </li>
+                                        <li class="product-about__property-item">
+                                            <span class="product-about__property-name">материал:</span>
+                                            <span class="product-about__property-value">сатин</span>
+                                        </li>
+                                        <li class="product-about__property-item">
+                                            <span class="product-about__property-name">цвет:</span>
+                                            <span class="product-about__property-value">серебристый</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="info-about__description">
+                                    Современное элитное постельное белье – настоящее произведение декоративного искусства. Белье для
+                                    спален отвечает самым жестким требованиям гигиены и санитарии. Постельное белье столь высокого
+                                    качества лучше всего подтвердит Вашу заботу о Ваших близких. Коллекция элитного постельного
+                                    белья и спальных принадлежностей, представленных в Интернет-магазине elit-postel.com.ua,
+                                    интересна своим разнообразием.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -1000,6 +1071,71 @@
 </div>
 <!-- END modal -->
 
+<!-- START modal -->
+<div class="modal fade modal--view" id="view" tabindex="-1" role="dialog" aria-labelledby="view">
+    <div class="modal-dialog modal-lg modal-dialog--view" role="document">
+        <div class="modal__content">
+            <div class="modal__header">
+                <div class="modal__header-content">
+                    <div class="title title--section">Покрывало Pavia HEAVEN white (240х260)</div>
+                    <div class="modal__header-content-info">
+                        <div class="modal__header-content-price">5 300 грн</div>
+                        <button class="btn btn--green">В КОРЗИНУ</button>
+                    </div>
+                </div>
+
+                <span class="product-card__info-article">Арт: 158947</span>
+
+                <button type="button" class="btn btn--close" data-dismiss="modal" aria-label="Close">
+                    <svg class="icon icon-close">
+                        <use xlink:href="../img/svg-icons/svg-icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__body">
+                <div class="product-card__slider">
+                    <div class="slider__view" data-toggle="modal" data-target="#view">
+                        <section class="slider-for">
+                            <div>
+                                <img src="../img/img-delete-after-integration/slider-1.jpg">
+                            </div>
+                            <div>
+                                <img src="../img/img-delete-after-integration/slider-1.jpg">
+                            </div>
+                            <div>
+                                <img src="../img/img-delete-after-integration/slider-1.jpg">
+                            </div>
+                            <div>
+                                <img src="../img/img-delete-after-integration/slider-1.jpg">
+                            </div>
+                        </section>
+                    </div>
+                    <div class="slider__thumbnails">
+                        <div class="slider-nav">
+                            <div>
+                                <img src="../img/img-delete-after-integration/slider-thumb-1.jpg">
+                            </div>
+                            <div>
+                                <img src="../img/img-delete-after-integration/slider-thumb-2.jpg">
+                            </div>
+                            <div>
+                                <img src="../img/img-delete-after-integration/slider-thumb-3.jpg">
+                            </div>
+                            <div>
+                                <img src="../img/img-delete-after-integration/slider-thumb-2.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="modal__body-description">* Внимание! Цвет и оттенок может отличаться, в зависимости от
+                    настроек монитора (яркость, контраст, насыщенность), а также освещения.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END modal -->
+
 </body>
 
 <!-- START scripts -->
@@ -1034,6 +1170,30 @@
         pause: true,
         interval: false
     });
+
+
+    $(document).on('ready', function () {
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            asNavFor: '.slider-nav',
+            arrow: false
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            focusOnSelect: true,
+            arrows: true
+        });
+    });
+
+    $('.modal').on('shown.bs.modal', function () {
+        $('.slider-for').slick("setPosition", 0);
+        $('.slider-nav').slick("setPosition", 0);
+    })
+
 
 </script>
 <!-- END scripts -->
