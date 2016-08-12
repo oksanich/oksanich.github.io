@@ -114,23 +114,29 @@
         <div class="header-middle-wrap">
             <div class="container">
                 <div class="row">
-                    <div class="col col--3-of-12 col--xs-4-of-4">
-                        <div class="header-logo">
-                            <a href="#" class="logo">
-                                <img class="logo__img" src="../img/logo.svg" alt="Елит Постель">
-                            </a>
-                        </div>
-                    </div>
-        
-                    <div class="col col--7-of-12 col--xs-2-of-4">
+                    <div class="col col--4-of-12 col--xs-2-of-4 col--sm-2-of-4">
                         <div class="header-contact">
+                            <span class="header-contact__phones-icon">
+                                <svg class="icon icon-phone">
+                                    <use xlink:href="../img/svg-icons/svg-icons.svg#phone"></use>
+                                </svg>
+                            </span>
+        
                             <a href="tel:+380936212600" class="header-contact__phone">+38(093) 621-26-00</a>
                             <a href="tel:+380986059697" class="header-contact__phone">+38(098) 605-96-97</a>
                             <a href="tel:+380667522324" class="header-contact__phone">+38(066) 752-23-24</a>
                             <a href="mailto:elit-postell@ukr.net" class="header-contact__mail">elit-postell@ukr.net</a>
                         </div>
                     </div>
-                    <div class="col col--2-of-12 col--xs-2-of-4">
+        
+                    <div class="col col--4-of-12 col--xs-4-of-4 col--sm-4-of-4">
+                        <div class="header-logo">
+                            <a href="#" class="logo">
+                                <img class="logo__img" src="../img/logo.svg" alt="Елит Постель">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col col--4-of-12 col--xs-2-of-4 col--sm-2-of-4">
                         <div class="header-cart">
                             <img class="header-cart__img" src="../img/cart.jpg" alt="">
                             <span class="header-cart__number">0</span>
@@ -663,6 +669,27 @@
                             <div class="field-group">
                                 <label for="brands" class="field__label">Бренд</label>
                         
+                                <!-- START show more/less -->
+                                <span class="filter-show-hide filter-show-hide-js">
+                                    <a class="filter-more">
+                                        <span class="filter-show-all__text">Показать фильтр</span>
+                                        <span class="filter-show-all__icon">
+                                            <svg class="icon icon-arrow-right">
+                                                <use xlink:href="../img/svg-icons/svg-icons.svg#arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <a class="filter-less">
+                                        <span class="filter-show-all__text">Скрыть фильтр</span>
+                                        <span class="filter-show-all__icon">
+                                            <svg class="icon icon-arrow-right">
+                                                <use xlink:href="../img/svg-icons/svg-icons.svg#arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </span>
+                                <!-- END show more/less -->
+                        
                                 <div class="field--select-wrap">
                                     <select class="field field--select" id="brands" name="brands">
                                         <option selected="selected">Buldans (Турция)</option>
@@ -675,6 +702,27 @@
                             </div>
                             <div class="field-group">
                                 <label for="materials" class="field__label">Материал</label>
+                        
+                                <!-- START show more/less -->
+                                <span class="filter-show-hide filter-show-hide-js">
+                                    <a class="filter-more">
+                                        <span class="filter-show-all__text">Показать фильтр</span>
+                                        <span class="filter-show-all__icon">
+                                            <svg class="icon icon-arrow-right">
+                                                <use xlink:href="../img/svg-icons/svg-icons.svg#arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <a class="filter-less">
+                                        <span class="filter-show-all__text">Скрыть фильтр</span>
+                                        <span class="filter-show-all__icon">
+                                            <svg class="icon icon-arrow-right">
+                                                <use xlink:href="../img/svg-icons/svg-icons.svg#arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </span>
+                                <!-- END show more/less -->
                         
                                 <div class="field--select-wrap">
                                     <select class="field field--select" id="materials" name="materials">
@@ -689,6 +737,27 @@
                             <div class="field-group">
                                 <label for="sizes" class="field__label">Общий размер</label>
                         
+                                <!-- START show more/less -->
+                                <span class="filter-show-hide filter-show-hide-js">
+                                    <a class="filter-more">
+                                        <span class="filter-show-all__text">Показать фильтр</span>
+                                        <span class="filter-show-all__icon">
+                                            <svg class="icon icon-arrow-right">
+                                                <use xlink:href="../img/svg-icons/svg-icons.svg#arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <a class="filter-less">
+                                        <span class="filter-show-all__text">Скрыть фильтр</span>
+                                        <span class="filter-show-all__icon">
+                                            <svg class="icon icon-arrow-right">
+                                                <use xlink:href="../img/svg-icons/svg-icons.svg#arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </span>
+                                <!-- END show more/less -->
+                        
                                 <div class="field--select-wrap">
                                     <select class="field field--select" id="sizes" name="sizes">
                                         <option selected="selected">Все</option>
@@ -701,6 +770,27 @@
                             </div>
                             <div class="field-group">
                                 <label class="field__label">Цвет</label>
+                        
+                                <!-- START show more/less -->
+                                <span class="filter-show-hide filter-show-hide-js">
+                                    <a class="filter-more">
+                                        <span class="filter-show-all__text">Показать фильтр</span>
+                                        <span class="filter-show-all__icon">
+                                            <svg class="icon icon-arrow-right">
+                                                <use xlink:href="../img/svg-icons/svg-icons.svg#arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <a class="filter-less">
+                                        <span class="filter-show-all__text">Скрыть фильтр</span>
+                                        <span class="filter-show-all__icon">
+                                            <svg class="icon icon-arrow-right">
+                                                <use xlink:href="../img/svg-icons/svg-icons.svg#arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </span>
+                                <!-- END show more/less -->
                         
                                 <div class="checkbox-group">
                                     <div class="custom-checkbox-wrap">
@@ -768,14 +858,36 @@
                             <div class="field-group">
                                 <label for="sizes" class="field__label">Цена</label>
                         
+                                <!-- START show more/less -->
+                                <span class="filter-show-hide filter-show-hide-js">
+                                    <a class="filter-more">
+                                        <span class="filter-show-all__text">Показать фильтр</span>
+                                        <span class="filter-show-all__icon">
+                                            <svg class="icon icon-arrow-right">
+                                                <use xlink:href="../img/svg-icons/svg-icons.svg#arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <a class="filter-less">
+                                        <span class="filter-show-all__text">Скрыть фильтр</span>
+                                        <span class="filter-show-all__icon">
+                                            <svg class="icon icon-arrow-right">
+                                                <use xlink:href="../img/svg-icons/svg-icons.svg#arrow-right"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </span>
+                                <!-- END show more/less -->
                         
-                                <div class="filter-price">
-                                    <div class='price-slide uislide column'></div>
-                                </div>
-                                <div class="filter-price-inputs">
-                                    <input class="field" type="number" min="0"/>
-                                    <span class="filter-price-separator">&mdash;</span>
-                                    <input class="field" type="number" min="0"/>
+                                <div class="filter-price-wrap">
+                                    <div class="filter-price">
+                                        <div class='price-slide uislide column'></div>
+                                    </div>
+                                    <div class="filter-price-inputs">
+                                        <input class="field" type="number" min="0"/>
+                                        <span class="filter-price-separator">&mdash;</span>
+                                        <input class="field" type="number" min="0"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1643,39 +1755,66 @@
 
                 <div class="row">
                     <div class="col col--6-of-12 col--xs-4-of-4 col--sm-4-of-4">
-                        <div class="product-card__slider">
-                            <div class="slider__view" data-toggle="modal" data-target="#view">
-                                <section class="slider-for">
-                                    <div>
-                                        <img src="../img/img-delete-after-integration/slider-1.jpg">
-                                    </div>
-                                    <div>
-                                        <img src="../img/img-delete-after-integration/slider-1.jpg">
-                                    </div>
-                                    <div>
-                                        <img src="../img/img-delete-after-integration/slider-1.jpg">
-                                    </div>
-                                    <div>
-                                        <img src="../img/img-delete-after-integration/slider-1.jpg">
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="slider__thumbnails">
-                                <div class="slider-nav">
-                                    <div>
-                                        <img src="../img/img-delete-after-integration/slider-thumb-1.jpg">
-                                    </div>
-                                    <div>
-                                        <img src="../img/img-delete-after-integration/slider-thumb-2.jpg">
-                                    </div>
-                                    <div>
-                                        <img src="../img/img-delete-after-integration/slider-thumb-3.jpg">
-                                    </div>
-                                    <div>
-                                        <img src="../img/img-delete-after-integration/slider-thumb-2.jpg">
-                                    </div>
-                                </div>
-                            </div>
+                        <!--<div class="product-card__slider">-->
+                            <!--<div class="slider__view" data-toggle="modal" data-target="#view">-->
+                                <!--<section class="slider-for">-->
+                                    <!--<div>-->
+                                        <!--<img src="../img/img-delete-after-integration/slider-1.jpg">-->
+                                    <!--</div>-->
+                                    <!--<div>-->
+                                        <!--<img src="../img/img-delete-after-integration/slider-1.jpg">-->
+                                    <!--</div>-->
+                                    <!--<div>-->
+                                        <!--<img src="../img/img-delete-after-integration/slider-1.jpg">-->
+                                    <!--</div>-->
+                                    <!--<div>-->
+                                        <!--<img src="../img/img-delete-after-integration/slider-1.jpg">-->
+                                    <!--</div>-->
+                                <!--</section>-->
+                            <!--</div>-->
+                            <!--<div class="slider__thumbnails">-->
+                                <!--<div class="slider-nav">-->
+                                    <!--<div>-->
+                                        <!--<img src="../img/img-delete-after-integration/slider-thumb-1.jpg">-->
+                                    <!--</div>-->
+                                    <!--<div>-->
+                                        <!--<img src="../img/img-delete-after-integration/slider-thumb-2.jpg">-->
+                                    <!--</div>-->
+                                    <!--<div>-->
+                                        <!--<img src="../img/img-delete-after-integration/slider-thumb-3.jpg">-->
+                                    <!--</div>-->
+                                    <!--<div>-->
+                                        <!--<img src="../img/img-delete-after-integration/slider-thumb-2.jpg">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <div class="royalSlider rsDefault _royalSlider">
+                            <a class="rsImg bugaga"
+                               data-rsbigimg="../img/img-delete-after-integration/slider-1.jpg"
+                               href="../img/img-delete-after-integration/slider-1.jpg">
+                                <img class="rsTmb"
+                                     src="../img/img-delete-after-integration/slider-thumb-1.jpg">
+                            </a>
+                            <a class="rsImg"
+                               data-rsbigimg="../img/img-delete-after-integration/slider-1.jpg"
+                               href="../img/img-delete-after-integration/slider-1.jpg">
+                                <img class="rsTmb"
+                                     src="../img/img-delete-after-integration/slider-thumb-2.jpg">
+                            </a>
+                            <a class="rsImg"
+                               data-rsbigimg="../img/img-delete-after-integration/slider-1.jpg"
+                               href="../img/img-delete-after-integration/slider-1.jpg">
+                                <img class="rsTmb"
+                                     src="../img/img-delete-after-integration/slider-thumb-3.jpg">
+                            </a>
+                            <a class="rsImg"
+                               data-rsbigimg="../img/img-delete-after-integration/slider-1.jpg"
+                               href="../img/img-delete-after-integration/slider-1.jpg">
+                                <img class="rsTmb"
+                                     src="../img/img-delete-after-integration/slider-thumb-1.jpg">
+                            </a>
                         </div>
                     </div>
 
@@ -1793,7 +1932,8 @@
         interval: false
     });
 
-
+    // Slick slider
+    // --------------------------
     $(document).on('ready', function () {
         $('.slider-for').slick({
             slidesToShow: 1,
@@ -1811,9 +1951,59 @@
         });
     });
 
+
+    // Slick slider in modal
+    // --------------------------
     $('.modal').on('shown.bs.modal', function () {
-        $('.slider-for').slick("setPosition", 0);
-        $('.slider-nav').slick("setPosition", 0);
+        $('.slider-for').slick('setPosition', 0);
+        $('.slider-nav').slick('setPosition', 0);
+    });
+
+    // Royal slider
+    // --------------------------
+    $(function () {
+        $('._royalSlider').royalSlider({
+            fullscreen: {
+                enabled: true,
+                nativeFS: true
+            },
+            controlNavigation: 'thumbnails',
+            autoScaleSlider: true,
+            autoScaleSliderWidth: 500,
+            autoScaleSliderHeight: 500,
+            loop: false,
+            imageScaleMode: 'fit-if-smaller',
+            navigateByClick: true,
+            numImagesToPreload: 4,
+            arrowsNav: false,
+            arrowsNavAutoHide: true,
+            arrowsNavHideOnTouch: true,
+            keyboardNavEnabled: true,
+            fadeinLoadedSlide: true,
+            globalCaption: true,
+            globalCaptionInside: false,
+            thumbs: {
+                appendSpan: true,
+                firstMargin: true,
+                paddingBottom: 5
+            }
+        });
+    });
+
+    // Royal slider in modal
+    // --------------------------
+    $('.modal').on('shown.bs.modal', function () {
+        $('.royalSlider').royalSlider('updateSliderSize', true);
+
+        (function () {
+            var fullScreenBtn = document.querySelector('.rsFullscreenBtn')
+
+            if (fullScreenBtn) {
+                fullScreenBtn.addEventListener('click', function () {
+                    fullScreenBtn.closest('.modal').classList.toggle('full-screen');
+                });
+            }
+        })();
     });
 
 </script>
