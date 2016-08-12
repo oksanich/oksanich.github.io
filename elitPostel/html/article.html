@@ -1036,10 +1036,8 @@
     // Carousel
     // --------------------------
     $('.carousel').carousel({
-//        interval: 7000,
-//        pause: 'hover',
-        pause: true,
-        interval: false
+        interval: 7000,
+        pause: 'hover',
     });
 
     // Slick slider
@@ -1064,7 +1062,7 @@
 
     // Slick slider in modal
     // --------------------------
-    $('.modal').on('shown.bs.modal', function () {
+    $('.modal--view').on('shown.bs.modal', function () {
         $('.slider-for').slick('setPosition', 0);
         $('.slider-nav').slick('setPosition', 0);
     });
@@ -1075,7 +1073,7 @@
         $('._royalSlider').royalSlider({
             fullscreen: {
                 enabled: true,
-                nativeFS: true
+                nativeFS: false
             },
             controlNavigation: 'thumbnails',
             autoScaleSlider: true,
@@ -1088,7 +1086,7 @@
             arrowsNav: false,
             arrowsNavAutoHide: true,
             arrowsNavHideOnTouch: true,
-            keyboardNavEnabled: true,
+            keyboardNavEnabled: false,
             fadeinLoadedSlide: true,
             globalCaption: true,
             globalCaptionInside: false,
@@ -1102,18 +1100,8 @@
 
     // Royal slider in modal
     // --------------------------
-    $('.modal').on('shown.bs.modal', function () {
+    $('.modal--fast-view').on('shown.bs.modal', function () {
         $('.royalSlider').royalSlider('updateSliderSize', true);
-
-        (function () {
-            var fullScreenBtn = document.querySelector('.rsFullscreenBtn')
-
-            if (fullScreenBtn) {
-                fullScreenBtn.addEventListener('click', function () {
-                    fullScreenBtn.closest('.modal').classList.toggle('full-screen');
-                });
-            }
-        })();
     });
 
 </script>
