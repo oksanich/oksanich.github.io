@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Flexbox</title>
+</head>
+<body>
+
+<div id="page-wrap" class="page-wrap">
+
+    <button class="btn-mobile-menu btn-mobile-menu-js">
+        <span class="btn-mobile-menu__icon"></span>
+    </button>
+
+    <!-- START header -->
+    <header id="header" class="header">
+        <div class="container">
+            <!--<h1 class="title">Flexbox</h1>-->
+        </div>
+    </header>
+    <!-- END header -->
+
+    <!-- START content -->
+    <main class="content">
+        <!-- START example-1 -->
+        <div class="container">
+        
+            <h2 class="title">HTML</h2>
+        
+            <div class="code">
+            <pre class="line-numbers">
+            <code class="language-html">
+             &lt;div class="wrap"&gt;
+                 &lt;header class="header"&gt;
+                    Header
+                 &lt;/header&gt;
+        
+                 &lt;main class="body"&gt;
+                     &lt;div class="content"&gt;Main content&lt;/div&gt;
+                     &lt;nav class="nav"&gt;Navigation&lt;/nav&gt;
+                     &lt;aside class="side-bar"&gt;Side-bar&lt;/aside&gt;
+                 &lt;/main&gt;
+        
+                 &lt;footer class="footer"&gt;
+                    Footer
+                 &lt;/footer&gt;
+             &lt;/div&gt;
+            </code>
+            </pre>
+            </div>
+        
+            <h2 class="title">CSS</h2>
+        
+            <div class="code">
+            <pre class="line-numbers">
+            <code class="language-css">
+             .wrap {
+               display: flex;
+               flex-direction: column;
+             }
+        
+            .body {
+              display: flex;
+              flex-grow: 1;
+            }
+        
+            .content {
+              flex-grow: 1;
+            }
+        
+            .nav {
+              order: -1;
+            }
+            </code>
+            </pre>
+            </div>
+        
+        
+            <section class="pen">
+                <p data-height="600" data-theme-id="0" data-slug-hash="YWmXOJ" data-default-tab="result" data-user="Oksanych"
+                   data-embed-version="2" class="codepen">
+                    See the Pen <a href="http://codepen.io/Oksanych/pen/YWmXOJ/">
+                    Flex layout</a> by Aleksandr (<a href="http://codepen.io/Oksanych">@Oksanych</a>)
+                    on <a href="http://codepen.io">CodePen</a>.
+                </p>
+            </section>
+        </div>
+        <!-- END example-1 -->
+    </main>
+    <!-- END content -->
+
+    <!-- START footer -->
+    <footer id="footer" class="footer">
+        
+    </footer>
+    <!-- END footer -->
+
+</div>
+
+<!-- START nav -->
+<nav id="nav" class="nav">
+    <ul class="nav__list">
+        <li class="nav__item">
+            <a href="index.html" class="nav__link">Flex properties</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="example-1.html" class="nav__link">Flex layout</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="example-2.html" class="nav__link">Flex navigation</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="example-4.html" class="nav__link">Flex basis & margin</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="example-3.html" class="nav__link">Flex blocks</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="example-5.html" class="nav__link">Flex z-index</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="links.html" class="nav__link">Links</a>
+        </li>
+    </ul>
+</nav>
+<!-- END nav -->
+
+</body>
+
+<!-- START scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<script src="../js/main.js"></script>
+
+<script>
+
+    // Slideout
+    // --------------------------
+    var slideout = new Slideout({
+        'panel': document.getElementById('page-wrap'),
+        'menu': document.getElementById('nav'),
+        'padding': 256,
+        'tolerance': 70
+    });
+
+    document.querySelector('.btn-mobile-menu-js').addEventListener('click', function () {
+        slideout.toggle();
+    });
+
+    // svg4everybody
+    // --------------------------
+    $(document).ready(function () {
+        svg4everybody({});
+    });
+
+</script>
+<!-- END scripts -->
+
+</html>

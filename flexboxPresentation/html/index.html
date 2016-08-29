@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Flexbox</title>
+</head>
+<body>
+
+<div id="page-wrap" class="page-wrap">
+
+    <button class="btn-mobile-menu btn-mobile-menu-js">
+        <span class="btn-mobile-menu__icon"></span>
+    </button>
+
+    <!-- START header -->
+    <header id="header" class="header">
+        <div class="container">
+            <!--<h1 class="title">Flexbox</h1>-->
+        </div>
+    </header>
+    <!-- END header -->
+
+    <!-- START content -->
+    <main class="content">
+        <!-- START about -->
+        <div class="container">
+            <div class="flex-img-wrap">
+                <img src="../img/flex-axes.png" alt="Flex-axes" class="flex-img">
+            </div>
+        
+            <!-- START html code example-->
+           <div class="code--property">
+           <pre class="line-numbers">
+            <code class="language-html">
+            &lt;div class="flex"&gt;
+                &lt;div class="flex__item flex__item--1"&gt;
+                    &lt;span class="name"&gt;red&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="flex__item flex__item--2"&gt;
+                    &lt;span class="name"&gt;green&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="flex__item flex__item--3"&gt;
+                    &lt;span class="name"&gt;blue&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="flex__item flex__item--4"&gt;
+                    &lt;span class="name"&gt;rgb&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            </code>
+            </pre>
+           </div>
+            <!-- END html code example-->
+        
+            <!-- START flex display -->
+            <section id="block-1" class="property">
+        
+                <div class="property-header property-header-js">
+                    <h2 class="title">
+                        <span class="title__key">display:&nbsp;</span>
+                        <span class="title__value">flex | inline-flex</span>
+                    </h2>
+        
+                    <p class="description">
+                        <span class="description__key">Applies to:</span>
+                        <span class="description__value">parent element flex-container</span>
+                    </p>
+                </div>
+        
+                <div class="flex-wrap">
+        
+                    <!-- START flex display radio -->
+                    <input class="radio-btn" type="radio" name="flex-display" id="block" checked>
+                    <label class="radio-label" for="block">block</label>
+                    <input class="radio-btn" type="radio" name="flex-display" id="flex">
+                    <label class="radio-label" for="flex">flex</label>
+                    <input class='radio-btn' type="radio" name="flex-display" id="inline-flex">
+                    <label class='radio-label' for="inline-flex">flex-inline</label>
+                    <!-- END flex display radio -->
+        
+                    <div class="flex">
+                        <div class="flex__item flex__item--1">
+                            <span class="name">red</span>
+                        </div>
+                        <div class="flex__item flex__item--2">
+                            <span class="name">green</span>
+                        </div>
+                        <div class="flex__item flex__item--3">
+                            <span class="name">blue</span>
+                        </div>
+                        <div class="flex__item flex__item--4">
+                            <span class="name">rgb</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END flex display -->
+        
+            <!-- START flex-direction -->
+            <section id="block-2" class="property property--flex-direction">
+        
+                <div class="property-header property-header-js">
+                    <h2 class="title">
+                        <span class="title__key">flex-direction:&nbsp;</span>
+                        <span class="title__value">row | row-reverse | column | column-reverse</span>
+                    </h2>
+        
+                    <p class="description">
+                        <span class="description__key">Applies to:</span>
+                        <span class="description__value">parent element flex-container</span>
+                    </p>
+                </div>
+        
+                <div class="flex-wrap">
+        
+                    <!-- START flex-direction radio -->
+                    <input class="radio-btn" type="radio" name="flex-direction" id="row" checked>
+                    <label class="radio-label" for="row">row (default)</label>
+                    <input class='radio-btn' type="radio" name="flex-direction" id="row-reverse">
+                    <label class='radio-label' for="row-reverse">row-reverse</label>
+                    <input class='radio-btn' type="radio" name="flex-direction" id="column">
+                    <label class='radio-label' for="column">column</label>
+                    <input class='radio-btn' type="radio" name="flex-direction" id="column-reverse">
+                    <label class='radio-label' for="column-reverse">column-reverse</label>
+                    <!-- END flex-direction radio -->
+        
+                    <div class="flex">
+                        <div class="flex__item flex__item--1">
+                            <span class="name">red</span>
+                        </div>
+                        <div class="flex__item flex__item--2">
+                            <span class="name">green</span>
+                        </div>
+                        <div class="flex__item flex__item--3">
+                            <span class="name">blue</span>
+                        </div>
+                        <div class="flex__item flex__item--4">
+                            <span class="name">rgb</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END flex-direction -->
+        
+            <!-- START flex-wrap -->
+            <section id="block-3" class="property">
+        
+                <div class="property-header property-header-js">
+                    <h2 class="title">
+                        <span class="title__key">flex-wrap:&nbsp;</span>
+                        <span class="title__value">nowrap | wrap | wrap-reverse</span>
+                    </h2>
+        
+                    <p class="description">
+                        <span class="description__key">Applies to:</span>
+                        <span class="description__value">parent element flex-container</span>
+                    </p>
+                </div>
+        
+                <div class="flex-wrap">
+        
+                    <!-- START flex-wrap radio -->
+                    <input class="radio-btn" type="radio" name="flex-wrap" id="nowrap" checked>
+                    <label class="radio-label" for="nowrap">nowrap (default)</label>
+                    <input class="radio-btn" type="radio" name="flex-wrap" id="wrap">
+                    <label class="radio-label" for="wrap">wrap</label>
+                    <input class='radio-btn' type="radio" name="flex-wrap" id="wrap-reverse">
+                    <label class='radio-label' for="wrap-reverse">wrap-reverse</label>
+                    <!-- END flex-wrap radio -->
+        
+                    <div class="flex">
+                        <div class="flex__item flex__item--1">
+                            <span class="name">red</span>
+                        </div>
+                        <div class="flex__item flex__item--1">
+                            <span class="name">red</span>
+                        </div>
+                        <div class="flex__item flex__item--2">
+                            <span class="name">green</span>
+                        </div>
+                        <div class="flex__item flex__item--2">
+                            <span class="name">green</span>
+                        </div>
+                        <div class="flex__item flex__item--3">
+                            <span class="name">blue</span>
+                        </div>
+                        <div class="flex__item flex__item--3">
+                            <span class="name">blue</span>
+                        </div>
+                        <div class="flex__item flex__item--4">
+                            <span class="name">rgb</span>
+                        </div>
+                        <div class="flex__item flex__item--4">
+                            <span class="name">rgb</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END flex-wrap -->
+        
+            <!-- START flex-flow -->
+            <section id="block-4" class="property">
+                <div class="property-header">
+                    <h2 class="title">
+                        <span class="title__key">flex-flow:&nbsp;</span>
+                        <span class="title__value">&lt;'flex-direction'> || <'flex-wrap'&gt;</span>
+                    </h2>
+        
+                    <p class="description">
+                        <span class="description__key">Applies to:</span>
+                        <span class="description__value">parent element flex-container</span>
+                    </p>
+                </div>
+            </section>
+            <!-- END flex-flow -->
+        
+            <!-- START justify-content -->
+            <section id="block-5" class="property">
+        
+                <div class="property-header property-header-js">
+                    <h2 class="title">
+                        <span class="title__key">justify-content:&nbsp;</span>
+                        <span class="title__value">flex-start | flex-end | center | space-between | space-around</span>
+                    </h2>
+        
+                    <p class="description">
+                        <span class="description__key">Applies to:</span>
+                        <span class="description__value">parent element flex-container</span>
+                    </p>
+                </div>
+        
+                <div class="flex-wrap">
+        
+                    <!-- START justify-content radio -->
+                    <input class="radio-btn" type="radio" name="justify-content" id="justify-flex-start" checked>
+                    <label class="radio-label" for="justify-flex-start">flex-start (default)</label>
+                    <input class="radio-btn" type="radio" name="justify-content" id="justify-flex-end">
+                    <label class="radio-label" for="justify-flex-end">flex-end</label>
+                    <input class='radio-btn' type="radio" name="justify-content" id="justify-center">
+                    <label class='radio-label' for="justify-center">center</label>
+                    <input class='radio-btn' type="radio" name="justify-content" id="justify-between">
+                    <label class='radio-label' for="justify-between">space-between</label>
+                    <input class='radio-btn' type="radio" name="justify-content" id="justify-around">
+                    <label class='radio-label' for="justify-around">space-around</label>
+                    <!-- END justify-content radio -->
+        
+                    <div class="flex">
+                        <div class="flex__item flex__item--1">
+                            <span class="name">red</span>
+                        </div>
+                        <div class="flex__item flex__item--2">
+                            <span class="name">green</span>
+                        </div>
+                        <div class="flex__item flex__item--3">
+                            <span class="name">blue</span>
+                        </div>
+                        <div class="flex__item flex__item--4">
+                            <span class="name">rgb</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END justify-content -->
+        
+            <!-- START align-items -->
+            <section id="block-6" class="property property--align-items">
+        
+                <div class="property-header property-header-js">
+                    <h2 class="title">
+                        <span class="title__key">align-items:&nbsp;</span>
+                        <span class="title__value">flex-start | flex-end | center | baseline | stretch</span>
+                    </h2>
+        
+                    <p class="description">
+                        <span class="description__key">Applies to:</span>
+                        <span class="description__value">parent element flex-container</span>
+                    </p>
+                </div>
+        
+                <div class="flex-wrap">
+        
+                    <!-- START align-items radio -->
+                    <input class="radio-btn" type="radio" name="justify-content" id="align-items-flex-start" checked>
+                    <label class="radio-label" for="align-items-flex-start">flex-start</label>
+                    <input class="radio-btn" type="radio" name="justify-content" id="align-items-flex-end">
+                    <label class="radio-label" for="align-items-flex-end">flex-end</label>
+                    <input class='radio-btn' type="radio" name="justify-content" id="align-items-center">
+                    <label class='radio-label' for="align-items-center">center</label>
+                    <input class='radio-btn' type="radio" name="justify-content" id="align-items-baseline">
+                    <label class='radio-label' for="align-items-baseline">baseline</label>
+                    <input class='radio-btn' type="radio" name="justify-content" id="align-items-stretch">
+                    <label class='radio-label' for="align-items-stretch">stretch (default)</label>
+                    <!-- END align-items radio -->
+        
+                    <div class="flex">
+                        <div class="flex__item flex__item--1">
+                            <span class="name">red</span>
+                        </div>
+                        <div class="flex__item flex__item--2">
+                            <span class="name">
+                                green<br>green<br>green
+                            </span>
+                        </div>
+                        <div class="flex__item flex__item--3">
+                            <span class="name">
+                                blue<br>blue<br>blue<br>blue
+                            </span>
+                        </div>
+                        <div class="flex__item flex__item--4">
+                            <span class="name">
+                                rgb<br>rgb
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END align-items -->
+        
+            <!-- START align-content -->
+            <section id="block-7" class="property property--align-content">
+        
+                <div class="property-header property-header-js">
+                    <h2 class="title">
+                        <span class="title__key">align-content:&nbsp;</span>
+                        <span class="title__value">flex-start | flex-end | center | space-between | space-around | stretch</span>
+                    </h2>
+        
+                    <p class="description">
+                        <span class="description__key">Applies to:</span>
+                        <span class="description__value">parent element flex-container</span>
+                    </p>
+                </div>
+        
+                <div class="flex-wrap">
+        
+                    <!-- START align-content radio -->
+                    <input class="radio-btn" type="radio" name="justify-content" id="align-content-flex-start" checked>
+                    <label class="radio-label" for="align-content-flex-start">flex-start</label>
+                    <input class="radio-btn" type="radio" name="justify-content" id="align-content-flex-end">
+                    <label class="radio-label" for="align-content-flex-end">flex-end</label>
+                    <input class='radio-btn' type="radio" name="justify-content" id="align-content-center">
+                    <label class='radio-label' for="align-content-center">center</label>
+                    <input class='radio-btn' type="radio" name="justify-content" id="align-content-between">
+                    <label class='radio-label' for="align-content-between">space-between</label>
+                    <input class='radio-btn' type="radio" name="justify-content" id="align-content-around">
+                    <label class='radio-label' for="align-content-around">space-around</label>
+                    <input class='radio-btn' type="radio" name="justify-content" id="align-content-stretch">
+                    <label class='radio-label' for="align-content-stretch">stretch (default)</label>
+                    <!-- END align-content radio -->
+        
+                    <div class="flex">
+                        <div class="flex__item flex__item--1">
+                            <span class="name">red</span>
+                        </div>
+                        <div class="flex__item flex__item--1">
+                            <span class="name">red</span>
+                        </div>
+                        <div class="flex__item flex__item--2">
+                            <span class="name">green</span>
+                        </div>
+                        <div class="flex__item flex__item--2">
+                            <span class="name">green</span>
+                        </div>
+                        <div class="flex__item flex__item--3">
+                            <span class="name">blue</span>
+                        </div>
+                        <div class="flex__item flex__item--3">
+                            <span class="name">blue</span>
+                        </div>
+                        <div class="flex__item flex__item--4">
+                            <span class="name">rgb</span>
+                        </div>
+                        <div class="flex__item flex__item--4">
+                            <span class="name">rgb</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END align-content -->
+        
+            <!-- START order-->
+            <section id="block-8" class="property property--order">
+        
+                <div class="property-header property-header-js">
+                    <h2 class="title">
+                        <span class="title__key">order: </span>
+                        <span class="title__value">&lt;integer&gt;</span>
+                    </h2>
+        
+                    <p class="description">
+                        <span class="description__key">Applies to:</span>
+                        <span class="description__value">child element / flex-element</span>
+                    </p>
+                </div>
+        
+                <div class="flex-wrap">
+                    <div class="flex">
+                        <div class="flex__item flex__item--1">
+                            <span class="name">red<br>2</span>
+                        </div>
+                        <div class="flex__item flex__item--2">
+                            <span class="name">green<br>1</span>
+                        </div>
+                        <div class="flex__item flex__item--3">
+                            <span class="name">blue<br>0</span>
+                        </div>
+                        <div class="flex__item flex__item--4">
+                            <span class="name">rgb<br>0</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END order -->
+        
+            <!-- START flex-grow-->
+            <section id="block-9" class="property property--flex-grow">
+                <div class="property-header property-header-js">
+                    <h2 class="title">
+                        <span class="title__key">flex-grow: </span>
+                        <span class="title__value">&lt;number&gt; (default 0)</span>
+                    </h2>
+        
+                    <p class="description">
+                        <span class="description__key">Applies to:</span>
+                        <span class="description__value">child element / flex-element</span>
+                    </p>
+                </div>
+        
+                <div class="flex-wrap">
+                    <div class="flex">
+                        <div class="flex__item flex__item--1">
+                            <span class="name">red<br>2</span>
+                        </div>
+                        <div class="flex__item flex__item--2">
+                            <span class="name">green<br>1</span>
+                        </div>
+                        <div class="flex__item flex__item--3">
+                            <span class="name">blue<br>2</span>
+                        </div>
+                        <div class="flex__item flex__item--4">
+                            <span class="name">rgb<br>1</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END flex-grow -->
+        
+            <!-- START flex-shrink-->
+            <section id="block-10" class="property property--flex-shrink">
+                <div class="property-header property-header-js">
+                    <h2 class="title">
+                        <span class="title__key">flex-shrink: </span>
+                        <span class="title__value">&lt;number&gt; (default 1)</span>
+                    </h2>
+        
+                    <p class="description">
+                        <span class="description__key">Applies to:</span>
+                        <span class="description__value">child element / flex-element</span>
+                    </p>
+                </div>
+        
+                <div class="flex-wrap">
+                    <div class="flex">
+                        <div class="flex__item flex__item--1">
+                            <span class="name">red<br>1</span>
+                        </div>
+                        <div class="flex__item flex__item--2">
+                            <span class="name">green<br>50</span>
+                        </div>
+                        <div class="flex__item flex__item--3">
+                            <span class="name">blue<br>1</span>
+                        </div>
+                        <div class="flex__item flex__item--4">
+                            <span class="name">rgb<br>100</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END flex-shrink -->
+        
+            <!-- START flex-shrink-->
+            <section id="block-11" class="property property--flex-basis">
+                <div class="property-header property-header-js">
+                    <h2 class="title ">
+                        <span class="title__key">flex-basis: </span>
+                        <span class="title__value">&lt;length&gt; | auto (default)</span>
+                    </h2>
+        
+                    <p class="description">
+                        <span class="description__key">Applies to:</span>
+                        <span class="description__value">child element / flex-element</span>
+                    </p>
+                </div>
+        
+                <div class="flex-wrap">
+                    <div class="flex">
+                        <div class="flex__item flex__item--1">
+                            <span class="name">red</span>
+                        </div>
+                        <div class="flex__item flex__item--2">
+                            <span class="name">green</span>
+                        </div>
+                        <div class="flex__item flex__item--3">
+                            <span class="name">blue</span>
+                        </div>
+                        <div class="flex__item flex__item--4">
+                            <span class="name">rgb</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END flex-shrink -->
+        
+            <!-- START flex-flow -->
+            <section id="block-12" class="property">
+                <div class="property-header">
+                    <h2 class="title">
+                        <span class="title__key">flex:&nbsp;</span>
+                        <span class="title__value">none |  &lt;'flex-grow'&gt; <i>&lt;'flex-shrink'&gt;</i>  <i>&lt;'flex-basis'&gt;</i></span>
+                    </h2>
+        
+                    <p class="description">
+                        <span class="description__key">Applies to:</span>
+                        <span class="description__value">child element / flex-element</span>
+                    </p>
+                </div>
+            </section>
+            <!-- END flex-flow -->
+        
+            <!-- START align-self -->
+            <section id="block-13" class="property property--align-self">
+        
+                <div class="property-header property-header-js">
+                    <h2 class="title">
+                        <span class="title__key">align-self:&nbsp;</span>
+                        <span class="title__value">auto | flex-start | flex-end | center | baseline | stretch</span>
+                    </h2>
+        
+                    <p class="description">
+                        <span class="description__key">Applies to:</span>
+                        <span class="description__value">child element / flex-element</span>
+                    </p>
+                </div>
+        
+                <div class="flex-wrap">
+        
+                    <!-- START align-self radio -->
+                    <input class="radio-btn" type="radio" name="align-self" id="align-self-auto" checked>
+                    <label class="radio-label" for="align-self-auto">auto (default)</label>
+                    <input class="radio-btn" type="radio" name="align-self" id="align-self-flex-start">
+                    <label class="radio-label" for="align-self-flex-start">flex-start</label>
+                    <input class="radio-btn" type="radio" name="align-self" id="align-self-flex-end">
+                    <label class="radio-label" for="align-self-flex-end">flex-end</label>
+                    <input class='radio-btn' type="radio" name="align-self" id="align-self-center">
+                    <label class='radio-label' for="align-self-center">center</label>
+                    <input class='radio-btn' type="radio" name="align-self" id="align-self-baseline">
+                    <label class='radio-label' for="align-self-baseline">baseline</label>
+                    <input class='radio-btn' type="radio" name="align-self" id="align-self-stretch">
+                    <label class='radio-label' for="align-self-stretch">stretch</label>
+                    <!-- END align-self radio -->
+        
+                    <div class="flex">
+                        <div class="flex__item flex__item--1">
+                            <span class="name">red</span>
+                        </div>
+                        <div class="flex__item flex__item--2">
+                            <span class="name">green</span>
+                        </div>
+                        <div class="flex__item flex__item--3">
+                            <span class="name">blue</span>
+                        </div>
+                        <div class="flex__item flex__item--4">
+                            <span class="name">rgb</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END align-self -->
+        
+        </div>
+        <!-- END about -->
+    </main>
+    <!-- END content -->
+
+    <!-- START footer -->
+    <footer id="footer" class="footer">
+        
+    </footer>
+    <!-- END footer -->
+
+</div>
+
+<!-- START nav -->
+<nav id="nav" class="nav">
+    <ul class="nav__list">
+        <li class="nav__item">
+            <a href="index.html" class="nav__link">Flex properties</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="example-1.html" class="nav__link">Flex layout</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="example-2.html" class="nav__link">Flex navigation</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="example-4.html" class="nav__link">Flex basis & margin</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="example-3.html" class="nav__link">Flex blocks</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="example-5.html" class="nav__link">Flex z-index</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="links.html" class="nav__link">Links</a>
+        </li>
+    </ul>
+</nav>
+<!-- END nav -->
+
+</body>
+
+<!-- START scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<script src="../js/main.js"></script>
+
+<script>
+
+    // Slideout
+    // --------------------------
+    var slideout = new Slideout({
+        'panel': document.getElementById('page-wrap'),
+        'menu': document.getElementById('nav'),
+        'padding': 256,
+        'tolerance': 70
+    });
+
+    document.querySelector('.btn-mobile-menu-js').addEventListener('click', function () {
+        slideout.toggle();
+    });
+
+    // svg4everybody
+    // --------------------------
+    $(document).ready(function () {
+        svg4everybody({});
+    });
+
+</script>
+<!-- END scripts -->
+
+</html>
