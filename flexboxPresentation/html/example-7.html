@@ -25,7 +25,7 @@
 
     <!-- START content -->
     <main class="content">
-        <!-- START example-5 -->
+        <!-- START example-7 -->
         <div class="container">
         
             <h2 class="title">HTML</h2>
@@ -33,36 +33,47 @@
             <div class="code">
             <pre class="line-numbers">
             <code class="language-markup">
-            &lt;div class="content"&gt;
-        
-              &lt;!--START front--&gt;
-              &lt;div class="front"&gt;
-                &lt;div class="block block--front"&gt;&lt;/div&gt;
-              &lt;/div&gt;
-              &lt;!--END front--&gt;
-        
-              &lt;!--START back--&gt;
-              &lt;div class="back"&gt;
-                &lt;div class="block block--back"&gt;&lt;/div&gt;
-                &lt;div class="block block--back"&gt;&lt;/div&gt;
-              &lt;/div&gt;
-              &lt;!--END back--&gt;
-        
-              &lt;button class="btn"&gt;Toggle z-index&lt;/button&gt;
+            &lt;div class="block block--1"&gt;
+                &lt;div class="block__item"&gt;&lt;/div&gt;
+                &lt;div class="block__item"&gt;&lt;/div&gt;
+                &lt;div class="block__item"&gt;&lt;/div&gt;
+                &lt;div class="block__item"&gt;&lt;/div&gt;
             &lt;/div&gt;
             </code>
             </pre>
             </div>
         
+            <div class="code">
+            <pre class="line-numbers">
+            <code class="language-css">
+            .block {
+              display: flex;
+              flex-wrap: wrap;
+        
+              &--1 {
+                align-items: stretch;
+                align-content: stretch;
+              }
+        
+              &--2 {
+                align-items: stretch;
+                align-content: stretch;
+              }
+            }
+            </code>
+            </pre>
+            </div>
+        
             <section class="pen">
-                <p data-height="900" data-theme-id="0" data-slug-hash="XKvzgq" data-default-tab="result" data-user="Oksanych"
+                <p data-height="900" data-theme-id="0" data-slug-hash="WxVPQP" data-default-tab="result" data-user="Oksanych"
                    data-embed-version="2" class="codepen">
-                    See the Pen <a href="http://codepen.io/Oksanych/pen/XKvzgq/">
-                    Flex z-index</a> by Aleksandr (<a href="http://codepen.io/Oksanych">@Oksanych</a>)
-                    on <a href="http://codepen.io">CodePen</a>.</p>
+                    See the Pen <a href="http://codepen.io/Oksanych/pen/WxVPQP/">Align-content: stretch & align-items</a>
+                    by Aleksandr (<a href="http://codepen.io/Oksanych">@Oksanych</a>) on
+                    <a href="http://codepen.io">CodePen</a>.
+                </p>
             </section>
         </div>
-        <!-- END example-5 -->
+        <!-- END example-7 -->
     </main>
     <!-- END content -->
 

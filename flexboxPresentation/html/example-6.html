@@ -25,7 +25,7 @@
 
     <!-- START content -->
     <main class="content">
-        <!-- START example-5 -->
+        <!-- START example-6 -->
         <div class="container">
         
             <h2 class="title">HTML</h2>
@@ -33,36 +33,50 @@
             <div class="code">
             <pre class="line-numbers">
             <code class="language-markup">
-            &lt;div class="content"&gt;
-        
-              &lt;!--START front--&gt;
-              &lt;div class="front"&gt;
-                &lt;div class="block block--front"&gt;&lt;/div&gt;
-              &lt;/div&gt;
-              &lt;!--END front--&gt;
-        
-              &lt;!--START back--&gt;
-              &lt;div class="back"&gt;
-                &lt;div class="block block--back"&gt;&lt;/div&gt;
-                &lt;div class="block block--back"&gt;&lt;/div&gt;
-              &lt;/div&gt;
-              &lt;!--END back--&gt;
-        
-              &lt;button class="btn"&gt;Toggle z-index&lt;/button&gt;
+            &lt;div class="flex"&gt;
+              
+              &lt;div class="block block--red"&gt;&lt;/div&gt;
+              &lt;div class="block block--green"&gt;&lt;/div&gt;
+              &lt;div class="block block--blue"&gt;&lt;/div&gt;
+            
             &lt;/div&gt;
             </code>
             </pre>
             </div>
         
+            <div class="code">
+            <pre class="line-numbers">
+            <code class="language-css">
+            .flex {
+                display: flex;
+                justify-content: space-around;
+            }
+        
+            .block {
+                min-width: 150px;
+                min-height: 150px;
+        
+                &--green {
+                    margin-top: auto;
+                }
+        
+                &--blue {
+                    margin-bottom: auto;
+                }
+            }
+            </code>
+            </pre>
+            </div>
+        
             <section class="pen">
-                <p data-height="900" data-theme-id="0" data-slug-hash="XKvzgq" data-default-tab="result" data-user="Oksanych"
+                <p data-height="600" data-theme-id="0" data-slug-hash="QKLELb" data-default-tab="result" data-user="Oksanych"
                    data-embed-version="2" class="codepen">
-                    See the Pen <a href="http://codepen.io/Oksanych/pen/XKvzgq/">
-                    Flex z-index</a> by Aleksandr (<a href="http://codepen.io/Oksanych">@Oksanych</a>)
+                    See the Pen <a href="http://codepen.io/Oksanych/pen/QKLELb/">Direction of the main axis</a>
+                    by Aleksandr (<a href="http://codepen.io/Oksanych">@Oksanych</a>)
                     on <a href="http://codepen.io">CodePen</a>.</p>
             </section>
         </div>
-        <!-- END example-5 -->
+        <!-- END example-6 -->
     </main>
     <!-- END content -->
 
