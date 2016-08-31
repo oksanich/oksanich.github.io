@@ -31,23 +31,30 @@
                 <img src="../img/flex-axes.png" alt="Flex-axes" class="flex-img">
             </div>
         
+            <h2 class="title">HTML</h2>
+        
             <!-- START html code example-->
            <div class="code--property">
            <pre class="line-numbers">
             <code class="language-html">
             &lt;div class="flex"&gt;
+        
                 &lt;div class="flex__item flex__item--1"&gt;
                     &lt;span class="name"&gt;red&lt;/span&gt;
                 &lt;/div&gt;
+        
                 &lt;div class="flex__item flex__item--2"&gt;
                     &lt;span class="name"&gt;green&lt;/span&gt;
                 &lt;/div&gt;
+        
                 &lt;div class="flex__item flex__item--3"&gt;
                     &lt;span class="name"&gt;blue&lt;/span&gt;
                 &lt;/div&gt;
+        
                 &lt;div class="flex__item flex__item--4"&gt;
                     &lt;span class="name"&gt;rgb&lt;/span&gt;
                 &lt;/div&gt;
+        
             &lt;/div&gt;
             </code>
             </pre>
@@ -318,6 +325,56 @@
             </section>
             <!-- END align-items -->
         
+            <!-- START align-self -->
+            <section id="block-13" class="property property--align-self">
+        
+                <div class="property-header property-header-js">
+                    <h2 class="title">
+                        <span class="title__key">align-self:&nbsp;</span>
+                        <span class="title__value">auto | flex-start | flex-end | center | baseline | stretch</span>
+                    </h2>
+        
+                    <p class="description">
+                        <span class="description__key">Applies to:</span>
+                        <span class="description__value">child element / flex-element</span>
+                    </p>
+                </div>
+        
+                <div class="flex-wrap">
+        
+                    <!-- START align-self radio -->
+                    <input class="radio-btn" type="radio" name="align-self" id="align-self-auto" checked>
+                    <label class="radio-label" for="align-self-auto">auto (default)</label>
+                    <input class="radio-btn" type="radio" name="align-self" id="align-self-flex-start">
+                    <label class="radio-label" for="align-self-flex-start">flex-start</label>
+                    <input class="radio-btn" type="radio" name="align-self" id="align-self-flex-end">
+                    <label class="radio-label" for="align-self-flex-end">flex-end</label>
+                    <input class='radio-btn' type="radio" name="align-self" id="align-self-center">
+                    <label class='radio-label' for="align-self-center">center</label>
+                    <input class='radio-btn' type="radio" name="align-self" id="align-self-baseline">
+                    <label class='radio-label' for="align-self-baseline">baseline</label>
+                    <input class='radio-btn' type="radio" name="align-self" id="align-self-stretch">
+                    <label class='radio-label' for="align-self-stretch">stretch</label>
+                    <!-- END align-self radio -->
+        
+                    <div class="flex">
+                        <div class="flex__item flex__item--1">
+                            <span class="name">red</span>
+                        </div>
+                        <div class="flex__item flex__item--2">
+                            <span class="name">green</span>
+                        </div>
+                        <div class="flex__item flex__item--3">
+                            <span class="name">blue</span>
+                        </div>
+                        <div class="flex__item flex__item--4">
+                            <span class="name">rgb</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END align-self -->
+        
             <!-- START align-content -->
             <section id="block-7" class="property property--align-content">
         
@@ -340,7 +397,7 @@
                 <div class="flex-wrap">
         
                     <!-- START align-content radio -->
-                    <input class="radio-btn" type="radio" name="justify-content" id="align-content-flex-start" checked>
+                    <input class="radio-btn" type="radio" name="justify-content" id="align-content-flex-start">
                     <label class="radio-label" for="align-content-flex-start">flex-start</label>
                     <input class="radio-btn" type="radio" name="justify-content" id="align-content-flex-end">
                     <label class="radio-label" for="align-content-flex-end">flex-end</label>
@@ -350,7 +407,7 @@
                     <label class='radio-label' for="align-content-between">space-between</label>
                     <input class='radio-btn' type="radio" name="justify-content" id="align-content-around">
                     <label class='radio-label' for="align-content-around">space-around</label>
-                    <input class='radio-btn' type="radio" name="justify-content" id="align-content-stretch">
+                    <input class='radio-btn' type="radio" name="justify-content" id="align-content-stretch" checked>
                     <label class='radio-label' for="align-content-stretch">stretch (default)</label>
                     <!-- END align-content radio -->
         
@@ -532,56 +589,6 @@
                 </div>
             </section>
             <!-- END flex-flow -->
-        
-            <!-- START align-self -->
-            <section id="block-13" class="property property--align-self">
-        
-                <div class="property-header property-header-js">
-                    <h2 class="title">
-                        <span class="title__key">align-self:&nbsp;</span>
-                        <span class="title__value">auto | flex-start | flex-end | center | baseline | stretch</span>
-                    </h2>
-        
-                    <p class="description">
-                        <span class="description__key">Applies to:</span>
-                        <span class="description__value">child element / flex-element</span>
-                    </p>
-                </div>
-        
-                <div class="flex-wrap">
-        
-                    <!-- START align-self radio -->
-                    <input class="radio-btn" type="radio" name="align-self" id="align-self-auto" checked>
-                    <label class="radio-label" for="align-self-auto">auto (default)</label>
-                    <input class="radio-btn" type="radio" name="align-self" id="align-self-flex-start">
-                    <label class="radio-label" for="align-self-flex-start">flex-start</label>
-                    <input class="radio-btn" type="radio" name="align-self" id="align-self-flex-end">
-                    <label class="radio-label" for="align-self-flex-end">flex-end</label>
-                    <input class='radio-btn' type="radio" name="align-self" id="align-self-center">
-                    <label class='radio-label' for="align-self-center">center</label>
-                    <input class='radio-btn' type="radio" name="align-self" id="align-self-baseline">
-                    <label class='radio-label' for="align-self-baseline">baseline</label>
-                    <input class='radio-btn' type="radio" name="align-self" id="align-self-stretch">
-                    <label class='radio-label' for="align-self-stretch">stretch</label>
-                    <!-- END align-self radio -->
-        
-                    <div class="flex">
-                        <div class="flex__item flex__item--1">
-                            <span class="name">red</span>
-                        </div>
-                        <div class="flex__item flex__item--2">
-                            <span class="name">green</span>
-                        </div>
-                        <div class="flex__item flex__item--3">
-                            <span class="name">blue</span>
-                        </div>
-                        <div class="flex__item flex__item--4">
-                            <span class="name">rgb</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- END align-self -->
         
         </div>
         <!-- END about -->
