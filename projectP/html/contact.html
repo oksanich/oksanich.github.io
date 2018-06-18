@@ -65,10 +65,10 @@
         <div class="content-row content-row--2">
             <div class="content-column">
                 <h3 class="title">Send Us a Note</h3>
-                <form class="form" action="">
-                    <input class="form__input" type="text" placeholder="Name*" required>
-                    <input class="form__input" type="email" placeholder="E-mail*" required>
-                    <textarea class="form__input form__input--textarea" name="" placeholder="Message*"></textarea>
+                <form class="form js-form" method="post">
+                    <input class="form__input" type="text" name="name" id="name" placeholder="Name*" required>
+                    <input class="form__input" type="email" name="email" id="email" placeholder="E-mail*" required>
+                    <textarea class="form__input form__input--textarea" name="text" id="text" placeholder="Message*"></textarea>
                     <button type="submit" class="btn btn--submit">Send</button>
                 </form>
             </div>
