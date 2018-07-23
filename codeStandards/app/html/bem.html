@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext"
+          rel="stylesheet">
+    <title>Code Standards</title>
+</head>
+<body>
+
+<div class="page-wrap js-page-wrap">
+
+    <!-- START page-name -->
+    <div class="page-name">
+        <div class="page-name__text">BEM naming</div>
+
+        <!-- START footer -->
+        <div class="hamburger js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="general.html">General</a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="bem.html">BEM naming</a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="css.html">CSS</a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="graphic.html">Graphic</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- END footer -->
+    </div>
+    <!-- END page-name -->
+
+    <!-- START content -->
+    <main class="container">
+
+        <!-- START rule-1 -->
+        <div class="rules-wrapper">
+            <h2 class="title">Why BEM?</h2>
+        
+            <div class="rules">
+                <ul class="list list--inner">
+                    <li class="list__item">Self-documenting.</li>
+                    <li class="list__item">Ease of code maintenance.</li>
+                    <li class="list__item">Reusable blocks in project.</li>
+                </ul>
+        
+        <pre class="line-numbers">
+            <code class="language-html">
+            &lt;div class="bem-block"&gt;
+                &lt;div class="bem-block__el bem-block__el--mod"&gt;
+                    &lt;span class="name"&gt;Item 1&lt;/span&gt;
+                &lt;/div&gt;
+        
+                &lt;div class="bem-block__el bem-block__el--mod"&gt;
+                    &lt;span class="name"&gt;Item 2&lt;/span&gt;
+                &lt;/div&gt;
+        
+                &lt;div class="bem-block__el bem-block__el--mod"&gt;
+                    &lt;span class="name"&gt;Item 3&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            </code>
+        </pre>
+            </div>
+        </div>
+        <!-- END rule-1 -->
+
+        <!-- START rule-2 -->
+        <div class="rules-wrapper">
+            <h2 class="title">Block is a separate part of the page</h2>
+        
+            <div class="rules">
+                <ul class="list list--inner">
+                    <li class="list__item">The class name should be simple and short.</li>
+                </ul>
+        
+        <pre class="line-numbers">
+            <code class="language-html">
+            &lt;!-- .product — BEM-block --&gt;
+            &lt;div class="product"&gt;
+                ...
+            &lt;/div&gt;
+            </code>
+        </pre>
+            </div>
+        </div>
+        <!-- END rule-2 -->
+
+        <!-- START rule-3 -->
+        <div class="rules-wrapper">
+            <h2 class="title">BEM blocks can and should be nested in each other</h2>
+        
+            <div class="rules">
+                <ul class="list list--inner">
+                    <li class="list__item">You can nested block inside another block.</li>
+                </ul>
+        
+        <pre class="line-numbers">
+            <code class="language-html">
+            &lt;!-- .page-header — BEM-block --&gt;
+            &lt;div class="page-header"&gt;
+        
+                &lt;!-- .logo — nested BEM-block --&gt;
+                &lt;a class="logo"&gt;...&lt;/a&gt;
+            &lt;/div&gt;
+            </code>
+        </pre>
+            </div>
+        </div>
+        <!-- END rule-3 -->
+
+        <!-- START rule-4 -->
+        <div class="rules-wrapper">
+            <h2 class="title">Element is part of the BEM block</h2>
+        
+            <div class="rules">
+                <ul class="list list--inner">
+                    <li class="list__item">The name of the class is formed from the name of the block with the addition
+                        of
+                        __
+                        and the name of the element.
+                    </li>
+                    <li class="list__item">The class name should be simple and short.</li>
+                </ul>
+        
+        <pre class="line-numbers">
+            <code class="language-html">
+            &lt;div class="product"&gt;
+                &lt;!-- .product__image — BEM-element of product block --&gt;
+                &lt;img class="product__image" src="..." alt="..."&gt;
+        
+                &lt;!-- .product__description — BEM-element of product block --&gt;
+                &lt;p class="product__description"&gt;...&lt;/p&gt;
+        
+                &lt;!-- .product__more-link — BEM-element of product block --&gt;
+                &lt;a class="product__more-link" href=""&gt;...&lt;/a&gt;
+            &lt;/div&gt;
+            </code>
+        </pre>
+            </div>
+        </div>
+        <!-- END rule-4 -->
+
+        <!-- START rule-5 -->
+        <div class="rules-wrapper">
+            <h2 class="title">How to differentiate a BEM-block from a BEM-element</h2>
+        
+            <ul class="list">
+                <li class="list__item">Just ask yourself the question: "This code part may be required to me
+                    separately, in itself? Or
+                    is it only necessary inside her parent?" If you need it separately, this is a BEM-block, if it is
+                    conceivable only inside the parent - it's a BEM-element.
+                </li>
+        
+                <li class="list__item">In really doubtful cases, make a choice in favor of BEM-block.</li>
+        
+                <li class="list__item">Do not forget about mixing (it is possible to have at the same level a BEM-level
+                    class of
+                    some
+                    parent block, and its BEM-block level class).
+                </li>
+            </ul>
+        </div>
+        <!-- END rule-5 -->
+
+        <!-- START rule-6 -->
+        <div class="rules-wrapper">
+            <h2 class="title">Modifier - an additional class for changing the design or behavior</h2>
+        
+            <div class="rules">
+                <ul class="list list--inner">
+                    <li class="list__item">The name of the class is formed from the name of the block / element with the
+                        addition - and the name of the modifier.
+                    </li>
+                    <li class="list__item">The name should be simple and short.</li>
+                    <li class="list__item">The class name can answer the questions "What is this?", "What changes?", "What is
+                        different from the others?"
+                    </li>
+                </ul>
+        
+        <pre class="line-numbers">
+            <code class="language-html">
+                &lt;!-- .product--large — BEM-modifier --&gt;
+                &lt;div class="product  product--large"&gt;
+                  ...
+                &lt;/div&gt;
+            </code>
+        </pre>
+            </div>
+        </div>
+        <!-- END rule-6 -->
+
+        <!-- START rule-7 -->
+        <div class="rules-wrapper">
+            <h2 class="title">The modifier can't be used single</h2>
+        
+            <div class="rules">
+                <ul class="list list--inner">
+                    <li class="list__item">The modifier class should never be used single, but always only with the class that
+                        it modifies.
+                    </li>
+                </ul>
+        
+        <pre class="line-numbers">
+            <code class="language-html">
+                &lt;!-- Right usage --&gt;
+                &lt;div class="product  product--large"&gt;
+                  ...
+                &lt;/div&gt;
+        
+                &lt;!-- Wrong usage --&gt;
+                &lt;div class="product--sale"&gt;
+                  ...
+                &lt;/div&gt;
+            </code>
+        </pre>
+            </div>
+        </div>
+        <!-- END rule-7 -->
+
+        <!-- START rule-8 -->
+        <div class="rules-wrapper">
+            <h2 class="title">Mixing - combining on one tag classes BEM-block and BEM-element</h2>
+        
+            <p class="text">The combination is possible in any combination: BEM-block + BEM-element, BEM-block + BEM-block,
+                BEM-element + BEM-element.</p>
+        
+            <div class="rules">
+                <ul class="list list--inner">
+                    <li class="list__item">Classes of BEM blocks should be written first.</li>
+                    <li class="list__item">Add some style properties needed only at the location of the addition (using the
+                        modifier is irrational). Example: for .btn inside .page-header, an external left margin of 37 pixels is
+                        required. You can add an additional class .page-header__btn for the .btn tag and indent with this
+                        selector. This is a normal practice, you can safely use it.</li>
+                </ul>
+        
+        <pre class="line-numbers">
+            <code class="language-html">
+                &lt;!-- Example-1 --&gt;
+                &lt;div class="page-header"&gt;
+                    &lt;div class="page-header__nav-wrap"&gt;...&lt;/div&gt;
+                    &lt;a class="btn  page-header__btn" href="/buy"&gt;...&lt;/a&gt;
+                &lt;/div&gt;
+        
+                &lt;!-- Example-2 --&gt;
+                &lt;div class="slider"&gt;
+                  &lt;div class="promo  slider__inner"&gt;
+                    &lt;div class="promo__item  slider__item"&gt;
+                      ...
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+            </code>
+        </pre>
+            </div>
+        </div>
+        <!-- END rule-8 -->
+    </main>
+    <!-- END content -->
+
+    <!-- START footer -->
+    <footer id="footer" class="footer">
+        
+    </footer>
+    <!-- END footer -->
+
+</div>
+
+</body>
+
+<!-- START scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
+<script src="../js/main.js"></script>
+<!-- END scripts -->
+
+</html>
