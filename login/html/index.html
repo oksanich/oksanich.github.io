@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Login</title>
+</head>
+<body>
+
+
+<!-- START login -->
+<main class="login container container--narrow">
+    <picture class="mb-36 flex-self-center">
+        <source type="image/webp" srcset="../img/login.webp 1x, ../img/login@2x.webp 2x">
+        <img src="../img/login.png"
+             srcset="../img/login@2x.png 2x"
+             alt="Login image" width="212" height="212" loading="lazy">
+    </picture>
+
+    <h1 class="h1 text-center">Login test</h1>
+
+    <!-- START login form -->
+    <form class="login-form">
+        <label class="field-icon">
+            <input class="field field--icon mb-36" type="email" placeholder="example@email.com">
+            <svg class="icon icon-contact">
+                <use xlink:href="../img/svg-icons/svg-icons.svg#contact"></use>
+            </svg>
+        </label>
+
+        <label class="field-icon">
+            <input class="field field--icon mb-36" type="password" placeholder="password">
+            <svg class="icon icon-contact">
+                <use xlink:href="../img/svg-icons/svg-icons.svg#lock"></use>
+            </svg>
+        </label>
+        <a href="./forgot-password.html" class="link login-form__link">Forgot Password?</a>
+        <button class="button mb-36">Log In</button>
+    </form>
+    <!-- END login form -->
+
+    <div class="login-footer">
+        <p class="meta text-center mb-36">Or connect with social</p>
+        <div class="button-group">
+            <button class="button button--social button--facebook">Facebook</button>
+            <button class="button button--social button--google">Google</button>
+        </div>
+    </div>
+</main>
+<!-- END login -->
+
+</body>
+
+<!-- START scripts -->
+<script>
+  
+</script>
+<!-- END scripts -->
+
+</html>
